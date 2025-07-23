@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Translation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Left sidebar navigation -->
+
+    <div class="score">
+      Score: <span id="score">0</span> / <span id="total">0</span>
+    </div>
+    <h1>Translation</h1>
+    <li>
+      Initiation: ribosome assembles around the
+      <span data-quiz="mRNA">mRNA</span> to be translated.
+    </li>
+    <li>
+      Elongation: tRNA molecules bring
+      <span data-quiz="amino acids" data-hint="Building blocks of proteins"
+        >amino acids</span
+      >
+      to the ribosome, where they are added to the growing polypeptide chain.
+    </li>
+    <li>
+      Termination: The ribosome reaches a stop codon, and the completed
+      polypeptide is released.
+    </li>
+    <li>
+      The ribosome reads the mRNA in sets of three nucleotides called
+      <span data-quiz="codons">codons</span>, each coding for a specific amino
+      acid. The process involves:
+    </li>
+    <ul>
+      <li>
+        The ribosome has three sites: <span data-quiz="A">A</span> (aminoacyl),
+        <span data-quiz="P">P</span> (peptidyl), and
+        <span data-quiz="E">E</span> (exit).
+      </li>
+      <li>
+        tRNA molecules carry specific amino acids to the ribosome, matching
+        their anticodon with the mRNA codon.
+      </li>
+      <li>
+        rRNA in the ribosome catalyzes the formation of
+        <span data-quiz="peptide bonds">peptide bonds</span> between adjacent
+        amino acids, elongating the polypeptide chain.
+      </li>
+      <li>
+        Peptide bonds form between adjacent amino acids, elongating the
+        polypeptide chain.
+      </li>
+    </ul>
+    <script src="sidebar.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

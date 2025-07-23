@@ -1,0 +1,239 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-left: 220px;
+  background-color: linear-gradient(to bottom, #ffe084, #ffa3a3);
+}
+
+.left-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  background-color: #ffffff;
+  border-right: 2px solid #16213e;
+  padding: 10px 0;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  transform: translateX(0);
+}
+
+.left-sidebar h3 {
+  color: #000000;
+  margin: 0 0 20px 0;
+  font-size: 18px;
+  text-align: center;
+  border-bottom: 2px solid #16213e;
+  padding: 0 10px 10px 10px;
+  flex-shrink: 0;
+}
+
+.nav-item {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+  font-weight: lighter;
+  transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+  font-size: 13px;
+  transform: translateX(5px);
+}
+
+.nav-item.active {
+  border-color: #535353;
+}
+
+
+
+
+.quiz-word {
+  background-color: rgb(123, 123, 123);
+  color: rgb(123, 123, 123);
+  padding: 2px 4px;
+  cursor: pointer;
+  border: 0px solid #ffffff;
+  position: relative;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.quiz-word.revealed {
+  background-color: #3fe03f;
+  color: rgb(0, 0, 0);
+}
+
+.quiz-word.incorrect {
+  background-color: #5a2d2d;
+  color: rgb(255, 0, 0);
+}
+
+.answer-input {
+  border: 2px solid #4a9eff;
+  padding: 2px 6px;
+  margin: 0;
+  border-radius: 3px;
+  font-size: inherit;
+  font-family: inherit;
+  width: auto;
+  min-width: 60px;
+  background-color: #2a2a2a;
+  color: white;
+  outline: none;
+}
+
+.answer-input:focus {
+  border-color: #66b3ff;
+  box-shadow: 0 0 5px rgba(102, 179, 255, 0.5);
+}
+
+.score {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #333333;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  border: 1px solid #555555;
+}
+
+.feedback {
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.correct {
+  color: #009800;
+}
+
+.incorrect {
+  color: #f66666;
+  text-decoration-color: #ff6666;
+}
+
+/* Tooltip styling for hints */
+.quiz-word[title] {
+  position: relative;
+}
+
+.quiz-word[title]:hover::after {
+  content: attr(title);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 10px;
+  white-space: nowrap;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.quiz-word[title]:hover::before {
+  content: '';
+  position: absolute;
+  bottom: 95%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: #333;
+  z-index: 1000;
+}
+div ul {
+  font-size: large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+li {
+  margin-bottom: 10px;
+  line-height: 2;
+  padding: 5px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  content: "";
+  transition: background-color 0.3s ease;
+  list-style-type: none;
+}
+
+li:hover {
+  background-color: #e0e0e0;
+}
+
+button {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 1px 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+button:hover {
+  background-color: #333333;
+}
+
+/* Additional sidebar improvements for dropdown overflow */
+.category-section {
+  margin-bottom: 5px;
+}
+
+.category-items::-webkit-scrollbar {
+  width: 6px;
+}
+
+.category-items::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.category-items::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.category-items::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Ensure sidebar content area is scrollable */
+.left-sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.left-sidebar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.left-sidebar::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+.left-sidebar::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Payment Modal Styles */
+

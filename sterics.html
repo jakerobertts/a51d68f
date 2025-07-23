@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sterics</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="score-display">
+      <div class="score">
+        Score: <span id="score">0</span> / <span id="total">0</span>
+      </div>
+    </div>
+      <h1>Stereochemistry</h1>
+      <ul>
+        <li>
+          Types of
+          <span
+            data-quiz="stereoisomers"
+            data-hint="Same connectivity, different spatial arrangement"
+            >stereoisomers</span
+          >:
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <span
+            data-quiz="Enantiomers"
+            data-hint="Non-superimposable mirror images"
+            >Enantiomers</span
+          >: Non-superimposable mirror images.
+          <ul>
+            <li>
+              Enantiomers have identical physical properties except for their
+              interaction with plane-polarized
+              <span
+                data-quiz="light"
+                data-hint="Light waves vibrating in one plane"
+                >light</span
+              >.
+            </li>
+            <li>
+              An object is
+              <span
+                data-quiz="chiral"
+                data-hint="Has nonsuperimposable mirror image"
+                >chiral</span
+              >
+              if it is not superimposable on its mirror image.
+            </li>
+            <li>
+              Chirality
+              <span
+                data-quiz="centers"
+                data-hint="Stereocenters with four different groups"
+                >centers</span
+              >
+              (stereocenters) are typically carbon atoms bonded to four different
+              groups.
+            </li>
+            <li>
+              They are prioritized based on their atomic
+              <span data-quiz="number" data-hint="Number of protons in nucleus"
+                >number</span
+              >.
+            </li>
+            <li>
+              R/S
+              <span data-quiz="r/s" data-hint="Cahn-Ingold-Prelog nomenclature"
+                >configuration</span
+              >
+              is assigned based on the arrangement of groups around the chirality
+              center.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <span
+            data-quiz="Diastereomers"
+            data-hint="Stereoisomers that aren't enantiomers"
+            >Diastereomers</span
+          >: Stereoisomers that are not mirror images.
+        </li>
+        <ul>
+          <li>
+            Diastereomers have different physical properties and reactivities.
+          </li>
+        </ul>
+        <li>
+          Geometric
+          <span
+            data-quiz="geometric"
+            data-hint="Different arrangements around double bonds"
+            >isomers</span
+          >: Stereoisomers with different spatial arrangements around a double
+          bond or ring structure.
+        </li>
+      </ul>
+      <li>
+        E/Z
+        <span data-quiz="e/z" data-hint="Entgegen/Zusammen naming system"
+          >nomenclature</span
+        >
+        is used to describe the geometry of double bonds, based on the priority
+        of substituents attached to the double-bonded carbons.
+      </li>
+    </div>
+
+    <script src="sidebar.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
