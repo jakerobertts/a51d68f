@@ -1,0 +1,22 @@
+[build]
+  publish = "/"
+  functions = "netlify/functions"
+  command = "npm install"
+
+[dev]
+  framework = "#static"
+  functionsPort = 8888
+  port = 8888
+  targetPort = 8888
+
+[functions]
+  node_bundler = "esbuild"
+  external_node_modules = ["stripe"]
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[context.production]
+  environment = { NETLIFY_ACCOUNT_ID = "686334463bc6a22c3309cee1" }

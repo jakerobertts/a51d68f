@@ -1,3 +1,21 @@
+# Dependencies
+node_modules/
+package-lock.json
 
-# Local Netlify folder
-.netlify
+# Environment files
+.env
+.env.local
+*.env
+stripe.env
+
+# System files
+.DS_Store
+.netlify/
+
+# Build output
+dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*

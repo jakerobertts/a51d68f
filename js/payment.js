@@ -1,45 +1,55 @@
 console.log('Payment script loaded');
 
-async function handleBundlePurchase(bundleType) {
+async function testPayment() {
+    console.log('Test payment initiated');
     try {
+        // Add debug logging
+        console.log('Sending request to checkout endpoint...');
+        
         const response = await fetch('/.netlify/functions/createCheckout', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
             },
             body: JSON.stringify({
-                bundle: bundleType
+                bundle: 'BB'  // Remove account requirement
             })
         });
 
-        // Log the raw response for debugging
+        console.log('Response status:', response.status);
         const responseText = await response.text();
         console.log('Raw server response:', responseText);
 
-        // Try to parse as JSON
+        // Validate response before parsing
+        if (!responseText) {
+            throw new Error('Empty response from server');
+        }
+
+        // Parse JSON response
         let data;
         try {
             data = JSON.parse(responseText);
         } catch (e) {
-            console.error('Failed to parse server response:', e);
-            throw new Error('Invalid server response');
+            console.error('JSON parse error:', e);
+            throw new Error('Invalid response format');
+        }
+
+        if (!response.ok) {
+            const errorMessage = data.error || 'Unknown error';
+            console.error('Server error:', errorMessage);
+            throw new Error(`Checkout failed: ${errorMessage}`);
         }
 
         if (!data.url) {
             throw new Error('No checkout URL in response');
         }
 
-        // Redirect to Stripe checkout
+        console.log('Redirecting to checkout:', data.url);
         window.location.href = data.url;
 
     } catch (error) {
-        console.error('Payment initialization error:', error);
-        alert('Payment setup failed. Please try again.');
+        console.error('Payment error:', error);
+        alert('Payment failed: ' + error.message);
     }
-}
-
-// Test payment function
-async function testPayment() {
-    console.log('Test payment initiated');
-    await handleBundlePurchase('BB');
 }
