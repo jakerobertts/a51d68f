@@ -18,5 +18,5 @@
   to = "/index.html"
   status = 200
 
-[context.production]
-  environment = { NETLIFY_ACCOUNT_ID = "686334463bc6a22c3309cee1" }
+[context.production.environment]
+  NETLIFY_ACCOUNT_ID = "686334463bc6a22c3309cee1"
