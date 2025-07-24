@@ -3,17 +3,13 @@ console.log('Payment script loaded');
 async function testPayment() {
     console.log('Test payment initiated');
     try {
-        // Add debug logging
-        console.log('Sending request to checkout endpoint...');
-        
         const response = await fetch('/.netlify/functions/createCheckout', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
+                'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                bundle: 'BB'  // Remove account requirement
+                bundle: 'BB'
             })
         });
 
