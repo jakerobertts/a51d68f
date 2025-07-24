@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Successful - Percentyle</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .success-container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 2rem;
+        text-align: center;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .checkmark {
+        color: #4caf50;
+        font-size: 48px;
+        margin-bottom: 1rem;
+      }
+
+      .button {
+        display: inline-block;
+        padding: 12px 24px;
+        background: #4caf50;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        margin-top: 20px;
+        transition: background 0.3s ease;
+      }
+
+      .button:hover {
+        background: #45a049;
+      }
+
+      .purchase-details {
+        margin: 20px 0;
+        padding: 15px;
+        background: #f8f9fa;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="success-container">
+      <div class="checkmark">✓</div>
+      <h1>Payment Successful!</h1>
+      <div id="purchase-details" class="purchase-details">
+        Verifying your purchase...
+      </div>
+      <a href="/" class="button">Return to Home</a>
+    </div>
+
+    <script type="module">
+      import { BUNDLES } from "./src/config/bundles.js";
+
+      const urlParams = new URLSearchParams(window.location.search);
+      const sessionId = urlParams.get("session_id");
+
+      if (sessionId) {
+        fetch("/.netlify/functions/verify-session", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ sessionId }),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            if (data.success) {
+              const bundle = BUNDLES[data.bundle];
+              // Store bundle access
+              const purchases = JSON.parse(
+                localStorage.getItem("purchases") || "{}"
+              );
+              purchases[data.bundle] = true;
+              localStorage.setItem("purchases", JSON.stringify(purchases));
+
+              document.getElementById("purchase-details").innerHTML = `
+                        <h2>${bundle.name}</h2>
+                        <p>Thank you for your purchase!</p>
+                        <p>You now have access to ${
+                          bundle.sections.length
+                        } sections.</p>
+                        <ul style="text-align: left; margin: 15px auto; max-width: 400px;">
+                            ${bundle.sections
+                              .slice(0, 5)
+                              .map((section) => `<li>${section}</li>`)
+                              .join("")}
+                            ${
+                              bundle.sections.length > 5
+                                ? `<li>...and ${
+                                    bundle.sections.length - 5
+                                  } more sections</li>`
+                                : ""
+                            }
+                        </ul>
+                    `;
+              // After verifying session
+              localStorage.setItem("fullAccess", "true");
+            }
+          })
+          .catch((error) => {
+            console.error("Verification error:", error);
+            document.getElementById("purchase-details").innerHTML =
+              '<p style="color: #dc3545">There was an error verifying your purchase. Please contact support.</p>';
+          });
+      } else {
+        window.location = "/";
+      }
+    </script>
+  </body>
+</html>

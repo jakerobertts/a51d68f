@@ -4,8 +4,6 @@ const sidebarCategories = [
     items: [
       { href: "index.html", text: "Home" },
       { href: "about.html", text: "About" },
-      { href: "contact.html", text: "Contact" },
-      { href: "calc.html", text: "Progress & Planning"}
     ]
   },
   {

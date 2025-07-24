@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <h1>Biological Bases of Behavior</h1>
+    <title>Biological Processes</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Left sidebar navigation -->
+
+    <div class="score">
+      Score: <span id="score">0</span> / <span id="total">0</span>
+    </div>
+
+    <h1>Sensory Receptors & Pathways</h1>
+
+    <ul>
+      <li>
+        Sensory receptors are specialized cells that detect and respond to
+        specific environmental <span data-quiz="stimuli">stimuli</span> such as
+        light, sound, touch, chemicals, or temperature.
+      </li>
+      <ul>
+        <li>
+          <strong>Types of sensory receptors:</strong> Include
+          <li><span data-quiz="mechanoreceptors" data-hint="Pressure and vibration"
+            >mechanoreceptors</span
+          ></li>
+
+          <li><span data-quiz="chemoreceptors" data-hint="Taste and smell"
+            >chemoreceptors</span
+          ></li>
+          <li><span data-quiz="photoreceptors" data-hint="Light"
+            >photoreceptors</span
+          ></li>
+          <li><span data-quiz="thermoreceptors" data-hint="Temperature"
+            >thermoreceptors</span
+          ></li>
+          <li><span data-quiz="nociceptors" data-hint="Pain"
+            >nociceptors</span
+          ></li>
+        </li>
+      </ul>
+      <li>
+        Sensory pathways are neural routes that carry sensory information from
+        receptors through the nervous system to processing centers in the brain.
+      </li>
+        <ul>
+            <li>
+            <strong>Pathways:</strong> Include
+            <span data-quiz="afferent" data-hint="Carry signals to CNS"
+                >afferent</span
+            >
+            pathways that transmit sensory information to the central nervous system (CNS)
+            for processing.
+            </li>   
+            <li>
+            
+            <span data-quiz="efferent" data-hint="Carry signals away from CNS"
+                >efferent </span
+            >
+            pathways that transmit motor commands from the central nervous system (CNS) to
+            effectors (muscles and glands).
+            </li>
+        </ul>
+
+    <h1>Eye & Vision (Biological Aspects)</h1>
+
+    <ul>
+      <li>
+        <strong>Structure and function of the eye:</strong>
+        <ul>
+          <li><span data-quiz="cornea">Cornea</span>: focuses light</li>
+          <li><span data-quiz="lens">Lens</span>: adjusts focus</li>
+          <li><span data-quiz="retina">Retina</span>: contains photoreceptors</li>
+          <li><span data-quiz="optic nerve">Optic nerve</span>: transmits visual information to brain</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h1>Ear & Hearing (Biological Aspects)</h1>
+
+    <ul>
+      <li>
+        <strong>Structure and function of the ear:</strong>
+        <ul>
+          <li><span data-quiz="outer ear">Outer ear</span>: collects sound</li>
+          <li><span data-quiz="middle ear">Middle ear</span>: amplifies vibrations</li>
+          <li><span data-quiz="inner ear">Inner ear</span>: converts vibrations to neural signals</li>
+          <li><span data-quiz="vestibular system">Vestibular system</span>: maintains balance</li>
+          <ul>
+            <li><span data-quiz="semicircular canals">Semicircular canals</span>: detect rotational movement</li>
+            <li><span data-quiz="otolith organs">Otolith organs</span>: detect linear acceleration</li>
+          </ul>
+        </ul>
+      </li>
+      <li>
+        <span data-quiz="hair cells">Hair cells</span> are specialized mechanoreceptors in the cochlea that convert mechanical vibrations into electrical signals through deflection of stereocilia, enabling hearing.
+      </li>
+    </ul>
+
+    <h1>Other Senses (Biological Aspects)</h1>
+
+    <ul>
+      <li>
+        <span data-quiz="somatosensation">Somatosensation</span> is the body's sense of touch, pressure,
+        temperature, and pain perception through specialized receptors in skin,
+        muscles, and internal organs.
+      </li>
+      <ul>
+        <li>
+          <span data-quiz="proprioception">Proprioception</span> is the sense of body position and movement,
+          mediated by proprioceptors in muscles, tendons, and joints.
+        </li>
+        <li>
+          <span data-quiz="nociception">Nociception</span> is the sensory process that detects pain through
+          nociceptors, specialized receptors that respond to potentially damaging
+          stimuli.
+        </li>
+        <li>
+          <span data-quiz="thermoreception">Thermoreception</span> is the ability to sense temperature changes
+          through thermoreceptors in the skin and other tissues.
+        </li>
+      </ul>
+      <li>
+        <span data-quiz="taste">Taste</span> is chemoreception by taste buds containing receptor
+        cells that detect five basic tastes: sweet, sour, salty, bitter, and
+        umami (savory).
+      </li>
+      <ul>
+        <li>
+          <span data-quiz="fungiform">Fungiform papillae</span> are mushroom-shaped structures on the tongue that contain taste buds, primarily responsible for detecting sweet and salty tastes.
+        </li>
+        <li>
+          <span data-quiz="foliate">Foliate papillae</span> are folds on the sides of the tongue that contain taste buds, primarily responsible for detecting sour tastes.
+        </li>
+        <li>
+          <span data-quiz="circumvallate">Circumvallate papillae</span> are large, dome-shaped structures at the back of the tongue that contain taste buds, primarily responsible for detecting bitter tastes.
+        </li>
+      </ul>
+      <li>
+        <span data-quiz="smell">Smell</span> is chemoreception by olfactory cells in the nasal
+        cavity that detect airborne chemical molecules and send signals directly
+        to the olfactory bulb in the brain.
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong><span data-quiz="pheromones">Pheromones</span></strong> are chemical signals released by organisms that
+        trigger behavioral or physiological responses in other members of the
+        same species, important in reproduction and social behavior.
+      </li>
+      <li>
+        <strong>Olfactory pathways in the brain:</strong> 
+        <ul>
+          <li>Olfactory receptors in the nasal cavity send signals to the <span data-quiz="olfactory_bulb">olfactory bulb</span></li>
+          <li>Signals are processed in the <span data-quiz="olfactory cortex">olfactory cortex</span></li>
+          <li>Connects directly to the <span data-quiz="limbic">limbic</span> system (emotion and memory centers)</li>
+          <li>Does not pass through the thalamus</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h1>Neural Basis of Memory & Learning</h1>
+
+    <ul>
+      <li>
+        <strong
+          >Changes in synaptic connections underlie memory and learning:</strong
+        >
+        Memory formation involves strengthening or weakening synaptic
+        connections through mechanisms:
+        <ul>
+          <li>Long-term <span data-quiz="potentiation">potentiation</span>  is the strengthening of synapses based on recent patterns of activity.</li>
+          <li>Long-term <span data-quiz="depression">depression</span>  is the weakening of synapses based on the absence or decrease of activity.</li>
+        </ul>
+      </li>
+      <li>
+        Neural <span data-quiz="plasticity">plasticity</span> is the brain's ability to reorganize
+        and adapt by forming new neural connections, modifying existing ones,
+        and even generating new neurons throughout life.
+      </li>
+    </ul>
+
+    <h1>Processes in Emotion</h1>
+
+    <ul>
+      <li>
+        <strong>The role of biological processes in perceiving emotion:</strong>
+        Emotions involve complex interactions between neurotransmitters:
+        <ul>
+          <li><span data-quiz="dopamine">Dopamine</span> is the neurotransmitter associated with pleasure and reward, influencing motivation and mood.</li>
+          <li><span data-quiz="norepinephrine">Norepinephrine</span> is involved in arousal and alertness, affecting the body's response to stress.</li>
+          <li><span data-quiz="serotonin">Serotonin</span> is linked to mood regulation, and its imbalance is associated with depression and anxiety.</li>
+        </ul>
+        and brain
+        structures:
+        <ul>
+          <li>The <span data-quiz="amygdala">Amygdala</span> is involved in fear processing and emotional responses.</li>
+          <li>The <span data-quiz="prefrontal cortex">Prefrontal Cortex</span> is responsible for emotional regulation and decision-making.</li>
+          <li>The <span data-quiz="hippocampus">Hippocampus</span> plays a role in emotional memory and context.</li>
+        </ul>
+      </li>
+      
+    </ul>
+    <ul>
+      <li>
+        <strong
+          >Regions involved in the generation and experience of
+          emotions:</strong
+        >
+        Primarily components of the limbic system including amygdala,
+        hippocampus, <span data-quiz="cingulate cortex" data-hint="Cortex involved in emotional regulation">cingulate cortex</span>,
+        and associated structures.
+      </li>
+      <li>
+        The limbic system processes
+        emotional responses, links emotions to <span data-quiz="memories">memories</span>, and coordinates
+        emotional behavior with the <span data-quiz="autonomic">autonomic</span> nervous system.
+      </li>
+      <li>
+        <strong>Emotion and the autonomic nervous system:</strong>
+        <ul>
+          <li>The <span data-quiz="sympathetic">Sympathetic</span> division triggers "fight-or-flight" responses.</li>
+          <li>The <span data-quiz="parasympathetic">Parasympathetic</span> division promotes "rest-and-digest" states.</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Physiological markers of emotion:</strong> Measurable changes
+        include heart rate, blood pressure, skin conductance, <span data-quiz="cortisol" data-hint="A stress hormone released during the fight-or-flight response">cortisol</span> levels,
+        and facial muscle activity.
+      </li>
+      <li>
+        <strong>Physiological Response to Stress:</strong>
+        Activation of the hypothalamic-pituitary-adrenal (HPA) axis leading to release of stress hormones like cortisol and <span data-quiz="adrenaline" data-hint="A hormone released during stress that increases heart rate and energy">adrenaline</span>.
+      </li>
+    </ul>
+
+    <h1>Nervous System</h1>
+
+    <ul>
+      <li>
+        The nervous system is divided into
+        <ul>
+          <li><span data-quiz="central">Central</span> nervous system (brain and spinal cord)</li>
+          <li><span data-quiz="peripheral">Peripheral</span> nervous system (all nerves outside).</li>
+        </ul>
+        which are responsible for controlling and coordinating body functions.
+      </li>
+      <li>
+        <strong>Neurons:</strong> Nerve cells consist of:
+        <ul>
+          <li><span data-quiz="dendrites">Dendrites</span> (receive signals)</li>
+          <li><span data-quiz="soma">Cell body/soma</span> (processes signals)</li>
+          <li><span data-quiz="axon">Axon</span> (transmits signals)</li>
+        </ul>
+        forming the basic functional unit of the nervous system.
+      </li>
+      <li>
+       Neurotransmitters are chemical messengers that transmit
+        signals across synapses between neurons, including:
+        <ul>
+          <li><span data-quiz="acetylcholine" data-hint="A neurotransmitter involved in muscle activation and memory">Acetylcholine</span></li>
+          <li><span data-quiz="dopamine" data-hint="A neurotransmitter associated with reward and pleasure">Dopamine</span></li>
+          <li><span data-quiz="serotonin" data-hint="A neurotransmitter that regulates mood and sleep">Serotonin</span></li>
+          <li><span data-quiz="GABA" data-hint="An inhibitory neurotransmitter that reduces neuronal excitability">GABA</span></li>
+          <li><span data-quiz="glutamate" data-hint="An excitatory neurotransmitter involved in learning and memory">Glutamate</span></li>
+        </ul>
+      </li>
+      <li>
+        <strong>Structure and function of the peripheral nervous system:</strong>
+        <ul>
+          <li><span data-quiz="somatic">Somatic</span> nervous system (voluntary motor control)</li>
+          <li><span data-quiz="autonomic">Autonomic</span> nervous system (involuntary functions like heart rate, digestion).</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Structure and function of the central nervous system:</strong>
+        <ul>
+            <li><span data-quiz="brain">Brain</span> (processing center for sensory information, emotions, cognition)</li>
+            <li><span data-quiz="spinal cord">Spinal cord</span> (transmits signals between brain and body, coordinates reflexes).</li>
+</ul>
+      </li>
+    </ul>
+    <h1>The brain</h1>
+    <ul>
+      <li>
+        <strong>Forebrain:</strong>
+        <ul>
+          <li>The <span data-quiz="cerebrum">Cerebrum</span> is involved in higher cognitive functions, and consciousness</li>
+          <li>The <span data-quiz="thalamus">Thalamus</span> is the sensory relay center</li>
+          <li>The <span data-quiz="hypothalamus">Hypothalamus</span> is responsible for homeostasis and hormone regulation.</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Midbrain:</strong>
+        <ul>
+          <li>Structures involved in <span data-quiz="visual" data-hint="Occipital lobe">visual</span> and <span data-quiz="auditory" data-hint="temporal lobe">auditory</span> reflexes, eye movement, and parts of the <span data-quiz="reticular formation">reticular formation</span> that regulate arousal and consciousness.</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Hindbrain:</strong> Includes the:
+        <ul>
+          <li><span data-quiz="cerebellum">Cerebellum</span> (coordination, balance)</li>
+          <li><span data-quiz="pons">Pons</span> (sleep, arousal, facial sensation)</li>
+          <li><span data-quiz="medulla oblongata">Medulla oblongata</span> (vital functions like breathing, heart rate)</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Lateralization of cortical functions:</strong> Specialization of
+        brain hemispheres:
+        <ul>
+          <li>
+            The <span data-quiz="left hemisphere">left hemisphere</span> is typically associated with language, analytical thinking, and logical reasoning.
+          </li>
+          <li>
+            The <span data-quiz="right hemisphere">right hemisphere</span> is associated with spatial processing, creativity, and holistic thinking.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <strong>Methods used in studying the brain:</strong>
+        <ul>
+          <li><span data-quiz="MRI">Functional MRI</span> which measures brain activity by detecting changes in blood flow.</li>
+          <li><span data-quiz="PET">PET scans</span> which use radioactive tracers to visualize brain activity.</li>
+          <li><span data-quiz="EEG">EEG</span> which records electrical activity of the brain through electrodes on the scalp.</li>
+          <li><span data-quiz="CT">CT scans</span> which provide detailed images of brain structure using X-rays.</li>
+          <li><span data-quiz="lesion studies">Lesion studies</span> which involve examining the effects of brain damage on behavior.</li>
+          <li><span data-quiz="electrophysiology">Electrophysiology</span> which measures electrical activity in the brain using electrodes.</li>
+        </ul>
+      </li>
+    </ul>
+    <h1>The spinal cord</h1>
+    <ul>
+      <li>
+        <strong>Structure and function of the spinal cord:</strong>
+        <ul>
+          <li><span data-quiz="gray ">Gray</span> matter (cell bodies) forms the central butterfly shape.</li>
+          <li><span data-quiz="white ">White</span> matter (myelinated axons) surrounds it, organizing ascending and descending pathways for sensory and motor information.</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Spinal reflexes</strong> are automatic responses that occur at the
+        spinal cord level without brain involvement and include:
+        <ul>
+            <li><span data-quiz="stretch reflex">Stretch reflex</span> (e.g., knee-jerk reflex)</li>
+            <li><span data-quiz="withdrawal reflex">Withdrawal reflex</span> (e.g., pulling back from a painful stimulus)</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h1>The endocrine system</h1>
+
+    <ul>
+      <li>
+        <strong>Components of the endocrine system:</strong>
+        <ul>
+        <li><span data-quiz="hypothalamus">Hypothalamus</span> (regulates pituitary gland through the HPA axis)</li>
+          <li><span data-quiz="pituitary gland">Pituitary gland</span> (master gland)</li>
+          <li><span data-quiz="thyroid gland">Thyroid gland</span> (metabolism)</li>
+          <li><span data-quiz="adrenal glands">Adrenal glands</span> (stress response)</li>
+          <li><span data-quiz="pancreas">Pancreas</span> (blood sugar)</li>
+          <li><span data-quiz="gonads">Gonads</span> (reproduction)</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Effects of the endocrine system on behavior:</strong> There are several hormones that influence behavior, including:
+        <ul>
+          <li><span data-quiz="adrenaline" data-hint="A hormone released during stress that increases heart rate and energy">Adrenaline</span> (increases arousal and energy)</li>
+          <li><span data-quiz="cortisol" data-hint="A stress hormone released during the fight-or-flight response">Cortisol</span> (regulates stress response)</li>
+          <li><span data-quiz="oxytocin" data-hint="A hormone involved in bonding and social behaviors">Oxytocin</span> (promotes bonding and social behaviors)</li>
+          <li><span data-quiz="testosterone" data-hint="A hormone associated with aggression and dominance">Testosterone</span> (associated with aggression and dominance)</li>
+          <li><span data-quiz="estrogen" data-hint="A hormone involved in reproductive functions">Estrogen</span> (involved in reproductive functions and mood regulation)</li>
+          <li><span data-quiz="melatonin" data-hint="A hormone that regulates sleep-wake cycles">Melatonin</span> (regulates sleep-wake cycles)</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h1>Behavioral Genetics</h1>
+
+    <ul>
+      <li>
+        <strong>Genes, temperament, and heredity:</strong> Genetic variations
+        influence personality traits, behavioral tendencies, and predispositions
+        to certain behaviors through inherited <span data-quiz="DNA">DNA</span> sequences.
+      </li>
+      <li>
+        <strong>Adaptive value of traits and behaviors:</strong> Behaviors and
+        traits that enhance survival and reproductive success are favored by
+        <span data-quiz="natural selection">natural selection</span> and become more common in populations.
+      </li>
+      <li>
+        <strong>Interaction between heredity and environmental influences:</strong>
+        Gene-environment interactions determine how <span data-quiz="genetic">genetic</span> predispositions are
+        expressed, with environment modulating genetic effects.
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>Regulatory genes and behavior:</strong> Genes that control the
+        expression of other genes, influencing when and where behavioral
+        programs are activated during <span data-quiz="development">development</span> and in response to <span data-quiz="stimuli">stimuli</span>.
+      </li>
+      <li>
+        <strong>Genetically based behavioral variation in natural populations:</strong>
+        <span data-quiz="genetic diversity">Genetic diversity</span> within species creates behavioral differences that may
+        be adaptive in different environments or circumstances.
+      </li>
+    </ul>
+
+    <h1>Human Physiological Development</h1>
+
+    <ul>
+      <li>
+        <strong>Prenatal development:</strong> Development from fertilization to
+        birth, including embryonic stage (organ formation) and fetal stage
+        (growth and maturation), with critical periods for normal development.
+        <ul>
+            <li><span data-quiz="fertilization">Fertilization</span>: The union of sperm and egg</li>
+            <ul>
+                <li><span data-quiz="acrosome reaction">Acrosome reaction</span>: Enzymes from the sperm penetrate the egg's outer layer</li>
+                <li><span data-quiz="cortical reaction">Cortical reaction</span>: Egg releases enzymes to prevent multiple sperm from entering</li>
+                <li><span data-quiz="zygote">Zygote</span>: The fertilized egg that undergoes cell division</li>
+                <li><span data-quiz="blastocyst">Blastocyst</span>: A hollow ball of cells that implants in the uterine wall</li>
+
+            </ul>
+          <li><span data-quiz="embryonic">Embryonic</span> stage: Major organs and structures form (weeks 3-8)</li>
+          <ul>
+            <li><span data-quiz="neural tube">Neural tube</span> forms (week 3)</li>
+            <li><span data-quiz="heart">Heart</span> begins to beat (week 4)</li>
+            <li><span data-quiz="limbs">Limbs</span> and facial features develop (weeks 5-8)</li>
+          </ul>
+          <li><span data-quiz="fetal">Fetal</span> stage: Growth and maturation of organs (weeks 9-40)</li>
+      </li>
+      </ul>
+      <li>
+        
+        <strong>Motor development:</strong> Progressive acquisition of movement
+        skills from basic reflexes in infancy to complex coordinated movements,
+        following predictable developmental sequences.
+        <ul>
+          <li><span data-quiz="reflexes">Reflexes</span> (e.g., grasping, rooting) are present at birth.</li>
+          <li><span data-quiz="gross motor skills">Gross motor skills</span> (e.g., crawling, walking) develop in early childhood.</li>
+          <li><span data-quiz="fine motor skills">Fine motor skills</span> (e.g., grasping small objects, writing) develop later in childhood.</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Developmental changes in adolescence:</strong> Puberty triggers
+        hormonal changes, physical growth spurts, sexual maturation, and
+        continued brain development, especially prefrontal cortex maturation.
+        <ul>
+            <li><span data-quiz="puberty">Puberty</span>: The period during which adolescents reach sexual maturity and become capable of reproduction.</li>
+
+        </ul>
+      </li>
+    </ul>
+
+    <h1>Biological Bases of Disorders & Therapies</h1>
+
+    <ul>
+      <li>
+        Biological bases of nervous system disorders (Schizophrenia,
+        Depression, Alzheimer’s disease, Parkinson’s disease)
+      </li>
+      <ul>
+        <li><span data-quiz="neurotransmitter">Neurotransmitter</span> imbalances: Abnormal levels of neurotransmitters (e.g., dopamine, serotonin) are implicated in these disorders.</li>
+        <li><span data-quiz="genetic">Genetic</span> factors: Hereditary components contribute to the risk of developing these conditions.</li>
+        <li>Brain structure abnormalities: Differences in brain anatomy (e.g., enlarged ventricles in schizophrenia) are observed.</li>
+      </ul>
+      <li>
+        Stem cell-based therapy to regenerate neurons in the central nervous
+        system:
+        <ul>
+          <li><span data-quiz="stem cells">Stem cells</span> can differentiate into various cell types, including neurons, offering potential for
+            repairing damaged brain tissue.</li>
+          <li>Research is ongoing to develop effective methods for delivering stem cells to the brain and
+            ensuring their survival and integration into existing neural networks.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h1>Biological Processes in Motivation</h1>
+
+    <ul>
+      <li>
+        <strong><span data-quiz="drives">Drives</span></strong>: Biological needs that create internal tension
+        and motivate behavior to restore homeostasis, operating through negative
+        feedback systems (e.g., hunger drive when blood glucose drops).
+      </li>
+      <li>
+        <strong><span data-quiz="incentives">Incentives</span></strong>: External stimuli or rewards that
+        motivate behavior by providing positive reinforcement (e.g., food, social approval).
+      </li>
+      <li>
+        <strong>Biological and sociocultural motivators that regulate behavior:</strong>
+        <ul>
+          <li>Hunger involves hypothalamic regulation and hormones:</li>
+          <ul>
+            <li><span data-quiz="ghrelin">Ghrelin</span> stimulates appetite</li>
+            <li><span data-quiz="leptin">Leptin</span> signals satiety</li>
+          </ul>
+          <li><span data-quiz="sex drive">Sex drive</span> involves hormones and brain reward systems;</li>
+          <li><span data-quiz="addiction">Addiction</span> involves dopamine pathways and neuroplasticity.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h1>Biological Processes in Learning</h1>
+
+    <ul>
+      <li>
+        <strong>Classical conditioning (Biological aspects):</strong>
+        <ul>Involves <span data-quiz="synaptic">synaptic</span> changes in brain circuits that link conditioned and
+        unconditioned stimuli, with the <span data-quiz="amygdala">amygdala</span> playing key roles in fear
+        conditioning.
+      </li>
+      <li>
+        <strong>Operant conditioning (Biological aspects):</strong> Relies on
+        brain <span data-quiz="reward">reward</span> systems that strengthen
+        behaviors followed by positive outcomes and weaken those followed by
+        negative outcomes.
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>Biological processes that affect associative learning:</strong>
+        Biological predispositions make some associations easier to learn:
+        <ul>
+          <li><span data-quiz="taste aversion">Taste aversion</span> is a learned avoidance of a particular food that has been associated with illness.</li>
+            <li><span data-quiz="preparedness">Preparedness</span> refers to the innate predisposition to learn certain associations more easily than others, such as associating snakes with fear.</li>
+            <li><span data-quiz="instinctive drift">Instinctive drift</span> causes learned behaviors to revert to species-typical patterns.</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Biological processes that affect observational learning:</strong>
+        <ul>
+          <li><span data-quiz="mirror neurons">Mirror neurons</span> are specialized neurons that fire when an individual performs an action and when they observe the same action performed by others, facilitating imitation and learning.</li>
+          <li><span data-quiz="social learning">Social learning</span> involves observing and imitating others, with mirror neurons playing a key role in understanding and replicating behaviors.</li>
+        </ul>
+      </li>
+    </ul>
+  </ul>
+
+<h1>Animal Social Behavior (Biological Aspects)</h1>
+
+    <ul>
+      <li>
+        <strong>Animal signals and communication:</strong>
+        <ul>
+          <li>Chemical signals known as <span data-quiz="pheromones">pheromones</span></li>
+          <li>Visual displays:
+            <ul>
+                <li><span data-quiz="coloration">Coloration</span> (e.g., bright colors in birds)</li>
+                <li><span data-quiz="body language">Body language</span> (e.g., tail position in dogs)</li>
+                <li><span data-quiz="mating displays">Mating displays</span> (e.g., courtship rituals)</li>
+                <li><span data-quiz="threat displays">Threat displays</span> (e.g., puffing up in pufferfish)</li>
+            </ul>
+          <li>Auditory signals</li>
+          <ul>
+            <li><span data-quiz="vocalizations">Vocalizations</span> (e.g., bird songs, wolf howls)</li>
+            <li><span data-quiz="calls">Calls</span> (e.g., alarm calls in primates)</li>
+          </ul>
+        </ul>
+      </li>
+      <li>
+        <strong>Biological explanations of social behavior in animals:</strong>
+        Social behaviors have evolutionary origins and genetic bases, often
+        serving functions like:
+        <ul>
+          <li><span data-quiz="mate selection">Mate selection</span>: where individuals choose mates based on specific traits.</li>
+          <li><span data-quiz="territory defense">Territory defense</span> involves behaviors that protect an area from intruders.</li>
+          <li><span data-quiz="predator avoidance">Predator avoidance</span> includes strategies to evade or deter predators.</li>
+          <li><span data-quiz="cooperative resource acquisition">Cooperative resource acquisition</span> refers to group behaviors that enhance foraging success.</li>
+        </ul>
+      </li>
+      <li>
+        <strong><span data-quiz="foraging behavior">Foraging behavior</span>:</strong> Food-seeking strategies that balance
+        energy costs and benefits, following optimal foraging theory to maximize
+        energy gain while minimizing risks and energy expenditure.
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>Applying game theory:</strong> Mathematical models used to
+        predict behavioral strategies in competitive and cooperative situations,
+        helping explain phenomena like aggression, cooperation, and resource
+        sharing.
+      </li>
+      <li>
+        <strong><span data-quiz="altruism">Altruism</span>:</strong> Behaviors that benefit others at a cost to
+        the individual, explained through kin selection (helping relatives) and
+        reciprocal altruism (helping others who may return the favor).
+      </li>
+      <li>
+        <strong><span data-quiz="inclusive fitness">Inclusive fitness</span>:</strong> An individual's total genetic
+        contribution to future generations, including both personal reproduction
+        and the reproduction of relatives (who share genes), explaining
+        altruistic behaviors.
+      </li>
+    </ul>
+  </body>
+</html>
