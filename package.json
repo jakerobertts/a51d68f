@@ -1,0 +1,25 @@
+{
+  "name": "percentyle.",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mcat-terms-database.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakerobertts/a51d68f.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/jakerobertts/a51d68f/issues"
+  },
+  "homepage": "https://github.com/jakerobertts/a51d68f#readme",
+  "dependencies": {
+    "dotenv": "^17.2.0",
+    "stripe": "^18.3.0"
+  }
+}
