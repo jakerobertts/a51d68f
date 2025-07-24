@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Percentyle</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://js.stripe.com/v3/"></script>
+    <script>
+      const stripe = Stripe(
+        "pk_test_51Rjp0SClmCXaWd9fxAgzLtawgxFHAPuARYHWR87vyxN4jbmnIym5YzgdGGGADXHGqkUV5PlW89R7AJssockWMWT400k1VtWeYp"
+      );
+    </script>
+  </head>
+
+  <body>
+    <div class="sliding-header-container">
+      <h1 class="sliding-header">Welcome to Percentyle</h1>
+      <h2 class="sliding-header">Over 1500 questions and 75 quizzes</h2>
+      <h3 class="sliding-header">Comprehensive coverage of all MCAT topics</h3>
+      <h4 class="sliding-header">Your schedule. Your progress.</h4>
+    </div>
+
+    <div class="bundle-grid" style="max-width: 600px; margin: 0 auto">
+      <div class="bundle-card" style="text-align: center">
+        <h2>Unlock Everything</h2>
+        <p>
+          Get unlimited access to all content and quizzes for a one-time
+          payment.
+        </p>
+        <div class="price" style="font-size: 2rem">$22.99</div>
+        <button
+          onclick="testPayment()"
+          class="purchase-button"
+          style="width: 100%; font-size: 1.2rem"
+        >
+          Unlock Everything
+        </button>
+      </div>
+    </div>
+
+    <script src="js/payment.js"></script>
+    <script>
+      // Animation delay for headers
+      document.querySelectorAll(".sliding-header").forEach((header, index) => {
+        header.style.animationDelay = `${index * 0.5}s`;
+      });
+    </script>
+  </body>
+</html>
