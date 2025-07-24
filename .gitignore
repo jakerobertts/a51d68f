@@ -2,19 +2,18 @@
 node_modules/
 package-lock.json
 
-# Environment files
+# Environment variables and secrets
 .env
-.env.local
+.env.*
 *.env
-stripe.env
+.env.local
+.env.development
+.env.production
 
 # System files
 .DS_Store
 .netlify/
-
-# Build output
 dist/
-build/
 
 # Logs
 *.log
