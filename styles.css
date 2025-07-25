@@ -307,28 +307,90 @@ body {
 
 @media (max-width: 600px) {
   body {
-    font-size: 1rem;
-    padding: 8px;
+    font-size: 1.05rem;
+    padding: 4px;
+    max-width: 100vw;
+    margin: 0;
+    background: #f5f6fa;
   }
   h1, h2, h3 {
-    font-size: 1.2em;
+    font-size: 1.15em;
     margin: 0.5em 0;
+    text-align: center;
   }
   ul {
-    padding-left: 1em;
+    padding-left: 0.5em;
+    font-size: 1em;
+  }
+  li {
+    font-size: 1em;
+    padding: 8px 6px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    line-height: 1.5;
   }
   .score, .sliding-header-container, .bundle-grid, .bundle-card {
-    max-width: 100%;
-    padding: 0 8px;
+    max-width: 100vw;
+    padding: 0 4px;
     box-sizing: border-box;
+  }
+  .quiz-word {
+    font-size: 1em;
+    padding: 3px 8px;
+    min-width: 40px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    margin: 2px 0;
+    display: inline-block;
+    background-color: #e0e0e0;
+    color: #333;
+  }
+  .quiz-word.revealed {
+    background-color: #3fe03f;
+    color: #155724;
+  }
+  .quiz-word.incorrect {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  .answer-input {
+    font-size: 1em;
+    padding: 6px 10px;
+    min-width: 80px;
+    border-radius: 4px;
+    width: 90vw;
+    max-width: 220px;
+    margin: 4px 0;
   }
   button, .purchase-button {
     font-size: 1em;
-    padding: 12px 0;
+    padding: 14px 0;
     width: 100%;
+    border-radius: 6px;
+    margin-top: 8px;
   }
   img, svg {
-    max-width: 100%;
+    max-width: 100vw;
     height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  .left-sidebar {
+    position: static;
+    width: 100vw;
+    height: auto;
+    box-shadow: none;
+    border-right: none;
+    padding: 8px 0;
+    font-size: 1em;
+    z-index: 1;
+  }
+  .category-header {
+    font-size: 1em;
+    padding: 8px;
+  }
+  .category-items {
+    max-height: 300px;
+    overflow-y: auto;
   }
 }
