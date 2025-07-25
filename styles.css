@@ -304,3 +304,31 @@ body {
 .purchase-button:hover {
   background: #45a049;
 }
+
+@media (max-width: 600px) {
+  body {
+    font-size: 1rem;
+    padding: 8px;
+  }
+  h1, h2, h3 {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+  }
+  ul {
+    padding-left: 1em;
+  }
+  .score, .sliding-header-container, .bundle-grid, .bundle-card {
+    max-width: 100%;
+    padding: 0 8px;
+    box-sizing: border-box;
+  }
+  button, .purchase-button {
+    font-size: 1em;
+    padding: 12px 0;
+    width: 100%;
+  }
+  img, svg {
+    max-width: 100%;
+    height: auto;
+  }
+}
