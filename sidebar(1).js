@@ -196,19 +196,6 @@ function createSidebar(activePage = '') {
         border-left: 3px solidrgb(154, 154, 154);
         font-weight: bold;
       }
-      .sidebar-show-btn {
-        position: fixed;
-        top: 16px;
-        left: 16px;
-        z-index: 1002;
-        background: #007acc;
-        color: #fff;
-        border: none;
-        border-radius: 4px;
-        padding: 8px 16px;
-        cursor: pointer;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      }
     </style>
   `;
   return sidebarHTML;
@@ -236,33 +223,7 @@ function expandActiveCategory(activePage) {
   });
 }
 
-// Add sidebar show button and logic
-function addSidebarShowButton() {
-  const showBtn = document.createElement('button');
-  showBtn.textContent = 'Show Sidebar';
-  showBtn.className = 'sidebar-show-btn';
-  showBtn.style.position = 'fixed';
-  showBtn.style.top = '16px';
-  showBtn.style.left = '16px';
-  showBtn.style.zIndex = '1002';
-  showBtn.style.background = '#007acc';
-  showBtn.style.color = '#fff';
-  showBtn.style.border = 'none';
-  showBtn.style.borderRadius = '4px';
-  showBtn.style.padding = '8px 16px';
-  showBtn.style.cursor = 'pointer';
-  showBtn.style.boxShadow = '0 2px 8px rgba(0,0,0,0.1)';
-  document.body.appendChild(showBtn);
-  showBtn.addEventListener('click', function() {
-    const sidebar = document.querySelector('.left-sidebar');
-    if (sidebar) {
-      sidebar.style.display = 'block';
-      showBtn.style.display = 'none';
-    }
-  });
-}
-
-// Modify initSidebar to hide sidebar by default and add show button
+// Function to inject sidebar into the page
 function initSidebar() {
   // Get current page filename
   const currentPage = window.location.pathname.split('/').pop();
@@ -276,14 +237,7 @@ function initSidebar() {
   
   // Replace with generated sidebar
   sidebarContainer.outerHTML = createSidebar(currentPage);
-  // Hide sidebar by default
-  setTimeout(() => {
-    const sidebar = document.querySelector('.left-sidebar');
-    if (sidebar) {
-      sidebar.style.display = 'none';
-    }
-    addSidebarShowButton();
-  }, 100);
+  
   // Expand the category containing the active page
   expandActiveCategory(currentPage);
 }
