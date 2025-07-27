@@ -22,7 +22,6 @@ const sidebarCategories = [
       // Enzymes & Regulation
       { href: "Enzyme(1).html", text: "Enzyme Function & Kinetics" },
       { href: "Co(1).html", text: "Cofactors" },
-      { href: "binding(1).html", text: "Binding" },
       { href: "feedback(1).html", text: "Feedback Regulation" },
       { href: "regulation(1).html", text: "Regulation" },
 

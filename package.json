@@ -4,7 +4,8 @@
   "description": "",
   "main": "mcat-terms-database.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -19,8 +20,14 @@
   },
   "homepage": "https://github.com/jakerobertts/a51d68f#readme",
   "dependencies": {
+    "@auth0/auth0-spa-js": "^2.3.0",
+    "@memberstack/dom": "^1.9.33",
     "dotenv": "^17.2.1",
+    "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
     "stripe": "^18.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }

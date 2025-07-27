@@ -160,6 +160,13 @@ div ul {
   font-size: large;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+p {
+  background-color: #2a2a2a;
+  color: white;
+  padding: 5px 5px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
 li {
   margin-bottom: 10px;
   line-height: 2;
