@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form id="loginForm">
+      <input type="email" id="email" placeholder="Email" />
+      <input type="password" id="password" placeholder="Password" />
+      <button type="submit" id="loginButton">Log In</button>
+      <div id="loginError" style="display: none; color: red"></div>
+    </form>
+    <script>
+      document
+        .getElementById("loginForm")
+        .addEventListener("submit", async (event) => {
+          event.preventDefault();
+          const loginButton = document.getElementById("loginButton");
+          const errorDiv = document.getElementById("loginError");
+
+          // Disable button and show loading state
+          loginButton.disabled = true;
+          loginButton.textContent = "Logging in...";
+          errorDiv.style.display = "none";
+
+          // Get form values
+          const email = document.getElementById("email").value;
+          const password = document.getElementById("password").value;
+          try {
+            const member = await memberstack.loginMemberEmailPassword({
+              email,
+              password,
+            });
+
+            // If login is successful, redirect to dashboard
+            window.location.href = "organs.html";
+          } catch (error) {
+            errorDiv.textContent =
+              error.message || "Login failed. Please check your credentials.";
+            errorDiv.style.display = "block";
+          } finally {
+            // Reset button state
+            loginButton.disabled = false;
+            loginButton.textContent = "Log In";
+          }
+        });
+    </script>
+  </body>
+</html>
