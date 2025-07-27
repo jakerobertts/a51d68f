@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Figures</title>
     <link rel="stylesheet" href="styles.css" />
     <style>
@@ -78,8 +78,7 @@
 
     <div class="container">
       <div class="content">
-        <div class="score-display">
-        </div>
+        <div class="score-display"></div>
 
         <h1>MCAT Figures and Diagrams</h1>
 
@@ -254,9 +253,9 @@
           </div>
           <li>
             The figure above shows a phase diagram. The white area to the left
-            of the fork represents the solid phase. The white area inside the
-            fork represents the liquid phase. The white area to the right of the
-            fork represents the gas phase.
+            of the fork represents the <data phase="solid">solid phase</data>. The white area inside the
+            fork represents the <data phase="liquid">liquid phase</data>. The white area to the right of the
+            fork represents the <data phase="gas">gas phase</data>.
           </li>
           <li>
             <span data-quiz="vaporization">Vaporization</span>: Liquid to Gas
@@ -274,6 +273,7 @@
       </div>
     </div>
     <h1>Equations</h1>
+    <ul>
     <li>
       $$W = F \cdot d \cdot \cos \theta$$ Find the
       <span data-quiz="work">work</span> done by a force on an object over a
@@ -543,8 +543,17 @@
       $$Q_{elec} = nF$$ Find the electric charge using the number of
       <span data-quiz="moles">moles</span> and Faraday's constant.
     </li>
+    </ul>
 
-<script src="sidebar(1).js"></script>
-<script data-memberstack-app="app_cmdku6jn1009m0xx9f1i40039" src="https://static.memberstack.com/scripts/v1/memberstack.js"></script>
+    <!-- Add this to your HTML file to enable MathJax -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <script src="sidebar(1).js"></script>
+    
+    <script src="script.js"></script>
+    <script
+      data-memberstack-app="app_cmdku6jn1009m0xx9f1i40039"
+      src="https://static.memberstack.com/scripts/v1/memberstack.js"
+    ></script>
   </body>
 </html>
