@@ -7,83 +7,67 @@
     <link rel="stylesheet" href="styles.css" />
     <script src="https://js.stripe.com/v3/"></script>
     <script src="sidebar.js"></script>
-
     <script>
       const stripe = Stripe(
         "pk_test_51Rjp0SClmCXaWd9fxAgzLtawgxFHAPuARYHWR87vyxN4jbmnIym5YzgdGGGADXHGqkUV5PlW89R7AJssockWMWT400k1VtWeYp"
       );
     </script>
+    <style>
+      .center-container {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 2rem;
+        text-align: center;
+      }
+
+      .sliding-header-container {
+        margin-bottom: 2rem;
+      }
+    </style>
   </head>
-
   <body>
-    <div class="sliding-header-container">
-      <h1 class="sliding-header">Welcome.</h1>
-      <h2 class="sliding-header">Get started with your MCAT journey.</h2>
-      <h3 class="sliding-header">Comprehensive coverage of all MCAT topics.</h3>
+    <div class="center-container">
+      <div class="sliding-header-container">
+        <h1 class="sliding-header">Welcome to Percentyle.</h1>
+        <h2 class="sliding-header">Get started with your MCAT journey.</h2>
+        <h3 class="sliding-header">
+          Comprehensive coverage of all MCAT topics.
+        </h3>
+      </div>
+      <video controls width="600" style="max-width: 100%">
+        <source src="Your paragraph text.mp4" type="video/mp4" />
+      </video>
+      <br />
+      <button
+        data-ms-price:add="prc_22-99-vh9n09g2"
+        data-ms-modal="signup"
+        class="purchase-button"
+        style="margin-top: 2rem"
+      >
+        Start Studying - Sign Up or Login
+      </button>
+      <div style="margin: 2rem 0">
+        <h2>Or</h2>
+        <a class="purchase-button modern-link" href="organs(1).html">
+          <span></span> Access View Only
+        </a>
+        <p style="margin-top: 1rem">
+          Note: The sidebar items do not give you access to free content. To
+          access view only, you must click here.
+        </p>
+      </div>
     </div>
-
-        </div>
-        <div style="text-align:center; margin:2rem 0;">
-  <video controls width="600">
-    <source src="Your paragraph text.mp4" type="video/mp4">
-  </video>
-</div>
     <script
       data-memberstack-app="app_cmdku6jn1009m0xx9f1i40039"
       src="https://static.memberstack.com/scripts/v1/memberstack.js"
+      defer
     ></script>
-
-      </form>
-
-    <button
-      data-ms-price:add="prc_22-99-vh9n09g2"
-      data-ms-modal="signup"
-      class="purchase-button"
-    >
-      Start Studying - Sign Up or Login
-    </button>
-</div>
-      </div>
-    </div>
-<a class="purchase-button modern-link" href="organs(1).html">
-  <span></span> View MCAT Content
-</a>
-<script src="js/payment.js" defer></script>
-<style>
-  .modern-link {
-    display: inline-block;
-    padding: 0.75em 1.5em;
-    background: linear-gradient(90deg, #000000 0%, #000000 100%);
-    color: #fff;
-    font-weight: 600;
-    border-radius: 30px;
-    text-decoration: none;
-    box-shadow: 0 4px 16px rgba(79,140,255,0.15);
-    transition: background 0.3s, transform 0.2s;
-    margin-top: 1.5rem;
-    font-size: 1.1rem;
-    width: 100%;
-  }
-  .modern-link:hover {
-    background: linear-gradient(90deg, #585858 0%, #4f4f4f 100%);
-    transform: translateY(-2px) scale(1.04);
-  }
-  .modern-link span {
-    margin-right: 0.5em;
-    font-size: 1.2em;
-    vertical-align: middle;
-  }
-</style>
-<script>
-  // Animation delay for headers
-  document.querySelectorAll(".sliding-header").forEach((header, index) => {
-    header.style.animationDelay = `${index * 0.5}s`;
-  });
-</script>
-<script
-  data-memberstack-app="app_cmdku6jn1009m0xx9f1i40039"
-  src="https://static.memberstack.com/scripts/v1/memberstack.js"
-  defer
-></script>
-</body>
+    <script src="js/payment.js" defer></script>
+    <script>
+      // Animation delay for headers
+      document.querySelectorAll(".sliding-header").forEach((header, index) => {
+        header.style.animationDelay = `${index * 0.5}s`;
+      });
+    </script>
+  </body>
 </html>
