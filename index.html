@@ -6,7 +6,7 @@
     <title>Welcome to Percentyle</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="https://js.stripe.com/v3/"></script>
-    <script src="sidebar(1).js"></script>
+    <script src="sidebar.js"></script>
 
     <script>
       const stripe = Stripe(
@@ -16,24 +16,53 @@
   </head>
 
   <body>
+<div data-ms-content="paid-version">
     <div class="sliding-header-container">
       <h1 class="sliding-header">Percentyle</h1>
       <h2 class="sliding-header">Get started with your MCAT journey.</h2>
       <h3 class="sliding-header">Comprehensive coverage of all MCAT topics</h3>
     </div>
-
+    <form data-ms-form="login">
+      <label>Email:</label>
+      <input
+        type="email"
+        data-ms-member="email"
+        placeholder="Email"
+        title="Email"
+      />
+      <input
+        type="password"
+        data-ms-member="password"
+        placeholder="Password"
+        title="Password"
+      />
+      <button type="submit">Log In</button>
+    </form>
+        <form data-ms-form="signup">
+      <input
+        type="email"
+        name="email"
+        data-ms-member="email"
+        placeholder="Email"
+      />
+      <input
+        type="password"
+        name="password"
+        data-ms-member="password"
+        placeholder="Password"
+      />
+      <button type="submit">Sign up</button>
+    </form>
+    <script
+      data-memberstack-app="app_cmdku6jn1009m0xx9f1i40039"
+      src="https://static.memberstack.com/scripts/v1/memberstack.js"
+    ></script>
     <div class="bundle-grid" style="max-width: 600px; margin: 0 auto">
       <div class="bundle-card" style="text-align: center">
         <h2>Test what you know. Identify your weaknesses.</h2>
         <p>1500+ questions, 75+ topics, and local progress storage.</p>
         <div class="price" style="font-size: 2rem">$22.99</div>
-        <button
-          onclick="testPayment()"
-          class="purchase-button"
-          style="width: 100%; font-size: 1.2rem"
-        >
-          Get started with premium
-        </button>
+        
       </div>
     </div>
 
@@ -48,5 +77,8 @@
       class="free-version"
       style="text-align: center; margin-top: 2rem"
     ></div>
+
+    </form>
+</div>
   </body>
 </html>

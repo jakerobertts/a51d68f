@@ -8,6 +8,7 @@
     <head> </head>
   </head>
   <body>
+<div data-ms-content="paid-version">
     <!-- Left sidebar navigation -->
 
     <div class="score">
@@ -166,6 +167,19 @@
     </p>
     <script src="sidebar.js"></script>
     <script src="script.js"></script>
-<script src="https://api.memberstack.com/static/memberstack.js?custom"></script>
+    <script src="https://api.memberstack.com/static/memberstack.js?custom"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (window.MemberStack) {
+          window.MemberStack.onReady.then(function (member) {
+            // If not logged in or not a paid member, redirect to index.html
+            if (!member.loggedIn || !member.membership) {
+              window.location.href = "/index.html";
+            }
+          });
+        }
+      });
+    </script>
+</div>
   </body>
 </html>
