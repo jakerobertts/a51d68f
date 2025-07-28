@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+<link rel="icon" type="image/png" href="Screenshot 2025-07-22 at 2.51.56 PM.png" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MCAT Content Review & Practice | Percentyle</title>
+    <title>Percentyle</title>
+<link rel="icon" type="image/png" href="Screenshot 2025-07-22 at 2.51.56 PM.png" />
     <meta
       name="description"
       content="Comprehensive MCAT content review, quizzes, and progress tracking. Start studying smarter with Percentyle."
@@ -44,20 +46,45 @@
       a:hover {
         text-decoration: underline;
       }
+      .view-only-link {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        padding: 0.4rem 1rem;
+        background: linear-gradient(90deg, #6366f1 0%, #818cf8 100%);
+        color: #fff;
+        border-radius: 0.5rem;
+        font-weight: 600;
+        font-size: 0.95rem;
+        box-shadow: 0 2px 8px rgba(60,72,100,0.10);
+        transition: background 0.2s, box-shadow 0.2s;
+        border: none;
+        z-index: 1000;
+        text-align: center;
+      }
     </style>
   </head>
   <body>
-    <div class="center-container">
-      <div class="sliding-header-container">
-        <h2 class="sliding-header">Get started with your MCAT journey.</h2>
-        <h3 class="sliding-header">
-          Comprehensive coverage of all MCAT topics.
-        </h3>
+  
+        <div class="hero-section" style="padding: 3rem 1rem; background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%); border-radius: 1.5rem; box-shadow: 0 4px 24px rgba(60,72,100,0.08); margin-bottom: 2rem;">
+          <h1 class="sliding-header" style="font-size: 2.5rem; font-weight: 800; color: #000000; margin-bottom: 1rem; letter-spacing: -1px;">
+            Welcome to Percentyle. Get started with your MCAT journey.
+          </h1>
+          <h2 class="sliding-header" style="font-size: 1.5rem; font-weight: 500; color: #000000; margin-bottom: 0;">
+            Comprehensive coverage.
+          </h2>
+        </div>
       </div>
-      <video autoplay muted loop width="600" style="max-width: 100%">
-        <source src="pp.mp4" type="video/mp4" />
-      </video>
+<img src="Screenshot 2025-07-28 at 4.05.16 PM.png" alt="MCAT Study Resources" style="max-width: 100%; height: auto;" />
       <br />
+      <h1>   Your progress. Your schedule.</h1>
+      <br/>
+      <img src="Screenshot 2025-07-28 at 4.18.50 PM.png" alt="MCAT Study Resources" style="max-width: 100%; height: auto;" />
+      <br />
+      <h1>   Fill-in-the-blank questions.</h1>
+      <img src="Screenshot 2025-07-22 at 5.24.27 PM.png" alt="MCAT Study Resources" style="max-width: 100%; height: auto;" />
+      <br />
+      <h1>Over 300 MCAT topics.</h1>
       <button
         data-ms-price:add="prc_22-99-vh9n09g2"
         data-ms-modal="signup"
@@ -67,16 +94,16 @@
         Start Studying - Sign Up or Login
       </button>
       <div style="margin: 2rem 0">
-        <h2>Or</h2>
         <br />
-        <a class="purchase-button modern-link" href="organs(1).html">
-          <span></span> Access View Only
+        <a
+          class="view-only-link"
+          href="organs(1).html"
+          title="Access View Only Content"
+          style="position: absolute; top: 10px; right: 10px; padding: 0.5rem 0.5rem; font-size: 0.9rem;"
+        >
+          Access View Only Content
         </a>
-        <br /><br />
-        <p style="margin-top: 1rem">
-          Note: The sidebar items do not give you access to free content. To
-          access view only, you must click here.
-        </p>
+       
       </div>
     </div>
     <script
@@ -91,10 +118,23 @@
         header.style.animationDelay = `${index * 0.5}s`;
       });
     </script>
+    <p><strong>Note: </strong>You must be on the same device and same browser to save all quiz data.</p>
     <li>
       By using this site, you agree to our
       <a href="terms.html">Terms of Service</a> and
       <a href="privacy.html">Privacy Policy</a>.
     </li>
+    <style>
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 200px;
+        width: 200px;
+        border-radius: 10px;
+        border: 2px solid #000000;
+        object-fit: cover;
+      }
+    </style>
   </body>
 </html>

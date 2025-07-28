@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+<link rel="icon" type="image/png" href="Screenshot 2025-07-22 at 2.51.56 PM.png" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Insights</title>
@@ -87,6 +88,7 @@
         ></div>
       </div>
     </div>
+    <div id="myDiv" style="margin: 40px auto; max-width: 600px"></div>
 
     <script>
       let answeredCount = 0;
@@ -137,6 +139,154 @@
       ).toFixed(2);
       progressBar.style.width = `${progressPercentage}%`;
       progressLabel.textContent = `${progressPercentage}% completed`;
+    </script>
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script>
+      // 1. Map categories to their corresponding HTML filenames (PAGE_IDs)
+      const categoryToPage = [
+        { name: "Organ Systems", page: "organs" },
+        { name: "Amino Acids & Proteins", page: "aa" },
+        { name: "Carbohydrates", page: "carbohydrates" },
+        { name: "Nucleotides & Nucleic Acids", page: "nucleotides" },
+        { name: "Fats & Lipids", page: "fats" },
+        {
+          name: "Phospholipids, Phosphatids, & Other Fat Derivatives",
+          page: "phospholipids",
+        },
+        { name: "Enzyme Function & Kinetics", page: "Enzyme" },
+        { name: "Cofactors", page: "Co" },
+        { name: "Feedback Regulation", page: "feedback" },
+        { name: "Regulation", page: "regulation" },
+        { name: "Denaturation", page: "dnarna" },
+        { name: "DNA Replication", page: "replication" },
+        { name: "Transcription", page: "transcription" },
+        { name: "Translation", page: "translation" },
+        { name: "The Triplet Code", page: "code" },
+        {
+          name: "Post-Transcriptional Modifications",
+          page: "post-transcriptional",
+        },
+        { name: "Coiling, Packing, Telomeres & Centromeres", page: "coiling" },
+        { name: "DNA in Prokaryotes & Eukaryotes", page: "DNApro" },
+        { name: "Alleles & Genes", page: "alleles" },
+        { name: "Sex-Linked Inheritance", page: "sexlinked" },
+        { name: "Evolution & Genetics", page: "evolution" },
+        { name: "Gene Engineering", page: "genengine" },
+        { name: "Ethics in Genetics", page: "ethics" },
+        { name: "Bioenergetics & Thermodynamics", page: "bioenergetics" },
+        { name: "Phosphorylation & Energy Transfer", page: "phosphorylation" },
+        { name: "Bio Redox", page: "redox" },
+        {
+          name: "Half-reactions, Flavoproteins, & Electron Carriers",
+          page: "half",
+        },
+        { name: "Glycolysis & Pyruvate Processing", page: "glycolysis" },
+        { name: "Feeder Pathways & Gluconeogenesis", page: "feeder" },
+        { name: "Citric Acid Cycle", page: "citric" },
+        { name: "Oxidative Phosphorylation", page: "oxidative" },
+        { name: "Electron Transport Chain", page: "etc" },
+        { name: "Metabolic Regulation", page: "metabolic" },
+        { name: "Errors of Metabolism", page: "metabolism" },
+        { name: "Cell Membrane Structure & Function", page: "cellmembrane" },
+        { name: "Cell Junctions & Communication", page: "junctions" },
+        { name: "Organelles & Their Functions", page: "organelles" },
+        { name: "Cell Cycle & Division", page: "cellcycle" },
+        { name: "Apoptosis & Cell Death", page: "apoptosis" },
+        { name: "Mitosis & Meiosis Overview", page: "mitosis" },
+        { name: "Stem Cells & Differentiation", page: "stemcells" },
+        { name: "Gameteogenesis & Fertilization", page: "gameteogenesis" },
+        {
+          name: "Connective Tissue & Extracellular Matrix",
+          page: "connective",
+        },
+        { name: "Prokaryotic Organelles & Motility", page: "prokmot" },
+        { name: "Viruses & Other Infectious Agents", page: "viruses" },
+        { name: "Immunology", page: "immunology" },
+        { name: "Cancer Biology", page: "cancer" },
+        { name: "Hormones & the Endocrine System", page: "hormones" },
+        { name: "Signal Transduction", page: "signal" },
+        { name: "Oxidative Stress & Mitochondria", page: "oxstress" },
+        { name: "Separation Techniques", page: "separation" },
+        { name: "Isoelectric Point", page: "isoelectric" },
+        { name: "Electrophoresis", page: "electrophoresis" },
+        { name: "Mechanics", page: "mechanics" },
+        { name: "Periodic Motion", page: "periodicmotion" },
+        { name: "Fluids", page: "fluids" },
+        { name: "Thermodynamics", page: "thermodynamics" },
+        { name: "Electrostatics", page: "electrostatics" },
+        { name: "Optics", page: "optics" },
+        { name: "Solutions", page: "solutions" },
+        { name: "Acids & Bases", page: "acidsbases" },
+        { name: "Gas Phase", page: "gasphase" },
+        { name: "Atomic Structure", page: "atomicstructure" },
+        { name: "Stoichiometry", page: "stoichiometry" },
+        { name: "Bonding & Molecular Structure", page: "bonding" },
+        { name: "Stereochemistry", page: "sterics" },
+        { name: "Functional Groups", page: "functionalgroups" },
+        { name: "Spectroscopy", page: "spectro" },
+        { name: "Biological Foundations of Behavior", page: "Biological" },
+        { name: "All Psychological and Social Theories", page: "Theories" },
+        { name: "Psychological Concepts", page: "psych" },
+        { name: "Sociological Concepts", page: "social" },
+        { name: "Figures + Equations", page: "figures" },
+      ];
+
+      // 2. Build the correct array from localStorage
+      var correct = categoryToPage.map((cat) => {
+        const key = `quizProgress_${cat.page}`;
+        const progress = JSON.parse(localStorage.getItem(key) || "{}");
+        return typeof progress.score === "number" ? progress.score : 0;
+      });
+
+      // 3. (Optional) Build the incorrect array if you want to show it
+      var incorrect = categoryToPage.map((cat) => {
+        const key = `quizProgress_${cat.page}`;
+        const progress = JSON.parse(localStorage.getItem(key) || "{}");
+        if (
+          progress &&
+          Array.isArray(progress.answeredQuestions) &&
+          typeof progress.score === "number"
+        ) {
+          return progress.answeredQuestions.length - progress.score;
+        }
+        return 0;
+      });
+
+      // 4. Use the category names for the x-axis
+      var categories = categoryToPage.map((cat) => cat.name);
+
+      // 5. Plotly code (update your existing code)
+      var trace1 = {
+        x: categories,
+        y: correct,
+        name: "Correct",
+        type: "bar",
+        marker: { color: "rgba(100, 200, 102, 0.7)" },
+      };
+      var trace2 = {
+        x: categories,
+        y: incorrect,
+        name: "Incorrect",
+        type: "bar",
+        marker: { color: "rgba(255, 100, 102, 0.7)" },
+      };
+
+      var data = [trace1, trace2];
+      var layout = {
+        barmode: "group",
+        title: { text: "Questions Answered by Category" },
+        xaxis: {
+          title: { text: "Category" },
+          tickfont: { size: 9 },
+          tickangle: 60,
+          automargin: true,
+        },
+        yaxis: { title: { text: "Count" } },
+        bargap: 0.2,
+      };
+
+      Plotly.newPlot("myDiv", data, layout);
     </script>
     <script src="sidebar.js"></script>
   </body>
