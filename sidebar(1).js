@@ -130,7 +130,7 @@ const sidebarCategories = [
 function createSidebar(activePage = '') {
   const sidebarHTML = `
     <div class="left-sidebar">
-      <h3>MCAT Topics</h3>
+      <h3>MCAT Topics - View Only</h3>
       ${sidebarCategories.map(category => `
         <div class="category-section">
           <div class="category-header" onclick="toggleCategory('${category.title.replace(/\s+/g, '-').toLowerCase()}')">${category.title}</div>
