@@ -417,3 +417,12 @@ body {
     overflow-y: auto;
   }
 }
+
+li.collapsing {
+  max-height: 0;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: max-height 0.8s cubic-bezier(.2,0,.2,1), opacity 0.5s, margin 0.5s, padding 0.5s;
+}

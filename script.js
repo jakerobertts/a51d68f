@@ -1,4 +1,3 @@
-
 let score = 0;
 //
 let totalQuestions = 0;
@@ -246,6 +245,7 @@ function promptAnswer(element, event) {
         answeredQuestions.add(questionId);
         updateScoreAndSave();
       }
+      checkAndCollapseLi(element); // <-- Add this line
       } else if (userAnswer !== '') {
         element.classList.add('incorrect');
         element.classList.remove('revealed');
@@ -396,3 +396,17 @@ function resetProgress() {
 }
 //Unique quiz progress in each page
 // Quiz progress is stored uniquely for each page using PAGE_ID in localStorage keys
+function checkAndCollapseLi(element) {
+  const li = element.closest('li');
+  if (!li) return;
+  // Check if all [data-quiz] in this li have class 'revealed'
+  const allRevealed = Array.from(li.querySelectorAll('[data-quiz]'))
+    .every(el => el.classList.contains('revealed'));
+  if (allRevealed) {
+    li.classList.add('collapsing');
+    setTimeout(() => {
+      li.style.display = 'none';
+    }, 400); // Match the transition duration
+  }
+  checkAndCollapseLi(element);
+}
