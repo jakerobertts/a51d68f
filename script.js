@@ -72,13 +72,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Replace content with blank underscores
-    const blankLength = Math.max(answer.length, 4); // Minimum 4 underscores
+    const blankLength = Math.max(answer.length, 1); // Minimum 1 underscore
     element.innerHTML = '_'.repeat(blankLength);
     element.style.fontFamily = 'monospace';
     element.style.letterSpacing = '2px';
     element.style.padding = '2px 6px';
     element.style.backgroundColor = '#f0f0f0';
-    element.style.border = '1px solid #ccc';
+    element.style.border = '1px solid black';
     element.style.borderRadius = '3px';
     element.style.display = 'inline-block';
     element.style.minWidth = '50px';
