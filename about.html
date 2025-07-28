@@ -32,8 +32,31 @@
   </body>
 
   <footer>
-    <a href="mailto:percentyle123@gmail.com">percentyle123@gmail.com</a>
+    <div class="footer-contact">
+      <span>Contact: </span>
+      <a href="mailto:percentyle123@gmail.com">percentyle123@gmail.com</a>
+    </div>
+    <style>
+      .footer-contact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5em;
+        padding: 1em 0;
+        font-size: 1.1em;
+        background: #f8f9fa;
+        border-top: 1px solid #e0e0e0;
+      }
+      .footer-contact a {
+        color: #007bff;
+        text-decoration: none;
+        transition: color 0.2s;
+      }
+      .footer-contact a:hover {
+        color: #0056b3;
+        text-decoration: underline;
+      }
+    </style>
   </footer>
   <script src="sidebar.js"></script>
-  <script src="script.js"></script>
 </html>
