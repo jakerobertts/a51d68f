@@ -55,7 +55,16 @@ body {
 .nav-item.active {
   border-color: #535353;
 }
-
+.nav-score {
+  float: right;
+  color: #0078d4;
+  font-weight: bold;
+  background: #e8f4fd;
+  border-radius: 6px;
+  padding: 2px 8px;
+  margin-left: 8px;
+  font-size: 12px;
+}
 
 
 
@@ -101,14 +110,20 @@ body {
 
 .score {
   position: fixed;
-  top: 20px;
-  right: 20px;
-  background-color: #333333;
+  right: 15%;
+  transform: translateX(100%);
+  z-index: 1;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
   color: white;
-  padding: 10px;
+  background-color: #16213e;
+  padding: 5px;
   border-radius: 5px;
-  font-weight: bold;
-  border: 1px solid #555555;
+}
+
+.quiz-container {
+  position: relative;
+  z-index: 0;
 }
 
 .feedback {

@@ -135,9 +135,15 @@ function createSidebar(activePage = '') {
         <div class="category-section">
           <div class="category-header" onclick="toggleCategory('${category.title.replace(/\s+/g, '-').toLowerCase()}')">${category.title}</div>
           <div class="category-items" id="${category.title.replace(/\s+/g, '-').toLowerCase()}">
-            ${category.items.map(item => 
-              `<a href="${item.href}" class="nav-item${item.href === activePage ? ' active' : ''}">${item.text}</a>`
-            ).join('')}
+            ${category.items.map(item => {
+              // Try to get score from localStorage using a key like "score-figures.html"
+              const scoreKey = `score-${item.href}`;
+              const score = localStorage.getItem(scoreKey);
+              return `<a href="${item.href}" class="nav-item${item.href === activePage ? ' active' : ''}">
+                        ${item.text}
+                        <span class="nav-score" style="float:right; color:#0078d4; font-weight:bold;">${score ? score : ''}</span>
+                      </a>`;
+            }).join('')}
           </div>
         </div>
       `).join('')}
