@@ -445,6 +445,9 @@ body {
     max-height: 300px;
     overflow-y: auto;
   }
+  .autocomplete-dropdown {
+    display: none !important;
+  }
 }
 
 li.collapsing {
@@ -460,4 +463,16 @@ li.collapsing {
     margin 0.3s,
     padding 0.3s,
     transform 0.5s cubic-bezier(.2,0,.2,1);
+}
+
+.autocomplete-dropdown div {
+  border: none !important;
+  background: white;
+  display: block;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 1em;
+}
+.autocomplete-dropdown div:hover {
+  background: #f0f8ff;
 }
