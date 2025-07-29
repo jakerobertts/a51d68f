@@ -86,15 +86,7 @@
       <br />
       <h1>Over 300 MCAT topics.</h1>
       <!-- $22.99/month option -->
-<button
-  data-ms-price:add="prc_22-99-vh9n09g2"
-  data-ms-modal="signup"
-  class="purchase-button"
-  style="margin-top: 2rem"
->
-  Enjoy lifetime access
 
-</button>
 <!-- $8.99/month option -->
 <button
   data-ms-price:add="prc_monthly-nrf508c8"
@@ -102,7 +94,7 @@
   class="purchase-button"
   style="margin-top: 2rem"
 >
-  Start your 5-day free trial & subscribe
+  Start your free trial
 </button>
       <div style="margin: 2rem 0">
         <br />
@@ -148,5 +140,18 @@
         object-fit: cover;
       }
     </style>
+    <!-- Display user's email if logged in -->
+<div id="user-email" style="margin: 1rem 0; font-weight: 500; color: #333;"></div>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    if (window.MemberStack) {
+      window.MemberStack.onReady.then(function(member) {
+        if (member.loggedIn) {
+          document.getElementById("user-email").textContent = "Logged in as: " + member["email"];
+        }
+      });
+    }
+  });
+</script>
   </body>
 </html>
