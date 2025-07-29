@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+  <head>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L97LGZSXS5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-L97LGZSXS5');
+</script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Interactive image hotspot quiz" />
+    <meta
+      name="keywords"
+      content="MCAT diagrams, quiz, interactive, HTML, JavaScript"
+    />
+    <title>Diagrams</title>
+    <style>
+        .highlight-correct {
+          outline: 3px solid #27ae60 !important;
+          background: rgba(46, 204, 113, 0.18) !important;
+        }
+
+        .highlight-incorrect {
+          outline: 3px solid #e74c3c !important;
+          background: rgba(231, 76, 60, 0.12) !important;
+        }
+
+        .hotspot-input-box {
+          position: absolute;
+          z-index: 10;
+          background: #fff;
+          border: 2px solid #6366f1;
+          border-radius: 8px;
+          padding: 10px;
+          box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+          display: none;
+        }
+
+        .hotspot-input-box input {
+          font-size: 1rem;
+          padding: 4px 8px;
+          border-radius: 4px;
+          border: 1px solid #bbb;
+          margin-right: 8px;
+        }
+
+        .hotspot-input-box button {
+          font-size: 1rem;
+          padding: 4px 10px;
+          border-radius: 4px;
+          border: none;
+          background: #6366f1;
+          color: #fff;
+          cursor: pointer;
+        }
+      </style>
+    </head>
+
+    <body>
+      <h2>Diagrams</h2>
+      <p>Click a region and type what it is!</p>
+      <div style="position: relative; display: inline-block">
+        <img
+          src="Titration-HCl-HAc.svg.png"
+          alt="Workplace"
+          usemap="#workmap"
+          width="400"
+          height="379"
+          id="main-image"
+        />
+
+        <!-- Overlay divs for highlighting -->
+        <div
+          id="overlay-computer"
+          style="
+            display: none;
+            position: absolute;
+            left: 34px;
+            top: 44px;
+            width: 236px;
+            height: 306px;
+            pointer-events: none;
+          "
+        ></div>
+        <div
+          id="overlay-phone"
+          style="
+            display: none;
+            position: absolute;
+            left: 290px;
+            top: 172px;
+            width: 43px;
+            height: 78px;
+            pointer-events: none;
+          "
+        ></div>
+        <div
+          id="overlay-coffee"
+          style="
+            display: none;
+            position: absolute;
+            left: 293px;
+            top: 256px;
+            width: 88px;
+            height: 88px;
+            border-radius: 50%;
+            pointer-events: none;
+          "
+        ></div>
+
+        <!-- Input box for answers -->
+        <div id="hotspot-input" class="hotspot-input-box">
+          <form id="hotspot-form" autocomplete="off">
+            <input
+              type="text"
+              id="hotspot-answer"
+              placeholder="Type your answer..."
+            />
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+      <map name="workmap">
+        <area
+          shape="rect"
+          coords="34,44,270,350"
+          alt="Computer"
+          href="#"
+          onclick="return showInputBox('computer', 'overlay-computer', 34, 44, 236, 40, event)"
+        />
+        <area
+          shape="rect"
+          coords="290,172,333,250"
+          alt="Phone"
+          href="#"
+          onclick="return showInputBox('phone', 'overlay-phone', 290, 172, 43, 40, event)"
+        />
+        <area
+          shape="circle"
+          coords="337,300,44"
+          alt="Cup of coffee"
+          href="#"
+          onclick="return showInputBox('cup of coffee', 'overlay-coffee', 293, 256, 88, 40, event)"
+        />
+      </map>
+      <script>
+        let currentCorrect = "";
+        let currentOverlay = "";
+        function showInputBox(
+          correct,
+          overlayId,
+          left,
+          top,
+          width,
+          height,
+          event
+        ) {
+          event.preventDefault();
+          currentCorrect = correct;
+          currentOverlay = overlayId;
+          const inputBox = document.getElementById("hotspot-input");
+          inputBox.style.left = left + width / 2 - 80 + "px";
+          inputBox.style.top = top + height / 2 - 20 + "px";
+          inputBox.style.display = "block";
+          document.getElementById("hotspot-answer").value = "";
+          document.getElementById("hotspot-answer").focus();
+          return false;
+        }
+
+        document
+          .getElementById("hotspot-form")
+          .addEventListener("submit", function (e) {
+            e.preventDefault();
+            const answer = document
+              .getElementById("hotspot-answer")
+              .value.trim()
+              .toLowerCase();
+            const overlay = document.getElementById(currentOverlay);
+            if (answer === currentCorrect) {
+              overlay.style.display = "block";
+              overlay.className = "highlight-correct";
+              document.getElementById("hotspot-input").style.display = "none";
+              alert("Correct!");
+            } else {
+              overlay.style.display = "block";
+              overlay.className = "highlight-incorrect";
+              setTimeout(() => {
+                overlay.style.display = "none";
+              }, 1200);
+              alert("Incorrect. Try again!");
+            }
+          });
+
+        // Hide input box if user clicks outside
+        document.addEventListener("mousedown", function (e) {
+          const inputBox = document.getElementById("hotspot-input");
+          if (
+            inputBox.style.display === "block" &&
+            !inputBox.contains(e.target)
+          ) {
+            inputBox.style.display = "none";
+          }
+        });
+      </script>
+    </body>
+  </html>
+</viewport>
+  </body>
+</html>
