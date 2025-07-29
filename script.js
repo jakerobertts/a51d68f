@@ -284,8 +284,9 @@ function promptAnswer(element, event) {
         // Restore blank state if empty
         const blankLength = Math.max(correctAnswer.length, 4);
         element.innerHTML = '_'.repeat(blankLength);
-        element.style.backgroundColor = '#f0f0f0';
+        element.style.backgroundColor = 'white';
         element.style.border = '1px solid #ccc';
+        element.style.color = 'white';
         element.style.padding = '2px 6px';
         element.style.fontFamily = 'monospace';
         element.style.letterSpacing = '2px';
@@ -313,8 +314,9 @@ function resetQuestion(element) {
   const blankLength = Math.max(answer.length, 4);
   element.innerHTML = '_'.repeat(blankLength);
   element.style.backgroundColor = '#f0f0f0';
-  element.style.color = '#333';
+  element.style.color = 'white';
   element.style.border = '1px solid #ccc';
+  element.style.backgroundColor = '#f0f0f0';
   element.style.borderRadius = '3px';
   element.style.padding = '2px 6px';
   element.style.fontFamily = 'monospace';
@@ -382,7 +384,7 @@ function resetProgress() {
     const blankLength = Math.max(answer.length, 4);
     element.innerHTML = '_'.repeat(blankLength);
     element.style.backgroundColor = '#f0f0f0';
-    element.style.color = '#333';
+    element.style.color = 'white';
     element.style.border = '1px solid #ccc';
     element.style.borderRadius = '3px';
     element.style.padding = '2px 6px';
