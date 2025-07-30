@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-<meta name="google-adsense-account" content="ca-pub-6422130934976134">
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-L97LGZSXS5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-L97LGZSXS5');
-</script>
+    <meta name="google-adsense-account" content="ca-pub-6422130934976134" />
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-L97LGZSXS5"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-L97LGZSXS5");
+    </script>
     <link
       rel="icon"
       type="image/png"
@@ -308,5 +313,110 @@
       Plotly.newPlot("myDiv", data, layout);
     </script>
     <script src="sidebar.js"></script>
+
+    <!-- Flashcard Review Section -->
+    <div
+      id="flashcard-review-section"
+      style="margin: 40px auto; max-width: 420px"
+    >
+      <div
+        class="progress"
+        id="fc-progress"
+        style="text-align: center; margin-bottom: 10px"
+      ></div>
+      <div id="flashcard-container"></div>
+      <button
+        id="fc-next-btn"
+        style="display: none; margin: 1em auto 2em auto; display: block"
+      >
+        Next
+      </button>
+    </div>
+    <script>
+      let flashcards = [];
+      let fcCurrent = 0;
+
+      // Collect all answered terms from localStorage
+      let answeredTerms = new Set();
+      for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        if (key.startsWith("quizProgress_")) {
+          try {
+            const progress = JSON.parse(localStorage.getItem(key));
+            if (progress && Array.isArray(progress.answeredQuestions)) {
+              progress.answeredQuestions.forEach((term) =>
+                answeredTerms.add(term)
+              );
+            }
+          } catch (e) {}
+        }
+      }
+
+      // Load flashcards.json
+      fetch("flashcards.json")
+        .then((res) => res.json())
+        .then((data) => {
+          // Only include flashcards where ANY option is in answeredTerms
+          flashcards = data.filter((fc) =>
+            fc.options.some((opt) => answeredTerms.has(opt))
+          );
+          fcCurrent = 0;
+          if (flashcards.length === 0) {
+            document.getElementById("fc-next-btn").style.display = "none";
+            document.getElementById("flashcard-container").innerHTML =
+              "<div class='flashcard'><b></b></div>";
+            document.getElementById("fc-progress").textContent = "";
+          } else {
+            showFlashcard(fcCurrent);
+          }
+        });
+
+      function showFlashcard(idx) {
+        if (!flashcards.length) return;
+        const fc = flashcards[idx];
+        document.getElementById("fc-progress").textContent = `Card ${
+          idx + 1
+        } of ${flashcards.length}`;
+        let html = `<div class="flashcard" style="background:#fff;border-radius:12px;box-shadow:0 2px 12px #b3b3b3;padding:2em 1em;margin-bottom:1em;max-width:400px;width:95vw;text-align:center;">
+    
+    <div style="margin-bottom:1em;">${fc.question || ""}</div>
+    <div class="options">`;
+        fc.options.forEach((opt) => {
+          html += `<button onclick="checkFCAnswer(this, '${opt.replace(
+            /'/g,
+            "\\'"
+          )}', '${fc.answer.replace(
+            /'/g,
+            "\\'"
+          )}')" style="display:block;width:100%;margin:0.5em 0;padding:0.7em;border-radius:6px;border:1px solid #ddd;background:#f1f5ff;font-size:1.1em;cursor:pointer;">${opt}</button>`;
+        });
+        html += `</div></div>`;
+        document.getElementById("flashcard-container").innerHTML = html;
+        document.getElementById("fc-next-btn").style.display = "none";
+      }
+
+      window.checkFCAnswer = function (btn, selected, correct) {
+        const buttons = btn.parentNode.querySelectorAll("button");
+        buttons.forEach((b) => {
+          b.disabled = true;
+          if (b.textContent === correct) b.style.background = "#d4edda";
+          else if (b === btn && selected !== correct)
+            b.style.background = "#f8d7da";
+        });
+        document.getElementById("fc-next-btn").style.display = "";
+      };
+
+      document.getElementById("fc-next-btn").onclick = function () {
+        fcCurrent++;
+        if (fcCurrent < flashcards.length) {
+          showFlashcard(fcCurrent);
+        } else {
+          document.getElementById("flashcard-container").innerHTML =
+            "<div class='flashcard'><b>Done! 🎉</b></div>";
+          document.getElementById("fc-progress").textContent = "";
+          this.style.display = "none";
+        }
+      };
+    </script>
   </body>
 </html>
