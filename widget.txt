@@ -1,0 +1,2456 @@
+speciation - What is the biological process by which populations evolve to become distinct species, typically through genetic isolation and divergence?
+    a) Natural selection
+    b) Speciation
+    c) Adaptation
+    d) Mutation
+
+polymorphism - What is the occurrence of two or more clearly different phenotypes or alleles within a single interbreeding population called?
+    a) Mutation
+    b) Genetic drift
+    c) Polymorphism
+    d) Speciation
+
+adaption - What is the evolutionary process by which a species develops traits that increase its fitness and survival in a specific environment?
+    a) Adaptation
+    b) Mutation
+    c) Speciation
+    d) Genetic drift
+
+inbreeding - What is the mating of individuals who are closely related genetically, increasing the probability of offspring inheriting harmful recessive traits?
+    a) Outbreeding
+    b) Inbreeding
+    c) Hybridization
+    d) Speciation
+
+melting - What is the physical process in which a solid substance absorbs heat and changes into its liquid phase at a specific temperature?
+    a) Freezing
+    b) Melting
+    c) Sublimation
+    d) Deposition
+
+freezing - What is the process by which a liquid loses thermal energy and transitions into a solid state at its freezing point?
+    a) Melting
+    b) Freezing
+    c) Evaporation
+    d) Condensation
+
+deposition - What is the phase transition in which a gas transforms directly into a solid without passing through the liquid state?
+    a) Sublimation
+    b) Deposition
+    c) Melting
+    d) Freezing
+
+encoding - What is the process by which sensory input is converted into a neural code that can be stored and later retrieved by the brain?
+    a) Retrieval
+    b) Storage
+    c) Encoding
+    d) Consolidation
+
+storage - What is the process of retaining encoded information in the brain over extended periods for future use?
+    a) Encoding
+    b) Retrieval
+    c) Storage
+    d) Consolidation
+
+retrieval - What is the cognitive process of accessing stored information from memory and bringing it into conscious awareness?
+    a) Encoding
+    b) Storage
+    c) Retrieval
+    d) Consolidation
+
+sensorimotor - What is the Piagetian stage (birth to 2 years) where infants learn about the world primarily through sensory experiences and motor activities?
+    a) Preoperational
+    b) Sensorimotor
+    c) Concrete operational
+    d) Formal operational
+
+preoperational - What is the Piagetian stage (ages 2-7) characterized by symbolic thinking, egocentrism, and lack of logical operations?
+    a) Sensorimotor
+    b) Preoperational
+    c) Concrete operational
+    d) Formal operational
+
+concrete operational - What is the Piagetian stage (ages 7-11) where children develop logical reasoning skills for concrete objects and events?
+    a) Preoperational
+    b) Sensorimotor
+    c) Concrete operational
+    d) Formal operational
+
+formal operational - What is the Piagetian stage (age 12 and up) where individuals gain the ability to think abstractly, logically, and hypothetically?
+    a) Preoperational
+    b) Sensorimotor
+    c) Concrete operational
+    d) Formal operational
+
+zone of proximal development - What is Vygotsky’s concept describing the range of tasks a child can perform with guidance but not yet independently?
+    a) Scaffolding
+    b) Zone of proximal development
+    c) Concrete operational
+    d) Sensorimotor
+
+scaffolding - What is the instructional technique where a more knowledgeable other provides structured support to help a learner master tasks within their zone of proximal development?
+    a) Scaffolding
+    b) Modeling
+    c) Reinforcement
+    d) Shaping
+
+James Lange - Which theory of emotion proposes that physiological arousal occurs first and then is interpreted as a specific emotion?
+    a) Cannon Bard
+    b) James Lange
+    c) Schachter Singer
+    d) Lazarus
+
+Cannon Bard - Which theory of emotion suggests that physiological arousal and emotional experience occur simultaneously but independently?
+    a) James Lange
+    b) Cannon Bard
+    c) Schachter Singer
+    d) Lazarus
+
+Schachter Singer - Which theory of emotion states that emotion is determined by physiological arousal and the cognitive interpretation of that arousal?
+    a) James Lange
+    b) Cannon Bard
+    c) Schachter Singer
+    d) Lazarus
+
+Lazarus - Which theory of emotion emphasizes that cognitive appraisal of a situation precedes both the emotional and physiological response?
+    a) James Lange
+    b) Cannon Bard
+    c) Schachter Singer
+    d) Lazarus
+
+activation synthesis - Which dream theory posits that dreams result from the brain’s attempt to make sense of random neural activity during REM sleep?
+    a) Information processing
+    b) Threat simulation
+    c) Activation synthesis
+    d) Cognitive dissonance
+
+information processing - Which theory suggests that dreaming serves to consolidate and organize information acquired during waking hours?
+    a) Threat simulation
+    b) Activation synthesis
+    c) Information processing
+    d) Parallel processing
+
+threat simulation - Which evolutionary theory proposes that dreaming allows individuals to rehearse responses to threatening situations in a safe environment?
+    a) Threat simulation
+    b) Activation synthesis
+    c) Information processing
+    d) Feature detection
+
+behaviorist - Which theory of language acquisition asserts that language is learned through environmental reinforcement and imitation?
+    a) Nativist
+    b) Behaviorist
+    c) Interactionist
+    d) Humanistic
+
+nativist - Which theory of language acquisition claims that humans possess an innate biological capacity for language development?
+    a) Nativist
+    b) Behaviorist
+    c) Interactionist
+    d) Humanistic
+
+interactionist - Which theory of language acquisition integrates both innate biological factors and social interaction as essential for language development?
+    a) Nativist
+    b) Behaviorist
+    c) Interactionist
+    d) Humanistic
+
+psychoanalytic - Which personality perspective emphasizes the influence of unconscious motives and early childhood experiences on behavior?
+    a) Humanistic
+    b) Trait
+    c) Psychoanalytic
+    d) Social cognitive
+
+humanistic - Which personality perspective focuses on self-actualization, personal growth, and the inherent goodness of individuals?
+    a) Humanistic
+    b) Trait
+    c) Psychoanalytic
+    d) Social cognitive
+
+trait - Which personality perspective conceptualizes personality as a collection of measurable and stable characteristics?
+    a) Humanistic
+    b) Trait
+    c) Psychoanalytic
+    d) Social cognitive
+
+social cognitive - Which personality perspective highlights the role of observational learning, cognitive processes, and social experiences in shaping personality?
+    a) Humanistic
+    b) Trait
+    c) Psychoanalytic
+    d) Social cognitive
+
+biological - Which personality perspective examines the genetic, neurobiological, and physiological bases of personality traits?
+    a) Humanistic
+    b) Trait
+    c) Biological
+    d) Social cognitive
+
+behaviorist (personality) - Which personality perspective attributes behavior and personality development primarily to environmental conditioning and reinforcement?
+    a) Humanistic
+    b) Trait
+    c) Psychoanalytic
+    d) Behaviorist
+
+drive reduction - Which motivation theory posits that behavior is driven by the desire to reduce internal physiological tension caused by unmet biological needs?
+    a) Incentive
+    b) Drive reduction
+    c) Self determination
+    d) Expectancy
+
+incentive - Which motivation theory suggests that behavior is directed toward attaining external rewards or avoiding punishments?
+    a) Incentive
+    b) Drive reduction
+    c) Self determination
+    d) Expectancy
+
+physiological - What are the most basic human needs, such as food, water, and shelter, according to Maslow’s hierarchy?
+    a) Safety
+    b) Physiological
+    c) Self actualization
+    d) Esteem
+
+safety - What are the needs for security, stability, and protection from physical and emotional harm, as described in Maslow’s hierarchy?
+    a) Safety
+    b) Physiological
+    c) Self actualization
+    d) Esteem
+
+self actualization - What is the highest level in Maslow’s hierarchy, representing the fulfillment of personal potential and self-growth?
+    a) Safety
+    b) Physiological
+    c) Self actualization
+    d) Esteem
+
+self determination - Which motivation theory emphasizes the importance of autonomy, competence, and relatedness in fostering intrinsic motivation?
+    a) Incentive
+    b) Drive reduction
+    c) Self determination
+    d) Expectancy
+
+expectancy - Which motivation theory posits that motivation is determined by the expectation of success and the value placed on that success?
+    a) Incentive
+    b) Drive reduction
+    c) Self determination
+    d) Expectancy
+
+elaboration likelihood - What dual-process model of persuasion proposes central and peripheral routes for attitude change?
+    a) Elaboration likelihood
+    b) Cognitive dissonance
+    c) Attribution theory
+    d) Social identity
+
+social cognitive (behavior change) - Which theory explains behavior change as a result of observational learning, imitation, and modeling within a social context?
+    a) Social cognitive
+    b) Trait
+    c) Psychoanalytic
+    d) Humanistic
+
+integrity vs. despair - What is Erikson’s final psychosocial stage (late adulthood) involving reflection on life and the sense of fulfillment or regret?
+    a) Identity vs. role confusion
+    b) Integrity vs. despair
+    c) Generativity vs. stagnation
+    d) Initiative vs. guilt
+
+social identity - Which theory states that a person’s self-concept is derived from their membership in social groups and categories?
+    a) Attribution theory
+    b) Social identity
+    c) Cognitive dissonance
+    d) Self determination
+
+differential association - Which criminological theory asserts that deviant behavior is learned through interactions with others who promote such behavior?
+    a) Labeling
+    b) Strain
+    c) Differential association
+    d) Social identity
+
+labeling - Which sociological theory posits that being labeled as deviant influences an individual’s self-identity and behavior?
+    a) Labeling
+    b) Strain
+    c) Differential association
+    d) Social identity
+
+strain - Which theory explains deviance as a result of the gap between culturally approved goals and the means available to achieve them?
+    a) Labeling
+    b) Strain
+    c) Differential association
+    d) Social identity
+
+Photoreceptors - What specialized cells in the retina (rods and cones) convert light energy into neural signals for vision?
+    a) Photoreceptors
+    b) Mechanoreceptors
+    c) Thermoreceptors
+    d) Nociceptors
+
+Parallel Processing - What cognitive process allows the brain to simultaneously analyze multiple features of a stimulus, such as color, shape, and motion?
+    a) Feature detection
+    b) Parallel processing
+    c) Bottom up processing
+    d) Top down processing
+
+Feature Detection - What neural process involves identifying specific visual features like edges, angles, and movement in the visual cortex?
+    a) Feature detection
+    b) Parallel processing
+    c) Bottom up processing
+    d) Top down processing
+
+Kinesthetic - What sensory system provides information about the movement and position of body parts relative to each other?
+    a) Vestibular
+    b) Kinesthetic
+    c) Proprioceptive
+    d) Visual
+
+Proprioceptive - What sensory system provides information about the position and movement of the body in space, independent of vision?
+    a) Vestibular
+    b) Kinesthetic
+    c) Proprioceptive
+    d) Visual
+
+Vestibular - What sensory system, located in the inner ear, detects head position and movement to maintain balance and spatial orientation?
+    a) Vestibular
+    b) Kinesthetic
+    c) Proprioceptive
+    d) Visual
+
+Bottom up processing - What perceptual process involves constructing a whole perception by integrating sensory input without prior knowledge?
+    a) Top down processing
+    b) Bottom up processing
+    c) Parallel processing
+    d) Feature detection
+
+Top down processing - What perceptual process uses existing knowledge, expectations, and experiences to interpret sensory information?
+    a) Top down processing
+    b) Bottom up processing
+    c) Parallel processing
+    d) Feature detection
+
+Interposition - What monocular depth cue involves perceiving an object as closer when it partially blocks the view of another object?
+    a) Linear perspective
+    b) Texture gradient
+    c) Interposition
+    d) Motion parallax
+
+Texture Gradient - What monocular depth cue involves perceiving objects with coarse texture as closer and those with finer texture as farther away?
+    a) Linear perspective
+    b) Texture gradient
+    c) Interposition
+    d) Motion parallax
+
+Linear Perspective - What monocular depth cue involves perceiving parallel lines as converging in the distance, indicating depth?
+    a) Linear perspective
+    b) Texture gradient
+    c) Interposition
+    d) Motion parallax
+
+Motion Parallax - What depth cue involves perceiving objects closer to the observer as moving faster than those farther away when the observer is in motion?
+    a) Linear perspective
+    b) Texture gradient
+    c) Interposition
+    d) Motion parallax
+
+Shading and Contour - What visual cues use variations in light and shadow to create the perception of depth and three-dimensionality?
+    a) Shading and contour
+    b) Linear perspective
+    c) Texture gradient
+    d) Interposition
+
+constancy - What perceptual phenomenon allows us to perceive objects as unchanging in size, shape, and color despite changes in sensory input?
+    a) Constancy
+    b) Feature detection
+    c) Parallel processing
+    d) Bottom up processing
+
+Retinal Disparity - What binocular cue for depth perception arises from the slight difference in images between the two eyes?
+    a) Convergence
+    b) Retinal disparity
+    c) Interposition
+    d) Motion parallax
+
+Convergence - What binocular cue for depth perception involves the inward movement of the eyes when focusing on a nearby object?
+    a) Convergence
+    b) Retinal disparity
+    c) Interposition
+    d) Motion parallax
+
+Similarity - What Gestalt principle describes the tendency to group similar elements together in perception?
+    a) Similarity
+    b) Continuity
+    c) Closure
+    d) Pragnanz
+
+Continuity - What Gestalt principle describes the tendency to perceive smooth, continuous patterns rather than abrupt changes?
+    a) Similarity
+    b) Continuity
+    c) Closure
+    d) Pragnanz
+
+Closure - What Gestalt principle describes the tendency to fill in gaps to perceive a complete, whole object?
+    a) Similarity
+    b) Continuity
+    c) Closure
+    d) Pragnanz
+
+Pragnanz - What Gestalt principle states that we perceive complex images in the simplest form possible?
+    a) Similarity
+    b) Continuity
+    c) Closure
+    d) Pragnanz
+
+Selective attention - What cognitive process involves focusing mental resources on a specific stimulus while ignoring others?
+    a) Selective attention
+    b) Divided attention
+    c) Working memory
+    d) Encoding
+
+Divided attention - What cognitive ability allows an individual to process multiple sources of information or perform multiple tasks simultaneously?
+    a) Selective attention
+    b) Divided attention
+    c) Working memory
+    d) Encoding
+
+Cognitive Development - What is the process by which children and adolescents acquire and refine intellectual abilities such as reasoning, problem-solving, and memory?
+    a) Cognitive development
+    b) Intellectual functioning
+    c) Working memory
+    d) Encoding
+
+Intellectual Functioning - What term encompasses a range of cognitive abilities, including reasoning, problem-solving, planning, and abstract thinking?
+    a) Cognitive development
+    b) Intellectual functioning
+    c) Working memory
+    d) Encoding
+
+Beta waves - What type of brain waves, detected by EEG, are associated with alertness, active thinking, and concentration?
+    a) Alpha waves
+    b) Beta waves
+    c) Theta waves
+    d) Delta waves
+
+Alpha waves - What type of brain waves, detected by EEG, are associated with relaxed wakefulness and calmness?
+    a) Alpha waves
+    b) Beta waves
+    c) Theta waves
+    d) Delta waves
+
+Theta waves - What type of brain waves, detected by EEG, are associated with light sleep, drowsiness, and deep relaxation?
+    a) Alpha waves
+    b) Beta waves
+    c) Theta waves
+    d) Delta waves
+
+Delta waves - What type of brain waves, detected by EEG, are associated with deep, restorative sleep (slow-wave sleep)?
+    a) Alpha waves
+    b) Beta waves
+    c) Theta waves
+    d) Delta waves
+
+N1 - What is the initial and lightest stage of non-REM sleep, characterized by slow eye movements and easy arousal?
+    a) N1
+    b) N2
+    c) N3
+    d) REM sleep
+
+N2 - What is the stage of non-REM sleep characterized by the presence of sleep spindles and K-complexes on EEG?
+    a) N1
+    b) N2
+    c) N3
+    d) REM sleep
+
+N3 - What is the deepest stage of non-REM sleep, important for physical restoration and memory consolidation?
+    a) N1
+    b) N2
+    c) N3
+    d) REM sleep
+
+REM sleep - What sleep stage is characterized by rapid eye movements, vivid dreaming, and increased brain activity similar to wakefulness?
+    a) N1
+    b) N2
+    c) N3
+    d) REM sleep
+
+Stimulants - What class of psychoactive drugs increases central nervous system activity, alertness, and energy (e.g., caffeine, amphetamines)?
+    a) Stimulants
+    b) Depressants
+    c) Hallucinogens
+    d) Opioids
+
+Depressants - What class of psychoactive drugs reduces central nervous system activity, leading to relaxation and decreased anxiety (e.g., alcohol, benzodiazepines)?
+    a) Stimulants
+    b) Depressants
+    c) Hallucinogens
+    d) Opioids
+
+Hallucinogens - What class of psychoactive drugs alters perception, mood, and cognition, often causing hallucinations (e.g., LSD, psilocybin)?
+    a) Stimulants
+    b) Depressants
+    c) Hallucinogens
+    d) Opioids
+
+Opioids - What class of drugs relieves pain and induces euphoria by binding to opioid receptors in the brain (e.g., morphine, heroin)?
+    a) Stimulants
+    b) Depressants
+    c) Hallucinogens
+    d) Opioids
+
+Cannabis - What psychoactive substance can produce stimulant, depressant, and hallucinogenic effects depending on dose and individual response?
+    a) Stimulants
+    b) Depressants
+    c) Hallucinogens
+    d) Cannabis
+
+Iconic memory - What is the brief sensory memory that stores visual information for a fraction of a second after the stimulus is removed?
+    a) Iconic memory
+    b) Echoic memory
+    c) Working memory
+    d) Long term memory
+
+Echoic memory - What is the brief sensory memory that stores auditory information for several seconds after the sound is heard?
+    a) Iconic memory
+    b) Echoic memory
+    c) Working memory
+    d) Long term memory
+
+Working memory - What is the cognitive system responsible for temporarily holding and manipulating information needed for complex tasks?
+    a) Iconic memory
+    b) Echoic memory
+    c) Working memory
+    d) Long term memory
+
+Phonological loop - What component of working memory is specialized for storing and rehearsing verbal and auditory information?
+    a) Phonological loop
+    b) Visuospatial sketchpad
+    c) Central executive
+    d) Long term memory
+
+Visuospatial sketchpad - What component of working memory is specialized for storing and manipulating visual and spatial information?
+    a) Phonological loop
+    b) Visuospatial sketchpad
+    c) Central executive
+    d) Long term memory
+
+Central executive - What component of working memory coordinates attention and integrates information from the phonological loop and visuospatial sketchpad?
+    a) Phonological loop
+    b) Visuospatial sketchpad
+    c) Central executive
+    d) Long term memory
+
+Long term memory - What is the system for storing information over extended periods, potentially for a lifetime?
+    a) Iconic memory
+    b) Echoic memory
+    c) Working memory
+    d) Long term memory
+
+Encoding - What is the process of transforming sensory input into a format that can be stored in long-term memory?
+    a) Encoding
+    b) Storage
+    c) Retrieval
+    d) Forgetting
+
+Storage - What is the process of maintaining encoded information in the brain over time?
+    a) Encoding
+    b) Storage
+    c) Retrieval
+    d) Forgetting
+
+Retrieval - What is the process of accessing stored information from long-term memory and bringing it into conscious awareness?
+    a) Encoding
+    b) Storage
+    c) Retrieval
+    d) Forgetting
+
+Forgetting - What is the inability to recall information that was previously encoded and stored in memory?
+    a) Encoding
+    b) Storage
+    c) Retrieval
+    d) Forgetting
+
+Physiological arousal - What is the activation of the autonomic nervous system in response to an emotional stimulus, resulting in physical changes such as increased heart rate?
+    a) Physiological arousal
+    b) Cognitive appraisal
+    c) Behavioral expression
+    d) Emotional regulation
+
+Cognitive appraisal - What is the mental process of evaluating and interpreting a situation to determine its emotional significance?
+    a) Physiological arousal
+    b) Cognitive appraisal
+    c) Behavioral expression
+    d) Emotional regulation
+
+Behavioral expression - What is the outward display of emotions through observable actions, facial expressions, and body language?
+    a) Physiological arousal
+    b) Cognitive appraisal
+    c) Behavioral expression
+    d) Emotional regulation
+
+Happiness - What is a positive emotional state characterized by feelings of joy, satisfaction, and well-being?
+    a) Happiness
+    b) Sadness
+    c) Fear
+    d) Anger
+
+Sadness - What is a negative emotional state characterized by feelings of loss, disappointment, or helplessness?
+    a) Happiness
+    b) Sadness
+    c) Fear
+    d) Anger
+
+Fear - What is an emotional response to perceived threats or danger, often triggering a fight-or-flight reaction?
+    a) Happiness
+    b) Sadness
+    c) Fear
+    d) Anger
+
+Anger - What is an emotional response to perceived injustice, frustration, or provocation, often resulting in aggressive behavior?
+    a) Happiness
+    b) Sadness
+    c) Fear
+    d) Anger
+
+Disgust - What is an emotional response to stimuli considered offensive, repulsive, or contaminated?
+    a) Disgust
+    b) Surprise
+    c) Fear
+    d) Anger
+
+Surprise - What is an emotional response to unexpected or novel events that violate expectations?
+    a) Disgust
+    b) Surprise
+    c) Fear
+    d) Anger
+
+Stressors - What are external or internal events and situations that trigger the body’s stress response?
+    a) Stressors
+    b) Daily hassles
+    c) Catastrophic events
+    d) Chronic stressors
+
+Daily hassles - What are minor, everyday irritations and annoyances (e.g., traffic jams, work deadlines) that can accumulate and contribute to stress?
+    a) Stressors
+    b) Daily hassles
+    c) Catastrophic events
+    d) Chronic stressors
+
+Catastrophic events - What are large-scale, traumatic occurrences (e.g., natural disasters, terrorist attacks) that can cause intense psychological stress?
+    a) Stressors
+    b) Daily hassles
+    c) Catastrophic events
+    d) Chronic stressors
+
+Chronic stressors - What are ongoing, persistent sources of stress (e.g., financial difficulties, caregiving responsibilities) that can negatively impact health over time?
+    a) Stressors
+    b) Daily hassles
+    c) Catastrophic events
+    d) Chronic stressors
+
+Environmental stressors - What are external factors in the physical environment (e.g., noise, pollution) that can increase stress levels?
+    a) Stressors
+    b) Daily hassles
+    c) Catastrophic events
+    d) Environmental stressors
+
+Broca's area - What region of the frontal lobe is responsible for language production and speech articulation?
+    a) Broca's area
+    b) Wernicke's area
+    c) Angular gyrus
+    d) Arcuate fasciculus
+
+Wernicke's area - What region of the temporal lobe is responsible for language comprehension and processing?
+    a) Broca's area
+    b) Wernicke's area
+    c) Angular gyrus
+    d) Arcuate fasciculus
+
+arcuate fasciculus - What bundle of nerve fibers connects Broca’s area and Wernicke’s area, facilitating language processing?
+    a) Broca's area
+    b) Wernicke's area
+    c) Angular gyrus
+    d) Arcuate fasciculus
+
+angular gyrus - What brain region is involved in reading, writing, and the integration of visual and auditory information for language?
+    a) Broca's area
+    b) Wernicke's area
+    c) Angular gyrus
+    d) Arcuate fasciculus
+
+serotonin - What neurotransmitter is primarily involved in regulating mood, appetite, and sleep, and is implicated in depression and anxiety disorders?
+    a) Dopamine
+    b) Norepinephrine
+    c) Serotonin
+    d) Acetylcholine
+
+paranoid personality disorder - What personality disorder is characterized by pervasive distrust and suspicion of others’ motives?
+    a) Paranoid personality disorder
+    b) Schizoid personality disorder
+    c) Schizotypal personality disorder
+    d) Antisocial personality disorder
+
+schizoid personality disorder - What personality disorder involves a persistent pattern of detachment from social relationships and limited emotional expression?
+    a) Paranoid personality disorder
+    b) Schizoid personality disorder
+    c) Schizotypal personality disorder
+    d) Antisocial personality disorder
+
+schizotypal personality disorder - What personality disorder is marked by eccentric behavior, cognitive distortions, and acute discomfort in close relationships?
+    a) Paranoid personality disorder
+    b) Schizoid personality disorder
+    c) Schizotypal personality disorder
+    d) Antisocial personality disorder
+
+Antisocial personality disorder - What personality disorder is characterized by a disregard for the rights of others, impulsivity, and lack of remorse?
+    a) Paranoid personality disorder
+    b) Schizoid personality disorder
+    c) Schizotypal personality disorder
+    d) Antisocial personality disorder
+
+Borderline personality disorder - What personality disorder involves instability in interpersonal relationships, self-image, and emotional regulation?
+    a) Borderline personality disorder
+    b) Histrionic personality disorder
+    c) Narcissistic personality disorder
+    d) Avoidant personality disorder
+
+Histrionic personality disorder - What personality disorder is characterized by excessive emotionality, attention-seeking, and a need for approval?
+    a) Borderline personality disorder
+    b) Histrionic personality disorder
+    c) Narcissistic personality disorder
+    d) Avoidant personality disorder
+
+Narcissistic personality disorder - What personality disorder involves a grandiose sense of self-importance, need for admiration, and lack of empathy?
+    a) Borderline personality disorder
+    b) Histrionic personality disorder
+    c) Narcissistic personality disorder
+    d) Avoidant personality disorder
+
+Avoidant personality disorder - What personality disorder is characterized by social inhibition, feelings of inadequacy, and hypersensitivity to negative evaluation?
+    a) Borderline personality disorder
+    b) Histrionic personality disorder
+    c) Narcissistic personality disorder
+    d) Avoidant personality disorder
+
+Dependent personality disorder - What personality disorder involves an excessive need to be cared for, leading to submissive and clinging behavior?
+    a) Dependent personality disorder
+    b) Avoidant personality disorder
+    c) Obsessive-compulsive personality disorder
+    d) Borderline personality disorder
+
+Obsessive-compulsive personality disorder - What personality disorder is marked by preoccupation with orderliness, perfectionism, and control at the expense of flexibility?
+    a) Dependent personality disorder
+    b) Avoidant personality disorder
+    c) Obsessive-compulsive personality disorder
+    d) Borderline personality disorder
+
+Schizophrenia - What severe mental disorder is characterized by disturbances in thought, perception, emotion, and behavior, including hallucinations and delusions?
+    a) Autism
+    b) ADHD
+    c) PTSD
+    d) Schizophrenia
+
+Autism - What neurodevelopmental disorder is characterized by deficits in social communication, restricted interests, and repetitive behaviors?
+    a) Autism
+    b) ADHD
+    c) PTSD
+    d) Schizophrenia
+
+ADHD - What neurodevelopmental disorder is characterized by persistent patterns of inattention, hyperactivity, and impulsivity?
+    a) Autism
+    b) ADHD
+    c) PTSD
+    d) Schizophrenia
+
+PTSD - What mental health disorder develops after exposure to a traumatic event and is characterized by intrusive memories, avoidance, and hyperarousal?
+    a) Autism
+    b) ADHD
+    c) PTSD
+    d) Schizophrenia
+
+Acute stress - What short-term psychological condition occurs in response to a traumatic event, with symptoms similar to PTSD but lasting less than one month?
+    a) Acute stress
+    b) PTSD
+    c) GAD
+    d) Social anxiety
+
+GAD - What anxiety disorder is characterized by excessive, uncontrollable worry about multiple aspects of daily life, often accompanied by physical symptoms?
+    a) Acute stress
+    b) PTSD
+    c) GAD
+    d) Social anxiety
+
+Social anxiety - What anxiety disorder involves intense fear and avoidance of social situations due to concerns about being judged or embarrassed?
+    a) Acute stress
+    b) PTSD
+    c) GAD
+    d) Social anxiety
+
+Specific phobias - What anxiety disorders involve irrational and persistent fear of specific objects or situations, leading to avoidance behavior?
+    a) Specific phobias
+    b) Agoraphobia
+    c) OCD
+    d) Body dysmorphic disorder
+
+Agoraphobia - What anxiety disorder is characterized by fear of situations where escape might be difficult or help unavailable, often resulting in avoidance of public places?
+    a) Specific phobias
+    b) Agoraphobia
+    c) OCD
+    d) Body dysmorphic disorder
+
+OCD - What disorder involves recurrent, intrusive thoughts (obsessions) and repetitive behaviors (compulsions) performed to reduce anxiety?
+    a) Specific phobias
+    b) Agoraphobia
+    c) OCD
+    d) Body dysmorphic disorder
+
+Body dysmorphic disorder - What mental disorder is characterized by obsessive preoccupation with perceived defects or flaws in physical appearance?
+    a) Specific phobias
+    b) Agoraphobia
+    c) OCD
+    d) Body dysmorphic disorder
+
+Hoarding disorder - What mental disorder involves persistent difficulty discarding possessions, resulting in excessive accumulation and clutter?
+    a) Hoarding disorder
+    b) Somatic symptom disorder
+    c) Illness anxiety disorder
+    d) Conversion disorder
+
+Somatic symptom disorder - What mental disorder involves experiencing physical symptoms that cause significant distress or impairment, without a clear medical cause?
+    a) Hoarding disorder
+    b) Somatic symptom disorder
+    c) Illness anxiety disorder
+    d) Conversion disorder
+
+Illness anxiety disorder - What mental disorder is characterized by excessive worry about having or acquiring a serious illness, despite minimal or no physical symptoms?
+    a) Hoarding disorder
+    b) Somatic symptom disorder
+    c) Illness anxiety disorder
+    d) Conversion disorder
+
+Conversion disorder - What mental disorder involves neurological symptoms (e.g., paralysis, tremors) that cannot be explained by medical evaluation and are linked to psychological factors?
+    a) Hoarding disorder
+    b) Somatic symptom disorder
+    c) Illness anxiety disorder
+    d) Conversion disorder
+
+Factitious disorder - What mental disorder involves intentionally producing or feigning physical or psychological symptoms to assume the sick role?
+    a) Hoarding disorder
+    b) Somatic symptom disorder
+    c) Factitious disorder
+    d) Conversion disorder
+
+Intrinsic motivation - What type of motivation involves engaging in a behavior because it is inherently satisfying or enjoyable?
+    a) Intrinsic motivation
+    b) Extrinsic motivation
+    c) Maslow's hierarchy of needs
+    d) Cognitive dissonance
+
+Extrinsic motivation - What type of motivation involves engaging in a behavior to earn external rewards or avoid punishments?
+    a) Intrinsic motivation
+    b) Extrinsic motivation
+    c) Maslow's hierarchy of needs
+    d) Cognitive dissonance
+
+Maslow's hierarchy of needs - What motivational theory proposes that human needs are arranged in a hierarchy, from physiological needs to self-actualization?
+    a) Intrinsic motivation
+    b) Extrinsic motivation
+    c) Maslow's hierarchy of needs
+    d) Cognitive dissonance
+
+Cognitive (attitude) - What component of attitude refers to the beliefs, thoughts, and knowledge one has about an object or situation?
+    a) Cognitive
+    b) Affective
+    c) Behavioral
+    d) Motivational
+
+Affective (attitude) - What component of attitude involves the emotional responses or feelings toward an object or situation?
+    a) Cognitive
+    b) Affective
+    c) Behavioral
+    d) Motivational
+
+Behavioral (attitude) - What component of attitude refers to the actions or observable behaviors associated with an attitude?
+    a) Cognitive
+    b) Affective
+    c) Behavioral
+    d) Motivational
+
+Cognitive dissonance - What psychological phenomenon occurs when an individual experiences discomfort due to holding conflicting beliefs or attitudes, often leading to attitude change?
+    a) Cognitive dissonance
+    b) Attribution theory
+    c) Self serving bias
+    d) Social identity
+
+Social facilitation - What phenomenon describes improved performance on simple or well-learned tasks in the presence of others?
+    a) Social facilitation
+    b) Social loafing
+    c) Group polarization
+    d) Groupthink
+
+Deindividuation - What psychological state involves a loss of self-awareness and personal responsibility in group settings, often leading to impulsive behavior?
+    a) Social facilitation
+    b) Deindividuation
+    c) Group polarization
+    d) Groupthink
+
+Bystander effect - What social phenomenon describes the decreased likelihood of helping a victim when other people are present?
+    a) Social facilitation
+    b) Bystander effect
+    c) Group polarization
+    d) Groupthink
+
+Social loafing - What phenomenon describes the tendency for individuals to exert less effort when working in a group compared to working alone?
+    a) Social facilitation
+    b) Social loafing
+    c) Group polarization
+    d) Groupthink
+
+Group polarization - What phenomenon describes the tendency for group discussions to strengthen the prevailing attitudes and opinions of group members?
+    a) Social facilitation
+    b) Social loafing
+    c) Group polarization
+    d) Groupthink
+
+Groupthink - What psychological phenomenon occurs when the desire for group harmony and consensus leads to poor decision-making and suppression of dissent?
+    a) Social facilitation
+    b) Social loafing
+    c) Group polarization
+    d) Groupthink
+
+Habituation - What form of non-associative learning involves a decrease in response to a repeated, non-threatening stimulus?
+    a) Habituation
+    b) Dishabituation
+    c) Sensitization
+    d) Extinction
+
+Dishabituation - What phenomenon occurs when a previously habituated response is restored due to the presentation of a novel stimulus?
+    a) Habituation
+    b) Dishabituation
+    c) Sensitization
+    d) Extinction
+
+Unconditioned stimulus - What stimulus naturally and automatically triggers an unlearned response in classical conditioning?
+    a) Unconditioned stimulus
+    b) Conditioned stimulus
+    c) Conditioned response
+    d) Extinction
+
+Conditioned stimulus - What previously neutral stimulus, after being paired with an unconditioned stimulus, elicits a learned response in classical conditioning?
+    a) Unconditioned stimulus
+    b) Conditioned stimulus
+    c) Conditioned response
+    d) Extinction
+
+Conditioned response - What learned response is elicited by a conditioned stimulus after classical conditioning has occurred?
+    a) Unconditioned stimulus
+    b) Conditioned stimulus
+    c) Conditioned response
+    d) Extinction
+
+Extinction - What process involves the gradual weakening and disappearance of a conditioned response when the conditioned stimulus is repeatedly presented without the unconditioned stimulus?
+    a) Extinction
+    b) Spontaneous recovery
+    c) Generalization
+    d) Discrimination
+
+Spontaneous recovery - What phenomenon describes the reappearance of a previously extinguished conditioned response after a rest period?
+    a) Extinction
+    b) Spontaneous recovery
+    c) Generalization
+    d) Discrimination
+
+Generalization - What process involves responding to stimuli that are similar, but not identical, to the conditioned stimulus?
+    a) Extinction
+    b) Spontaneous recovery
+    c) Generalization
+    d) Discrimination
+
+Discrimination (learning) - What process involves learning to distinguish between different stimuli and respond only to the conditioned stimulus?
+    a) Extinction
+    b) Spontaneous recovery
+    c) Generalization
+    d) Discrimination
+
+Reinforcement - What consequence increases the likelihood that a behavior will be repeated in the future?
+    a) Reinforcement
+    b) Punishment
+    c) Extinction
+    d) Generalization
+
+Punishment - What consequence decreases the likelihood that a behavior will be repeated in the future?
+    a) Reinforcement
+    b) Punishment
+    c) Extinction
+    d) Generalization
+
+Positive reinforcement - What process involves presenting a pleasant stimulus after a behavior to increase its frequency?
+    a) Positive reinforcement
+    b) Negative reinforcement
+    c) Positive punishment
+    d) Negative punishment
+
+Negative reinforcement - What process involves removing an unpleasant stimulus after a behavior to increase its frequency?
+    a) Positive reinforcement
+    b) Negative reinforcement
+    c) Positive punishment
+    d) Negative punishment
+
+Positive punishment - What process involves presenting an unpleasant stimulus after a behavior to decrease its frequency?
+    a) Positive reinforcement
+    b) Negative reinforcement
+    c) Positive punishment
+    d) Negative punishment
+
+Negative punishment - What process involves removing a pleasant stimulus after a behavior to decrease its frequency?
+    a) Positive reinforcement
+    b) Negative reinforcement
+    c) Positive punishment
+    d) Negative punishment
+
+Fixed ratio schedule - What reinforcement schedule delivers a reward after a set number of responses?
+    a) Fixed ratio
+    b) Variable ratio
+    c) Fixed interval
+    d) Variable interval
+
+Variable ratio schedule - What reinforcement schedule delivers a reward after an unpredictable number of responses?
+    a) Fixed ratio
+    b) Variable ratio
+    c) Fixed interval
+    d) Variable interval
+
+Fixed interval schedule - What reinforcement schedule delivers a reward after a fixed amount of time has passed?
+    a) Fixed ratio
+    b) Variable ratio
+    c) Fixed interval
+    d) Variable interval
+
+Variable interval schedule - What reinforcement schedule delivers a reward after varying, unpredictable time intervals?
+    a) Fixed ratio
+    b) Variable ratio
+    c) Fixed interval
+    d) Variable interval
+
+Observational learning - What type of learning occurs by watching and imitating the behavior of others?
+    a) Observational learning
+    b) Modeling
+    c) Vicarious reinforcement
+    d) Persuasion
+
+Modeling - What process involves learning a behavior by observing and replicating the actions of a model?
+    a) Observational learning
+    b) Modeling
+    c) Vicarious reinforcement
+    d) Persuasion
+
+Vicarious reinforcement - What process involves learning by observing the consequences of another person’s behavior?
+    a) Observational learning
+    b) Modeling
+    c) Vicarious reinforcement
+    d) Persuasion
+
+Persuasion - What process involves changing someone’s attitudes or behaviors through argument, reasoning, or appeal?
+    a) Observational learning
+    b) Modeling
+    c) Vicarious reinforcement
+    d) Persuasion
+
+Foot in the door technique - What compliance strategy involves making a small request first, followed by a larger request?
+    a) Foot in the door
+    b) Door in the face
+    c) Low ball
+    d) Persuasion
+
+Door in the face technique - What compliance strategy involves making a large request that is refused, followed by a smaller, more reasonable request?
+    a) Foot in the door
+    b) Door in the face
+    c) Low ball
+    d) Persuasion
+
+Low ball technique - What compliance strategy involves obtaining agreement to a request and then increasing the cost or changing the terms after commitment?
+    a) Foot in the door
+    b) Door in the face
+    c) Low ball
+    d) Persuasion
+
+Conformity - What is the act of changing one’s beliefs or behaviors to match those of a group or social norm?
+    a) Conformity
+    b) Compliance
+    c) Obedience
+    d) Social influence
+
+Compliance - What is the act of agreeing to a request or demand from another person, often in response to social pressure?
+    a) Conformity
+    b) Compliance
+    c) Obedience
+    d) Social influence
+
+Obedience - What is the act of following direct orders or instructions from an authority figure?
+    a) Conformity
+    b) Compliance
+    c) Obedience
+    d) Social influence
+
+Social influence - What is the process by which individuals’ thoughts, feelings, or behaviors are affected by others?
+    a) Conformity
+    b) Compliance
+    c) Obedience
+    d) Social influence
+
+External locus of control - What belief attributes outcomes and events to external factors such as luck, fate, or other people’s actions?
+    a) External locus of control
+    b) Internal locus of control
+    c) Attribution theory
+    d) Self serving bias
+
+Internal locus of control - What belief attributes outcomes and events to one’s own actions, abilities, and decisions?
+    a) External locus of control
+    b) Internal locus of control
+    c) Attribution theory
+    d) Self serving bias
+
+Attribution theory - What psychological theory explains how people interpret and assign causes to their own and others’ behavior?
+    a) Attribution theory
+    b) Self serving bias
+    c) Fundamental attribution error
+    d) Social identity
+
+Internal attribution - What type of attribution assigns the cause of behavior to personal characteristics, traits, or abilities?
+    a) Internal attribution
+    b) External attribution
+    c) Fundamental attribution error
+    d) Self serving bias
+
+External attribution - What type of attribution assigns the cause of behavior to situational or environmental factors?
+    a) Internal attribution
+    b) External attribution
+    c) Fundamental attribution error
+    d) Self serving bias
+
+Fundamental attribution error - What cognitive bias involves overestimating personal factors and underestimating situational factors when explaining others’ behavior?
+    a) Internal attribution
+    b) External attribution
+    c) Fundamental attribution error
+    d) Self serving bias
+
+Self serving bias - What cognitive bias involves attributing one’s successes to internal factors and failures to external factors?
+    a) Internal attribution
+    b) External attribution
+    c) Fundamental attribution error
+    d) Self serving bias
+
+Looking glass self - What sociological concept describes how individuals form their self-concept based on how they believe others perceive them?
+    a) Looking glass self
+    b) Self fulfilling prophecy
+    c) Social identity
+    d) Attribution theory
+
+Self fulfilling prophecy - What phenomenon occurs when an individual’s expectations about another person lead that person to behave in ways that confirm those expectations?
+    a) Looking glass self
+    b) Self fulfilling prophecy
+    c) Social identity
+    d) Attribution theory
+
+Discrimination (social) - What is the unjust or prejudicial treatment of individuals based on their group membership, such as race, gender, or age?
+    a) Discrimination
+    b) Stereotypes
+    c) Implicit bias
+    d) Social categorization
+
+Stereotypes - What are oversimplified and generalized beliefs about members of a particular group?
+    a) Discrimination
+    b) Stereotypes
+    c) Implicit bias
+    d) Social categorization
+
+Implicit bias - What are unconscious attitudes or stereotypes that influence perceptions, actions, and decisions without conscious awareness?
+    a) Discrimination
+    b) Stereotypes
+    c) Implicit bias
+    d) Social categorization
+
+Social categorization - What cognitive process involves classifying people into groups based on shared characteristics?
+    a) Discrimination
+    b) Stereotypes
+    c) Implicit bias
+    d) Social categorization
+
+In-group bias - What is the tendency to favor and give preferential treatment to members of one’s own group over outsiders?
+    a) In-group bias
+    b) Out group homogeneity effect
+    c) Out group derogation
+    d) Scapegoating
+
+Out group homogeneity effect - What is the perception that members of an out-group are more similar to each other than members of one’s own group?
+    a) In-group bias
+    b) Out group homogeneity effect
+    c) Out group derogation
+    d) Scapegoating
+
+Out group derogation - What is the tendency to view members of an out-group in a negative or unfavorable light?
+    a) In-group bias
+    b) Out group homogeneity effect
+    c) Out group derogation
+    d) Scapegoating
+
+Scapegoating - What is the practice of unfairly blaming an individual or group for problems or negative outcomes?
+    a) In-group bias
+    b) Out group homogeneity effect
+    c) Out group derogation
+    d) Scapegoating
+self presentation - What is the process by which individuals attempt to control the impressions others form of them in social interactions?
+    a) Impression management
+    b) Self presentation
+    c) Nonverbal communication
+    d) Social support
+
+impression management - What is the conscious or unconscious effort to influence how others perceive one’s self, often through strategic behaviors?
+    a) Impression management
+    b) Self presentation
+    c) Verbal communication
+    d) Social support
+
+verbal communication - What is the use of spoken or written language to convey information, ideas, or emotions?
+    a) Verbal communication
+    b) Nonverbal communication
+    c) Aggression
+    d) Attachment
+
+nonverbal communication - What is the transmission of messages or information without words, using gestures, facial expressions, and body language?
+    a) Verbal communication
+    b) Nonverbal communication
+    c) Altruism
+    d) Social support
+
+attraction - What is the psychological and physical force that draws individuals toward each other, often leading to relationships?
+    a) Aggression
+    b) Attachment
+    c) Attraction
+    d) Altruism
+
+aggression - What is behavior intended to cause harm or injury to another person, either physically or psychologically?
+    a) Aggression
+    b) Attachment
+    c) Altruism
+    d) Social support
+
+attachment - What is the emotional bond that develops between individuals, such as between a child and caregiver?
+    a) Aggression
+    b) Attachment
+    c) Altruism
+    d) Social support
+
+altruism - What is selfless behavior intended to benefit another person without expectation of personal gain?
+    a) Aggression
+    b) Attachment
+    c) Altruism
+    d) Social support
+
+social support - What is the perception or reality of being cared for, valued, and assisted by others, especially during times of stress?
+    a) Aggression
+    b) Attachment
+    c) Altruism
+    d) Social support
+
+cornea - What transparent structure at the front of the eye focuses incoming light onto the lens?
+    a) Cornea
+    b) Lens
+    c) Retina
+    d) Optic nerve
+
+lens - What transparent, flexible structure in the eye changes shape to focus light onto the retina?
+    a) Cornea
+    b) Lens
+    c) Retina
+    d) Optic nerve
+
+retina - What thin layer of tissue at the back of the eye contains photoreceptors that detect light and initiate visual processing?
+    a) Cornea
+    b) Lens
+    c) Retina
+    d) Optic nerve
+
+optic nerve - What bundle of nerve fibers transmits visual information from the retina to the brain?
+    a) Cornea
+    b) Lens
+    c) Retina
+    d) Optic nerve
+
+outer ear - What external part of the ear collects sound waves and directs them into the ear canal?
+    a) Outer ear
+    b) Middle ear
+    c) Inner ear
+    d) Cochlea
+
+middle ear - What air-filled chamber contains the ossicles (malleus, incus, stapes) that amplify sound vibrations?
+    a) Outer ear
+    b) Middle ear
+    c) Inner ear
+    d) Cochlea
+
+inner ear - What structure contains the cochlea and vestibular system, responsible for converting sound vibrations into neural signals?
+    a) Outer ear
+    b) Middle ear
+    c) Inner ear
+    d) Cochlea
+
+vestibular system - What sensory system in the inner ear detects head movement and position to maintain balance and spatial orientation?
+    a) Vestibular system
+    b) Semicircular canals
+    c) Otolith organs
+    d) Cochlea
+
+semicircular canals - What three fluid-filled structures in the inner ear detect rotational movements of the head?
+    a) Vestibular system
+    b) Semicircular canals
+    c) Otolith organs
+    d) Cochlea
+
+otolith organs - What structures in the vestibular system detect linear acceleration and head position relative to gravity?
+    a) Vestibular system
+    b) Semicircular canals
+    c) Otolith organs
+    d) Cochlea
+
+dopamine - What neurotransmitter is involved in reward, motivation, and pleasure, and is implicated in addiction and mood regulation?
+    a) Dopamine
+    b) Norepinephrine
+    c) Serotonin
+    d) Acetylcholine
+
+norepinephrine - What neurotransmitter is involved in arousal, alertness, and the body’s response to stress?
+    a) Dopamine
+    b) Norepinephrine
+    c) Serotonin
+    d) Acetylcholine
+
+serotonin - What neurotransmitter is involved in mood regulation, appetite, and sleep, and is associated with depression and anxiety?
+    a) Dopamine
+    b) Norepinephrine
+    c) Serotonin
+    d) Acetylcholine
+
+central nervous system - What part of the nervous system consists of the brain and spinal cord, responsible for processing and integrating information?
+    a) Central nervous system
+    b) Peripheral nervous system
+    c) Somatic nervous system
+    d) Autonomic nervous system
+
+peripheral nervous system - What part of the nervous system consists of all nerves outside the brain and spinal cord, connecting the CNS to the rest of the body?
+    a) Central nervous system
+    b) Peripheral nervous system
+    c) Somatic nervous system
+    d) Autonomic nervous system
+
+dendrites - What branched extensions of a neuron receive incoming signals from other neurons?
+    a) Dendrites
+    b) Soma
+    c) Axon
+    d) Axon terminals
+
+soma - What is the cell body of a neuron that contains the nucleus and processes incoming signals?
+    a) Dendrites
+    b) Soma
+    c) Axon
+    d) Axon terminals
+
+axon - What long, slender projection of a neuron transmits electrical impulses away from the cell body toward other neurons or muscles?
+    a) Dendrites
+    b) Soma
+    c) Axon
+    d) Axon terminals
+
+somatic nervous system - What division of the peripheral nervous system controls voluntary movements of skeletal muscles?
+    a) Somatic nervous system
+    b) Autonomic nervous system
+    c) Central nervous system
+    d) Peripheral nervous system
+
+autonomic nervous system - What division of the peripheral nervous system regulates involuntary functions such as heart rate, digestion, and respiration?
+    a) Somatic nervous system
+    b) Autonomic nervous system
+    c) Central nervous system
+    d) Peripheral nervous system
+
+brain - What organ serves as the central processing center for sensory information, emotions, cognition, and voluntary actions?
+    a) Brain
+    b) Spinal cord
+    c) Cerebellum
+    d) Pons
+
+spinal cord - What bundle of nerve fibers transmits signals between the brain and the rest of the body and coordinates reflexes?
+    a) Brain
+    b) Spinal cord
+    c) Cerebellum
+    d) Pons
+
+cerebellum - What brain structure is responsible for coordination, balance, and fine motor control?
+    a) Brain
+    b) Spinal cord
+    c) Cerebellum
+    d) Pons
+
+pons - What brainstem structure is involved in regulating sleep, arousal, and facial sensations?
+    a) Brain
+    b) Spinal cord
+    c) Cerebellum
+    d) Pons
+
+medulla oblongata - What brainstem structure controls vital autonomic functions such as breathing, heart rate, and blood pressure?
+    a) Medulla oblongata
+    b) Pons
+    c) Cerebellum
+    d) Spinal cord
+
+MRI - What neuroimaging technique measures brain activity by detecting changes in blood flow using magnetic fields and radio waves?
+    a) MRI
+    b) PET
+    c) EEG
+    d) CT
+
+PET - What neuroimaging technique uses radioactive tracers to visualize metabolic activity and brain function?
+    a) MRI
+    b) PET
+    c) EEG
+    d) CT
+
+EEG - What technique records electrical activity of the brain through electrodes placed on the scalp?
+    a) MRI
+    b) PET
+    c) EEG
+    d) CT
+
+CT - What imaging technique uses X-rays to produce detailed cross-sectional images of brain structure?
+    a) MRI
+    b) PET
+    c) EEG
+    d) CT
+
+lesion studies - What research method involves examining the behavioral effects of brain damage in humans or animals?
+    a) Lesion studies
+    b) Electrophysiology
+    c) MRI
+    d) PET
+
+electrophysiology - What technique measures electrical activity in the brain or nervous system using electrodes?
+    a) Lesion studies
+    b) Electrophysiology
+    c) MRI
+    d) PET
+
+gray matter - What region of the central nervous system consists mainly of neuronal cell bodies and is involved in processing information?
+    a) Gray matter
+    b) White matter
+    c) Myelin
+    d) Axon
+
+white matter - What region of the central nervous system consists mainly of myelinated axons and facilitates communication between brain regions?
+    a) Gray matter
+    b) White matter
+    c) Myelin
+    d) Axon
+
+stretch reflex - What is a monosynaptic reflex, such as the knee-jerk reflex, that helps maintain muscle tone and posture?
+    a) Stretch reflex
+    b) Withdrawal reflex
+    c) Gross motor skills
+    d) Fine motor skills
+
+withdrawal reflex - What is a polysynaptic reflex that causes a body part to quickly withdraw from a painful stimulus?
+    a) Stretch reflex
+    b) Withdrawal reflex
+    c) Gross motor skills
+    d) Fine motor skills
+
+hypothalamus - What brain region regulates the pituitary gland and maintains homeostasis through the HPA axis?
+    a) Hypothalamus
+    b) Pituitary gland
+    c) Thyroid gland
+    d) Adrenal glands
+
+pituitary gland - What endocrine gland, known as the master gland, secretes hormones that regulate other glands in the body?
+    a) Hypothalamus
+    b) Pituitary gland
+    c) Thyroid gland
+    d) Adrenal glands
+
+thyroid gland - What endocrine gland produces hormones that regulate metabolism, growth, and development?
+    a) Hypothalamus
+    b) Pituitary gland
+    c) Thyroid gland
+    d) Adrenal glands
+
+adrenal glands - What endocrine glands, located above the kidneys, produce hormones involved in the stress response (e.g., cortisol, adrenaline)?
+    a) Hypothalamus
+    b) Pituitary gland
+    c) Thyroid gland
+    d) Adrenal glands
+
+pancreas - What organ functions as both an endocrine and exocrine gland, regulating blood sugar through insulin and glucagon secretion?
+    a) Pancreas
+    b) Gonads
+    c) Thyroid gland
+    d) Adrenal glands
+
+gonads - What organs (ovaries and testes) produce gametes and sex hormones for reproduction?
+    a) Pancreas
+    b) Gonads
+    c) Thyroid gland
+    d) Adrenal glands
+
+fertilization - What is the process by which a sperm cell unites with an egg cell to form a zygote?
+    a) Fertilization
+    b) Acrosome reaction
+    c) Cortical reaction
+    d) Cleavage
+
+acrosome reaction - What process involves the release of enzymes from the sperm’s acrosome to penetrate the egg’s outer layer during fertilization?
+    a) Fertilization
+    b) Acrosome reaction
+    c) Cortical reaction
+    d) Cleavage
+
+cortical reaction - What process occurs after fertilization, where the egg releases enzymes to prevent entry of additional sperm?
+    a) Fertilization
+    b) Acrosome reaction
+    c) Cortical reaction
+    d) Cleavage
+
+zygote - What is the single-cell organism formed by the union of sperm and egg, which undergoes cell division?
+    a) Zygote
+    b) Blastocyst
+    c) Embryo
+    d) Fetus
+
+blastocyst - What is the hollow ball of cells formed after several rounds of cell division, which implants in the uterine wall?
+    a) Zygote
+    b) Blastocyst
+    c) Embryo
+    d) Fetus
+
+embryonic stage - What developmental stage (weeks 3-8) is characterized by the formation of major organs and body structures?
+    a) Zygote
+    b) Blastocyst
+    c) Embryonic stage
+    d) Fetal stage
+
+neural tube - What embryonic structure forms during week 3 and gives rise to the central nervous system?
+    a) Neural tube
+    b) Heart
+    c) Limbs and facial features
+    d) Placenta
+
+heart - What organ begins to beat and circulate blood during week 4 of embryonic development?
+    a) Neural tube
+    b) Heart
+    c) Limbs and facial features
+    d) Placenta
+
+limbs and facial features - What body parts develop during weeks 5-8 of embryonic development?
+    a) Neural tube
+    b) Heart
+    c) Limbs and facial features
+    d) Placenta
+
+fetal stage - What developmental stage (weeks 9-40) involves growth and maturation of organs and tissues?
+    a) Zygote
+    b) Blastocyst
+    c) Embryonic stage
+    d) Fetal stage
+
+reflexes - What automatic, involuntary responses (e.g., grasping, rooting) are present at birth in newborns?
+    a) Reflexes
+    b) Gross motor skills
+    c) Fine motor skills
+    d) Puberty
+
+gross motor skills - What abilities (e.g., crawling, walking) involve large muscle movements and develop in early childhood?
+    a) Reflexes
+    b) Gross motor skills
+    c) Fine motor skills
+    d) Puberty
+
+fine motor skills - What abilities (e.g., grasping small objects, writing) involve precise movements and develop later in childhood?
+    a) Reflexes
+    b) Gross motor skills
+    c) Fine motor skills
+    d) Puberty
+
+puberty - What developmental period involves the onset of sexual maturity and the ability to reproduce?
+    a) Reflexes
+    b) Gross motor skills
+    c) Fine motor skills
+    d) Puberty
+
+neurotransmitter imbalances - What abnormal levels of brain chemicals (e.g., dopamine, serotonin) are implicated in various mental and neurological disorders?
+    a) Neurotransmitter imbalances
+    b) Genetic factors
+    c) Stem cells
+    d) Addiction
+
+genetic factors - What inherited characteristics contribute to the risk of developing certain diseases or conditions?
+    a) Neurotransmitter imbalances
+    b) Genetic factors
+    c) Stem cells
+    d) Addiction
+
+stem cells - What undifferentiated cells have the potential to develop into various specialized cell types, including neurons?
+    a) Neurotransmitter imbalances
+    b) Genetic factors
+    c) Stem cells
+    d) Addiction
+
+ghrelin - What hormone, produced by the stomach, stimulates appetite and increases food intake?
+    a) Ghrelin
+    b) Leptin
+    c) Insulin
+    d) Glucagon
+
+leptin - What hormone, produced by adipose tissue, signals satiety and suppresses appetite?
+    a) Ghrelin
+    b) Leptin
+    c) Insulin
+    d) Glucagon
+
+sex drive - What biological and psychological phenomenon involves hormones and brain reward systems to motivate sexual behavior?
+    a) Sex drive
+    b) Addiction
+    c) Taste aversion
+    d) Puberty
+
+addiction - What chronic condition involves compulsive drug seeking and use, driven by changes in dopamine pathways and neuroplasticity?
+    a) Sex drive
+    b) Addiction
+    c) Taste aversion
+    d) Puberty
+
+taste aversion - What learned avoidance of a specific food occurs after it has been associated with illness or negative experience?
+    a) Taste aversion
+    b) Conditioned fear
+    c) Habituation
+    d) Sensitization
+preparedness - What evolutionary predisposition makes certain associations (e.g., fear of snakes) easier to learn than others?
+    a) Preparedness
+    b) Instinctive drift
+    c) Social learning
+    d) Latent learning
+
+instinctive drift - What phenomenon causes learned behaviors to revert to innate, species-typical patterns over time?
+    a) Preparedness
+    b) Instinctive drift
+    c) Social learning
+    d) Mirror neurons
+
+mirror neurons - What specialized neurons fire both when an individual performs an action and when they observe the same action performed by others?
+    a) Preparedness
+    b) Instinctive drift
+    c) Social learning
+    d) Mirror neurons
+
+social learning - What process involves acquiring new behaviors by observing and imitating others, with mirror neurons playing a key role?
+    a) Preparedness
+    b) Instinctive drift
+    c) Social learning
+    d) Mirror neurons
+
+coloration - What is an example of a visual signal, such as bright plumage in birds, used for communication or mating?
+    a) Coloration
+    b) Body language
+    c) Mating displays
+    d) Threat displays
+
+body language - What is an example of nonverbal communication, such as tail position in dogs, used to convey emotional states?
+    a) Coloration
+    b) Body language
+    c) Mating displays
+    d) Threat displays
+
+mating displays - What are ritualized behaviors performed by animals to attract mates and signal reproductive fitness?
+    a) Coloration
+    b) Body language
+    c) Mating displays
+    d) Threat displays
+
+threat displays - What are defensive behaviors, such as puffing up in pufferfish, used to deter predators or rivals?
+    a) Coloration
+    b) Body language
+    c) Mating displays
+    d) Threat displays
+
+vocalizations - What are examples of animal communication, such as bird songs or wolf howls, used for signaling or coordination?
+    a) Vocalizations
+    b) Calls
+    c) Mating displays
+    d) Threat displays
+
+calls - What are alarm signals, such as those produced by primates, used to warn group members of danger?
+    a) Vocalizations
+    b) Calls
+    c) Mating displays
+    d) Threat displays
+
+mate selection - What is the process by which individuals choose reproductive partners based on specific traits or behaviors?
+    a) Mate selection
+    b) Territory defense
+    c) Predator avoidance
+    d) Cooperative resource acquisition
+
+territory defense - What behaviors are used by animals to protect a defined area from intruders or competitors?
+    a) Mate selection
+    b) Territory defense
+    c) Predator avoidance
+    d) Cooperative resource acquisition
+
+predator avoidance - What strategies or behaviors are used by animals to evade or deter predators?
+    a) Mate selection
+    b) Territory defense
+    c) Predator avoidance
+    d) Cooperative resource acquisition
+
+cooperative resource acquisition - What group behaviors enhance the ability of animals to obtain food or other resources?
+    a) Mate selection
+    b) Territory defense
+    c) Predator avoidance
+    d) Cooperative resource acquisition
+
+Channels - What membrane proteins passively facilitate the movement of ions or small molecules across the cell membrane?
+    a) Channels
+    b) Pumps
+    c) Carriers
+    d) Receptors
+
+Pumps - What membrane proteins actively transport substances against their concentration gradient using energy (e.g., ATP)?
+    a) Channels
+    b) Pumps
+    c) Carriers
+    d) Receptors
+
+social control - What is the regulation of individual behavior by societal norms, rules, and laws to maintain order?
+    a) Social control
+    b) Peer pressure
+    c) Conformity
+    d) Obedience
+
+peer pressure - What is the influence exerted by members of a peer group to encourage conformity to group norms and behaviors?
+    a) Social control
+    b) Peer pressure
+    c) Conformity
+    d) Obedience
+
+conformity (social) - What is the adjustment of individual attitudes or behaviors to align with the expectations of a social group?
+    a) Social control
+    b) Peer pressure
+    c) Conformity
+    d) Obedience
+
+obedience (social) - What is the act of complying with the commands or instructions of an authority figure?
+    a) Social control
+    b) Peer pressure
+    c) Conformity
+    d) Obedience
+
+Groupthink (social) - What phenomenon occurs when the desire for group harmony leads to irrational or dysfunctional decision-making?
+    a) Groupthink
+    b) Group polarization
+    c) Social facilitation
+    d) Social loafing
+
+Group polarization (social) - What phenomenon describes the tendency for group members to adopt more extreme positions after group discussion?
+    a) Groupthink
+    b) Group polarization
+    c) Social facilitation
+    d) Social loafing
+
+Social facilitation (social) - What phenomenon describes improved performance on tasks when individuals are in the presence of others?
+    a) Groupthink
+    b) Group polarization
+    c) Social facilitation
+    d) Social loafing
+
+Social loafing (social) - What phenomenon describes reduced individual effort when working in a group compared to working alone?
+    a) Groupthink
+    b) Group polarization
+    c) Social facilitation
+    d) Social loafing
+
+normative behavior - What are actions that conform to the accepted standards and expectations of a particular society or group?
+    a) Normative behavior
+    b) Social norms
+    c) Sanctions
+    d) Folkways
+
+social norms - What are the shared rules and expectations that guide behavior within a society or group?
+    a) Normative behavior
+    b) Social norms
+    c) Sanctions
+    d) Folkways
+
+sanctions - What are penalties or rewards imposed to encourage conformity to social norms or discourage deviance?
+    a) Normative behavior
+    b) Social norms
+    c) Sanctions
+    d) Folkways
+
+folkways - What are informal norms that govern everyday customs and routines, such as dress codes or table manners?
+    a) Folkways
+    b) Laws
+    c) Taboos
+    d) Sanctions
+
+laws - What are formalized norms established and enforced by governmental authority?
+    a) Folkways
+    b) Laws
+    c) Taboos
+    d) Sanctions
+
+taboos - What are strong prohibitions against certain behaviors considered morally or culturally unacceptable?
+    a) Folkways
+    b) Laws
+    c) Taboos
+    d) Sanctions
+
+anomie - What is a state of normlessness or breakdown of social norms, often occurring during periods of rapid social change?
+    a) Anomie
+    b) Deviance
+    c) Riots
+    d) Fads
+
+deviance - What is behavior that violates established social norms or expectations?
+    a) Anomie
+    b) Deviance
+    c) Riots
+    d) Fads
+
+riots - What are spontaneous, violent outbursts of collective behavior in response to perceived injustices or grievances?
+    a) Anomie
+    b) Deviance
+    c) Riots
+    d) Fads
+
+fads - What are temporary, widely adopted behaviors or trends that gain popularity quickly and fade just as rapidly?
+    a) Anomie
+    b) Deviance
+    c) Riots
+    d) Fads
+
+mass hysteria - What is a phenomenon where a group of people exhibit similar symptoms or behaviors in response to a perceived threat or fear, often irrationally?
+    a) Mass hysteria
+    b) Fads
+    c) Riots
+    d) Anomie
+
+family - What is the primary social institution responsible for early socialization and shaping an individual’s values and beliefs?
+    a) Family
+    b) Schools
+    c) Peers
+    d) Media
+
+schools - What formal institutions play a crucial role in teaching academic knowledge, social skills, and cultural norms?
+    a) Family
+    b) Schools
+    c) Peers
+    d) Media
+
+peers - What social group provides a sense of belonging and influences attitudes and behaviors during adolescence?
+    a) Family
+    b) Schools
+    c) Peers
+    d) Media
+
+media - What agent of socialization shapes perceptions, attitudes, and behaviors through various forms of mass communication?
+    a) Family
+    b) Schools
+    c) Peers
+    d) Media
+
+religion - What institution influences values, beliefs, and behaviors by providing a moral framework and sense of community?
+    a) Family
+    b) Schools
+    c) Religion
+    d) Media
+
+personal identity - What is the unique combination of characteristics, experiences, and values that define an individual?
+    a) Personal identity
+    b) Social identity
+    c) Role identity
+    d) Collective identity
+
+social identity (groups) - What aspect of identity is derived from membership in social groups such as race, ethnicity, or gender?
+    a) Personal identity
+    b) Social identity
+    c) Role identity
+    d) Collective identity
+
+role identity - What aspect of identity is based on the roles individuals occupy in society, such as parent, student, or employee?
+    a) Personal identity
+    b) Social identity
+    c) Role identity
+    d) Collective identity
+
+collective identity - What is the shared sense of belonging to a group based on common characteristics or experiences?
+    a) Personal identity
+    b) Social identity
+    c) Role identity
+    d) Collective identity
+
+race - What is a socially constructed category based on perceived physical differences such as skin color?
+    a) Race
+    b) Ethnicity
+    c) Reference groups
+    d) In groups
+
+ethnicity - What refers to shared cultural practices, language, and heritage that distinguish one group from another?
+    a) Race
+    b) Ethnicity
+    c) Reference groups
+    d) In groups
+
+reference groups - What are groups that individuals use as a standard for evaluating themselves and their behavior?
+    a) Race
+    b) Ethnicity
+    c) Reference groups
+    d) In groups
+
+in groups - What are social groups to which an individual feels a sense of belonging and loyalty?
+    a) Race
+    b) Ethnicity
+    c) Reference groups
+    d) In groups
+
+social comparison - What is the process of evaluating one’s own abilities, opinions, or status by comparing oneself to others?
+    a) Social comparison
+    b) Socialization
+    c) Implicit bias
+    d) Explicit bias
+
+socialization - What is the lifelong process by which individuals learn and internalize the values, norms, and behaviors of their culture?
+    a) Social comparison
+    b) Socialization
+    c) Implicit bias
+    d) Explicit bias
+
+implicit bias (social) - What are unconscious attitudes or stereotypes that influence social perceptions and actions?
+    a) Social comparison
+    b) Socialization
+    c) Implicit bias
+    d) Explicit bias
+
+explicit bias - What are consciously held attitudes or beliefs that influence behavior and decision-making?
+    a) Social comparison
+    b) Socialization
+    c) Implicit bias
+    d) Explicit bias
+
+confirmation bias - What cognitive bias leads individuals to seek out or interpret information in a way that confirms their existing beliefs?
+    a) Confirmation bias
+    b) Belief perseverance
+    c) Discrimination (institutional)
+    d) Social categorization
+
+discrimination (institutional) - What is the systematic and unfair treatment of individuals based on group membership, perpetuated by social institutions?
+    a) Confirmation bias
+    b) Belief perseverance
+    c) Discrimination (institutional)
+    d) Social categorization
+
+social categorization (groups) - What process involves classifying people into groups based on shared characteristics, leading to in-group and out-group distinctions?
+    a) Confirmation bias
+    b) Belief perseverance
+    c) Discrimination (institutional)
+    d) Social categorization
+
+belief perseverance - What cognitive bias involves maintaining one’s beliefs despite contradictory evidence?
+    a) Confirmation bias
+    b) Belief perseverance
+    c) Discrimination (institutional)
+    d) Social categorization
+
+power - What is the ability to influence or control the behavior of others, often contributing to social inequality?
+    a) Power
+    b) Prestige
+    c) Class
+    d) Stigma
+
+prestige - What is the level of respect and admiration accorded to an individual or group, influencing social status and opportunities?
+    a) Power
+    b) Prestige
+    c) Class
+    d) Stigma
+
+class - What is the system of social stratification based on economic status, affecting access to resources and opportunities?
+    a) Power
+    b) Prestige
+    c) Class
+    d) Stigma
+
+stigma - What is the social disapproval or discrimination against individuals based on perceived differences or undesirable characteristics?
+    a) Power
+    b) Prestige
+    c) Class
+    d) Stigma
+
+ethnocentrism - What is the belief in the superiority of one’s own culture or ethnic group, often leading to prejudice against others?
+    a) Ethnocentrism
+    b) Cultural relativism
+    c) Social roles
+    d) Status
+
+cultural relativism - What is the principle of evaluating and understanding a culture based on its own values and standards rather than judging it by the standards of another culture?
+    a) Ethnocentrism
+    b) Cultural relativism
+    c) Social roles
+    d) Status
+
+social roles - What are the expected patterns of behavior associated with particular positions in society?
+    a) Ethnocentrism
+    b) Cultural relativism
+    c) Social roles
+    d) Status
+
+status - What is a person’s social position within a group or society, which can be achieved or ascribed?
+    a) Ethnocentrism
+    b) Cultural relativism
+    c) Social roles
+    d) Status
+
+ascribed status - What is a social position assigned at birth or involuntarily later in life, such as race, gender, or ethnicity?
+    a) Ascribed status
+    b) Achieved status
+    c) Role conflict
+    d) Role exit
+
+achieved status - What is a social position attained through personal effort, actions, or accomplishments?
+    a) Ascribed status
+    b) Achieved status
+    c) Role conflict
+    d) Role exit
+
+role conflict - What occurs when an individual faces incompatible demands from different social roles they occupy?
+    a) Ascribed status
+    b) Achieved status
+    c) Role conflict
+    d) Role exit
+
+role exit - What is the process of disengaging from a role that has been central to one’s identity and establishing a new role?
+    a) Ascribed status
+    b) Achieved status
+    c) Role conflict
+    d) Role exit
+
+primary groups - What are small, close-knit social groups characterized by intimate, long-term relationships (e.g., family, close friends)?
+    a) Primary groups
+    b) Secondary groups
+    c) Dyad
+    d) Triad
+
+secondary groups - What are larger, more impersonal social groups focused on specific goals or activities (e.g., coworkers, classmates)?
+    a) Primary groups
+    b) Secondary groups
+    c) Dyad
+    d) Triad
+
+dyad - What is a social group consisting of exactly two members, often characterized by intimacy and instability?
+    a) Primary groups
+    b) Secondary groups
+    c) Dyad
+    d) Triad
+
+triad - What is a social group consisting of three members, which introduces the possibility of coalitions and more complex dynamics?
+    a) Primary groups
+    b) Secondary groups
+    c) Dyad
+    d) Triad
+
+social networks - What are the interconnected webs of social relationships that link individuals and groups?
+    a) Social networks
+    b) Utilitarian organizations
+    c) Normative organizations
+    d) Coercive organizations
+
+utilitarian organizations - What formal organizations are structured to achieve specific goals and provide material rewards to members (e.g., businesses, government agencies)?
+    a) Social networks
+    b) Utilitarian organizations
+    c) Normative organizations
+    d) Coercive organizations
+
+normative organizations - What formal organizations are formed to pursue shared interests or goals, often providing intangible rewards (e.g., religious groups, political parties)?
+    a) Social networks
+    b) Utilitarian organizations
+    c) Normative organizations
+    d) Coercive organizations
+
+coercive organizations - What formal organizations are characterized by involuntary membership and strict control over members (e.g., prisons, mental institutions)?
+    a) Social networks
+    b) Utilitarian organizations
+    c) Normative organizations
+    d) Coercive organizations
+
+bureaucracies - What are large, formal organizations characterized by hierarchical structure, clear rules, and a division of labor?
+    a) Bureaucracies
+    b) Front stage
+    c) Back stage
+    d) Impression management
+
+front stage - What is the public area of social interaction where individuals perform roles in accordance with societal expectations?
+    a) Bureaucracies
+    b) Front stage
+    c) Back stage
+    d) Impression management
+
+back stage - What is the private area of social interaction where individuals can relax and express themselves without concern for public scrutiny?
+    a) Bureaucracies
+    b) Front stage
+    c) Back stage
+    d) Impression management
+
+impression management (self) - What is the process by which individuals consciously or unconsciously attempt to influence how others perceive them, often through self-presentation strategies?
+    a) Bureaucracies
+    b) Front stage
+    c) Back stage
+    d) Impression management
+
+dendrites (neuron) - What structures on a neuron receive incoming signals from other neurons?
+    a) Dendrites
+    b) Soma
+    c) Axon
+    d) Axon terminals
+
+axon terminals - What structures at the end of a neuron release neurotransmitters into the synaptic cleft?
+    a) Dendrites
+    b) Soma
+    c) Axon
+    d) Axon terminals
+
+myelination - What process involves the formation of a fatty sheath around axons to increase the speed of electrical signal transmission?
+    a) Myelination
+    b) Nodes of Ranvier
+    c) Saltatory conduction
+    d) Axon terminals
+
+nodes of Ranvier - What are the gaps in the myelin sheath along an axon that facilitate rapid signal conduction?
+    a) Myelination
+    b) Nodes of Ranvier
+    c) Saltatory conduction
+    d) Axon terminals
+
+saltatory conduction - What is the process by which action potentials jump from one node of Ranvier to the next, increasing conduction velocity along myelinated axons?
+    a) Myelination
+    b) Nodes of Ranvier
+    c) Saltatory conduction
+    d) Axon terminals
+
+meissners corpuscles - What mechanoreceptors in the skin detect light touch and low-frequency vibration?
+    a) Pacinian corpuscles
+    b) Merkel cells
+    c) Ruffini endings
+    d) Meissners corpuscles
+pacinian corpuscles - What mechanoreceptors in the skin detect deep pressure and high-frequency vibration?
+    a) Pacinian corpuscles
+    b) Merkel cells
+    c) Ruffini endings
+    d) Meissners corpuscles
+
+merkel cells - What mechanoreceptors in the skin detect light touch and sustained pressure?
+    a) Pacinian corpuscles
+    b) Merkel cells
+    c) Ruffini endings
+    d) Meissners corpuscles
+
+ruffini endings - What mechanoreceptors in the skin detect skin stretch and sustained pressure?
+    a) Pacinian corpuscles
+    b) Merkel cells
+    c) Ruffini endings
+    d) Meissners corpuscles
+
+thermoreceptors - What sensory receptors detect changes in temperature?
+    a) Thermoreceptors
+    b) Nociceptors
+    c) Mechanoreceptors
+    d) Photoreceptors
+
+nociceptors - What sensory receptors respond to potentially harmful stimuli by detecting pain?
+    a) Thermoreceptors
+    b) Nociceptors
+    c) Mechanoreceptors
+    d) Photoreceptors
+
+skeletal muscle - What type of muscle tissue is attached to bones and responsible for voluntary movements?
+    a) Skeletal muscle
+    b) Cardiac muscle
+    c) Smooth muscle
+    d) Myocytes
+
+cardiac muscle - What type of muscle tissue makes up the heart and contracts involuntarily to pump blood?
+    a) Skeletal muscle
+    b) Cardiac muscle
+    c) Smooth muscle
+    d) Myocytes
+
+smooth muscle - What type of muscle tissue is found in the walls of hollow organs and contracts involuntarily?
+    a) Skeletal muscle
+    b) Cardiac muscle
+    c) Smooth muscle
+    d) Myocytes
+
+myocytes - What are the specialized muscle cells responsible for contraction in muscle tissue?
+    a) Myocytes
+    b) Neurons
+    c) Osteocytes
+    d) Chondrocytes
+
+myosin - What thick protein filament interacts with actin to produce muscle contraction?
+    a) Myosin
+    b) Actin
+    c) Troponin
+    d) Tropomyosin
+
+troponin - What regulatory protein binds calcium ions and initiates muscle contraction by moving tropomyosin away from actin binding sites?
+    a) Myosin
+    b) Actin
+    c) Troponin
+    d) Tropomyosin
+
+tropomyosin - What protein blocks myosin-binding sites on actin filaments and is moved during muscle contraction?
+    a) Myosin
+    b) Actin
+    c) Troponin
+    d) Tropomyosin
+
+tendons - What connective tissues attach muscles to bones, transmitting force to produce movement?
+    a) Tendons
+    b) Ligaments
+    c) Cartilage
+    d) Synovial joints
+
+ligaments - What connective tissues connect bones to other bones at joints, providing stability?
+    a) Tendons
+    b) Ligaments
+    c) Cartilage
+    d) Synovial joints
+
+synovial joints - What type of freely movable joints are characterized by a fluid-filled cavity and include the knee and shoulder?
+    a) Synovial joints
+    b) Cartilaginous joints
+    c) Fibrous joints
+    d) Syndesmoses
+
+cartilaginous joints - What type of joints allow limited movement and are connected by cartilage, such as intervertebral discs?
+    a) Synovial joints
+    b) Cartilaginous joints
+    c) Fibrous joints
+    d) Syndesmoses
+
+fibrous joints - What type of joints are immovable and connected by dense connective tissue, such as sutures in the skull?
+    a) Synovial joints
+    b) Cartilaginous joints
+    c) Fibrous joints
+    d) Syndesmoses
+
+syndesmoses - What are fibrous joints connected by ligaments, allowing limited movement (e.g., between the tibia and fibula)?
+    a) Syndesmoses
+    b) Gomphoses
+    c) Synchondroses
+    d) Synovial joints
+
+gomphoses - What are fibrous joints that anchor teeth to their sockets in the jawbone?
+    a) Syndesmoses
+    b) Gomphoses
+    c) Synchondroses
+    d) Synovial joints
+
+synchondroses - What are cartilaginous joints connected by hyaline cartilage, such as the epiphyseal plates in growing bones?
+    a) Syndesmoses
+    b) Gomphoses
+    c) Synchondroses
+    d) Synovial joints
+
+sesamoid bones - What are small, round bones that form within tendons, such as the patella (kneecap)?
+    a) Sesamoid bones
+    b) Long bones
+    c) Flat bones
+    d) Irregular bones
+
+hyaline cartilage - What type of cartilage provides support and flexibility, found in the nose, trachea, and at joint surfaces?
+    a) Hyaline cartilage
+    b) Elastic cartilage
+    c) Fibrocartilage
+    d) Articular cartilage
+
+elastic cartilage - What type of cartilage provides strength and elasticity, found in the external ear and epiglottis?
+    a) Hyaline cartilage
+    b) Elastic cartilage
+    c) Fibrocartilage
+    d) Articular cartilage
+
+fibrocartilage - What type of cartilage provides tensile strength and is found in intervertebral discs and the pubic symphysis?
+    a) Hyaline cartilage
+    b) Elastic cartilage
+    c) Fibrocartilage
+    d) Articular cartilage
+
+arteries - What blood vessels carry oxygenated blood away from the heart to the body’s tissues?
+    a) Arteries
+    b) Veins
+    c) Capillaries
+    d) Venules
+
+veins - What blood vessels carry deoxygenated blood from the body’s tissues back to the heart?
+    a) Arteries
+    b) Veins
+    c) Capillaries
+    d) Venules
+
+capillaries - What are the smallest blood vessels where exchange of gases, nutrients, and waste products occurs between blood and tissues?
+    a) Arteries
+    b) Veins
+    c) Capillaries
+    d) Venules
+
+venules - What small blood vessels collect blood from capillaries and transport it to veins?
+    a) Arteries
+    b) Veins
+    c) Capillaries
+    d) Venules
+
+plasma - What is the liquid component of blood that transports nutrients, hormones, and waste products?
+    a) Plasma
+    b) Red blood cells
+    c) White blood cells
+    d) Platelets
+
+parotid glands - What salivary glands, located near the ears, produce an enzyme called amylase that breaks down carbohydrates?
+    a) Parotid glands
+    b) Submandibular glands
+    c) Sublingual glands
+    d) Von Ebner's glands
+
+submandibular glands - What salivary glands, located beneath the jaw, produce the majority of saliva in the mouth?
+    a) Parotid glands
+    b) Submandibular glands
+    c) Sublingual glands
+    d) Von Ebner's glands
+
+von ebner's glands - What minor salivary glands, located at the back of the tongue, produce a watery secretion that aids in taste perception?
+    a) Parotid glands
+    b) Submandibular glands
+    c) Sublingual glands
+    d) Von Ebner's glands
+
+mastication - What is the process of chewing food to mechanically break it down into smaller pieces for digestion?
+    a) Mastication
+    b) Deglutition
+    c) Peristalsis
+    d) Absorption
+
+chief cells - What cells in the stomach secrete pepsinogen, which is activated to pepsin for protein digestion?
+    a) Chief cells
+    b) Parietal cells
+    c) G cells
+    d) Mucous cells
+
+parietal cells - What cells in the stomach secrete hydrochloric acid, which denatures proteins and activates pepsin?
+    a) Chief cells
+    b) Parietal cells
+    c) G cells
+    d) Mucous cells
+
+G cells - What cells in the stomach secrete gastrin, a hormone that stimulates gastric acid secretion?
+    a) Chief cells
+    b) Parietal cells
+    c) G cells
+    d) Mucous cells
+
+peptide hormones - What class of hormones, composed of amino acids, includes insulin and glucagon?
+    a) Peptide hormones
+    b) Steroid hormones
+    c) Amine hormones
+    d) Thyroid hormones
+
+insulin - What peptide hormone, produced by the pancreas, lowers blood glucose levels by promoting glucose uptake into cells?
+    a) Insulin
+    b) Glucagon
+    c) Growth hormone
+    d) Cortisol
+
+glucagon - What peptide hormone, produced by the pancreas, raises blood glucose levels by stimulating the liver to release glucose?
+    a) Insulin
+    b) Glucagon
+    c) Growth hormone
+    d) Cortisol
+
+growth hormone - What peptide hormone, produced by the pituitary gland, stimulates growth and cell reproduction?
+    a) Insulin
+    b) Glucagon
+    c) Growth hormone
+    d) Cortisol
+
+prolactin - What peptide hormone, produced by the pituitary gland, stimulates milk production in the mammary glands?
+    a) Insulin
+    b) Prolactin
+    c) Growth hormone
+    d) Cortisol
+
+cortisol - What steroid hormone, produced by the adrenal cortex, is involved in the stress response and metabolism regulation?
+    a) Insulin
+    b) Prolactin
+    c) Growth hormone
+    d) Cortisol
+
+testosterone - What steroid hormone, produced by the testes, is responsible for the development of male secondary sexual characteristics?
+    a) Testosterone
+    b) Estrogen
+    c) Progesterone
+    d) Cortisol
+
+thyroid hormones - What hormones, produced by the thyroid gland, regulate metabolism, growth, and development?
+    a) Thyroid hormones
+    b) Insulin
+    c) Cortisol
+    d) Testosterone
+
+adrenaline - What hormone (also called epinephrine), produced by the adrenal medulla, is involved in the fight-or-flight response?
+    a) Adrenaline
+    b) Noradrenaline
+    c) Dopamine
+    d) Serotonin
+
+Primary messengers - What are hormones or signaling molecules that bind to receptors on the surface of target cells to initiate a cellular response?
+    a) Primary messengers
+    b) Secondary messengers
+    c) Neurotransmitters
+    d) Enzymes
+
+Secondary messengers - What are intracellular molecules that relay signals from primary messengers to target molecules within the cell?
+    a) Primary messengers
+    b) Secondary messengers
+    c) Neurotransmitters
+    d) Enzymes
+
+cleavage - What is the series of rapid mitotic cell divisions that occur after fertilization, resulting in the formation of a blastocyst?
+    a) Cleavage
+    b) Implantation
+    c) Neurulation
+    d) Gastrulation
+
+implantation - What is the process by which the blastocyst attaches to and embeds in the uterine wall?
+    a) Cleavage
+    b) Implantation
+    c) Neurulation
+    d) Gastrulation
+
+neurulation - What is the embryonic process by which the neural tube forms, giving rise to the central nervous system?
+    a) Cleavage
+    b) Implantation
+    c) Neurulation
+    d) Gastrulation
+
+Fenestrated capillaries - What specialized capillaries in the glomerulus have pores that allow the passage of small molecules while retaining larger ones?
+    a) Fenestrated capillaries
+    b) Continuous capillaries
+    c) Sinusoidal capillaries
+    d) Lymphatic capillaries
+
+Podocytes - What specialized cells in the Bowman’s capsule wrap around glomerular capillaries and help filter blood during urine formation?
+    a) Podocytes
+    b) Mesangial cells
+    c) Endothelial cells
+    d) Epithelial cells
+
+excretion - What is the final step of waste removal, where urine is formed by the kidneys and transported out of the body?
+    a) Filtration
+    b) Reabsorption
+    c) Secretion
+    d) Excretion

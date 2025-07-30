@@ -1,10 +1,13 @@
+html {
+  background-color:rgb(75, 75, 75)
+}
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
   padding-left: 220px;
-  background-color: linear-gradient(to bottom, #ffe084, #ffa3a3);
+  
 }
 
 .left-sidebar {
@@ -224,7 +227,7 @@ li:hover::before {
 }
 
 li:hover {
-  background-color: #e0e0e0;
+  background-color: #404040;
 }
 
 button {
@@ -288,12 +291,12 @@ button:hover {
 }
 
 
-/* Payment Modal Styles */
 body {
-  background: #f5f6fa;
+  background: #ffffff;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
 }
+
 
 .sliding-header-container {
   text-align: center;
@@ -447,6 +450,13 @@ body {
   }
   .autocomplete-dropdown {
     display: none !important;
+  }
+  .try-again {
+    font-size: 0.8em !important;
+    padding: 2px 6px !important;
+    min-width: 24px !important;
+    height: 24px !important;
+    line-height: 1 !important;
   }
 }
 

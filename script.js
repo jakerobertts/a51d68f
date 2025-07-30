@@ -72,14 +72,14 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Replace content with blank underscores
-    const blankLength = Math.max(answer.length, 1); // Minimum 1 underscore
-    element.innerHTML = '_'.repeat(blankLength);
-    element.style.fontFamily = 'monospace';
+    const blankLength = Math.max(answer.length, 1);
+    element.innerHTML = '&nbsp;'.repeat(blankLength); // Minimum 1 underscore
+    element.style.fontFamily = 'apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif';
     element.style.letterSpacing = '2px';
     element.style.padding = '2px 6px';
-    element.style.backgroundColor = '#f0f0f0';
+    element.style.backgroundColor = 'white';
     element.style.border = '1px solid black';
-    element.style.borderRadius = '3px';
+    element.style.borderRadius = '7px';
     element.style.display = 'inline-block';
     element.style.minWidth = '50px';
     element.style.textAlign = 'center';
@@ -181,7 +181,9 @@ function promptAnswer(element, event) {
           option.textContent = match;
           option.style.padding = '8px 12px';
           option.style.cursor = 'pointer';
-          option.style.borderBottom = '1px solid #eee';
+          option.style.border = 'none';
+          option.style.background = 'white';
+          option.style.display = 'block';
           
           option.addEventListener('mouseenter', function() {
             option.style.backgroundColor = '#f0f8ff';
@@ -283,12 +285,12 @@ function promptAnswer(element, event) {
       } else {
         // Restore blank state if empty
         const blankLength = Math.max(correctAnswer.length, 4);
-        element.innerHTML = '_'.repeat(blankLength);
+        element.innerHTML = '&nbsp;'.repeat(blankLength);
         element.style.backgroundColor = 'white';
         element.style.border = '1px solid #ccc';
         element.style.color = 'white';
         element.style.padding = '2px 6px';
-        element.style.fontFamily = 'monospace';
+        element.style.fontFamily = 'apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif';
         element.style.letterSpacing = '2px';
         element.style.textAlign = 'center';
         element.style.cursor = 'pointer';
@@ -312,19 +314,16 @@ function resetQuestion(element) {
   
   // Restore blank state
   const blankLength = Math.max(answer.length, 4);
-  element.innerHTML = '_'.repeat(blankLength);
-  element.style.backgroundColor = '#f0f0f0';
-  element.style.color = 'white';
-  element.style.border = '1px solid #ccc';
-  element.style.backgroundColor = '#f0f0f0';
-  element.style.borderRadius = '3px';
-  element.style.padding = '2px 6px';
-  element.style.fontFamily = 'monospace';
-  element.style.letterSpacing = '2px';
-  element.style.textAlign = 'center';
-  element.style.cursor = 'pointer';
-  element.style.display = 'inline-block';
-  element.style.minWidth = '50px';
+  element.innerHTML = ' '.repeat(blankLength);
+        element.innerHTML = ' '.repeat(blankLength);
+        element.style.backgroundColor = 'white';
+        element.style.border = '1px solid #ccc';
+        element.style.color = 'white';
+        element.style.padding = '2px 6px';
+        element.style.fontFamily = 'apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif';
+        element.style.letterSpacing = '2px';
+        element.style.textAlign = 'center';
+        element.style.cursor = 'pointer';
   // Remove from answered questions and decrement score if previously answered
   const questionId = element.getAttribute('data-index');
   if (answeredQuestions.has(questionId)) {
@@ -382,7 +381,7 @@ function resetProgress() {
     element.classList.remove('revealed', 'incorrect');
     const answer = element.getAttribute('data-answer');
     const blankLength = Math.max(answer.length, 4);
-    element.innerHTML = '_'.repeat(blankLength);
+    element.innerHTML = ' '.repeat(blankLength);
     element.style.backgroundColor = '#f0f0f0';
     element.style.color = 'white';
     element.style.border = '1px solid #ccc';
