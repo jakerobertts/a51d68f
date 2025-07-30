@@ -1,0 +1,4512 @@
+[
+  {
+    "term": "speciation",
+    "question": "What is the biological process by which populations evolve to become distinct species, typically through genetic isolation and divergence?",
+    "options": [
+      "Natural selection",
+      "Speciation",
+      "Adaptation",
+      "Mutation"
+    ],
+    "answer": "Speciation"
+  },
+  {
+    "term": "polymorphism",
+    "question": "What is the occurrence of two or more clearly different phenotypes or alleles within a single interbreeding population called?",
+    "options": [
+      "Mutation",
+      "Genetic drift",
+      "Polymorphism",
+      "Speciation"
+    ],
+    "answer": "Polymorphism"
+  },
+  {
+    "term": "adaption",
+    "question": "What is the evolutionary process by which a species develops traits that increase its fitness and survival in a specific environment?",
+    "options": [
+      "Adaptation",
+      "Mutation",
+      "Speciation",
+      "Genetic drift"
+    ],
+    "answer": "Genetic drift"
+  },
+  {
+    "term": "inbreeding",
+    "question": "What is the mating of individuals who are closely related genetically, increasing the probability of offspring inheriting harmful recessive traits?",
+    "options": [
+      "Outbreeding",
+      "Inbreeding",
+      "Hybridization",
+      "Speciation"
+    ],
+    "answer": "Inbreeding"
+  },
+  {
+    "term": "melting",
+    "question": "What is the physical process in which a solid substance absorbs heat and changes into its liquid phase at a specific temperature?",
+    "options": [
+      "Freezing",
+      "Melting",
+      "Sublimation",
+      "Deposition"
+    ],
+    "answer": "Melting"
+  },
+  {
+    "term": "freezing",
+    "question": "What is the process by which a liquid loses thermal energy and transitions into a solid state at its freezing point?",
+    "options": [
+      "Melting",
+      "Freezing",
+      "Evaporation",
+      "Condensation"
+    ],
+    "answer": "Freezing"
+  },
+  {
+    "term": "deposition",
+    "question": "What is the phase transition in which a gas transforms directly into a solid without passing through the liquid state?",
+    "options": [
+      "Sublimation",
+      "Deposition",
+      "Melting",
+      "Freezing"
+    ],
+    "answer": "Deposition"
+  },
+  {
+    "term": "encoding",
+    "question": "What is the process by which sensory input is converted into a neural code that can be stored and later retrieved by the brain?",
+    "options": [
+      "Retrieval",
+      "Storage",
+      "Encoding",
+      "Consolidation"
+    ],
+    "answer": "Encoding"
+  },
+  {
+    "term": "storage",
+    "question": "What is the process of retaining encoded information in the brain over extended periods for future use?",
+    "options": [
+      "Encoding",
+      "Retrieval",
+      "Storage",
+      "Consolidation"
+    ],
+    "answer": "Storage"
+  },
+  {
+    "term": "retrieval",
+    "question": "What is the cognitive process of accessing stored information from memory and bringing it into conscious awareness?",
+    "options": [
+      "Encoding",
+      "Storage",
+      "Retrieval",
+      "Consolidation"
+    ],
+    "answer": "Retrieval"
+  },
+  {
+    "term": "sensorimotor",
+    "question": "What is the Piagetian stage (birth to 2 years) where infants learn about the world primarily through sensory experiences and motor activities?",
+    "options": [
+      "Preoperational",
+      "Sensorimotor",
+      "Concrete operational",
+      "Formal operational"
+    ],
+    "answer": "Sensorimotor"
+  },
+  {
+    "term": "preoperational",
+    "question": "What is the Piagetian stage (ages 2-7) characterized by symbolic thinking, egocentrism, and lack of logical operations?",
+    "options": [
+      "Sensorimotor",
+      "Preoperational",
+      "Concrete operational",
+      "Formal operational"
+    ],
+    "answer": "Preoperational"
+  },
+  {
+    "term": "concrete operational",
+    "question": "What is the Piagetian stage (ages 7-11) where children develop logical reasoning skills for concrete objects and events?",
+    "options": [
+      "Preoperational",
+      "Sensorimotor",
+      "Concrete operational",
+      "Formal operational"
+    ],
+    "answer": "Concrete operational"
+  },
+  {
+    "term": "formal operational",
+    "question": "What is the Piagetian stage (age 12 and up) where individuals gain the ability to think abstractly, logically, and hypothetically?",
+    "options": [
+      "Preoperational",
+      "Sensorimotor",
+      "Concrete operational",
+      "Formal operational"
+    ],
+    "answer": "Formal operational"
+  },
+  {
+    "term": "zone of proximal development",
+    "question": "What is Vygotsky’s concept describing the range of tasks a child can perform with guidance but not yet independently?",
+    "options": [
+      "Scaffolding",
+      "Zone of proximal development",
+      "Concrete operational",
+      "Sensorimotor"
+    ],
+    "answer": "Zone of proximal development"
+  },
+  {
+    "term": "scaffolding",
+    "question": "What is the instructional technique where a more knowledgeable other provides structured support to help a learner master tasks within their zone of proximal development?",
+    "options": [
+      "Scaffolding",
+      "Modeling",
+      "Reinforcement",
+      "Shaping"
+    ],
+    "answer": "Scaffolding"
+  },
+  {
+    "term": "James Lange",
+    "question": "Which theory of emotion proposes that physiological arousal occurs first and then is interpreted as a specific emotion?",
+    "options": [
+      "Cannon Bard",
+      "James Lange",
+      "Schachter Singer",
+      "Lazarus"
+    ],
+    "answer": "James Lange"
+  },
+  {
+    "term": "Cannon Bard",
+    "question": "Which theory of emotion suggests that physiological arousal and emotional experience occur simultaneously but independently?",
+    "options": [
+      "James Lange",
+      "Cannon Bard",
+      "Schachter Singer",
+      "Lazarus"
+    ],
+    "answer": "Cannon Bard"
+  },
+  {
+    "term": "Schachter Singer",
+    "question": "Which theory of emotion states that emotion is determined by physiological arousal and the cognitive interpretation of that arousal?",
+    "options": [
+      "James Lange",
+      "Cannon Bard",
+      "Schachter Singer",
+      "Lazarus"
+    ],
+    "answer": "Schachter Singer"
+  },
+  {
+    "term": "Lazarus",
+    "question": "Which theory of emotion emphasizes that cognitive appraisal of a situation precedes both the emotional and physiological response?",
+    "options": [
+      "James Lange",
+      "Cannon Bard",
+      "Schachter Singer",
+      "Lazarus"
+    ],
+    "answer": "Lazarus"
+  },
+  {
+    "term": "activation synthesis",
+    "question": "Which dream theory posits that dreams result from the brain’s attempt to make sense of random neural activity during REM sleep?",
+    "options": [
+      "Information processing",
+      "Threat simulation",
+      "Activation synthesis",
+      "Cognitive dissonance"
+    ],
+    "answer": "Activation synthesis"
+  },
+  {
+    "term": "information processing",
+    "question": "Which theory suggests that dreaming serves to consolidate and organize information acquired during waking hours?",
+    "options": [
+      "Threat simulation",
+      "Activation synthesis",
+      "Information processing",
+      "Parallel processing"
+    ],
+    "answer": "Information processing"
+  },
+  {
+    "term": "threat simulation",
+    "question": "Which evolutionary theory proposes that dreaming allows individuals to rehearse responses to threatening situations in a safe environment?",
+    "options": [
+      "Threat simulation",
+      "Activation synthesis",
+      "Information processing",
+      "Feature detection"
+    ],
+    "answer": "Threat simulation"
+  },
+  {
+    "term": "behaviorist",
+    "question": "Which theory of language acquisition asserts that language is learned through environmental reinforcement and imitation?",
+    "options": [
+      "Nativist",
+      "Behaviorist",
+      "Interactionist",
+      "Humanistic"
+    ],
+    "answer": "Behaviorist"
+  },
+  {
+    "term": "nativist",
+    "question": "Which theory of language acquisition claims that humans possess an innate biological capacity for language development?",
+    "options": [
+      "Nativist",
+      "Behaviorist",
+      "Interactionist",
+      "Humanistic"
+    ],
+    "answer": "Nativist"
+  },
+  {
+    "term": "interactionist",
+    "question": "Which theory of language acquisition integrates both innate biological factors and social interaction as essential for language development?",
+    "options": [
+      "Nativist",
+      "Behaviorist",
+      "Interactionist",
+      "Humanistic"
+    ],
+    "answer": "Interactionist"
+  },
+  {
+    "term": "psychoanalytic",
+    "question": "Which personality perspective emphasizes the influence of unconscious motives and early childhood experiences on behavior?",
+    "options": [
+      "Humanistic",
+      "Trait",
+      "Psychoanalytic",
+      "Social cognitive"
+    ],
+    "answer": "Psychoanalytic"
+  },
+  {
+    "term": "humanistic",
+    "question": "Which personality perspective focuses on self-actualization, personal growth, and the inherent goodness of individuals?",
+    "options": [
+      "Humanistic",
+      "Trait",
+      "Psychoanalytic",
+      "Social cognitive"
+    ],
+    "answer": "Humanistic"
+  },
+  {
+    "term": "trait",
+    "question": "Which personality perspective conceptualizes personality as a collection of measurable and stable characteristics?",
+    "options": [
+      "Humanistic",
+      "Trait",
+      "Psychoanalytic",
+      "Social cognitive"
+    ],
+    "answer": "Trait"
+  },
+  {
+    "term": "social cognitive",
+    "question": "Which personality perspective highlights the role of observational learning, cognitive processes, and social experiences in shaping personality?",
+    "options": [
+      "Humanistic",
+      "Trait",
+      "Psychoanalytic",
+      "Social cognitive"
+    ],
+    "answer": "Social cognitive"
+  },
+  {
+    "term": "biological",
+    "question": "Which personality perspective examines the genetic, neurobiological, and physiological bases of personality traits?",
+    "options": [
+      "Humanistic",
+      "Trait",
+      "Biological",
+      "Social cognitive"
+    ],
+    "answer": "Biological"
+  },
+  {
+    "term": "behaviorist (personality)",
+    "question": "Which personality perspective attributes behavior and personality development primarily to environmental conditioning and reinforcement?",
+    "options": [
+      "Humanistic",
+      "Trait",
+      "Psychoanalytic",
+      "Behaviorist"
+    ],
+    "answer": "Behaviorist"
+  },
+  {
+    "term": "drive reduction",
+    "question": "Which motivation theory posits that behavior is driven by the desire to reduce internal physiological tension caused by unmet biological needs?",
+    "options": [
+      "Incentive",
+      "Drive reduction",
+      "Self determination",
+      "Expectancy"
+    ],
+    "answer": "Drive reduction"
+  },
+  {
+    "term": "incentive",
+    "question": "Which motivation theory suggests that behavior is directed toward attaining external rewards or avoiding punishments?",
+    "options": [
+      "Incentive",
+      "Drive reduction",
+      "Self determination",
+      "Expectancy"
+    ],
+    "answer": "Incentive"
+  },
+  {
+    "term": "physiological",
+    "question": "What are the most basic human needs, such as food, water, and shelter, according to Maslow’s hierarchy?",
+    "options": [
+      "Safety",
+      "Physiological",
+      "Self actualization",
+      "Esteem"
+    ],
+    "answer": "Physiological"
+  },
+  {
+    "term": "safety",
+    "question": "What are the needs for security, stability, and protection from physical and emotional harm, as described in Maslow’s hierarchy?",
+    "options": [
+      "Safety",
+      "Physiological",
+      "Self actualization",
+      "Esteem"
+    ],
+    "answer": "Safety"
+  },
+  {
+    "term": "self actualization",
+    "question": "What is the highest level in Maslow’s hierarchy, representing the fulfillment of personal potential and self-growth?",
+    "options": [
+      "Safety",
+      "Physiological",
+      "Self actualization",
+      "Esteem"
+    ],
+    "answer": "Self actualization"
+  },
+  {
+    "term": "self determination",
+    "question": "Which motivation theory emphasizes the importance of autonomy, competence, and relatedness in fostering intrinsic motivation?",
+    "options": [
+      "Incentive",
+      "Drive reduction",
+      "Self determination",
+      "Expectancy"
+    ],
+    "answer": "Self determination"
+  },
+  {
+    "term": "expectancy",
+    "question": "Which motivation theory posits that motivation is determined by the expectation of success and the value placed on that success?",
+    "options": [
+      "Incentive",
+      "Drive reduction",
+      "Self determination",
+      "Expectancy"
+    ],
+    "answer": "Expectancy"
+  },
+  {
+    "term": "elaboration likelihood",
+    "question": "What dual-process model of persuasion proposes central and peripheral routes for attitude change?",
+    "options": [
+      "Elaboration likelihood",
+      "Cognitive dissonance",
+      "Attribution theory",
+      "Social identity"
+    ],
+    "answer": "Elaboration likelihood"
+  },
+  {
+    "term": "social cognitive (behavior change)",
+    "question": "Which theory explains behavior change as a result of observational learning, imitation, and modeling within a social context?",
+    "options": [
+      "Social cognitive",
+      "Trait",
+      "Psychoanalytic",
+      "Humanistic"
+    ],
+    "answer": "Humanistic"
+  },
+  {
+    "term": "integrity vs. despair",
+    "question": "What is Erikson’s final psychosocial stage (late adulthood) involving reflection on life and the sense of fulfillment or regret?",
+    "options": [
+      "Identity vs. role confusion",
+      "Integrity vs. despair",
+      "Generativity vs. stagnation",
+      "Initiative vs. guilt"
+    ],
+    "answer": "Integrity vs. despair"
+  },
+  {
+    "term": "social identity",
+    "question": "Which theory states that a person’s self-concept is derived from their membership in social groups and categories?",
+    "options": [
+      "Attribution theory",
+      "Social identity",
+      "Cognitive dissonance",
+      "Self determination"
+    ],
+    "answer": "Social identity"
+  },
+  {
+    "term": "differential association",
+    "question": "Which criminological theory asserts that deviant behavior is learned through interactions with others who promote such behavior?",
+    "options": [
+      "Labeling",
+      "Strain",
+      "Differential association",
+      "Social identity"
+    ],
+    "answer": "Differential association"
+  },
+  {
+    "term": "labeling",
+    "question": "Which sociological theory posits that being labeled as deviant influences an individual’s self-identity and behavior?",
+    "options": [
+      "Labeling",
+      "Strain",
+      "Differential association",
+      "Social identity"
+    ],
+    "answer": "Labeling"
+  },
+  {
+    "term": "strain",
+    "question": "Which theory explains deviance as a result of the gap between culturally approved goals and the means available to achieve them?",
+    "options": [
+      "Labeling",
+      "Strain",
+      "Differential association",
+      "Social identity"
+    ],
+    "answer": "Strain"
+  },
+  {
+    "term": "Photoreceptors",
+    "question": "What specialized cells in the retina (rods and cones) convert light energy into neural signals for vision?",
+    "options": [
+      "Photoreceptors",
+      "Mechanoreceptors",
+      "Thermoreceptors",
+      "Nociceptors"
+    ],
+    "answer": "Photoreceptors"
+  },
+  {
+    "term": "Parallel Processing",
+    "question": "What cognitive process allows the brain to simultaneously analyze multiple features of a stimulus, such as color, shape, and motion?",
+    "options": [
+      "Feature detection",
+      "Parallel processing",
+      "Bottom up processing",
+      "Top down processing"
+    ],
+    "answer": "Parallel processing"
+  },
+  {
+    "term": "Feature Detection",
+    "question": "What neural process involves identifying specific visual features like edges, angles, and movement in the visual cortex?",
+    "options": [
+      "Feature detection",
+      "Parallel processing",
+      "Bottom up processing",
+      "Top down processing"
+    ],
+    "answer": "Feature detection"
+  },
+  {
+    "term": "Kinesthetic",
+    "question": "What sensory system provides information about the movement and position of body parts relative to each other?",
+    "options": [
+      "Vestibular",
+      "Kinesthetic",
+      "Proprioceptive",
+      "Visual"
+    ],
+    "answer": "Kinesthetic"
+  },
+  {
+    "term": "Proprioceptive",
+    "question": "What sensory system provides information about the position and movement of the body in space, independent of vision?",
+    "options": [
+      "Vestibular",
+      "Kinesthetic",
+      "Proprioceptive",
+      "Visual"
+    ],
+    "answer": "Proprioceptive"
+  },
+  {
+    "term": "Vestibular",
+    "question": "What sensory system, located in the inner ear, detects head position and movement to maintain balance and spatial orientation?",
+    "options": [
+      "Vestibular",
+      "Kinesthetic",
+      "Proprioceptive",
+      "Visual"
+    ],
+    "answer": "Vestibular"
+  },
+  {
+    "term": "Bottom up processing",
+    "question": "What perceptual process involves constructing a whole perception by integrating sensory input without prior knowledge?",
+    "options": [
+      "Top down processing",
+      "Bottom up processing",
+      "Parallel processing",
+      "Feature detection"
+    ],
+    "answer": "Bottom up processing"
+  },
+  {
+    "term": "Top down processing",
+    "question": "What perceptual process uses existing knowledge, expectations, and experiences to interpret sensory information?",
+    "options": [
+      "Top down processing",
+      "Bottom up processing",
+      "Parallel processing",
+      "Feature detection"
+    ],
+    "answer": "Top down processing"
+  },
+  {
+    "term": "Interposition",
+    "question": "What monocular depth cue involves perceiving an object as closer when it partially blocks the view of another object?",
+    "options": [
+      "Linear perspective",
+      "Texture gradient",
+      "Interposition",
+      "Motion parallax"
+    ],
+    "answer": "Interposition"
+  },
+  {
+    "term": "Texture Gradient",
+    "question": "What monocular depth cue involves perceiving objects with coarse texture as closer and those with finer texture as farther away?",
+    "options": [
+      "Linear perspective",
+      "Texture gradient",
+      "Interposition",
+      "Motion parallax"
+    ],
+    "answer": "Texture gradient"
+  },
+  {
+    "term": "Linear Perspective",
+    "question": "What monocular depth cue involves perceiving parallel lines as converging in the distance, indicating depth?",
+    "options": [
+      "Linear perspective",
+      "Texture gradient",
+      "Interposition",
+      "Motion parallax"
+    ],
+    "answer": "Linear perspective"
+  },
+  {
+    "term": "Motion Parallax",
+    "question": "What depth cue involves perceiving objects closer to the observer as moving faster than those farther away when the observer is in motion?",
+    "options": [
+      "Linear perspective",
+      "Texture gradient",
+      "Interposition",
+      "Motion parallax"
+    ],
+    "answer": "Motion parallax"
+  },
+  {
+    "term": "Shading and Contour",
+    "question": "What visual cues use variations in light and shadow to create the perception of depth and three-dimensionality?",
+    "options": [
+      "Shading and contour",
+      "Linear perspective",
+      "Texture gradient",
+      "Interposition"
+    ],
+    "answer": "Shading and contour"
+  },
+  {
+    "term": "constancy",
+    "question": "What perceptual phenomenon allows us to perceive objects as unchanging in size, shape, and color despite changes in sensory input?",
+    "options": [
+      "Constancy",
+      "Feature detection",
+      "Parallel processing",
+      "Bottom up processing"
+    ],
+    "answer": "Constancy"
+  },
+  {
+    "term": "Retinal Disparity",
+    "question": "What binocular cue for depth perception arises from the slight difference in images between the two eyes?",
+    "options": [
+      "Convergence",
+      "Retinal disparity",
+      "Interposition",
+      "Motion parallax"
+    ],
+    "answer": "Retinal disparity"
+  },
+  {
+    "term": "Convergence",
+    "question": "What binocular cue for depth perception involves the inward movement of the eyes when focusing on a nearby object?",
+    "options": [
+      "Convergence",
+      "Retinal disparity",
+      "Interposition",
+      "Motion parallax"
+    ],
+    "answer": "Convergence"
+  },
+  {
+    "term": "Similarity",
+    "question": "What Gestalt principle describes the tendency to group similar elements together in perception?",
+    "options": [
+      "Similarity",
+      "Continuity",
+      "Closure",
+      "Pragnanz"
+    ],
+    "answer": "Similarity"
+  },
+  {
+    "term": "Continuity",
+    "question": "What Gestalt principle describes the tendency to perceive smooth, continuous patterns rather than abrupt changes?",
+    "options": [
+      "Similarity",
+      "Continuity",
+      "Closure",
+      "Pragnanz"
+    ],
+    "answer": "Continuity"
+  },
+  {
+    "term": "Closure",
+    "question": "What Gestalt principle describes the tendency to fill in gaps to perceive a complete, whole object?",
+    "options": [
+      "Similarity",
+      "Continuity",
+      "Closure",
+      "Pragnanz"
+    ],
+    "answer": "Closure"
+  },
+  {
+    "term": "Pragnanz",
+    "question": "What Gestalt principle states that we perceive complex images in the simplest form possible?",
+    "options": [
+      "Similarity",
+      "Continuity",
+      "Closure",
+      "Pragnanz"
+    ],
+    "answer": "Pragnanz"
+  },
+  {
+    "term": "Selective attention",
+    "question": "What cognitive process involves focusing mental resources on a specific stimulus while ignoring others?",
+    "options": [
+      "Selective attention",
+      "Divided attention",
+      "Working memory",
+      "Encoding"
+    ],
+    "answer": "Selective attention"
+  },
+  {
+    "term": "Divided attention",
+    "question": "What cognitive ability allows an individual to process multiple sources of information or perform multiple tasks simultaneously?",
+    "options": [
+      "Selective attention",
+      "Divided attention",
+      "Working memory",
+      "Encoding"
+    ],
+    "answer": "Divided attention"
+  },
+  {
+    "term": "Cognitive Development",
+    "question": "What is the process by which children and adolescents acquire and refine intellectual abilities such as reasoning, problem-solving, and memory?",
+    "options": [
+      "Cognitive development",
+      "Intellectual functioning",
+      "Working memory",
+      "Encoding"
+    ],
+    "answer": "Cognitive development"
+  },
+  {
+    "term": "Intellectual Functioning",
+    "question": "What term encompasses a range of cognitive abilities, including reasoning, problem-solving, planning, and abstract thinking?",
+    "options": [
+      "Cognitive development",
+      "Intellectual functioning",
+      "Working memory",
+      "Encoding"
+    ],
+    "answer": "Intellectual functioning"
+  },
+  {
+    "term": "Beta waves",
+    "question": "What type of brain waves, detected by EEG, are associated with alertness, active thinking, and concentration?",
+    "options": [
+      "Alpha waves",
+      "Beta waves",
+      "Theta waves",
+      "Delta waves"
+    ],
+    "answer": "Beta waves"
+  },
+  {
+    "term": "Alpha waves",
+    "question": "What type of brain waves, detected by EEG, are associated with relaxed wakefulness and calmness?",
+    "options": [
+      "Alpha waves",
+      "Beta waves",
+      "Theta waves",
+      "Delta waves"
+    ],
+    "answer": "Alpha waves"
+  },
+  {
+    "term": "Theta waves",
+    "question": "What type of brain waves, detected by EEG, are associated with light sleep, drowsiness, and deep relaxation?",
+    "options": [
+      "Alpha waves",
+      "Beta waves",
+      "Theta waves",
+      "Delta waves"
+    ],
+    "answer": "Theta waves"
+  },
+  {
+    "term": "Delta waves",
+    "question": "What type of brain waves, detected by EEG, are associated with deep, restorative sleep (slow-wave sleep)?",
+    "options": [
+      "Alpha waves",
+      "Beta waves",
+      "Theta waves",
+      "Delta waves"
+    ],
+    "answer": "Delta waves"
+  },
+  {
+    "term": "N1",
+    "question": "What is the initial and lightest stage of non-REM sleep, characterized by slow eye movements and easy arousal?",
+    "options": [
+      "N1",
+      "N2",
+      "N3",
+      "REM sleep"
+    ],
+    "answer": "N1"
+  },
+  {
+    "term": "N2",
+    "question": "What is the stage of non-REM sleep characterized by the presence of sleep spindles and K-complexes on EEG?",
+    "options": [
+      "N1",
+      "N2",
+      "N3",
+      "REM sleep"
+    ],
+    "answer": "N2"
+  },
+  {
+    "term": "N3",
+    "question": "What is the deepest stage of non-REM sleep, important for physical restoration and memory consolidation?",
+    "options": [
+      "N1",
+      "N2",
+      "N3",
+      "REM sleep"
+    ],
+    "answer": "N3"
+  },
+  {
+    "term": "REM sleep",
+    "question": "What sleep stage is characterized by rapid eye movements, vivid dreaming, and increased brain activity similar to wakefulness?",
+    "options": [
+      "N1",
+      "N2",
+      "N3",
+      "REM sleep"
+    ],
+    "answer": "REM sleep"
+  },
+  {
+    "term": "Stimulants",
+    "question": "What class of psychoactive drugs increases central nervous system activity, alertness, and energy (e.g., caffeine, amphetamines)?",
+    "options": [
+      "Stimulants",
+      "Depressants",
+      "Hallucinogens",
+      "Opioids"
+    ],
+    "answer": "Stimulants"
+  },
+  {
+    "term": "Depressants",
+    "question": "What class of psychoactive drugs reduces central nervous system activity, leading to relaxation and decreased anxiety (e.g., alcohol, benzodiazepines)?",
+    "options": [
+      "Stimulants",
+      "Depressants",
+      "Hallucinogens",
+      "Opioids"
+    ],
+    "answer": "Depressants"
+  },
+  {
+    "term": "Hallucinogens",
+    "question": "What class of psychoactive drugs alters perception, mood, and cognition, often causing hallucinations (e.g., LSD, psilocybin)?",
+    "options": [
+      "Stimulants",
+      "Depressants",
+      "Hallucinogens",
+      "Opioids"
+    ],
+    "answer": "Hallucinogens"
+  },
+  {
+    "term": "Opioids",
+    "question": "What class of drugs relieves pain and induces euphoria by binding to opioid receptors in the brain (e.g., morphine, heroin)?",
+    "options": [
+      "Stimulants",
+      "Depressants",
+      "Hallucinogens",
+      "Opioids"
+    ],
+    "answer": "Opioids"
+  },
+  {
+    "term": "Cannabis",
+    "question": "What psychoactive substance can produce stimulant, depressant, and hallucinogenic effects depending on dose and individual response?",
+    "options": [
+      "Stimulants",
+      "Depressants",
+      "Hallucinogens",
+      "Cannabis"
+    ],
+    "answer": "Cannabis"
+  },
+  {
+    "term": "Iconic memory",
+    "question": "What is the brief sensory memory that stores visual information for a fraction of a second after the stimulus is removed?",
+    "options": [
+      "Iconic memory",
+      "Echoic memory",
+      "Working memory",
+      "Long term memory"
+    ],
+    "answer": "Iconic memory"
+  },
+  {
+    "term": "Echoic memory",
+    "question": "What is the brief sensory memory that stores auditory information for several seconds after the sound is heard?",
+    "options": [
+      "Iconic memory",
+      "Echoic memory",
+      "Working memory",
+      "Long term memory"
+    ],
+    "answer": "Echoic memory"
+  },
+  {
+    "term": "Working memory",
+    "question": "What is the cognitive system responsible for temporarily holding and manipulating information needed for complex tasks?",
+    "options": [
+      "Iconic memory",
+      "Echoic memory",
+      "Working memory",
+      "Long term memory"
+    ],
+    "answer": "Working memory"
+  },
+  {
+    "term": "Phonological loop",
+    "question": "What component of working memory is specialized for storing and rehearsing verbal and auditory information?",
+    "options": [
+      "Phonological loop",
+      "Visuospatial sketchpad",
+      "Central executive",
+      "Long term memory"
+    ],
+    "answer": "Phonological loop"
+  },
+  {
+    "term": "Visuospatial sketchpad",
+    "question": "What component of working memory is specialized for storing and manipulating visual and spatial information?",
+    "options": [
+      "Phonological loop",
+      "Visuospatial sketchpad",
+      "Central executive",
+      "Long term memory"
+    ],
+    "answer": "Visuospatial sketchpad"
+  },
+  {
+    "term": "Central executive",
+    "question": "What component of working memory coordinates attention and integrates information from the phonological loop and visuospatial sketchpad?",
+    "options": [
+      "Phonological loop",
+      "Visuospatial sketchpad",
+      "Central executive",
+      "Long term memory"
+    ],
+    "answer": "Central executive"
+  },
+  {
+    "term": "Long term memory",
+    "question": "What is the system for storing information over extended periods, potentially for a lifetime?",
+    "options": [
+      "Iconic memory",
+      "Echoic memory",
+      "Working memory",
+      "Long term memory"
+    ],
+    "answer": "Long term memory"
+  },
+  {
+    "term": "Encoding",
+    "question": "What is the process of transforming sensory input into a format that can be stored in long-term memory?",
+    "options": [
+      "Encoding",
+      "Storage",
+      "Retrieval",
+      "Forgetting"
+    ],
+    "answer": "Encoding"
+  },
+  {
+    "term": "Storage",
+    "question": "What is the process of maintaining encoded information in the brain over time?",
+    "options": [
+      "Encoding",
+      "Storage",
+      "Retrieval",
+      "Forgetting"
+    ],
+    "answer": "Storage"
+  },
+  {
+    "term": "Retrieval",
+    "question": "What is the process of accessing stored information from long-term memory and bringing it into conscious awareness?",
+    "options": [
+      "Encoding",
+      "Storage",
+      "Retrieval",
+      "Forgetting"
+    ],
+    "answer": "Retrieval"
+  },
+  {
+    "term": "Forgetting",
+    "question": "What is the inability to recall information that was previously encoded and stored in memory?",
+    "options": [
+      "Encoding",
+      "Storage",
+      "Retrieval",
+      "Forgetting"
+    ],
+    "answer": "Forgetting"
+  },
+  {
+    "term": "Physiological arousal",
+    "question": "What is the activation of the autonomic nervous system in response to an emotional stimulus, resulting in physical changes such as increased heart rate?",
+    "options": [
+      "Physiological arousal",
+      "Cognitive appraisal",
+      "Behavioral expression",
+      "Emotional regulation"
+    ],
+    "answer": "Physiological arousal"
+  },
+  {
+    "term": "Cognitive appraisal",
+    "question": "What is the mental process of evaluating and interpreting a situation to determine its emotional significance?",
+    "options": [
+      "Physiological arousal",
+      "Cognitive appraisal",
+      "Behavioral expression",
+      "Emotional regulation"
+    ],
+    "answer": "Cognitive appraisal"
+  },
+  {
+    "term": "Behavioral expression",
+    "question": "What is the outward display of emotions through observable actions, facial expressions, and body language?",
+    "options": [
+      "Physiological arousal",
+      "Cognitive appraisal",
+      "Behavioral expression",
+      "Emotional regulation"
+    ],
+    "answer": "Behavioral expression"
+  },
+  {
+    "term": "Happiness",
+    "question": "What is a positive emotional state characterized by feelings of joy, satisfaction, and well-being?",
+    "options": [
+      "Happiness",
+      "Sadness",
+      "Fear",
+      "Anger"
+    ],
+    "answer": "Happiness"
+  },
+  {
+    "term": "Sadness",
+    "question": "What is a negative emotional state characterized by feelings of loss, disappointment, or helplessness?",
+    "options": [
+      "Happiness",
+      "Sadness",
+      "Fear",
+      "Anger"
+    ],
+    "answer": "Sadness"
+  },
+  {
+    "term": "Fear",
+    "question": "What is an emotional response to perceived threats or danger, often triggering a fight-or-flight reaction?",
+    "options": [
+      "Happiness",
+      "Sadness",
+      "Fear",
+      "Anger"
+    ],
+    "answer": "Fear"
+  },
+  {
+    "term": "Anger",
+    "question": "What is an emotional response to perceived injustice, frustration, or provocation, often resulting in aggressive behavior?",
+    "options": [
+      "Happiness",
+      "Sadness",
+      "Fear",
+      "Anger"
+    ],
+    "answer": "Anger"
+  },
+  {
+    "term": "Disgust",
+    "question": "What is an emotional response to stimuli considered offensive, repulsive, or contaminated?",
+    "options": [
+      "Disgust",
+      "Surprise",
+      "Fear",
+      "Anger"
+    ],
+    "answer": "Disgust"
+  },
+  {
+    "term": "Surprise",
+    "question": "What is an emotional response to unexpected or novel events that violate expectations?",
+    "options": [
+      "Disgust",
+      "Surprise",
+      "Fear",
+      "Anger"
+    ],
+    "answer": "Surprise"
+  },
+  {
+    "term": "Stressors",
+    "question": "What are external or internal events and situations that trigger the body’s stress response?",
+    "options": [
+      "Stressors",
+      "Daily hassles",
+      "Catastrophic events",
+      "Chronic stressors"
+    ],
+    "answer": "Stressors"
+  },
+  {
+    "term": "Daily hassles",
+    "question": "What are minor, everyday irritations and annoyances (e.g., traffic jams, work deadlines) that can accumulate and contribute to stress?",
+    "options": [
+      "Stressors",
+      "Daily hassles",
+      "Catastrophic events",
+      "Chronic stressors"
+    ],
+    "answer": "Daily hassles"
+  },
+  {
+    "term": "Catastrophic events",
+    "question": "What are large-scale, traumatic occurrences (e.g., natural disasters, terrorist attacks) that can cause intense psychological stress?",
+    "options": [
+      "Stressors",
+      "Daily hassles",
+      "Catastrophic events",
+      "Chronic stressors"
+    ],
+    "answer": "Catastrophic events"
+  },
+  {
+    "term": "Chronic stressors",
+    "question": "What are ongoing, persistent sources of stress (e.g., financial difficulties, caregiving responsibilities) that can negatively impact health over time?",
+    "options": [
+      "Stressors",
+      "Daily hassles",
+      "Catastrophic events",
+      "Chronic stressors"
+    ],
+    "answer": "Chronic stressors"
+  },
+  {
+    "term": "Environmental stressors",
+    "question": "What are external factors in the physical environment (e.g., noise, pollution) that can increase stress levels?",
+    "options": [
+      "Stressors",
+      "Daily hassles",
+      "Catastrophic events",
+      "Environmental stressors"
+    ],
+    "answer": "Environmental stressors"
+  },
+  {
+    "term": "Broca's area",
+    "question": "What region of the frontal lobe is responsible for language production and speech articulation?",
+    "options": [
+      "Broca's area",
+      "Wernicke's area",
+      "Angular gyrus",
+      "Arcuate fasciculus"
+    ],
+    "answer": "Broca's area"
+  },
+  {
+    "term": "Wernicke's area",
+    "question": "What region of the temporal lobe is responsible for language comprehension and processing?",
+    "options": [
+      "Broca's area",
+      "Wernicke's area",
+      "Angular gyrus",
+      "Arcuate fasciculus"
+    ],
+    "answer": "Wernicke's area"
+  },
+  {
+    "term": "arcuate fasciculus",
+    "question": "What bundle of nerve fibers connects Broca’s area and Wernicke’s area, facilitating language processing?",
+    "options": [
+      "Broca's area",
+      "Wernicke's area",
+      "Angular gyrus",
+      "Arcuate fasciculus"
+    ],
+    "answer": "Arcuate fasciculus"
+  },
+  {
+    "term": "angular gyrus",
+    "question": "What brain region is involved in reading, writing, and the integration of visual and auditory information for language?",
+    "options": [
+      "Broca's area",
+      "Wernicke's area",
+      "Angular gyrus",
+      "Arcuate fasciculus"
+    ],
+    "answer": "Angular gyrus"
+  },
+  {
+    "term": "serotonin",
+    "question": "What neurotransmitter is primarily involved in regulating mood, appetite, and sleep, and is implicated in depression and anxiety disorders?",
+    "options": [
+      "Dopamine",
+      "Norepinephrine",
+      "Serotonin",
+      "Acetylcholine"
+    ],
+    "answer": "Serotonin"
+  },
+  {
+    "term": "paranoid personality disorder",
+    "question": "What personality disorder is characterized by pervasive distrust and suspicion of others’ motives?",
+    "options": [
+      "Paranoid personality disorder",
+      "Schizoid personality disorder",
+      "Schizotypal personality disorder",
+      "Antisocial personality disorder"
+    ],
+    "answer": "Paranoid personality disorder"
+  },
+  {
+    "term": "schizoid personality disorder",
+    "question": "What personality disorder involves a persistent pattern of detachment from social relationships and limited emotional expression?",
+    "options": [
+      "Paranoid personality disorder",
+      "Schizoid personality disorder",
+      "Schizotypal personality disorder",
+      "Antisocial personality disorder"
+    ],
+    "answer": "Schizoid personality disorder"
+  },
+  {
+    "term": "schizotypal personality disorder",
+    "question": "What personality disorder is marked by eccentric behavior, cognitive distortions, and acute discomfort in close relationships?",
+    "options": [
+      "Paranoid personality disorder",
+      "Schizoid personality disorder",
+      "Schizotypal personality disorder",
+      "Antisocial personality disorder"
+    ],
+    "answer": "Schizotypal personality disorder"
+  },
+  {
+    "term": "Antisocial personality disorder",
+    "question": "What personality disorder is characterized by a disregard for the rights of others, impulsivity, and lack of remorse?",
+    "options": [
+      "Paranoid personality disorder",
+      "Schizoid personality disorder",
+      "Schizotypal personality disorder",
+      "Antisocial personality disorder"
+    ],
+    "answer": "Antisocial personality disorder"
+  },
+  {
+    "term": "Borderline personality disorder",
+    "question": "What personality disorder involves instability in interpersonal relationships, self-image, and emotional regulation?",
+    "options": [
+      "Borderline personality disorder",
+      "Histrionic personality disorder",
+      "Narcissistic personality disorder",
+      "Avoidant personality disorder"
+    ],
+    "answer": "Borderline personality disorder"
+  },
+  {
+    "term": "Histrionic personality disorder",
+    "question": "What personality disorder is characterized by excessive emotionality, attention-seeking, and a need for approval?",
+    "options": [
+      "Borderline personality disorder",
+      "Histrionic personality disorder",
+      "Narcissistic personality disorder",
+      "Avoidant personality disorder"
+    ],
+    "answer": "Histrionic personality disorder"
+  },
+  {
+    "term": "Narcissistic personality disorder",
+    "question": "What personality disorder involves a grandiose sense of self-importance, need for admiration, and lack of empathy?",
+    "options": [
+      "Borderline personality disorder",
+      "Histrionic personality disorder",
+      "Narcissistic personality disorder",
+      "Avoidant personality disorder"
+    ],
+    "answer": "Narcissistic personality disorder"
+  },
+  {
+    "term": "Avoidant personality disorder",
+    "question": "What personality disorder is characterized by social inhibition, feelings of inadequacy, and hypersensitivity to negative evaluation?",
+    "options": [
+      "Borderline personality disorder",
+      "Histrionic personality disorder",
+      "Narcissistic personality disorder",
+      "Avoidant personality disorder"
+    ],
+    "answer": "Avoidant personality disorder"
+  },
+  {
+    "term": "Dependent personality disorder",
+    "question": "What personality disorder involves an excessive need to be cared for, leading to submissive and clinging behavior?",
+    "options": [
+      "Dependent personality disorder",
+      "Avoidant personality disorder",
+      "Obsessive-compulsive personality disorder",
+      "Borderline personality disorder"
+    ],
+    "answer": "Dependent personality disorder"
+  },
+  {
+    "term": "Obsessive",
+    "question": "compulsive personality disorder - What personality disorder is marked by preoccupation with orderliness, perfectionism, and control at the expense of flexibility?",
+    "options": [
+      "Dependent personality disorder",
+      "Avoidant personality disorder",
+      "Obsessive-compulsive personality disorder",
+      "Borderline personality disorder"
+    ],
+    "answer": "Borderline personality disorder"
+  },
+  {
+    "term": "Schizophrenia",
+    "question": "What severe mental disorder is characterized by disturbances in thought, perception, emotion, and behavior, including hallucinations and delusions?",
+    "options": [
+      "Autism",
+      "ADHD",
+      "PTSD",
+      "Schizophrenia"
+    ],
+    "answer": "Schizophrenia"
+  },
+  {
+    "term": "Autism",
+    "question": "What neurodevelopmental disorder is characterized by deficits in social communication, restricted interests, and repetitive behaviors?",
+    "options": [
+      "Autism",
+      "ADHD",
+      "PTSD",
+      "Schizophrenia"
+    ],
+    "answer": "Autism"
+  },
+  {
+    "term": "ADHD",
+    "question": "What neurodevelopmental disorder is characterized by persistent patterns of inattention, hyperactivity, and impulsivity?",
+    "options": [
+      "Autism",
+      "ADHD",
+      "PTSD",
+      "Schizophrenia"
+    ],
+    "answer": "ADHD"
+  },
+  {
+    "term": "PTSD",
+    "question": "What mental health disorder develops after exposure to a traumatic event and is characterized by intrusive memories, avoidance, and hyperarousal?",
+    "options": [
+      "Autism",
+      "ADHD",
+      "PTSD",
+      "Schizophrenia"
+    ],
+    "answer": "PTSD"
+  },
+  {
+    "term": "Acute stress",
+    "question": "What short-term psychological condition occurs in response to a traumatic event, with symptoms similar to PTSD but lasting less than one month?",
+    "options": [
+      "Acute stress",
+      "PTSD",
+      "GAD",
+      "Social anxiety"
+    ],
+    "answer": "Acute stress"
+  },
+  {
+    "term": "GAD",
+    "question": "What anxiety disorder is characterized by excessive, uncontrollable worry about multiple aspects of daily life, often accompanied by physical symptoms?",
+    "options": [
+      "Acute stress",
+      "PTSD",
+      "GAD",
+      "Social anxiety"
+    ],
+    "answer": "GAD"
+  },
+  {
+    "term": "Social anxiety",
+    "question": "What anxiety disorder involves intense fear and avoidance of social situations due to concerns about being judged or embarrassed?",
+    "options": [
+      "Acute stress",
+      "PTSD",
+      "GAD",
+      "Social anxiety"
+    ],
+    "answer": "Social anxiety"
+  },
+  {
+    "term": "Specific phobias",
+    "question": "What anxiety disorders involve irrational and persistent fear of specific objects or situations, leading to avoidance behavior?",
+    "options": [
+      "Specific phobias",
+      "Agoraphobia",
+      "OCD",
+      "Body dysmorphic disorder"
+    ],
+    "answer": "Specific phobias"
+  },
+  {
+    "term": "Agoraphobia",
+    "question": "What anxiety disorder is characterized by fear of situations where escape might be difficult or help unavailable, often resulting in avoidance of public places?",
+    "options": [
+      "Specific phobias",
+      "Agoraphobia",
+      "OCD",
+      "Body dysmorphic disorder"
+    ],
+    "answer": "Agoraphobia"
+  },
+  {
+    "term": "OCD",
+    "question": "What disorder involves recurrent, intrusive thoughts (obsessions) and repetitive behaviors (compulsions) performed to reduce anxiety?",
+    "options": [
+      "Specific phobias",
+      "Agoraphobia",
+      "OCD",
+      "Body dysmorphic disorder"
+    ],
+    "answer": "OCD"
+  },
+  {
+    "term": "Body dysmorphic disorder",
+    "question": "What mental disorder is characterized by obsessive preoccupation with perceived defects or flaws in physical appearance?",
+    "options": [
+      "Specific phobias",
+      "Agoraphobia",
+      "OCD",
+      "Body dysmorphic disorder"
+    ],
+    "answer": "Body dysmorphic disorder"
+  },
+  {
+    "term": "Hoarding disorder",
+    "question": "What mental disorder involves persistent difficulty discarding possessions, resulting in excessive accumulation and clutter?",
+    "options": [
+      "Hoarding disorder",
+      "Somatic symptom disorder",
+      "Illness anxiety disorder",
+      "Conversion disorder"
+    ],
+    "answer": "Hoarding disorder"
+  },
+  {
+    "term": "Somatic symptom disorder",
+    "question": "What mental disorder involves experiencing physical symptoms that cause significant distress or impairment, without a clear medical cause?",
+    "options": [
+      "Hoarding disorder",
+      "Somatic symptom disorder",
+      "Illness anxiety disorder",
+      "Conversion disorder"
+    ],
+    "answer": "Somatic symptom disorder"
+  },
+  {
+    "term": "Illness anxiety disorder",
+    "question": "What mental disorder is characterized by excessive worry about having or acquiring a serious illness, despite minimal or no physical symptoms?",
+    "options": [
+      "Hoarding disorder",
+      "Somatic symptom disorder",
+      "Illness anxiety disorder",
+      "Conversion disorder"
+    ],
+    "answer": "Illness anxiety disorder"
+  },
+  {
+    "term": "Conversion disorder",
+    "question": "What mental disorder involves neurological symptoms (e.g., paralysis, tremors) that cannot be explained by medical evaluation and are linked to psychological factors?",
+    "options": [
+      "Hoarding disorder",
+      "Somatic symptom disorder",
+      "Illness anxiety disorder",
+      "Conversion disorder"
+    ],
+    "answer": "Conversion disorder"
+  },
+  {
+    "term": "Factitious disorder",
+    "question": "What mental disorder involves intentionally producing or feigning physical or psychological symptoms to assume the sick role?",
+    "options": [
+      "Hoarding disorder",
+      "Somatic symptom disorder",
+      "Factitious disorder",
+      "Conversion disorder"
+    ],
+    "answer": "Factitious disorder"
+  },
+  {
+    "term": "Intrinsic motivation",
+    "question": "What type of motivation involves engaging in a behavior because it is inherently satisfying or enjoyable?",
+    "options": [
+      "Intrinsic motivation",
+      "Extrinsic motivation",
+      "Maslow's hierarchy of needs",
+      "Cognitive dissonance"
+    ],
+    "answer": "Intrinsic motivation"
+  },
+  {
+    "term": "Extrinsic motivation",
+    "question": "What type of motivation involves engaging in a behavior to earn external rewards or avoid punishments?",
+    "options": [
+      "Intrinsic motivation",
+      "Extrinsic motivation",
+      "Maslow's hierarchy of needs",
+      "Cognitive dissonance"
+    ],
+    "answer": "Extrinsic motivation"
+  },
+  {
+    "term": "Maslow's hierarchy of needs",
+    "question": "What motivational theory proposes that human needs are arranged in a hierarchy, from physiological needs to self-actualization?",
+    "options": [
+      "Intrinsic motivation",
+      "Extrinsic motivation",
+      "Maslow's hierarchy of needs",
+      "Cognitive dissonance"
+    ],
+    "answer": "Maslow's hierarchy of needs"
+  },
+  {
+    "term": "Cognitive (attitude)",
+    "question": "What component of attitude refers to the beliefs, thoughts, and knowledge one has about an object or situation?",
+    "options": [
+      "Cognitive",
+      "Affective",
+      "Behavioral",
+      "Motivational"
+    ],
+    "answer": "Motivational"
+  },
+  {
+    "term": "Affective (attitude)",
+    "question": "What component of attitude involves the emotional responses or feelings toward an object or situation?",
+    "options": [
+      "Cognitive",
+      "Affective",
+      "Behavioral",
+      "Motivational"
+    ],
+    "answer": "Motivational"
+  },
+  {
+    "term": "Behavioral (attitude)",
+    "question": "What component of attitude refers to the actions or observable behaviors associated with an attitude?",
+    "options": [
+      "Cognitive",
+      "Affective",
+      "Behavioral",
+      "Motivational"
+    ],
+    "answer": "Motivational"
+  },
+  {
+    "term": "Cognitive dissonance",
+    "question": "What psychological phenomenon occurs when an individual experiences discomfort due to holding conflicting beliefs or attitudes, often leading to attitude change?",
+    "options": [
+      "Cognitive dissonance",
+      "Attribution theory",
+      "Self serving bias",
+      "Social identity"
+    ],
+    "answer": "Cognitive dissonance"
+  },
+  {
+    "term": "Social facilitation",
+    "question": "What phenomenon describes improved performance on simple or well-learned tasks in the presence of others?",
+    "options": [
+      "Social facilitation",
+      "Social loafing",
+      "Group polarization",
+      "Groupthink"
+    ],
+    "answer": "Social facilitation"
+  },
+  {
+    "term": "Deindividuation",
+    "question": "What psychological state involves a loss of self-awareness and personal responsibility in group settings, often leading to impulsive behavior?",
+    "options": [
+      "Social facilitation",
+      "Deindividuation",
+      "Group polarization",
+      "Groupthink"
+    ],
+    "answer": "Deindividuation"
+  },
+  {
+    "term": "Bystander effect",
+    "question": "What social phenomenon describes the decreased likelihood of helping a victim when other people are present?",
+    "options": [
+      "Social facilitation",
+      "Bystander effect",
+      "Group polarization",
+      "Groupthink"
+    ],
+    "answer": "Bystander effect"
+  },
+  {
+    "term": "Social loafing",
+    "question": "What phenomenon describes the tendency for individuals to exert less effort when working in a group compared to working alone?",
+    "options": [
+      "Social facilitation",
+      "Social loafing",
+      "Group polarization",
+      "Groupthink"
+    ],
+    "answer": "Social loafing"
+  },
+  {
+    "term": "Group polarization",
+    "question": "What phenomenon describes the tendency for group discussions to strengthen the prevailing attitudes and opinions of group members?",
+    "options": [
+      "Social facilitation",
+      "Social loafing",
+      "Group polarization",
+      "Groupthink"
+    ],
+    "answer": "Group polarization"
+  },
+  {
+    "term": "Groupthink",
+    "question": "What psychological phenomenon occurs when the desire for group harmony and consensus leads to poor decision-making and suppression of dissent?",
+    "options": [
+      "Social facilitation",
+      "Social loafing",
+      "Group polarization",
+      "Groupthink"
+    ],
+    "answer": "Groupthink"
+  },
+  {
+    "term": "Habituation",
+    "question": "What form of non-associative learning involves a decrease in response to a repeated, non-threatening stimulus?",
+    "options": [
+      "Habituation",
+      "Dishabituation",
+      "Sensitization",
+      "Extinction"
+    ],
+    "answer": "Habituation"
+  },
+  {
+    "term": "Dishabituation",
+    "question": "What phenomenon occurs when a previously habituated response is restored due to the presentation of a novel stimulus?",
+    "options": [
+      "Habituation",
+      "Dishabituation",
+      "Sensitization",
+      "Extinction"
+    ],
+    "answer": "Dishabituation"
+  },
+  {
+    "term": "Unconditioned stimulus",
+    "question": "What stimulus naturally and automatically triggers an unlearned response in classical conditioning?",
+    "options": [
+      "Unconditioned stimulus",
+      "Conditioned stimulus",
+      "Conditioned response",
+      "Extinction"
+    ],
+    "answer": "Unconditioned stimulus"
+  },
+  {
+    "term": "Conditioned stimulus",
+    "question": "What previously neutral stimulus, after being paired with an unconditioned stimulus, elicits a learned response in classical conditioning?",
+    "options": [
+      "Unconditioned stimulus",
+      "Conditioned stimulus",
+      "Conditioned response",
+      "Extinction"
+    ],
+    "answer": "Conditioned stimulus"
+  },
+  {
+    "term": "Conditioned response",
+    "question": "What learned response is elicited by a conditioned stimulus after classical conditioning has occurred?",
+    "options": [
+      "Unconditioned stimulus",
+      "Conditioned stimulus",
+      "Conditioned response",
+      "Extinction"
+    ],
+    "answer": "Conditioned response"
+  },
+  {
+    "term": "Extinction",
+    "question": "What process involves the gradual weakening and disappearance of a conditioned response when the conditioned stimulus is repeatedly presented without the unconditioned stimulus?",
+    "options": [
+      "Extinction",
+      "Spontaneous recovery",
+      "Generalization",
+      "Discrimination"
+    ],
+    "answer": "Extinction"
+  },
+  {
+    "term": "Spontaneous recovery",
+    "question": "What phenomenon describes the reappearance of a previously extinguished conditioned response after a rest period?",
+    "options": [
+      "Extinction",
+      "Spontaneous recovery",
+      "Generalization",
+      "Discrimination"
+    ],
+    "answer": "Spontaneous recovery"
+  },
+  {
+    "term": "Generalization",
+    "question": "What process involves responding to stimuli that are similar, but not identical, to the conditioned stimulus?",
+    "options": [
+      "Extinction",
+      "Spontaneous recovery",
+      "Generalization",
+      "Discrimination"
+    ],
+    "answer": "Generalization"
+  },
+  {
+    "term": "Discrimination (learning)",
+    "question": "What process involves learning to distinguish between different stimuli and respond only to the conditioned stimulus?",
+    "options": [
+      "Extinction",
+      "Spontaneous recovery",
+      "Generalization",
+      "Discrimination"
+    ],
+    "answer": "Discrimination"
+  },
+  {
+    "term": "Reinforcement",
+    "question": "What consequence increases the likelihood that a behavior will be repeated in the future?",
+    "options": [
+      "Reinforcement",
+      "Punishment",
+      "Extinction",
+      "Generalization"
+    ],
+    "answer": "Reinforcement"
+  },
+  {
+    "term": "Punishment",
+    "question": "What consequence decreases the likelihood that a behavior will be repeated in the future?",
+    "options": [
+      "Reinforcement",
+      "Punishment",
+      "Extinction",
+      "Generalization"
+    ],
+    "answer": "Punishment"
+  },
+  {
+    "term": "Positive reinforcement",
+    "question": "What process involves presenting a pleasant stimulus after a behavior to increase its frequency?",
+    "options": [
+      "Positive reinforcement",
+      "Negative reinforcement",
+      "Positive punishment",
+      "Negative punishment"
+    ],
+    "answer": "Positive reinforcement"
+  },
+  {
+    "term": "Negative reinforcement",
+    "question": "What process involves removing an unpleasant stimulus after a behavior to increase its frequency?",
+    "options": [
+      "Positive reinforcement",
+      "Negative reinforcement",
+      "Positive punishment",
+      "Negative punishment"
+    ],
+    "answer": "Negative reinforcement"
+  },
+  {
+    "term": "Positive punishment",
+    "question": "What process involves presenting an unpleasant stimulus after a behavior to decrease its frequency?",
+    "options": [
+      "Positive reinforcement",
+      "Negative reinforcement",
+      "Positive punishment",
+      "Negative punishment"
+    ],
+    "answer": "Positive punishment"
+  },
+  {
+    "term": "Negative punishment",
+    "question": "What process involves removing a pleasant stimulus after a behavior to decrease its frequency?",
+    "options": [
+      "Positive reinforcement",
+      "Negative reinforcement",
+      "Positive punishment",
+      "Negative punishment"
+    ],
+    "answer": "Negative punishment"
+  },
+  {
+    "term": "Fixed ratio schedule",
+    "question": "What reinforcement schedule delivers a reward after a set number of responses?",
+    "options": [
+      "Fixed ratio",
+      "Variable ratio",
+      "Fixed interval",
+      "Variable interval"
+    ],
+    "answer": "Variable interval"
+  },
+  {
+    "term": "Variable ratio schedule",
+    "question": "What reinforcement schedule delivers a reward after an unpredictable number of responses?",
+    "options": [
+      "Fixed ratio",
+      "Variable ratio",
+      "Fixed interval",
+      "Variable interval"
+    ],
+    "answer": "Variable interval"
+  },
+  {
+    "term": "Fixed interval schedule",
+    "question": "What reinforcement schedule delivers a reward after a fixed amount of time has passed?",
+    "options": [
+      "Fixed ratio",
+      "Variable ratio",
+      "Fixed interval",
+      "Variable interval"
+    ],
+    "answer": "Variable interval"
+  },
+  {
+    "term": "Variable interval schedule",
+    "question": "What reinforcement schedule delivers a reward after varying, unpredictable time intervals?",
+    "options": [
+      "Fixed ratio",
+      "Variable ratio",
+      "Fixed interval",
+      "Variable interval"
+    ],
+    "answer": "Variable interval"
+  },
+  {
+    "term": "Observational learning",
+    "question": "What type of learning occurs by watching and imitating the behavior of others?",
+    "options": [
+      "Observational learning",
+      "Modeling",
+      "Vicarious reinforcement",
+      "Persuasion"
+    ],
+    "answer": "Observational learning"
+  },
+  {
+    "term": "Modeling",
+    "question": "What process involves learning a behavior by observing and replicating the actions of a model?",
+    "options": [
+      "Observational learning",
+      "Modeling",
+      "Vicarious reinforcement",
+      "Persuasion"
+    ],
+    "answer": "Modeling"
+  },
+  {
+    "term": "Vicarious reinforcement",
+    "question": "What process involves learning by observing the consequences of another person’s behavior?",
+    "options": [
+      "Observational learning",
+      "Modeling",
+      "Vicarious reinforcement",
+      "Persuasion"
+    ],
+    "answer": "Vicarious reinforcement"
+  },
+  {
+    "term": "Persuasion",
+    "question": "What process involves changing someone’s attitudes or behaviors through argument, reasoning, or appeal?",
+    "options": [
+      "Observational learning",
+      "Modeling",
+      "Vicarious reinforcement",
+      "Persuasion"
+    ],
+    "answer": "Persuasion"
+  },
+  {
+    "term": "Foot in the door technique",
+    "question": "What compliance strategy involves making a small request first, followed by a larger request?",
+    "options": [
+      "Foot in the door",
+      "Door in the face",
+      "Low ball",
+      "Persuasion"
+    ],
+    "answer": "Persuasion"
+  },
+  {
+    "term": "Door in the face technique",
+    "question": "What compliance strategy involves making a large request that is refused, followed by a smaller, more reasonable request?",
+    "options": [
+      "Foot in the door",
+      "Door in the face",
+      "Low ball",
+      "Persuasion"
+    ],
+    "answer": "Persuasion"
+  },
+  {
+    "term": "Low ball technique",
+    "question": "What compliance strategy involves obtaining agreement to a request and then increasing the cost or changing the terms after commitment?",
+    "options": [
+      "Foot in the door",
+      "Door in the face",
+      "Low ball",
+      "Persuasion"
+    ],
+    "answer": "Persuasion"
+  },
+  {
+    "term": "Conformity",
+    "question": "What is the act of changing one’s beliefs or behaviors to match those of a group or social norm?",
+    "options": [
+      "Conformity",
+      "Compliance",
+      "Obedience",
+      "Social influence"
+    ],
+    "answer": "Conformity"
+  },
+  {
+    "term": "Compliance",
+    "question": "What is the act of agreeing to a request or demand from another person, often in response to social pressure?",
+    "options": [
+      "Conformity",
+      "Compliance",
+      "Obedience",
+      "Social influence"
+    ],
+    "answer": "Compliance"
+  },
+  {
+    "term": "Obedience",
+    "question": "What is the act of following direct orders or instructions from an authority figure?",
+    "options": [
+      "Conformity",
+      "Compliance",
+      "Obedience",
+      "Social influence"
+    ],
+    "answer": "Obedience"
+  },
+  {
+    "term": "Social influence",
+    "question": "What is the process by which individuals’ thoughts, feelings, or behaviors are affected by others?",
+    "options": [
+      "Conformity",
+      "Compliance",
+      "Obedience",
+      "Social influence"
+    ],
+    "answer": "Social influence"
+  },
+  {
+    "term": "External locus of control",
+    "question": "What belief attributes outcomes and events to external factors such as luck, fate, or other people’s actions?",
+    "options": [
+      "External locus of control",
+      "Internal locus of control",
+      "Attribution theory",
+      "Self serving bias"
+    ],
+    "answer": "External locus of control"
+  },
+  {
+    "term": "Internal locus of control",
+    "question": "What belief attributes outcomes and events to one’s own actions, abilities, and decisions?",
+    "options": [
+      "External locus of control",
+      "Internal locus of control",
+      "Attribution theory",
+      "Self serving bias"
+    ],
+    "answer": "Internal locus of control"
+  },
+  {
+    "term": "Attribution theory",
+    "question": "What psychological theory explains how people interpret and assign causes to their own and others’ behavior?",
+    "options": [
+      "Attribution theory",
+      "Self serving bias",
+      "Fundamental attribution error",
+      "Social identity"
+    ],
+    "answer": "Attribution theory"
+  },
+  {
+    "term": "Internal attribution",
+    "question": "What type of attribution assigns the cause of behavior to personal characteristics, traits, or abilities?",
+    "options": [
+      "Internal attribution",
+      "External attribution",
+      "Fundamental attribution error",
+      "Self serving bias"
+    ],
+    "answer": "Internal attribution"
+  },
+  {
+    "term": "External attribution",
+    "question": "What type of attribution assigns the cause of behavior to situational or environmental factors?",
+    "options": [
+      "Internal attribution",
+      "External attribution",
+      "Fundamental attribution error",
+      "Self serving bias"
+    ],
+    "answer": "External attribution"
+  },
+  {
+    "term": "Fundamental attribution error",
+    "question": "What cognitive bias involves overestimating personal factors and underestimating situational factors when explaining others’ behavior?",
+    "options": [
+      "Internal attribution",
+      "External attribution",
+      "Fundamental attribution error",
+      "Self serving bias"
+    ],
+    "answer": "Fundamental attribution error"
+  },
+  {
+    "term": "Self serving bias",
+    "question": "What cognitive bias involves attributing one’s successes to internal factors and failures to external factors?",
+    "options": [
+      "Internal attribution",
+      "External attribution",
+      "Fundamental attribution error",
+      "Self serving bias"
+    ],
+    "answer": "Self serving bias"
+  },
+  {
+    "term": "Looking glass self",
+    "question": "What sociological concept describes how individuals form their self-concept based on how they believe others perceive them?",
+    "options": [
+      "Looking glass self",
+      "Self fulfilling prophecy",
+      "Social identity",
+      "Attribution theory"
+    ],
+    "answer": "Looking glass self"
+  },
+  {
+    "term": "Self fulfilling prophecy",
+    "question": "What phenomenon occurs when an individual’s expectations about another person lead that person to behave in ways that confirm those expectations?",
+    "options": [
+      "Looking glass self",
+      "Self fulfilling prophecy",
+      "Social identity",
+      "Attribution theory"
+    ],
+    "answer": "Self fulfilling prophecy"
+  },
+  {
+    "term": "Discrimination (social)",
+    "question": "What is the unjust or prejudicial treatment of individuals based on their group membership, such as race, gender, or age?",
+    "options": [
+      "Discrimination",
+      "Stereotypes",
+      "Implicit bias",
+      "Social categorization"
+    ],
+    "answer": "Social categorization"
+  },
+  {
+    "term": "Stereotypes",
+    "question": "What are oversimplified and generalized beliefs about members of a particular group?",
+    "options": [
+      "Discrimination",
+      "Stereotypes",
+      "Implicit bias",
+      "Social categorization"
+    ],
+    "answer": "Stereotypes"
+  },
+  {
+    "term": "Implicit bias",
+    "question": "What are unconscious attitudes or stereotypes that influence perceptions, actions, and decisions without conscious awareness?",
+    "options": [
+      "Discrimination",
+      "Stereotypes",
+      "Implicit bias",
+      "Social categorization"
+    ],
+    "answer": "Implicit bias"
+  },
+  {
+    "term": "Social categorization",
+    "question": "What cognitive process involves classifying people into groups based on shared characteristics?",
+    "options": [
+      "Discrimination",
+      "Stereotypes",
+      "Implicit bias",
+      "Social categorization"
+    ],
+    "answer": "Social categorization"
+  },
+  {
+    "term": "In",
+    "question": "group bias - What is the tendency to favor and give preferential treatment to members of one’s own group over outsiders?",
+    "options": [
+      "In-group bias",
+      "Out group homogeneity effect",
+      "Out group derogation",
+      "Scapegoating"
+    ],
+    "answer": "Scapegoating"
+  },
+  {
+    "term": "Out group homogeneity effect",
+    "question": "What is the perception that members of an out-group are more similar to each other than members of one’s own group?",
+    "options": [
+      "In-group bias",
+      "Out group homogeneity effect",
+      "Out group derogation",
+      "Scapegoating"
+    ],
+    "answer": "Out group homogeneity effect"
+  },
+  {
+    "term": "Out group derogation",
+    "question": "What is the tendency to view members of an out-group in a negative or unfavorable light?",
+    "options": [
+      "In-group bias",
+      "Out group homogeneity effect",
+      "Out group derogation",
+      "Scapegoating"
+    ],
+    "answer": "Out group derogation"
+  },
+  {
+    "term": "Scapegoating",
+    "question": "What is the practice of unfairly blaming an individual or group for problems or negative outcomes?",
+    "options": [
+      "In-group bias",
+      "Out group homogeneity effect",
+      "Out group derogation",
+      "Scapegoating"
+    ],
+    "answer": "Scapegoating"
+  },
+  {
+    "term": "self presentation",
+    "question": "What is the process by which individuals attempt to control the impressions others form of them in social interactions?",
+    "options": [
+      "Impression management",
+      "Self presentation",
+      "Nonverbal communication",
+      "Social support"
+    ],
+    "answer": "Self presentation"
+  },
+  {
+    "term": "impression management",
+    "question": "What is the conscious or unconscious effort to influence how others perceive one’s self, often through strategic behaviors?",
+    "options": [
+      "Impression management",
+      "Self presentation",
+      "Verbal communication",
+      "Social support"
+    ],
+    "answer": "Impression management"
+  },
+  {
+    "term": "verbal communication",
+    "question": "What is the use of spoken or written language to convey information, ideas, or emotions?",
+    "options": [
+      "Verbal communication",
+      "Nonverbal communication",
+      "Aggression",
+      "Attachment"
+    ],
+    "answer": "Verbal communication"
+  },
+  {
+    "term": "nonverbal communication",
+    "question": "What is the transmission of messages or information without words, using gestures, facial expressions, and body language?",
+    "options": [
+      "Verbal communication",
+      "Nonverbal communication",
+      "Altruism",
+      "Social support"
+    ],
+    "answer": "Nonverbal communication"
+  },
+  {
+    "term": "attraction",
+    "question": "What is the psychological and physical force that draws individuals toward each other, often leading to relationships?",
+    "options": [
+      "Aggression",
+      "Attachment",
+      "Attraction",
+      "Altruism"
+    ],
+    "answer": "Attraction"
+  },
+  {
+    "term": "aggression",
+    "question": "What is behavior intended to cause harm or injury to another person, either physically or psychologically?",
+    "options": [
+      "Aggression",
+      "Attachment",
+      "Altruism",
+      "Social support"
+    ],
+    "answer": "Aggression"
+  },
+  {
+    "term": "attachment",
+    "question": "What is the emotional bond that develops between individuals, such as between a child and caregiver?",
+    "options": [
+      "Aggression",
+      "Attachment",
+      "Altruism",
+      "Social support"
+    ],
+    "answer": "Attachment"
+  },
+  {
+    "term": "altruism",
+    "question": "What is selfless behavior intended to benefit another person without expectation of personal gain?",
+    "options": [
+      "Aggression",
+      "Attachment",
+      "Altruism",
+      "Social support"
+    ],
+    "answer": "Altruism"
+  },
+  {
+    "term": "social support",
+    "question": "What is the perception or reality of being cared for, valued, and assisted by others, especially during times of stress?",
+    "options": [
+      "Aggression",
+      "Attachment",
+      "Altruism",
+      "Social support"
+    ],
+    "answer": "Social support"
+  },
+  {
+    "term": "cornea",
+    "question": "What transparent structure at the front of the eye focuses incoming light onto the lens?",
+    "options": [
+      "Cornea",
+      "Lens",
+      "Retina",
+      "Optic nerve"
+    ],
+    "answer": "Cornea"
+  },
+  {
+    "term": "lens",
+    "question": "What transparent, flexible structure in the eye changes shape to focus light onto the retina?",
+    "options": [
+      "Cornea",
+      "Lens",
+      "Retina",
+      "Optic nerve"
+    ],
+    "answer": "Lens"
+  },
+  {
+    "term": "retina",
+    "question": "What thin layer of tissue at the back of the eye contains photoreceptors that detect light and initiate visual processing?",
+    "options": [
+      "Cornea",
+      "Lens",
+      "Retina",
+      "Optic nerve"
+    ],
+    "answer": "Retina"
+  },
+  {
+    "term": "optic nerve",
+    "question": "What bundle of nerve fibers transmits visual information from the retina to the brain?",
+    "options": [
+      "Cornea",
+      "Lens",
+      "Retina",
+      "Optic nerve"
+    ],
+    "answer": "Optic nerve"
+  },
+  {
+    "term": "outer ear",
+    "question": "What external part of the ear collects sound waves and directs them into the ear canal?",
+    "options": [
+      "Outer ear",
+      "Middle ear",
+      "Inner ear",
+      "Cochlea"
+    ],
+    "answer": "Outer ear"
+  },
+  {
+    "term": "middle ear",
+    "question": "What air-filled chamber contains the ossicles (malleus, incus, stapes) that amplify sound vibrations?",
+    "options": [
+      "Outer ear",
+      "Middle ear",
+      "Inner ear",
+      "Cochlea"
+    ],
+    "answer": "Middle ear"
+  },
+  {
+    "term": "inner ear",
+    "question": "What structure contains the cochlea and vestibular system, responsible for converting sound vibrations into neural signals?",
+    "options": [
+      "Outer ear",
+      "Middle ear",
+      "Inner ear",
+      "Cochlea"
+    ],
+    "answer": "Inner ear"
+  },
+  {
+    "term": "vestibular system",
+    "question": "What sensory system in the inner ear detects head movement and position to maintain balance and spatial orientation?",
+    "options": [
+      "Vestibular system",
+      "Semicircular canals",
+      "Otolith organs",
+      "Cochlea"
+    ],
+    "answer": "Vestibular system"
+  },
+  {
+    "term": "semicircular canals",
+    "question": "What three fluid-filled structures in the inner ear detect rotational movements of the head?",
+    "options": [
+      "Vestibular system",
+      "Semicircular canals",
+      "Otolith organs",
+      "Cochlea"
+    ],
+    "answer": "Semicircular canals"
+  },
+  {
+    "term": "otolith organs",
+    "question": "What structures in the vestibular system detect linear acceleration and head position relative to gravity?",
+    "options": [
+      "Vestibular system",
+      "Semicircular canals",
+      "Otolith organs",
+      "Cochlea"
+    ],
+    "answer": "Otolith organs"
+  },
+  {
+    "term": "dopamine",
+    "question": "What neurotransmitter is involved in reward, motivation, and pleasure, and is implicated in addiction and mood regulation?",
+    "options": [
+      "Dopamine",
+      "Norepinephrine",
+      "Serotonin",
+      "Acetylcholine"
+    ],
+    "answer": "Dopamine"
+  },
+  {
+    "term": "norepinephrine",
+    "question": "What neurotransmitter is involved in arousal, alertness, and the body’s response to stress?",
+    "options": [
+      "Dopamine",
+      "Norepinephrine",
+      "Serotonin",
+      "Acetylcholine"
+    ],
+    "answer": "Norepinephrine"
+  },
+  {
+    "term": "serotonin",
+    "question": "What neurotransmitter is involved in mood regulation, appetite, and sleep, and is associated with depression and anxiety?",
+    "options": [
+      "Dopamine",
+      "Norepinephrine",
+      "Serotonin",
+      "Acetylcholine"
+    ],
+    "answer": "Serotonin"
+  },
+  {
+    "term": "central nervous system",
+    "question": "What part of the nervous system consists of the brain and spinal cord, responsible for processing and integrating information?",
+    "options": [
+      "Central nervous system",
+      "Peripheral nervous system",
+      "Somatic nervous system",
+      "Autonomic nervous system"
+    ],
+    "answer": "Central nervous system"
+  },
+  {
+    "term": "peripheral nervous system",
+    "question": "What part of the nervous system consists of all nerves outside the brain and spinal cord, connecting the CNS to the rest of the body?",
+    "options": [
+      "Central nervous system",
+      "Peripheral nervous system",
+      "Somatic nervous system",
+      "Autonomic nervous system"
+    ],
+    "answer": "Peripheral nervous system"
+  },
+  {
+    "term": "dendrites",
+    "question": "What branched extensions of a neuron receive incoming signals from other neurons?",
+    "options": [
+      "Dendrites",
+      "Soma",
+      "Axon",
+      "Axon terminals"
+    ],
+    "answer": "Dendrites"
+  },
+  {
+    "term": "soma",
+    "question": "What is the cell body of a neuron that contains the nucleus and processes incoming signals?",
+    "options": [
+      "Dendrites",
+      "Soma",
+      "Axon",
+      "Axon terminals"
+    ],
+    "answer": "Soma"
+  },
+  {
+    "term": "axon",
+    "question": "What long, slender projection of a neuron transmits electrical impulses away from the cell body toward other neurons or muscles?",
+    "options": [
+      "Dendrites",
+      "Soma",
+      "Axon",
+      "Axon terminals"
+    ],
+    "answer": "Axon"
+  },
+  {
+    "term": "somatic nervous system",
+    "question": "What division of the peripheral nervous system controls voluntary movements of skeletal muscles?",
+    "options": [
+      "Somatic nervous system",
+      "Autonomic nervous system",
+      "Central nervous system",
+      "Peripheral nervous system"
+    ],
+    "answer": "Somatic nervous system"
+  },
+  {
+    "term": "autonomic nervous system",
+    "question": "What division of the peripheral nervous system regulates involuntary functions such as heart rate, digestion, and respiration?",
+    "options": [
+      "Somatic nervous system",
+      "Autonomic nervous system",
+      "Central nervous system",
+      "Peripheral nervous system"
+    ],
+    "answer": "Autonomic nervous system"
+  },
+  {
+    "term": "brain",
+    "question": "What organ serves as the central processing center for sensory information, emotions, cognition, and voluntary actions?",
+    "options": [
+      "Brain",
+      "Spinal cord",
+      "Cerebellum",
+      "Pons"
+    ],
+    "answer": "Brain"
+  },
+  {
+    "term": "spinal cord",
+    "question": "What bundle of nerve fibers transmits signals between the brain and the rest of the body and coordinates reflexes?",
+    "options": [
+      "Brain",
+      "Spinal cord",
+      "Cerebellum",
+      "Pons"
+    ],
+    "answer": "Spinal cord"
+  },
+  {
+    "term": "cerebellum",
+    "question": "What brain structure is responsible for coordination, balance, and fine motor control?",
+    "options": [
+      "Brain",
+      "Spinal cord",
+      "Cerebellum",
+      "Pons"
+    ],
+    "answer": "Cerebellum"
+  },
+  {
+    "term": "pons",
+    "question": "What brainstem structure is involved in regulating sleep, arousal, and facial sensations?",
+    "options": [
+      "Brain",
+      "Spinal cord",
+      "Cerebellum",
+      "Pons"
+    ],
+    "answer": "Pons"
+  },
+  {
+    "term": "medulla oblongata",
+    "question": "What brainstem structure controls vital autonomic functions such as breathing, heart rate, and blood pressure?",
+    "options": [
+      "Medulla oblongata",
+      "Pons",
+      "Cerebellum",
+      "Spinal cord"
+    ],
+    "answer": "Medulla oblongata"
+  },
+  {
+    "term": "MRI",
+    "question": "What neuroimaging technique measures brain activity by detecting changes in blood flow using magnetic fields and radio waves?",
+    "options": [
+      "MRI",
+      "PET",
+      "EEG",
+      "CT"
+    ],
+    "answer": "MRI"
+  },
+  {
+    "term": "PET",
+    "question": "What neuroimaging technique uses radioactive tracers to visualize metabolic activity and brain function?",
+    "options": [
+      "MRI",
+      "PET",
+      "EEG",
+      "CT"
+    ],
+    "answer": "PET"
+  },
+  {
+    "term": "EEG",
+    "question": "What technique records electrical activity of the brain through electrodes placed on the scalp?",
+    "options": [
+      "MRI",
+      "PET",
+      "EEG",
+      "CT"
+    ],
+    "answer": "EEG"
+  },
+  {
+    "term": "CT",
+    "question": "What imaging technique uses X-rays to produce detailed cross-sectional images of brain structure?",
+    "options": [
+      "MRI",
+      "PET",
+      "EEG",
+      "CT"
+    ],
+    "answer": "CT"
+  },
+  {
+    "term": "lesion studies",
+    "question": "What research method involves examining the behavioral effects of brain damage in humans or animals?",
+    "options": [
+      "Lesion studies",
+      "Electrophysiology",
+      "MRI",
+      "PET"
+    ],
+    "answer": "Lesion studies"
+  },
+  {
+    "term": "electrophysiology",
+    "question": "What technique measures electrical activity in the brain or nervous system using electrodes?",
+    "options": [
+      "Lesion studies",
+      "Electrophysiology",
+      "MRI",
+      "PET"
+    ],
+    "answer": "Electrophysiology"
+  },
+  {
+    "term": "gray matter",
+    "question": "What region of the central nervous system consists mainly of neuronal cell bodies and is involved in processing information?",
+    "options": [
+      "Gray matter",
+      "White matter",
+      "Myelin",
+      "Axon"
+    ],
+    "answer": "Gray matter"
+  },
+  {
+    "term": "white matter",
+    "question": "What region of the central nervous system consists mainly of myelinated axons and facilitates communication between brain regions?",
+    "options": [
+      "Gray matter",
+      "White matter",
+      "Myelin",
+      "Axon"
+    ],
+    "answer": "White matter"
+  },
+  {
+    "term": "stretch reflex",
+    "question": "What is a monosynaptic reflex, such as the knee-jerk reflex, that helps maintain muscle tone and posture?",
+    "options": [
+      "Stretch reflex",
+      "Withdrawal reflex",
+      "Gross motor skills",
+      "Fine motor skills"
+    ],
+    "answer": "Stretch reflex"
+  },
+  {
+    "term": "withdrawal reflex",
+    "question": "What is a polysynaptic reflex that causes a body part to quickly withdraw from a painful stimulus?",
+    "options": [
+      "Stretch reflex",
+      "Withdrawal reflex",
+      "Gross motor skills",
+      "Fine motor skills"
+    ],
+    "answer": "Withdrawal reflex"
+  },
+  {
+    "term": "hypothalamus",
+    "question": "What brain region regulates the pituitary gland and maintains homeostasis through the HPA axis?",
+    "options": [
+      "Hypothalamus",
+      "Pituitary gland",
+      "Thyroid gland",
+      "Adrenal glands"
+    ],
+    "answer": "Hypothalamus"
+  },
+  {
+    "term": "pituitary gland",
+    "question": "What endocrine gland, known as the master gland, secretes hormones that regulate other glands in the body?",
+    "options": [
+      "Hypothalamus",
+      "Pituitary gland",
+      "Thyroid gland",
+      "Adrenal glands"
+    ],
+    "answer": "Pituitary gland"
+  },
+  {
+    "term": "thyroid gland",
+    "question": "What endocrine gland produces hormones that regulate metabolism, growth, and development?",
+    "options": [
+      "Hypothalamus",
+      "Pituitary gland",
+      "Thyroid gland",
+      "Adrenal glands"
+    ],
+    "answer": "Thyroid gland"
+  },
+  {
+    "term": "adrenal glands",
+    "question": "What endocrine glands, located above the kidneys, produce hormones involved in the stress response (e.g., cortisol, adrenaline)?",
+    "options": [
+      "Hypothalamus",
+      "Pituitary gland",
+      "Thyroid gland",
+      "Adrenal glands"
+    ],
+    "answer": "Adrenal glands"
+  },
+  {
+    "term": "pancreas",
+    "question": "What organ functions as both an endocrine and exocrine gland, regulating blood sugar through insulin and glucagon secretion?",
+    "options": [
+      "Pancreas",
+      "Gonads",
+      "Thyroid gland",
+      "Adrenal glands"
+    ],
+    "answer": "Pancreas"
+  },
+  {
+    "term": "gonads",
+    "question": "What organs (ovaries and testes) produce gametes and sex hormones for reproduction?",
+    "options": [
+      "Pancreas",
+      "Gonads",
+      "Thyroid gland",
+      "Adrenal glands"
+    ],
+    "answer": "Gonads"
+  },
+  {
+    "term": "fertilization",
+    "question": "What is the process by which a sperm cell unites with an egg cell to form a zygote?",
+    "options": [
+      "Fertilization",
+      "Acrosome reaction",
+      "Cortical reaction",
+      "Cleavage"
+    ],
+    "answer": "Fertilization"
+  },
+  {
+    "term": "acrosome reaction",
+    "question": "What process involves the release of enzymes from the sperm’s acrosome to penetrate the egg’s outer layer during fertilization?",
+    "options": [
+      "Fertilization",
+      "Acrosome reaction",
+      "Cortical reaction",
+      "Cleavage"
+    ],
+    "answer": "Acrosome reaction"
+  },
+  {
+    "term": "cortical reaction",
+    "question": "What process occurs after fertilization, where the egg releases enzymes to prevent entry of additional sperm?",
+    "options": [
+      "Fertilization",
+      "Acrosome reaction",
+      "Cortical reaction",
+      "Cleavage"
+    ],
+    "answer": "Cortical reaction"
+  },
+  {
+    "term": "zygote",
+    "question": "What is the single-cell organism formed by the union of sperm and egg, which undergoes cell division?",
+    "options": [
+      "Zygote",
+      "Blastocyst",
+      "Embryo",
+      "Fetus"
+    ],
+    "answer": "Zygote"
+  },
+  {
+    "term": "blastocyst",
+    "question": "What is the hollow ball of cells formed after several rounds of cell division, which implants in the uterine wall?",
+    "options": [
+      "Zygote",
+      "Blastocyst",
+      "Embryo",
+      "Fetus"
+    ],
+    "answer": "Blastocyst"
+  },
+  {
+    "term": "embryonic stage",
+    "question": "What developmental stage (weeks 3-8) is characterized by the formation of major organs and body structures?",
+    "options": [
+      "Zygote",
+      "Blastocyst",
+      "Embryonic stage",
+      "Fetal stage"
+    ],
+    "answer": "Embryonic stage"
+  },
+  {
+    "term": "neural tube",
+    "question": "What embryonic structure forms during week 3 and gives rise to the central nervous system?",
+    "options": [
+      "Neural tube",
+      "Heart",
+      "Limbs and facial features",
+      "Placenta"
+    ],
+    "answer": "Neural tube"
+  },
+  {
+    "term": "heart",
+    "question": "What organ begins to beat and circulate blood during week 4 of embryonic development?",
+    "options": [
+      "Neural tube",
+      "Heart",
+      "Limbs and facial features",
+      "Placenta"
+    ],
+    "answer": "Heart"
+  },
+  {
+    "term": "limbs and facial features",
+    "question": "What body parts develop during weeks 5-8 of embryonic development?",
+    "options": [
+      "Neural tube",
+      "Heart",
+      "Limbs and facial features",
+      "Placenta"
+    ],
+    "answer": "Limbs and facial features"
+  },
+  {
+    "term": "fetal stage",
+    "question": "What developmental stage (weeks 9-40) involves growth and maturation of organs and tissues?",
+    "options": [
+      "Zygote",
+      "Blastocyst",
+      "Embryonic stage",
+      "Fetal stage"
+    ],
+    "answer": "Fetal stage"
+  },
+  {
+    "term": "reflexes",
+    "question": "What automatic, involuntary responses (e.g., grasping, rooting) are present at birth in newborns?",
+    "options": [
+      "Reflexes",
+      "Gross motor skills",
+      "Fine motor skills",
+      "Puberty"
+    ],
+    "answer": "Reflexes"
+  },
+  {
+    "term": "gross motor skills",
+    "question": "What abilities (e.g., crawling, walking) involve large muscle movements and develop in early childhood?",
+    "options": [
+      "Reflexes",
+      "Gross motor skills",
+      "Fine motor skills",
+      "Puberty"
+    ],
+    "answer": "Gross motor skills"
+  },
+  {
+    "term": "fine motor skills",
+    "question": "What abilities (e.g., grasping small objects, writing) involve precise movements and develop later in childhood?",
+    "options": [
+      "Reflexes",
+      "Gross motor skills",
+      "Fine motor skills",
+      "Puberty"
+    ],
+    "answer": "Fine motor skills"
+  },
+  {
+    "term": "puberty",
+    "question": "What developmental period involves the onset of sexual maturity and the ability to reproduce?",
+    "options": [
+      "Reflexes",
+      "Gross motor skills",
+      "Fine motor skills",
+      "Puberty"
+    ],
+    "answer": "Puberty"
+  },
+  {
+    "term": "neurotransmitter imbalances",
+    "question": "What abnormal levels of brain chemicals (e.g., dopamine, serotonin) are implicated in various mental and neurological disorders?",
+    "options": [
+      "Neurotransmitter imbalances",
+      "Genetic factors",
+      "Stem cells",
+      "Addiction"
+    ],
+    "answer": "Neurotransmitter imbalances"
+  },
+  {
+    "term": "genetic factors",
+    "question": "What inherited characteristics contribute to the risk of developing certain diseases or conditions?",
+    "options": [
+      "Neurotransmitter imbalances",
+      "Genetic factors",
+      "Stem cells",
+      "Addiction"
+    ],
+    "answer": "Genetic factors"
+  },
+  {
+    "term": "stem cells",
+    "question": "What undifferentiated cells have the potential to develop into various specialized cell types, including neurons?",
+    "options": [
+      "Neurotransmitter imbalances",
+      "Genetic factors",
+      "Stem cells",
+      "Addiction"
+    ],
+    "answer": "Stem cells"
+  },
+  {
+    "term": "ghrelin",
+    "question": "What hormone, produced by the stomach, stimulates appetite and increases food intake?",
+    "options": [
+      "Ghrelin",
+      "Leptin",
+      "Insulin",
+      "Glucagon"
+    ],
+    "answer": "Ghrelin"
+  },
+  {
+    "term": "leptin",
+    "question": "What hormone, produced by adipose tissue, signals satiety and suppresses appetite?",
+    "options": [
+      "Ghrelin",
+      "Leptin",
+      "Insulin",
+      "Glucagon"
+    ],
+    "answer": "Leptin"
+  },
+  {
+    "term": "sex drive",
+    "question": "What biological and psychological phenomenon involves hormones and brain reward systems to motivate sexual behavior?",
+    "options": [
+      "Sex drive",
+      "Addiction",
+      "Taste aversion",
+      "Puberty"
+    ],
+    "answer": "Sex drive"
+  },
+  {
+    "term": "addiction",
+    "question": "What chronic condition involves compulsive drug seeking and use, driven by changes in dopamine pathways and neuroplasticity?",
+    "options": [
+      "Sex drive",
+      "Addiction",
+      "Taste aversion",
+      "Puberty"
+    ],
+    "answer": "Addiction"
+  },
+  {
+    "term": "taste aversion",
+    "question": "What learned avoidance of a specific food occurs after it has been associated with illness or negative experience?",
+    "options": [
+      "Taste aversion",
+      "Conditioned fear",
+      "Habituation",
+      "Sensitization"
+    ],
+    "answer": "Taste aversion"
+  },
+  {
+    "term": "preparedness",
+    "question": "What evolutionary predisposition makes certain associations (e.g., fear of snakes) easier to learn than others?",
+    "options": [
+      "Preparedness",
+      "Instinctive drift",
+      "Social learning",
+      "Latent learning"
+    ],
+    "answer": "Preparedness"
+  },
+  {
+    "term": "instinctive drift",
+    "question": "What phenomenon causes learned behaviors to revert to innate, species-typical patterns over time?",
+    "options": [
+      "Preparedness",
+      "Instinctive drift",
+      "Social learning",
+      "Mirror neurons"
+    ],
+    "answer": "Instinctive drift"
+  },
+  {
+    "term": "mirror neurons",
+    "question": "What specialized neurons fire both when an individual performs an action and when they observe the same action performed by others?",
+    "options": [
+      "Preparedness",
+      "Instinctive drift",
+      "Social learning",
+      "Mirror neurons"
+    ],
+    "answer": "Mirror neurons"
+  },
+  {
+    "term": "social learning",
+    "question": "What process involves acquiring new behaviors by observing and imitating others, with mirror neurons playing a key role?",
+    "options": [
+      "Preparedness",
+      "Instinctive drift",
+      "Social learning",
+      "Mirror neurons"
+    ],
+    "answer": "Social learning"
+  },
+  {
+    "term": "coloration",
+    "question": "What is an example of a visual signal, such as bright plumage in birds, used for communication or mating?",
+    "options": [
+      "Coloration",
+      "Body language",
+      "Mating displays",
+      "Threat displays"
+    ],
+    "answer": "Coloration"
+  },
+  {
+    "term": "body language",
+    "question": "What is an example of nonverbal communication, such as tail position in dogs, used to convey emotional states?",
+    "options": [
+      "Coloration",
+      "Body language",
+      "Mating displays",
+      "Threat displays"
+    ],
+    "answer": "Body language"
+  },
+  {
+    "term": "mating displays",
+    "question": "What are ritualized behaviors performed by animals to attract mates and signal reproductive fitness?",
+    "options": [
+      "Coloration",
+      "Body language",
+      "Mating displays",
+      "Threat displays"
+    ],
+    "answer": "Mating displays"
+  },
+  {
+    "term": "threat displays",
+    "question": "What are defensive behaviors, such as puffing up in pufferfish, used to deter predators or rivals?",
+    "options": [
+      "Coloration",
+      "Body language",
+      "Mating displays",
+      "Threat displays"
+    ],
+    "answer": "Threat displays"
+  },
+  {
+    "term": "vocalizations",
+    "question": "What are examples of animal communication, such as bird songs or wolf howls, used for signaling or coordination?",
+    "options": [
+      "Vocalizations",
+      "Calls",
+      "Mating displays",
+      "Threat displays"
+    ],
+    "answer": "Vocalizations"
+  },
+  {
+    "term": "calls",
+    "question": "What are alarm signals, such as those produced by primates, used to warn group members of danger?",
+    "options": [
+      "Vocalizations",
+      "Calls",
+      "Mating displays",
+      "Threat displays"
+    ],
+    "answer": "Calls"
+  },
+  {
+    "term": "mate selection",
+    "question": "What is the process by which individuals choose reproductive partners based on specific traits or behaviors?",
+    "options": [
+      "Mate selection",
+      "Territory defense",
+      "Predator avoidance",
+      "Cooperative resource acquisition"
+    ],
+    "answer": "Mate selection"
+  },
+  {
+    "term": "territory defense",
+    "question": "What behaviors are used by animals to protect a defined area from intruders or competitors?",
+    "options": [
+      "Mate selection",
+      "Territory defense",
+      "Predator avoidance",
+      "Cooperative resource acquisition"
+    ],
+    "answer": "Territory defense"
+  },
+  {
+    "term": "predator avoidance",
+    "question": "What strategies or behaviors are used by animals to evade or deter predators?",
+    "options": [
+      "Mate selection",
+      "Territory defense",
+      "Predator avoidance",
+      "Cooperative resource acquisition"
+    ],
+    "answer": "Predator avoidance"
+  },
+  {
+    "term": "cooperative resource acquisition",
+    "question": "What group behaviors enhance the ability of animals to obtain food or other resources?",
+    "options": [
+      "Mate selection",
+      "Territory defense",
+      "Predator avoidance",
+      "Cooperative resource acquisition"
+    ],
+    "answer": "Cooperative resource acquisition"
+  },
+  {
+    "term": "Channels",
+    "question": "What membrane proteins passively facilitate the movement of ions or small molecules across the cell membrane?",
+    "options": [
+      "Channels",
+      "Pumps",
+      "Carriers",
+      "Receptors"
+    ],
+    "answer": "Channels"
+  },
+  {
+    "term": "Pumps",
+    "question": "What membrane proteins actively transport substances against their concentration gradient using energy (e.g., ATP)?",
+    "options": [
+      "Channels",
+      "Pumps",
+      "Carriers",
+      "Receptors"
+    ],
+    "answer": "Pumps"
+  },
+  {
+    "term": "social control",
+    "question": "What is the regulation of individual behavior by societal norms, rules, and laws to maintain order?",
+    "options": [
+      "Social control",
+      "Peer pressure",
+      "Conformity",
+      "Obedience"
+    ],
+    "answer": "Social control"
+  },
+  {
+    "term": "peer pressure",
+    "question": "What is the influence exerted by members of a peer group to encourage conformity to group norms and behaviors?",
+    "options": [
+      "Social control",
+      "Peer pressure",
+      "Conformity",
+      "Obedience"
+    ],
+    "answer": "Peer pressure"
+  },
+  {
+    "term": "conformity (social)",
+    "question": "What is the adjustment of individual attitudes or behaviors to align with the expectations of a social group?",
+    "options": [
+      "Social control",
+      "Peer pressure",
+      "Conformity",
+      "Obedience"
+    ],
+    "answer": "Obedience"
+  },
+  {
+    "term": "obedience (social)",
+    "question": "What is the act of complying with the commands or instructions of an authority figure?",
+    "options": [
+      "Social control",
+      "Peer pressure",
+      "Conformity",
+      "Obedience"
+    ],
+    "answer": "Obedience"
+  },
+  {
+    "term": "Groupthink (social)",
+    "question": "What phenomenon occurs when the desire for group harmony leads to irrational or dysfunctional decision-making?",
+    "options": [
+      "Groupthink",
+      "Group polarization",
+      "Social facilitation",
+      "Social loafing"
+    ],
+    "answer": "Social loafing"
+  },
+  {
+    "term": "Group polarization (social)",
+    "question": "What phenomenon describes the tendency for group members to adopt more extreme positions after group discussion?",
+    "options": [
+      "Groupthink",
+      "Group polarization",
+      "Social facilitation",
+      "Social loafing"
+    ],
+    "answer": "Social loafing"
+  },
+  {
+    "term": "Social facilitation (social)",
+    "question": "What phenomenon describes improved performance on tasks when individuals are in the presence of others?",
+    "options": [
+      "Groupthink",
+      "Group polarization",
+      "Social facilitation",
+      "Social loafing"
+    ],
+    "answer": "Social loafing"
+  },
+  {
+    "term": "Social loafing (social)",
+    "question": "What phenomenon describes reduced individual effort when working in a group compared to working alone?",
+    "options": [
+      "Groupthink",
+      "Group polarization",
+      "Social facilitation",
+      "Social loafing"
+    ],
+    "answer": "Social loafing"
+  },
+  {
+    "term": "normative behavior",
+    "question": "What are actions that conform to the accepted standards and expectations of a particular society or group?",
+    "options": [
+      "Normative behavior",
+      "Social norms",
+      "Sanctions",
+      "Folkways"
+    ],
+    "answer": "Normative behavior"
+  },
+  {
+    "term": "social norms",
+    "question": "What are the shared rules and expectations that guide behavior within a society or group?",
+    "options": [
+      "Normative behavior",
+      "Social norms",
+      "Sanctions",
+      "Folkways"
+    ],
+    "answer": "Social norms"
+  },
+  {
+    "term": "sanctions",
+    "question": "What are penalties or rewards imposed to encourage conformity to social norms or discourage deviance?",
+    "options": [
+      "Normative behavior",
+      "Social norms",
+      "Sanctions",
+      "Folkways"
+    ],
+    "answer": "Sanctions"
+  },
+  {
+    "term": "folkways",
+    "question": "What are informal norms that govern everyday customs and routines, such as dress codes or table manners?",
+    "options": [
+      "Folkways",
+      "Laws",
+      "Taboos",
+      "Sanctions"
+    ],
+    "answer": "Folkways"
+  },
+  {
+    "term": "laws",
+    "question": "What are formalized norms established and enforced by governmental authority?",
+    "options": [
+      "Folkways",
+      "Laws",
+      "Taboos",
+      "Sanctions"
+    ],
+    "answer": "Laws"
+  },
+  {
+    "term": "taboos",
+    "question": "What are strong prohibitions against certain behaviors considered morally or culturally unacceptable?",
+    "options": [
+      "Folkways",
+      "Laws",
+      "Taboos",
+      "Sanctions"
+    ],
+    "answer": "Taboos"
+  },
+  {
+    "term": "anomie",
+    "question": "What is a state of normlessness or breakdown of social norms, often occurring during periods of rapid social change?",
+    "options": [
+      "Anomie",
+      "Deviance",
+      "Riots",
+      "Fads"
+    ],
+    "answer": "Anomie"
+  },
+  {
+    "term": "deviance",
+    "question": "What is behavior that violates established social norms or expectations?",
+    "options": [
+      "Anomie",
+      "Deviance",
+      "Riots",
+      "Fads"
+    ],
+    "answer": "Deviance"
+  },
+  {
+    "term": "riots",
+    "question": "What are spontaneous, violent outbursts of collective behavior in response to perceived injustices or grievances?",
+    "options": [
+      "Anomie",
+      "Deviance",
+      "Riots",
+      "Fads"
+    ],
+    "answer": "Riots"
+  },
+  {
+    "term": "fads",
+    "question": "What are temporary, widely adopted behaviors or trends that gain popularity quickly and fade just as rapidly?",
+    "options": [
+      "Anomie",
+      "Deviance",
+      "Riots",
+      "Fads"
+    ],
+    "answer": "Fads"
+  },
+  {
+    "term": "mass hysteria",
+    "question": "What is a phenomenon where a group of people exhibit similar symptoms or behaviors in response to a perceived threat or fear, often irrationally?",
+    "options": [
+      "Mass hysteria",
+      "Fads",
+      "Riots",
+      "Anomie"
+    ],
+    "answer": "Mass hysteria"
+  },
+  {
+    "term": "family",
+    "question": "What is the primary social institution responsible for early socialization and shaping an individual’s values and beliefs?",
+    "options": [
+      "Family",
+      "Schools",
+      "Peers",
+      "Media"
+    ],
+    "answer": "Family"
+  },
+  {
+    "term": "schools",
+    "question": "What formal institutions play a crucial role in teaching academic knowledge, social skills, and cultural norms?",
+    "options": [
+      "Family",
+      "Schools",
+      "Peers",
+      "Media"
+    ],
+    "answer": "Schools"
+  },
+  {
+    "term": "peers",
+    "question": "What social group provides a sense of belonging and influences attitudes and behaviors during adolescence?",
+    "options": [
+      "Family",
+      "Schools",
+      "Peers",
+      "Media"
+    ],
+    "answer": "Peers"
+  },
+  {
+    "term": "media",
+    "question": "What agent of socialization shapes perceptions, attitudes, and behaviors through various forms of mass communication?",
+    "options": [
+      "Family",
+      "Schools",
+      "Peers",
+      "Media"
+    ],
+    "answer": "Media"
+  },
+  {
+    "term": "religion",
+    "question": "What institution influences values, beliefs, and behaviors by providing a moral framework and sense of community?",
+    "options": [
+      "Family",
+      "Schools",
+      "Religion",
+      "Media"
+    ],
+    "answer": "Religion"
+  },
+  {
+    "term": "personal identity",
+    "question": "What is the unique combination of characteristics, experiences, and values that define an individual?",
+    "options": [
+      "Personal identity",
+      "Social identity",
+      "Role identity",
+      "Collective identity"
+    ],
+    "answer": "Personal identity"
+  },
+  {
+    "term": "social identity (groups)",
+    "question": "What aspect of identity is derived from membership in social groups such as race, ethnicity, or gender?",
+    "options": [
+      "Personal identity",
+      "Social identity",
+      "Role identity",
+      "Collective identity"
+    ],
+    "answer": "Collective identity"
+  },
+  {
+    "term": "role identity",
+    "question": "What aspect of identity is based on the roles individuals occupy in society, such as parent, student, or employee?",
+    "options": [
+      "Personal identity",
+      "Social identity",
+      "Role identity",
+      "Collective identity"
+    ],
+    "answer": "Role identity"
+  },
+  {
+    "term": "collective identity",
+    "question": "What is the shared sense of belonging to a group based on common characteristics or experiences?",
+    "options": [
+      "Personal identity",
+      "Social identity",
+      "Role identity",
+      "Collective identity"
+    ],
+    "answer": "Collective identity"
+  },
+  {
+    "term": "race",
+    "question": "What is a socially constructed category based on perceived physical differences such as skin color?",
+    "options": [
+      "Race",
+      "Ethnicity",
+      "Reference groups",
+      "In groups"
+    ],
+    "answer": "Race"
+  },
+  {
+    "term": "ethnicity",
+    "question": "What refers to shared cultural practices, language, and heritage that distinguish one group from another?",
+    "options": [
+      "Race",
+      "Ethnicity",
+      "Reference groups",
+      "In groups"
+    ],
+    "answer": "Ethnicity"
+  },
+  {
+    "term": "reference groups",
+    "question": "What are groups that individuals use as a standard for evaluating themselves and their behavior?",
+    "options": [
+      "Race",
+      "Ethnicity",
+      "Reference groups",
+      "In groups"
+    ],
+    "answer": "Reference groups"
+  },
+  {
+    "term": "in groups",
+    "question": "What are social groups to which an individual feels a sense of belonging and loyalty?",
+    "options": [
+      "Race",
+      "Ethnicity",
+      "Reference groups",
+      "In groups"
+    ],
+    "answer": "In groups"
+  },
+  {
+    "term": "social comparison",
+    "question": "What is the process of evaluating one’s own abilities, opinions, or status by comparing oneself to others?",
+    "options": [
+      "Social comparison",
+      "Socialization",
+      "Implicit bias",
+      "Explicit bias"
+    ],
+    "answer": "Social comparison"
+  },
+  {
+    "term": "socialization",
+    "question": "What is the lifelong process by which individuals learn and internalize the values, norms, and behaviors of their culture?",
+    "options": [
+      "Social comparison",
+      "Socialization",
+      "Implicit bias",
+      "Explicit bias"
+    ],
+    "answer": "Socialization"
+  },
+  {
+    "term": "implicit bias (social)",
+    "question": "What are unconscious attitudes or stereotypes that influence social perceptions and actions?",
+    "options": [
+      "Social comparison",
+      "Socialization",
+      "Implicit bias",
+      "Explicit bias"
+    ],
+    "answer": "Explicit bias"
+  },
+  {
+    "term": "explicit bias",
+    "question": "What are consciously held attitudes or beliefs that influence behavior and decision-making?",
+    "options": [
+      "Social comparison",
+      "Socialization",
+      "Implicit bias",
+      "Explicit bias"
+    ],
+    "answer": "Explicit bias"
+  },
+  {
+    "term": "confirmation bias",
+    "question": "What cognitive bias leads individuals to seek out or interpret information in a way that confirms their existing beliefs?",
+    "options": [
+      "Confirmation bias",
+      "Belief perseverance",
+      "Discrimination (institutional)",
+      "Social categorization"
+    ],
+    "answer": "Confirmation bias"
+  },
+  {
+    "term": "discrimination (institutional)",
+    "question": "What is the systematic and unfair treatment of individuals based on group membership, perpetuated by social institutions?",
+    "options": [
+      "Confirmation bias",
+      "Belief perseverance",
+      "Discrimination (institutional)",
+      "Social categorization"
+    ],
+    "answer": "Discrimination (institutional)"
+  },
+  {
+    "term": "social categorization (groups)",
+    "question": "What process involves classifying people into groups based on shared characteristics, leading to in-group and out-group distinctions?",
+    "options": [
+      "Confirmation bias",
+      "Belief perseverance",
+      "Discrimination (institutional)",
+      "Social categorization"
+    ],
+    "answer": "Social categorization"
+  },
+  {
+    "term": "belief perseverance",
+    "question": "What cognitive bias involves maintaining one’s beliefs despite contradictory evidence?",
+    "options": [
+      "Confirmation bias",
+      "Belief perseverance",
+      "Discrimination (institutional)",
+      "Social categorization"
+    ],
+    "answer": "Belief perseverance"
+  },
+  {
+    "term": "power",
+    "question": "What is the ability to influence or control the behavior of others, often contributing to social inequality?",
+    "options": [
+      "Power",
+      "Prestige",
+      "Class",
+      "Stigma"
+    ],
+    "answer": "Power"
+  },
+  {
+    "term": "prestige",
+    "question": "What is the level of respect and admiration accorded to an individual or group, influencing social status and opportunities?",
+    "options": [
+      "Power",
+      "Prestige",
+      "Class",
+      "Stigma"
+    ],
+    "answer": "Prestige"
+  },
+  {
+    "term": "class",
+    "question": "What is the system of social stratification based on economic status, affecting access to resources and opportunities?",
+    "options": [
+      "Power",
+      "Prestige",
+      "Class",
+      "Stigma"
+    ],
+    "answer": "Class"
+  },
+  {
+    "term": "stigma",
+    "question": "What is the social disapproval or discrimination against individuals based on perceived differences or undesirable characteristics?",
+    "options": [
+      "Power",
+      "Prestige",
+      "Class",
+      "Stigma"
+    ],
+    "answer": "Stigma"
+  },
+  {
+    "term": "ethnocentrism",
+    "question": "What is the belief in the superiority of one’s own culture or ethnic group, often leading to prejudice against others?",
+    "options": [
+      "Ethnocentrism",
+      "Cultural relativism",
+      "Social roles",
+      "Status"
+    ],
+    "answer": "Ethnocentrism"
+  },
+  {
+    "term": "cultural relativism",
+    "question": "What is the principle of evaluating and understanding a culture based on its own values and standards rather than judging it by the standards of another culture?",
+    "options": [
+      "Ethnocentrism",
+      "Cultural relativism",
+      "Social roles",
+      "Status"
+    ],
+    "answer": "Cultural relativism"
+  },
+  {
+    "term": "social roles",
+    "question": "What are the expected patterns of behavior associated with particular positions in society?",
+    "options": [
+      "Ethnocentrism",
+      "Cultural relativism",
+      "Social roles",
+      "Status"
+    ],
+    "answer": "Social roles"
+  },
+  {
+    "term": "status",
+    "question": "What is a person’s social position within a group or society, which can be achieved or ascribed?",
+    "options": [
+      "Ethnocentrism",
+      "Cultural relativism",
+      "Social roles",
+      "Status"
+    ],
+    "answer": "Status"
+  },
+  {
+    "term": "ascribed status",
+    "question": "What is a social position assigned at birth or involuntarily later in life, such as race, gender, or ethnicity?",
+    "options": [
+      "Ascribed status",
+      "Achieved status",
+      "Role conflict",
+      "Role exit"
+    ],
+    "answer": "Ascribed status"
+  },
+  {
+    "term": "achieved status",
+    "question": "What is a social position attained through personal effort, actions, or accomplishments?",
+    "options": [
+      "Ascribed status",
+      "Achieved status",
+      "Role conflict",
+      "Role exit"
+    ],
+    "answer": "Achieved status"
+  },
+  {
+    "term": "role conflict",
+    "question": "What occurs when an individual faces incompatible demands from different social roles they occupy?",
+    "options": [
+      "Ascribed status",
+      "Achieved status",
+      "Role conflict",
+      "Role exit"
+    ],
+    "answer": "Role conflict"
+  },
+  {
+    "term": "role exit",
+    "question": "What is the process of disengaging from a role that has been central to one’s identity and establishing a new role?",
+    "options": [
+      "Ascribed status",
+      "Achieved status",
+      "Role conflict",
+      "Role exit"
+    ],
+    "answer": "Role exit"
+  },
+  {
+    "term": "primary groups",
+    "question": "What are small, close-knit social groups characterized by intimate, long-term relationships (e.g., family, close friends)?",
+    "options": [
+      "Primary groups",
+      "Secondary groups",
+      "Dyad",
+      "Triad"
+    ],
+    "answer": "Primary groups"
+  },
+  {
+    "term": "secondary groups",
+    "question": "What are larger, more impersonal social groups focused on specific goals or activities (e.g., coworkers, classmates)?",
+    "options": [
+      "Primary groups",
+      "Secondary groups",
+      "Dyad",
+      "Triad"
+    ],
+    "answer": "Secondary groups"
+  },
+  {
+    "term": "dyad",
+    "question": "What is a social group consisting of exactly two members, often characterized by intimacy and instability?",
+    "options": [
+      "Primary groups",
+      "Secondary groups",
+      "Dyad",
+      "Triad"
+    ],
+    "answer": "Dyad"
+  },
+  {
+    "term": "triad",
+    "question": "What is a social group consisting of three members, which introduces the possibility of coalitions and more complex dynamics?",
+    "options": [
+      "Primary groups",
+      "Secondary groups",
+      "Dyad",
+      "Triad"
+    ],
+    "answer": "Triad"
+  },
+  {
+    "term": "social networks",
+    "question": "What are the interconnected webs of social relationships that link individuals and groups?",
+    "options": [
+      "Social networks",
+      "Utilitarian organizations",
+      "Normative organizations",
+      "Coercive organizations"
+    ],
+    "answer": "Social networks"
+  },
+  {
+    "term": "utilitarian organizations",
+    "question": "What formal organizations are structured to achieve specific goals and provide material rewards to members (e.g., businesses, government agencies)?",
+    "options": [
+      "Social networks",
+      "Utilitarian organizations",
+      "Normative organizations",
+      "Coercive organizations"
+    ],
+    "answer": "Utilitarian organizations"
+  },
+  {
+    "term": "normative organizations",
+    "question": "What formal organizations are formed to pursue shared interests or goals, often providing intangible rewards (e.g., religious groups, political parties)?",
+    "options": [
+      "Social networks",
+      "Utilitarian organizations",
+      "Normative organizations",
+      "Coercive organizations"
+    ],
+    "answer": "Normative organizations"
+  },
+  {
+    "term": "coercive organizations",
+    "question": "What formal organizations are characterized by involuntary membership and strict control over members (e.g., prisons, mental institutions)?",
+    "options": [
+      "Social networks",
+      "Utilitarian organizations",
+      "Normative organizations",
+      "Coercive organizations"
+    ],
+    "answer": "Coercive organizations"
+  },
+  {
+    "term": "bureaucracies",
+    "question": "What are large, formal organizations characterized by hierarchical structure, clear rules, and a division of labor?",
+    "options": [
+      "Bureaucracies",
+      "Front stage",
+      "Back stage",
+      "Impression management"
+    ],
+    "answer": "Bureaucracies"
+  },
+  {
+    "term": "front stage",
+    "question": "What is the public area of social interaction where individuals perform roles in accordance with societal expectations?",
+    "options": [
+      "Bureaucracies",
+      "Front stage",
+      "Back stage",
+      "Impression management"
+    ],
+    "answer": "Front stage"
+  },
+  {
+    "term": "back stage",
+    "question": "What is the private area of social interaction where individuals can relax and express themselves without concern for public scrutiny?",
+    "options": [
+      "Bureaucracies",
+      "Front stage",
+      "Back stage",
+      "Impression management"
+    ],
+    "answer": "Back stage"
+  },
+  {
+    "term": "impression management (self)",
+    "question": "What is the process by which individuals consciously or unconsciously attempt to influence how others perceive them, often through self-presentation strategies?",
+    "options": [
+      "Bureaucracies",
+      "Front stage",
+      "Back stage",
+      "Impression management"
+    ],
+    "answer": "Impression management"
+  },
+  {
+    "term": "dendrites (neuron)",
+    "question": "What structures on a neuron receive incoming signals from other neurons?",
+    "options": [
+      "Dendrites",
+      "Soma",
+      "Axon",
+      "Axon terminals"
+    ],
+    "answer": "Axon terminals"
+  },
+  {
+    "term": "axon terminals",
+    "question": "What structures at the end of a neuron release neurotransmitters into the synaptic cleft?",
+    "options": [
+      "Dendrites",
+      "Soma",
+      "Axon",
+      "Axon terminals"
+    ],
+    "answer": "Axon terminals"
+  },
+  {
+    "term": "myelination",
+    "question": "What process involves the formation of a fatty sheath around axons to increase the speed of electrical signal transmission?",
+    "options": [
+      "Myelination",
+      "Nodes of Ranvier",
+      "Saltatory conduction",
+      "Axon terminals"
+    ],
+    "answer": "Myelination"
+  },
+  {
+    "term": "nodes of Ranvier",
+    "question": "What are the gaps in the myelin sheath along an axon that facilitate rapid signal conduction?",
+    "options": [
+      "Myelination",
+      "Nodes of Ranvier",
+      "Saltatory conduction",
+      "Axon terminals"
+    ],
+    "answer": "Nodes of Ranvier"
+  },
+  {
+    "term": "saltatory conduction",
+    "question": "What is the process by which action potentials jump from one node of Ranvier to the next, increasing conduction velocity along myelinated axons?",
+    "options": [
+      "Myelination",
+      "Nodes of Ranvier",
+      "Saltatory conduction",
+      "Axon terminals"
+    ],
+    "answer": "Saltatory conduction"
+  },
+  {
+    "term": "meissners corpuscles",
+    "question": "What mechanoreceptors in the skin detect light touch and low-frequency vibration?",
+    "options": [
+      "Pacinian corpuscles",
+      "Merkel cells",
+      "Ruffini endings",
+      "Meissners corpuscles"
+    ],
+    "answer": "Meissners corpuscles"
+  },
+  {
+    "term": "pacinian corpuscles",
+    "question": "What mechanoreceptors in the skin detect deep pressure and high-frequency vibration?",
+    "options": [
+      "Pacinian corpuscles",
+      "Merkel cells",
+      "Ruffini endings",
+      "Meissners corpuscles"
+    ],
+    "answer": "Pacinian corpuscles"
+  },
+  {
+    "term": "merkel cells",
+    "question": "What mechanoreceptors in the skin detect light touch and sustained pressure?",
+    "options": [
+      "Pacinian corpuscles",
+      "Merkel cells",
+      "Ruffini endings",
+      "Meissners corpuscles"
+    ],
+    "answer": "Merkel cells"
+  },
+  {
+    "term": "ruffini endings",
+    "question": "What mechanoreceptors in the skin detect skin stretch and sustained pressure?",
+    "options": [
+      "Pacinian corpuscles",
+      "Merkel cells",
+      "Ruffini endings",
+      "Meissners corpuscles"
+    ],
+    "answer": "Ruffini endings"
+  },
+  {
+    "term": "thermoreceptors",
+    "question": "What sensory receptors detect changes in temperature?",
+    "options": [
+      "Thermoreceptors",
+      "Nociceptors",
+      "Mechanoreceptors",
+      "Photoreceptors"
+    ],
+    "answer": "Thermoreceptors"
+  },
+  {
+    "term": "nociceptors",
+    "question": "What sensory receptors respond to potentially harmful stimuli by detecting pain?",
+    "options": [
+      "Thermoreceptors",
+      "Nociceptors",
+      "Mechanoreceptors",
+      "Photoreceptors"
+    ],
+    "answer": "Nociceptors"
+  },
+  {
+    "term": "skeletal muscle",
+    "question": "What type of muscle tissue is attached to bones and responsible for voluntary movements?",
+    "options": [
+      "Skeletal muscle",
+      "Cardiac muscle",
+      "Smooth muscle",
+      "Myocytes"
+    ],
+    "answer": "Skeletal muscle"
+  },
+  {
+    "term": "cardiac muscle",
+    "question": "What type of muscle tissue makes up the heart and contracts involuntarily to pump blood?",
+    "options": [
+      "Skeletal muscle",
+      "Cardiac muscle",
+      "Smooth muscle",
+      "Myocytes"
+    ],
+    "answer": "Cardiac muscle"
+  },
+  {
+    "term": "smooth muscle",
+    "question": "What type of muscle tissue is found in the walls of hollow organs and contracts involuntarily?",
+    "options": [
+      "Skeletal muscle",
+      "Cardiac muscle",
+      "Smooth muscle",
+      "Myocytes"
+    ],
+    "answer": "Smooth muscle"
+  },
+  {
+    "term": "myocytes",
+    "question": "What are the specialized muscle cells responsible for contraction in muscle tissue?",
+    "options": [
+      "Myocytes",
+      "Neurons",
+      "Osteocytes",
+      "Chondrocytes"
+    ],
+    "answer": "Myocytes"
+  },
+  {
+    "term": "myosin",
+    "question": "What thick protein filament interacts with actin to produce muscle contraction?",
+    "options": [
+      "Myosin",
+      "Actin",
+      "Troponin",
+      "Tropomyosin"
+    ],
+    "answer": "Myosin"
+  },
+  {
+    "term": "troponin",
+    "question": "What regulatory protein binds calcium ions and initiates muscle contraction by moving tropomyosin away from actin binding sites?",
+    "options": [
+      "Myosin",
+      "Actin",
+      "Troponin",
+      "Tropomyosin"
+    ],
+    "answer": "Troponin"
+  },
+  {
+    "term": "tropomyosin",
+    "question": "What protein blocks myosin-binding sites on actin filaments and is moved during muscle contraction?",
+    "options": [
+      "Myosin",
+      "Actin",
+      "Troponin",
+      "Tropomyosin"
+    ],
+    "answer": "Tropomyosin"
+  },
+  {
+    "term": "tendons",
+    "question": "What connective tissues attach muscles to bones, transmitting force to produce movement?",
+    "options": [
+      "Tendons",
+      "Ligaments",
+      "Cartilage",
+      "Synovial joints"
+    ],
+    "answer": "Tendons"
+  },
+  {
+    "term": "ligaments",
+    "question": "What connective tissues connect bones to other bones at joints, providing stability?",
+    "options": [
+      "Tendons",
+      "Ligaments",
+      "Cartilage",
+      "Synovial joints"
+    ],
+    "answer": "Ligaments"
+  },
+  {
+    "term": "synovial joints",
+    "question": "What type of freely movable joints are characterized by a fluid-filled cavity and include the knee and shoulder?",
+    "options": [
+      "Synovial joints",
+      "Cartilaginous joints",
+      "Fibrous joints",
+      "Syndesmoses"
+    ],
+    "answer": "Synovial joints"
+  },
+  {
+    "term": "cartilaginous joints",
+    "question": "What type of joints allow limited movement and are connected by cartilage, such as intervertebral discs?",
+    "options": [
+      "Synovial joints",
+      "Cartilaginous joints",
+      "Fibrous joints",
+      "Syndesmoses"
+    ],
+    "answer": "Cartilaginous joints"
+  },
+  {
+    "term": "fibrous joints",
+    "question": "What type of joints are immovable and connected by dense connective tissue, such as sutures in the skull?",
+    "options": [
+      "Synovial joints",
+      "Cartilaginous joints",
+      "Fibrous joints",
+      "Syndesmoses"
+    ],
+    "answer": "Fibrous joints"
+  },
+  {
+    "term": "syndesmoses",
+    "question": "What are fibrous joints connected by ligaments, allowing limited movement (e.g., between the tibia and fibula)?",
+    "options": [
+      "Syndesmoses",
+      "Gomphoses",
+      "Synchondroses",
+      "Synovial joints"
+    ],
+    "answer": "Syndesmoses"
+  },
+  {
+    "term": "gomphoses",
+    "question": "What are fibrous joints that anchor teeth to their sockets in the jawbone?",
+    "options": [
+      "Syndesmoses",
+      "Gomphoses",
+      "Synchondroses",
+      "Synovial joints"
+    ],
+    "answer": "Gomphoses"
+  },
+  {
+    "term": "synchondroses",
+    "question": "What are cartilaginous joints connected by hyaline cartilage, such as the epiphyseal plates in growing bones?",
+    "options": [
+      "Syndesmoses",
+      "Gomphoses",
+      "Synchondroses",
+      "Synovial joints"
+    ],
+    "answer": "Synchondroses"
+  },
+  {
+    "term": "sesamoid bones",
+    "question": "What are small, round bones that form within tendons, such as the patella (kneecap)?",
+    "options": [
+      "Sesamoid bones",
+      "Long bones",
+      "Flat bones",
+      "Irregular bones"
+    ],
+    "answer": "Sesamoid bones"
+  },
+  {
+    "term": "hyaline cartilage",
+    "question": "What type of cartilage provides support and flexibility, found in the nose, trachea, and at joint surfaces?",
+    "options": [
+      "Hyaline cartilage",
+      "Elastic cartilage",
+      "Fibrocartilage",
+      "Articular cartilage"
+    ],
+    "answer": "Hyaline cartilage"
+  },
+  {
+    "term": "elastic cartilage",
+    "question": "What type of cartilage provides strength and elasticity, found in the external ear and epiglottis?",
+    "options": [
+      "Hyaline cartilage",
+      "Elastic cartilage",
+      "Fibrocartilage",
+      "Articular cartilage"
+    ],
+    "answer": "Elastic cartilage"
+  },
+  {
+    "term": "fibrocartilage",
+    "question": "What type of cartilage provides tensile strength and is found in intervertebral discs and the pubic symphysis?",
+    "options": [
+      "Hyaline cartilage",
+      "Elastic cartilage",
+      "Fibrocartilage",
+      "Articular cartilage"
+    ],
+    "answer": "Fibrocartilage"
+  },
+  {
+    "term": "arteries",
+    "question": "What blood vessels carry oxygenated blood away from the heart to the body’s tissues?",
+    "options": [
+      "Arteries",
+      "Veins",
+      "Capillaries",
+      "Venules"
+    ],
+    "answer": "Arteries"
+  },
+  {
+    "term": "veins",
+    "question": "What blood vessels carry deoxygenated blood from the body’s tissues back to the heart?",
+    "options": [
+      "Arteries",
+      "Veins",
+      "Capillaries",
+      "Venules"
+    ],
+    "answer": "Veins"
+  },
+  {
+    "term": "capillaries",
+    "question": "What are the smallest blood vessels where exchange of gases, nutrients, and waste products occurs between blood and tissues?",
+    "options": [
+      "Arteries",
+      "Veins",
+      "Capillaries",
+      "Venules"
+    ],
+    "answer": "Capillaries"
+  },
+  {
+    "term": "venules",
+    "question": "What small blood vessels collect blood from capillaries and transport it to veins?",
+    "options": [
+      "Arteries",
+      "Veins",
+      "Capillaries",
+      "Venules"
+    ],
+    "answer": "Venules"
+  },
+  {
+    "term": "plasma",
+    "question": "What is the liquid component of blood that transports nutrients, hormones, and waste products?",
+    "options": [
+      "Plasma",
+      "Red blood cells",
+      "White blood cells",
+      "Platelets"
+    ],
+    "answer": "Plasma"
+  },
+  {
+    "term": "parotid glands",
+    "question": "What salivary glands, located near the ears, produce an enzyme called amylase that breaks down carbohydrates?",
+    "options": [
+      "Parotid glands",
+      "Submandibular glands",
+      "Sublingual glands",
+      "Von Ebner's glands"
+    ],
+    "answer": "Parotid glands"
+  },
+  {
+    "term": "submandibular glands",
+    "question": "What salivary glands, located beneath the jaw, produce the majority of saliva in the mouth?",
+    "options": [
+      "Parotid glands",
+      "Submandibular glands",
+      "Sublingual glands",
+      "Von Ebner's glands"
+    ],
+    "answer": "Submandibular glands"
+  },
+  {
+    "term": "von ebner's glands",
+    "question": "What minor salivary glands, located at the back of the tongue, produce a watery secretion that aids in taste perception?",
+    "options": [
+      "Parotid glands",
+      "Submandibular glands",
+      "Sublingual glands",
+      "Von Ebner's glands"
+    ],
+    "answer": "Von Ebner's glands"
+  },
+  {
+    "term": "mastication",
+    "question": "What is the process of chewing food to mechanically break it down into smaller pieces for digestion?",
+    "options": [
+      "Mastication",
+      "Deglutition",
+      "Peristalsis",
+      "Absorption"
+    ],
+    "answer": "Mastication"
+  },
+  {
+    "term": "chief cells",
+    "question": "What cells in the stomach secrete pepsinogen, which is activated to pepsin for protein digestion?",
+    "options": [
+      "Chief cells",
+      "Parietal cells",
+      "G cells",
+      "Mucous cells"
+    ],
+    "answer": "Chief cells"
+  },
+  {
+    "term": "parietal cells",
+    "question": "What cells in the stomach secrete hydrochloric acid, which denatures proteins and activates pepsin?",
+    "options": [
+      "Chief cells",
+      "Parietal cells",
+      "G cells",
+      "Mucous cells"
+    ],
+    "answer": "Parietal cells"
+  },
+  {
+    "term": "G cells",
+    "question": "What cells in the stomach secrete gastrin, a hormone that stimulates gastric acid secretion?",
+    "options": [
+      "Chief cells",
+      "Parietal cells",
+      "G cells",
+      "Mucous cells"
+    ],
+    "answer": "G cells"
+  },
+  {
+    "term": "peptide hormones",
+    "question": "What class of hormones, composed of amino acids, includes insulin and glucagon?",
+    "options": [
+      "Peptide hormones",
+      "Steroid hormones",
+      "Amine hormones",
+      "Thyroid hormones"
+    ],
+    "answer": "Peptide hormones"
+  },
+  {
+    "term": "insulin",
+    "question": "What peptide hormone, produced by the pancreas, lowers blood glucose levels by promoting glucose uptake into cells?",
+    "options": [
+      "Insulin",
+      "Glucagon",
+      "Growth hormone",
+      "Cortisol"
+    ],
+    "answer": "Insulin"
+  },
+  {
+    "term": "glucagon",
+    "question": "What peptide hormone, produced by the pancreas, raises blood glucose levels by stimulating the liver to release glucose?",
+    "options": [
+      "Insulin",
+      "Glucagon",
+      "Growth hormone",
+      "Cortisol"
+    ],
+    "answer": "Glucagon"
+  },
+  {
+    "term": "growth hormone",
+    "question": "What peptide hormone, produced by the pituitary gland, stimulates growth and cell reproduction?",
+    "options": [
+      "Insulin",
+      "Glucagon",
+      "Growth hormone",
+      "Cortisol"
+    ],
+    "answer": "Growth hormone"
+  },
+  {
+    "term": "prolactin",
+    "question": "What peptide hormone, produced by the pituitary gland, stimulates milk production in the mammary glands?",
+    "options": [
+      "Insulin",
+      "Prolactin",
+      "Growth hormone",
+      "Cortisol"
+    ],
+    "answer": "Prolactin"
+  },
+  {
+    "term": "cortisol",
+    "question": "What steroid hormone, produced by the adrenal cortex, is involved in the stress response and metabolism regulation?",
+    "options": [
+      "Insulin",
+      "Prolactin",
+      "Growth hormone",
+      "Cortisol"
+    ],
+    "answer": "Cortisol"
+  },
+  {
+    "term": "testosterone",
+    "question": "What steroid hormone, produced by the testes, is responsible for the development of male secondary sexual characteristics?",
+    "options": [
+      "Testosterone",
+      "Estrogen",
+      "Progesterone",
+      "Cortisol"
+    ],
+    "answer": "Testosterone"
+  },
+  {
+    "term": "thyroid hormones",
+    "question": "What hormones, produced by the thyroid gland, regulate metabolism, growth, and development?",
+    "options": [
+      "Thyroid hormones",
+      "Insulin",
+      "Cortisol",
+      "Testosterone"
+    ],
+    "answer": "Thyroid hormones"
+  },
+  {
+    "term": "adrenaline",
+    "question": "What hormone (also called epinephrine), produced by the adrenal medulla, is involved in the fight-or-flight response?",
+    "options": [
+      "Adrenaline",
+      "Noradrenaline",
+      "Dopamine",
+      "Serotonin"
+    ],
+    "answer": "Adrenaline"
+  },
+  {
+    "term": "Primary messengers",
+    "question": "What are hormones or signaling molecules that bind to receptors on the surface of target cells to initiate a cellular response?",
+    "options": [
+      "Primary messengers",
+      "Secondary messengers",
+      "Neurotransmitters",
+      "Enzymes"
+    ],
+    "answer": "Primary messengers"
+  },
+  {
+    "term": "Secondary messengers",
+    "question": "What are intracellular molecules that relay signals from primary messengers to target molecules within the cell?",
+    "options": [
+      "Primary messengers",
+      "Secondary messengers",
+      "Neurotransmitters",
+      "Enzymes"
+    ],
+    "answer": "Secondary messengers"
+  },
+  {
+    "term": "cleavage",
+    "question": "What is the series of rapid mitotic cell divisions that occur after fertilization, resulting in the formation of a blastocyst?",
+    "options": [
+      "Cleavage",
+      "Implantation",
+      "Neurulation",
+      "Gastrulation"
+    ],
+    "answer": "Cleavage"
+  },
+  {
+    "term": "implantation",
+    "question": "What is the process by which the blastocyst attaches to and embeds in the uterine wall?",
+    "options": [
+      "Cleavage",
+      "Implantation",
+      "Neurulation",
+      "Gastrulation"
+    ],
+    "answer": "Implantation"
+  },
+  {
+    "term": "neurulation",
+    "question": "What is the embryonic process by which the neural tube forms, giving rise to the central nervous system?",
+    "options": [
+      "Cleavage",
+      "Implantation",
+      "Neurulation",
+      "Gastrulation"
+    ],
+    "answer": "Neurulation"
+  },
+  {
+    "term": "Fenestrated capillaries",
+    "question": "What specialized capillaries in the glomerulus have pores that allow the passage of small molecules while retaining larger ones?",
+    "options": [
+      "Fenestrated capillaries",
+      "Continuous capillaries",
+      "Sinusoidal capillaries",
+      "Lymphatic capillaries"
+    ],
+    "answer": "Fenestrated capillaries"
+  },
+  {
+    "term": "Podocytes",
+    "question": "What specialized cells in the Bowman’s capsule wrap around glomerular capillaries and help filter blood during urine formation?",
+    "options": [
+      "Podocytes",
+      "Mesangial cells",
+      "Endothelial cells",
+      "Epithelial cells"
+    ],
+    "answer": "Podocytes"
+  },
+  {
+    "term": "excretion",
+    "question": "What is the final step of waste removal, where urine is formed by the kidneys and transported out of the body?",
+    "options": [
+      "Filtration",
+      "Reabsorption",
+      "Secretion",
+      "Excretion"
+    ],
+    "answer": "Excretion"
+  }
+]

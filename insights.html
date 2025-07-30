@@ -319,6 +319,9 @@
       id="flashcard-review-section"
       style="margin: 40px auto; max-width: 420px"
     >
+      <h2 style="text-align: center; color: #16213e; margin-bottom: 18px">
+        Flashcard Review
+      </h2>
       <div
         class="progress"
         id="fc-progress"
@@ -336,40 +339,29 @@
       let flashcards = [];
       let fcCurrent = 0;
 
-      // Collect all answered terms from localStorage
-      let answeredTerms = new Set();
-      for (let i = 0; i < localStorage.length; i++) {
-        const key = localStorage.key(i);
-        if (key.startsWith("quizProgress_")) {
-          try {
-            const progress = JSON.parse(localStorage.getItem(key));
-            if (progress && Array.isArray(progress.answeredQuestions)) {
-              progress.answeredQuestions.forEach((term) =>
-                answeredTerms.add(term)
-              );
-            }
-          } catch (e) {}
-        }
+      // Load flashcards.json and save to localStorage if not already saved
+      if (!localStorage.getItem("allFlashcards")) {
+        fetch("flashcards.json")
+          .then((res) => res.json())
+          .then((data) => {
+            localStorage.setItem("allFlashcards", JSON.stringify(data));
+            loadFlashcardsFromStorage();
+          });
+      } else {
+        loadFlashcardsFromStorage();
       }
 
-      // Load flashcards.json
-      fetch("flashcards.json")
-        .then((res) => res.json())
-        .then((data) => {
-          // Only include flashcards where ANY option is in answeredTerms
-          flashcards = data.filter((fc) =>
-            fc.options.some((opt) => answeredTerms.has(opt))
-          );
-          fcCurrent = 0;
-          if (flashcards.length === 0) {
-            document.getElementById("fc-next-btn").style.display = "none";
-            document.getElementById("flashcard-container").innerHTML =
-              "<div class='flashcard'><b></b></div>";
-            document.getElementById("fc-progress").textContent = "";
-          } else {
-            showFlashcard(fcCurrent);
-          }
-        });
+      function loadFlashcardsFromStorage() {
+        let data = JSON.parse(localStorage.getItem("allFlashcards") || "[]");
+        let reviewed = JSON.parse(
+          localStorage.getItem("reviewedFlashcards") || "[]"
+        );
+        flashcards = data.filter(
+          (fc) => !reviewed.includes(fc.term || fc.question)
+        );
+        fcCurrent = 0;
+        showFlashcard(fcCurrent);
+      }
 
       function showFlashcard(idx) {
         if (!flashcards.length) return;
@@ -378,7 +370,7 @@
           idx + 1
         } of ${flashcards.length}`;
         let html = `<div class="flashcard" style="background:#fff;border-radius:12px;box-shadow:0 2px 12px #b3b3b3;padding:2em 1em;margin-bottom:1em;max-width:400px;width:95vw;text-align:center;">
-    
+   
     <div style="margin-bottom:1em;">${fc.question || ""}</div>
     <div class="options">`;
         fc.options.forEach((opt) => {
@@ -403,6 +395,16 @@
           else if (b === btn && selected !== correct)
             b.style.background = "#f8d7da";
         });
+        // --- Save reviewed flashcard index or term to localStorage ---
+        let reviewed = JSON.parse(
+          localStorage.getItem("reviewedFlashcards") || "[]"
+        );
+        const uniqueId =
+          flashcards[fcCurrent].term || flashcards[fcCurrent].question;
+        if (!reviewed.includes(uniqueId)) {
+          reviewed.push(uniqueId);
+          localStorage.setItem("reviewedFlashcards", JSON.stringify(reviewed));
+        }
         document.getElementById("fc-next-btn").style.display = "";
       };
 
@@ -412,7 +414,7 @@
           showFlashcard(fcCurrent);
         } else {
           document.getElementById("flashcard-container").innerHTML =
-            "<div class='flashcard'><b>Done! 🎉</b></div>";
+            "<div class='flashcard'><b>Done! </b></div>";
           document.getElementById("fc-progress").textContent = "";
           this.style.display = "none";
         }
