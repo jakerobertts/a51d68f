@@ -197,7 +197,7 @@ li {
   transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
   list-style-type: none;
   font-size: 1.08em;
-  font-weight: 500;
+  font-weight: none;
   cursor: pointer;
   overflow: visible;
   backdrop-filter: blur(8px) saturate(160%);
