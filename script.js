@@ -73,17 +73,18 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Replace content with blank underscores
     const blankLength = Math.max(answer.length, 1);
-    element.innerHTML = '&nbsp;'.repeat(blankLength); // Minimum 1 underscore
+    element.innerHTML = '...'; // Minimum 1 underscore
     element.style.fontFamily = 'apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif';
     element.style.letterSpacing = '2px';
     element.style.padding = '2px 6px';
-    element.style.backgroundColor = 'white';
-    element.style.border = '1px solid black';
+    element.style.backgroundColor = 'rgb(255, 255, 255)';
+    element.style.border = '0px solid black';
     element.style.borderRadius = '7px';
     element.style.display = 'inline-block';
     element.style.minWidth = '50px';
     element.style.textAlign = 'center';
-    
+    //placeholder 
+    // element.style.placeholder = 'Type your answer...';
     // Add hint tooltip if available
     if (hint) {
       element.setAttribute('title', `💡 ${hint}`);
@@ -285,7 +286,7 @@ function promptAnswer(element, event) {
       } else {
         // Restore blank state if empty
         const blankLength = Math.max(correctAnswer.length, 4);
-        element.innerHTML = '&nbsp;'.repeat(blankLength);
+      
         element.style.backgroundColor = 'white';
         element.style.border = '1px solid #ccc';
         element.style.color = 'white';
@@ -382,9 +383,9 @@ function resetProgress() {
     const answer = element.getAttribute('data-answer');
     const blankLength = Math.max(answer.length, 4);
     element.innerHTML = ' '.repeat(blankLength);
-    element.style.backgroundColor = '#f0f0f0';
+    element.style.backgroundColor = 'white';
     element.style.color = 'white';
-    element.style.border = '1px solid #ccc';
+    element.style.border = '0px solid #ccc';
     element.style.borderRadius = '3px';
     element.style.padding = '2px 6px';
     element.style.fontFamily = 'monospace';
