@@ -251,3 +251,18 @@ function initSidebar() {
 // Initialize sidebar when DOM is loaded
 document.addEventListener('DOMContentLoaded', initSidebar);
 
+// Add before </body> in your HTML
+document.addEventListener('DOMContentLoaded', function() {
+  const hamburger = document.getElementById('hamburger');
+  const sidebar = document.querySelector('.left-sidebar');
+  hamburger.addEventListener('click', function() {
+    sidebar.classList.toggle('active');
+  });
+  // Optional: close sidebar when clicking outside
+  document.addEventListener('click', function(e) {
+    if (window.innerWidth <= 700 && sidebar.classList.contains('active') && !sidebar.contains(e.target) && e.target !== hamburger) {
+      sidebar.classList.remove('active');
+    }
+  });
+});
+
