@@ -463,6 +463,28 @@ body {
   }
 }
 
+@media (max-width: 700px) {
+  .left-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80vw;
+    min-width: 180px;
+    height: 100vh;
+    z-index: 1000;
+    box-shadow: 2px 0 12px rgba(0,0,0,0.08);
+    background: #fff;
+    transform: translateX(-50%);
+    transition: transform 0.3s;
+  }
+  .left-sidebar.active {
+    transform: translateX(0);
+  }
+  body {
+    padding-left: 0 !important;
+  }
+}
+
 li.collapsing {
   max-height: 0 !important;
   opacity: 0 !important;
