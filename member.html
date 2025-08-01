@@ -68,14 +68,23 @@
         min-height: 100vh;
       }
 
-      body {
-        font-family: "Segoe UI", "Roboto", "Helvetica Neue", Arial,
-          "Liberation Sans", sans-serif;
-        margin: 0;
-        padding: 0;
-        color: #222;
-        font-weight: bold;
-      }
+      html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #222;
+  font-weight: bold;
+}
 
       .modern-header {
         text-align: center;
@@ -189,6 +198,7 @@
         display: flex;
         gap: 2rem;
         justify-content: center;
+        align-items: center;
         margin-top: 1.5rem;
         flex-wrap: wrap;
       }
@@ -245,6 +255,17 @@
 
       .fade-in.loaded {
         opacity: 1;
+      }
+
+      .modal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 900px;
+        min-height: 60vh;
+        margin: 0 auto;
       }
     </style>
 
