@@ -111,7 +111,7 @@
           >0</span
         >
         /
-        <span id="total-questions" style="color: #888">1398</span>
+        <span id="total-questions" style="color: #888">1588</span>
       </div>
       <div style="font-size: 1.1rem; margin-bottom: 14px">
         <strong>Questions left:</strong>
@@ -177,7 +177,7 @@
       let answeredCount = 0;
       let correctCount = 0;
       let incorrectCount = 0;
-      const totalQuestions = 1398;
+      const totalQuestions = 1588;
 
       // Loop through all localStorage keys
       for (let i = 0; i < localStorage.length; i++) {
@@ -537,6 +537,48 @@
       });
     }
   });
+</script>
+<!-- Added Percent Correct by Page Section -->
+<div id="percent-table-container" style="max-width:600px;margin:2rem auto;">
+  <h2 style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color:#000144; font-weight:200; margin-bottom:1em;">
+    Percent Correct by Page
+  </h2>
+  <div id="percent-table"></div>
+</div>
+<script>
+  // Build percent correct for each page in table format
+  const percentTableEl = document.getElementById("percent-table");
+  let percentHtml = `<table style="width:100%;border-collapse:collapse;">
+    <thead>
+      <tr>
+        <th style="text-align:left;padding:8px;border-bottom:2px solid #6366f1;">Page</th>
+        <th style="text-align:left;padding:8px;border-bottom:2px solid #6366f1;">Percent Correct</th>
+      </tr>
+    </thead>
+    <tbody>`;
+
+  categoryToPage.forEach(cat => {
+    const key = `quizProgress_${cat.page}`;
+    const progress = JSON.parse(localStorage.getItem(key) || "{}");
+    const answered = Array.isArray(progress.answeredQuestions) ? progress.answeredQuestions.length : 0;
+    const correct = typeof progress.score === "number" ? progress.score : 0;
+    const percent = answered > 0 ? Math.round((correct / answered) * 100) : 0;
+    let color;
+    if (percent === 100) {
+      color = "#27ae60"; // green
+    } else if (percent >= 70) {
+      color = "#f1c40f"; // yellow
+    } else {
+      color = "#c0392b"; // red
+    }
+    percentHtml += `<tr>
+      <td style="padding:8px;border-bottom:1px solid #eee;">${cat.name}</td>
+      <td style="padding:8px;border-bottom:1px solid #eee;color:${color};font-weight:700;">${percent}%</td>
+    </tr>`;
+  });
+
+  percentHtml += "</tbody></table>";
+  percentTableEl.innerHTML = percentHtml;
 </script>
   </body>
 </html>
