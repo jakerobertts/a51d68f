@@ -436,8 +436,7 @@ body {
   }
   
   .category-header {
-    font-size: 1em;
-    padding: 8px;
+   display: none
   }
   .category-items {
     max-height: 300px;
