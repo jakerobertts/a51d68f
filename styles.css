@@ -530,3 +530,10 @@ li.collapsing {
 .autocomplete-dropdown div:hover {
   background: #f0f8ff;
 }
+.dollar-green {
+    color: #003413 !important; /* Tailwind green-500 */
+    font-weight: none;
+    font-size: 1.1em;
+    background-color: #deffde;
+    padding: 2px 4px;
+  }
