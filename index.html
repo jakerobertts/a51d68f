@@ -422,12 +422,15 @@
 
       function loadFlashcardsFromStorage() {
         let data = JSON.parse(localStorage.getItem("allFlashcards") || "[]");
-        let reviewed = JSON.parse(
-          localStorage.getItem("reviewedFlashcards") || "[]"
-        );
+        let reviewed = JSON.parse(localStorage.getItem("reviewedFlashcards") || "[]");
         flashcards = data.filter(
           (fc) => !reviewed.includes(fc.term || fc.question)
         );
+        // Shuffle flashcards array
+        for (let i = flashcards.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [flashcards[i], flashcards[j]] = [flashcards[j], flashcards[i]];
+        }
         fcCurrent = 0;
         showFlashcard(fcCurrent);
       }
@@ -490,16 +493,7 @@
       };
     </script>
       <br />
-      <h1>   Start saving your progress and your schedule.</h1>
-      <br/>
-      <img src="Screenshot 2025-07-28 at 4.18.50 PM.png" alt="MCAT Study Resources" style="max-width: 100%; height: auto;" />
-      <br />
-      <h1>   Fill-in-the-blank questions.</h1>
-      <img src="Screenshot 2025-07-22 at 5.24.27 PM.png" alt="MCAT Study Resources" style="max-width: 100%; height: auto;" />
-      <br />
-      <h1>Over 300 MCAT topics.</h1>
-      <!-- $22.99/month option -->
-
+      
 <!-- $8.99/month option -->
 
        
