@@ -428,13 +428,7 @@ button:hover {
     font-family:"futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
   }
-  .hero-section {
-    text-align: center;
-    padding: 1rem;
-    background-color: #ffffff;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-  }
+  
   ul {
     padding-left: 0.5em;
     font-size: 1em;
@@ -442,6 +436,7 @@ button:hover {
   a {
     color: black;
     border-radius: 10px;
+    padding: 1px;
     border: 1px solid #16213e;
   }
   li {
@@ -514,7 +509,7 @@ button:hover {
     overflow: visible !important;
     padding: 10px !important;
     transition: none !important;
-    border: solid 1px #ddfffa !important;
+    border: solid 1px #ffffff !important;
   }
   .autocomplete-dropdown {
     display: none !important;
@@ -541,7 +536,7 @@ button:hover {
     flex-direction: row !important;
     text-wrap: nowrap !important;
     align-items: center !important;
-    padding: 20px 5px !important;
+    padding: 20px 60px !important;
     overflow-x: auto !important;
     overflow-y: hidden !important;
     font-weight: bold !important;
@@ -559,7 +554,7 @@ button:hover {
     flex-direction: row !important;
     align-items: center !important;
     margin: 0 !important;
-    padding: 5px !important;
+    padding: 10px !important;
     height: 100%;
     width: 100%;
   }
