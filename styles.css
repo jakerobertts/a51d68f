@@ -396,7 +396,7 @@ body {
     margin-bottom: 8px;
     border-radius: 6px;
     line-height: 1.2;
-    background-color: #585858;
+    background-color: #2e2e2e;
     color: white;
   }
   li:hover {
@@ -411,7 +411,7 @@ body {
   }
   .quiz-word {
     font-size: 1em;
-    padding: 3px 8px;
+    padding: 4px 8px;
     min-width: 40px;
     letter-spacing: 1px;
     border-radius: 5px;

@@ -412,3 +412,10 @@ function checkAndCollapseLi(element) {
   }
   checkAndCollapseLi(element);
 }
+
+function isAnswerCorrect(userInput, correctAnswer) {
+  // Remove spaces, apostrophes, and punctuation, make lowercase
+  const cleanInput = userInput.trim().toLowerCase().replace(/[^a-z0-9]/gi, "");
+  const cleanAnswer = correctAnswer.trim().toLowerCase().replace(/[^a-z0-9]/gi, "");
+  return cleanInput === cleanAnswer;
+}
