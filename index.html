@@ -31,7 +31,6 @@
     <meta property="og:url" content="https://percentyle.com/index.html" />
     <meta property="og:type" content="website" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="sidebar.js"></script>
     <script>
     
     </script>
@@ -149,7 +148,6 @@
           </script>
         </div>
       </div>
-      <body>
         
         
         
@@ -157,7 +155,6 @@
       id="score-container"
       style="margin: 16px 0; font-size: 1.1rem; color: transparent"
     >
-      Score: <span id="score">0</span> / <span id="total">0</span>
     </div>
     <div
       id="insights-card"
@@ -458,7 +455,7 @@
       <div id="flashcard-nav" style="text-align: center;">
         <button
           id="fc-next-btn"
-          style="margin: 1em auto 2em auto; font-size: 20px;"
+          style="margin: 1em auto 2em auto; font-size: 20px; padding: 4px 4px"
         >
           Next
         </button>
@@ -468,9 +465,14 @@
         >
           Previous
         </button>
-        <button id="fc-refresh-btn" style="margin: 1em auto 2em auto; font-size: 20px;">
+        <button id="fc-refresh-btn" style="margin: 1em auto 2em auto; font-size: 20px; padding: 4px 4px">
           ⇄
         </button>
+        <div style="text-align:center; margin-top:10px;">
+  <button id="fc-reset-btn" style="font-size:16px; padding:4px 12px; background:#f8d7da; color:#c0392b; border-radius:6px; border:1px solid #c0392b; cursor:pointer;">
+    Reset Flashcard Progress
+  </button>
+</div>
       </div>
     </div>
     <script>
@@ -492,7 +494,11 @@
       function loadFlashcardsFromStorage() {
         let data = JSON.parse(localStorage.getItem("allFlashcards") || "[]");
         let reviewed = JSON.parse(localStorage.getItem("reviewedFlashcards") || "[]");
-        flashcards = data;
+        // Filter out reviewed cards
+        flashcards = data.filter(fc => {
+          const uniqueId = fc.term || fc.question;
+          return !reviewed.includes(uniqueId);
+        });
         // Shuffle flashcards array
         for (let i = flashcards.length - 1; i > 0; i--) {
           const j = Math.floor(Math.random() * (i + 1));
@@ -503,9 +509,18 @@
       }
 
       function showFlashcard(idx) {
-        if (!flashcards.length) return;
+        if (!flashcards.length) {
+          document.getElementById("flashcard-container").innerHTML =
+            "<div class='flashcard'><b>All cards reviewed!</b></div>";
+          document.getElementById("fc-progress").textContent = "";
+          document.getElementById("fc-next-btn").style.display = "none";
+          document.getElementById("fc-prev-btn").style.display = "none";
+          return;
+        }
+        let reviewed = JSON.parse(localStorage.getItem("reviewedFlashcards") || "[]");
+        document.getElementById("fc-progress").textContent =
+          `Card ${idx + 1} of ${flashcards.length} — Reviewed: ${reviewed.length}/${JSON.parse(localStorage.getItem("allFlashcards") || "[]").length}`;
         const fc = flashcards[idx];
-        document.getElementById("fc-progress").textContent = `Card ${idx + 1} of ${flashcards.length}`;
         let html = `<div class="flashcard" style="background:#fff;border-radius:12px;box-shadow:0 2px 12px #b3b3b3;padding:2em 1em;margin-bottom:1em;max-width:400px;width:95vw;text-align:center;">
     <div style="margin-bottom:1em;">${fc.question || ""}</div>
     <div class="options">`;
@@ -515,7 +530,6 @@
         html += `</div></div>`;
         document.getElementById("flashcard-container").innerHTML = html;
         document.getElementById("fc-next-btn").style.display = "none";
-        // Show previous button only if not on the first card
         document.getElementById("fc-prev-btn").style.display = idx > 0 ? "" : "none";
       }
 
@@ -527,16 +541,15 @@
           else if (b === btn && selected !== correct)
             b.style.background = "#f8d7da";
         });
-        // --- Save reviewed flashcard index or term to localStorage ---
-        let reviewed = JSON.parse(
-          localStorage.getItem("reviewedFlashcards") || "[]"
-        );
-        const uniqueId =
-          flashcards[fcCurrent].term || flashcards[fcCurrent].question;
+        let reviewed = JSON.parse(localStorage.getItem("reviewedFlashcards") || "[]");
+        const uniqueId = flashcards[fcCurrent].term || flashcards[fcCurrent].question;
         if (!reviewed.includes(uniqueId)) {
           reviewed.push(uniqueId);
           localStorage.setItem("reviewedFlashcards", JSON.stringify(reviewed));
         }
+        // Update progress display
+        document.getElementById("fc-progress").textContent =
+          `Card ${fcCurrent + 1} of ${flashcards.length} — Reviewed: ${reviewed.length}/${JSON.parse(localStorage.getItem("allFlashcards") || "[]").length}`;
         document.getElementById("fc-next-btn").style.display = "";
       };
 
@@ -546,19 +559,24 @@
           showFlashcard(fcCurrent);
         } else {
           document.getElementById("flashcard-container").innerHTML =
-            "<div class='flashcard'><b>Done! </b></div>";
+            "<div class='flashcard'><b>All cards reviewed!</b></div>";
           document.getElementById("fc-progress").textContent = "";
           this.style.display = "none";
+          document.getElementById("fc-prev-btn").style.display = "none";
         }
       };
       document.getElementById("fc-prev-btn").onclick = function () {
-  if (fcCurrent > 0) {
-    fcCurrent--;
-    showFlashcard(fcCurrent);
-  }
-};
-document.getElementById("fc-refresh-btn").onclick = function () {
-  // Reload flashcards from storage
+        if (fcCurrent > 0) {
+          fcCurrent--;
+          showFlashcard(fcCurrent);
+        }
+      };
+      document.getElementById("fc-refresh-btn").onclick = function () {
+        // Reload flashcards from storage and filter out reviewed
+        loadFlashcardsFromStorage();
+      };
+      document.getElementById("fc-reset-btn").onclick = function () {
+  localStorage.removeItem("reviewedFlashcards");
   loadFlashcardsFromStorage();
 };
     </script>
@@ -655,5 +673,4 @@ document.getElementById("fc-refresh-btn").onclick = function () {
       <a href="terms.html">Terms of Service</a> and
       <a href="privacy.html">Privacy Policy</a>.
     </li>
-  </body>
-</html>
+</body>
