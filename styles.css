@@ -375,12 +375,20 @@ button:hover {
 }
 
 @media (max-width: 700px) {
-   html::before {
-    background: url('bgmobile.png') no-repeat center center fixed;
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background: url('bgmobile\ \(1\).png') no-repeat center center fixed;
     opacity: 0.9 !important;
+    filter: blur(5px);
     background-size: cover;
-   }
-   
+    pointer-events: none;
+  }
+  html::before {
+    display: none !important;
+  }
   
   html, body {
     font-family:"futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
