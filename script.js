@@ -103,7 +103,32 @@ function updateScoreAndSave() {
   document.getElementById('score').textContent = score;
   saveProgress(); // Save after each correct answer
 }
-
+function isCloseEnough(a, b) {
+  // Levenshtein distance algorithm
+  const matrix = [];
+  let i;
+  for (i = 0; i <= b.length; i++) {
+    matrix[i] = [i];
+  }
+  let j;
+  for (j = 0; j <= a.length; j++) {
+    matrix[0][j] = j;
+  }
+  for (i = 1; i <= b.length; i++) {
+    for (j = 1; j <= a.length; j++) {
+      if (b.charAt(i - 1) === a.charAt(j - 1)) {
+        matrix[i][j] = matrix[i - 1][j - 1];
+      } else {
+        matrix[i][j] = Math.min(
+          matrix[i - 1][j - 1] + 1, // substitution
+          matrix[i][j - 1] + 1,     // insertion
+          matrix[i - 1][j] + 1      // deletion
+        );
+      }
+    }
+  }
+  return matrix[b.length][a.length] <= 1; // Allow one letter off
+}
 function promptAnswer(element, event) {
   // Allow re-answering if clicking on feedback area
   if ((element.classList.contains('revealed') || element.classList.contains('incorrect')) && event && !event.target.classList.contains('try-again')) {
@@ -226,50 +251,50 @@ function promptAnswer(element, event) {
   // Handle answer submission
   function checkAnswer() {
     const userAnswer = input.value.toLowerCase().trim();
-    
-    if (userAnswer === correctAnswer.toLowerCase()) {
+    if (
+      userAnswer === correctAnswer.toLowerCase() ||
+      isCloseEnough(userAnswer, correctAnswer.toLowerCase())
+    ) {
       element.classList.add('revealed');
       element.classList.remove('incorrect');
       element.innerHTML = correctAnswer + ' <span class="feedback correct">✓</span> <button class="try-again">⟳</button>';
-      // Add event listener for try-again button
       const tryAgainBtn = element.querySelector('.try-again');
       if (tryAgainBtn) {
         tryAgainBtn.addEventListener('click', function() {
           resetQuestion(element);
         });
       }
-      element.style.backgroundColor = '#d4edda';
-      element.style.color = '#155724';
-      element.style.border = '1px solid #c3e6cb';
-      element.style.padding = '2px 6px';
-      
+      // Remove green styling for just checkmark
+      element.style.backgroundColor = '';
+      element.style.color = '';
+      element.style.border = '';
+      element.style.padding = '2px 2px';
+
       if (!answeredQuestions.has(questionId)) {
         score++;
         answeredQuestions.add(questionId);
         updateScoreAndSave();
       }
-      checkAndCollapseLi(element); // <-- Add this line
-      } else if (userAnswer !== '') {
-        element.classList.add('incorrect');
-        element.classList.remove('revealed');
-        element.innerHTML = correctAnswer + ' <span class="feedback incorrect">✗</span> <button class="try-again">⟳</button>';
-        // Add event listener for try-again button
-        const tryAgainBtn = element.querySelector('.try-again');
-        if (tryAgainBtn) {
-          tryAgainBtn.addEventListener('click', function() {
-            resetQuestion(element);
-          });
-        }
-        element.style.backgroundColor = '#f8d7da';
-        element.style.color = '#721c24';
-        element.style.border = '1px solid #f5c6cb';
-        if (!answeredQuestions.has(questionId)) {
-          answeredQuestions.add(questionId);
-          updateScoreAndSave();
-          updateScoreAndSave();
-        }
+      checkAndCollapseLi(element);
+    } else if (userAnswer !== '') {
+      element.classList.add('incorrect');
+      element.classList.remove('revealed');
+      element.innerHTML = correctAnswer + ' <span class="feedback incorrect">✗</span> <button class="try-again">⟳</button>';
+      const tryAgainBtn = element.querySelector('.try-again');
+      if (tryAgainBtn) {
+        tryAgainBtn.addEventListener('click', function() {
+          resetQuestion(element);
+        });
+      }
+      element.style.backgroundColor = '#f8d7da';
+      element.style.color = '#721c24';
+      element.style.border = '1px solid #f5c6cb';
+      if (!answeredQuestions.has(questionId)) {
+        answeredQuestions.add(questionId);
+        updateScoreAndSave();
       }
     }
+  }
   // Submit on Enter key or when input loses focus
   input.addEventListener('keypress', function(e) {
     if (e.key === 'Enter') {
@@ -398,20 +423,7 @@ function resetProgress() {
 }
 //Unique quiz progress in each page
 // Quiz progress is stored uniquely for each page using PAGE_ID in localStorage keys
-function checkAndCollapseLi(element) {
-  const li = element.closest('li');
-  if (!li) return;
-  // Check if all [data-quiz] in this li have class 'revealed'
-  const allRevealed = Array.from(li.querySelectorAll('[data-quiz]'))
-    .every(el => el.classList.contains('revealed'));
-  if (allRevealed) {
-    li.classList.add('collapsing');
-    setTimeout(() => {
-      li.style.display = 'none';
-    }, 400); // Match the transition duration
-  }
-  checkAndCollapseLi(element);
-}
+
 
 function isAnswerCorrect(userInput, correctAnswer) {
   // Remove spaces, apostrophes, and punctuation, make lowercase

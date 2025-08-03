@@ -94,7 +94,7 @@ body {
 }
 
 .quiz-word.revealed {
-  background-color: #3fe03f;
+  background-color: #ffffff;
   color: rgb(0, 0, 0);
 }
 
@@ -480,8 +480,8 @@ button:hover {
     color: #333;
   }
   .quiz-word.revealed {
-    background-color: #3fe03f;
-    color: #155724;
+    background-color: #ffffff;
+    color: #000000;
   }
   .quiz-word.incorrect {
     background-color: #f8d7da;
