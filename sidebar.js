@@ -10,45 +10,45 @@ const sidebarCategories = [
   {
     title: "Biological and Biochemical Foundations",
     items: [
-            { href: "organs.html", text: "Organ Systems Overview <span class='dollar-green'>☑</span>" },
+            { href: "organs.html", text: "Organ Systems Overview " },
 
       // Biochemistry & Macromolecules
-      { href: "aa.html", text: "Amino Acids & Proteins <span class='dollar-green'>☑</span>" },
-      { href: "carbohydrates.html", text: "Carbohydrates<span class='dollar-green'>☑</span>" },
+      { href: "aa.html", text: "Amino Acids & Proteins " },
+      { href: "carbohydrates.html", text: "Carbohydrates" },
       { href: "nucleotides.html", text: "Nucleotides & Nucleic Acids" },
-            { href: "fats.html", text: "Fats & Lipids <span class='dollar-green'>☑</span>" },
+            { href: "fats.html", text: "Fats & Lipids " },
 
-      { href: "phospholipids.html", text: "Phospholipids, Phosphatids, & Other Fat Derivatives <span class='dollar-green'>☑</span>" },
+      { href: "phospholipids.html", text: "Phospholipids, Phosphatids, & Other Fat Derivatives " },
       
       // Enzymes & Regulation
-      { href: "Enzyme.html", text: "Enzyme Function & Kinetics <span class='dollar-green'>☑</span>" },
+      { href: "Enzyme.html", text: "Enzyme Function & Kinetics " },
       { href: "Co.html", text: "Cofactors" },
       { href: "feedback.html", text: "Feedback Regulation" },
       { href: "regulation.html", text: "Regulation" },
       
       // Molecular Biology
       { href: "dnarna.html", text: "Denaturation" },
-      { href: "replication.html", text: "DNA Replication <span class='dollar-green'>☑</span>" },
+      { href: "replication.html", text: "DNA Replication " },
       { href: "transcription.html", text: "Transcription" },
-      { href: "translation.html", text: "Translation <span class='dollar-green'>☑</span>" },
+      { href: "translation.html", text: "Translation " },
       { href: "code.html", text: "The Triplet Code" },
       { href: "post-transcriptional.html", text: "Post-Transcriptional Modifications" },
-      { href: "coiling.html", text: "Coiling, Packing, Telomeres & Centromeres <span class='dollar-green'>☑</span>" },
-      { href: "DNApro.html", text: "DNA in Prokaryotes & Eukaryotes <span class='dollar-green'>☑</span>" },
+      { href: "coiling.html", text: "Coiling, Packing, Telomeres & Centromeres " },
+      { href: "DNApro.html", text: "DNA in Prokaryotes & Eukaryotes " },
       
       // Genetics & Evolution
-      { href: "alleles.html", text: "Alleles & Genes <span class='dollar-green'>☑</span>" },
+      { href: "alleles.html", text: "Alleles & Genes " },
       { href: "sexlinked.html", text: "Sex-Linked Inheritance" },
       { href: "evolution.html", text: "Evolution & Genetics" },
       { href: "genengine.html", text: "Gene Engineering" },
       { href: "ethics.html", text: "Ethics in Genetics" },
       
       // Metabolism & Bioenergetics
-      { href: "bioenergetics.html", text: "Bioenergetics & Thermodynamics <span class='dollar-green'>☑</span>" },
+      { href: "bioenergetics.html", text: "Bioenergetics & Thermodynamics " },
       { href: "phosphorylation.html", text: "Phosphorylation & Energy Transfer" },
       { href: "redox.html", text: "Bio Redox" },
       { href: "half.html", text: "Half-reactions, Flavoproteins, & Electron Carriers" },
-      { href: "glycolysis.html", text: "Glycolysis & Pyruvate Processing <span class='dollar-green'>☑</span>" },
+      { href: "glycolysis.html", text: "Glycolysis & Pyruvate Processing " },
       { href: "feeder.html", text: "Feeder Pathways & Gluconeogenesis" },
       { href: "citric.html", text: "Citric Acid Cycle" },
       { href: "oxidative.html", text: "Oxidative Phosphorylation" },
@@ -57,27 +57,27 @@ const sidebarCategories = [
       { href: "metabolism.html", text: "Errors of Metabolism" },
       
       // Cell Biology
-      { href: "cellmembrane.html", text: "Cell Membrane Structure & Function <span class='dollar-green'>☑</span>" },
+      { href: "cellmembrane.html", text: "Cell Membrane Structure & Function " },
       { href: "junctions.html", text: "Cell Junctions & Communication" },
-      { href: "organelles.html", text: "Organelles & Their Functions <span class='dollar-green'>☑</span>" },
-      { href: "cellcycle.html", text: "Cell Cycle & Division <span class='dollar-green'>☑</span>" },
-      { href: "apoptosis.html", text: "Apoptosis & Cell Death<span class='dollar-green'>☑</span>" },
-      { href: "mitosis.html", text: "Mitosis & Meiosis Overview <span class='dollar-green'>☑</span>" },
+      { href: "organelles.html", text: "Organelles & Their Functions " },
+      { href: "cellcycle.html", text: "Cell Cycle & Division " },
+      { href: "apoptosis.html", text: "Apoptosis & Cell Death" },
+      { href: "mitosis.html", text: "Mitosis & Meiosis Overview " },
       
       // Development & Reproduction
-      { href: "stemcells.html", text: "Stem Cells & Differentiation <span class='dollar-green'>☑</span>" },
-      { href: "gameteogenesis.html", text: "Gameteogenesis & Fertilization <span class='dollar-green'>☑</span>" },
+      { href: "stemcells.html", text: "Stem Cells & Differentiation " },
+      { href: "gameteogenesis.html", text: "Gameteogenesis & Fertilization " },
       
       // Tissue Biology
-      { href: "connective.html", text: "Connective Tissue & Extracellular Matrix <span class='dollar-green'>☑</span>" },
+      { href: "connective.html", text: "Connective Tissue & Extracellular Matrix " },
       
       // Microbiology
       { href: "prokmot.html", text: "Prokaryotic Organelles & Motility" },
-      { href: "viruses.html", text: "Viruses & Other Infectious Agents <span class='dollar-green'>☑</span>" },
+      { href: "viruses.html", text: "Viruses & Other Infectious Agents " },
       
       // Immunology & Disease
-      { href: "immunology.html", text: "Immunology <span class='dollar-green'>☑</span>" },
-      { href: "cancer.html", text: "Cancer Biology <span class='dollar-green'>☑</span>" },
+      { href: "immunology.html", text: "Immunology " },
+      { href: "cancer.html", text: "Cancer Biology " },
       
       // Physiology
       { href: "hormones.html", text: "Hormones & the Endocrine System" },
@@ -85,7 +85,7 @@ const sidebarCategories = [
       { href: "oxstress.html", text: "Oxidative Stress & Mitochondria" },
       
       // Laboratory Techniques
-      { href: "separation.html", text: "Separation Techniques <span class='dollar-green'>☑</span>" },
+      { href: "separation.html", text: "Separation Techniques " },
       { href: "isoelectric.html", text: "Isoelectric Point" },
       { href: "electrophoresis.html", text: "Electrophoresis" },
     ]
@@ -93,20 +93,20 @@ const sidebarCategories = [
   {
     title: "Chemical and Physical Foundations",
     items: [
-      { href: "mechanics.html", text: "Mechanics <span class='dollar-green'>☑</span>" },
-      { href: "periodicmotion.html", text: "Periodic Motion <span class='dollar-green'>☑</span>" },
+      { href: "mechanics.html", text: "Mechanics " },
+      { href: "periodicmotion.html", text: "Periodic Motion " },
       { href: "fluids.html", text: "Fluids" },
       { href: "thermodynamics.html", text: "Thermodynamics" },
-      { href: "electrostatics.html", text: "Electrostatics <span class='dollar-green'>☑</span>" },
+      { href: "electrostatics.html", text: "Electrostatics " },
       { href: "optics.html", text: "Optics" },
-      { href: "solutions.html", text: "Solutions <span class='dollar-green'>☑</span>" },
+      { href: "solutions.html", text: "Solutions " },
       { href: "acidsbases.html", text: "Acids & Bases" },
-      { href: "gasphase.html", text: "Gas Phase <span class='dollar-green'>☑</span>" },
-      { href: "atomicstructure.html", text: "Atomic Structure <span class='dollar-green'>☑</span>" },
+      { href: "gasphase.html", text: "Gas Phase " },
+      { href: "atomicstructure.html", text: "Atomic Structure " },
       { href: "stoichiometry.html", text: "Stoichiometry" },
-      { href: "bonding.html", text: "Bonding & Molecular Structure <span class='dollar-green'>☑</span>" },
+      { href: "bonding.html", text: "Bonding & Molecular Structure " },
       { href: "sterics.html", text: "Stereochemistry" },
-      { href: "functionalgroups.html", text: "Functional Groups <span class='dollar-green'>☑</span>" },
+      { href: "functionalgroups.html", text: "Functional Groups " },
       { href: "spectro.html", text: "Spectroscopy" },
 
     ]
@@ -114,14 +114,14 @@ const sidebarCategories = [
   {
     title: "Psychological, Social, and Biological Foundations",
     items: [
-      { href: "Biological.html", text: "Biological Foundations of Behavior <span class='dollar-green'>☑</span>" },
-      { href: "Theories.html", text: "All Psychological and Social Theories <span class='dollar-green'>☑</span>" },
-      { href: "psych.html", text: "Psychological Concepts <span class='dollar-green'>☑</span>" },
-      { href: "social.html", text: "Sociological Concepts <span class='dollar-green'>☑</span>" },
+      { href: "Biological.html", text: "Biological Foundations of Behavior " },
+      { href: "Theories.html", text: "All Psychological and Social Theories " },
+      { href: "psych.html", text: "Psychological Concepts " },
+      { href: "social.html", text: "Sociological Concepts " },
     ]
   },
   { title:"Figures + Equations", items: [
-      { href: "figures.html", text: "Figures + Equations <span class='dollar-green'>☑</span>" },
+      { href: "figures.html", text: "Figures + Equations " },
     ]
   },
 
