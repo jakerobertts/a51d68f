@@ -257,7 +257,7 @@ function promptAnswer(element, event) {
     ) {
       element.classList.add('revealed');
       element.classList.remove('incorrect');
-      element.innerHTML = correctAnswer + ' <span class="feedback correct">✓</span> <button class="try-again">⟳</button>';
+      element.innerHTML = correctAnswer + ' <button class="try-again" style="background: transparent; border: none; padding: 1px 1px;">⟳</button>';
       const tryAgainBtn = element.querySelector('.try-again');
       if (tryAgainBtn) {
         tryAgainBtn.addEventListener('click', function() {
@@ -279,7 +279,7 @@ function promptAnswer(element, event) {
     } else if (userAnswer !== '') {
       element.classList.add('incorrect');
       element.classList.remove('revealed');
-      element.innerHTML = correctAnswer + ' <span class="feedback incorrect">✗</span> <button class="try-again">⟳</button> ';
+      element.innerHTML = correctAnswer + ' <button class="try-again">⟳</button> ';
       const tryAgainBtn = element.querySelector('.try-again');
       if (tryAgainBtn) {
         tryAgainBtn.addEventListener('click', function() {
@@ -289,7 +289,7 @@ function promptAnswer(element, event) {
       tryAgainBtn.style.background = 'transparent';
       tryAgainBtn.style.border = 'none';
       tryAgainBtn.style.padding = '2px 2px';
-      element.style.backgroundColor = 'transparent';
+      element.style.backgroundColor = 'white';
       element.style.padding = '2px 2px';
       element.style.color = '#721c24';
       element.style.border = '1px solid #f5c6cb';
