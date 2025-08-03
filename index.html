@@ -68,10 +68,45 @@
         z-index: 1000;
         text-align: center;
       }
+      @media (max-width: 700px) {
+        .hero-section {
+    padding: 1.2em 0.5em !important;
+    margin-top: 1.2em !important;
+    border-radius: 0.8em !important;
+    margin: 0 auto !important;
+    box-shadow: 0 2px 8px rgba(60,72,100,0.08);
+    background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+  }
+  .hero-section h1 {
+    font-size: 1.3rem !important;
+    margin-bottom: 0.5em !important;
+  }
+  .hero-section h2 {
+    font-size: 0.9rem !important;
+    margin-bottom: 0.3em !important;
+  }
+  .hero-section input {
+    font-size: 1em !important;
+    padding: 0.5em 0.7em !important;
+  }
+  
+      }
     </style>
   </head>
   <body>
-        <div class="hero-section" style="padding: 3rem 1rem; background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%); border-radius: 1.5rem; box-shadow: 0 4px 24px rgba(60,72,100,0.08); margin-bottom: 2rem;">
+<div id="mobile-banner" style="display:none; position:fixed; top:315px; right:18px; background:#ffffff; color:#8479ff; text-align:center; padding:0.7em 1em; font-size:0.6em; border-radius:8px; box-shadow:0 2px 8px #eee; z-index:2000; max-width: 100px; cursor:pointer;"
+     onclick="this.style.display='none'">
+  Percentyle works better on desktop!
+  <br> ⓧ
+</div>
+<script>
+  if (window.innerWidth < 700) {
+    document.getElementById('mobile-banner').style.display = 'block';
+  }
+</script>
+        <div class="hero-section" style="padding: 3rem 1rem; background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%); border-radius: 1.5rem; box-shadow: 0 4px 24px rgba(60,72,100,0.08); margin-bottom: 2rem; @media screen { font-size: 0.8rem;
+
+        }">
           <h1 class="sliding-header" style="font-size: 2.5rem; font-weight: 800; color: #000000; margin-bottom: 1rem; letter-spacing: -1px;">
            Search for a topic and quiz yourself!
           </h1>
@@ -79,13 +114,13 @@
   <input
     type="text"
     id="quiz-search"
-    placeholder="Search any quiz term..."
+    placeholder="i.e. amino acids, theories"
     style="width:80%;padding:0.7em 1em;border-radius:6px;border:1px solid #bbb;font-size:1.1em;"
   />
   <div id="quiz-search-results" style="margin-top:1em;text-align:left;"></div>
 </div>
           <h2 class="sliding-header" style="font-size: 1.5rem; font-weight: 500; color: #000000; margin-bottom: 0;">
-            Don't know how to start studying? <a href="organs(1).html">View our Read-Only Pages.</a>
+            Don't know how to start studying? <br><a href="organs(1).html">View Read-Only Pages.</a>
           </h2>
           <script>
             document.getElementById("quiz-search").addEventListener("input", function () {
@@ -137,7 +172,7 @@
     >
       <h2 style="margin-bottom: 18px; color: #16213e">Your Diagnostics</h2>
       <div style="font-size: 1.1rem; margin-bottom: 14px">
-        <strong>Fill-in-the-blanks answered:</strong>
+        <strong>Fill-in-the-blanks</strong>
         <span id="answered-count" style="color: #0078d4; font-weight: bold"
           >0</span
         >
@@ -389,7 +424,7 @@
       var data = [trace1, trace2];
       var layout = {
         barmode: "group",
-        title: { text: "←      Fill-in-the-blanks Answered by Page" },
+        title: { text: "FIB by page" },
         xaxis: {
           title: { text: "Page" },
           tickfont: { size: 9 },
@@ -400,7 +435,7 @@
         bargap: 0.2,
       };
 
-      Plotly.newPlot("myDiv", data, layout);
+      Plotly.newPlot("myDiv", data, layout, { displayModeBar: false });
     </script>
     <script src="sidebar.js"></script>
 
@@ -572,8 +607,8 @@ document.getElementById("fc-refresh-btn").onclick = function () {
   });
 </script>
 <!-- Added Percent Correct by Page Section -->
-<div id="percent-table-container" style="max-width:600px;margin:2rem auto; background: white;">
-  <h2 style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color:#000144; font-weight:200; margin-bottom:1em;">
+<div id="percent-table-container" style="border-radius: 10px; padding: 10px; max-width:600px;margin:2rem auto; background: white;">
+  <h2 style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color:#000144; font-weight:800; margin-bottom:1em;">
     Percent Correct by Page
   </h2>
   <div id="percent-table"></div>

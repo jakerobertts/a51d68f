@@ -394,8 +394,8 @@ button:hover {
     font-family:"futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
   }
-  h1, h2, h3 {
-    font-size: 1.15em;
+  h1 {
+    font-size: 1.3em;
     margin: 0.5em 0;
     text-align: center;
     font-weight: 300;
@@ -405,6 +405,35 @@ button:hover {
     font-family:"futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 
+  }
+  h2 {
+    font-size: 1em;
+    margin: 0.5em 0;
+    text-align: center;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    border-radius: 10px;
+    font-family:"futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  }
+  h3 {
+    font-size: 1em;
+    margin: 0.5em 0;
+    text-align: center;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    border-radius: 10px;
+    font-family:"futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  }
+  .hero-section {
+    text-align: center;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 1rem;
   }
   ul {
     padding-left: 0.5em;
@@ -452,6 +481,7 @@ button:hover {
   .quiz-word.incorrect {
     background-color: #f8d7da;
     color: #721c24;
+    font-size: 0.8em;
   }
   .answer-input {
     font-size: 1em;
@@ -529,7 +559,7 @@ button:hover {
     flex-direction: row !important;
     align-items: center !important;
     margin: 0 !important;
-    padding: 0 !important;
+    padding: 5px !important;
     height: 100%;
     width: 100%;
   }
@@ -555,11 +585,11 @@ li.collapsing {
   overflow: hidden !important;
   transform: scaleY(0) scaleX(0) !important;
   transition:
-    max-height 0.5s cubic-bezier(.2,0,.2,1),
-    opacity 0.3s,
-    margin 0.3s,
-    padding 0.3s,
-    transform 0.5s cubic-bezier(.2,0,.2,1);
+    max-height 1s cubic-bezier(.2,0,.2,1),
+    opacity 0.7s,
+    margin 0.7s,
+    padding 0.7s,
+    transform 1s cubic-bezier(.2,0,.2,1);
 }
 
 .autocomplete-dropdown div {
