@@ -1,14 +1,25 @@
-html {
-  background-color:rgb(255, 255, 255)
+
+
+html::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: url('bg.png') no-repeat center center fixed;
+  background-size: cover;
+  opacity: 0.30; /* Lower opacity for more faintness */
+  pointer-events: none;
+  filter: blur(5px);
 }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  font-family: "futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
   max-width: 800px;
+  position: relative;
   margin: 0 auto;
   padding: 20px;
   padding-left: 220px;
-  
 }
+
 
 .left-sidebar {
   position: fixed;
@@ -294,11 +305,7 @@ button:hover {
 }
 
 
-body {
-  background: #ffffff;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  margin: 0;
-}
+/* Removed duplicate body selector, merged properties above */
 
 
 .sliding-header-container {
@@ -311,15 +318,19 @@ body {
 
 .sliding-header {
   opacity: 0;
-  animation: slide-in 1s ease-in-out forwards;
-  font-size: 1.5rem;
+  animation: fade-in 0.5s ease-in;
+  animation-fill-mode: forwards;
+  font-size: 1.15em;
   margin: 0.5rem 0;
 }
 
-@keyframes slide-in {
-  0% { transform: translateX(-100%); opacity: 0; }
-  50% { opacity: 1; }
-  100% { transform: translateX(0); opacity: 1; }
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .bundle-grid {
@@ -364,10 +375,15 @@ body {
 }
 
 @media (max-width: 700px) {
+   html::before {
+    background: url('bgmobile.png') no-repeat center center fixed;
+    opacity: 0.9 !important;
+   }
+   
+  
   html, body {
-    background: #f3f6ff;
-    color: #363636 !important;
-    font-family:"Roboto", sans-serif;
+    font-family:"futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
   }
   h1, h2, h3 {
     font-size: 1.15em;
@@ -377,7 +393,7 @@ body {
     color: rgb(0, 0, 0);
     background-color: #ffffff;
     border-radius: 10px;
-    font-family:"Roboto", sans-serif;
+    font-family:"futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 
   }

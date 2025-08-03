@@ -31,12 +31,9 @@
     <meta property="og:url" content="https://percentyle.com/index.html" />
     <meta property="og:type" content="website" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="https://js.stripe.com/v3/"></script>
     <script src="sidebar.js"></script>
     <script>
-      const stripe = Stripe(
-        "pk_test_51Rjp0SClmCXaWd9fxAgzLtawgxFHAPuARYHWR87vyxN4jbmnIym5YzgdGGGADXHGqkUV5PlW89R7AJssockWMWT400k1VtWeYp"
-      );
+    
     </script>
     <style>
       .center-container {
@@ -76,12 +73,43 @@
   <body>
         <div class="hero-section" style="padding: 3rem 1rem; background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%); border-radius: 1.5rem; box-shadow: 0 4px 24px rgba(60,72,100,0.08); margin-bottom: 2rem;">
           <h1 class="sliding-header" style="font-size: 2.5rem; font-weight: 800; color: #000000; margin-bottom: 1rem; letter-spacing: -1px;">
-           Welcome! Get started with your MCAT studying.
+           Search for a topic and quiz yourself!
           </h1>
+          <div style="max-width:400px;margin:2em auto;text-align:center;">
+  <input
+    type="text"
+    id="quiz-search"
+    placeholder="Search any quiz term..."
+    style="width:80%;padding:0.7em 1em;border-radius:6px;border:1px solid #bbb;font-size:1.1em;"
+  />
+  <div id="quiz-search-results" style="margin-top:1em;text-align:left;"></div>
+</div>
           <h2 class="sliding-header" style="font-size: 1.5rem; font-weight: 500; color: #000000; margin-bottom: 0;">
             Don't know how to start studying? <a href="organs(1).html">View our Read-Only Pages.</a>
           </h2>
-          
+          <script>
+            document.getElementById("quiz-search").addEventListener("input", function () {
+  const query = this.value.trim().toLowerCase();
+  const resultsDiv = document.getElementById("quiz-search-results");
+  if (!query) {
+    resultsDiv.innerHTML = "";
+    return;
+  }
+  // Search categoryToPage for matching term
+  let matches = categoryToPage.filter(cat =>
+    cat.name.toLowerCase().includes(query)
+  );
+  if (matches.length === 0) {
+    resultsDiv.innerHTML = "<div style='color:#c0392b;'>No results found.</div>";
+    return;
+  }
+  resultsDiv.innerHTML = matches
+    .map(cat => `<div style="background:#fff;border-radius:8px;box-shadow:0 2px 8px #eee;padding:1em;margin-bottom:1em;">
+      <a href="${cat.page}.html" style="color:#0078d4;font-weight:bold;text-decoration:underline;">${cat.name}</a>
+    </div>`)
+    .join("");
+});
+          </script>
         </div>
       </div>
       <body>
