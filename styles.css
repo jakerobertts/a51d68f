@@ -385,6 +385,11 @@ body {
     padding-left: 0.5em;
     font-size: 1em;
   }
+  a {
+    color: black;
+    background-color: #e2f7ff;
+    border-radius: 10px;
+  }
   li {
     font-size: 1em;
     padding: 8px 6px;
@@ -395,7 +400,9 @@ body {
     color: white;
   }
   li:hover {
-    background-color: #404040;
+    background: #404040 !important;
+    box-shadow: none !important;
+    transform: none !important;
   }
   .score, .sliding-header-container, .bundle-grid, .bundle-card {
     max-width: 100vw;
