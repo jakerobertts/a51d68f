@@ -380,9 +380,9 @@ button:hover {
     position: fixed;
     inset: 0;
     z-index: -1;
-    background: url('bgmobile\ \(1\).png') no-repeat center center fixed;
-    opacity: 0.9 !important;
-    filter: blur(5px);
+    background: url('bgmobile\ \(2\).png') no-repeat center center fixed;
+    opacity: 1 !important;
+    filter: blur(4px) brightness(1.5) contrast(0.5);
     background-size: cover;
     pointer-events: none;
   }
@@ -412,8 +412,8 @@ button:hover {
   }
   a {
     color: black;
-    background-color: #e2f7ff;
     border-radius: 10px;
+    border: 1px solid #16213e;
   }
   li {
     font-size: 1em;
