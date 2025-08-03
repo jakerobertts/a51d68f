@@ -378,6 +378,7 @@ button:hover {
    html::before {
     background: url('bgmobile.png') no-repeat center center fixed;
     opacity: 0.9 !important;
+    background-size: cover;
    }
    
   
