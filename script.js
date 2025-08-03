@@ -279,14 +279,18 @@ function promptAnswer(element, event) {
     } else if (userAnswer !== '') {
       element.classList.add('incorrect');
       element.classList.remove('revealed');
-      element.innerHTML = correctAnswer + ' <span class="feedback incorrect">✗</span> <button class="try-again">⟳</button>';
+      element.innerHTML = correctAnswer + ' <span class="feedback incorrect">✗</span> <button class="try-again">⟳</button> ';
       const tryAgainBtn = element.querySelector('.try-again');
       if (tryAgainBtn) {
         tryAgainBtn.addEventListener('click', function() {
           resetQuestion(element);
         });
       }
-      element.style.backgroundColor = '#f8d7da';
+      tryAgainBtn.style.background = 'transparent';
+      tryAgainBtn.style.border = 'none';
+      tryAgainBtn.style.padding = '2px 2px';
+      element.style.backgroundColor = 'transparent';
+      element.style.padding = '2px 2px';
       element.style.color = '#721c24';
       element.style.border = '1px solid #f5c6cb';
       if (!answeredQuestions.has(questionId)) {
