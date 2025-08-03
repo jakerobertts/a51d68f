@@ -378,7 +378,7 @@
 
     <!-- Flashcard Review Section -->
     <div
-      id="flashcard-review-section"
+      id="flashcard-reviehoww-section"
       style="margin: 40px auto; max-width: 420px"
     >
       <h2 style="text-align: center; color: #16213e; margin-bottom: 18px">
@@ -390,12 +390,23 @@
         style="text-align: center; margin-bottom: 10px"
       ></div>
       <div id="flashcard-container"></div>
-      <button
-        id="fc-next-btn"
-        style="display: none; margin: 1em auto 2em auto; display: block"
-      >
-        Next
-      </button>
+      <div id="flashcard-nav" style="text-align: center;">
+        <button
+          id="fc-next-btn"
+          style="margin: 1em auto 2em auto; font-size: 20px;"
+        >
+          Next
+        </button>
+        <button
+          id="fc-prev-btn"
+          style="display: none; margin: 1em auto 2em auto; font-size: 20px;"
+        >
+          Previous
+        </button>
+        <button id="fc-refresh-btn" style="margin: 1em auto 2em auto; font-size: 20px;">
+          ⇄
+        </button>
+      </div>
     </div>
     <script>
       let flashcards = [];
@@ -416,9 +427,7 @@
       function loadFlashcardsFromStorage() {
         let data = JSON.parse(localStorage.getItem("allFlashcards") || "[]");
         let reviewed = JSON.parse(localStorage.getItem("reviewedFlashcards") || "[]");
-        flashcards = data.filter(
-          (fc) => !reviewed.includes(fc.term || fc.question)
-        );
+        flashcards = data;
         // Shuffle flashcards array
         for (let i = flashcards.length - 1; i > 0; i--) {
           const j = Math.floor(Math.random() * (i + 1));
@@ -431,25 +440,18 @@
       function showFlashcard(idx) {
         if (!flashcards.length) return;
         const fc = flashcards[idx];
-        document.getElementById("fc-progress").textContent = `Card ${
-          idx + 1
-        } of ${flashcards.length}`;
+        document.getElementById("fc-progress").textContent = `Card ${idx + 1} of ${flashcards.length}`;
         let html = `<div class="flashcard" style="background:#fff;border-radius:12px;box-shadow:0 2px 12px #b3b3b3;padding:2em 1em;margin-bottom:1em;max-width:400px;width:95vw;text-align:center;">
-   
     <div style="margin-bottom:1em;">${fc.question || ""}</div>
     <div class="options">`;
         fc.options.forEach((opt) => {
-          html += `<button onclick="checkFCAnswer(this, '${opt.replace(
-            /'/g,
-            "\\'"
-          )}', '${fc.answer.replace(
-            /'/g,
-            "\\'"
-          )}')" style="display:block;width:100%;margin:0.5em 0;padding:0.7em;border-radius:6px;border:1px solid #ddd;background:#f1f5ff;font-size:1.1em;cursor:pointer;">${opt}</button>`;
+          html += `<button onclick="checkFCAnswer(this, '${opt.replace(/'/g, "\\'")}', '${fc.answer.replace(/'/g, "\\'")}')" style="display:block;width:100%;margin:0.5em 0;padding:0.7em;border-radius:6px;border:1px solid #ddd;background:#f1f5ff;font-size:1.1em;cursor:pointer;">${opt}</button>`;
         });
         html += `</div></div>`;
         document.getElementById("flashcard-container").innerHTML = html;
         document.getElementById("fc-next-btn").style.display = "none";
+        // Show previous button only if not on the first card
+        document.getElementById("fc-prev-btn").style.display = idx > 0 ? "" : "none";
       }
 
       window.checkFCAnswer = function (btn, selected, correct) {
@@ -484,6 +486,16 @@
           this.style.display = "none";
         }
       };
+      document.getElementById("fc-prev-btn").onclick = function () {
+  if (fcCurrent > 0) {
+    fcCurrent--;
+    showFlashcard(fcCurrent);
+  }
+};
+document.getElementById("fc-refresh-btn").onclick = function () {
+  // Reload flashcards from storage
+  loadFlashcardsFromStorage();
+};
     </script>
       <br />
       
