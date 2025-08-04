@@ -376,9 +376,9 @@ button:hover {
 
 @media (max-width: 700px) {
  
- html {
+ html::before {
 
-  background-image: url('your-image.jpg');
+  background-image: url('bmobile.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
