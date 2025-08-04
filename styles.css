@@ -375,20 +375,16 @@ button:hover {
 }
 
 @media (max-width: 700px) {
-  body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    z-index: -1;
-    background: url('bgmobile\ \(2\).png') no-repeat center center fixed;
-    opacity: 1 !important;
-    filter: blur(4px) brightness(1.5) contrast(0.5);
-    background-size: cover;
-    pointer-events: none;
-  }
-  html::before {
-    display: none !important;
-  }
+ 
+ html {
+
+  background-image: url('your-image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll; /* Not fixed */
+
+}
   
   html, body {
     font-family:"futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
