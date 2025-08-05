@@ -20,7 +20,12 @@ body {
   padding-left: 220px;
 }
 
-
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10%;
+  background: transparent;
+}
 .left-sidebar {
   position: fixed;
   top: 0;
