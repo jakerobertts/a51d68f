@@ -542,28 +542,10 @@ button:hover {
     height: 15px !important;
     line-height: 1 !important;
   }
+ #hamburger { display: block; }
+  .left-sidebar { display: none; position:fixed; top:0; left:0; width:70vw; max-width:320px; height:100vh; background:#fff; box-shadow:2px 0 12px #ccc; z-index:9999; overflow-y:auto; }
 
-  .left-sidebar {
-    position: fixed !important;
-    top: 0px !important;
-    left: 0 !important;
-    width: 100vw !important;      /* Full width for top bar */
-    height: 40px !important;      /* Height for top bar */
-    z-index: 1000 !important;
-    background: #fff !important;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08) !important;
-    border-bottom: 2px solid #16213e !important;
-    display: flex !important;
-    flex-direction: row !important;
-    text-wrap: nowrap !important;
-    align-items: center !important;
-    padding: 20px 60px !important;
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
-    font-weight: bold !important;
-    transition: none !important;
-    transform: none !important;
-  }
+
   body {
     padding-left: 0 !important;
     padding-top: 56px !important; /* Prevent content under sidebar */
