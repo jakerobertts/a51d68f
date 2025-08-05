@@ -449,7 +449,7 @@ button:hover {
     border-radius: 10px;
     padding: 1px;
   }
-  p { background: rgba(255,255,255,0.5);
+  p { background: rgba(106, 106, 106, 0.5);
     border-radius: 12px;
     backdrop-filter: blur(8px) saturate(160%);
     -webkit-backdrop-filter: blur(8px) saturate(160%);
