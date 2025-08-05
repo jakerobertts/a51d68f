@@ -4,6 +4,7 @@ const sidebarCategories = [
     items: [
       { href: "index.html", text: "Home" },
       { href: "about.html", text: "About" },
+      { href: "https://buymeacoffee.com/percentyle", text: "Support the site ♡" }
     ]
   },
   {
@@ -123,7 +124,9 @@ const sidebarCategories = [
       { href: "figures.html", text: "Figures + Equations" },
     ]
   },
-
+{ title: "Support Us", items: [
+  { href: "https://buymeacoffee.com/percentyle", text: "Buy Me A Coffee" }
+] }
 ];
 
 // Function to generate sidebar HTML with dropdown categories
