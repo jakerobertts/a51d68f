@@ -380,7 +380,9 @@ button:hover {
 }
 
 @media (max-width: 700px) {
- 
+  #buymeacoffee-banner {
+    display: none;
+  }
  html::before {
 
   background-image: url('bmobile.png');
