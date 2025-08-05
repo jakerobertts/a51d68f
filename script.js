@@ -96,13 +96,20 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Add this line at the end:
   loadProgress();
+  if (typeof loadAllProgressFromCloud === 'function') {
+    loadAllProgressFromCloud();
+  }
 });
 
 // Save progress whenever score changes
 function updateScoreAndSave() {
   document.getElementById('score').textContent = score;
-  saveProgress(); // Save after each correct answer
-}
+  saveProgress();
+  if (typeof saveAllProgressToCloud === 'function') {
+    saveAllProgressToCloud();
+  }
+} // Save after each correct answer
+
 function isCloseEnough(a, b) {
   // Levenshtein distance algorithm
   const matrix = [];
@@ -363,6 +370,9 @@ function resetQuestion(element) {
       updateScoreAndSave();
     }
     saveProgress();
+    if (typeof saveAllProgressToCloud === 'function') {
+      saveAllProgressToCloud();
+    }
   }
 }}
 // Add a reset progress button inside a dedicated header container
@@ -426,7 +436,7 @@ function resetProgress() {
   });
 }
 //Unique quiz progress in each page
-// Quiz progress is stored uniquely for each page using PAGE_ID in localStorage keys
+// Quiz progress is stored uniquely for each page using PAGE_ID in localStorage
 
 
 function isAnswerCorrect(userInput, correctAnswer) {
@@ -434,4 +444,47 @@ function isAnswerCorrect(userInput, correctAnswer) {
   const cleanInput = userInput.trim().toLowerCase().replace(/[^a-z0-9]/gi, "");
   const cleanAnswer = correctAnswer.trim().toLowerCase().replace(/[^a-z0-9]/gi, "");
   return cleanInput === cleanAnswer;
+}
+
+// Add Firebase authentication and progress syncing
+document.addEventListener('DOMContentLoaded', function() {
+  // Google Auth login and import
+  document.getElementById('login-btn').addEventListener('click', function() {
+    const provider = new firebase.auth.GoogleAuthProvider();
+    firebase.auth().signInWithPopup(provider)
+      .then(result => {
+        alert("Logged in as " + result.user.email);
+        // Import ALL progress from cloud using Google user ID
+        importProgressFromUser(result.user.uid);
+      })
+      .catch(error => {
+        alert("Login failed: " + error.message);
+      });
+  });
+  
+  // Add this for the import button:
+  document.getElementById('import-btn').addEventListener('click', function() {
+    const user = firebase.auth().currentUser;
+    if (user) {
+      importProgressFromUser(user.uid);
+    } else {
+      alert("Please log in with Google first using the Sync Progress button.");
+    }
+  });
+});
+
+// Import progress from Firebase using Google user ID
+function importProgressFromUser(userId) {
+  firebase.database().ref('allProgress/' + userId).once('value').then(snapshot => {
+    const cloudProgress = snapshot.val();
+    if (cloudProgress) {
+      for (let key in cloudProgress) {
+        localStorage.setItem(key, cloudProgress[key]);
+      }
+      alert("Progress imported from your Google account!");
+      location.reload();
+    } else {
+      alert("No progress found for this Google account.");
+    }
+  });
 }

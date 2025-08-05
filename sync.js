@@ -1,0 +1,49 @@
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyAxvvxY1q9CmPB5YoS-cFzfSwkjVqYQ5s0",
+  authDomain: "percentyle.firebaseapp.com",
+  projectId: "percentyle",
+  storageBucket: "percentyle.firebasestorage.app",
+  messagingSenderId: "601930251108",
+  appId: "1:601930251108:web:987d2d7b5ba9ca30f75871",
+  measurementId: "G-L97LGZSXS5"
+};
+firebase.initializeApp(firebaseConfig);
+
+// Get or create device ID
+let deviceId = localStorage.getItem('deviceId');
+if (!deviceId) {
+  deviceId = crypto.randomUUID();
+  localStorage.setItem('deviceId', deviceId);
+}
+
+// Collect all quiz progress keys
+function getAllQuizProgress() {
+  const allProgress = {};
+  for (let key in localStorage) {
+    if (key.startsWith('quizProgress_')) {
+      allProgress[key] = localStorage.getItem(key);
+    }
+  }
+  return allProgress;
+}
+
+// Save all progress to Firebase
+function saveAllProgressToCloud() {
+  const allProgress = getAllQuizProgress();
+  firebase.database().ref('allProgress/' + deviceId).set(allProgress);
+}
+
+// Load all progress from Firebase
+function loadAllProgressFromCloud() {
+  firebase.database().ref('allProgress/' + deviceId).once('value').then(snapshot => {
+    const cloudProgress = snapshot.val();
+    if (cloudProgress) {
+      for (let key in cloudProgress) {
+        localStorage.setItem(key, cloudProgress[key]);
+      }
+    }
+  });
+}
+
+// No single-key migration or sync logic remains
