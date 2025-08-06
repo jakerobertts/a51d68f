@@ -40,6 +40,7 @@
         margin: 0 auto;
         padding: 2rem;
         text-align: center;
+        width:100%;
       }
 
       .sliding-header-container {
@@ -71,7 +72,7 @@
         .hero-section {
         
     padding: 1.2em 0.5em !important;
-    margin-top: 1.2em !important;
+    margin-top: 1.3em !important;
     border-radius: 0.8em !important;
     margin: 0 auto !important;
     box-shadow: 0 2px 8px rgba(60,72,100,0.08);
@@ -93,6 +94,19 @@
   
       }
     </style>
+    <style>
+      @media (max-width: 600px) {
+        #flashcard-reviehoww-section {
+          max-width: 250px !important;
+          padding: 1em 0.3em !important;
+          border-radius: 8px !important;
+        }
+        .flashcard {
+          max-width: 250px !important;
+          padding: 1em 0.3em !important;
+        }
+      }
+    </style>
   </head>
   <body>
 <div id="mobile-banner" style="display:none; position:fixed; top:315px; right:18px; background:#ffffff; color:#8479ff; text-align:center; padding:0.7em 1em; font-size:0.6em; border-radius:8px; box-shadow:0 2px 8px #eee; z-index:2000; max-width: 100px; cursor:pointer;"
@@ -111,7 +125,7 @@
 
         }">
           <h1 class="sliding-header" style="font-size: 2.5rem; font-weight: 800; color: #000000; margin-bottom: 1rem; letter-spacing: -1px;">
-           Search for a topic and quiz yourself!
+            Choose an MCAT Topic to Get Started
           </h1>
           <div style="max-width:400px;margin:2em auto;text-align:center;">
   <input
@@ -122,9 +136,7 @@
   />
   <div id="quiz-search-results" style="margin-top:1em;text-align:left;"></div>
 </div>
-          <h2 class="sliding-header" style="font-size: 1.5rem; font-weight: 500; color: #000000; margin-bottom: 0;">
-            Don't know how to start studying? <br><a href="organs(1).html">View Read-Only Pages.</a>
-          </h2>
+          
 
 
           <script>
@@ -145,13 +157,12 @@
   }
   resultsDiv.innerHTML = matches
     .map(cat => `<div style="background:#fff;border-radius:8px;box-shadow:0 2px 8px #eee;padding:1em;margin-bottom:1em;">
-      <a href="${cat.page}.html" style="color:#0078d4;font-weight:bold;text-decoration:underline;">${cat.name}</a>
+      <a href="${cat.page}.html" style="color:black;font-weight:bold;text-decoration:underline;">${cat.name}</a>
     </div>`)
     .join("");
 });
           </script>
-        </div>
-      </div>
+       
         
         
         
@@ -162,8 +173,20 @@
     </div>
     <div
       id="flashcard-reviehoww-section"
-      style="margin: 40px auto; max-width: 420px"
-    >
+      style="
+    margin: 40px auto;
+    max-width: 400px;
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px #e0e7ff;
+    padding: 1.5em 1em;
+  "
+>
     
       <div
         class="progress"
@@ -188,7 +211,7 @@
           ⇄
         </button>
         <div style="text-align:center; margin-top:10px;">
-  <button id="fc-reset-btn" style="font-size:16px; padding:4px 12px; background:#f8d7da; color:#c0392b; border-radius:6px; border:1px solid #c0392b; cursor:pointer;">
+  <button id="fc-reset-btn" style="font-size:16px; padding:4px 12px; background:rgba(255,255,255,0.55); color:#000000; border-radius:6px; border:1px solid #000000; cursor:pointer; backdrop-filter: blur(6px); box-shadow:0 2px 8px rgba(60,72,100,0.10);">
     Reset Flashcard Progress
   </button>
 </div>
@@ -300,6 +323,8 @@
 };
     </script>
       <br />
+       </div>
+      </div>
 
     <div
       id="insights-card"
@@ -328,7 +353,7 @@
         <span id="questions-left" style="color: #373737; font-weight: bold"
           >0</span
         >
-      </div>
+      
       <div
         style="
           display: flex;
@@ -382,7 +407,7 @@
       </div>
     </div>
     <div id="myDiv" style="margin: 40px auto; max-width: 600px"></div>
-
+</div>
     <script>
       let answeredCount = 0;
       let correctCount = 0;

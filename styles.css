@@ -558,7 +558,7 @@ button:hover {
     top: 0px !important;
     left: 0 !important;
     width: 100vw !important;      /* Full width for top bar */
-    height: 40px !important;      /* Height for top bar */
+    height: 30px !important;      /* Height for top bar */
     z-index: 1000 !important;
     background: #fff !important;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08) !important;
