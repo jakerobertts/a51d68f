@@ -2,7 +2,7 @@
 const sidebarCategories = [
   { title: "Home",
     items: [
-      { href: "index.html", text: "Home" },
+      { href: "main.html", text: "Home" },
       { href: "about.html", text: "About" },
       { href: "sync.html", text: "Save & Sync ↔" },
       { href: "https://buymeacoffee.com/percentyle", text: "Support the site ♡" }
