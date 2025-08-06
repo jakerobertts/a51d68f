@@ -30,7 +30,7 @@
       "Speciation",
       "Genetic drift"
     ],
-    "answer": "Genetic drift"
+    "answer": "adaptation"
   },
   {
     "term": "inbreeding",
@@ -448,7 +448,7 @@
       "Psychoanalytic",
       "Humanistic"
     ],
-    "answer": "Humanistic"
+    "answer": "Social cognitive"
   },
   {
     "term": "integrity vs. despair",
@@ -1350,7 +1350,7 @@
       "Obsessive-compulsive personality disorder",
       "Borderline personality disorder"
     ],
-    "answer": "Borderline personality disorder"
+    "answer": "Obsessive-compulsive personality disorder"
   },
   {
     "term": "Schizophrenia",
@@ -1570,7 +1570,7 @@
       "Behavioral",
       "Motivational"
     ],
-    "answer": "Motivational"
+    "answer": "Cognitive"
   },
   {
     "term": "Affective (attitude)",
@@ -1581,7 +1581,7 @@
       "Behavioral",
       "Motivational"
     ],
-    "answer": "Motivational"
+    "answer": "Affective"
   },
   {
     "term": "Behavioral (attitude)",
@@ -1592,7 +1592,7 @@
       "Behavioral",
       "Motivational"
     ],
-    "answer": "Motivational"
+    "answer": "Behavioral"
   },
   {
     "term": "Cognitive dissonance",
@@ -1845,7 +1845,7 @@
       "Fixed interval",
       "Variable interval"
     ],
-    "answer": "Variable interval"
+    "answer": "Fixed ratio"
   },
   {
     "term": "Variable ratio schedule",
@@ -1856,7 +1856,7 @@
       "Fixed interval",
       "Variable interval"
     ],
-    "answer": "Variable interval"
+    "answer": "Variable ratio"
   },
   {
     "term": "Fixed interval schedule",
@@ -1867,7 +1867,7 @@
       "Fixed interval",
       "Variable interval"
     ],
-    "answer": "Variable interval"
+    "answer": "Fixed interval"
   },
   {
     "term": "Variable interval schedule",
@@ -1933,7 +1933,7 @@
       "Low ball",
       "Persuasion"
     ],
-    "answer": "Persuasion"
+    "answer": "Foot in the door"
   },
   {
     "term": "Door in the face technique",
@@ -1944,7 +1944,7 @@
       "Low ball",
       "Persuasion"
     ],
-    "answer": "Persuasion"
+    "answer": "Door in the face"
   },
   {
     "term": "Low ball technique",
@@ -1955,7 +1955,7 @@
       "Low ball",
       "Persuasion"
     ],
-    "answer": "Persuasion"
+    "answer": "Low ball"
   },
   {
     "term": "Conformity",
@@ -2109,7 +2109,7 @@
       "Implicit bias",
       "Social categorization"
     ],
-    "answer": "Social categorization"
+    "answer": "Discrimination"
   },
   {
     "term": "Stereotypes",
@@ -2153,7 +2153,7 @@
       "Out group derogation",
       "Scapegoating"
     ],
-    "answer": "Scapegoating"
+    "answer": "In-group bias"
   },
   {
     "term": "Out group homogeneity effect",
@@ -3187,7 +3187,7 @@
       "Conformity",
       "Obedience"
     ],
-    "answer": "Obedience"
+    "answer": "Conformity"
   },
   {
     "term": "obedience (social)",
@@ -3209,7 +3209,7 @@
       "Social facilitation",
       "Social loafing"
     ],
-    "answer": "Social loafing"
+    "answer": "Groupthink"
   },
   {
     "term": "Group polarization (social)",
@@ -3220,7 +3220,7 @@
       "Social facilitation",
       "Social loafing"
     ],
-    "answer": "Social loafing"
+    "answer": "Group polarization"
   },
   {
     "term": "Social facilitation (social)",
@@ -3231,7 +3231,7 @@
       "Social facilitation",
       "Social loafing"
     ],
-    "answer": "Social loafing"
+    "answer": "Social facilitation"
   },
   {
     "term": "Social loafing (social)",
@@ -3462,7 +3462,7 @@
       "Role identity",
       "Collective identity"
     ],
-    "answer": "Collective identity"
+    "answer": "Social identity"
   },
   {
     "term": "race",
@@ -3539,7 +3539,7 @@
       "Implicit bias",
       "Explicit bias"
     ],
-    "answer": "Explicit bias"
+    "answer": "Implicit bias"
   },
   {
     "term": "explicit bias",
@@ -3869,7 +3869,7 @@
       "Axon",
       "Axon terminals"
     ],
-    "answer": "Axon terminals"
+    "answer": "Dendrites"
   },
   {
     "term": "axon terminals",
