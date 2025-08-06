@@ -481,7 +481,7 @@ function importProgressFromUser(userId) {
       for (let key in cloudProgress) {
         localStorage.setItem(key, cloudProgress[key]);
       }
-      alert("Progress imported from your Google account!");
+      alert("Progress Saved!");
       location.reload();
     } else {
       alert("No progress found for this Google account.");
