@@ -454,8 +454,10 @@ document.addEventListener('DOMContentLoaded', function() {
     firebase.auth().signInWithPopup(provider)
       .then(result => {
         alert("Logged in as " + result.user.email);
-        // Import ALL progress from cloud using Google user ID
-        importProgressFromUser(result.user.uid);
+        // Save ALL progress from localStorage to cloud using Google user ID
+        saveProgressToUser(result.user.uid);
+        // Optionally, also import after saving:
+        // importProgressFromUser(result.user.uid);
       })
       .catch(error => {
         alert("Login failed: " + error.message);
@@ -487,4 +489,22 @@ function importProgressFromUser(userId) {
       alert("No progress found for this Google account.");
     }
   });
+}
+
+function saveProgressToUser(userId) {
+  // Gather all quiz progress keys from localStorage
+  const allProgress = {};
+  for (let key in localStorage) {
+    if (key.startsWith('quizProgress_')) {
+      allProgress[key] = localStorage.getItem(key);
+    }
+  }
+  // Save to Firebase under this user's ID
+  firebase.database().ref('allProgress/' + userId).set(allProgress)
+    .then(() => {
+      alert("Progress synced to your Google account!");
+    })
+    .catch(error => {
+      alert("Failed to sync progress: " + error.message);
+    });
 }
