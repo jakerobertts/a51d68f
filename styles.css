@@ -24,7 +24,6 @@ img {
   width: 150px;
   height: 150px;
   border-radius: 10%;
-  background: transparent;
 }
 .left-sidebar {
   position: fixed;
@@ -535,6 +534,7 @@ button:hover {
     height: auto;
     display: block;
     margin: 0 auto;
+
   }
   
   .category-header {
