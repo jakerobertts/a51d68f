@@ -2,7 +2,7 @@
 const sidebarCategories = [
   { title: "Home",
     items: [
-      { href: "main.html", text: "Home" },
+      { href: "index.html", text: "Home" },
       { href: "about.html", text: "About" },
     ]
   },
