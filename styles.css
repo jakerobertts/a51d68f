@@ -194,12 +194,12 @@ div ul {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 p {
-  background-color: #2a2a2a;
-  color: white;
+  background-color: #fafafa;
+  color: #1a1a1a;
   padding: 10px 10px;
-  border: 1px solid #ffffff;
+  border: 1px solid #eeeeee;
   border-radius: 5px;
-  line-height: 1.5;
+  line-height: 2;
 }
 li {
   margin-bottom: 12px;
@@ -448,16 +448,8 @@ button:hover {
     border-radius: 10px;
     padding: 2px;
   }
-  p { background: rgba(106, 106, 106, 0.5);
-    border-radius: 12px;
-    backdrop-filter: blur(8px) saturate(160%);
-    -webkit-backdrop-filter: blur(8px) saturate(160%);
-    box-shadow: 0 2px 8px rgba(22,33,62,0.08);
-    padding: 12px 18px;
-    margin-bottom: 16px;
-    
-  }
- li { background: rgba(106, 106, 106, 0.5);
+  
+ li { background: rgba(229, 229, 229, 0.5);
   color: #1a1a1a;
     border-radius: 12px;
     backdrop-filter: blur(8px) saturate(160%);
@@ -470,7 +462,7 @@ button:hover {
   }
   
   li:hover {
-    background: #404040 !important;
+    background: #d8d8d8 !important;
     box-shadow: none !important;
     transform: none !important;
   }
