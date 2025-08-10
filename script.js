@@ -73,11 +73,10 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Replace content with blank underscores
     const blankLength = Math.max(answer.length, 1);
-    element.innerHTML = '...'; // Minimum 1 underscore
-    element.style.fontFamily = 'apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif';
-    element.style.letterSpacing = '2px';
-    element.style.padding = '2px 6px';
-    element.style.backgroundColor = 'rgb(255, 255, 255)';
+    element.innerHTML = '___'; // Minimum 1 underscore
+    element.style.fontFamily = 'Futura, sans-serif';
+    element.style.padding = '2px 2px';
+    element.style.backgroundColor = 'transparent';
     element.style.border = '0px solid black';
     element.style.borderRadius = '7px';
     element.style.display = 'inline-block';
@@ -264,7 +263,7 @@ function promptAnswer(element, event) {
     ) {
       element.classList.add('revealed');
       element.classList.remove('incorrect');
-      element.innerHTML = correctAnswer + ' <button class="try-again" style="background: transparent; border: none; padding: 1px 1px;">⟳</button>';
+      element.innerHTML = correctAnswer + ' <button class="try-again" style="background: transparent; padding: 1px; justify-content: center; color: #1BEA75; border: none; max-width: 10px;">✓</button>';
       const tryAgainBtn = element.querySelector('.try-again');
       if (tryAgainBtn) {
         tryAgainBtn.addEventListener('click', function() {
@@ -275,7 +274,7 @@ function promptAnswer(element, event) {
       element.style.backgroundColor = '';
       element.style.color = '';
       element.style.border = '';
-      element.style.padding = '2px 2px';
+      element.style.padding = '1px 1px';
 
       if (!answeredQuestions.has(questionId)) {
         score++;
@@ -296,7 +295,7 @@ function promptAnswer(element, event) {
       tryAgainBtn.style.background = 'transparent';
       tryAgainBtn.style.border = 'none';
       tryAgainBtn.style.padding = '2px 2px';
-      element.style.backgroundColor = 'white';
+      element.style.backgroundColor = 'transparent';
       element.style.padding = '2px 2px';
       element.style.color = '#721c24';
       element.style.border = '1px solid #f5c6cb';
@@ -323,12 +322,11 @@ function promptAnswer(element, event) {
         // Restore blank state if empty
         const blankLength = Math.max(correctAnswer.length, 4);
       
-        element.style.backgroundColor = 'white';
+        element.style.backgroundColor = 'transparent';
         element.style.border = '1px solid #ccc';
-        element.style.color = 'white';
-        element.style.padding = '2px 6px';
-        element.style.fontFamily = 'apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif';
-        element.style.letterSpacing = '2px';
+        element.style.color = 'transparent';
+        element.style.padding = '2px 2px';
+        element.style.fontFamily = 'Futura, sans-serif';
         element.style.textAlign = 'center';
         element.style.cursor = 'pointer';
       }
@@ -353,12 +351,11 @@ function resetQuestion(element) {
   const blankLength = Math.max(answer.length, 4);
   element.innerHTML = ' '.repeat(blankLength);
         element.innerHTML = ' '.repeat(blankLength);
-        element.style.backgroundColor = 'white';
+        element.style.backgroundColor = 'transparent';
         element.style.border = '1px solid #ccc';
-        element.style.color = 'white';
-        element.style.padding = '2px 6px';
-        element.style.fontFamily = 'apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif';
-        element.style.letterSpacing = '2px';
+        element.style.color = 'transparent';
+        element.style.padding = '2px 2px';
+        element.style.fontFamily = 'Futura, sans-serif';
         element.style.textAlign = 'center';
         element.style.cursor = 'pointer';
   // Remove from answered questions and decrement score if previously answered
@@ -422,13 +419,12 @@ function resetProgress() {
     const answer = element.getAttribute('data-answer');
     const blankLength = Math.max(answer.length, 4);
     element.innerHTML = ' '.repeat(blankLength);
-    element.style.backgroundColor = 'white';
-    element.style.color = 'white';
+    element.style.backgroundColor = 'transparent';
+    element.style.color = 'transparent';
     element.style.border = '0px solid #ccc';
     element.style.borderRadius = '3px';
-    element.style.padding = '2px 6px';
-    element.style.fontFamily = 'monospace';
-    element.style.letterSpacing = '2px';
+    element.style.padding = '2px 2px';
+    element.style.fontFamily = 'Futura, sans-serif';
     element.style.textAlign = 'center';
     element.style.cursor = 'pointer';
     element.style.display = 'inline-block';

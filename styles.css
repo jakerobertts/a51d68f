@@ -89,14 +89,19 @@ img {
 .quiz-word {
   background-color: rgb(123, 123, 123);
   color: rgb(123, 123, 123);
-  padding: 2px 4px;
+  padding: 2px 2px;
   cursor: pointer;
   border: 0px solid #ffffff;
   position: relative;
   display: inline-block;
   border-radius: 5px;
+  font-family: "Futura", "sans-serif";
 }
-
+.try-again {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 3px;
+}
 .quiz-word.revealed {
   background-color: #ffffff;
   color: rgb(0, 0, 0);
