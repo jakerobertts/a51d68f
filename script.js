@@ -77,6 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
     element.style.fontFamily = 'Futura, sans-serif';
     element.style.padding = '2px 2px';
     element.style.backgroundColor = 'transparent';
+    element.style.color = 'blue';
     element.style.border = '0px solid black';
     element.style.borderRadius = '7px';
     element.style.display = 'inline-block';
