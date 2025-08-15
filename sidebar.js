@@ -4,6 +4,7 @@ const sidebarCategories = [
     items: [
       { href: "main.html", text: "Home" },
       { href: "about.html", text: "About" },
+      { href: "figures.html", text: "Figures + Equations" },
       
     ]
   },
@@ -120,10 +121,7 @@ const sidebarCategories = [
       { href: "social.html", text: "Sociological Concepts" },
     ]
   },
-  { title:"Figures + Equations", items: [
-      { href: "figures.html", text: "Figures + Equations" },
-    ]
-  },
+ 
 { title: "Support Us", items: [
   { href: "https://buymeacoffee.com/percentyle", text: "Buy Me A Coffee" }
 ] }
