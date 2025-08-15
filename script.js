@@ -505,3 +505,16 @@ function saveProgressToUser(userId) {
       alert("Failed to sync progress: " + error.message);
     });
 }
+document.querySelectorAll('.certainty-bar').forEach(function(bar) {
+  bar.addEventListener('input', function() {
+    this.parentElement.querySelector('.certainty-value').textContent = this.value;
+    // Save to localStorage
+    localStorage.setItem(this.id, this.value);
+  });
+  // Load saved value if exists
+  const saved = localStorage.getItem(bar.id);
+  if (saved) {
+    bar.value = saved;
+    bar.parentElement.querySelector('.certainty-value').textContent = saved;
+  }
+});

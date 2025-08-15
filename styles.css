@@ -1,16 +1,6 @@
 
 
-html::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-background-color: #fafafa;
-  background-size: cover;
-  opacity: 0.55; /* Lower opacity for more faintness */
-  pointer-events: none;
-  filter: blur(4px);
-}
+
 body {
   font-family: "futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
   max-width: 800px;
@@ -609,19 +599,15 @@ li.collapsing {
     transform 1s cubic-bezier(.2,0,.2,1);
 }
 
-.autocomplete-dropdown div {
-  border: none !important;
-  background: white;
-  display: block;
-  padding: 8px 12px;
-  cursor: pointer;
-  font-size: 1em;
+.autocomplete-dropdown {
+
+  display: none;
+ 
 }
-.autocomplete-dropdown div:hover {
-  background: #f0f8ff;
-}
+
 .dollar-green {
     color: #003413 !important; /* Tailwind green-500 */
+   
     font-weight: none;
     font-size: 1.1em;
     background-color: #deffde;
