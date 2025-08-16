@@ -110,32 +110,6 @@ function updateScoreAndSave() {
   }
 } // Save after each correct answer
 
-function isCloseEnough(a, b) {
-  // Levenshtein distance algorithm
-  const matrix = [];
-  let i;
-  for (i = 0; i <= b.length; i++) {
-    matrix[i] = [i];
-  }
-  let j;
-  for (j = 0; j <= a.length; j++) {
-    matrix[0][j] = j;
-  }
-  for (i = 1; i <= b.length; i++) {
-    for (j = 1; j <= a.length; j++) {
-      if (b.charAt(i - 1) === a.charAt(j - 1)) {
-        matrix[i][j] = matrix[i - 1][j - 1];
-      } else {
-        matrix[i][j] = Math.min(
-          matrix[i - 1][j - 1] + 1, // substitution
-          matrix[i][j - 1] + 1,     // insertion
-          matrix[i - 1][j] + 1      // deletion
-        );
-      }
-    }
-  }
-  return matrix[b.length][a.length] <= 1; // Allow one letter off
-}
 function promptAnswer(element, event) {
   // Allow re-answering if clicking on feedback area
   if ((element.classList.contains('revealed') || element.classList.contains('incorrect')) && event && !event.target.classList.contains('try-again')) {
@@ -259,8 +233,7 @@ function promptAnswer(element, event) {
   function checkAnswer() {
     const userAnswer = input.value.toLowerCase().trim();
     if (
-      userAnswer === correctAnswer.toLowerCase() ||
-      isCloseEnough(userAnswer, correctAnswer.toLowerCase())
+      userAnswer === correctAnswer.toLowerCase()
     ) {
       element.classList.add('revealed');
       element.classList.remove('incorrect');
