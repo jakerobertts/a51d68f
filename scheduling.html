@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6422130934976134"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="google-adsense-account" content="ca-pub-6422130934976134" />
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-L97LGZSXS5"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-L97LGZSXS5");
+    </script>
+    <link
+      rel="icon"
+      type="image/png"
+      href="Screenshot 2025-07-22 at 2.51.56 PM.png"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study Plan</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Study Plan</h1>
+    <p>When is your MCAT exam scheduled?</p>
+    <label for="exam-date"></label>
+    <input
+      type="date"
+      id="exam-date"
+      name="exam-date"
+      required
+      title="Select your MCAT exam date"
+      placeholder="YYYY-MM-DD"
+    />
+    <button id="submit-date">Submit</button>
+    <div id="countdown"></div>
+    <script>
+      document
+        .getElementById("submit-date")
+        .addEventListener("click", function () {
+          const examDate = new Date(document.getElementById("exam-date").value);
+          const today = new Date();
+          const timeDiff = examDate - today;
+          const daysLeft = Math.ceil(timeDiff / (1000 * 3600 * 24));
+          const totalCards = 2000;
+          const cardsPerDay = (totalCards / daysLeft).toFixed(0);
+          const cardsPerDayIdeal = Math.ceil(cardsPerDay * 3);
+
+          document.getElementById(
+            "countdown"
+          ).innerHTML = `You have ${daysLeft} days left until your exam!<br>
+        <span style="margin-left:2em; display:inline-block;">
+          Step 1: ${cardsPerDayIdeal} questions per day for ${(
+            daysLeft / 3
+          ).toFixed(0)} days<br>
+          Step 2: ${cardsPerDayIdeal} questions per day for ${(
+            daysLeft / 3
+          ).toFixed(0)} days<br>
+          Step 3: ${cardsPerDayIdeal} questions per day for ${(
+            daysLeft / 3
+          ).toFixed(0)} days
+        </span>
+       `;
+        });
+    </script>
+    <br /><br />
+    <h2>How is this calculated?</h2>
+    <p>
+      The study plan is based on the total number of questions you need to
+      review - nearly 2000 questions - and the number of days left until your
+      exam. Retention of information is not effective if it is reviewed over a
+      single session. This plan divides the total questions into three equal
+      steps, with each step representing the number of times you have reviewed
+      the material. The ideal number of questions per day is calculated to
+      ensure you cover all material before the exam.
+    </p>
+  </body>
+  <script src="sidebar.js"></script>
+</html>

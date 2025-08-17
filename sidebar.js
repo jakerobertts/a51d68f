@@ -5,7 +5,8 @@ const sidebarCategories = [
       { href: "main.html", text: "Home" },
       { href: "about.html", text: "About" },
       { href: "figures.html", text: "Figures + Equations" },
-      
+      { href: "units.html", text: "Units & Conversions" },
+      { href: "variables.html", text: "Common Variables" },
     ]
   },
   {
