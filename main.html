@@ -663,7 +663,7 @@
     if (arr.length > 0) {
       missedHtml += `<h3 style="margin:0.7em 0 0.3em 0; font-size:1.1em;">${cat.name}</h3><ul style="margin-bottom:1em;">`;
       arr.forEach(term => {
-        missedHtml += `${term}`;
+        missedHtml += `${term}<br>`;
       });
       missedHtml += "</ul>";
     }
