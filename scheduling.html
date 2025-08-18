@@ -68,7 +68,21 @@
           ).toFixed(0)} days<br>
           Step 3: ${cardsPerDayIdeal} questions per day for ${(
             daysLeft / 3
-          ).toFixed(0)} days
+          ).toFixed(0)} days<br>
+          <br>
+          Biological/Biochemical Foundations: ${Math.ceil(
+            cardsPerDayIdeal * 0.5
+          )} questions per day<br>
+            Chemical/Physical Foundations: ${Math.ceil(
+              cardsPerDayIdeal * 0.2
+            )} questions per day<br>
+            Psychological/Social Foundations: ${Math.ceil(
+              cardsPerDayIdeal * 0.25
+            )} questions per day<br>
+            <br>
+            Equation Questions: ${Math.ceil(
+              cardsPerDayIdeal * 0.05
+            )} questions per day
         </span>
        `;
         });

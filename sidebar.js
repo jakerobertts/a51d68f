@@ -3,6 +3,7 @@ const sidebarCategories = [
   { title: "Home",
     items: [
       { href: "main.html", text: "Home" },
+      { href: "scheduling.html", text: "Study Plan" },
       { href: "about.html", text: "About" },
       { href: "figures.html", text: "Figures + Equations" },
       { href: "units.html", text: "Units & Conversions" },
