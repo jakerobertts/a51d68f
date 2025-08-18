@@ -648,6 +648,28 @@
     }
   });
 </script>
+<div id="incorrect-terms-container" style="border-radius: 10px; padding: 10px; max-width:600px;margin:2rem auto; background: #fff;">
+  <h2 style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color:#c0392b; font-weight:800; margin-bottom:1em;">
+    Terms You Missed
+  </h2>
+  <div id="incorrect-terms-list"></div>
+</div>
+<script>
+  // Display missed terms by page/category
+  let missedHtml = "";
+  categoryToPage.forEach(cat => {
+    const key = `incorrectTerms_${cat.page}`;
+    const arr = JSON.parse(localStorage.getItem(key) || "[]");
+    if (arr.length > 0) {
+      missedHtml += `<h3 style="margin:0.7em 0 0.3em 0; font-size:1.1em;">${cat.name}</h3><ul style="margin-bottom:1em;">`;
+      arr.forEach(term => {
+        missedHtml += `${term}`;
+      });
+      missedHtml += "</ul>";
+    }
+  });
+  document.getElementById("incorrect-terms-list").innerHTML = missedHtml || "<i>No missed terms yet!</i>";
+</script>
 <!-- Added Percent Correct by Page Section -->
 <div id="percent-table-container" style="border-radius: 10px; padding: 10px; max-width:600px;margin:2rem auto; background: white;">
   <h2 style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color:#000144; font-weight:800; margin-bottom:1em;">
@@ -684,7 +706,7 @@
     }
     percentHtml += `<tr>
       <td style="padding:8px;border-bottom:1px solid #eee;">${cat.name}</td>
-      <td style="padding:8px;border-bottom:1px solid #eee;color:${color};font-weight:700;">${percent}%</td>
+      <td style="padding:8px;border-bottom:1px solid #eee;color:${color};font-weight:300;">${percent}%</td>
     </tr>`;
   });
 

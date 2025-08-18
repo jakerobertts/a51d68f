@@ -232,9 +232,7 @@ function promptAnswer(element, event) {
   // Handle answer submission
   function checkAnswer() {
     const userAnswer = input.value.toLowerCase().trim();
-    if (
-      userAnswer === correctAnswer.toLowerCase()
-    ) {
+    if (userAnswer === correctAnswer.toLowerCase()) {
       element.classList.add('revealed');
       element.classList.remove('incorrect');
       element.innerHTML = correctAnswer + ' <button class="try-again" style="background: transparent; padding: 1px; justify-content: center; color: #1BEA75; border: none; max-width: 10px;">✓</button>';
@@ -276,6 +274,14 @@ function promptAnswer(element, event) {
       if (!answeredQuestions.has(questionId)) {
         answeredQuestions.add(questionId);
         updateScoreAndSave();
+      }
+      // Store only the term (the correct answer)
+      const pageId = PAGE_ID || (window.location.pathname.split('/').pop().replace('.html', ''));
+      const key = `incorrectTerms_${pageId}`;
+      let arr = JSON.parse(localStorage.getItem(key) || "[]");
+      if (!arr.includes(correctAnswer)) {
+        arr.push(correctAnswer);
+        localStorage.setItem(key, JSON.stringify(arr));
       }
     }
   }
