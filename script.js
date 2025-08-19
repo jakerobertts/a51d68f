@@ -471,7 +471,7 @@ function saveProgressToUser(userId) {
   // Gather all quiz progress keys from localStorage
   const allProgress = {};
   for (let key in localStorage) {
-    if (key.startsWith('quizProgress_')) {
+    if (key.startsWith('quizProgress_') || key.startsWith('incorrectTerms_')) {
       allProgress[key] = localStorage.getItem(key);
     }
   }
