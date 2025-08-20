@@ -50,7 +50,6 @@ const sidebarCategories = [
       { href: "bioenergetics.html", text: "Bioenergetics & Thermodynamics" },
       { href: "phosphorylation.html", text: "Phosphorylation & Energy Transfer" },
       { href: "redox.html", text: "Bio Redox" },
-      { href: "half.html", text: "Half-reactions, Flavoproteins, & Electron Carriers" },
       { href: "glycolysis.html", text: "Glycolysis & Pyruvate Processing" },
       { href: "feeder.html", text: "Feeder Pathways & Gluconeogenesis" },
       { href: "citric.html", text: "Citric Acid Cycle" },

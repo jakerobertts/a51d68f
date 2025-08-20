@@ -191,7 +191,7 @@ li {
   margin-bottom: 12px;
   line-height: 2;
   padding: 10px 18px 10px 38px;
-  background: linear-gradient(90deg, rgba(255,255,255,0.7) 0%, rgba(205, 205, 205, 0.7) 100%);
+  background: "transparent";
   border-radius: 12px;
   border: white solid 1px;
   box-shadow: 0 2px 8px rgba(202, 202, 202, 0.12), 0 1.5px 4px rgba(223, 223, 223, 0.08);
@@ -205,7 +205,7 @@ font-family: "Roboto", sans-serif;
   overflow: visible;
     -webkit-backdrop-filter: blur(8px) saturate(160%);
    backdrop-filter: blur(8px) saturate(160%);
-  border: 0px solid rgba(0, 0, 151, 0.25);
+  border: 1px solid rgba(0, 0, 151, 0.25);
 }
 .cardcontent {
   background: linear-gradient(#ecffff, #f3ebff), #74e1ff;
