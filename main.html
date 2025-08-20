@@ -657,18 +657,20 @@
 <script>
   // Display missed terms by page/category
   let missedHtml = "";
-  categoryToPage.forEach(cat => {
-    const key = `incorrectTerms_${cat.page}`;
-    const arr = JSON.parse(localStorage.getItem(key) || "[]");
-    if (arr.length > 0) {
-      missedHtml += `<h3 style="margin:0.7em 0 0.3em 0; font-size:1.1em;">${cat.name}</h3><ul style="margin-bottom:1em;">`;
-      arr.forEach(term => {
-        missedHtml += `${term}<br>`;
-      });
-      missedHtml += "</ul>";
-    }
-  });
-  document.getElementById("incorrect-terms-list").innerHTML = missedHtml || "<i>No missed terms yet!</i>";
+categoryToPage.forEach(cat => {
+  const key = `incorrectTerms_${cat.page}`;
+  const arr = JSON.parse(localStorage.getItem(key) || "[]");
+  if (arr.length > 0) {
+    missedHtml += `<h3 style="margin:0.7em 0 0.3em 0; font-size:1.1em;">${cat.name}</h3><ul style="margin-bottom:1em;">`;
+    arr.forEach(term => {
+      missedHtml += `<li style="margin-bottom:0.3em;">
+        <a href="${cat.page}.html" style="color:#2519d0; text-decoration:underline;">${term}</a>
+      </li>`;
+    });
+    missedHtml += "</ul>";
+  }
+});
+document.getElementById("incorrect-terms-list").innerHTML = missedHtml || "<i>No missed terms yet!</i>";
 </script>
 <!-- Added Percent Correct by Page Section -->
 <div id="percent-table-container" style="border-radius: 10px; padding: 10px; max-width:600px;margin:2rem auto; background: white;">
