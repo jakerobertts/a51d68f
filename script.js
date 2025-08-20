@@ -74,10 +74,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Replace content with blank underscores
     const blankLength = Math.max(answer.length, 1);
     element.innerHTML = '___'; // Minimum 1 underscore
-    element.style.fontFamily = 'Futura, sans-serif';
+    element.style.fontFamily = 'Roboto, sans-serif';
     element.style.padding = '2px 2px';
     element.style.backgroundColor = 'transparent';
-    element.style.color = 'blue';
+    element.style.color = '#0000ff';
     element.style.border = '0px solid black';
     element.style.borderRadius = '7px';
     element.style.display = 'inline-block';
@@ -306,7 +306,7 @@ function promptAnswer(element, event) {
         element.style.border = '1px solid #ccc';
         element.style.color = 'transparent';
         element.style.padding = '2px 2px';
-        element.style.fontFamily = 'Futura, sans-serif';
+        element.style.fontFamily = 'Roboto, sans-serif';
         element.style.textAlign = 'center';
         element.style.cursor = 'pointer';
       }
@@ -335,7 +335,7 @@ function resetQuestion(element) {
         element.style.border = '1px solid #ccc';
         element.style.color = 'transparent';
         element.style.padding = '2px 2px';
-        element.style.fontFamily = 'Futura, sans-serif';
+        element.style.fontFamily = 'Roboto, sans-serif';
         element.style.textAlign = 'center';
         element.style.cursor = 'pointer';
   // Remove from answered questions and decrement score if previously answered
@@ -404,7 +404,7 @@ function resetProgress() {
     element.style.border = '0px solid #ccc';
     element.style.borderRadius = '3px';
     element.style.padding = '2px 2px';
-    element.style.fontFamily = 'Futura, sans-serif';
+    element.style.fontFamily = 'Roboto, sans-serif';
     element.style.textAlign = 'center';
     element.style.cursor = 'pointer';
     element.style.display = 'inline-block';

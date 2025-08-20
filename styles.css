@@ -2,7 +2,7 @@
 
 
 body {
-  font-family: "futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   max-width: 800px;
   position: relative;
   margin: 0 auto;
@@ -21,8 +21,8 @@ img {
   left: 0;
   width: 200px;
   height: 100vh;
-  background-color: #ffffff;
-  border-right: 2px solid #16213e;
+  background-color: #eff1ff;
+  border-right: 2px solid #0034c3;
   padding: 10px 0;
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
   z-index: 1000;
@@ -49,7 +49,7 @@ img {
   display: block;
   margin-bottom: 10px;
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: rgb(0, 5, 77);
   font-size: 12px;
   font-weight: lighter;
   transition: all 0.3s ease;
@@ -63,16 +63,7 @@ img {
 .nav-item.active {
   border-color: #535353;
 }
-.nav-score {
-  float: right;
-  color: #0078d4;
-  font-weight: bold;
-  background: #e8f4fd;
-  border-radius: 6px;
-  padding: 2px 8px;
-  margin-left: 8px;
-  font-size: 12px;
-}
+
 
 
 
@@ -85,7 +76,7 @@ img {
   position: relative;
   display: inline-block;
   border-radius: 5px;
-  font-family: "Futura", "sans-serif";
+  font-family: "Roboto", "sans-serif";
 }
 .try-again {
   display: inline-block;
@@ -208,15 +199,24 @@ li {
   transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
   list-style-type: none;
   font-size: 1.08em;
-font-family: "Futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 100;
+font-family: "Roboto", sans-serif;
+  font-weight: 400;
   cursor: pointer;
   overflow: visible;
     -webkit-backdrop-filter: blur(8px) saturate(160%);
    backdrop-filter: blur(8px) saturate(160%);
   border: 0px solid rgba(0, 0, 151, 0.25);
 }
-
+.cardcontent {
+  background: linear-gradient(#ecffff, #f3ebff), #74e1ff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(44,62,80,0.08);
+  padding: 2em;
+  border: 1px solid #000000;
+  margin: 2em auto;
+  max-width: 700px;
+  font-family: 'Roboto', sans-serif;
+}
 li::before {
   content: "";
   position: absolute;
@@ -230,8 +230,7 @@ li::before {
 }
 
 li:hover {
-  background: linear-gradient(90deg, #ffffff 0%, #d2d4ff 100%);
-  transform: scale(1.03) translateX(4px);
+  background: linear-gradient(90deg, #ffffff 0%, #cbcbcb 100%);
   box-shadow: 0 4px 16px rgba(255, 160, 122, 0.18), 0 2px 8px rgba(22, 33, 62, 0.12);
 }
 
@@ -386,7 +385,7 @@ button:hover {
 }
   
   html, body {
-    font-family:"futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family:"Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
   }
   h1 {

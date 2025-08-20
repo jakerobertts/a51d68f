@@ -32,7 +32,7 @@
   </head>
   <body>
     <h1>Study Plan</h1>
-    <p>When is your desired date to finish content review?</p>
+    <p>When is your desired date to finish all of the site's content?</p>
     <label for="exam-date"></label>
     <input
       type="date"
@@ -42,7 +42,7 @@
       title="Select your MCAT exam date"
       placeholder="YYYY-MM-DD"
     />
-    <button id="submit-date">Submit</button>
+    <button id="submit-date">Submit</button><br /><br />
     <div id="countdown"></div>
     <script>
       document
@@ -58,7 +58,7 @@
 
           document.getElementById(
             "countdown"
-          ).innerHTML = `You have ${daysLeft} days of content review!<br><br>
+          ).innerHTML = `${daysLeft} days of studying with Percentyle!<br><br>
         <span style="margin-left:2em; display:inline-block;">
           Step 1: ${cardsPerDayIdeal} questions per day for ${(
             daysLeft / 3
