@@ -123,6 +123,7 @@ function promptAnswer(element, event) {
   const input = document.createElement('input');
   input.type = 'text';
   input.className = 'answer-input';
+  input.autocomplete = 'off'; // Add this line
   input.style.width = Math.max(correctAnswer.length * 12, 120) + 'px';
   input.style.padding = '4px 8px';
   input.style.fontSize = '14px';
@@ -131,103 +132,13 @@ function promptAnswer(element, event) {
   input.style.fontFamily = element.style.fontFamily;
   input.placeholder = 'Type your answer...';
   
-  // Create autocomplete dropdown
-  const dropdown = document.createElement('div');
-  dropdown.className = 'autocomplete-dropdown';
-  dropdown.style.position = 'fixed';
-  dropdown.style.background = 'white';
-  dropdown.style.border = '1px solid #ccc';
-  dropdown.style.borderTop = 'none';
-  dropdown.style.borderRadius = '0 0 4px 4px';
-  dropdown.style.maxHeight = '150px';
-  dropdown.style.overflowY = 'auto';
-  dropdown.style.zIndex = '999999';
-  dropdown.style.display = 'none';
-  dropdown.style.width = Math.max(correctAnswer.length * 12, 120) + 'px';
-  dropdown.style.boxShadow = '0 4px 12px rgba(0,0,0,0.25)';
-  
-  // Append dropdown to body to ensure it's on top
-  document.body.appendChild(dropdown);
-  
-  // Create container for input and dropdown
-  const container = document.createElement('div');
-  container.style.position = 'relative';
-  container.style.display = 'inline-block';
-  
   // Replace the blank with container
   element.innerHTML = '';
-  container.appendChild(input);
-  element.appendChild(container);
+  element.appendChild(input);
   element.style.background = 'transparent';
   element.style.border = 'none';
   element.style.padding = '0';
   input.focus();
-  
-  // Position dropdown function
-  function positionDropdown() {
-    const inputRect = input.getBoundingClientRect();
-    dropdown.style.left = inputRect.left + 'px';
-    dropdown.style.top = (inputRect.bottom) + 'px';
-  }
-  
-  // Add autocomplete functionality
-  input.addEventListener('input', function() {
-    const value = input.value.toLowerCase();
-    dropdown.innerHTML = '';
-    
-    if (value.length > 0) {
-      const matches = allQuizAnswers.filter(answer => 
-        answer.toLowerCase().includes(value) && answer.toLowerCase() !== value
-      );
-      
-      if (matches.length > 0) {
-        positionDropdown(); // Position dropdown before showing
-        dropdown.style.display = 'block';
-        matches.slice(0, 8).forEach(match => {
-          const option = document.createElement('div');
-          option.textContent = match;
-          option.style.padding = '8px 12px';
-          option.style.cursor = 'pointer';
-          option.style.border = 'none';
-          option.style.background = 'white';
-          option.style.display = 'block';
-          
-          option.addEventListener('mouseenter', function() {
-            option.style.backgroundColor = '#f0f8ff';
-          });
-          
-          option.addEventListener('mouseleave', function() {
-            option.style.backgroundColor = 'white';
-          });
-          
-          option.addEventListener('click', function() {
-            input.value = match;
-            dropdown.style.display = 'none';
-            checkAnswer();
-          });
-          
-          dropdown.appendChild(option);
-        });
-      } else {
-        dropdown.style.display = 'none';
-      }
-    } else {
-      dropdown.style.display = 'none';
-    }
-  });
-  
-  // Hide dropdown when clicking outside or scrolling
-  function hideDropdown(e) {
-    if (!container.contains(e.target) && !dropdown.contains(e.target)) {
-      dropdown.style.display = 'none';
-    }
-  }
-  
-  document.addEventListener('click', hideDropdown);
-  function scrollHideDropdown() {
-    dropdown.style.display = 'none';
-  }
-  document.addEventListener('scroll', scrollHideDropdown);
   
   // Handle answer submission
   function checkAnswer() {
@@ -288,7 +199,6 @@ function promptAnswer(element, event) {
   // Submit on Enter key or when input loses focus
   input.addEventListener('keypress', function(e) {
     if (e.key === 'Enter') {
-      dropdown.style.display = 'none';
       checkAnswer();
     }
   });
@@ -310,12 +220,10 @@ function promptAnswer(element, event) {
         element.style.textAlign = 'center';
         element.style.cursor = 'pointer';
       }
-      dropdown.style.display = 'none';
       // Clean up dropdown from body
       if (dropdown.parentNode) {
         dropdown.parentNode.removeChild(dropdown);
       }
-      // Remove event listeners
       // Remove event listeners
       document.removeEventListener('click', hideDropdown);
       document.removeEventListener('scroll', scrollHideDropdown);
