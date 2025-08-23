@@ -10,6 +10,10 @@ const sidebarCategories = [
       { href: "variables.html", text: "Common Variables" },
     ]
   },
+  { title: "MCAT Content Exam", items: [
+    { href: "testquestions.html", text: "MCAT Practice Questions" },
+  ]
+  },
   {
     title: "Biological and Biochemical Foundations",
     items: [
