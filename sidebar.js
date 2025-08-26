@@ -10,8 +10,9 @@ const sidebarCategories = [
       { href: "variables.html", text: "Common Variables" },
     ]
   },
-  { title: "MCAT Content Exam", items: [
-    { href: "testquestions.html", text: "MCAT Practice Questions" },
+  { title: "Comprehensive Checklists", items: [
+    { href: "testquestions.html", text: "1A, 4A, 6A checklist" },
+    { href: "testquestionsday2.html", text: "1B, 4A, 6A checklist" },
   ]
   },
   {
