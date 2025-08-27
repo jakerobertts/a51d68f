@@ -11,8 +11,7 @@ const sidebarCategories = [
     ]
   },
   { title: "Comprehensive Checklists", items: [
-    { href: "testquestions.html", text: "1A, 4A, 6A checklist" },
-    { href: "testquestionsday2.html", text: "1B, 4A, 6A checklist" },
+    { href: "acidderivatives.html", text: "Acid Derivatives Checklist" },
   ]
   },
   {
