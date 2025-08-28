@@ -12,6 +12,7 @@ const sidebarCategories = [
   },
   { title: "Comprehensive Checklists", items: [
     { href: "acidderivatives.html", text: "Acid Derivatives Checklist" },
+    { href: "associativelearning.html", text: "Associative Learning Checklist" },
   ]
   },
   {
