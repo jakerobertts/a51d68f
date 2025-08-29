@@ -2,7 +2,7 @@
 
 
 body {
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   max-width: 800px;
   position: relative;
   margin: 0 auto;
@@ -385,7 +385,7 @@ button:hover {
 }
   
   html, body {
-    font-family:"Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 
   }
   h1 {
