@@ -14,6 +14,7 @@ const sidebarCategories = [
     { href: "acidderivatives.html", text: "Acid Derivatives Checklist" },
     { href: "associativelearning.html", text: "Associative Learning Checklist" },
     { href: "celltheory.html", text: "Cell Theory Checklist" },
+    { href: "aachem.html", text: "Amino Acids & Proteins Checklist" },
 
   ]
   },
