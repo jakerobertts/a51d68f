@@ -186,14 +186,27 @@ function promptAnswer(element, event) {
         answeredQuestions.add(questionId);
         updateScoreAndSave();
       }
-      // Store only the term (the correct answer)
+      // Store both the question text and the correct answer
       const pageId = PAGE_ID || (window.location.pathname.split('/').pop().replace('.html', ''));
       const key = `incorrectTerms_${pageId}`;
       let arr = JSON.parse(localStorage.getItem(key) || "[]");
-      if (!arr.includes(correctAnswer)) {
-        arr.push(correctAnswer);
-        localStorage.setItem(key, JSON.stringify(arr));
+
+      // Store an object with both question text and answer
+      const questionData = {
+        question: element.textContent.trim(), // The text between <span> tags
+        answer: correctAnswer,
+        timestamp: Date.now()
+      };
+
+      // Check if this question is already in the array
+      const existingIndex = arr.findIndex(item => item.answer === correctAnswer);
+      if (existingIndex === -1) {
+        arr.push(questionData);
+      } else {
+        // Update the existing entry
+        arr[existingIndex] = questionData;
       }
+      localStorage.setItem(key, JSON.stringify(arr));
     }
   }
   // Submit on Enter key or when input loses focus

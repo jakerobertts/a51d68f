@@ -161,70 +161,9 @@
 });
           </script>
 
-    <div
-      id="insights-card"
-      style="
-        max-width: 400px;
-        margin: 40px auto 0 auto;
-        background: #fff;
-        border-radius: 12px;
-        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
-        padding: 32px 28px 24px 28px;
-        font-family: 'Segoe UI', Arial, sans-serif;
-        text-align: center;
-      "
-    >
-      <h2 style="margin-bottom: 18px; color: #16213e">Your Diagnostics</h2>
+    
 
-      <div style="font-size: 1.1rem; margin-bottom: 14px">
-        <strong>Fill-in-the-blanks</strong>
-        <span id="answered-count" style="color: #0078d4; font-weight: bold"
-          >0</span
-        >
-        /
-        <span id="total-questions" style="color: #888">2085</span>
-      </div>
-      <div style="font-size: 1.1rem; margin-bottom: 14px">
-        <strong>Questions left:</strong>
-        <span id="questions-left" style="color: #373737; font-weight: bold"
-          >0</span
-        >
-      
-      <div
-        style="
-          display: flex;
-          justify-content: center;
-          gap: 24px;
-          margin-top: 18px;
-        "
-      >
-        <div>
-          <span
-            style="font-size: 1.1rem; color: #27ae60; font-weight: bold"
-            id="correct-count"
-            >0</span
-          ><br />
-          <span style="font-size: 0.98rem; color: #555">Correct</span>
-        </div>
-        <div>
-          <span
-            style="font-size: 1.1rem; color: #c0392b; font-weight: bold"
-            id="incorrect-count"
-            >0</span
-          ><br />
-          <span style="font-size: 0.98rem; color: #555">Incorrect</span>
-        </div>
-      </div>
-      <div id="progress-bar-container" style="margin-top: 28px">
-        <div
-          style="
-            background: #e0e0e0;
-            border-radius: 8px;
-            height: 18px;
-            width: 100%;
-            overflow: hidden;
-          "
-        >
+  
           <div
             id="progress-bar"
             style="
@@ -299,91 +238,14 @@
     <script>
       // 1. Map categories to their corresponding HTML filenames (PAGE_IDs)
       const categoryToPage = [
-        { name: "Organ Systems", page: "organs" },
-        { name: "Amino Acids & Proteins", page: "aa" },
-        { name: "Carbohydrates", page: "carbohydrates" },
-        { name: "Nucleotides & Nucleic Acids", page: "nucleotides" },
-        { name: "Fats & Lipids", page: "fats" },
-        {
-          name: "Phospholipids, Phosphatids, & Other Fat Derivatives",
-          page: "phospholipids",
+        { name: "Acid Derivatives", page: "acidderivatives",
         },
-        { name: "Enzyme Function & Kinetics", page: "enzyme" },
-        { name: "Cofactors", page: "co" },
-        { name: "Feedback Regulation", page: "feedback" },
-        { name: "Regulation", page: "regulation" },
-        { name: "Denaturation", page: "dnarna" },
-        { name: "DNA Replication", page: "replication" },
-        { name: "Transcription", page: "transcription" },
-        { name: "Translation", page: "translation" },
-        { name: "The Triplet Code", page: "code" },
-        {
-          name: "Post-Transcriptional Modifications",
-          page: "post-transcriptional",
-        },
-        { name: "Coiling, Packing, Telomeres & Centromeres", page: "coiling" },
-        { name: "DNA in Prokaryotes & Eukaryotes", page: "DNApro" },
-        { name: "Alleles & Genes", page: "alleles" },
-        { name: "Sex-Linked Inheritance", page: "sexlinked" },
-        { name: "Evolution & Genetics", page: "evolution" },
-        { name: "Gene Engineering", page: "genengine" },
-        { name: "Ethics in Genetics", page: "ethics" },
-        { name: "Bioenergetics & Thermodynamics", page: "bioenergetics" },
-        { name: "Phosphorylation & Energy Transfer", page: "phosphorylation" },
-        { name: "Bio Redox", page: "redox" },
-        {
-          name: "Half-reactions, Flavoproteins, & Electron Carriers",
-          page: "half",
-        },
-        { name: "Glycolysis & Pyruvate Processing", page: "glycolysis" },
-        { name: "Feeder Pathways & Gluconeogenesis", page: "feeder" },
-        { name: "Citric Acid Cycle", page: "citric" },
-        { name: "Oxidative Phosphorylation", page: "oxidative" },
-        { name: "Electron Transport Chain", page: "etc" },
-        { name: "Metabolic Regulation", page: "metabolic" },
-        { name: "Errors of Metabolism", page: "metabolism" },
-        { name: "Cell Membrane Structure & Function", page: "cellmembrane" },
-        { name: "Cell Junctions & Communication", page: "junctions" },
-        { name: "Organelles & Their Functions", page: "organelles" },
-        { name: "Cell Cycle & Division", page: "cellcycle" },
-        { name: "Apoptosis & Cell Death", page: "apoptosis" },
-        { name: "Mitosis & Meiosis Overview", page: "mitosis" },
-        { name: "Stem Cells & Differentiation", page: "stemcells" },
-        { name: "Gameteogenesis & Fertilization", page: "gameteogenesis" },
-        {
-          name: "Connective Tissue & Extracellular Matrix",
-          page: "connective",
-        },
-        { name: "Prokaryotic Organelles & Motility", page: "prokmot" },
-        { name: "Viruses & Other Infectious Agents", page: "viruses" },
-        { name: "Immunology", page: "immunology" },
-        { name: "Cancer Biology", page: "cancer" },
-        { name: "Hormones & the Endocrine System", page: "hormones" },
-        { name: "Signal Transduction", page: "signal" },
-        { name: "Oxidative Stress & Mitochondria", page: "oxstress" },
-        { name: "Separation Techniques", page: "separation" },
-        { name: "Isoelectric Point", page: "isoelectric" },
-        { name: "Electrophoresis", page: "electrophoresis" },
-        { name: "Mechanics", page: "mechanics" },
-        { name: "Periodic Motion", page: "periodicmotion" },
-        { name: "Fluids", page: "fluids" },
-        { name: "Thermodynamics", page: "thermodynamics" },
-        { name: "Electrostatics", page: "electrostatics" },
-        { name: "Optics", page: "optics" },
-        { name: "Solutions", page: "solutions" },
-        { name: "Acids & Bases", page: "acidsbases" },
-        { name: "Gas Phase", page: "gasphase" },
-        { name: "Atomic Structure", page: "atomicstructure" },
-        { name: "Stoichiometry", page: "stoichiometry" },
-        { name: "Bonding & Molecular Structure", page: "bonding" },
-        { name: "Stereochemistry", page: "sterics" },
-        { name: "Functional Groups", page: "functionalgroups" },
-        { name: "Spectroscopy", page: "spectro" },
-        { name: "Biological Foundations of Behavior", page: "biological" },
-        { name: "All Psychological and Social Theories", page: "theories" },
-        { name: "Psychological Concepts", page: "psych" },
-        { name: "Sociological Concepts", page: "social" },
-        { name: "Figures + Equations", page: "figures" },
+        { name: "Associative Learning", page: "associativelearning" },
+        { name: "Cell Theory", page: "celltheory" },
+        { name: "Amino Acids & Proteins", page: "aachem" },
+        { name: "Acid-Base Equilibria", page: "acidbaseeq" },
+        { name: "Attitude Theory", page: "attitudetheory" },
+        { name: "Circulatory System", page: "circulatory" }
       ];
 
       // 2. Build the correct array from localStorage
@@ -485,30 +347,8 @@
     }
   });
 </script>
-<div id="incorrect-terms-container" style="border-radius: 10px; padding: 10px; max-width:600px;margin:2rem auto; background: #fff;">
-  <h2 style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color:#2519d0; font-weight:800; margin-bottom:1em;">
-    Terms You Missed
-  </h2>
-  <div id="incorrect-terms-list"></div>
-</div>
-<script>
-  // Display missed terms by page/category
-  let missedHtml = "";
-categoryToPage.forEach(cat => {
-  const key = `incorrectTerms_${cat.page}`;
-  const arr = JSON.parse(localStorage.getItem(key) || "[]");
-  if (arr.length > 0) {
-    missedHtml += `<h3 style="margin:0.7em 0 0.3em 0; font-size:1.1em;">${cat.name}</h3><ul style="margin-bottom:1em;">`;
-    arr.forEach(term => {
-      missedHtml += `<li style="margin-bottom:0.3em;">
-        <a href="${cat.page}.html" style="color:#2519d0; text-decoration:underline;">${term}</a>
-      </li>`;
-    });
-    missedHtml += "</ul>";
-  }
-});
-document.getElementById("incorrect-terms-list").innerHTML = missedHtml || "<i>No missed terms yet!</i>";
-</script>
+
+
 <!-- Added Percent Correct by Page Section -->
 <div id="percent-table-container" style="border-radius: 10px; padding: 10px; max-width:600px;margin:2rem auto; background: white;">
   <h2 style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color:#000144; font-weight:800; margin-bottom:1em;">
