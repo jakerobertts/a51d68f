@@ -17,6 +17,7 @@ const sidebarCategories = [
     { href: "aachem.html", text: "Amino Acids & Proteins Checklist" },
     { href: "acidbaseeq.html", text: "Acid-Base Equilibria Checklist" },
     { href: "attitudetheory.html", text: "Attitude Theory Checklist" },
+    { href: "circulatory.html", text: "Circulatory System Checklist" },
 
   ]
   },
