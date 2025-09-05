@@ -2,12 +2,15 @@
 
 
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family:Verdana, Geneva, Tahoma, sans-serif , Geneva, Tahoma, sans-serif;
   max-width: 800px;
+  color: rgb(0, 46, 80);
+  font-weight: bold;
   position: relative;
   margin: 0 auto;
   padding: 20px;
   padding-left: 220px;
+  background: #f9f9f9;
 }
 
 img {
@@ -21,7 +24,7 @@ img {
   left: 0;
   width: 200px;
   height: 100vh;
-  background-color: #eff1ff;
+  background: linear-gradient(to right, #cad3ff, #c8afff);
   border-right: 2px solid #0034c3;
   padding: 10px 0;
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
@@ -393,7 +396,7 @@ button:hover {
     margin: 0.5em 0;
     text-align: center;
     font-weight: bold;
-    color: #1a1a1a;
+    color: #3e006d;
     background-color: transparent;
     border-radius: 10px;
     font-family:"futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
