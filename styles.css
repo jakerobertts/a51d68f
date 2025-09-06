@@ -4,7 +4,7 @@
 body {
   font-family:Verdana, Geneva, Tahoma, sans-serif , Geneva, Tahoma, sans-serif;
   max-width: 800px;
-  color: rgb(0, 46, 80);
+  color: rgb(0, 13, 22);
   font-weight: bold;
   position: relative;
   margin: 0 auto;
@@ -24,10 +24,8 @@ img {
   left: 0;
   width: 200px;
   height: 100vh;
-  background: linear-gradient(to right, #cad3ff, #c8afff);
-  border-right: 2px solid #0034c3;
+  background: linear-gradient(to right, #eefeff, #eee9ff);
   padding: 10px 0;
-  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
   z-index: 1000;
   overflow-y: auto;
   overflow-x: hidden;
@@ -381,11 +379,7 @@ button:hover {
   #buymeacoffee-banner {
     display: none;
   }
- html::before {
 
-
-
-}
   
   html, body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -396,7 +390,7 @@ button:hover {
     margin: 0.5em 0;
     text-align: center;
     font-weight: bold;
-    color: #3e006d;
+    color: #120020;
     background-color: transparent;
     border-radius: 10px;
     font-family:"futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
