@@ -182,7 +182,7 @@
         ></div>
       </div> 
     </div>
-    <div id="myDiv" style="margin: 40px auto; max-width: 600px; border: 1px solid #000000; border-radius: 8px; background: rgb(215, 252, 255);"></div>
+    <div id="myDiv" style="margin: 40px auto; max-width: 600px; border: 1px solid #000000; border-radius: 8px; background: transparent;"></div>
 </div>
     <script>
       let answeredCount = 0;
@@ -281,14 +281,14 @@
         y: correct,
         name: "Correct",
         type: "bar",
-        marker: { color: "rgba(100, 200, 102, 0.7)" },
+        marker: { color: "blueviolet" },
       };
       var trace2 = {
         x: categories,
         y: incorrect,
         name: "Incorrect",
         type: "bar",
-        marker: { color: "rgba(255, 100, 102, 0.7)" },
+        marker: { color: "blue" },
       };
 
       var data = [trace1, trace2];
