@@ -393,7 +393,7 @@ button:hover {
     color: #120020;
     background-color: transparent;
     border-radius: 10px;
-    font-family:"futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family:"Verdana", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
   h2 {
     font-size: 1.3em;
@@ -403,8 +403,7 @@ button:hover {
     color: #1a1a1a;
     background-color: transparent;
     border-radius: 10px;
-    font-family:"futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
-       
+    font-family:"Verdana", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
   }
   h3 {
@@ -415,7 +414,7 @@ button:hover {
     color: #1a1a1a;
     background-color: transparent;
     border-radius: 10px;
-    font-family:"futura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family:"Verdana", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
   }
   

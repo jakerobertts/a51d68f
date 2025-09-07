@@ -2,8 +2,8 @@
 const sidebarCategories = [
   { title: "Home",
     items: [
-      { href: "main.html", text: "Home" },
-      { href: "scheduling.html", text: "Study Plan" },
+      { href: "index.html", text: "Home" },
+      { href: "main.html", text: "Dashboard" },
       { href: "about.html", text: "About" },
       { href: "figures.html", text: "Figures + Equations" },
       { href: "units.html", text: "Units & Conversions" },
@@ -11,14 +11,15 @@ const sidebarCategories = [
     ]
   },
   { title: "Comprehensive Checklists", items: [
-    { href: "acidderivatives.html", text: "Acid Derivatives Checklist" },
-    { href: "associativelearning.html", text: "Associative Learning Checklist" },
-    { href: "celltheory.html", text: "Cell Theory Checklist" },
-    { href: "aachem.html", text: "Amino Acids & Proteins Checklist" },
-    { href: "acidbaseeq.html", text: "Acid-Base Equilibria Checklist" },
-    { href: "attitudetheory.html", text: "Attitude Theory Checklist" },
-    { href: "circulatory.html", text: "Circulatory System Checklist" },
-    { href: "bioenergeticsq.html", text: "Bioenergetics Checklist" },
+    { href: "acidderivatives.html", text: "Acid Derivatives Checklist - CHEM" },
+    { href: "associativelearning.html", text: "Associative Learning Checklist - PSY" },
+    { href: "celltheory.html", text: "Cell Theory Checklist - BIO" },
+    { href: "aachem.html", text: "Amino Acids & Proteins Checklist - BC" },
+    { href: "acidbaseeq.html", text: "Acid-Base Equilibria Checklist - CHEM" },
+    { href: "attitudetheory.html", text: "Attitude Theory Checklist - PSY" },
+    { href: "circulatory.html", text: "Circulatory System Checklist - BIO" },
+    { href: "bioenergeticsq.html", text: "Bioenergetics Checklist - BC" },
+    { href: "alcohols.html", text: "Alcohols Checklist - CHEM" },
 
   ]
   },
