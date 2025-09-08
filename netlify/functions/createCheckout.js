@@ -18,7 +18,7 @@ exports.handler = async (event) => {
                 price_data: {
                     currency: 'usd',
                     product_data: {
-                        name: 'Percentyle Full Access',
+                        name: 'MCAT-able Full Access',
                         description: 'Unlimited access to all content and quizzes'
                     },
                     unit_amount: 2299, // $22.99 in cents

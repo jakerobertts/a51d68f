@@ -137,7 +137,7 @@ const sidebarCategories = [
   },
  
 { title: "Support Us", items: [
-  { href: "https://buymeacoffee.com/percentyle", text: "Buy Me A Coffee" }
+  { href: "https://buymeacoffee.com/MCAT-able", text: "Buy Me A Coffee" }
 ] }
 ];
 
