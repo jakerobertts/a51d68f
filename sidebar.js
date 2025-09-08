@@ -11,18 +11,25 @@ const sidebarCategories = [
     ]
   },
   { title: "Comprehensive Checklists", items: [
-    { href: "acidderivatives.html", text: "Acid Derivatives Checklist - CHEM" },
-    { href: "associativelearning.html", text: "Associative Learning Checklist - PSY" },
-    { href: "celltheory.html", text: "Cell Theory Checklist - BIO" },
-    { href: "aachem.html", text: "Amino Acids & Proteins Checklist - BC" },
-    { href: "acidbaseeq.html", text: "Acid-Base Equilibria Checklist - CHEM" },
-    { href: "attitudetheory.html", text: "Attitude Theory Checklist - PSY" },
+    { href: "acidderivatives.html", text: "Acid Derivatives Checklist - CHEM", highlight: "#fff9c4" },
+    { href: "associativelearning.html", text: "Associative Learning Checklist - PSY", highlight: "#e3f2fd" },
+    { href: "celltheory.html", text: "Cell Theory Checklist - BIO", highlight: "yellow" },
+    { href: "aachem.html", text: "Amino Acids & Proteins Checklist - BC", highlight: "#fff3e0" },
+    { href: "acidbaseeq.html", text: "Acid-Base Equilibria Checklist - CHEM", highlight: "#fff9c4" },
+    { href: "attitudetheory.html", text: "Attitude Theory Checklist - PSY", highlight: "#e3f2fd" },
     { href: "circulatory.html", text: "Circulatory System Checklist - BIO" },
     { href: "bioenergeticsq.html", text: "Bioenergetics Checklist - BC" },
     { href: "alcohols.html", text: "Alcohols Checklist - CHEM" },
+    { href: "culture.html", text: "Culture Checklist - PSY" },
 
   ]
   },
+  // If BIO - highlight light green #e6ffed
+  // If CHEM - highlight light yellow #fff9c4
+  // If PSY - highlight light blue #e3f2fd
+  // If BC - highlight light orange #fff3e0
+  
+
   {
     title: "Biological and Biochemical Foundations",
     items: [
