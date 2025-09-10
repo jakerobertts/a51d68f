@@ -21,6 +21,7 @@ const sidebarCategories = [
     { href: "bioenergeticsq.html", text: "Bioenergetics Checklist - BC" },
     { href: "alcohols.html", text: "Alcohols Checklist - CHEM" },
     { href: "culture.html", text: "Culture Checklist - PSY" },
+    { href: "digestive.html", text: "Digestive System Checklist - BIO" },
 
   ]
   },
