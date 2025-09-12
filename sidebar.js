@@ -23,6 +23,7 @@ const sidebarCategories = [
     { href: "culture.html", text: "Culture Checklist - PSY" },
     { href: "digestive.html", text: "Digestive System Checklist - BIO" },
     { href: "carb.html", text: "Carbohydrates Checklist - BC" },
+    { href: "aldehydes.html", text: "Aldehydes & Ketones Checklist - CHEM" },
 
   ]
   },
