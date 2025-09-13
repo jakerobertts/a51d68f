@@ -418,3 +418,17 @@ document.querySelectorAll('.certainty-bar').forEach(function(bar) {
     bar.parentElement.querySelector('.certainty-value').textContent = saved;
   }
 });
+// button to span explanations
+document.querySelectorAll('.explanation-button').forEach(function(button) {
+  button.addEventListener('click', function() {
+    const explanation = this.nextElementSibling;
+    if (explanation.style.display === 'block') {
+      explanation.style.display = 'none';
+      this.textContent = 'Show Explanation';
+    } else {
+      explanation.style.display = 'block';
+      this.textContent = 'Hide Explanation';
+    }
+  });
+});
+

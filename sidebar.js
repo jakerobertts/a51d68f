@@ -24,6 +24,7 @@ const sidebarCategories = [
     { href: "digestive.html", text: "Digestive System Checklist - BIO" },
     { href: "carb.html", text: "Carbohydrates Checklist - BC" },
     { href: "aldehydes.html", text: "Aldehydes & Ketones Checklist - CHEM" },
+    { href: "circuits.html", text: "Circuits Checklist - PHY" },
 
   ]
   },

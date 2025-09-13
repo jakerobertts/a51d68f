@@ -6,6 +6,7 @@ body {
   max-width: 800px;
   color: rgb(0, 13, 22);
   font-weight: bold;
+  line-height: 1.65;
   position: relative;
   margin: 0 auto;
   padding: 20px;
@@ -181,10 +182,10 @@ div ul {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 p {
-  background-color: #fafafa;
-  color: #1a1a1a;
+  background-color: #a3f6ff;
+  color: #13004e;
   padding: 10px 10px;
-  border: 1px solid #eeeeee;
+  border: 1px solid #000000;
   border-radius: 5px;
   line-height: 2;
 }
@@ -607,3 +608,20 @@ li.collapsing {
     background-color: #deffde;
     padding: 2px 4px;
   }
+.explanation-button {
+      background: #6a11cb;
+        color: rgb(230, 255, 255);
+        border: 2px solid #0a00cd;
+        border-radius: 10px;
+        padding: 10px 10px;
+        font-family: 'Courier New', Courier, monospace, Geneva, Tahoma,
+          sans-serif;
+        font-size: 0.8rem;
+}
+.explanation-content {
+  font-family: 'verdana', Geneva, Tahoma,
+    sans-serif;
+  font-size: 0.9rem;
+  font-weight: 0.9rem;
+  color: blue;
+}
