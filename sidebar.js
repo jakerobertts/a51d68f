@@ -25,6 +25,7 @@ const sidebarCategories = [
     { href: "carb.html", text: "Carbohydrates Checklist - BC" },
     { href: "aldehydes.html", text: "Aldehydes & Ketones Checklist - CHEM" },
     { href: "circuits.html", text: "Circuits Checklist - PHY" },
+    { href: "consciousness.html", text: "Consciousness Checklist - PSY" },
 
   ]
   },
