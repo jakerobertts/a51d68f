@@ -26,6 +26,7 @@ const sidebarCategories = [
     { href: "aldehydes.html", text: "Aldehydes & Ketones Checklist - CHEM" },
     { href: "circuits.html", text: "Circuits Checklist - PHY" },
     { href: "consciousness.html", text: "Consciousness Checklist - PSY" },
+    { href: "endocrine.html", text: "Endocrine System Checklist - BIO" },
 
   ]
   },
