@@ -27,7 +27,7 @@ const sidebarCategories = [
     { href: "circuits.html", text: "Circuits Checklist - PHY" },
     { href: "consciousness.html", text: "Consciousness Checklist - PSY" },
     { href: "endocrine.html", text: "Endocrine System Checklist - BIO" },
-
+  { href: "carbmetabolism.html", text: "Carbohydrate Metabolism Checklist - BC" },
   ]
   },
   // If BIO - highlight light green #e6ffed
