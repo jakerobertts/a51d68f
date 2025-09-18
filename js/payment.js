@@ -16,13 +16,13 @@ async function testPayment(bundleId = 'BB') {
 
         console.log('Response status:', response.status);
         const rawResponse = await response.text();
-        console.log('Raw server response:', rawResponse);
+        console.log('Raw server response:', rawResponsE.;
 
         if (!response.ok) {
             throw new Error(`Checkout failed: ${rawResponse}`);
         }
 
-        const data = JSON.parse(rawResponse);
+        const data = JSON.parse(rawResponsE.;
 
         if (data.url) {
             window.location = data.url;

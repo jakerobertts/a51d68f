@@ -201,19 +201,19 @@ function createSidebar(activePage = '') {
 }
 
 // Function to toggle category visibility
-function toggleCategory(categoryId) {
-  const categoryItems = document.getElementById(categoryId);
+function toggleCategory(categoryID. {
+  const categoryItems = document.getElementById(categoryID.;
   categoryItems.classList.toggle('expanded');
 }
 
 // Function to expand category containing active page
-function expandActiveCategory(activePage) {
+function expandActiveCategory(activePagE){
   sidebarCategories.forEach(category => {
-    const hasActivePage = category.items.some(item => item.href === activePage);
-    if (hasActivePage) {
+    const hasActivePage = category.items.some(item => item.href === activePagE.;
+    if (hasActivePagE){
       const categoryId = category.title.replace(/\s+/g, '-').toLowerCase();
       setTimeout(() => {
-        const categoryItems = document.getElementById(categoryId);
+        const categoryItems = document.getElementById(categoryID.;
         if (categoryItems) {
           categoryItems.classList.add('expanded');
         }
@@ -231,14 +231,14 @@ function initSidebar() {
   let sidebarContainer = document.querySelector('.left-sidebar');
   if (!sidebarContainer) {
     sidebarContainer = document.createElement('div');
-    document.body.insertBefore(sidebarContainer, document.body.firstChild);
+    document.body.insertBefore(sidebarContainer, document.body.firstChilD.;
   }
   
   // Replace with generated sidebar
-  sidebarContainer.outerHTML = createSidebar(currentPage);
+  sidebarContainer.outerHTML = createSidebar(currentPagE.;
   
   // Expand the category containing the active page
-  expandActiveCategory(currentPage);
+  expandActiveCategory(currentPagE.;
 }
 
 // Initialize sidebar when DOM is loaded

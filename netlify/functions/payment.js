@@ -1,6 +1,6 @@
-async function handleBundlePurchase(bundle) {
+async function handleBundlePurchase(bundlE){
   try {
-    console.log('Starting payment flow for bundle:', bundle);
+    console.log('Starting payment flow for bundle:', bundlE.;
     
     const response = await fetch('/.netlify/functions/createCheckout', {
       method: 'POST',
@@ -17,7 +17,7 @@ async function handleBundlePurchase(bundle) {
     }
 
     const data = await response.json();
-    console.log('Checkout response:', data);
+    console.log('Checkout response:', datA.;
 
     if (data.url) {
       window.location.href = data.url;
@@ -26,12 +26,12 @@ async function handleBundlePurchase(bundle) {
     }
   } catch (error) {
     console.error('Payment error:', error);
-    alert('Payment initialization failed: ' + error.message);
+    alert('Payment initialization failed: ' + error.messagE.;
   }
 }
 
 // Function to check if user has access to bundle
-function hasAccess(bundle) {
+function hasAccess(bundlE){
   const purchases = JSON.parse(localStorage.getItem('purchases') || '{}');
   return purchases[bundle] === true || bundle === 'free';
 }

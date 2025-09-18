@@ -129,7 +129,7 @@ This page contains comprehensive definitions but no interactive quiz elements, a
 ## Protein Binding (binding.html)
 
 1. **ligand** - Molecule that binds to a protein
-2. **affinity** - Strength of the interaction (appears twice)
+2. **affinity** - Strength of the interaction (appears twicE.
 3. **Induced Fit** - Model describing ligand-induced conformational changes
 4. **active site** - Region where substrate binds
 5. **hydrogen bonds** - Type of non-covalent interaction
@@ -285,7 +285,7 @@ This page contains comprehensive definitions but no interactive quiz elements, a
 7. **Isocitrate dehydrogenase** - Key regulatory enzyme
 8. **Alpha-ketoglutarate dehydrogenase** - Another key enzyme
 9. **3** - NADH per cycle
-10. **1** - FADH₂ per cycle (appears twice)
+10. **1** - FADH₂ per cycle (appears twicE.
 11. **1** - GTP per cycle
 12. **2** - CO₂ per cycle
 
@@ -358,8 +358,8 @@ This page contains comprehensive definitions but no interactive quiz elements, a
 6. **memory** - Immunological memory
 7. **B cells** - Antibody-producing cells
 8. **helper T cells** - CD4+ cells
-9. **cytotoxic T cells** - CD8+ cells (appears twice)
-10. **antigens** - Foreign substances (appears twice)
+9. **cytotoxic T cells** - CD8+ cells (appears twicE.
+10. **antigens** - Foreign substances (appears twicE.
 11. **helper T cells** - CD4+ cells
 12. **variable region** - Antigen-binding site
 13. **constant region** - Fc region
@@ -701,7 +701,7 @@ This page contains comprehensive definitions but no interactive quiz elements, a
 2. **alpha** - Common secondary structure
 3. **beta** - Common secondary structure
 4. **hydrogen** - Common stabilizing interactions
-5. **disulfide** - Covalent bonds (appears twice)
+5. **disulfide** - Covalent bonds (appears twicE.
 6. **nonpolar** - Hydrophobic amino acids
 7. **polar** - Hydrophilic amino acids
 8. **charged** - Ionizable amino acids
@@ -719,8 +719,8 @@ This page contains comprehensive definitions but no interactive quiz elements, a
 
 1. **homeostasis** - Maintaining balance
 2. **steady state** - Dynamic equilibrium
-3. **insulin** - Anabolic hormone (appears twice)
-4. **glucagon** - Catabolic hormone (appears twice)
+3. **insulin** - Anabolic hormone (appears twicE.
+4. **glucagon** - Catabolic hormone (appears twicE.
 5. **pancreas** - Endocrine organ
 
 ---
@@ -748,7 +748,7 @@ This page contains comprehensive definitions but no interactive quiz elements, a
 1. **nitrogenous** - Base component
 2. **phosphate** - Energy-rich group
 3. **phosphodiester** - Backbone linkage
-4. **purines** - Adenine and guanine (appears twice)
+4. **purines** - Adenine and guanine (appears twicE.
 5. **pyrimidines** - Cytosine, thymine, uracil
 6. **GC** - Strongest base pairs
 7. **ATP** - Energy transfer molecule
@@ -898,7 +898,7 @@ This page contains comprehensive definitions but no interactive quiz elements, a
 
 1. **vector** - DNA delivery vehicle
 2. **restriction enzymes** - DNA cutting enzymes
-3. **DNA** - Genetic material (appears twice)
+3. **DNA** - Genetic material (appears twicE.
 4. **DNA libraries** - Collections of cloned DNA
 5. **cDNA** - Complementary DNA from mRNA
 6. **hybridization** - DNA-DNA binding
@@ -933,8 +933,8 @@ This page contains comprehensive definitions but no interactive quiz elements, a
 ## Enzymes (Enzyme.html)
 
 1. **activation** - Energy barrier reduction
-2. **active site** - Region where substrate binds (appears twice)
-3. **enzyme-substrate complex** - Intermediate formed (appears twice)
+2. **active site** - Region where substrate binds (appears twicE.
+3. **enzyme-substrate complex** - Intermediate formed (appears twicE.
 4. **substrate** - Molecule acted upon by enzyme
 5. **Vmax** - Maximum rate of reaction
 6. **Km** - Substrate concentration at half Vmax
@@ -955,15 +955,15 @@ This page contains comprehensive definitions but no interactive quiz elements, a
 
 1. **vitamins** - Essential nutrients (A, D, E, K)
 2. **small intestine** - Main site of fat digestion
-3. **lipases** - Fat-digesting enzymes (appears twice)
+3. **lipases** - Fat-digesting enzymes (appears twicE.
 4. **bile salts** - Emulsification agents from liver
 5. **micelles** - Lipid transport structures
-6. **chylomicrons** - Dietary fat transport particles (appears twice)
+6. **chylomicrons** - Dietary fat transport particles (appears twicE.
 7. **Lipase** - Enzyme that breaks down fats
 8. **albumin** - Blood protein carrier
 9. **VLDL** - Very Low Density Lipoprotein
 10. **mitochondria** - Cellular powerhouses
-11. **acetyl-CoA** - Central metabolic intermediate (appears twice)
+11. **acetyl-CoA** - Central metabolic intermediate (appears twicE.
 12. **acyl-CoA** - Activated fatty acid form
 13. **carnitine** - Transport system
 14. **TCA cycle** - Krebs cycle
@@ -987,7 +987,7 @@ This page contains comprehensive definitions but no interactive quiz elements, a
 
 ## Sex-Linked Inheritance (sexlinked.html)
 
-1. **x** - X chromosome (appears twice)
+1. **x** - X chromosome (appears twicE.
 2. **recessive** - Trait expression pattern
 3. **sex** - Chromosome determination
 4. **males** - XY chromosome pattern
@@ -1033,9 +1033,9 @@ This page contains comprehensive definitions but no interactive quiz elements, a
 33. **potentiation** - Synaptic strengthening
 34. **depression** - Synaptic weakening
 35. **plasticity** - Brain reorganization ability
-36. **dopamine** - Reward neurotransmitter (appears twice)
+36. **dopamine** - Reward neurotransmitter (appears twicE.
 37. **norepinephrine** - Arousal neurotransmitter
-38. **serotonin** - Mood regulation neurotransmitter (appears twice)
+38. **serotonin** - Mood regulation neurotransmitter (appears twicE.
 39. **amygdala** - Fear processing center
 40. **prefrontal cortex** - Emotional regulation center
 41. **hippocampus** - Memory center

@@ -95,14 +95,14 @@ const BUNDLES = {
     }
 };
 
-BUNDLES.getSections = function(bundleId) {
+BUNDLES.getSections = function(bundleID. {
     return Object.values(this[bundleId].categories).flat();
 };
 
-BUNDLES.getCategory = function(sectionName) {
+BUNDLES.getCategory = function(sectionNamE){
     for (const [bundleId, bundle] of Object.entries(this)) {
         for (const [category, sections] of Object.entries(bundle.categories || {})) {
-            if (sections.includes(sectionName)) {
+            if (sections.includes(sectionNamE.) {
                 return { bundleId, category };
             }
         }

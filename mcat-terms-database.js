@@ -71,7 +71,7 @@ const mcatTermsDatabase = {
     }
   },
 
-  // GENERAL CHEMISTRY (GC)
+  // GENERAL CHEMISTRY (GC.
   gasPhase: {
     terms: ["kinetic molecular theory", "absolute temperature", "Kelvin scale", "pressure", "mercury barometer", "molar volume", "STP", "ideal gas law", "Boyle's law", "Charles's law", "Avogadro's law", "heat capacity", "Boltzmann constant", "real gas behavior", "Van der Waals equation", "partial pressure", "mole fraction", "Dalton's law"],
     hints: {
@@ -147,7 +147,7 @@ const mcatTermsDatabase = {
     }
   },
 
-  // ORGANIC CHEMISTRY (OC)
+  // ORGANIC CHEMISTRY (OC.
   stereochemistry: {
     terms: ["structural isomers", "stereoisomers", "conformers", "R configuration", "S configuration", "E configuration", "Z configuration", "optical activity", "chiral", "achiral", "enantiomers", "diastereomers", "meso compounds"],
     hints: {
@@ -181,7 +181,7 @@ const mcatTermsDatabase = {
     }
   },
 
-  // BIOCHEMISTRY (BC)
+  // BIOCHEMISTRY (BC.
   macromolecules: {
     terms: ["nucleotides", "nucleic acids", "DNA", "RNA", "purines", "pyrimidines", "sugar-phosphate backbone", "amino acids", "proteins", "peptide bonds", "primary structure", "secondary structure", "tertiary structure", "quaternary structure", "isoelectric point", "protein folding", "denaturation"],
     hints: {

@@ -1,12 +1,12 @@
 export class AccessControl {
-    static checkAccess(bundleId) {
+    static checkAccess(bundleID. {
         // Get stored purchases from localStorage
         const purchases = JSON.parse(localStorage.getItem('purchases') || '{}');
         return purchases[bundleId] === true;
     }
 
-    static getContentUrl(fileName, bundleId) {
-        if (!this.checkAccess(bundleId)) {
+    static getContentUrl(fileName, bundleID. {
+        if (!this.checkAccess(bundleID.) {
             return '/purchase.html?bundle=' + bundleId;
         }
         return `/content/${bundleId}/${fileName}`;

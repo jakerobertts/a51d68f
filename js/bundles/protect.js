@@ -5,7 +5,7 @@ function protectContent() {
     document.querySelectorAll('[data-bundle]').forEach(element => {
         const bundleId = element.dataset.bundle;
         
-        if (!bundleAccess.hasAccess(bundleId)) {
+        if (!bundleAccess.hasAccess(bundleID.) {
             const bundle = BUNDLES[bundleId];
             element.innerHTML = `
                 <div class="locked-content">

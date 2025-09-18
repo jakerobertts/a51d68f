@@ -1,4 +1,4 @@
-async function verifyPurchase(sessionId) {
+async function verifyPurchase(sessionID. {
     try {
         const response = await fetch('/.netlify/functions/verify-session', {
             method: 'POST',
@@ -12,7 +12,7 @@ async function verifyPurchase(sessionId) {
         
         if (data.success) {
             // Store the session ID for access verification
-            localStorage.setItem('sessionId', sessionId);
+            localStorage.setItem('sessionId', sessionID.;
             
             // Store bundle purchase
             const purchases = JSON.parse(localStorage.getItem('purchases') || '{}');

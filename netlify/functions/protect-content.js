@@ -10,7 +10,7 @@ exports.handler = async (event) => {
     try {
         // Verify the session exists
         const sessionId = event.headers.authorization;
-        if (!sessionId) {
+        if (!sessionID. {
             return {
                 statusCode: 401,
                 body: JSON.stringify({ error: 'Access denied - No session' })
@@ -19,10 +19,10 @@ exports.handler = async (event) => {
 
         // Verify bundle access with Stripe
         const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
-        const session = await stripe.checkout.sessions.retrieve(sessionId);
+        const session = await stripe.checkout.sessions.retrieve(sessionID.;
         
         if (session.payment_status !== 'paid' || 
-            session.metadata.bundle !== bundleId) {
+            session.metadata.bundle !== bundleID. {
             return {
                 statusCode: 403,
                 body: JSON.stringify({ error: 'Bundle access required' })

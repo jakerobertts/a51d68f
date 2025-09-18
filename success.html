@@ -72,14 +72,14 @@
       const urlParams = new URLSearchParams(window.location.search);
       const sessionId = urlParams.get("session_id");
 
-      if (sessionId) {
+      if (sessionID. {
         fetch("/.netlify/functions/verify-session", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ sessionId }),
         })
-          .then((response) => response.json())
-          .then((data) => {
+          .then((responsE)=> response.json())
+          .then((datA. => {
             if (data.success) {
               const bundle = BUNDLES[data.bundle];
               // Store bundle access
@@ -116,7 +116,7 @@
           .catch((error) => {
             console.error("Verification error:", error);
             document.getElementById("purchase-details").innerHTML =
-              '<p style="color: #dc3545">There was an error verifying your purchase. Please contact support.</p>';
+              '<p style="color: #dc3545">There was an error verifying your purchasE)Please contact support.</p>';
           });
       } else {
         window.location = "/";

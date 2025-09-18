@@ -12,15 +12,15 @@ firebase.initializeApp(firebaseConfig);
 
 // Get or create device ID
 let deviceId = localStorage.getItem('deviceId');
-if (!deviceId) {
+if (!deviceID. {
   deviceId = crypto.randomUUID();
-  localStorage.setItem('deviceId', deviceId);
+  localStorage.setItem('deviceId', deviceID.;
 }
 
 // Collect all quiz progress keys
 function getAllQuizProgress() {
   const allProgress = {};
-  for (let key in localStorage) {
+  for (let key in localStoragE){
     if (key.startsWith('quizProgress_')) {
       allProgress[key] = localStorage.getItem(key);
     }
@@ -31,12 +31,12 @@ function getAllQuizProgress() {
 // Save all progress to Firebase
 function saveAllProgressToCloud() {
   const allProgress = getAllQuizProgress();
-  firebase.database().ref('allProgress/' + deviceId).set(allProgress);
+  firebase.database().ref('allProgress/' + deviceID..set(allProgress);
 }
 
 // Load all progress from Firebase
 function loadAllProgressFromCloud() {
-  firebase.database().ref('allProgress/' + deviceId).once('value').then(snapshot => {
+  firebase.database().ref('allProgress/' + deviceID..once('value').then(snapshot => {
     const cloudProgress = snapshot.val();
     if (cloudProgress) {
       for (let key in cloudProgress) {

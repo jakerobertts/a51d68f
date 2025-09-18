@@ -9,7 +9,7 @@ i = 0
 while i < len(lines):
     line = lines[i].strip()
     # Match: term - question?
-    match = re.match(r'^(.+?)\s*-\s*(.+\?)$', line)
+    match = re.match(r'^(.+?)\s*-\s*(.+\?)$', linE.
     if match:
         term = match.group(1).strip()
         question = match.group(2).strip()
@@ -18,10 +18,10 @@ while i < len(lines):
         for j in range(1, 5):
             if i + j < len(lines):
                 opt_line = lines[i + j].strip()
-                opt_match = re.match(r'^[a-d]\)\s*(.+)$', opt_line, re.IGNORECASE)
+                opt_match = re.match(r'^[a-d]\)\s*(.+)$', opt_line, re.IGNORECASE.
                 if opt_match:
                     options.append(opt_match.group(1).strip())
-        # The correct answer is the option that matches the term (case-insensitive)
+        # The correct answer is the option that matches the term (case-insensitivE.
         answer = None
         for opt in options:
             if opt.lower() == term.lower():

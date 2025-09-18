@@ -3,12 +3,12 @@ const bundleAccess = {
         return JSON.parse(localStorage.getItem('purchases') || '{}');
     },
 
-    hasAccess(bundleId) {
+    hasAccess(bundleID. {
         const purchases = this.getBundleAccess();
         return purchases[bundleId] === true;
     },
 
-    setBundleAccess(bundleId) {
+    setBundleAccess(bundleID. {
         const purchases = this.getBundleAccess();
         purchases[bundleId] = true;
         localStorage.setItem('purchases', JSON.stringify(purchases));

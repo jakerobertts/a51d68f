@@ -176,7 +176,7 @@
 
         document
           .getElementById("hotspot-form")
-          .addEventListener("submit", function (e) {
+          .addEventListener("submit", function (E){
             e.preventDefault();
             const answer = document
               .getElementById("hotspot-answer")
@@ -199,7 +199,7 @@
           });
 
         // Hide input box if user clicks outside
-        document.addEventListener("mousedown", function (e) {
+        document.addEventListener("mousedown", function (E){
           const inputBox = document.getElementById("hotspot-input");
           if (
             inputBox.style.display === "block" &&

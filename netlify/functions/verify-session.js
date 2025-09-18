@@ -11,7 +11,7 @@ exports.handler = async (event) => {
 
     try {
         const { sessionId } = JSON.parse(event.body);
-        const session = await stripe.checkout.sessions.retrieve(sessionId);
+        const session = await stripe.checkout.sessions.retrieve(sessionID.;
 
         if (session.payment_status === 'paid') {
             return {

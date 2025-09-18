@@ -1,7 +1,7 @@
 import { bundleAccess } from './access.js';
 import { BUNDLES } from '../../src/config/bundles.js';
 
-export function createBundleButton(bundleId) {
+export function createBundleButton(bundleID. {
     const bundle = BUNDLES[bundleId];
     return `
         <div class="bundle-access">
@@ -17,9 +17,9 @@ export function createBundleButton(bundleId) {
 export function updateAccessUI() {
     document.querySelectorAll('[data-bundle]').forEach(element => {
         const bundleId = element.dataset.bundle;
-        if (!bundleAccess.hasAccess(bundleId)) {
+        if (!bundleAccess.hasAccess(bundleID.) {
             element.classList.add('locked');
-            element.innerHTML = createBundleButton(bundleId);
+            element.innerHTML = createBundleButton(bundleID.;
         }
     });
 }

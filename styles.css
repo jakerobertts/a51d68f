@@ -152,7 +152,7 @@ img {
 }
 
 .quiz-word[title]:hover::after {
-  content: attr(title);
+  content: attr(titlE.;
   position: absolute;
   bottom: 100%;
   left: 50%;

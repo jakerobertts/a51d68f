@@ -130,7 +130,7 @@
   <input
     type="text"
     id="quiz-search"
-    placeholder="i.e. amino acids, theories"
+    placeholder="i.E)amino acids, theories"
     style="width:80%;padding:0.7em 1em;border-radius:6px;border:1px solid #bbb;font-size:1.1em;"
   />
   <div id="quiz-search-results" style="margin-top:1em;text-align:left;"></div>
@@ -210,7 +210,7 @@
               incorrectCount +=
                 progress.answeredQuestions.length - progress.score;
             }
-          } catch (e) {
+          } catch (E){
             // Ignore parse errors
           }
         }
@@ -256,6 +256,8 @@
         { name: "Circuits", page: "circuits" },
         { name: "Consciousness", page: "consciousness" },
         { name: "Endocrine System", page: "endocrine" },
+        { name: "Carbohydrate Metabolism", page: "carbmetabolism.html"},
+        { name: "Atomic Structure", page: "atom"}
         
       ];
 
@@ -283,7 +285,7 @@
       // 4. Use the category names for the x-axis
       var categories = categoryToPage.map((cat) => cat.name);
 
-      // 5. Plotly code (update your existing code)
+      // 5. Plotly code (update your existing codE.
       var trace1 = {
         x: categories,
         y: correct,
@@ -384,7 +386,7 @@
     const progress = JSON.parse(localStorage.getItem(key) || "{}");
     const answered = Array.isArray(progress.answeredQuestions) ? progress.answeredQuestions.length : 0;
     const correct = typeof progress.score === "number" ? progress.score : 0;
-    const percent = answered > 0 ? Math.round((correct / answered) * 100) : 0;
+    const percent = answered > 0 ? Math.round((correct / answered * 100)) : 0;
     let fontweight;
     if (percent === 100) {
       fontweight = "800";

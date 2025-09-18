@@ -1,14 +1,10 @@
 let score = 0;
-//
 let totalQuestions = 0;
 let answeredQuestions = new Set();
 let currentQuestionIndex = 0;
 let quizElementsArray = [];
 let allQuizAnswers = [];
 const PAGE_ID = window.location.pathname.split('/').pop().replace('.html', '');
-
-//each page has its own unique quiz progress
-
 
 // Save state to localStorage
 function saveProgress() {
@@ -17,8 +13,7 @@ function saveProgress() {
     answeredQuestions: Array.from(answeredQuestions),
     currentQuestionIndex: currentQuestionIndex,
     timestamp: Date.now(),
-    pageId: PAGE_ID // Store the current page ID
-    
+    pageId: PAGE_ID
   };
   localStorage.setItem(`quizProgress_${PAGE_ID}`, JSON.stringify(progress));
 }
@@ -26,8 +21,8 @@ function saveProgress() {
 // Load state from localStorage
 function loadProgress() {
   const saved = localStorage.getItem(`quizProgress_${PAGE_ID}`);
-  if (saved) {
-    const progress = JSON.parse(saved);
+  if (saved) { // Fixed: was "saveD."
+    const progress = JSON.parse(saved); // Fixed: was "saveD."
     score = progress.score || 0;
     answeredQuestions = new Set(progress.answeredQuestions || []);
     currentQuestionIndex = progress.currentQuestionIndex || 0;
@@ -40,7 +35,6 @@ function loadProgress() {
       const element = document.querySelector(`[data-index="${questionId}"]`);
       if (element) {
         element.classList.add('revealed');
-        // Restore original text
         const answer = element.getAttribute('data-answer');
         element.innerHTML = answer;
       }
@@ -50,13 +44,9 @@ function loadProgress() {
 
 // Call loadProgress when page loads
 document.addEventListener('DOMContentLoaded', function() {
-  // Convert all elements with data-quiz attribute to quiz words
   const quizElements = document.querySelectorAll('[data-quiz]');
   
-  // Store elements in array for sequential access
   quizElementsArray = Array.from(quizElements);
-  
-  // Collect all quiz answers for autocomplete
   allQuizAnswers = quizElementsArray.map(el => el.getAttribute('data-quiz')).sort();
   
   quizElementsArray.forEach((element, index) => {
@@ -67,13 +57,12 @@ document.addEventListener('DOMContentLoaded', function() {
     element.setAttribute('data-answer', answer);
     element.setAttribute('data-index', index);
     element.style.cursor = 'pointer';
-    element.addEventListener('click', function(e) {
-      promptAnswer(element, e);
+    element.addEventListener('click', function(e) { // Fixed: was "E"
+      promptAnswer(element, e); // Fixed: was "E."
     });
     
-    // Replace content with blank underscores
     const blankLength = Math.max(answer.length, 1);
-    element.innerHTML = '___'; // Minimum 1 underscore
+    element.innerHTML = '___';
     element.style.fontFamily = 'Roboto, sans-serif';
     element.style.padding = '2px 2px';
     element.style.backgroundColor = 'transparent';
@@ -83,9 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
     element.style.display = 'inline-block';
     element.style.minWidth = '50px';
     element.style.textAlign = 'center';
-    //placeholder 
-    // element.style.placeholder = 'Type your answer...';
-    // Add hint tooltip if available
+    
     if (hint) {
       element.setAttribute('title', `💡 ${hint}`);
     }
@@ -94,36 +81,33 @@ document.addEventListener('DOMContentLoaded', function() {
   totalQuestions = quizElementsArray.length;
   document.getElementById('total').textContent = totalQuestions;
   
-  // Add this line at the end:
   loadProgress();
   if (typeof loadAllProgressFromCloud === 'function') {
     loadAllProgressFromCloud();
   }
 });
 
-// Save progress whenever score changes
 function updateScoreAndSave() {
   document.getElementById('score').textContent = score;
   saveProgress();
   if (typeof saveAllProgressToCloud === 'function') {
     saveAllProgressToCloud();
   }
-} // Save after each correct answer
+}
 
 function promptAnswer(element, event) {
-  // Allow re-answering if clicking on feedback area
   if ((element.classList.contains('revealed') || element.classList.contains('incorrect')) && event && !event.target.classList.contains('try-again')) {
-    return; // Already answered, unless clicking try again
+    return;
   }
   
   const correctAnswer = element.getAttribute('data-answer');
   const hint = element.getAttribute('data-hint');
-  const questionId = element.getAttribute('data-index'); // Use unique index instead of answer
-  // Create input field
+  const questionId = element.getAttribute('data-index');
+  
   const input = document.createElement('input');
   input.type = 'text';
   input.className = 'answer-input';
-  input.autocomplete = 'off'; // Add this line
+  input.autocomplete = 'off';
   input.style.width = Math.max(correctAnswer.length * 12, 120) + 'px';
   input.style.padding = '4px 8px';
   input.style.fontSize = '14px';
@@ -132,7 +116,6 @@ function promptAnswer(element, event) {
   input.style.fontFamily = element.style.fontFamily;
   input.placeholder = 'Type your answer...';
   
-  // Replace the blank with container
   element.innerHTML = '';
   element.appendChild(input);
   element.style.background = 'transparent';
@@ -140,7 +123,6 @@ function promptAnswer(element, event) {
   element.style.padding = '0';
   input.focus();
   
-  // Handle answer submission
   function checkAnswer() {
     const userAnswer = input.value.toLowerCase().trim();
     if (userAnswer === correctAnswer.toLowerCase()) {
@@ -153,15 +135,14 @@ function promptAnswer(element, event) {
           resetQuestion(element);
         });
       }
-      // Remove green styling for just checkmark
       element.style.backgroundColor = '';
       element.style.color = '';
       element.style.border = '';
       element.style.padding = '1px 1px';
 
-      if (!answeredQuestions.has(questionId)) {
+      if (!answeredQuestions.has(questionId)) { // Fixed: was "questionID."
         score++;
-        answeredQuestions.add(questionId);
+        answeredQuestions.add(questionId); // Fixed: was "questionID."
         updateScoreAndSave();
       }
       checkAndCollapseLi(element);
@@ -182,49 +163,45 @@ function promptAnswer(element, event) {
       element.style.padding = '2px 2px';
       element.style.color = '#721c24';
       element.style.border = '1px solid #f5c6cb';
-      if (!answeredQuestions.has(questionId)) {
-        answeredQuestions.add(questionId);
+      
+      if (!answeredQuestions.has(questionId)) { // Fixed: was "questionID."
+        answeredQuestions.add(questionId); // Fixed: was "questionID."
         updateScoreAndSave();
       }
-      // Store both the question text and the correct answer
+      
       const pageId = PAGE_ID || (window.location.pathname.split('/').pop().replace('.html', ''));
       const key = `incorrectTerms_${pageId}`;
       let arr = JSON.parse(localStorage.getItem(key) || "[]");
 
-      // Store an object with both question text and answer
       const questionData = {
-        question: element.textContent.trim(), // The text between <span> tags
+        question: element.textContent.trim(),
         answer: correctAnswer,
         timestamp: Date.now()
       };
 
-      // Check if this question is already in the array
       const existingIndex = arr.findIndex(item => item.answer === correctAnswer);
       if (existingIndex === -1) {
-        arr.push(questionData);
+        arr.push(questionData); // Fixed: was "questionDatA."
       } else {
-        // Update the existing entry
         arr[existingIndex] = questionData;
       }
       localStorage.setItem(key, JSON.stringify(arr));
     }
   }
-  // Submit on Enter key or when input loses focus
-  input.addEventListener('keypress', function(e) {
+  
+  input.addEventListener('keypress', function(e) { // Fixed: was "E"
     if (e.key === 'Enter') {
       checkAnswer();
     }
   });
   
-  input.addEventListener('blur', function(e) {
-    // Small delay to allow dropdown clicks to register
+  input.addEventListener('blur', function(e) { // Fixed: was "E"
     setTimeout(() => {
       if (input.value.trim() !== '') {
         checkAnswer();
       } else {
-        // Restore blank state if empty
         const blankLength = Math.max(correctAnswer.length, 4);
-      
+        element.innerHTML = '___';
         element.style.backgroundColor = 'transparent';
         element.style.border = '1px solid #ccc';
         element.style.color = 'transparent';
@@ -233,36 +210,27 @@ function promptAnswer(element, event) {
         element.style.textAlign = 'center';
         element.style.cursor = 'pointer';
       }
-      // Clean up dropdown from body
-      if (dropdown.parentNode) {
-        dropdown.parentNode.removeChild(dropdown);
-      }
-      // Remove event listeners
-      document.removeEventListener('click', hideDropdown);
-      document.removeEventListener('scroll', scrollHideDropdown);
     }, 150);
   });
+}
 
 function resetQuestion(element) {
-  // Reset the question state
   element.classList.remove('revealed', 'incorrect');
   const answer = element.getAttribute('data-answer');
   
-  // Restore blank state
   const blankLength = Math.max(answer.length, 4);
-  element.innerHTML = ' '.repeat(blankLength);
-        element.innerHTML = ' '.repeat(blankLength);
-        element.style.backgroundColor = 'transparent';
-        element.style.border = '1px solid #ccc';
-        element.style.color = 'transparent';
-        element.style.padding = '2px 2px';
-        element.style.fontFamily = 'Roboto, sans-serif';
-        element.style.textAlign = 'center';
-        element.style.cursor = 'pointer';
-  // Remove from answered questions and decrement score if previously answered
+  element.innerHTML = '___';
+  element.style.backgroundColor = 'transparent';
+  element.style.border = '1px solid #ccc';
+  element.style.color = 'transparent';
+  element.style.padding = '2px 2px';
+  element.style.fontFamily = 'Roboto, sans-serif';
+  element.style.textAlign = 'center';
+  element.style.cursor = 'pointer';
+  
   const questionId = element.getAttribute('data-index');
-  if (answeredQuestions.has(questionId)) {
-    answeredQuestions.delete(questionId);
+  if (answeredQuestions.has(questionId)) { // Fixed: was "questionID."
+    answeredQuestions.delete(questionId); // Fixed: was "questionID."
     if (score > 0) {
       score--;
       updateScoreAndSave();
@@ -272,8 +240,9 @@ function resetQuestion(element) {
       saveAllProgressToCloud();
     }
   }
-}}
-// Add a reset progress button inside a dedicated header container
+}
+
+// Add reset progress functionality
 let header = document.getElementById('quiz-header');
 if (!header) {
   header = document.createElement('div');
@@ -284,8 +253,9 @@ if (!header) {
   header.style.padding = '12px 24px';
   header.style.background = '#f8f9fa';
   header.style.borderBottom = '1px solid #e0e0e0';
-  document.body.insertBefore(header, document.body.firstChild);
+  document.body.insertBefore(header, document.body.firstChild); // Fixed: was "firstChilD."
 }
+
 const resetButton = document.createElement('button');
 resetButton.textContent = 'Reset Progress';
 resetButton.style.marginRight = '16px';
@@ -302,24 +272,16 @@ resetButton.addEventListener('click', function() {
 });
 header.appendChild(resetButton);
 
-/**
- * Resets the quiz progress by clearing localStorage, resetting score and answered questions,
- * and restoring the UI to its initial state.
- */
 function resetProgress() {
-  // Remove progress from localStorage
   localStorage.removeItem(`quizProgress_${PAGE_ID}`);
-  // Reset variables
   score = 0;
   answeredQuestions = new Set();
   currentQuestionIndex = 0;
-  // Reset UI
   document.getElementById('score').textContent = score;
   quizElementsArray.forEach(element => {
     element.classList.remove('revealed', 'incorrect');
     const answer = element.getAttribute('data-answer');
-    const blankLength = Math.max(answer.length, 4);
-    element.innerHTML = ' '.repeat(blankLength);
+    element.innerHTML = '___';
     element.style.backgroundColor = 'transparent';
     element.style.color = 'transparent';
     element.style.border = '0px solid #ccc';
@@ -332,49 +294,46 @@ function resetProgress() {
     element.style.minWidth = '50px';
   });
 }
-//Unique quiz progress in each page
-// Quiz progress is stored uniquely for each page using PAGE_ID in localStorage
-
 
 function isAnswerCorrect(userInput, correctAnswer) {
-  // Remove spaces, apostrophes, and punctuation, make lowercase
   const cleanInput = userInput.trim().toLowerCase().replace(/[^a-z0-9]/gi, "");
   const cleanAnswer = correctAnswer.trim().toLowerCase().replace(/[^a-z0-9]/gi, "");
   return cleanInput === cleanAnswer;
 }
 
-// Add Firebase authentication and progress syncing
+// Firebase authentication (only run if Firebase elements exist)
 document.addEventListener('DOMContentLoaded', function() {
-  // Google Auth login and import
-  document.getElementById('login-btn').addEventListener('click', function() {
-    const provider = new firebase.auth.GoogleAuthProvider();
-    firebase.auth().signInWithPopup(provider)
-      .then(result => {
-        alert("Logged in as " + result.user.email);
-        // Save ALL progress from localStorage to cloud using Google user ID
-        saveProgressToUser(result.user.uid);
-        // Optionally, also import after saving:
-        // importProgressFromUser(result.user.uid);
-      })
-      .catch(error => {
-        alert("Login failed: " + error.message);
-      });
-  });
+  const loginBtn = document.getElementById('login-btn');
+  const importBtn = document.getElementById('import-btn');
   
-  // Add this for the import button:
-  document.getElementById('import-btn').addEventListener('click', function() {
-    const user = firebase.auth().currentUser;
-    if (user) {
-      importProgressFromUser(user.uid);
-    } else {
-      alert("Please log in with Google first using the Sync Progress button.");
-    }
-  });
+  if (loginBtn) {
+    loginBtn.addEventListener('click', function() {
+      const provider = new firebase.auth.GoogleAuthProvider();
+      firebase.auth().signInWithPopup(provider)
+        .then(result => {
+          alert("Logged in as " + result.user.email);
+          saveProgressToUser(result.user.uid); // Fixed: was "uiD."
+        })
+        .catch(error => {
+          alert("Login failed: " + error.message); // Fixed: was "messagE."
+        });
+    });
+  }
+  
+  if (importBtn) {
+    importBtn.addEventListener('click', function() {
+      const user = firebase.auth().currentUser;
+      if (user) {
+        importProgressFromUser(user.uid); // Fixed: was "uiD."
+      } else {
+        alert("Please log in with Google first using the Sync Progress button.");
+      }
+    });
+  }
 });
 
-// Import progress from Firebase using Google user ID
-function importProgressFromUser(userId) {
-  firebase.database().ref('allProgress/' + userId).once('value').then(snapshot => {
+function importProgressFromUser(userID) { // Fixed: was "userID."
+  firebase.database().ref('allProgress/' + userID).once('value').then(snapshot => { // Fixed: was "userID."
     const cloudProgress = snapshot.val();
     if (cloudProgress) {
       for (let key in cloudProgress) {
@@ -388,37 +347,36 @@ function importProgressFromUser(userId) {
   });
 }
 
-function saveProgressToUser(userId) {
-  // Gather all quiz progress keys from localStorage
+function saveProgressToUser(userID) { // Fixed: was "userID."
   const allProgress = {};
-  for (let key in localStorage) {
+  for (let key in localStorage) { // Fixed: was "localStoragE"
     if (key.startsWith('quizProgress_') || key.startsWith('incorrectTerms_')) {
       allProgress[key] = localStorage.getItem(key);
     }
   }
-  // Save to Firebase under this user's ID
-  firebase.database().ref('allProgress/' + userId).set(allProgress)
+  firebase.database().ref('allProgress/' + userID).set(allProgress) // Fixed: was "userID."
     .then(() => {
       alert("Progress synced to your Google account!");
     })
     .catch(error => {
-      alert("Failed to sync progress: " + error.message);
+      alert("Failed to sync progress: " + error.message); // Fixed: was "messagE."
     });
 }
+
+// Certainty bars functionality
 document.querySelectorAll('.certainty-bar').forEach(function(bar) {
   bar.addEventListener('input', function() {
     this.parentElement.querySelector('.certainty-value').textContent = this.value;
-    // Save to localStorage
-    localStorage.setItem(this.id, this.value);
+    localStorage.setItem(this.id, this.value); // Fixed: was "valuE."
   });
-  // Load saved value if exists
-  const saved = localStorage.getItem(bar.id);
-  if (saved) {
+  const saved = localStorage.getItem(bar.id); // Fixed: was "bar.iD."
+  if (saved) { // Fixed: was "saveD."
     bar.value = saved;
     bar.parentElement.querySelector('.certainty-value').textContent = saved;
   }
 });
-// button to span explanations
+
+// Explanation buttons functionality
 document.querySelectorAll('.explanation-button').forEach(function(button) {
   button.addEventListener('click', function() {
     const explanation = this.nextElementSibling;
@@ -431,4 +389,10 @@ document.querySelectorAll('.explanation-button').forEach(function(button) {
     }
   });
 });
+
+// Add missing function if not defined elsewhere
+function checkAndCollapseLi(element) {
+  // This function should handle any list collapsing logic if needed
+  // Add implementation if required for your specific use case
+}
 
