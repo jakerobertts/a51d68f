@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6422130934976134"
-     crossorigin="anonymous"></script>
-<meta name="google-adsense-account" content="ca-pub-6422130934976134" />
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-L97LGZSXS5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-L97LGZSXS5');
-</script>
-<link rel="icon" type="image/png" href="Screenshot 2025-09-18 at 9.21.54 PM.png" />
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/client=ca-pub-6422130934976134"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="google-adsense-account" content="ca-pub-6422130934976134" />
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-L97LGZSXS5"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-L97LGZSXS5");
+    </script>
+    <link
+      rel="icon"
+      type="image/png"
+      href="Screenshot 2025-09-18 at 9.21.54 PM.png"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MCAT-able - MCAT Content Review Quizzes</title>
-<link rel="icon" type="image/png" href="Screenshot 2025-09-18 at 9.21.54 PM.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="Screenshot 2025-09-18 at 9.21.54 PM.png"
+    />
     <meta
       name="description"
       content="Comprehensive MCAT content review, quizzes, and progress tracking. Start studying smarter with MCAT-able."
@@ -33,11 +49,7 @@
     <meta property="og:url" content="https://MCAT-able.com/index.html" />
     <meta property="og:type" content="website" />
     <link rel="stylesheet" href="styles.css" />
-    <script>
-    
-    </script>
     <style>
-      
       .center-container {
         max-width: 700px;
         margin: 0 auto;
@@ -65,7 +77,7 @@
         border-radius: 0.5rem;
         font-weight: 600;
         font-size: 0.95rem;
-        box-shadow: 0 2px 8px rgba(60,72,100,0.10);
+        box-shadow: 0 2px 8px rgba(60, 72, 100, 0.1);
         transition: background 0.2s, box-shadow 0.2s;
         border: none;
         z-index: 1000;
@@ -73,28 +85,25 @@
       }
       @media (max-width: 700px) {
         .hero-section {
-        
-    padding: 1.2em 0.5em !important;
-    margin-top: 1.3em !important;
-    border-radius: 0.8em !important;
-    margin: 0 auto !important;
-    box-shadow: 0 2px 8px rgba(60,72,100,0.08);
-    background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
-  }
-  .hero-section h1 {
-    font-size: 1.3rem !important;
-    margin-bottom: 0.5em !important;
-  }
-  .hero-section h2 {
-    font-size: 0.9rem !important;
-    margin-bottom: 0.3em !important;
-  }
-  .hero-section input {
-    font-size: 1em !important;
-    padding: 0.5em 0.7em !important;
-  }
- 
-  
+          padding: 1.2em 0.5em !important;
+          margin-top: 1.3em !important;
+          border-radius: 0.8em !important;
+          margin: 0 auto !important;
+          box-shadow: 0 2px 8px rgba(60, 72, 100, 0.08);
+          background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+        }
+        .hero-section h1 {
+          font-size: 1.3rem !important;
+          margin-bottom: 0.5em !important;
+        }
+        .hero-section h2 {
+          font-size: 0.9rem !important;
+          margin-bottom: 0.3em !important;
+        }
+        .hero-section input {
+          font-size: 1em !important;
+          padding: 0.5em 0.7em !important;
+        }
       }
     </style>
     <style>
@@ -112,135 +121,167 @@
     </style>
   </head>
   <body>
+    <script>
+      if (window.innerWidth < 700) {
+        document.getElementById("mobile-banner").style.display = "block";
+      }
+    </script>
+    <div
+      class="hero-section"
+      style="
+        padding: 3rem 1rem;
+        border: 1px solid #000000;
+        background: linear-gradient(135deg, #c291ff 0%, #3751f9 100%);
+        border-radius: 1.5rem;
+        box-shadow: 0 4px 24px rgba(60, 72, 100, 0.08);
+        margin-bottom: 2rem;
+      "
+    >
+      <h1
+        class="sliding-header"
+        style="
+          font-size: 2.5rem;
+          font-weight: 800;
+          color: #000000;
+          margin-bottom: 1rem;
+          letter-spacing: -1px;
+        "
+      >
+        Choose an MCAT Topic to Get Started
+      </h1>
+      <div style="max-width: 400px; margin: 2em auto; text-align: center">
+        <input
+          type="text"
+          id="quiz-search"
+          placeholder="i.e. amino acids, theories"
+          style="
+            width: 80%;
+            padding: 0.7em 1em;
+            border-radius: 6px;
+            border: 1px solid #bbb;
+            font-size: 1.1em;
+          "
+        />
+        <div
+          id="quiz-search-results"
+          style="margin-top: 1em; text-align: left"
+        ></div>
+      </div>
 
+      <!-- Progress Summary -->
+      <div
+        style="
+          background: rgba(255, 255, 255, 0.1);
+          border-radius: 12px;
+          padding: 1.5rem;
+          margin-top: 2rem;
+          backdrop-filter: blur(10px);
+        "
+      >
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 1rem;
+            text-align: center;
+          "
+        >
+          <div>
+            <div
+              style="font-size: 1.8rem; font-weight: 800; color: #000000"
+              id="answered-count"
+            >
+              0
+            </div>
+            <div style="font-size: 0.9rem; color: #000000; opacity: 0.8">
+              Questions Answered
+            </div>
+          </div>
+          <div>
+            <div
+              style="font-size: 1.8rem; font-weight: 800; color: #27ae60"
+              id="correct-count"
+            >
+              0
+            </div>
+            <div style="font-size: 0.9rem; color: #000000; opacity: 0.8">
+              Correct
+            </div>
+          </div>
+          <div>
+            <div
+              style="font-size: 1.8rem; font-weight: 800; color: #e74c3c"
+              id="incorrect-count"
+            >
+              0
+            </div>
+            <div style="font-size: 0.9rem; color: #000000; opacity: 0.8">
+              Incorrect
+            </div>
+          </div>
+          <div>
+            <div
+              style="font-size: 1.8rem; font-weight: 800; color: #000000"
+              id="accuracy-percent"
+            >
+              0%
+            </div>
+            <div style="font-size: 0.9rem; color: #000000; opacity: 0.8">
+              Accuracy
+            </div>
+          </div>
+        </div>
 
-</div>
-<script>
-  if (window.innerWidth < 700) {
-    document.getElementById('mobile-banner').style.display = 'block';
-  }
-</script>
-        <div class="hero-section" style="padding: 3rem 1rem; border: 1px solid #000000; background: linear-gradient(135deg, #c291ff 0%, #3751f9 100%); border-radius: 1.5rem; box-shadow: 0 4px 24px rgba(60,72,100,0.08); margin-bottom: 2rem; @media screen { font-size: 0.8rem;
-
-        }">
-          <h1 class="sliding-header" style="font-size: 2.5rem; font-weight: 800; color: #000000; margin-bottom: 1rem; letter-spacing: -1px;">
-            Choose an MCAT Topic to Get Started
-          </h1>
-          <div style="max-width:400px;margin:2em auto;text-align:center;">
-  <input
-    type="text"
-    id="quiz-search"
-    placeholder="i.e. amino acids, theories"
-    style="width:80%;padding:0.7em 1em;border-radius:6px;border:1px solid #bbb;font-size:1.1em;"
-  />
-  <div id="quiz-search-results" style="margin-top:1em;text-align:left;"></div>
-</div>
-          
-
-
-          <script>
-            document.getElementById("quiz-search").addEventListener("input", function () {
-  const query = this.value.trim().toLowerCase();
-  const resultsDiv = document.getElementById("quiz-search-results");
-  if (!query) {
-    resultsDiv.innerHTML = "";
-    return;
-  }
-  // Search categoryToPage for matching term
-  let matches = categoryToPage.filter(cat =>
-    cat.name.toLowerCase().includes(query)
-  );
-  if (matches.length === 0) {
-    resultsDiv.innerHTML = "<div style='color:#c0392b;'>No results found.</div>";
-    return;
-  }
-  resultsDiv.innerHTML = matches
-    .map(cat => `<div style="background:#fff;border-radius:8px;box-shadow:0 2px 8px #eee;padding:1em;margin-bottom:1em;">
-      <a href="${cat.page}.html" style="color:black;font-weight:bold;text-decoration:underline;">${cat.name}</a>
-    </div>`)
-    .join("");
-});
-          </script>
-
-    
-
-  
+        <!-- Progress Bar -->
+        <div style="margin-top: 1.5rem">
           <div
-            id="progress-bar"
             style="
-              background: linear-gradient(90deg, #0078d4, #27ae60);
-              height: 100%;
-              width: 0%;
-              transition: width 0.6s;
+              background: rgba(255, 255, 255, 0.2);
               border-radius: 8px;
+              height: 12px;
+              overflow: hidden;
+            "
+          >
+            <div
+              id="progress-bar"
+              style="
+                background: linear-gradient(90deg, #0078d4, #27ae60);
+                height: 100%;
+                width: 0%;
+                transition: width 0.6s;
+                border-radius: 8px;
+              "
+            ></div>
+          </div>
+          <div
+            id="progress-label"
+            style="
+              margin-top: 8px;
+              font-size: 0.9rem;
+              color: #000000;
+              opacity: 0.8;
             "
           ></div>
         </div>
-        <div
-          id="progress-label"
-          style="margin-top: 6px; font-size: 0.98rem; color: #333"
-        ></div>
-      </div> 
+      </div>
     </div>
-    <div id="myDiv" style="margin: 40px auto; max-width: 600px; border: 1px solid #000000; border-radius: 8px; background: transparent;"></div>
-</div>
-    <script>
-      let answeredCount = 0;
-      let correctCount = 0;
-      let incorrectCount = 0;
-      const totalQuestions = 2085;
 
-      // Loop through all localStorage keys
-      for (let i = 0; i < localStorage.length; i++) {
-        const key = localStorage.key(i);
-        if (key.startsWith("quizProgress_")) {
-          try {
-            const progress = JSON.parse(localStorage.getItem(key));
-            if (progress && Array.isArray(progress.answeredQuestions)) {
-              answeredCount += progress.answeredQuestions.length;
-            }
-            if (progress && typeof progress.score === "number") {
-              correctCount += progress.score;
-            }
-            if (
-              progress &&
-              Array.isArray(progress.answeredQuestions) &&
-              typeof progress.score === "number"
-            ) {
-              incorrectCount +=
-                progress.answeredQuestions.length - progress.score;
-            }
-          } catch (e) {
-            // Ignore parse errors
-          }
-        }
-      }
-      document.getElementById("answered-count").textContent = answeredCount;
-      document.getElementById("total-questions").textContent = totalQuestions;
-      document.getElementById("questions-left").textContent = Math.max(
-        totalQuestions - answeredCount,
-        0
-      );
-      document.getElementById("correct-count").textContent = correctCount;
-      document.getElementById("incorrect-count").textContent = incorrectCount;
+    <!-- Chart Container -->
+    <div
+      id="myDiv"
+      style="
+        margin: 40px auto;
+        max-width: 800px;
+        border: 1px solid #000000;
+        border-radius: 8px;
+        background: transparent;
+      "
+    ></div>
 
-      // Progress bar
-      const progressBar = document.getElementById("progress-bar");
-      const progressLabel = document.getElementById("progress-label");
-      const progressPercentage = (
-        (answeredCount / totalQuestions) *
-        100
-      ).toFixed(2);
-      progressBar.style.width = `${progressPercentage}%`;
-      progressLabel.textContent = `${progressPercentage}% completed`;
-    </script>
-
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <script>
       // 1. Map categories to their corresponding HTML filenames (PAGE_IDs)
       const categoryToPage = [
-        { name: "Acid Derivatives", page: "acidderivatives",
-        },
+        { name: "Acid Derivatives", page: "acidderivatives" },
         { name: "Associative Learning", page: "associativelearning" },
         { name: "Cell Theory", page: "celltheory" },
         { name: "Amino Acids & Proteins", page: "aachem" },
@@ -256,10 +297,114 @@
         { name: "Circuits", page: "circuits" },
         { name: "Consciousness", page: "consciousness" },
         { name: "Endocrine System", page: "endocrine" },
-        { name: "Carbohydrate Metabolism", page: "carbmetabolism"},
-        { name: "Atomic Structure", page: "atom"}
-        
+        { name: "Carbohydrate Metabolism", page: "carbmetabolism" },
+        { name: "Atomic Structure", page: "atom" },
       ];
+
+      // Calculate totals ONLY from categoryToPage files
+      let answeredCount = 0;
+      let correctCount = 0;
+      let incorrectCount = 0;
+
+      // Calculate total questions across all categoryToPage files
+      let totalQuestions = 0;
+
+      categoryToPage.forEach((cat) => {
+        const key = `quizProgress_${cat.page}`;
+        try {
+          const progress = JSON.parse(localStorage.getItem(key) || "{}");
+
+          // Add to answered count
+          if (progress && Array.isArray(progress.answeredQuestions)) {
+            answeredCount += progress.answeredQuestions.length;
+          }
+
+          // Add to correct count
+          if (progress && typeof progress.score === "number") {
+            correctCount += progress.score;
+          }
+
+          // Add to incorrect count
+          if (
+            progress &&
+            Array.isArray(progress.answeredQuestions) &&
+            typeof progress.score === "number"
+          ) {
+            incorrectCount +=
+              progress.answeredQuestions.length - progress.score;
+          }
+
+          // Add to total questions (you'll need to define this per page)
+          // For now, estimating based on the pages we know:
+          const questionCounts = {
+            celltheory: 34,
+            aachem: 35,
+            acidbaseeq: 19,
+            // Add more as you convert other pages...
+            // For now, estimate 30 questions per remaining page
+          };
+
+          totalQuestions += questionCounts[cat.page] || 30;
+        } catch (e) {
+          // Ignore parse errors
+        }
+      });
+
+      // Update display elements
+      document.getElementById("answered-count").textContent = answeredCount;
+      document.getElementById("correct-count").textContent = correctCount;
+      document.getElementById("incorrect-count").textContent = incorrectCount;
+
+      // Calculate and display accuracy
+      const accuracyPercent =
+        answeredCount > 0
+          ? Math.round((correctCount / answeredCount) * 100)
+          : 0;
+      document.getElementById("accuracy-percent").textContent =
+        accuracyPercent + "%";
+
+      // Progress bar
+      const progressBar = document.getElementById("progress-bar");
+      const progressLabel = document.getElementById("progress-label");
+      const progressPercentage = (
+        (answeredCount / totalQuestions) *
+        100
+      ).toFixed(2);
+      progressBar.style.width = `${progressPercentage}%`;
+      progressLabel.textContent = `${progressPercentage}% of available questions completed`;
+    </script>
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script>
+      // Search functionality
+      document
+        .getElementById("quiz-search")
+        .addEventListener("input", function () {
+          const query = this.value.trim().toLowerCase();
+          const resultsDiv = document.getElementById("quiz-search-results");
+          if (!query) {
+            resultsDiv.innerHTML = "";
+            return;
+          }
+          // Search categoryToPage for matching term
+          let matches = categoryToPage.filter((cat) =>
+            cat.name.toLowerCase().includes(query)
+          );
+          if (matches.length === 0) {
+            resultsDiv.innerHTML =
+              "<div style='color:#c0392b;'>No results found.</div>";
+            return;
+          }
+          resultsDiv.innerHTML = matches
+            .map(
+              (
+                cat
+              ) => `<div style="background:#fff;border-radius:8px;box-shadow:0 2px 8px #eee;padding:1em;margin-bottom:1em;">
+            <a href="${cat.page}.html" style="color:black;font-weight:bold;text-decoration:underline;">${cat.name}</a>
+          </div>`
+            )
+            .join("");
+        });
 
       // 2. Build the correct array from localStorage
       var correct = categoryToPage.map((cat) => {
@@ -268,7 +413,7 @@
         return typeof progress.score === "number" ? progress.score : 0;
       });
 
-      // 3. (Optional) Build the incorrect array if you want to show it
+      // 3. Build the incorrect array
       var incorrect = categoryToPage.map((cat) => {
         const key = `quizProgress_${cat.page}`;
         const progress = JSON.parse(localStorage.getItem(key) || "{}");
@@ -285,128 +430,184 @@
       // 4. Use the category names for the x-axis
       var categories = categoryToPage.map((cat) => cat.name);
 
-      // 5. Plotly code (update your existing code).
+      // 5. Enhanced Plotly chart
       var trace1 = {
         x: categories,
         y: correct,
         name: "Correct",
         type: "bar",
-        marker: { color: "blueviolet" },
+        marker: {
+          color: "#27ae60",
+          line: { color: "#1e8449", width: 1 },
+        },
+        hovertemplate: "<b>%{x}</b><br>Correct: %{y}<extra></extra>",
       };
       var trace2 = {
         x: categories,
         y: incorrect,
         name: "Incorrect",
         type: "bar",
-        marker: { color: "blue" },
+        marker: {
+          color: "#e74c3c",
+          line: { color: "#c0392b", width: 1 },
+        },
+        hovertemplate: "<b>%{x}</b><br>Incorrect: %{y}<extra></extra>",
       };
 
       var data = [trace1, trace2];
       var layout = {
         barmode: "group",
-        title: { text: "" },
+        title: {
+          text: "Multiple Choice Performance by Topic",
+          font: { size: 18, family: "system-ui", color: "#2c3e50" },
+        },
         xaxis: {
-          title: { text: "Page" },
-          tickfont: { size: 9 },
-          tickangle: 60,
+          title: { text: "MCAT Topics", font: { size: 14 } },
+          tickfont: { size: 10 },
+          tickangle: -45,
           automargin: true,
         },
-        yaxis: { title: { text: "Count" } },
-        bargap: 0.2,
+        yaxis: {
+          title: { text: "Number of Questions", font: { size: 14 } },
+          gridcolor: "#ecf0f1",
+        },
+        bargap: 0.3,
+        bargroupgap: 0.1,
+        plot_bgcolor: "#f8f9fa",
+        paper_bgcolor: "transparent",
+        font: { family: "system-ui" },
+        legend: {
+          orientation: "h",
+          yanchor: "bottom",
+          y: 1.02,
+          xanchor: "right",
+          x: 1,
+        },
       };
 
-      Plotly.newPlot("myDiv", data, layout, { displayModeBar: false });
+      Plotly.newPlot("myDiv", data, layout, {
+        displayModeBar: false,
+        responsive: true,
+      });
     </script>
+
+    <!-- Detailed Performance Table -->
+    <div
+      id="percent-table-container"
+      style="
+        border-radius: 10px;
+        border: 1px solid #000000;
+        padding: 20px;
+        max-width: 800px;
+        margin: 2rem auto;
+        background: rgb(245, 254, 255);
+      "
+    >
+      <h2
+        style="
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+            Roboto;
+          color: #000144;
+          font-weight: 800;
+          margin-bottom: 1em;
+          text-align: center;
+        "
+      >
+        Detailed Performance by Topic
+      </h2>
+      <div id="percent-table"></div>
+    </div>
+
+    <script>
+      // Build detailed performance table
+      const percentTableEl = document.getElementById("percent-table");
+      let percentHtml = `<table style="width:100%;border-collapse:collapse;font-family:system-ui;">
+        <thead>
+          <tr style="background: linear-gradient(90deg, #6366f1, #8b5cf6);">
+            <th style="text-align:left;padding:12px;color:white;font-weight:600;">Topic</th>
+            <th style="text-align:center;padding:12px;color:white;font-weight:600;">Answered</th>
+            <th style="text-align:center;padding:12px;color:white;font-weight:600;">Correct</th>
+            <th style="text-align:center;padding:12px;color:white;font-weight:600;">Incorrect</th>
+            <th style="text-align:center;padding:12px;color:white;font-weight:600;">Accuracy</th>
+          </tr>
+        </thead>
+        <tbody>`;
+
+      categoryToPage.forEach((cat, index) => {
+        const key = `quizProgress_${cat.page}`;
+        const progress = JSON.parse(localStorage.getItem(key) || "{}");
+        const answered = Array.isArray(progress.answeredQuestions)
+          ? progress.answeredQuestions.length
+          : 0;
+        const correct = typeof progress.score === "number" ? progress.score : 0;
+        const incorrect = answered - correct;
+        const percent =
+          answered > 0 ? Math.round((correct / answered) * 100) : 0;
+
+        let rowStyle =
+          index % 2 === 0 ? "background:#f8f9fa;" : "background:white;";
+        let accuracyColor = "#6c757d";
+        let fontWeight = "400";
+
+        if (percent >= 90) {
+          accuracyColor = "#27ae60";
+          fontWeight = "700";
+        } else if (percent >= 80) {
+          accuracyColor = "#f39c12";
+          fontWeight = "600";
+        } else if (percent >= 70) {
+          accuracyColor = "#e67e22";
+          fontWeight = "500";
+        } else if (answered > 0) {
+          accuracyColor = "#e74c3c";
+          fontWeight = "500";
+        }
+
+        percentHtml += `<tr style="${rowStyle}">
+          <td style="padding:12px;border-bottom:1px solid #dee2e6;">
+            <a href="${
+              cat.page
+            }.html" style="color:#2c3e50;text-decoration:none;font-weight:500;">
+              ${cat.name}
+            </a>
+          </td>
+          <td style="padding:12px;border-bottom:1px solid #dee2e6;text-align:center;">${answered}</td>
+          <td style="padding:12px;border-bottom:1px solid #dee2e6;text-align:center;color:#27ae60;font-weight:600;">${correct}</td>
+          <td style="padding:12px;border-bottom:1px solid #dee2e6;text-align:center;color:#e74c3c;font-weight:600;">${incorrect}</td>
+          <td style="padding:12px;border-bottom:1px solid #dee2e6;text-align:center;color:${accuracyColor};font-weight:${fontWeight};">
+            ${answered > 0 ? percent + "%" : "-"}
+          </td>
+        </tr>`;
+      });
+
+      percentHtml += "</tbody></table>";
+      percentTableEl.innerHTML = percentHtml;
+    </script>
+
     <script src="sidebar.js"></script>
 
-    <!-- Flashcard Review Section -->
-          
-<!-- $8.99/month option -->
-
-       
-      </div>
-    </div>
-  
-    <script src="js/payment.js" defer></script>
+    <!-- Display user's email if logged in -->
+    <div
+      id="user-email"
+      style="margin: 1rem 0; font-weight: 500; color: #333; text-align: center"
+    ></div>
     <script>
-      // Animation delay for headers
-      document.querySelectorAll(".sliding-header").forEach((header, index) => {
-        header.style.animationDelay = `${index * 0.5}s`;
+      document.addEventListener("DOMContentLoaded", function () {
+        if (window.MemberStack) {
+          window.MemberStack.onReady.then(function (member) {
+            if (member.loggedIn) {
+              document.getElementById("user-email").textContent =
+                "Logged in as: " + member["email"];
+            }
+          });
+        }
       });
     </script>
 
-    <style>
-      img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        height: 200px;
-        width: 200px;
-        border-radius: 10px;
-        border: 2px solid #000000;
-        object-fit: cover;
-      }
-    </style>
-    <!-- Display user's email if logged in -->
-<div id="user-email" style="margin: 1rem 0; font-weight: 500; color: #333;"></div>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    if (window.MemberStack) {
-      window.MemberStack.onReady.then(function(member) {
-        if (member.loggedIn) {
-          document.getElementById("user-email").textContent = "Logged in as: " + member["email"];
-        }
-      });
-    }
-  });
-</script>
-
-
-<!-- Added Percent Correct by Page Section -->
-<div id="percent-table-container" style="border-radius: 10px; border: 1px solid #000000; padding: 10px; max-width:600px;margin:2rem auto; background: rgb(245, 254, 255);">
-  <h2 style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color:#000144; font-weight:800; margin-bottom:1em;">
-
-  </h2>
-  <div id="percent-table"></div>
-</div>
-<script>
-  // Build percent correct for each page in table format
-  const percentTableEl = document.getElementById("percent-table");
-  let percentHtml = `<table style="width:100%;border-collapse:collapse;">
-    <thead>
-      <tr>
-        <th style="text-align:left;padding:8px;border-bottom:2px solid #6366f1;">Page</th>
-        <th style="text-align:left;padding:8px;border-bottom:2px solid #6366f1;">Percent Correct</th>
-      </tr>
-    </thead>
-    <tbody>`;
-
-  categoryToPage.forEach(cat => {
-    const key = `quizProgress_${cat.page}`;
-    const progress = JSON.parse(localStorage.getItem(key) || "{}");
-    const answered = Array.isArray(progress.answeredQuestions) ? progress.answeredQuestions.length : 0;
-    const correct = typeof progress.score === "number" ? progress.score : 0;
-    const percent = answered > 0 ? Math.round((correct / answered * 100)) : 0;
-    let fontweight;
-    if (percent === 100) {
-      fontweight = "800";
-    } else if (percent >= 70) {
-      fontweight = "600";
-    } else {
-      fontweight = "400";
-    }
-    percentHtml += `<tr>
-      <td style="padding:8px;border-bottom:1px solid #eee;">${cat.name}</td>
-      <td style="padding:8px;border-bottom:1px solid #eee;font-weight:${fontweight};">${percent}%</td>
-    </tr>`;
-  });
-
-  percentHtml += "</tbody></table>";
-  percentTableEl.innerHTML = percentHtml;
-</script>
- <li>
+    <div style="text-align: center; margin: 2rem 0; color: #6c757d">
       By using this site, you agree to our
-      <a href="terms.html">Terms of Service</a> and
-      <a href="privacy.html">Privacy Policy</a>.
-    </li>
-</body>
+      <a href="terms.html" style="color: #6366f1">Terms of Service</a> and
+      <a href="privacy.html" style="color: #6366f1">Privacy Policy</a>.
+    </div>
+  </body>
+</html>
