@@ -2,16 +2,16 @@
 
 
 body {
-  font-family:Verdana, Geneva, Tahoma, sans-serif , Geneva, Tahoma, sans-serif;
-  max-width: 800px;
-  color: rgb(0, 13, 22);
-  font-weight: bold;
-  line-height: 1.65;
-  position: relative;
-  margin: 0 auto;
-  padding: 20px;
-  padding-left: 220px;
-  background: #f9f9f9;
+font-family: "Verdana", Geneva, Tahoma, sans-serif;
+max-width: 800px;
+color: rgb(0, 13, 22);
+font-weight: 400;
+line-height: 1.65;
+position: relative;
+margin: 0 auto;
+padding: 20px;
+padding-left: 220px;
+background: #f9f9f9;
 }
 
 img {

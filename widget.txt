@@ -1,2456 +1,2456 @@
 speciation - What is the biological process by which populations evolve to become distinct species, typically through genetic isolation and divergence?
-    A. Natural selection
-    B. Speciation
-    C. Adaptation
-    D. Mutation
+    <strong>A.</strong>  Natural selection
+    <strong>B.</strong>   Speciation
+    <strong>C.</strong>   Adaptation
+    <strong>D.</strong>   Mutation
 
 polymorphism - What is the occurrence of two or more clearly different phenotypes or alleles within a single interbreeding population called?
-    A. Mutation
-    B. Genetic drift
-    C. Polymorphism
-    D. Speciation
+    <strong>A.</strong>  Mutation
+    <strong>B.</strong>   Genetic drift
+    <strong>C.</strong>   Polymorphism
+    <strong>D.</strong>   Speciation
 
 adaption - What is the evolutionary process by which a species develops traits that increase its fitness and survival in a specific environment?
-    A. Adaptation
-    B. Mutation
-    C. Speciation
-    D. Genetic drift
+    <strong>A.</strong>  Adaptation
+    <strong>B.</strong>   Mutation
+    <strong>C.</strong>   Speciation
+    <strong>D.</strong>   Genetic drift
 
 inbreeding - What is the mating of individuals who are closely related genetically, increasing the probability of offspring inheriting harmful recessive traits?
-    A. Outbreeding
-    B. Inbreeding
-    C. Hybridization
-    D. Speciation
+    <strong>A.</strong>  Outbreeding
+    <strong>B.</strong>   Inbreeding
+    <strong>C.</strong>   Hybridization
+    <strong>D.</strong>   Speciation
 
 melting - What is the physical process in which a solid substance absorbs heat and changes into its liquid phase at a specific temperature?
-    A. Freezing
-    B. Melting
-    C. Sublimation
-    D. Deposition
+    <strong>A.</strong>  Freezing
+    <strong>B.</strong>   Melting
+    <strong>C.</strong>   Sublimation
+    <strong>D.</strong>   Deposition
 
 freezing - What is the process by which a liquid loses thermal energy and transitions into a solid state at its freezing point?
-    A. Melting
-    B. Freezing
-    C. Evaporation
-    D. Condensation
+    <strong>A.</strong>  Melting
+    <strong>B.</strong>   Freezing
+    <strong>C.</strong>   Evaporation
+    <strong>D.</strong>   Condensation
 
 deposition - What is the phase transition in which a gas transforms directly into a solid without passing through the liquid state?
-    A. Sublimation
-    B. Deposition
-    C. Melting
-    D. Freezing
+    <strong>A.</strong>  Sublimation
+    <strong>B.</strong>   Deposition
+    <strong>C.</strong>   Melting
+    <strong>D.</strong>   Freezing
 
 encoding - What is the process by which sensory input is converted into a neural code that can be stored and later retrieved by the brain?
-    A. Retrieval
-    B. Storage
-    C. Encoding
-    D. Consolidation
+    <strong>A.</strong>  Retrieval
+    <strong>B.</strong>   Storage
+    <strong>C.</strong>   Encoding
+    <strong>D.</strong>   Consolidation
 
 storage - What is the process of retaining encoded information in the brain over extended periods for future use?
-    A. Encoding
-    B. Retrieval
-    C. Storage
-    D. Consolidation
+    <strong>A.</strong>  Encoding
+    <strong>B.</strong>   Retrieval
+    <strong>C.</strong>   Storage
+    <strong>D.</strong>   Consolidation
 
 retrieval - What is the cognitive process of accessing stored information from memory and bringing it into conscious awareness?
-    A. Encoding
-    B. Storage
-    C. Retrieval
-    D. Consolidation
+    <strong>A.</strong>  Encoding
+    <strong>B.</strong>   Storage
+    <strong>C.</strong>   Retrieval
+    <strong>D.</strong>   Consolidation
 
 sensorimotor - What is the Piagetian stage (birth to 2 years) where infants learn about the world primarily through sensory experiences and motor activities?
-    A. Preoperational
-    B. Sensorimotor
-    C. Concrete operational
-    D. Formal operational
+    <strong>A.</strong>  Preoperational
+    <strong>B.</strong>   Sensorimotor
+    <strong>C.</strong>   Concrete operational
+    <strong>D.</strong>   Formal operational
 
 preoperational - What is the Piagetian stage (ages 2-7) characterized by symbolic thinking, egocentrism, and lack of logical operations?
-    A. Sensorimotor
-    B. Preoperational
-    C. Concrete operational
-    D. Formal operational
+    <strong>A.</strong>  Sensorimotor
+    <strong>B.</strong>   Preoperational
+    <strong>C.</strong>   Concrete operational
+    <strong>D.</strong>   Formal operational
 
 concrete operational - What is the Piagetian stage (ages 7-11) where children develop logical reasoning skills for concrete objects and events?
-    A. Preoperational
-    B. Sensorimotor
-    C. Concrete operational
-    D. Formal operational
+    <strong>A.</strong>  Preoperational
+    <strong>B.</strong>   Sensorimotor
+    <strong>C.</strong>   Concrete operational
+    <strong>D.</strong>   Formal operational
 
 formal operational - What is the Piagetian stage (age 12 and up) where individuals gain the ability to think abstractly, logically, and hypothetically?
-    A. Preoperational
-    B. Sensorimotor
-    C. Concrete operational
-    D. Formal operational
+    <strong>A.</strong>  Preoperational
+    <strong>B.</strong>   Sensorimotor
+    <strong>C.</strong>   Concrete operational
+    <strong>D.</strong>   Formal operational
 
 zone of proximal development - What is Vygotsky’s concept describing the range of tasks a child can perform with guidance but not yet independently?
-    A. Scaffolding
-    B. Zone of proximal development
-    C. Concrete operational
-    D. Sensorimotor
+    <strong>A.</strong>  Scaffolding
+    <strong>B.</strong>   Zone of proximal development
+    <strong>C.</strong>   Concrete operational
+    <strong>D.</strong>   Sensorimotor
 
 scaffolding - What is the instructional technique where a more knowledgeable other provides structured support to help a learner master tasks within their zone of proximal development?
-    A. Scaffolding
-    B. Modeling
-    C. Reinforcement
-    D. Shaping
+    <strong>A.</strong>  Scaffolding
+    <strong>B.</strong>   Modeling
+    <strong>C.</strong>   Reinforcement
+    <strong>D.</strong>   Shaping
 
 James Lange - Which theory of emotion proposes that physiological arousal occurs first and then is interpreted as a specific emotion?
-    A. Cannon Bard
-    B. James Lange
-    C. Schachter Singer
-    D. Lazarus
+    <strong>A.</strong>  Cannon Bard
+    <strong>B.</strong>   James Lange
+    <strong>C.</strong>   Schachter Singer
+    <strong>D.</strong>   Lazarus
 
 Cannon Bard - Which theory of emotion suggests that physiological arousal and emotional experience occur simultaneously but independently?
-    A. James Lange
-    B. Cannon Bard
-    C. Schachter Singer
-    D. Lazarus
+    <strong>A.</strong>  James Lange
+    <strong>B.</strong>   Cannon Bard
+    <strong>C.</strong>   Schachter Singer
+    <strong>D.</strong>   Lazarus
 
 Schachter Singer - Which theory of emotion states that emotion is determined by physiological arousal and the cognitive interpretation of that arousal?
-    A. James Lange
-    B. Cannon Bard
-    C. Schachter Singer
-    D. Lazarus
+    <strong>A.</strong>  James Lange
+    <strong>B.</strong>   Cannon Bard
+    <strong>C.</strong>   Schachter Singer
+    <strong>D.</strong>   Lazarus
 
 Lazarus - Which theory of emotion emphasizes that cognitive appraisal of a situation precedes both the emotional and physiological response?
-    A. James Lange
-    B. Cannon Bard
-    C. Schachter Singer
-    D. Lazarus
+    <strong>A.</strong>  James Lange
+    <strong>B.</strong>   Cannon Bard
+    <strong>C.</strong>   Schachter Singer
+    <strong>D.</strong>   Lazarus
 
 activation synthesis - Which dream theory posits that dreams result from the brain’s attempt to make sense of random neural activity during REM sleep?
-    A. Information processing
-    B. Threat simulation
-    C. Activation synthesis
-    D. Cognitive dissonance
+    <strong>A.</strong>  Information processing
+    <strong>B.</strong>   Threat simulation
+    <strong>C.</strong>   Activation synthesis
+    <strong>D.</strong>   Cognitive dissonance
 
 information processing - Which theory suggests that dreaming serves to consolidate and organize information acquired during waking hours?
-    A. Threat simulation
-    B. Activation synthesis
-    C. Information processing
-    D. Parallel processing
+    <strong>A.</strong>  Threat simulation
+    <strong>B.</strong>   Activation synthesis
+    <strong>C.</strong>   Information processing
+    <strong>D.</strong>   Parallel processing
 
 threat simulation - Which evolutionary theory proposes that dreaming allows individuals to rehearse responses to threatening situations in a safe environment?
-    A. Threat simulation
-    B. Activation synthesis
-    C. Information processing
-    D. Feature detection
+    <strong>A.</strong>  Threat simulation
+    <strong>B.</strong>   Activation synthesis
+    <strong>C.</strong>   Information processing
+    <strong>D.</strong>   Feature detection
 
 behaviorist - Which theory of language acquisition asserts that language is learned through environmental reinforcement and imitation?
-    A. Nativist
-    B. Behaviorist
-    C. Interactionist
-    D. Humanistic
+    <strong>A.</strong>  Nativist
+    <strong>B.</strong>   Behaviorist
+    <strong>C.</strong>   Interactionist
+    <strong>D.</strong>   Humanistic
 
 nativist - Which theory of language acquisition claims that humans possess an innate biological capacity for language development?
-    A. Nativist
-    B. Behaviorist
-    C. Interactionist
-    D. Humanistic
+    <strong>A.</strong>  Nativist
+    <strong>B.</strong>   Behaviorist
+    <strong>C.</strong>   Interactionist
+    <strong>D.</strong>   Humanistic
 
 interactionist - Which theory of language acquisition integrates both innate biological factors and social interaction as essential for language development?
-    A. Nativist
-    B. Behaviorist
-    C. Interactionist
-    D. Humanistic
+    <strong>A.</strong>  Nativist
+    <strong>B.</strong>   Behaviorist
+    <strong>C.</strong>   Interactionist
+    <strong>D.</strong>   Humanistic
 
 psychoanalytic - Which personality perspective emphasizes the influence of unconscious motives and early childhood experiences on behavior?
-    A. Humanistic
-    B. Trait
-    C. Psychoanalytic
-    D. Social cognitive
+    <strong>A.</strong>  Humanistic
+    <strong>B.</strong>   Trait
+    <strong>C.</strong>   Psychoanalytic
+    <strong>D.</strong>   Social cognitive
 
 humanistic - Which personality perspective focuses on self-actualization, personal growth, and the inherent goodness of individuals?
-    A. Humanistic
-    B. Trait
-    C. Psychoanalytic
-    D. Social cognitive
+    <strong>A.</strong>  Humanistic
+    <strong>B.</strong>   Trait
+    <strong>C.</strong>   Psychoanalytic
+    <strong>D.</strong>   Social cognitive
 
 trait - Which personality perspective conceptualizes personality as a collection of measurable and stable characteristics?
-    A. Humanistic
-    B. Trait
-    C. Psychoanalytic
-    D. Social cognitive
+    <strong>A.</strong>  Humanistic
+    <strong>B.</strong>   Trait
+    <strong>C.</strong>   Psychoanalytic
+    <strong>D.</strong>   Social cognitive
 
 social cognitive - Which personality perspective highlights the role of observational learning, cognitive processes, and social experiences in shaping personality?
-    A. Humanistic
-    B. Trait
-    C. Psychoanalytic
-    D. Social cognitive
+    <strong>A.</strong>  Humanistic
+    <strong>B.</strong>   Trait
+    <strong>C.</strong>   Psychoanalytic
+    <strong>D.</strong>   Social cognitive
 
 biological - Which personality perspective examines the genetic, neurobiological, and physiological bases of personality traits?
-    A. Humanistic
-    B. Trait
-    C. Biological
-    D. Social cognitive
+    <strong>A.</strong>  Humanistic
+    <strong>B.</strong>   Trait
+    <strong>C.</strong>   Biological
+    <strong>D.</strong>   Social cognitive
 
 behaviorist (personality) - Which personality perspective attributes behavior and personality development primarily to environmental conditioning and reinforcement?
-    A. Humanistic
-    B. Trait
-    C. Psychoanalytic
-    D. Behaviorist
+    <strong>A.</strong>  Humanistic
+    <strong>B.</strong>   Trait
+    <strong>C.</strong>   Psychoanalytic
+    <strong>D.</strong>   Behaviorist
 
 drive reduction - Which motivation theory posits that behavior is driven by the desire to reduce internal physiological tension caused by unmet biological needs?
-    A. Incentive
-    B. Drive reduction
-    C. Self determination
-    D. Expectancy
+    <strong>A.</strong>  Incentive
+    <strong>B.</strong>   Drive reduction
+    <strong>C.</strong>   Self determination
+    <strong>D.</strong>   Expectancy
 
 incentive - Which motivation theory suggests that behavior is directed toward attaining external rewards or avoiding punishments?
-    A. Incentive
-    B. Drive reduction
-    C. Self determination
-    D. Expectancy
+    <strong>A.</strong>  Incentive
+    <strong>B.</strong>   Drive reduction
+    <strong>C.</strong>   Self determination
+    <strong>D.</strong>   Expectancy
 
 physiological - What are the most basic human needs, such as food, water, and shelter, according to Maslow’s hierarchy?
-    A. Safety
-    B. Physiological
-    C. Self actualization
-    D. Esteem
+    <strong>A.</strong>  Safety
+    <strong>B.</strong>   Physiological
+    <strong>C.</strong>   Self actualization
+    <strong>D.</strong>   Esteem
 
 safety - What are the needs for security, stability, and protection from physical and emotional harm, as described in Maslow’s hierarchy?
-    A. Safety
-    B. Physiological
-    C. Self actualization
-    D. Esteem
+    <strong>A.</strong>  Safety
+    <strong>B.</strong>   Physiological
+    <strong>C.</strong>   Self actualization
+    <strong>D.</strong>   Esteem
 
 self actualization - What is the highest level in Maslow’s hierarchy, representing the fulfillment of personal potential and self-growth?
-    A. Safety
-    B. Physiological
-    C. Self actualization
-    D. Esteem
+    <strong>A.</strong>  Safety
+    <strong>B.</strong>   Physiological
+    <strong>C.</strong>   Self actualization
+    <strong>D.</strong>   Esteem
 
 self determination - Which motivation theory emphasizes the importance of autonomy, competence, and relatedness in fostering intrinsic motivation?
-    A. Incentive
-    B. Drive reduction
-    C. Self determination
-    D. Expectancy
+    <strong>A.</strong>  Incentive
+    <strong>B.</strong>   Drive reduction
+    <strong>C.</strong>   Self determination
+    <strong>D.</strong>   Expectancy
 
 expectancy - Which motivation theory posits that motivation is determined by the expectation of success and the value placed on that success?
-    A. Incentive
-    B. Drive reduction
-    C. Self determination
-    D. Expectancy
+    <strong>A.</strong>  Incentive
+    <strong>B.</strong>   Drive reduction
+    <strong>C.</strong>   Self determination
+    <strong>D.</strong>   Expectancy
 
 elaboration likelihood - What dual-process model of persuasion proposes central and peripheral routes for attitude change?
-    A. Elaboration likelihood
-    B. Cognitive dissonance
-    C. Attribution theory
-    D. Social identity
+    <strong>A.</strong>  Elaboration likelihood
+    <strong>B.</strong>   Cognitive dissonance
+    <strong>C.</strong>   Attribution theory
+    <strong>D.</strong>   Social identity
 
 social cognitive (behavior changE)- Which theory explains behavior change as a result of observational learning, imitation, and modeling within a social context?
-    A. Social cognitive
-    B. Trait
-    C. Psychoanalytic
-    D. Humanistic
+    <strong>A.</strong>  Social cognitive
+    <strong>B.</strong>   Trait
+    <strong>C.</strong>   Psychoanalytic
+    <strong>D.</strong>   Humanistic
 
-integrity vs. despair - What is Erikson’s final psychosocial stage (late adulthooD. involving reflection on life and the sense of fulfillment or regret?
-    A. Identity vs. role confusion
-    B. Integrity vs. despair
-    C. Generativity vs. stagnation
-    D. Initiative vs. guilt
+integrity vs. despair - What is Erikson’s final psychosocial stage (late adulthoo<strong>D.</strong>   involving reflection on life and the sense of fulfillment or regret?
+    <strong>A.</strong>  Identity vs. role confusion
+    <strong>B.</strong>   Integrity vs. despair
+    <strong>C.</strong>   Generativity vs. stagnation
+    <strong>D.</strong>   Initiative vs. guilt
 
 social identity - Which theory states that a person’s self-concept is derived from their membership in social groups and categories?
-    A. Attribution theory
-    B. Social identity
-    C. Cognitive dissonance
-    D. Self determination
+    <strong>A.</strong>  Attribution theory
+    <strong>B.</strong>   Social identity
+    <strong>C.</strong>   Cognitive dissonance
+    <strong>D.</strong>   Self determination
 
 differential association - Which criminological theory asserts that deviant behavior is learned through interactions with others who promote such behavior?
-    A. Labeling
-    B. Strain
-    C. Differential association
-    D. Social identity
+    <strong>A.</strong>  Labeling
+    <strong>B.</strong>   Strain
+    <strong>C.</strong>   Differential association
+    <strong>D.</strong>   Social identity
 
 labeling - Which sociological theory posits that being labeled as deviant influences an individual’s self-identity and behavior?
-    A. Labeling
-    B. Strain
-    C. Differential association
-    D. Social identity
+    <strong>A.</strong>  Labeling
+    <strong>B.</strong>   Strain
+    <strong>C.</strong>   Differential association
+    <strong>D.</strong>   Social identity
 
 strain - Which theory explains deviance as a result of the gap between culturally approved goals and the means available to achieve them?
-    A. Labeling
-    B. Strain
-    C. Differential association
-    D. Social identity
+    <strong>A.</strong>  Labeling
+    <strong>B.</strong>   Strain
+    <strong>C.</strong>   Differential association
+    <strong>D.</strong>   Social identity
 
 Photoreceptors - What specialized cells in the retina (rods and cones) convert light energy into neural signals for vision?
-    A. Photoreceptors
-    B. Mechanoreceptors
-    C. Thermoreceptors
-    D. Nociceptors
+    <strong>A.</strong>  Photoreceptors
+    <strong>B.</strong>   Mechanoreceptors
+    <strong>C.</strong>   Thermoreceptors
+    <strong>D.</strong>   Nociceptors
 
 Parallel Processing - What cognitive process allows the brain to simultaneously analyze multiple features of a stimulus, such as color, shape, and motion?
-    A. Feature detection
-    B. Parallel processing
-    C. Bottom up processing
-    D. Top down processing
+    <strong>A.</strong>  Feature detection
+    <strong>B.</strong>   Parallel processing
+    <strong>C.</strong>   Bottom up processing
+    <strong>D.</strong>   Top down processing
 
 Feature Detection - What neural process involves identifying specific visual features like edges, angles, and movement in the visual cortex?
-    A. Feature detection
-    B. Parallel processing
-    C. Bottom up processing
-    D. Top down processing
+    <strong>A.</strong>  Feature detection
+    <strong>B.</strong>   Parallel processing
+    <strong>C.</strong>   Bottom up processing
+    <strong>D.</strong>   Top down processing
 
 Kinesthetic - What sensory system provides information about the movement and position of body parts relative to each other?
-    A. Vestibular
-    B. Kinesthetic
-    C. Proprioceptive
-    D. Visual
+    <strong>A.</strong>  Vestibular
+    <strong>B.</strong>   Kinesthetic
+    <strong>C.</strong>   Proprioceptive
+    <strong>D.</strong>   Visual
 
 Proprioceptive - What sensory system provides information about the position and movement of the body in space, independent of vision?
-    A. Vestibular
-    B. Kinesthetic
-    C. Proprioceptive
-    D. Visual
+    <strong>A.</strong>  Vestibular
+    <strong>B.</strong>   Kinesthetic
+    <strong>C.</strong>   Proprioceptive
+    <strong>D.</strong>   Visual
 
 Vestibular - What sensory system, located in the inner ear, detects head position and movement to maintain balance and spatial orientation?
-    A. Vestibular
-    B. Kinesthetic
-    C. Proprioceptive
-    D. Visual
+    <strong>A.</strong>  Vestibular
+    <strong>B.</strong>   Kinesthetic
+    <strong>C.</strong>   Proprioceptive
+    <strong>D.</strong>   Visual
 
 Bottom up processing - What perceptual process involves constructing a whole perception by integrating sensory input without prior knowledge?
-    A. Top down processing
-    B. Bottom up processing
-    C. Parallel processing
-    D. Feature detection
+    <strong>A.</strong>  Top down processing
+    <strong>B.</strong>   Bottom up processing
+    <strong>C.</strong>   Parallel processing
+    <strong>D.</strong>   Feature detection
 
 Top down processing - What perceptual process uses existing knowledge, expectations, and experiences to interpret sensory information?
-    A. Top down processing
-    B. Bottom up processing
-    C. Parallel processing
-    D. Feature detection
+    <strong>A.</strong>  Top down processing
+    <strong>B.</strong>   Bottom up processing
+    <strong>C.</strong>   Parallel processing
+    <strong>D.</strong>   Feature detection
 
 Interposition - What monocular depth cue involves perceiving an object as closer when it partially blocks the view of another object?
-    A. Linear perspective
-    B. Texture gradient
-    C. Interposition
-    D. Motion parallax
+    <strong>A.</strong>  Linear perspective
+    <strong>B.</strong>   Texture gradient
+    <strong>C.</strong>   Interposition
+    <strong>D.</strong>   Motion parallax
 
 Texture Gradient - What monocular depth cue involves perceiving objects with coarse texture as closer and those with finer texture as farther away?
-    A. Linear perspective
-    B. Texture gradient
-    C. Interposition
-    D. Motion parallax
+    <strong>A.</strong>  Linear perspective
+    <strong>B.</strong>   Texture gradient
+    <strong>C.</strong>   Interposition
+    <strong>D.</strong>   Motion parallax
 
 Linear Perspective - What monocular depth cue involves perceiving parallel lines as converging in the distance, indicating depth?
-    A. Linear perspective
-    B. Texture gradient
-    C. Interposition
-    D. Motion parallax
+    <strong>A.</strong>  Linear perspective
+    <strong>B.</strong>   Texture gradient
+    <strong>C.</strong>   Interposition
+    <strong>D.</strong>   Motion parallax
 
 Motion Parallax - What depth cue involves perceiving objects closer to the observer as moving faster than those farther away when the observer is in motion?
-    A. Linear perspective
-    B. Texture gradient
-    C. Interposition
-    D. Motion parallax
+    <strong>A.</strong>  Linear perspective
+    <strong>B.</strong>   Texture gradient
+    <strong>C.</strong>   Interposition
+    <strong>D.</strong>   Motion parallax
 
 Shading and Contour - What visual cues use variations in light and shadow to create the perception of depth and three-dimensionality?
-    A. Shading and contour
-    B. Linear perspective
-    C. Texture gradient
-    D. Interposition
+    <strong>A.</strong>  Shading and contour
+    <strong>B.</strong>   Linear perspective
+    <strong>C.</strong>   Texture gradient
+    <strong>D.</strong>   Interposition
 
 constancy - What perceptual phenomenon allows us to perceive objects as unchanging in size, shape, and color despite changes in sensory input?
-    A. Constancy
-    B. Feature detection
-    C. Parallel processing
-    D. Bottom up processing
+    <strong>A.</strong>  Constancy
+    <strong>B.</strong>   Feature detection
+    <strong>C.</strong>   Parallel processing
+    <strong>D.</strong>   Bottom up processing
 
 Retinal Disparity - What binocular cue for depth perception arises from the slight difference in images between the two eyes?
-    A. Convergence
-    B. Retinal disparity
-    C. Interposition
-    D. Motion parallax
+    <strong>A.</strong>  Convergence
+    <strong>B.</strong>   Retinal disparity
+    <strong>C.</strong>   Interposition
+    <strong>D.</strong>   Motion parallax
 
 Convergence - What binocular cue for depth perception involves the inward movement of the eyes when focusing on a nearby object?
-    A. Convergence
-    B. Retinal disparity
-    C. Interposition
-    D. Motion parallax
+    <strong>A.</strong>  Convergence
+    <strong>B.</strong>   Retinal disparity
+    <strong>C.</strong>   Interposition
+    <strong>D.</strong>   Motion parallax
 
 Similarity - What Gestalt principle describes the tendency to group similar elements together in perception?
-    A. Similarity
-    B. Continuity
-    C. Closure
-    D. Pragnanz
+    <strong>A.</strong>  Similarity
+    <strong>B.</strong>   Continuity
+    <strong>C.</strong>   Closure
+    <strong>D.</strong>   Pragnanz
 
 Continuity - What Gestalt principle describes the tendency to perceive smooth, continuous patterns rather than abrupt changes?
-    A. Similarity
-    B. Continuity
-    C. Closure
-    D. Pragnanz
+    <strong>A.</strong>  Similarity
+    <strong>B.</strong>   Continuity
+    <strong>C.</strong>   Closure
+    <strong>D.</strong>   Pragnanz
 
 Closure - What Gestalt principle describes the tendency to fill in gaps to perceive a complete, whole object?
-    A. Similarity
-    B. Continuity
-    C. Closure
-    D. Pragnanz
+    <strong>A.</strong>  Similarity
+    <strong>B.</strong>   Continuity
+    <strong>C.</strong>   Closure
+    <strong>D.</strong>   Pragnanz
 
 Pragnanz - What Gestalt principle states that we perceive complex images in the simplest form possible?
-    A. Similarity
-    B. Continuity
-    C. Closure
-    D. Pragnanz
+    <strong>A.</strong>  Similarity
+    <strong>B.</strong>   Continuity
+    <strong>C.</strong>   Closure
+    <strong>D.</strong>   Pragnanz
 
 Selective attention - What cognitive process involves focusing mental resources on a specific stimulus while ignoring others?
-    A. Selective attention
-    B. Divided attention
-    C. Working memory
-    D. Encoding
+    <strong>A.</strong>  Selective attention
+    <strong>B.</strong>   Divided attention
+    <strong>C.</strong>   Working memory
+    <strong>D.</strong>   Encoding
 
 Divided attention - What cognitive ability allows an individual to process multiple sources of information or perform multiple tasks simultaneously?
-    A. Selective attention
-    B. Divided attention
-    C. Working memory
-    D. Encoding
+    <strong>A.</strong>  Selective attention
+    <strong>B.</strong>   Divided attention
+    <strong>C.</strong>   Working memory
+    <strong>D.</strong>   Encoding
 
 Cognitive Development - What is the process by which children and adolescents acquire and refine intellectual abilities such as reasoning, problem-solving, and memory?
-    A. Cognitive development
-    B. Intellectual functioning
-    C. Working memory
-    D. Encoding
+    <strong>A.</strong>  Cognitive development
+    <strong>B.</strong>   Intellectual functioning
+    <strong>C.</strong>   Working memory
+    <strong>D.</strong>   Encoding
 
 Intellectual Functioning - What term encompasses a range of cognitive abilities, including reasoning, problem-solving, planning, and abstract thinking?
-    A. Cognitive development
-    B. Intellectual functioning
-    C. Working memory
-    D. Encoding
+    <strong>A.</strong>  Cognitive development
+    <strong>B.</strong>   Intellectual functioning
+    <strong>C.</strong>   Working memory
+    <strong>D.</strong>   Encoding
 
 Beta waves - What type of brain waves, detected by EEG, are associated with alertness, active thinking, and concentration?
-    A. Alpha waves
-    B. Beta waves
-    C. Theta waves
-    D. Delta waves
+    <strong>A.</strong>  Alpha waves
+    <strong>B.</strong>   Beta waves
+    <strong>C.</strong>   Theta waves
+    <strong>D.</strong>   Delta waves
 
 Alpha waves - What type of brain waves, detected by EEG, are associated with relaxed wakefulness and calmness?
-    A. Alpha waves
-    B. Beta waves
-    C. Theta waves
-    D. Delta waves
+    <strong>A.</strong>  Alpha waves
+    <strong>B.</strong>   Beta waves
+    <strong>C.</strong>   Theta waves
+    <strong>D.</strong>   Delta waves
 
 Theta waves - What type of brain waves, detected by EEG, are associated with light sleep, drowsiness, and deep relaxation?
-    A. Alpha waves
-    B. Beta waves
-    C. Theta waves
-    D. Delta waves
+    <strong>A.</strong>  Alpha waves
+    <strong>B.</strong>   Beta waves
+    <strong>C.</strong>   Theta waves
+    <strong>D.</strong>   Delta waves
 
 Delta waves - What type of brain waves, detected by EEG, are associated with deep, restorative sleep (slow-wave sleep)?
-    A. Alpha waves
-    B. Beta waves
-    C. Theta waves
-    D. Delta waves
+    <strong>A.</strong>  Alpha waves
+    <strong>B.</strong>   Beta waves
+    <strong>C.</strong>   Theta waves
+    <strong>D.</strong>   Delta waves
 
 N1 - What is the initial and lightest stage of non-REM sleep, characterized by slow eye movements and easy arousal?
-    A. N1
-    B. N2
-    C. N3
-    D. REM sleep
+    <strong>A.</strong>  N1
+    <strong>B.</strong>   N2
+    <strong>C.</strong>   N3
+    <strong>D.</strong>   REM sleep
 
 N2 - What is the stage of non-REM sleep characterized by the presence of sleep spindles and K-complexes on EEG?
-    A. N1
-    B. N2
-    C. N3
-    D. REM sleep
+    <strong>A.</strong>  N1
+    <strong>B.</strong>   N2
+    <strong>C.</strong>   N3
+    <strong>D.</strong>   REM sleep
 
 N3 - What is the deepest stage of non-REM sleep, important for physical restoration and memory consolidation?
-    A. N1
-    B. N2
-    C. N3
-    D. REM sleep
+    <strong>A.</strong>  N1
+    <strong>B.</strong>   N2
+    <strong>C.</strong>   N3
+    <strong>D.</strong>   REM sleep
 
 REM sleep - What sleep stage is characterized by rapid eye movements, vivid dreaming, and increased brain activity similar to wakefulness?
-    A. N1
-    B. N2
-    C. N3
-    D. REM sleep
+    <strong>A.</strong>  N1
+    <strong>B.</strong>   N2
+    <strong>C.</strong>   N3
+    <strong>D.</strong>   REM sleep
 
 Stimulants - What class of psychoactive drugs increases central nervous system activity, alertness, and energy (e.g., caffeine, amphetamines)?
-    A. Stimulants
-    B. Depressants
-    C. Hallucinogens
-    D. Opioids
+    <strong>A.</strong>  Stimulants
+    <strong>B.</strong>   Depressants
+    <strong>C.</strong>   Hallucinogens
+    <strong>D.</strong>   Opioids
 
 Depressants - What class of psychoactive drugs reduces central nervous system activity, leading to relaxation and decreased anxiety (e.g., alcohol, benzodiazepines)?
-    A. Stimulants
-    B. Depressants
-    C. Hallucinogens
-    D. Opioids
+    <strong>A.</strong>  Stimulants
+    <strong>B.</strong>   Depressants
+    <strong>C.</strong>   Hallucinogens
+    <strong>D.</strong>   Opioids
 
 Hallucinogens - What class of psychoactive drugs alters perception, mood, and cognition, often causing hallucinations (e.g., LSD, psilocybin)?
-    A. Stimulants
-    B. Depressants
-    C. Hallucinogens
-    D. Opioids
+    <strong>A.</strong>  Stimulants
+    <strong>B.</strong>   Depressants
+    <strong>C.</strong>   Hallucinogens
+    <strong>D.</strong>   Opioids
 
 Opioids - What class of drugs relieves pain and induces euphoria by binding to opioid receptors in the brain (e.g., morphine, heroin)?
-    A. Stimulants
-    B. Depressants
-    C. Hallucinogens
-    D. Opioids
+    <strong>A.</strong>  Stimulants
+    <strong>B.</strong>   Depressants
+    <strong>C.</strong>   Hallucinogens
+    <strong>D.</strong>   Opioids
 
 Cannabis - What psychoactive substance can produce stimulant, depressant, and hallucinogenic effects depending on dose and individual response?
-    A. Stimulants
-    B. Depressants
-    C. Hallucinogens
-    D. Cannabis
+    <strong>A.</strong>  Stimulants
+    <strong>B.</strong>   Depressants
+    <strong>C.</strong>   Hallucinogens
+    <strong>D.</strong>   Cannabis
 
 Iconic memory - What is the brief sensory memory that stores visual information for a fraction of a second after the stimulus is removed?
-    A. Iconic memory
-    B. Echoic memory
-    C. Working memory
-    D. Long term memory
+    <strong>A.</strong>  Iconic memory
+    <strong>B.</strong>   Echoic memory
+    <strong>C.</strong>   Working memory
+    <strong>D.</strong>   Long term memory
 
 Echoic memory - What is the brief sensory memory that stores auditory information for several seconds after the sound is heard?
-    A. Iconic memory
-    B. Echoic memory
-    C. Working memory
-    D. Long term memory
+    <strong>A.</strong>  Iconic memory
+    <strong>B.</strong>   Echoic memory
+    <strong>C.</strong>   Working memory
+    <strong>D.</strong>   Long term memory
 
 Working memory - What is the cognitive system responsible for temporarily holding and manipulating information needed for complex tasks?
-    A. Iconic memory
-    B. Echoic memory
-    C. Working memory
-    D. Long term memory
+    <strong>A.</strong>  Iconic memory
+    <strong>B.</strong>   Echoic memory
+    <strong>C.</strong>   Working memory
+    <strong>D.</strong>   Long term memory
 
 Phonological loop - What component of working memory is specialized for storing and rehearsing verbal and auditory information?
-    A. Phonological loop
-    B. Visuospatial sketchpad
-    C. Central executive
-    D. Long term memory
+    <strong>A.</strong>  Phonological loop
+    <strong>B.</strong>   Visuospatial sketchpad
+    <strong>C.</strong>   Central executive
+    <strong>D.</strong>   Long term memory
 
 Visuospatial sketchpad - What component of working memory is specialized for storing and manipulating visual and spatial information?
-    A. Phonological loop
-    B. Visuospatial sketchpad
-    C. Central executive
-    D. Long term memory
+    <strong>A.</strong>  Phonological loop
+    <strong>B.</strong>   Visuospatial sketchpad
+    <strong>C.</strong>   Central executive
+    <strong>D.</strong>   Long term memory
 
 Central executive - What component of working memory coordinates attention and integrates information from the phonological loop and visuospatial sketchpad?
-    A. Phonological loop
-    B. Visuospatial sketchpad
-    C. Central executive
-    D. Long term memory
+    <strong>A.</strong>  Phonological loop
+    <strong>B.</strong>   Visuospatial sketchpad
+    <strong>C.</strong>   Central executive
+    <strong>D.</strong>   Long term memory
 
 Long term memory - What is the system for storing information over extended periods, potentially for a lifetime?
-    A. Iconic memory
-    B. Echoic memory
-    C. Working memory
-    D. Long term memory
+    <strong>A.</strong>  Iconic memory
+    <strong>B.</strong>   Echoic memory
+    <strong>C.</strong>   Working memory
+    <strong>D.</strong>   Long term memory
 
 Encoding - What is the process of transforming sensory input into a format that can be stored in long-term memory?
-    A. Encoding
-    B. Storage
-    C. Retrieval
-    D. Forgetting
+    <strong>A.</strong>  Encoding
+    <strong>B.</strong>   Storage
+    <strong>C.</strong>   Retrieval
+    <strong>D.</strong>   Forgetting
 
 Storage - What is the process of maintaining encoded information in the brain over time?
-    A. Encoding
-    B. Storage
-    C. Retrieval
-    D. Forgetting
+    <strong>A.</strong>  Encoding
+    <strong>B.</strong>   Storage
+    <strong>C.</strong>   Retrieval
+    <strong>D.</strong>   Forgetting
 
 Retrieval - What is the process of accessing stored information from long-term memory and bringing it into conscious awareness?
-    A. Encoding
-    B. Storage
-    C. Retrieval
-    D. Forgetting
+    <strong>A.</strong>  Encoding
+    <strong>B.</strong>   Storage
+    <strong>C.</strong>   Retrieval
+    <strong>D.</strong>   Forgetting
 
 Forgetting - What is the inability to recall information that was previously encoded and stored in memory?
-    A. Encoding
-    B. Storage
-    C. Retrieval
-    D. Forgetting
+    <strong>A.</strong>  Encoding
+    <strong>B.</strong>   Storage
+    <strong>C.</strong>   Retrieval
+    <strong>D.</strong>   Forgetting
 
 Physiological arousal - What is the activation of the autonomic nervous system in response to an emotional stimulus, resulting in physical changes such as increased heart rate?
-    A. Physiological arousal
-    B. Cognitive appraisal
-    C. Behavioral expression
-    D. Emotional regulation
+    <strong>A.</strong>  Physiological arousal
+    <strong>B.</strong>   Cognitive appraisal
+    <strong>C.</strong>   Behavioral expression
+    <strong>D.</strong>   Emotional regulation
 
 Cognitive appraisal - What is the mental process of evaluating and interpreting a situation to determine its emotional significance?
-    A. Physiological arousal
-    B. Cognitive appraisal
-    C. Behavioral expression
-    D. Emotional regulation
+    <strong>A.</strong>  Physiological arousal
+    <strong>B.</strong>   Cognitive appraisal
+    <strong>C.</strong>   Behavioral expression
+    <strong>D.</strong>   Emotional regulation
 
 Behavioral expression - What is the outward display of emotions through observable actions, facial expressions, and body language?
-    A. Physiological arousal
-    B. Cognitive appraisal
-    C. Behavioral expression
-    D. Emotional regulation
+    <strong>A.</strong>  Physiological arousal
+    <strong>B.</strong>   Cognitive appraisal
+    <strong>C.</strong>   Behavioral expression
+    <strong>D.</strong>   Emotional regulation
 
 Happiness - What is a positive emotional state characterized by feelings of joy, satisfaction, and well-being?
-    A. Happiness
-    B. Sadness
-    C. Fear
-    D. Anger
+    <strong>A.</strong>  Happiness
+    <strong>B.</strong>   Sadness
+    <strong>C.</strong>   Fear
+    <strong>D.</strong>   Anger
 
 Sadness - What is a negative emotional state characterized by feelings of loss, disappointment, or helplessness?
-    A. Happiness
-    B. Sadness
-    C. Fear
-    D. Anger
+    <strong>A.</strong>  Happiness
+    <strong>B.</strong>   Sadness
+    <strong>C.</strong>   Fear
+    <strong>D.</strong>   Anger
 
 Fear - What is an emotional response to perceived threats or danger, often triggering a fight-or-flight reaction?
-    A. Happiness
-    B. Sadness
-    C. Fear
-    D. Anger
+    <strong>A.</strong>  Happiness
+    <strong>B.</strong>   Sadness
+    <strong>C.</strong>   Fear
+    <strong>D.</strong>   Anger
 
 Anger - What is an emotional response to perceived injustice, frustration, or provocation, often resulting in aggressive behavior?
-    A. Happiness
-    B. Sadness
-    C. Fear
-    D. Anger
+    <strong>A.</strong>  Happiness
+    <strong>B.</strong>   Sadness
+    <strong>C.</strong>   Fear
+    <strong>D.</strong>   Anger
 
 Disgust - What is an emotional response to stimuli considered offensive, repulsive, or contaminated?
-    A. Disgust
-    B. Surprise
-    C. Fear
-    D. Anger
+    <strong>A.</strong>  Disgust
+    <strong>B.</strong>   Surprise
+    <strong>C.</strong>   Fear
+    <strong>D.</strong>   Anger
 
 Surprise - What is an emotional response to unexpected or novel events that violate expectations?
-    A. Disgust
-    B. Surprise
-    C. Fear
-    D. Anger
+    <strong>A.</strong>  Disgust
+    <strong>B.</strong>   Surprise
+    <strong>C.</strong>   Fear
+    <strong>D.</strong>   Anger
 
 Stressors - What are external or internal events and situations that trigger the body’s stress response?
-    A. Stressors
-    B. Daily hassles
-    C. Catastrophic events
-    D. Chronic stressors
+    <strong>A.</strong>  Stressors
+    <strong>B.</strong>   Daily hassles
+    <strong>C.</strong>   Catastrophic events
+    <strong>D.</strong>   Chronic stressors
 
 Daily hassles - What are minor, everyday irritations and annoyances (e.g., traffic jams, work deadlines) that can accumulate and contribute to stress?
-    A. Stressors
-    B. Daily hassles
-    C. Catastrophic events
-    D. Chronic stressors
+    <strong>A.</strong>  Stressors
+    <strong>B.</strong>   Daily hassles
+    <strong>C.</strong>   Catastrophic events
+    <strong>D.</strong>   Chronic stressors
 
 Catastrophic events - What are large-scale, traumatic occurrences (e.g., natural disasters, terrorist attacks) that can cause intense psychological stress?
-    A. Stressors
-    B. Daily hassles
-    C. Catastrophic events
-    D. Chronic stressors
+    <strong>A.</strong>  Stressors
+    <strong>B.</strong>   Daily hassles
+    <strong>C.</strong>   Catastrophic events
+    <strong>D.</strong>   Chronic stressors
 
 Chronic stressors - What are ongoing, persistent sources of stress (e.g., financial difficulties, caregiving responsibilities) that can negatively impact health over time?
-    A. Stressors
-    B. Daily hassles
-    C. Catastrophic events
-    D. Chronic stressors
+    <strong>A.</strong>  Stressors
+    <strong>B.</strong>   Daily hassles
+    <strong>C.</strong>   Catastrophic events
+    <strong>D.</strong>   Chronic stressors
 
 Environmental stressors - What are external factors in the physical environment (e.g., noise, pollution) that can increase stress levels?
-    A. Stressors
-    B. Daily hassles
-    C. Catastrophic events
-    D. Environmental stressors
+    <strong>A.</strong>  Stressors
+    <strong>B.</strong>   Daily hassles
+    <strong>C.</strong>   Catastrophic events
+    <strong>D.</strong>   Environmental stressors
 
 Broca's area - What region of the frontal lobe is responsible for language production and speech articulation?
-    A. Broca's area
-    B. Wernicke's area
-    C. Angular gyrus
-    D. Arcuate fasciculus
+    <strong>A.</strong>  Broca's area
+    <strong>B.</strong>   Wernicke's area
+    <strong>C.</strong>   Angular gyrus
+    <strong>D.</strong>   Arcuate fasciculus
 
 Wernicke's area - What region of the temporal lobe is responsible for language comprehension and processing?
-    A. Broca's area
-    B. Wernicke's area
-    C. Angular gyrus
-    D. Arcuate fasciculus
+    <strong>A.</strong>  Broca's area
+    <strong>B.</strong>   Wernicke's area
+    <strong>C.</strong>   Angular gyrus
+    <strong>D.</strong>   Arcuate fasciculus
 
 arcuate fasciculus - What bundle of nerve fibers connects Broca’s area and Wernicke’s area, facilitating language processing?
-    A. Broca's area
-    B. Wernicke's area
-    C. Angular gyrus
-    D. Arcuate fasciculus
+    <strong>A.</strong>  Broca's area
+    <strong>B.</strong>   Wernicke's area
+    <strong>C.</strong>   Angular gyrus
+    <strong>D.</strong>   Arcuate fasciculus
 
 angular gyrus - What brain region is involved in reading, writing, and the integration of visual and auditory information for language?
-    A. Broca's area
-    B. Wernicke's area
-    C. Angular gyrus
-    D. Arcuate fasciculus
+    <strong>A.</strong>  Broca's area
+    <strong>B.</strong>   Wernicke's area
+    <strong>C.</strong>   Angular gyrus
+    <strong>D.</strong>   Arcuate fasciculus
 
 serotonin - What neurotransmitter is primarily involved in regulating mood, appetite, and sleep, and is implicated in depression and anxiety disorders?
-    A. Dopamine
-    B. Norepinephrine
-    C. Serotonin
-    D. Acetylcholine
+    <strong>A.</strong>  Dopamine
+    <strong>B.</strong>   Norepinephrine
+    <strong>C.</strong>   Serotonin
+    <strong>D.</strong>   Acetylcholine
 
 paranoid personality disorder - What personality disorder is characterized by pervasive distrust and suspicion of others’ motives?
-    A. Paranoid personality disorder
-    B. Schizoid personality disorder
-    C. Schizotypal personality disorder
-    D. Antisocial personality disorder
+    <strong>A.</strong>  Paranoid personality disorder
+    <strong>B.</strong>   Schizoid personality disorder
+    <strong>C.</strong>   Schizotypal personality disorder
+    <strong>D.</strong>   Antisocial personality disorder
 
 schizoid personality disorder - What personality disorder involves a persistent pattern of detachment from social relationships and limited emotional expression?
-    A. Paranoid personality disorder
-    B. Schizoid personality disorder
-    C. Schizotypal personality disorder
-    D. Antisocial personality disorder
+    <strong>A.</strong>  Paranoid personality disorder
+    <strong>B.</strong>   Schizoid personality disorder
+    <strong>C.</strong>   Schizotypal personality disorder
+    <strong>D.</strong>   Antisocial personality disorder
 
 schizotypal personality disorder - What personality disorder is marked by eccentric behavior, cognitive distortions, and acute discomfort in close relationships?
-    A. Paranoid personality disorder
-    B. Schizoid personality disorder
-    C. Schizotypal personality disorder
-    D. Antisocial personality disorder
+    <strong>A.</strong>  Paranoid personality disorder
+    <strong>B.</strong>   Schizoid personality disorder
+    <strong>C.</strong>   Schizotypal personality disorder
+    <strong>D.</strong>   Antisocial personality disorder
 
 Antisocial personality disorder - What personality disorder is characterized by a disregard for the rights of others, impulsivity, and lack of remorse?
-    A. Paranoid personality disorder
-    B. Schizoid personality disorder
-    C. Schizotypal personality disorder
-    D. Antisocial personality disorder
+    <strong>A.</strong>  Paranoid personality disorder
+    <strong>B.</strong>   Schizoid personality disorder
+    <strong>C.</strong>   Schizotypal personality disorder
+    <strong>D.</strong>   Antisocial personality disorder
 
 Borderline personality disorder - What personality disorder involves instability in interpersonal relationships, self-image, and emotional regulation?
-    A. Borderline personality disorder
-    B. Histrionic personality disorder
-    C. Narcissistic personality disorder
-    D. Avoidant personality disorder
+    <strong>A.</strong>  Borderline personality disorder
+    <strong>B.</strong>   Histrionic personality disorder
+    <strong>C.</strong>   Narcissistic personality disorder
+    <strong>D.</strong>   Avoidant personality disorder
 
 Histrionic personality disorder - What personality disorder is characterized by excessive emotionality, attention-seeking, and a need for approval?
-    A. Borderline personality disorder
-    B. Histrionic personality disorder
-    C. Narcissistic personality disorder
-    D. Avoidant personality disorder
+    <strong>A.</strong>  Borderline personality disorder
+    <strong>B.</strong>   Histrionic personality disorder
+    <strong>C.</strong>   Narcissistic personality disorder
+    <strong>D.</strong>   Avoidant personality disorder
 
 Narcissistic personality disorder - What personality disorder involves a grandiose sense of self-importance, need for admiration, and lack of empathy?
-    A. Borderline personality disorder
-    B. Histrionic personality disorder
-    C. Narcissistic personality disorder
-    D. Avoidant personality disorder
+    <strong>A.</strong>  Borderline personality disorder
+    <strong>B.</strong>   Histrionic personality disorder
+    <strong>C.</strong>   Narcissistic personality disorder
+    <strong>D.</strong>   Avoidant personality disorder
 
 Avoidant personality disorder - What personality disorder is characterized by social inhibition, feelings of inadequacy, and hypersensitivity to negative evaluation?
-    A. Borderline personality disorder
-    B. Histrionic personality disorder
-    C. Narcissistic personality disorder
-    D. Avoidant personality disorder
+    <strong>A.</strong>  Borderline personality disorder
+    <strong>B.</strong>   Histrionic personality disorder
+    <strong>C.</strong>   Narcissistic personality disorder
+    <strong>D.</strong>   Avoidant personality disorder
 
 Dependent personality disorder - What personality disorder involves an excessive need to be cared for, leading to submissive and clinging behavior?
-    A. Dependent personality disorder
-    B. Avoidant personality disorder
-    C. Obsessive-compulsive personality disorder
-    D. Borderline personality disorder
+    <strong>A.</strong>  Dependent personality disorder
+    <strong>B.</strong>   Avoidant personality disorder
+    <strong>C.</strong>   Obsessive-compulsive personality disorder
+    <strong>D.</strong>   Borderline personality disorder
 
 Obsessive-compulsive personality disorder - What personality disorder is marked by preoccupation with orderliness, perfectionism, and control at the expense of flexibility?
-    A. Dependent personality disorder
-    B. Avoidant personality disorder
-    C. Obsessive-compulsive personality disorder
-    D. Borderline personality disorder
+    <strong>A.</strong>  Dependent personality disorder
+    <strong>B.</strong>   Avoidant personality disorder
+    <strong>C.</strong>   Obsessive-compulsive personality disorder
+    <strong>D.</strong>   Borderline personality disorder
 
 Schizophrenia - What severe mental disorder is characterized by disturbances in thought, perception, emotion, and behavior, including hallucinations and delusions?
-    A. Autism
-    B. ADHD
-    C. PTSD
-    D. Schizophrenia
+    <strong>A.</strong>  Autism
+    <strong>B.</strong>   ADHD
+    <strong>C.</strong>   PTSD
+    <strong>D.</strong>   Schizophrenia
 
 Autism - What neurodevelopmental disorder is characterized by deficits in social communication, restricted interests, and repetitive behaviors?
-    A. Autism
-    B. ADHD
-    C. PTSD
-    D. Schizophrenia
+    <strong>A.</strong>  Autism
+    <strong>B.</strong>   ADHD
+    <strong>C.</strong>   PTSD
+    <strong>D.</strong>   Schizophrenia
 
 ADHD - What neurodevelopmental disorder is characterized by persistent patterns of inattention, hyperactivity, and impulsivity?
-    A. Autism
-    B. ADHD
-    C. PTSD
-    D. Schizophrenia
+    <strong>A.</strong>  Autism
+    <strong>B.</strong>   ADHD
+    <strong>C.</strong>   PTSD
+    <strong>D.</strong>   Schizophrenia
 
 PTSD - What mental health disorder develops after exposure to a traumatic event and is characterized by intrusive memories, avoidance, and hyperarousal?
-    A. Autism
-    B. ADHD
-    C. PTSD
-    D. Schizophrenia
+    <strong>A.</strong>  Autism
+    <strong>B.</strong>   ADHD
+    <strong>C.</strong>   PTSD
+    <strong>D.</strong>   Schizophrenia
 
 Acute stress - What short-term psychological condition occurs in response to a traumatic event, with symptoms similar to PTSD but lasting less than one month?
-    A. Acute stress
-    B. PTSD
-    C. GAD
-    D. Social anxiety
+    <strong>A.</strong>  Acute stress
+    <strong>B.</strong>   PTSD
+    <strong>C.</strong>   GAD
+    <strong>D.</strong>   Social anxiety
 
 GAD - What anxiety disorder is characterized by excessive, uncontrollable worry about multiple aspects of daily life, often accompanied by physical symptoms?
-    A. Acute stress
-    B. PTSD
-    C. GAD
-    D. Social anxiety
+    <strong>A.</strong>  Acute stress
+    <strong>B.</strong>   PTSD
+    <strong>C.</strong>   GAD
+    <strong>D.</strong>   Social anxiety
 
 Social anxiety - What anxiety disorder involves intense fear and avoidance of social situations due to concerns about being judged or embarrassed?
-    A. Acute stress
-    B. PTSD
-    C. GAD
-    D. Social anxiety
+    <strong>A.</strong>  Acute stress
+    <strong>B.</strong>   PTSD
+    <strong>C.</strong>   GAD
+    <strong>D.</strong>   Social anxiety
 
 Specific phobias - What anxiety disorders involve irrational and persistent fear of specific objects or situations, leading to avoidance behavior?
-    A. Specific phobias
-    B. Agoraphobia
-    C. OCD
-    D. Body dysmorphic disorder
+    <strong>A.</strong>  Specific phobias
+    <strong>B.</strong>   Agoraphobia
+    <strong>C.</strong>   OCD
+    <strong>D.</strong>   Body dysmorphic disorder
 
 Agoraphobia - What anxiety disorder is characterized by fear of situations where escape might be difficult or help unavailable, often resulting in avoidance of public places?
-    A. Specific phobias
-    B. Agoraphobia
-    C. OCD
-    D. Body dysmorphic disorder
+    <strong>A.</strong>  Specific phobias
+    <strong>B.</strong>   Agoraphobia
+    <strong>C.</strong>   OCD
+    <strong>D.</strong>   Body dysmorphic disorder
 
 OCD - What disorder involves recurrent, intrusive thoughts (obsessions) and repetitive behaviors (compulsions) performed to reduce anxiety?
-    A. Specific phobias
-    B. Agoraphobia
-    C. OCD
-    D. Body dysmorphic disorder
+    <strong>A.</strong>  Specific phobias
+    <strong>B.</strong>   Agoraphobia
+    <strong>C.</strong>   OCD
+    <strong>D.</strong>   Body dysmorphic disorder
 
 Body dysmorphic disorder - What mental disorder is characterized by obsessive preoccupation with perceived defects or flaws in physical appearance?
-    A. Specific phobias
-    B. Agoraphobia
-    C. OCD
-    D. Body dysmorphic disorder
+    <strong>A.</strong>  Specific phobias
+    <strong>B.</strong>   Agoraphobia
+    <strong>C.</strong>   OCD
+    <strong>D.</strong>   Body dysmorphic disorder
 
 Hoarding disorder - What mental disorder involves persistent difficulty discarding possessions, resulting in excessive accumulation and clutter?
-    A. Hoarding disorder
-    B. Somatic symptom disorder
-    C. Illness anxiety disorder
-    D. Conversion disorder
+    <strong>A.</strong>  Hoarding disorder
+    <strong>B.</strong>   Somatic symptom disorder
+    <strong>C.</strong>   Illness anxiety disorder
+    <strong>D.</strong>   Conversion disorder
 
 Somatic symptom disorder - What mental disorder involves experiencing physical symptoms that cause significant distress or impairment, without a clear medical cause?
-    A. Hoarding disorder
-    B. Somatic symptom disorder
-    C. Illness anxiety disorder
-    D. Conversion disorder
+    <strong>A.</strong>  Hoarding disorder
+    <strong>B.</strong>   Somatic symptom disorder
+    <strong>C.</strong>   Illness anxiety disorder
+    <strong>D.</strong>   Conversion disorder
 
 Illness anxiety disorder - What mental disorder is characterized by excessive worry about having or acquiring a serious illness, despite minimal or no physical symptoms?
-    A. Hoarding disorder
-    B. Somatic symptom disorder
-    C. Illness anxiety disorder
-    D. Conversion disorder
+    <strong>A.</strong>  Hoarding disorder
+    <strong>B.</strong>   Somatic symptom disorder
+    <strong>C.</strong>   Illness anxiety disorder
+    <strong>D.</strong>   Conversion disorder
 
 Conversion disorder - What mental disorder involves neurological symptoms (e.g., paralysis, tremors) that cannot be explained by medical evaluation and are linked to psychological factors?
-    A. Hoarding disorder
-    B. Somatic symptom disorder
-    C. Illness anxiety disorder
-    D. Conversion disorder
+    <strong>A.</strong>  Hoarding disorder
+    <strong>B.</strong>   Somatic symptom disorder
+    <strong>C.</strong>   Illness anxiety disorder
+    <strong>D.</strong>   Conversion disorder
 
 Factitious disorder - What mental disorder involves intentionally producing or feigning physical or psychological symptoms to assume the sick role?
-    A. Hoarding disorder
-    B. Somatic symptom disorder
-    C. Factitious disorder
-    D. Conversion disorder
+    <strong>A.</strong>  Hoarding disorder
+    <strong>B.</strong>   Somatic symptom disorder
+    <strong>C.</strong>   Factitious disorder
+    <strong>D.</strong>   Conversion disorder
 
 Intrinsic motivation - What type of motivation involves engaging in a behavior because it is inherently satisfying or enjoyable?
-    A. Intrinsic motivation
-    B. Extrinsic motivation
-    C. Maslow's hierarchy of needs
-    D. Cognitive dissonance
+    <strong>A.</strong>  Intrinsic motivation
+    <strong>B.</strong>   Extrinsic motivation
+    <strong>C.</strong>   Maslow's hierarchy of needs
+    <strong>D.</strong>   Cognitive dissonance
 
 Extrinsic motivation - What type of motivation involves engaging in a behavior to earn external rewards or avoid punishments?
-    A. Intrinsic motivation
-    B. Extrinsic motivation
-    C. Maslow's hierarchy of needs
-    D. Cognitive dissonance
+    <strong>A.</strong>  Intrinsic motivation
+    <strong>B.</strong>   Extrinsic motivation
+    <strong>C.</strong>   Maslow's hierarchy of needs
+    <strong>D.</strong>   Cognitive dissonance
 
 Maslow's hierarchy of needs - What motivational theory proposes that human needs are arranged in a hierarchy, from physiological needs to self-actualization?
-    A. Intrinsic motivation
-    B. Extrinsic motivation
-    C. Maslow's hierarchy of needs
-    D. Cognitive dissonance
+    <strong>A.</strong>  Intrinsic motivation
+    <strong>B.</strong>   Extrinsic motivation
+    <strong>C.</strong>   Maslow's hierarchy of needs
+    <strong>D.</strong>   Cognitive dissonance
 
 Cognitive (attitudE)- What component of attitude refers to the beliefs, thoughts, and knowledge one has about an object or situation?
-    A. Cognitive
-    B. Affective
-    C. Behavioral
-    D. Motivational
+    <strong>A.</strong>  Cognitive
+    <strong>B.</strong>   Affective
+    <strong>C.</strong>   Behavioral
+    <strong>D.</strong>   Motivational
 
 Affective (attitudE)- What component of attitude involves the emotional responses or feelings toward an object or situation?
-    A. Cognitive
-    B. Affective
-    C. Behavioral
-    D. Motivational
+    <strong>A.</strong>  Cognitive
+    <strong>B.</strong>   Affective
+    <strong>C.</strong>   Behavioral
+    <strong>D.</strong>   Motivational
 
 Behavioral (attitudE)- What component of attitude refers to the actions or observable behaviors associated with an attitude?
-    A. Cognitive
-    B. Affective
-    C. Behavioral
-    D. Motivational
+    <strong>A.</strong>  Cognitive
+    <strong>B.</strong>   Affective
+    <strong>C.</strong>   Behavioral
+    <strong>D.</strong>   Motivational
 
 Cognitive dissonance - What psychological phenomenon occurs when an individual experiences discomfort due to holding conflicting beliefs or attitudes, often leading to attitude change?
-    A. Cognitive dissonance
-    B. Attribution theory
-    C. Self serving bias
-    D. Social identity
+    <strong>A.</strong>  Cognitive dissonance
+    <strong>B.</strong>   Attribution theory
+    <strong>C.</strong>   Self serving bias
+    <strong>D.</strong>   Social identity
 
 Social facilitation - What phenomenon describes improved performance on simple or well-learned tasks in the presence of others?
-    A. Social facilitation
-    B. Social loafing
-    C. Group polarization
-    D. Groupthink
+    <strong>A.</strong>  Social facilitation
+    <strong>B.</strong>   Social loafing
+    <strong>C.</strong>   Group polarization
+    <strong>D.</strong>   Groupthink
 
 Deindividuation - What psychological state involves a loss of self-awareness and personal responsibility in group settings, often leading to impulsive behavior?
-    A. Social facilitation
-    B. Deindividuation
-    C. Group polarization
-    D. Groupthink
+    <strong>A.</strong>  Social facilitation
+    <strong>B.</strong>   Deindividuation
+    <strong>C.</strong>   Group polarization
+    <strong>D.</strong>   Groupthink
 
 Bystander effect - What social phenomenon describes the decreased likelihood of helping a victim when other people are present?
-    A. Social facilitation
-    B. Bystander effect
-    C. Group polarization
-    D. Groupthink
+    <strong>A.</strong>  Social facilitation
+    <strong>B.</strong>   Bystander effect
+    <strong>C.</strong>   Group polarization
+    <strong>D.</strong>   Groupthink
 
 Social loafing - What phenomenon describes the tendency for individuals to exert less effort when working in a group compared to working alone?
-    A. Social facilitation
-    B. Social loafing
-    C. Group polarization
-    D. Groupthink
+    <strong>A.</strong>  Social facilitation
+    <strong>B.</strong>   Social loafing
+    <strong>C.</strong>   Group polarization
+    <strong>D.</strong>   Groupthink
 
 Group polarization - What phenomenon describes the tendency for group discussions to strengthen the prevailing attitudes and opinions of group members?
-    A. Social facilitation
-    B. Social loafing
-    C. Group polarization
-    D. Groupthink
+    <strong>A.</strong>  Social facilitation
+    <strong>B.</strong>   Social loafing
+    <strong>C.</strong>   Group polarization
+    <strong>D.</strong>   Groupthink
 
 Groupthink - What psychological phenomenon occurs when the desire for group harmony and consensus leads to poor decision-making and suppression of dissent?
-    A. Social facilitation
-    B. Social loafing
-    C. Group polarization
-    D. Groupthink
+    <strong>A.</strong>  Social facilitation
+    <strong>B.</strong>   Social loafing
+    <strong>C.</strong>   Group polarization
+    <strong>D.</strong>   Groupthink
 
 Habituation - What form of non-associative learning involves a decrease in response to a repeated, non-threatening stimulus?
-    A. Habituation
-    B. Dishabituation
-    C. Sensitization
-    D. Extinction
+    <strong>A.</strong>  Habituation
+    <strong>B.</strong>   Dishabituation
+    <strong>C.</strong>   Sensitization
+    <strong>D.</strong>   Extinction
 
 Dishabituation - What phenomenon occurs when a previously habituated response is restored due to the presentation of a novel stimulus?
-    A. Habituation
-    B. Dishabituation
-    C. Sensitization
-    D. Extinction
+    <strong>A.</strong>  Habituation
+    <strong>B.</strong>   Dishabituation
+    <strong>C.</strong>   Sensitization
+    <strong>D.</strong>   Extinction
 
 Unconditioned stimulus - What stimulus naturally and automatically triggers an unlearned response in classical conditioning?
-    A. Unconditioned stimulus
-    B. Conditioned stimulus
-    C. Conditioned response
-    D. Extinction
+    <strong>A.</strong>  Unconditioned stimulus
+    <strong>B.</strong>   Conditioned stimulus
+    <strong>C.</strong>   Conditioned response
+    <strong>D.</strong>   Extinction
 
 Conditioned stimulus - What previously neutral stimulus, after being paired with an unconditioned stimulus, elicits a learned response in classical conditioning?
-    A. Unconditioned stimulus
-    B. Conditioned stimulus
-    C. Conditioned response
-    D. Extinction
+    <strong>A.</strong>  Unconditioned stimulus
+    <strong>B.</strong>   Conditioned stimulus
+    <strong>C.</strong>   Conditioned response
+    <strong>D.</strong>   Extinction
 
 Conditioned response - What learned response is elicited by a conditioned stimulus after classical conditioning has occurred?
-    A. Unconditioned stimulus
-    B. Conditioned stimulus
-    C. Conditioned response
-    D. Extinction
+    <strong>A.</strong>  Unconditioned stimulus
+    <strong>B.</strong>   Conditioned stimulus
+    <strong>C.</strong>   Conditioned response
+    <strong>D.</strong>   Extinction
 
 Extinction - What process involves the gradual weakening and disappearance of a conditioned response when the conditioned stimulus is repeatedly presented without the unconditioned stimulus?
-    A. Extinction
-    B. Spontaneous recovery
-    C. Generalization
-    D. Discrimination
+    <strong>A.</strong>  Extinction
+    <strong>B.</strong>   Spontaneous recovery
+    <strong>C.</strong>   Generalization
+    <strong>D.</strong>   Discrimination
 
 Spontaneous recovery - What phenomenon describes the reappearance of a previously extinguished conditioned response after a rest period?
-    A. Extinction
-    B. Spontaneous recovery
-    C. Generalization
-    D. Discrimination
+    <strong>A.</strong>  Extinction
+    <strong>B.</strong>   Spontaneous recovery
+    <strong>C.</strong>   Generalization
+    <strong>D.</strong>   Discrimination
 
 Generalization - What process involves responding to stimuli that are similar, but not identical, to the conditioned stimulus?
-    A. Extinction
-    B. Spontaneous recovery
-    C. Generalization
-    D. Discrimination
+    <strong>A.</strong>  Extinction
+    <strong>B.</strong>   Spontaneous recovery
+    <strong>C.</strong>   Generalization
+    <strong>D.</strong>   Discrimination
 
 Discrimination (learning) - What process involves learning to distinguish between different stimuli and respond only to the conditioned stimulus?
-    A. Extinction
-    B. Spontaneous recovery
-    C. Generalization
-    D. Discrimination
+    <strong>A.</strong>  Extinction
+    <strong>B.</strong>   Spontaneous recovery
+    <strong>C.</strong>   Generalization
+    <strong>D.</strong>   Discrimination
 
 Reinforcement - What consequence increases the likelihood that a behavior will be repeated in the future?
-    A. Reinforcement
-    B. Punishment
-    C. Extinction
-    D. Generalization
+    <strong>A.</strong>  Reinforcement
+    <strong>B.</strong>   Punishment
+    <strong>C.</strong>   Extinction
+    <strong>D.</strong>   Generalization
 
 Punishment - What consequence decreases the likelihood that a behavior will be repeated in the future?
-    A. Reinforcement
-    B. Punishment
-    C. Extinction
-    D. Generalization
+    <strong>A.</strong>  Reinforcement
+    <strong>B.</strong>   Punishment
+    <strong>C.</strong>   Extinction
+    <strong>D.</strong>   Generalization
 
 Positive reinforcement - What process involves presenting a pleasant stimulus after a behavior to increase its frequency?
-    A. Positive reinforcement
-    B. Negative reinforcement
-    C. Positive punishment
-    D. Negative punishment
+    <strong>A.</strong>  Positive reinforcement
+    <strong>B.</strong>   Negative reinforcement
+    <strong>C.</strong>   Positive punishment
+    <strong>D.</strong>   Negative punishment
 
 Negative reinforcement - What process involves removing an unpleasant stimulus after a behavior to increase its frequency?
-    A. Positive reinforcement
-    B. Negative reinforcement
-    C. Positive punishment
-    D. Negative punishment
+    <strong>A.</strong>  Positive reinforcement
+    <strong>B.</strong>   Negative reinforcement
+    <strong>C.</strong>   Positive punishment
+    <strong>D.</strong>   Negative punishment
 
 Positive punishment - What process involves presenting an unpleasant stimulus after a behavior to decrease its frequency?
-    A. Positive reinforcement
-    B. Negative reinforcement
-    C. Positive punishment
-    D. Negative punishment
+    <strong>A.</strong>  Positive reinforcement
+    <strong>B.</strong>   Negative reinforcement
+    <strong>C.</strong>   Positive punishment
+    <strong>D.</strong>   Negative punishment
 
 Negative punishment - What process involves removing a pleasant stimulus after a behavior to decrease its frequency?
-    A. Positive reinforcement
-    B. Negative reinforcement
-    C. Positive punishment
-    D. Negative punishment
+    <strong>A.</strong>  Positive reinforcement
+    <strong>B.</strong>   Negative reinforcement
+    <strong>C.</strong>   Positive punishment
+    <strong>D.</strong>   Negative punishment
 
 Fixed ratio schedule - What reinforcement schedule delivers a reward after a set number of responses?
-    A. Fixed ratio
-    B. Variable ratio
-    C. Fixed interval
-    D. Variable interval
+    <strong>A.</strong>  Fixed ratio
+    <strong>B.</strong>   Variable ratio
+    <strong>C.</strong>   Fixed interval
+    <strong>D.</strong>   Variable interval
 
 Variable ratio schedule - What reinforcement schedule delivers a reward after an unpredictable number of responses?
-    A. Fixed ratio
-    B. Variable ratio
-    C. Fixed interval
-    D. Variable interval
+    <strong>A.</strong>  Fixed ratio
+    <strong>B.</strong>   Variable ratio
+    <strong>C.</strong>   Fixed interval
+    <strong>D.</strong>   Variable interval
 
 Fixed interval schedule - What reinforcement schedule delivers a reward after a fixed amount of time has passed?
-    A. Fixed ratio
-    B. Variable ratio
-    C. Fixed interval
-    D. Variable interval
+    <strong>A.</strong>  Fixed ratio
+    <strong>B.</strong>   Variable ratio
+    <strong>C.</strong>   Fixed interval
+    <strong>D.</strong>   Variable interval
 
 Variable interval schedule - What reinforcement schedule delivers a reward after varying, unpredictable time intervals?
-    A. Fixed ratio
-    B. Variable ratio
-    C. Fixed interval
-    D. Variable interval
+    <strong>A.</strong>  Fixed ratio
+    <strong>B.</strong>   Variable ratio
+    <strong>C.</strong>   Fixed interval
+    <strong>D.</strong>   Variable interval
 
 Observational learning - What type of learning occurs by watching and imitating the behavior of others?
-    A. Observational learning
-    B. Modeling
-    C. Vicarious reinforcement
-    D. Persuasion
+    <strong>A.</strong>  Observational learning
+    <strong>B.</strong>   Modeling
+    <strong>C.</strong>   Vicarious reinforcement
+    <strong>D.</strong>   Persuasion
 
 Modeling - What process involves learning a behavior by observing and replicating the actions of a model?
-    A. Observational learning
-    B. Modeling
-    C. Vicarious reinforcement
-    D. Persuasion
+    <strong>A.</strong>  Observational learning
+    <strong>B.</strong>   Modeling
+    <strong>C.</strong>   Vicarious reinforcement
+    <strong>D.</strong>   Persuasion
 
 Vicarious reinforcement - What process involves learning by observing the consequences of another person’s behavior?
-    A. Observational learning
-    B. Modeling
-    C. Vicarious reinforcement
-    D. Persuasion
+    <strong>A.</strong>  Observational learning
+    <strong>B.</strong>   Modeling
+    <strong>C.</strong>   Vicarious reinforcement
+    <strong>D.</strong>   Persuasion
 
 Persuasion - What process involves changing someone’s attitudes or behaviors through argument, reasoning, or appeal?
-    A. Observational learning
-    B. Modeling
-    C. Vicarious reinforcement
-    D. Persuasion
+    <strong>A.</strong>  Observational learning
+    <strong>B.</strong>   Modeling
+    <strong>C.</strong>   Vicarious reinforcement
+    <strong>D.</strong>   Persuasion
 
 Foot in the door technique - What compliance strategy involves making a small request first, followed by a larger request?
-    A. Foot in the door
-    B. Door in the face
-    C. Low ball
-    D. Persuasion
+    <strong>A.</strong>  Foot in the door
+    <strong>B.</strong>   Door in the face
+    <strong>C.</strong>   Low ball
+    <strong>D.</strong>   Persuasion
 
 Door in the face technique - What compliance strategy involves making a large request that is refused, followed by a smaller, more reasonable request?
-    A. Foot in the door
-    B. Door in the face
-    C. Low ball
-    D. Persuasion
+    <strong>A.</strong>  Foot in the door
+    <strong>B.</strong>   Door in the face
+    <strong>C.</strong>   Low ball
+    <strong>D.</strong>   Persuasion
 
 Low ball technique - What compliance strategy involves obtaining agreement to a request and then increasing the cost or changing the terms after commitment?
-    A. Foot in the door
-    B. Door in the face
-    C. Low ball
-    D. Persuasion
+    <strong>A.</strong>  Foot in the door
+    <strong>B.</strong>   Door in the face
+    <strong>C.</strong>   Low ball
+    <strong>D.</strong>   Persuasion
 
 Conformity - What is the act of changing one’s beliefs or behaviors to match those of a group or social norm?
-    A. Conformity
-    B. Compliance
-    C. Obedience
-    D. Social influence
+    <strong>A.</strong>  Conformity
+    <strong>B.</strong>   Compliance
+    <strong>C.</strong>   Obedience
+    <strong>D.</strong>   Social influence
 
 Compliance - What is the act of agreeing to a request or demand from another person, often in response to social pressure?
-    A. Conformity
-    B. Compliance
-    C. Obedience
-    D. Social influence
+    <strong>A.</strong>  Conformity
+    <strong>B.</strong>   Compliance
+    <strong>C.</strong>   Obedience
+    <strong>D.</strong>   Social influence
 
 Obedience - What is the act of following direct orders or instructions from an authority figure?
-    A. Conformity
-    B. Compliance
-    C. Obedience
-    D. Social influence
+    <strong>A.</strong>  Conformity
+    <strong>B.</strong>   Compliance
+    <strong>C.</strong>   Obedience
+    <strong>D.</strong>   Social influence
 
 Social influence - What is the process by which individuals’ thoughts, feelings, or behaviors are affected by others?
-    A. Conformity
-    B. Compliance
-    C. Obedience
-    D. Social influence
+    <strong>A.</strong>  Conformity
+    <strong>B.</strong>   Compliance
+    <strong>C.</strong>   Obedience
+    <strong>D.</strong>   Social influence
 
 External locus of control - What belief attributes outcomes and events to external factors such as luck, fate, or other people’s actions?
-    A. External locus of control
-    B. Internal locus of control
-    C. Attribution theory
-    D. Self serving bias
+    <strong>A.</strong>  External locus of control
+    <strong>B.</strong>   Internal locus of control
+    <strong>C.</strong>   Attribution theory
+    <strong>D.</strong>   Self serving bias
 
 Internal locus of control - What belief attributes outcomes and events to one’s own actions, abilities, and decisions?
-    A. External locus of control
-    B. Internal locus of control
-    C. Attribution theory
-    D. Self serving bias
+    <strong>A.</strong>  External locus of control
+    <strong>B.</strong>   Internal locus of control
+    <strong>C.</strong>   Attribution theory
+    <strong>D.</strong>   Self serving bias
 
 Attribution theory - What psychological theory explains how people interpret and assign causes to their own and others’ behavior?
-    A. Attribution theory
-    B. Self serving bias
-    C. Fundamental attribution error
-    D. Social identity
+    <strong>A.</strong>  Attribution theory
+    <strong>B.</strong>   Self serving bias
+    <strong>C.</strong>   Fundamental attribution error
+    <strong>D.</strong>   Social identity
 
 Internal attribution - What type of attribution assigns the cause of behavior to personal characteristics, traits, or abilities?
-    A. Internal attribution
-    B. External attribution
-    C. Fundamental attribution error
-    D. Self serving bias
+    <strong>A.</strong>  Internal attribution
+    <strong>B.</strong>   External attribution
+    <strong>C.</strong>   Fundamental attribution error
+    <strong>D.</strong>   Self serving bias
 
 External attribution - What type of attribution assigns the cause of behavior to situational or environmental factors?
-    A. Internal attribution
-    B. External attribution
-    C. Fundamental attribution error
-    D. Self serving bias
+    <strong>A.</strong>  Internal attribution
+    <strong>B.</strong>   External attribution
+    <strong>C.</strong>   Fundamental attribution error
+    <strong>D.</strong>   Self serving bias
 
 Fundamental attribution error - What cognitive bias involves overestimating personal factors and underestimating situational factors when explaining others’ behavior?
-    A. Internal attribution
-    B. External attribution
-    C. Fundamental attribution error
-    D. Self serving bias
+    <strong>A.</strong>  Internal attribution
+    <strong>B.</strong>   External attribution
+    <strong>C.</strong>   Fundamental attribution error
+    <strong>D.</strong>   Self serving bias
 
 Self serving bias - What cognitive bias involves attributing one’s successes to internal factors and failures to external factors?
-    A. Internal attribution
-    B. External attribution
-    C. Fundamental attribution error
-    D. Self serving bias
+    <strong>A.</strong>  Internal attribution
+    <strong>B.</strong>   External attribution
+    <strong>C.</strong>   Fundamental attribution error
+    <strong>D.</strong>   Self serving bias
 
 Looking glass self - What sociological concept describes how individuals form their self-concept based on how they believe others perceive them?
-    A. Looking glass self
-    B. Self fulfilling prophecy
-    C. Social identity
-    D. Attribution theory
+    <strong>A.</strong>  Looking glass self
+    <strong>B.</strong>   Self fulfilling prophecy
+    <strong>C.</strong>   Social identity
+    <strong>D.</strong>   Attribution theory
 
 Self fulfilling prophecy - What phenomenon occurs when an individual’s expectations about another person lead that person to behave in ways that confirm those expectations?
-    A. Looking glass self
-    B. Self fulfilling prophecy
-    C. Social identity
-    D. Attribution theory
+    <strong>A.</strong>  Looking glass self
+    <strong>B.</strong>   Self fulfilling prophecy
+    <strong>C.</strong>   Social identity
+    <strong>D.</strong>   Attribution theory
 
 Discrimination (social) - What is the unjust or prejudicial treatment of individuals based on their group membership, such as race, gender, or age?
-    A. Discrimination
-    B. Stereotypes
-    C. Implicit bias
-    D. Social categorization
+    <strong>A.</strong>  Discrimination
+    <strong>B.</strong>   Stereotypes
+    <strong>C.</strong>   Implicit bias
+    <strong>D.</strong>   Social categorization
 
 Stereotypes - What are oversimplified and generalized beliefs about members of a particular group?
-    A. Discrimination
-    B. Stereotypes
-    C. Implicit bias
-    D. Social categorization
+    <strong>A.</strong>  Discrimination
+    <strong>B.</strong>   Stereotypes
+    <strong>C.</strong>   Implicit bias
+    <strong>D.</strong>   Social categorization
 
 Implicit bias - What are unconscious attitudes or stereotypes that influence perceptions, actions, and decisions without conscious awareness?
-    A. Discrimination
-    B. Stereotypes
-    C. Implicit bias
-    D. Social categorization
+    <strong>A.</strong>  Discrimination
+    <strong>B.</strong>   Stereotypes
+    <strong>C.</strong>   Implicit bias
+    <strong>D.</strong>   Social categorization
 
 Social categorization - What cognitive process involves classifying people into groups based on shared characteristics?
-    A. Discrimination
-    B. Stereotypes
-    C. Implicit bias
-    D. Social categorization
+    <strong>A.</strong>  Discrimination
+    <strong>B.</strong>   Stereotypes
+    <strong>C.</strong>   Implicit bias
+    <strong>D.</strong>   Social categorization
 
 In-group bias - What is the tendency to favor and give preferential treatment to members of one’s own group over outsiders?
-    A. In-group bias
-    B. Out group homogeneity effect
-    C. Out group derogation
-    D. Scapegoating
+    <strong>A.</strong>  In-group bias
+    <strong>B.</strong>   Out group homogeneity effect
+    <strong>C.</strong>   Out group derogation
+    <strong>D.</strong>   Scapegoating
 
 Out group homogeneity effect - What is the perception that members of an out-group are more similar to each other than members of one’s own group?
-    A. In-group bias
-    B. Out group homogeneity effect
-    C. Out group derogation
-    D. Scapegoating
+    <strong>A.</strong>  In-group bias
+    <strong>B.</strong>   Out group homogeneity effect
+    <strong>C.</strong>   Out group derogation
+    <strong>D.</strong>   Scapegoating
 
 Out group derogation - What is the tendency to view members of an out-group in a negative or unfavorable light?
-    A. In-group bias
-    B. Out group homogeneity effect
-    C. Out group derogation
-    D. Scapegoating
+    <strong>A.</strong>  In-group bias
+    <strong>B.</strong>   Out group homogeneity effect
+    <strong>C.</strong>   Out group derogation
+    <strong>D.</strong>   Scapegoating
 
 Scapegoating - What is the practice of unfairly blaming an individual or group for problems or negative outcomes?
-    A. In-group bias
-    B. Out group homogeneity effect
-    C. Out group derogation
-    D. Scapegoating
+    <strong>A.</strong>  In-group bias
+    <strong>B.</strong>   Out group homogeneity effect
+    <strong>C.</strong>   Out group derogation
+    <strong>D.</strong>   Scapegoating
 self presentation - What is the process by which individuals attempt to control the impressions others form of them in social interactions?
-    A. Impression management
-    B. Self presentation
-    C. Nonverbal communication
-    D. Social support
+    <strong>A.</strong>  Impression management
+    <strong>B.</strong>   Self presentation
+    <strong>C.</strong>   Nonverbal communication
+    <strong>D.</strong>   Social support
 
 impression management - What is the conscious or unconscious effort to influence how others perceive one’s self, often through strategic behaviors?
-    A. Impression management
-    B. Self presentation
-    C. Verbal communication
-    D. Social support
+    <strong>A.</strong>  Impression management
+    <strong>B.</strong>   Self presentation
+    <strong>C.</strong>   Verbal communication
+    <strong>D.</strong>   Social support
 
 verbal communication - What is the use of spoken or written language to convey information, ideas, or emotions?
-    A. Verbal communication
-    B. Nonverbal communication
-    C. Aggression
-    D. Attachment
+    <strong>A.</strong>  Verbal communication
+    <strong>B.</strong>   Nonverbal communication
+    <strong>C.</strong>   Aggression
+    <strong>D.</strong>   Attachment
 
 nonverbal communication - What is the transmission of messages or information without words, using gestures, facial expressions, and body language?
-    A. Verbal communication
-    B. Nonverbal communication
-    C. Altruism
-    D. Social support
+    <strong>A.</strong>  Verbal communication
+    <strong>B.</strong>   Nonverbal communication
+    <strong>C.</strong>   Altruism
+    <strong>D.</strong>   Social support
 
 attraction - What is the psychological and physical force that draws individuals toward each other, often leading to relationships?
-    A. Aggression
-    B. Attachment
-    C. Attraction
-    D. Altruism
+    <strong>A.</strong>  Aggression
+    <strong>B.</strong>   Attachment
+    <strong>C.</strong>   Attraction
+    <strong>D.</strong>   Altruism
 
 aggression - What is behavior intended to cause harm or injury to another person, either physically or psychologically?
-    A. Aggression
-    B. Attachment
-    C. Altruism
-    D. Social support
+    <strong>A.</strong>  Aggression
+    <strong>B.</strong>   Attachment
+    <strong>C.</strong>   Altruism
+    <strong>D.</strong>   Social support
 
 attachment - What is the emotional bond that develops between individuals, such as between a child and caregiver?
-    A. Aggression
-    B. Attachment
-    C. Altruism
-    D. Social support
+    <strong>A.</strong>  Aggression
+    <strong>B.</strong>   Attachment
+    <strong>C.</strong>   Altruism
+    <strong>D.</strong>   Social support
 
 altruism - What is selfless behavior intended to benefit another person without expectation of personal gain?
-    A. Aggression
-    B. Attachment
-    C. Altruism
-    D. Social support
+    <strong>A.</strong>  Aggression
+    <strong>B.</strong>   Attachment
+    <strong>C.</strong>   Altruism
+    <strong>D.</strong>   Social support
 
 social support - What is the perception or reality of being cared for, valued, and assisted by others, especially during times of stress?
-    A. Aggression
-    B. Attachment
-    C. Altruism
-    D. Social support
+    <strong>A.</strong>  Aggression
+    <strong>B.</strong>   Attachment
+    <strong>C.</strong>   Altruism
+    <strong>D.</strong>   Social support
 
 cornea - What transparent structure at the front of the eye focuses incoming light onto the lens?
-    A. Cornea
-    B. Lens
-    C. Retina
-    D. Optic nerve
+    <strong>A.</strong>  Cornea
+    <strong>B.</strong>   Lens
+    <strong>C.</strong>   Retina
+    <strong>D.</strong>   Optic nerve
 
 lens - What transparent, flexible structure in the eye changes shape to focus light onto the retina?
-    A. Cornea
-    B. Lens
-    C. Retina
-    D. Optic nerve
+    <strong>A.</strong>  Cornea
+    <strong>B.</strong>   Lens
+    <strong>C.</strong>   Retina
+    <strong>D.</strong>   Optic nerve
 
 retina - What thin layer of tissue at the back of the eye contains photoreceptors that detect light and initiate visual processing?
-    A. Cornea
-    B. Lens
-    C. Retina
-    D. Optic nerve
+    <strong>A.</strong>  Cornea
+    <strong>B.</strong>   Lens
+    <strong>C.</strong>   Retina
+    <strong>D.</strong>   Optic nerve
 
 optic nerve - What bundle of nerve fibers transmits visual information from the retina to the brain?
-    A. Cornea
-    B. Lens
-    C. Retina
-    D. Optic nerve
+    <strong>A.</strong>  Cornea
+    <strong>B.</strong>   Lens
+    <strong>C.</strong>   Retina
+    <strong>D.</strong>   Optic nerve
 
 outer ear - What external part of the ear collects sound waves and directs them into the ear canal?
-    A. Outer ear
-    B. Middle ear
-    C. Inner ear
-    D. Cochlea
+    <strong>A.</strong>  Outer ear
+    <strong>B.</strong>   Middle ear
+    <strong>C.</strong>   Inner ear
+    <strong>D.</strong>   Cochlea
 
 middle ear - What air-filled chamber contains the ossicles (malleus, incus, stapes) that amplify sound vibrations?
-    A. Outer ear
-    B. Middle ear
-    C. Inner ear
-    D. Cochlea
+    <strong>A.</strong>  Outer ear
+    <strong>B.</strong>   Middle ear
+    <strong>C.</strong>   Inner ear
+    <strong>D.</strong>   Cochlea
 
 inner ear - What structure contains the cochlea and vestibular system, responsible for converting sound vibrations into neural signals?
-    A. Outer ear
-    B. Middle ear
-    C. Inner ear
-    D. Cochlea
+    <strong>A.</strong>  Outer ear
+    <strong>B.</strong>   Middle ear
+    <strong>C.</strong>   Inner ear
+    <strong>D.</strong>   Cochlea
 
 vestibular system - What sensory system in the inner ear detects head movement and position to maintain balance and spatial orientation?
-    A. Vestibular system
-    B. Semicircular canals
-    C. Otolith organs
-    D. Cochlea
+    <strong>A.</strong>  Vestibular system
+    <strong>B.</strong>   Semicircular canals
+    <strong>C.</strong>   Otolith organs
+    <strong>D.</strong>   Cochlea
 
 semicircular canals - What three fluid-filled structures in the inner ear detect rotational movements of the head?
-    A. Vestibular system
-    B. Semicircular canals
-    C. Otolith organs
-    D. Cochlea
+    <strong>A.</strong>  Vestibular system
+    <strong>B.</strong>   Semicircular canals
+    <strong>C.</strong>   Otolith organs
+    <strong>D.</strong>   Cochlea
 
 otolith organs - What structures in the vestibular system detect linear acceleration and head position relative to gravity?
-    A. Vestibular system
-    B. Semicircular canals
-    C. Otolith organs
-    D. Cochlea
+    <strong>A.</strong>  Vestibular system
+    <strong>B.</strong>   Semicircular canals
+    <strong>C.</strong>   Otolith organs
+    <strong>D.</strong>   Cochlea
 
 dopamine - What neurotransmitter is involved in reward, motivation, and pleasure, and is implicated in addiction and mood regulation?
-    A. Dopamine
-    B. Norepinephrine
-    C. Serotonin
-    D. Acetylcholine
+    <strong>A.</strong>  Dopamine
+    <strong>B.</strong>   Norepinephrine
+    <strong>C.</strong>   Serotonin
+    <strong>D.</strong>   Acetylcholine
 
 norepinephrine - What neurotransmitter is involved in arousal, alertness, and the body’s response to stress?
-    A. Dopamine
-    B. Norepinephrine
-    C. Serotonin
-    D. Acetylcholine
+    <strong>A.</strong>  Dopamine
+    <strong>B.</strong>   Norepinephrine
+    <strong>C.</strong>   Serotonin
+    <strong>D.</strong>   Acetylcholine
 
 serotonin - What neurotransmitter is involved in mood regulation, appetite, and sleep, and is associated with depression and anxiety?
-    A. Dopamine
-    B. Norepinephrine
-    C. Serotonin
-    D. Acetylcholine
+    <strong>A.</strong>  Dopamine
+    <strong>B.</strong>   Norepinephrine
+    <strong>C.</strong>   Serotonin
+    <strong>D.</strong>   Acetylcholine
 
 central nervous system - What part of the nervous system consists of the brain and spinal cord, responsible for processing and integrating information?
-    A. Central nervous system
-    B. Peripheral nervous system
-    C. Somatic nervous system
-    D. Autonomic nervous system
+    <strong>A.</strong>  Central nervous system
+    <strong>B.</strong>   Peripheral nervous system
+    <strong>C.</strong>   Somatic nervous system
+    <strong>D.</strong>   Autonomic nervous system
 
 peripheral nervous system - What part of the nervous system consists of all nerves outside the brain and spinal cord, connecting the CNS to the rest of the body?
-    A. Central nervous system
-    B. Peripheral nervous system
-    C. Somatic nervous system
-    D. Autonomic nervous system
+    <strong>A.</strong>  Central nervous system
+    <strong>B.</strong>   Peripheral nervous system
+    <strong>C.</strong>   Somatic nervous system
+    <strong>D.</strong>   Autonomic nervous system
 
 dendrites - What branched extensions of a neuron receive incoming signals from other neurons?
-    A. Dendrites
-    B. Soma
-    C. Axon
-    D. Axon terminals
+    <strong>A.</strong>  Dendrites
+    <strong>B.</strong>   Soma
+    <strong>C.</strong>   Axon
+    <strong>D.</strong>   Axon terminals
 
 soma - What is the cell body of a neuron that contains the nucleus and processes incoming signals?
-    A. Dendrites
-    B. Soma
-    C. Axon
-    D. Axon terminals
+    <strong>A.</strong>  Dendrites
+    <strong>B.</strong>   Soma
+    <strong>C.</strong>   Axon
+    <strong>D.</strong>   Axon terminals
 
 axon - What long, slender projection of a neuron transmits electrical impulses away from the cell body toward other neurons or muscles?
-    A. Dendrites
-    B. Soma
-    C. Axon
-    D. Axon terminals
+    <strong>A.</strong>  Dendrites
+    <strong>B.</strong>   Soma
+    <strong>C.</strong>   Axon
+    <strong>D.</strong>   Axon terminals
 
 somatic nervous system - What division of the peripheral nervous system controls voluntary movements of skeletal muscles?
-    A. Somatic nervous system
-    B. Autonomic nervous system
-    C. Central nervous system
-    D. Peripheral nervous system
+    <strong>A.</strong>  Somatic nervous system
+    <strong>B.</strong>   Autonomic nervous system
+    <strong>C.</strong>   Central nervous system
+    <strong>D.</strong>   Peripheral nervous system
 
 autonomic nervous system - What division of the peripheral nervous system regulates involuntary functions such as heart rate, digestion, and respiration?
-    A. Somatic nervous system
-    B. Autonomic nervous system
-    C. Central nervous system
-    D. Peripheral nervous system
+    <strong>A.</strong>  Somatic nervous system
+    <strong>B.</strong>   Autonomic nervous system
+    <strong>C.</strong>   Central nervous system
+    <strong>D.</strong>   Peripheral nervous system
 
 brain - What organ serves as the central processing center for sensory information, emotions, cognition, and voluntary actions?
-    A. Brain
-    B. Spinal cord
-    C. Cerebellum
-    D. Pons
+    <strong>A.</strong>  Brain
+    <strong>B.</strong>   Spinal cord
+    <strong>C.</strong>   Cerebellum
+    <strong>D.</strong>   Pons
 
 spinal cord - What bundle of nerve fibers transmits signals between the brain and the rest of the body and coordinates reflexes?
-    A. Brain
-    B. Spinal cord
-    C. Cerebellum
-    D. Pons
+    <strong>A.</strong>  Brain
+    <strong>B.</strong>   Spinal cord
+    <strong>C.</strong>   Cerebellum
+    <strong>D.</strong>   Pons
 
 cerebellum - What brain structure is responsible for coordination, balance, and fine motor control?
-    A. Brain
-    B. Spinal cord
-    C. Cerebellum
-    D. Pons
+    <strong>A.</strong>  Brain
+    <strong>B.</strong>   Spinal cord
+    <strong>C.</strong>   Cerebellum
+    <strong>D.</strong>   Pons
 
 pons - What brainstem structure is involved in regulating sleep, arousal, and facial sensations?
-    A. Brain
-    B. Spinal cord
-    C. Cerebellum
-    D. Pons
+    <strong>A.</strong>  Brain
+    <strong>B.</strong>   Spinal cord
+    <strong>C.</strong>   Cerebellum
+    <strong>D.</strong>   Pons
 
 medulla oblongata - What brainstem structure controls vital autonomic functions such as breathing, heart rate, and blood pressure?
-    A. Medulla oblongata
-    B. Pons
-    C. Cerebellum
-    D. Spinal cord
+    <strong>A.</strong>  Medulla oblongata
+    <strong>B.</strong>   Pons
+    <strong>C.</strong>   Cerebellum
+    <strong>D.</strong>   Spinal cord
 
 MRI - What neuroimaging technique measures brain activity by detecting changes in blood flow using magnetic fields and radio waves?
-    A. MRI
-    B. PET
-    C. EEG
-    D. CT
+    <strong>A.</strong>  MRI
+    <strong>B.</strong>   PET
+    <strong>C.</strong>   EEG
+    <strong>D.</strong>   CT
 
 PET - What neuroimaging technique uses radioactive tracers to visualize metabolic activity and brain function?
-    A. MRI
-    B. PET
-    C. EEG
-    D. CT
+    <strong>A.</strong>  MRI
+    <strong>B.</strong>   PET
+    <strong>C.</strong>   EEG
+    <strong>D.</strong>   CT
 
 EEG - What technique records electrical activity of the brain through electrodes placed on the scalp?
-    A. MRI
-    B. PET
-    C. EEG
-    D. CT
+    <strong>A.</strong>  MRI
+    <strong>B.</strong>   PET
+    <strong>C.</strong>   EEG
+    <strong>D.</strong>   CT
 
 CT - What imaging technique uses X-rays to produce detailed cross-sectional images of brain structure?
-    A. MRI
-    B. PET
-    C. EEG
-    D. CT
+    <strong>A.</strong>  MRI
+    <strong>B.</strong>   PET
+    <strong>C.</strong>   EEG
+    <strong>D.</strong>   CT
 
 lesion studies - What research method involves examining the behavioral effects of brain damage in humans or animals?
-    A. Lesion studies
-    B. Electrophysiology
-    C. MRI
-    D. PET
+    <strong>A.</strong>  Lesion studies
+    <strong>B.</strong>   Electrophysiology
+    <strong>C.</strong>   MRI
+    <strong>D.</strong>   PET
 
 electrophysiology - What technique measures electrical activity in the brain or nervous system using electrodes?
-    A. Lesion studies
-    B. Electrophysiology
-    C. MRI
-    D. PET
+    <strong>A.</strong>  Lesion studies
+    <strong>B.</strong>   Electrophysiology
+    <strong>C.</strong>   MRI
+    <strong>D.</strong>   PET
 
 gray matter - What region of the central nervous system consists mainly of neuronal cell bodies and is involved in processing information?
-    A. Gray matter
-    B. White matter
-    C. Myelin
-    D. Axon
+    <strong>A.</strong>  Gray matter
+    <strong>B.</strong>   White matter
+    <strong>C.</strong>   Myelin
+    <strong>D.</strong>   Axon
 
 white matter - What region of the central nervous system consists mainly of myelinated axons and facilitates communication between brain regions?
-    A. Gray matter
-    B. White matter
-    C. Myelin
-    D. Axon
+    <strong>A.</strong>  Gray matter
+    <strong>B.</strong>   White matter
+    <strong>C.</strong>   Myelin
+    <strong>D.</strong>   Axon
 
 stretch reflex - What is a monosynaptic reflex, such as the knee-jerk reflex, that helps maintain muscle tone and posture?
-    A. Stretch reflex
-    B. Withdrawal reflex
-    C. Gross motor skills
-    D. Fine motor skills
+    <strong>A.</strong>  Stretch reflex
+    <strong>B.</strong>   Withdrawal reflex
+    <strong>C.</strong>   Gross motor skills
+    <strong>D.</strong>   Fine motor skills
 
 withdrawal reflex - What is a polysynaptic reflex that causes a body part to quickly withdraw from a painful stimulus?
-    A. Stretch reflex
-    B. Withdrawal reflex
-    C. Gross motor skills
-    D. Fine motor skills
+    <strong>A.</strong>  Stretch reflex
+    <strong>B.</strong>   Withdrawal reflex
+    <strong>C.</strong>   Gross motor skills
+    <strong>D.</strong>   Fine motor skills
 
 hypothalamus - What brain region regulates the pituitary gland and maintains homeostasis through the HPA axis?
-    A. Hypothalamus
-    B. Pituitary gland
-    C. Thyroid gland
-    D. Adrenal glands
+    <strong>A.</strong>  Hypothalamus
+    <strong>B.</strong>   Pituitary gland
+    <strong>C.</strong>   Thyroid gland
+    <strong>D.</strong>   Adrenal glands
 
 pituitary gland - What endocrine gland, known as the master gland, secretes hormones that regulate other glands in the body?
-    A. Hypothalamus
-    B. Pituitary gland
-    C. Thyroid gland
-    D. Adrenal glands
+    <strong>A.</strong>  Hypothalamus
+    <strong>B.</strong>   Pituitary gland
+    <strong>C.</strong>   Thyroid gland
+    <strong>D.</strong>   Adrenal glands
 
 thyroid gland - What endocrine gland produces hormones that regulate metabolism, growth, and development?
-    A. Hypothalamus
-    B. Pituitary gland
-    C. Thyroid gland
-    D. Adrenal glands
+    <strong>A.</strong>  Hypothalamus
+    <strong>B.</strong>   Pituitary gland
+    <strong>C.</strong>   Thyroid gland
+    <strong>D.</strong>   Adrenal glands
 
 adrenal glands - What endocrine glands, located above the kidneys, produce hormones involved in the stress response (e.g., cortisol, adrenalinE.?
-    A. Hypothalamus
-    B. Pituitary gland
-    C. Thyroid gland
-    D. Adrenal glands
+    <strong>A.</strong>  Hypothalamus
+    <strong>B.</strong>   Pituitary gland
+    <strong>C.</strong>   Thyroid gland
+    <strong>D.</strong>   Adrenal glands
 
 pancreas - What organ functions as both an endocrine and exocrine gland, regulating blood sugar through insulin and glucagon secretion?
-    A. Pancreas
-    B. Gonads
-    C. Thyroid gland
-    D. Adrenal glands
+    <strong>A.</strong>  Pancreas
+    <strong>B.</strong>   Gonads
+    <strong>C.</strong>   Thyroid gland
+    <strong>D.</strong>   Adrenal glands
 
 gonads - What organs (ovaries and testes) produce gametes and sex hormones for reproduction?
-    A. Pancreas
-    B. Gonads
-    C. Thyroid gland
-    D. Adrenal glands
+    <strong>A.</strong>  Pancreas
+    <strong>B.</strong>   Gonads
+    <strong>C.</strong>   Thyroid gland
+    <strong>D.</strong>   Adrenal glands
 
 fertilization - What is the process by which a sperm cell unites with an egg cell to form a zygote?
-    A. Fertilization
-    B. Acrosome reaction
-    C. Cortical reaction
-    D. Cleavage
+    <strong>A.</strong>  Fertilization
+    <strong>B.</strong>   Acrosome reaction
+    <strong>C.</strong>   Cortical reaction
+    <strong>D.</strong>   Cleavage
 
 acrosome reaction - What process involves the release of enzymes from the sperm’s acrosome to penetrate the egg’s outer layer during fertilization?
-    A. Fertilization
-    B. Acrosome reaction
-    C. Cortical reaction
-    D. Cleavage
+    <strong>A.</strong>  Fertilization
+    <strong>B.</strong>   Acrosome reaction
+    <strong>C.</strong>   Cortical reaction
+    <strong>D.</strong>   Cleavage
 
 cortical reaction - What process occurs after fertilization, where the egg releases enzymes to prevent entry of additional sperm?
-    A. Fertilization
-    B. Acrosome reaction
-    C. Cortical reaction
-    D. Cleavage
+    <strong>A.</strong>  Fertilization
+    <strong>B.</strong>   Acrosome reaction
+    <strong>C.</strong>   Cortical reaction
+    <strong>D.</strong>   Cleavage
 
 zygote - What is the single-cell organism formed by the union of sperm and egg, which undergoes cell division?
-    A. Zygote
-    B. Blastocyst
-    C. Embryo
-    D. Fetus
+    <strong>A.</strong>  Zygote
+    <strong>B.</strong>   Blastocyst
+    <strong>C.</strong>   Embryo
+    <strong>D.</strong>   Fetus
 
 blastocyst - What is the hollow ball of cells formed after several rounds of cell division, which implants in the uterine wall?
-    A. Zygote
-    B. Blastocyst
-    C. Embryo
-    D. Fetus
+    <strong>A.</strong>  Zygote
+    <strong>B.</strong>   Blastocyst
+    <strong>C.</strong>   Embryo
+    <strong>D.</strong>   Fetus
 
 embryonic stage - What developmental stage (weeks 3-8) is characterized by the formation of major organs and body structures?
-    A. Zygote
-    B. Blastocyst
-    C. Embryonic stage
-    D. Fetal stage
+    <strong>A.</strong>  Zygote
+    <strong>B.</strong>   Blastocyst
+    <strong>C.</strong>   Embryonic stage
+    <strong>D.</strong>   Fetal stage
 
 neural tube - What embryonic structure forms during week 3 and gives rise to the central nervous system?
-    A. Neural tube
-    B. Heart
-    C. Limbs and facial features
-    D. Placenta
+    <strong>A.</strong>  Neural tube
+    <strong>B.</strong>   Heart
+    <strong>C.</strong>   Limbs and facial features
+    <strong>D.</strong>   Placenta
 
 heart - What organ begins to beat and circulate blood during week 4 of embryonic development?
-    A. Neural tube
-    B. Heart
-    C. Limbs and facial features
-    D. Placenta
+    <strong>A.</strong>  Neural tube
+    <strong>B.</strong>   Heart
+    <strong>C.</strong>   Limbs and facial features
+    <strong>D.</strong>   Placenta
 
 limbs and facial features - What body parts develop during weeks 5-8 of embryonic development?
-    A. Neural tube
-    B. Heart
-    C. Limbs and facial features
-    D. Placenta
+    <strong>A.</strong>  Neural tube
+    <strong>B.</strong>   Heart
+    <strong>C.</strong>   Limbs and facial features
+    <strong>D.</strong>   Placenta
 
 fetal stage - What developmental stage (weeks 9-40) involves growth and maturation of organs and tissues?
-    A. Zygote
-    B. Blastocyst
-    C. Embryonic stage
-    D. Fetal stage
+    <strong>A.</strong>  Zygote
+    <strong>B.</strong>   Blastocyst
+    <strong>C.</strong>   Embryonic stage
+    <strong>D.</strong>   Fetal stage
 
 reflexes - What automatic, involuntary responses (e.g., grasping, rooting) are present at birth in newborns?
-    A. Reflexes
-    B. Gross motor skills
-    C. Fine motor skills
-    D. Puberty
+    <strong>A.</strong>  Reflexes
+    <strong>B.</strong>   Gross motor skills
+    <strong>C.</strong>   Fine motor skills
+    <strong>D.</strong>   Puberty
 
 gross motor skills - What abilities (e.g., crawling, walking) involve large muscle movements and develop in early childhood?
-    A. Reflexes
-    B. Gross motor skills
-    C. Fine motor skills
-    D. Puberty
+    <strong>A.</strong>  Reflexes
+    <strong>B.</strong>   Gross motor skills
+    <strong>C.</strong>   Fine motor skills
+    <strong>D.</strong>   Puberty
 
 fine motor skills - What abilities (e.g., grasping small objects, writing) involve precise movements and develop later in childhood?
-    A. Reflexes
-    B. Gross motor skills
-    C. Fine motor skills
-    D. Puberty
+    <strong>A.</strong>  Reflexes
+    <strong>B.</strong>   Gross motor skills
+    <strong>C.</strong>   Fine motor skills
+    <strong>D.</strong>   Puberty
 
 puberty - What developmental period involves the onset of sexual maturity and the ability to reproduce?
-    A. Reflexes
-    B. Gross motor skills
-    C. Fine motor skills
-    D. Puberty
+    <strong>A.</strong>  Reflexes
+    <strong>B.</strong>   Gross motor skills
+    <strong>C.</strong>   Fine motor skills
+    <strong>D.</strong>   Puberty
 
 neurotransmitter imbalances - What abnormal levels of brain chemicals (e.g., dopamine, serotonin) are implicated in various mental and neurological disorders?
-    A. Neurotransmitter imbalances
-    B. Genetic factors
-    C. Stem cells
-    D. Addiction
+    <strong>A.</strong>  Neurotransmitter imbalances
+    <strong>B.</strong>   Genetic factors
+    <strong>C.</strong>   Stem cells
+    <strong>D.</strong>   Addiction
 
 genetic factors - What inherited characteristics contribute to the risk of developing certain diseases or conditions?
-    A. Neurotransmitter imbalances
-    B. Genetic factors
-    C. Stem cells
-    D. Addiction
+    <strong>A.</strong>  Neurotransmitter imbalances
+    <strong>B.</strong>   Genetic factors
+    <strong>C.</strong>   Stem cells
+    <strong>D.</strong>   Addiction
 
 stem cells - What undifferentiated cells have the potential to develop into various specialized cell types, including neurons?
-    A. Neurotransmitter imbalances
-    B. Genetic factors
-    C. Stem cells
-    D. Addiction
+    <strong>A.</strong>  Neurotransmitter imbalances
+    <strong>B.</strong>   Genetic factors
+    <strong>C.</strong>   Stem cells
+    <strong>D.</strong>   Addiction
 
 ghrelin - What hormone, produced by the stomach, stimulates appetite and increases food intake?
-    A. Ghrelin
-    B. Leptin
-    C. Insulin
-    D. Glucagon
+    <strong>A.</strong>  Ghrelin
+    <strong>B.</strong>   Leptin
+    <strong>C.</strong>   Insulin
+    <strong>D.</strong>   Glucagon
 
 leptin - What hormone, produced by adipose tissue, signals satiety and suppresses appetite?
-    A. Ghrelin
-    B. Leptin
-    C. Insulin
-    D. Glucagon
+    <strong>A.</strong>  Ghrelin
+    <strong>B.</strong>   Leptin
+    <strong>C.</strong>   Insulin
+    <strong>D.</strong>   Glucagon
 
 sex drive - What biological and psychological phenomenon involves hormones and brain reward systems to motivate sexual behavior?
-    A. Sex drive
-    B. Addiction
-    C. Taste aversion
-    D. Puberty
+    <strong>A.</strong>  Sex drive
+    <strong>B.</strong>   Addiction
+    <strong>C.</strong>   Taste aversion
+    <strong>D.</strong>   Puberty
 
 addiction - What chronic condition involves compulsive drug seeking and use, driven by changes in dopamine pathways and neuroplasticity?
-    A. Sex drive
-    B. Addiction
-    C. Taste aversion
-    D. Puberty
+    <strong>A.</strong>  Sex drive
+    <strong>B.</strong>   Addiction
+    <strong>C.</strong>   Taste aversion
+    <strong>D.</strong>   Puberty
 
 taste aversion - What learned avoidance of a specific food occurs after it has been associated with illness or negative experience?
-    A. Taste aversion
-    B. Conditioned fear
-    C. Habituation
-    D. Sensitization
+    <strong>A.</strong>  Taste aversion
+    <strong>B.</strong>   Conditioned fear
+    <strong>C.</strong>   Habituation
+    <strong>D.</strong>   Sensitization
 preparedness - What evolutionary predisposition makes certain associations (e.g., fear of snakes) easier to learn than others?
-    A. Preparedness
-    B. Instinctive drift
-    C. Social learning
-    D. Latent learning
+    <strong>A.</strong>  Preparedness
+    <strong>B.</strong>   Instinctive drift
+    <strong>C.</strong>   Social learning
+    <strong>D.</strong>   Latent learning
 
 instinctive drift - What phenomenon causes learned behaviors to revert to innate, species-typical patterns over time?
-    A. Preparedness
-    B. Instinctive drift
-    C. Social learning
-    D. Mirror neurons
+    <strong>A.</strong>  Preparedness
+    <strong>B.</strong>   Instinctive drift
+    <strong>C.</strong>   Social learning
+    <strong>D.</strong>   Mirror neurons
 
 mirror neurons - What specialized neurons fire both when an individual performs an action and when they observe the same action performed by others?
-    A. Preparedness
-    B. Instinctive drift
-    C. Social learning
-    D. Mirror neurons
+    <strong>A.</strong>  Preparedness
+    <strong>B.</strong>   Instinctive drift
+    <strong>C.</strong>   Social learning
+    <strong>D.</strong>   Mirror neurons
 
 social learning - What process involves acquiring new behaviors by observing and imitating others, with mirror neurons playing a key role?
-    A. Preparedness
-    B. Instinctive drift
-    C. Social learning
-    D. Mirror neurons
+    <strong>A.</strong>  Preparedness
+    <strong>B.</strong>   Instinctive drift
+    <strong>C.</strong>   Social learning
+    <strong>D.</strong>   Mirror neurons
 
 coloration - What is an example of a visual signal, such as bright plumage in birds, used for communication or mating?
-    A. Coloration
-    B. Body language
-    C. Mating displays
-    D. Threat displays
+    <strong>A.</strong>  Coloration
+    <strong>B.</strong>   Body language
+    <strong>C.</strong>   Mating displays
+    <strong>D.</strong>   Threat displays
 
 body language - What is an example of nonverbal communication, such as tail position in dogs, used to convey emotional states?
-    A. Coloration
-    B. Body language
-    C. Mating displays
-    D. Threat displays
+    <strong>A.</strong>  Coloration
+    <strong>B.</strong>   Body language
+    <strong>C.</strong>   Mating displays
+    <strong>D.</strong>   Threat displays
 
 mating displays - What are ritualized behaviors performed by animals to attract mates and signal reproductive fitness?
-    A. Coloration
-    B. Body language
-    C. Mating displays
-    D. Threat displays
+    <strong>A.</strong>  Coloration
+    <strong>B.</strong>   Body language
+    <strong>C.</strong>   Mating displays
+    <strong>D.</strong>   Threat displays
 
 threat displays - What are defensive behaviors, such as puffing up in pufferfish, used to deter predators or rivals?
-    A. Coloration
-    B. Body language
-    C. Mating displays
-    D. Threat displays
+    <strong>A.</strong>  Coloration
+    <strong>B.</strong>   Body language
+    <strong>C.</strong>   Mating displays
+    <strong>D.</strong>   Threat displays
 
 vocalizations - What are examples of animal communication, such as bird songs or wolf howls, used for signaling or coordination?
-    A. Vocalizations
-    B. Calls
-    C. Mating displays
-    D. Threat displays
+    <strong>A.</strong>  Vocalizations
+    <strong>B.</strong>   Calls
+    <strong>C.</strong>   Mating displays
+    <strong>D.</strong>   Threat displays
 
 calls - What are alarm signals, such as those produced by primates, used to warn group members of danger?
-    A. Vocalizations
-    B. Calls
-    C. Mating displays
-    D. Threat displays
+    <strong>A.</strong>  Vocalizations
+    <strong>B.</strong>   Calls
+    <strong>C.</strong>   Mating displays
+    <strong>D.</strong>   Threat displays
 
 mate selection - What is the process by which individuals choose reproductive partners based on specific traits or behaviors?
-    A. Mate selection
-    B. Territory defense
-    C. Predator avoidance
-    D. Cooperative resource acquisition
+    <strong>A.</strong>  Mate selection
+    <strong>B.</strong>   Territory defense
+    <strong>C.</strong>   Predator avoidance
+    <strong>D.</strong>   Cooperative resource acquisition
 
 territory defense - What behaviors are used by animals to protect a defined area from intruders or competitors?
-    A. Mate selection
-    B. Territory defense
-    C. Predator avoidance
-    D. Cooperative resource acquisition
+    <strong>A.</strong>  Mate selection
+    <strong>B.</strong>   Territory defense
+    <strong>C.</strong>   Predator avoidance
+    <strong>D.</strong>   Cooperative resource acquisition
 
 predator avoidance - What strategies or behaviors are used by animals to evade or deter predators?
-    A. Mate selection
-    B. Territory defense
-    C. Predator avoidance
-    D. Cooperative resource acquisition
+    <strong>A.</strong>  Mate selection
+    <strong>B.</strong>   Territory defense
+    <strong>C.</strong>   Predator avoidance
+    <strong>D.</strong>   Cooperative resource acquisition
 
 cooperative resource acquisition - What group behaviors enhance the ability of animals to obtain food or other resources?
-    A. Mate selection
-    B. Territory defense
-    C. Predator avoidance
-    D. Cooperative resource acquisition
+    <strong>A.</strong>  Mate selection
+    <strong>B.</strong>   Territory defense
+    <strong>C.</strong>   Predator avoidance
+    <strong>D.</strong>   Cooperative resource acquisition
 
 Channels - What membrane proteins passively facilitate the movement of ions or small molecules across the cell membrane?
-    A. Channels
-    B. Pumps
-    C. Carriers
-    D. Receptors
+    <strong>A.</strong>  Channels
+    <strong>B.</strong>   Pumps
+    <strong>C.</strong>   Carriers
+    <strong>D.</strong>   Receptors
 
 Pumps - What membrane proteins actively transport substances against their concentration gradient using energy (e.g., ATP)?
-    A. Channels
-    B. Pumps
-    C. Carriers
-    D. Receptors
+    <strong>A.</strong>  Channels
+    <strong>B.</strong>   Pumps
+    <strong>C.</strong>   Carriers
+    <strong>D.</strong>   Receptors
 
 social control - What is the regulation of individual behavior by societal norms, rules, and laws to maintain order?
-    A. Social control
-    B. Peer pressure
-    C. Conformity
-    D. Obedience
+    <strong>A.</strong>  Social control
+    <strong>B.</strong>   Peer pressure
+    <strong>C.</strong>   Conformity
+    <strong>D.</strong>   Obedience
 
 peer pressure - What is the influence exerted by members of a peer group to encourage conformity to group norms and behaviors?
-    A. Social control
-    B. Peer pressure
-    C. Conformity
-    D. Obedience
+    <strong>A.</strong>  Social control
+    <strong>B.</strong>   Peer pressure
+    <strong>C.</strong>   Conformity
+    <strong>D.</strong>   Obedience
 
 conformity (social) - What is the adjustment of individual attitudes or behaviors to align with the expectations of a social group?
-    A. Social control
-    B. Peer pressure
-    C. Conformity
-    D. Obedience
+    <strong>A.</strong>  Social control
+    <strong>B.</strong>   Peer pressure
+    <strong>C.</strong>   Conformity
+    <strong>D.</strong>   Obedience
 
 obedience (social) - What is the act of complying with the commands or instructions of an authority figure?
-    A. Social control
-    B. Peer pressure
-    C. Conformity
-    D. Obedience
+    <strong>A.</strong>  Social control
+    <strong>B.</strong>   Peer pressure
+    <strong>C.</strong>   Conformity
+    <strong>D.</strong>   Obedience
 
 Groupthink (social) - What phenomenon occurs when the desire for group harmony leads to irrational or dysfunctional decision-making?
-    A. Groupthink
-    B. Group polarization
-    C. Social facilitation
-    D. Social loafing
+    <strong>A.</strong>  Groupthink
+    <strong>B.</strong>   Group polarization
+    <strong>C.</strong>   Social facilitation
+    <strong>D.</strong>   Social loafing
 
 Group polarization (social) - What phenomenon describes the tendency for group members to adopt more extreme positions after group discussion?
-    A. Groupthink
-    B. Group polarization
-    C. Social facilitation
-    D. Social loafing
+    <strong>A.</strong>  Groupthink
+    <strong>B.</strong>   Group polarization
+    <strong>C.</strong>   Social facilitation
+    <strong>D.</strong>   Social loafing
 
 Social facilitation (social) - What phenomenon describes improved performance on tasks when individuals are in the presence of others?
-    A. Groupthink
-    B. Group polarization
-    C. Social facilitation
-    D. Social loafing
+    <strong>A.</strong>  Groupthink
+    <strong>B.</strong>   Group polarization
+    <strong>C.</strong>   Social facilitation
+    <strong>D.</strong>   Social loafing
 
 Social loafing (social) - What phenomenon describes reduced individual effort when working in a group compared to working alone?
-    A. Groupthink
-    B. Group polarization
-    C. Social facilitation
-    D. Social loafing
+    <strong>A.</strong>  Groupthink
+    <strong>B.</strong>   Group polarization
+    <strong>C.</strong>   Social facilitation
+    <strong>D.</strong>   Social loafing
 
 normative behavior - What are actions that conform to the accepted standards and expectations of a particular society or group?
-    A. Normative behavior
-    B. Social norms
-    C. Sanctions
-    D. Folkways
+    <strong>A.</strong>  Normative behavior
+    <strong>B.</strong>   Social norms
+    <strong>C.</strong>   Sanctions
+    <strong>D.</strong>   Folkways
 
 social norms - What are the shared rules and expectations that guide behavior within a society or group?
-    A. Normative behavior
-    B. Social norms
-    C. Sanctions
-    D. Folkways
+    <strong>A.</strong>  Normative behavior
+    <strong>B.</strong>   Social norms
+    <strong>C.</strong>   Sanctions
+    <strong>D.</strong>   Folkways
 
 sanctions - What are penalties or rewards imposed to encourage conformity to social norms or discourage deviance?
-    A. Normative behavior
-    B. Social norms
-    C. Sanctions
-    D. Folkways
+    <strong>A.</strong>  Normative behavior
+    <strong>B.</strong>   Social norms
+    <strong>C.</strong>   Sanctions
+    <strong>D.</strong>   Folkways
 
 folkways - What are informal norms that govern everyday customs and routines, such as dress codes or table manners?
-    A. Folkways
-    B. Laws
-    C. Taboos
-    D. Sanctions
+    <strong>A.</strong>  Folkways
+    <strong>B.</strong>   Laws
+    <strong>C.</strong>   Taboos
+    <strong>D.</strong>   Sanctions
 
 laws - What are formalized norms established and enforced by governmental authority?
-    A. Folkways
-    B. Laws
-    C. Taboos
-    D. Sanctions
+    <strong>A.</strong>  Folkways
+    <strong>B.</strong>   Laws
+    <strong>C.</strong>   Taboos
+    <strong>D.</strong>   Sanctions
 
 taboos - What are strong prohibitions against certain behaviors considered morally or culturally unacceptable?
-    A. Folkways
-    B. Laws
-    C. Taboos
-    D. Sanctions
+    <strong>A.</strong>  Folkways
+    <strong>B.</strong>   Laws
+    <strong>C.</strong>   Taboos
+    <strong>D.</strong>   Sanctions
 
 anomie - What is a state of normlessness or breakdown of social norms, often occurring during periods of rapid social change?
-    A. Anomie
-    B. Deviance
-    C. Riots
-    D. Fads
+    <strong>A.</strong>  Anomie
+    <strong>B.</strong>   Deviance
+    <strong>C.</strong>   Riots
+    <strong>D.</strong>   Fads
 
 deviance - What is behavior that violates established social norms or expectations?
-    A. Anomie
-    B. Deviance
-    C. Riots
-    D. Fads
+    <strong>A.</strong>  Anomie
+    <strong>B.</strong>   Deviance
+    <strong>C.</strong>   Riots
+    <strong>D.</strong>   Fads
 
 riots - What are spontaneous, violent outbursts of collective behavior in response to perceived injustices or grievances?
-    A. Anomie
-    B. Deviance
-    C. Riots
-    D. Fads
+    <strong>A.</strong>  Anomie
+    <strong>B.</strong>   Deviance
+    <strong>C.</strong>   Riots
+    <strong>D.</strong>   Fads
 
 fads - What are temporary, widely adopted behaviors or trends that gain popularity quickly and fade just as rapidly?
-    A. Anomie
-    B. Deviance
-    C. Riots
-    D. Fads
+    <strong>A.</strong>  Anomie
+    <strong>B.</strong>   Deviance
+    <strong>C.</strong>   Riots
+    <strong>D.</strong>   Fads
 
 mass hysteria - What is a phenomenon where a group of people exhibit similar symptoms or behaviors in response to a perceived threat or fear, often irrationally?
-    A. Mass hysteria
-    B. Fads
-    C. Riots
-    D. Anomie
+    <strong>A.</strong>  Mass hysteria
+    <strong>B.</strong>   Fads
+    <strong>C.</strong>   Riots
+    <strong>D.</strong>   Anomie
 
 family - What is the primary social institution responsible for early socialization and shaping an individual’s values and beliefs?
-    A. Family
-    B. Schools
-    C. Peers
-    D. Media
+    <strong>A.</strong>  Family
+    <strong>B.</strong>   Schools
+    <strong>C.</strong>   Peers
+    <strong>D.</strong>   Media
 
 schools - What formal institutions play a crucial role in teaching academic knowledge, social skills, and cultural norms?
-    A. Family
-    B. Schools
-    C. Peers
-    D. Media
+    <strong>A.</strong>  Family
+    <strong>B.</strong>   Schools
+    <strong>C.</strong>   Peers
+    <strong>D.</strong>   Media
 
 peers - What social group provides a sense of belonging and influences attitudes and behaviors during adolescence?
-    A. Family
-    B. Schools
-    C. Peers
-    D. Media
+    <strong>A.</strong>  Family
+    <strong>B.</strong>   Schools
+    <strong>C.</strong>   Peers
+    <strong>D.</strong>   Media
 
 media - What agent of socialization shapes perceptions, attitudes, and behaviors through various forms of mass communication?
-    A. Family
-    B. Schools
-    C. Peers
-    D. Media
+    <strong>A.</strong>  Family
+    <strong>B.</strong>   Schools
+    <strong>C.</strong>   Peers
+    <strong>D.</strong>   Media
 
 religion - What institution influences values, beliefs, and behaviors by providing a moral framework and sense of community?
-    A. Family
-    B. Schools
-    C. Religion
-    D. Media
+    <strong>A.</strong>  Family
+    <strong>B.</strong>   Schools
+    <strong>C.</strong>   Religion
+    <strong>D.</strong>   Media
 
 personal identity - What is the unique combination of characteristics, experiences, and values that define an individual?
-    A. Personal identity
-    B. Social identity
-    C. Role identity
-    D. Collective identity
+    <strong>A.</strong>  Personal identity
+    <strong>B.</strong>   Social identity
+    <strong>C.</strong>   Role identity
+    <strong>D.</strong>   Collective identity
 
 social identity (groups) - What aspect of identity is derived from membership in social groups such as race, ethnicity, or gender?
-    A. Personal identity
-    B. Social identity
-    C. Role identity
-    D. Collective identity
+    <strong>A.</strong>  Personal identity
+    <strong>B.</strong>   Social identity
+    <strong>C.</strong>   Role identity
+    <strong>D.</strong>   Collective identity
 
 role identity - What aspect of identity is based on the roles individuals occupy in society, such as parent, student, or employee?
-    A. Personal identity
-    B. Social identity
-    C. Role identity
-    D. Collective identity
+    <strong>A.</strong>  Personal identity
+    <strong>B.</strong>   Social identity
+    <strong>C.</strong>   Role identity
+    <strong>D.</strong>   Collective identity
 
 collective identity - What is the shared sense of belonging to a group based on common characteristics or experiences?
-    A. Personal identity
-    B. Social identity
-    C. Role identity
-    D. Collective identity
+    <strong>A.</strong>  Personal identity
+    <strong>B.</strong>   Social identity
+    <strong>C.</strong>   Role identity
+    <strong>D.</strong>   Collective identity
 
 race - What is a socially constructed category based on perceived physical differences such as skin color?
-    A. Race
-    B. Ethnicity
-    C. Reference groups
-    D. In groups
+    <strong>A.</strong>  Race
+    <strong>B.</strong>   Ethnicity
+    <strong>C.</strong>   Reference groups
+    <strong>D.</strong>   In groups
 
 ethnicity - What refers to shared cultural practices, language, and heritage that distinguish one group from another?
-    A. Race
-    B. Ethnicity
-    C. Reference groups
-    D. In groups
+    <strong>A.</strong>  Race
+    <strong>B.</strong>   Ethnicity
+    <strong>C.</strong>   Reference groups
+    <strong>D.</strong>   In groups
 
 reference groups - What are groups that individuals use as a standard for evaluating themselves and their behavior?
-    A. Race
-    B. Ethnicity
-    C. Reference groups
-    D. In groups
+    <strong>A.</strong>  Race
+    <strong>B.</strong>   Ethnicity
+    <strong>C.</strong>   Reference groups
+    <strong>D.</strong>   In groups
 
 in groups - What are social groups to which an individual feels a sense of belonging and loyalty?
-    A. Race
-    B. Ethnicity
-    C. Reference groups
-    D. In groups
+    <strong>A.</strong>  Race
+    <strong>B.</strong>   Ethnicity
+    <strong>C.</strong>   Reference groups
+    <strong>D.</strong>   In groups
 
 social comparison - What is the process of evaluating one’s own abilities, opinions, or status by comparing oneself to others?
-    A. Social comparison
-    B. Socialization
-    C. Implicit bias
-    D. Explicit bias
+    <strong>A.</strong>  Social comparison
+    <strong>B.</strong>   Socialization
+    <strong>C.</strong>   Implicit bias
+    <strong>D.</strong>   Explicit bias
 
 socialization - What is the lifelong process by which individuals learn and internalize the values, norms, and behaviors of their culture?
-    A. Social comparison
-    B. Socialization
-    C. Implicit bias
-    D. Explicit bias
+    <strong>A.</strong>  Social comparison
+    <strong>B.</strong>   Socialization
+    <strong>C.</strong>   Implicit bias
+    <strong>D.</strong>   Explicit bias
 
 implicit bias (social) - What are unconscious attitudes or stereotypes that influence social perceptions and actions?
-    A. Social comparison
-    B. Socialization
-    C. Implicit bias
-    D. Explicit bias
+    <strong>A.</strong>  Social comparison
+    <strong>B.</strong>   Socialization
+    <strong>C.</strong>   Implicit bias
+    <strong>D.</strong>   Explicit bias
 
 explicit bias - What are consciously held attitudes or beliefs that influence behavior and decision-making?
-    A. Social comparison
-    B. Socialization
-    C. Implicit bias
-    D. Explicit bias
+    <strong>A.</strong>  Social comparison
+    <strong>B.</strong>   Socialization
+    <strong>C.</strong>   Implicit bias
+    <strong>D.</strong>   Explicit bias
 
 confirmation bias - What cognitive bias leads individuals to seek out or interpret information in a way that confirms their existing beliefs?
-    A. Confirmation bias
-    B. Belief perseverance
-    C. Discrimination (institutional)
-    D. Social categorization
+    <strong>A.</strong>  Confirmation bias
+    <strong>B.</strong>   Belief perseverance
+    <strong>C.</strong>   Discrimination (institutional)
+    <strong>D.</strong>   Social categorization
 
 discrimination (institutional) - What is the systematic and unfair treatment of individuals based on group membership, perpetuated by social institutions?
-    A. Confirmation bias
-    B. Belief perseverance
-    C. Discrimination (institutional)
-    D. Social categorization
+    <strong>A.</strong>  Confirmation bias
+    <strong>B.</strong>   Belief perseverance
+    <strong>C.</strong>   Discrimination (institutional)
+    <strong>D.</strong>   Social categorization
 
 social categorization (groups) - What process involves classifying people into groups based on shared characteristics, leading to in-group and out-group distinctions?
-    A. Confirmation bias
-    B. Belief perseverance
-    C. Discrimination (institutional)
-    D. Social categorization
+    <strong>A.</strong>  Confirmation bias
+    <strong>B.</strong>   Belief perseverance
+    <strong>C.</strong>   Discrimination (institutional)
+    <strong>D.</strong>   Social categorization
 
 belief perseverance - What cognitive bias involves maintaining one’s beliefs despite contradictory evidence?
-    A. Confirmation bias
-    B. Belief perseverance
-    C. Discrimination (institutional)
-    D. Social categorization
+    <strong>A.</strong>  Confirmation bias
+    <strong>B.</strong>   Belief perseverance
+    <strong>C.</strong>   Discrimination (institutional)
+    <strong>D.</strong>   Social categorization
 
 power - What is the ability to influence or control the behavior of others, often contributing to social inequality?
-    A. Power
-    B. Prestige
-    C. Class
-    D. Stigma
+    <strong>A.</strong>  Power
+    <strong>B.</strong>   Prestige
+    <strong>C.</strong>   Class
+    <strong>D.</strong>   Stigma
 
 prestige - What is the level of respect and admiration accorded to an individual or group, influencing social status and opportunities?
-    A. Power
-    B. Prestige
-    C. Class
-    D. Stigma
+    <strong>A.</strong>  Power
+    <strong>B.</strong>   Prestige
+    <strong>C.</strong>   Class
+    <strong>D.</strong>   Stigma
 
 class - What is the system of social stratification based on economic status, affecting access to resources and opportunities?
-    A. Power
-    B. Prestige
-    C. Class
-    D. Stigma
+    <strong>A.</strong>  Power
+    <strong>B.</strong>   Prestige
+    <strong>C.</strong>   Class
+    <strong>D.</strong>   Stigma
 
 stigma - What is the social disapproval or discrimination against individuals based on perceived differences or undesirable characteristics?
-    A. Power
-    B. Prestige
-    C. Class
-    D. Stigma
+    <strong>A.</strong>  Power
+    <strong>B.</strong>   Prestige
+    <strong>C.</strong>   Class
+    <strong>D.</strong>   Stigma
 
 ethnocentrism - What is the belief in the superiority of one’s own culture or ethnic group, often leading to prejudice against others?
-    A. Ethnocentrism
-    B. Cultural relativism
-    C. Social roles
-    D. Status
+    <strong>A.</strong>  Ethnocentrism
+    <strong>B.</strong>   Cultural relativism
+    <strong>C.</strong>   Social roles
+    <strong>D.</strong>   Status
 
 cultural relativism - What is the principle of evaluating and understanding a culture based on its own values and standards rather than judging it by the standards of another culture?
-    A. Ethnocentrism
-    B. Cultural relativism
-    C. Social roles
-    D. Status
+    <strong>A.</strong>  Ethnocentrism
+    <strong>B.</strong>   Cultural relativism
+    <strong>C.</strong>   Social roles
+    <strong>D.</strong>   Status
 
 social roles - What are the expected patterns of behavior associated with particular positions in society?
-    A. Ethnocentrism
-    B. Cultural relativism
-    C. Social roles
-    D. Status
+    <strong>A.</strong>  Ethnocentrism
+    <strong>B.</strong>   Cultural relativism
+    <strong>C.</strong>   Social roles
+    <strong>D.</strong>   Status
 
 status - What is a person’s social position within a group or society, which can be achieved or ascribed?
-    A. Ethnocentrism
-    B. Cultural relativism
-    C. Social roles
-    D. Status
+    <strong>A.</strong>  Ethnocentrism
+    <strong>B.</strong>   Cultural relativism
+    <strong>C.</strong>   Social roles
+    <strong>D.</strong>   Status
 
 ascribed status - What is a social position assigned at birth or involuntarily later in life, such as race, gender, or ethnicity?
-    A. Ascribed status
-    B. Achieved status
-    C. Role conflict
-    D. Role exit
+    <strong>A.</strong>  Ascribed status
+    <strong>B.</strong>   Achieved status
+    <strong>C.</strong>   Role conflict
+    <strong>D.</strong>   Role exit
 
 achieved status - What is a social position attained through personal effort, actions, or accomplishments?
-    A. Ascribed status
-    B. Achieved status
-    C. Role conflict
-    D. Role exit
+    <strong>A.</strong>  Ascribed status
+    <strong>B.</strong>   Achieved status
+    <strong>C.</strong>   Role conflict
+    <strong>D.</strong>   Role exit
 
 role conflict - What occurs when an individual faces incompatible demands from different social roles they occupy?
-    A. Ascribed status
-    B. Achieved status
-    C. Role conflict
-    D. Role exit
+    <strong>A.</strong>  Ascribed status
+    <strong>B.</strong>   Achieved status
+    <strong>C.</strong>   Role conflict
+    <strong>D.</strong>   Role exit
 
 role exit - What is the process of disengaging from a role that has been central to one’s identity and establishing a new role?
-    A. Ascribed status
-    B. Achieved status
-    C. Role conflict
-    D. Role exit
+    <strong>A.</strong>  Ascribed status
+    <strong>B.</strong>   Achieved status
+    <strong>C.</strong>   Role conflict
+    <strong>D.</strong>   Role exit
 
 primary groups - What are small, close-knit social groups characterized by intimate, long-term relationships (e.g., family, close friends)?
-    A. Primary groups
-    B. Secondary groups
-    C. Dyad
-    D. Triad
+    <strong>A.</strong>  Primary groups
+    <strong>B.</strong>   Secondary groups
+    <strong>C.</strong>   Dyad
+    <strong>D.</strong>   Triad
 
 secondary groups - What are larger, more impersonal social groups focused on specific goals or activities (e.g., coworkers, classmates)?
-    A. Primary groups
-    B. Secondary groups
-    C. Dyad
-    D. Triad
+    <strong>A.</strong>  Primary groups
+    <strong>B.</strong>   Secondary groups
+    <strong>C.</strong>   Dyad
+    <strong>D.</strong>   Triad
 
 dyad - What is a social group consisting of exactly two members, often characterized by intimacy and instability?
-    A. Primary groups
-    B. Secondary groups
-    C. Dyad
-    D. Triad
+    <strong>A.</strong>  Primary groups
+    <strong>B.</strong>   Secondary groups
+    <strong>C.</strong>   Dyad
+    <strong>D.</strong>   Triad
 
 triad - What is a social group consisting of three members, which introduces the possibility of coalitions and more complex dynamics?
-    A. Primary groups
-    B. Secondary groups
-    C. Dyad
-    D. Triad
+    <strong>A.</strong>  Primary groups
+    <strong>B.</strong>   Secondary groups
+    <strong>C.</strong>   Dyad
+    <strong>D.</strong>   Triad
 
 social networks - What are the interconnected webs of social relationships that link individuals and groups?
-    A. Social networks
-    B. Utilitarian organizations
-    C. Normative organizations
-    D. Coercive organizations
+    <strong>A.</strong>  Social networks
+    <strong>B.</strong>   Utilitarian organizations
+    <strong>C.</strong>   Normative organizations
+    <strong>D.</strong>   Coercive organizations
 
 utilitarian organizations - What formal organizations are structured to achieve specific goals and provide material rewards to members (e.g., businesses, government agencies)?
-    A. Social networks
-    B. Utilitarian organizations
-    C. Normative organizations
-    D. Coercive organizations
+    <strong>A.</strong>  Social networks
+    <strong>B.</strong>   Utilitarian organizations
+    <strong>C.</strong>   Normative organizations
+    <strong>D.</strong>   Coercive organizations
 
 normative organizations - What formal organizations are formed to pursue shared interests or goals, often providing intangible rewards (e.g., religious groups, political parties)?
-    A. Social networks
-    B. Utilitarian organizations
-    C. Normative organizations
-    D. Coercive organizations
+    <strong>A.</strong>  Social networks
+    <strong>B.</strong>   Utilitarian organizations
+    <strong>C.</strong>   Normative organizations
+    <strong>D.</strong>   Coercive organizations
 
 coercive organizations - What formal organizations are characterized by involuntary membership and strict control over members (e.g., prisons, mental institutions)?
-    A. Social networks
-    B. Utilitarian organizations
-    C. Normative organizations
-    D. Coercive organizations
+    <strong>A.</strong>  Social networks
+    <strong>B.</strong>   Utilitarian organizations
+    <strong>C.</strong>   Normative organizations
+    <strong>D.</strong>   Coercive organizations
 
 bureaucracies - What are large, formal organizations characterized by hierarchical structure, clear rules, and a division of labor?
-    A. Bureaucracies
-    B. Front stage
-    C. Back stage
-    D. Impression management
+    <strong>A.</strong>  Bureaucracies
+    <strong>B.</strong>   Front stage
+    <strong>C.</strong>   Back stage
+    <strong>D.</strong>   Impression management
 
 front stage - What is the public area of social interaction where individuals perform roles in accordance with societal expectations?
-    A. Bureaucracies
-    B. Front stage
-    C. Back stage
-    D. Impression management
+    <strong>A.</strong>  Bureaucracies
+    <strong>B.</strong>   Front stage
+    <strong>C.</strong>   Back stage
+    <strong>D.</strong>   Impression management
 
 back stage - What is the private area of social interaction where individuals can relax and express themselves without concern for public scrutiny?
-    A. Bureaucracies
-    B. Front stage
-    C. Back stage
-    D. Impression management
+    <strong>A.</strong>  Bureaucracies
+    <strong>B.</strong>   Front stage
+    <strong>C.</strong>   Back stage
+    <strong>D.</strong>   Impression management
 
 impression management (self) - What is the process by which individuals consciously or unconsciously attempt to influence how others perceive them, often through self-presentation strategies?
-    A. Bureaucracies
-    B. Front stage
-    C. Back stage
-    D. Impression management
+    <strong>A.</strong>  Bureaucracies
+    <strong>B.</strong>   Front stage
+    <strong>C.</strong>   Back stage
+    <strong>D.</strong>   Impression management
 
 dendrites (neuron) - What structures on a neuron receive incoming signals from other neurons?
-    A. Dendrites
-    B. Soma
-    C. Axon
-    D. Axon terminals
+    <strong>A.</strong>  Dendrites
+    <strong>B.</strong>   Soma
+    <strong>C.</strong>   Axon
+    <strong>D.</strong>   Axon terminals
 
 axon terminals - What structures at the end of a neuron release neurotransmitters into the synaptic cleft?
-    A. Dendrites
-    B. Soma
-    C. Axon
-    D. Axon terminals
+    <strong>A.</strong>  Dendrites
+    <strong>B.</strong>   Soma
+    <strong>C.</strong>   Axon
+    <strong>D.</strong>   Axon terminals
 
 myelination - What process involves the formation of a fatty sheath around axons to increase the speed of electrical signal transmission?
-    A. Myelination
-    B. Nodes of Ranvier
-    C. Saltatory conduction
-    D. Axon terminals
+    <strong>A.</strong>  Myelination
+    <strong>B.</strong>   Nodes of Ranvier
+    <strong>C.</strong>   Saltatory conduction
+    <strong>D.</strong>   Axon terminals
 
 nodes of Ranvier - What are the gaps in the myelin sheath along an axon that facilitate rapid signal conduction?
-    A. Myelination
-    B. Nodes of Ranvier
-    C. Saltatory conduction
-    D. Axon terminals
+    <strong>A.</strong>  Myelination
+    <strong>B.</strong>   Nodes of Ranvier
+    <strong>C.</strong>   Saltatory conduction
+    <strong>D.</strong>   Axon terminals
 
 saltatory conduction - What is the process by which action potentials jump from one node of Ranvier to the next, increasing conduction velocity along myelinated axons?
-    A. Myelination
-    B. Nodes of Ranvier
-    C. Saltatory conduction
-    D. Axon terminals
+    <strong>A.</strong>  Myelination
+    <strong>B.</strong>   Nodes of Ranvier
+    <strong>C.</strong>   Saltatory conduction
+    <strong>D.</strong>   Axon terminals
 
 meissners corpuscles - What mechanoreceptors in the skin detect light touch and low-frequency vibration?
-    A. Pacinian corpuscles
-    B. Merkel cells
-    C. Ruffini endings
-    D. Meissners corpuscles
+    <strong>A.</strong>  Pacinian corpuscles
+    <strong>B.</strong>   Merkel cells
+    <strong>C.</strong>   Ruffini endings
+    <strong>D.</strong>   Meissners corpuscles
 pacinian corpuscles - What mechanoreceptors in the skin detect deep pressure and high-frequency vibration?
-    A. Pacinian corpuscles
-    B. Merkel cells
-    C. Ruffini endings
-    D. Meissners corpuscles
+    <strong>A.</strong>  Pacinian corpuscles
+    <strong>B.</strong>   Merkel cells
+    <strong>C.</strong>   Ruffini endings
+    <strong>D.</strong>   Meissners corpuscles
 
 merkel cells - What mechanoreceptors in the skin detect light touch and sustained pressure?
-    A. Pacinian corpuscles
-    B. Merkel cells
-    C. Ruffini endings
-    D. Meissners corpuscles
+    <strong>A.</strong>  Pacinian corpuscles
+    <strong>B.</strong>   Merkel cells
+    <strong>C.</strong>   Ruffini endings
+    <strong>D.</strong>   Meissners corpuscles
 
 ruffini endings - What mechanoreceptors in the skin detect skin stretch and sustained pressure?
-    A. Pacinian corpuscles
-    B. Merkel cells
-    C. Ruffini endings
-    D. Meissners corpuscles
+    <strong>A.</strong>  Pacinian corpuscles
+    <strong>B.</strong>   Merkel cells
+    <strong>C.</strong>   Ruffini endings
+    <strong>D.</strong>   Meissners corpuscles
 
 thermoreceptors - What sensory receptors detect changes in temperature?
-    A. Thermoreceptors
-    B. Nociceptors
-    C. Mechanoreceptors
-    D. Photoreceptors
+    <strong>A.</strong>  Thermoreceptors
+    <strong>B.</strong>   Nociceptors
+    <strong>C.</strong>   Mechanoreceptors
+    <strong>D.</strong>   Photoreceptors
 
 nociceptors - What sensory receptors respond to potentially harmful stimuli by detecting pain?
-    A. Thermoreceptors
-    B. Nociceptors
-    C. Mechanoreceptors
-    D. Photoreceptors
+    <strong>A.</strong>  Thermoreceptors
+    <strong>B.</strong>   Nociceptors
+    <strong>C.</strong>   Mechanoreceptors
+    <strong>D.</strong>   Photoreceptors
 
 skeletal muscle - What type of muscle tissue is attached to bones and responsible for voluntary movements?
-    A. Skeletal muscle
-    B. Cardiac muscle
-    C. Smooth muscle
-    D. Myocytes
+    <strong>A.</strong>  Skeletal muscle
+    <strong>B.</strong>   Cardiac muscle
+    <strong>C.</strong>   Smooth muscle
+    <strong>D.</strong>   Myocytes
 
 cardiac muscle - What type of muscle tissue makes up the heart and contracts involuntarily to pump blood?
-    A. Skeletal muscle
-    B. Cardiac muscle
-    C. Smooth muscle
-    D. Myocytes
+    <strong>A.</strong>  Skeletal muscle
+    <strong>B.</strong>   Cardiac muscle
+    <strong>C.</strong>   Smooth muscle
+    <strong>D.</strong>   Myocytes
 
 smooth muscle - What type of muscle tissue is found in the walls of hollow organs and contracts involuntarily?
-    A. Skeletal muscle
-    B. Cardiac muscle
-    C. Smooth muscle
-    D. Myocytes
+    <strong>A.</strong>  Skeletal muscle
+    <strong>B.</strong>   Cardiac muscle
+    <strong>C.</strong>   Smooth muscle
+    <strong>D.</strong>   Myocytes
 
 myocytes - What are the specialized muscle cells responsible for contraction in muscle tissue?
-    A. Myocytes
-    B. Neurons
-    C. Osteocytes
-    D. Chondrocytes
+    <strong>A.</strong>  Myocytes
+    <strong>B.</strong>   Neurons
+    <strong>C.</strong>   Osteocytes
+    <strong>D.</strong>   Chondrocytes
 
 myosin - What thick protein filament interacts with actin to produce muscle contraction?
-    A. Myosin
-    B. Actin
-    C. Troponin
-    D. Tropomyosin
+    <strong>A.</strong>  Myosin
+    <strong>B.</strong>   Actin
+    <strong>C.</strong>   Troponin
+    <strong>D.</strong>   Tropomyosin
 
 troponin - What regulatory protein binds calcium ions and initiates muscle contraction by moving tropomyosin away from actin binding sites?
-    A. Myosin
-    B. Actin
-    C. Troponin
-    D. Tropomyosin
+    <strong>A.</strong>  Myosin
+    <strong>B.</strong>   Actin
+    <strong>C.</strong>   Troponin
+    <strong>D.</strong>   Tropomyosin
 
 tropomyosin - What protein blocks myosin-binding sites on actin filaments and is moved during muscle contraction?
-    A. Myosin
-    B. Actin
-    C. Troponin
-    D. Tropomyosin
+    <strong>A.</strong>  Myosin
+    <strong>B.</strong>   Actin
+    <strong>C.</strong>   Troponin
+    <strong>D.</strong>   Tropomyosin
 
 tendons - What connective tissues attach muscles to bones, transmitting force to produce movement?
-    A. Tendons
-    B. Ligaments
-    C. Cartilage
-    D. Synovial joints
+    <strong>A.</strong>  Tendons
+    <strong>B.</strong>   Ligaments
+    <strong>C.</strong>   Cartilage
+    <strong>D.</strong>   Synovial joints
 
 ligaments - What connective tissues connect bones to other bones at joints, providing stability?
-    A. Tendons
-    B. Ligaments
-    C. Cartilage
-    D. Synovial joints
+    <strong>A.</strong>  Tendons
+    <strong>B.</strong>   Ligaments
+    <strong>C.</strong>   Cartilage
+    <strong>D.</strong>   Synovial joints
 
 synovial joints - What type of freely movable joints are characterized by a fluid-filled cavity and include the knee and shoulder?
-    A. Synovial joints
-    B. Cartilaginous joints
-    C. Fibrous joints
-    D. Syndesmoses
+    <strong>A.</strong>  Synovial joints
+    <strong>B.</strong>   Cartilaginous joints
+    <strong>C.</strong>   Fibrous joints
+    <strong>D.</strong>   Syndesmoses
 
 cartilaginous joints - What type of joints allow limited movement and are connected by cartilage, such as intervertebral discs?
-    A. Synovial joints
-    B. Cartilaginous joints
-    C. Fibrous joints
-    D. Syndesmoses
+    <strong>A.</strong>  Synovial joints
+    <strong>B.</strong>   Cartilaginous joints
+    <strong>C.</strong>   Fibrous joints
+    <strong>D.</strong>   Syndesmoses
 
 fibrous joints - What type of joints are immovable and connected by dense connective tissue, such as sutures in the skull?
-    A. Synovial joints
-    B. Cartilaginous joints
-    C. Fibrous joints
-    D. Syndesmoses
+    <strong>A.</strong>  Synovial joints
+    <strong>B.</strong>   Cartilaginous joints
+    <strong>C.</strong>   Fibrous joints
+    <strong>D.</strong>   Syndesmoses
 
 syndesmoses - What are fibrous joints connected by ligaments, allowing limited movement (e.g., between the tibia and fibulA.?
-    A. Syndesmoses
-    B. Gomphoses
-    C. Synchondroses
-    D. Synovial joints
+    <strong>A.</strong>  Syndesmoses
+    <strong>B.</strong>   Gomphoses
+    <strong>C.</strong>   Synchondroses
+    <strong>D.</strong>   Synovial joints
 
 gomphoses - What are fibrous joints that anchor teeth to their sockets in the jawbone?
-    A. Syndesmoses
-    B. Gomphoses
-    C. Synchondroses
-    D. Synovial joints
+    <strong>A.</strong>  Syndesmoses
+    <strong>B.</strong>   Gomphoses
+    <strong>C.</strong>   Synchondroses
+    <strong>D.</strong>   Synovial joints
 
 synchondroses - What are cartilaginous joints connected by hyaline cartilage, such as the epiphyseal plates in growing bones?
-    A. Syndesmoses
-    B. Gomphoses
-    C. Synchondroses
-    D. Synovial joints
+    <strong>A.</strong>  Syndesmoses
+    <strong>B.</strong>   Gomphoses
+    <strong>C.</strong>   Synchondroses
+    <strong>D.</strong>   Synovial joints
 
 sesamoid bones - What are small, round bones that form within tendons, such as the patella (kneecap)?
-    A. Sesamoid bones
-    B. Long bones
-    C. Flat bones
-    D. Irregular bones
+    <strong>A.</strong>  Sesamoid bones
+    <strong>B.</strong>   Long bones
+    <strong>C.</strong>   Flat bones
+    <strong>D.</strong>   Irregular bones
 
 hyaline cartilage - What type of cartilage provides support and flexibility, found in the nose, trachea, and at joint surfaces?
-    A. Hyaline cartilage
-    B. Elastic cartilage
-    C. Fibrocartilage
-    D. Articular cartilage
+    <strong>A.</strong>  Hyaline cartilage
+    <strong>B.</strong>   Elastic cartilage
+    <strong>C.</strong>   Fibrocartilage
+    <strong>D.</strong>   Articular cartilage
 
 elastic cartilage - What type of cartilage provides strength and elasticity, found in the external ear and epiglottis?
-    A. Hyaline cartilage
-    B. Elastic cartilage
-    C. Fibrocartilage
-    D. Articular cartilage
+    <strong>A.</strong>  Hyaline cartilage
+    <strong>B.</strong>   Elastic cartilage
+    <strong>C.</strong>   Fibrocartilage
+    <strong>D.</strong>   Articular cartilage
 
 fibrocartilage - What type of cartilage provides tensile strength and is found in intervertebral discs and the pubic symphysis?
-    A. Hyaline cartilage
-    B. Elastic cartilage
-    C. Fibrocartilage
-    D. Articular cartilage
+    <strong>A.</strong>  Hyaline cartilage
+    <strong>B.</strong>   Elastic cartilage
+    <strong>C.</strong>   Fibrocartilage
+    <strong>D.</strong>   Articular cartilage
 
 arteries - What blood vessels carry oxygenated blood away from the heart to the body’s tissues?
-    A. Arteries
-    B. Veins
-    C. Capillaries
-    D. Venules
+    <strong>A.</strong>  Arteries
+    <strong>B.</strong>   Veins
+    <strong>C.</strong>   Capillaries
+    <strong>D.</strong>   Venules
 
 veins - What blood vessels carry deoxygenated blood from the body’s tissues back to the heart?
-    A. Arteries
-    B. Veins
-    C. Capillaries
-    D. Venules
+    <strong>A.</strong>  Arteries
+    <strong>B.</strong>   Veins
+    <strong>C.</strong>   Capillaries
+    <strong>D.</strong>   Venules
 
 capillaries - What are the smallest blood vessels where exchange of gases, nutrients, and waste products occurs between blood and tissues?
-    A. Arteries
-    B. Veins
-    C. Capillaries
-    D. Venules
+    <strong>A.</strong>  Arteries
+    <strong>B.</strong>   Veins
+    <strong>C.</strong>   Capillaries
+    <strong>D.</strong>   Venules
 
 venules - What small blood vessels collect blood from capillaries and transport it to veins?
-    A. Arteries
-    B. Veins
-    C. Capillaries
-    D. Venules
+    <strong>A.</strong>  Arteries
+    <strong>B.</strong>   Veins
+    <strong>C.</strong>   Capillaries
+    <strong>D.</strong>   Venules
 
 plasma - What is the liquid component of blood that transports nutrients, hormones, and waste products?
-    A. Plasma
-    B. Red blood cells
-    C. White blood cells
-    D. Platelets
+    <strong>A.</strong>  Plasma
+    <strong>B.</strong>   Red blood cells
+    <strong>C.</strong>   White blood cells
+    <strong>D.</strong>   Platelets
 
 parotid glands - What salivary glands, located near the ears, produce an enzyme called amylase that breaks down carbohydrates?
-    A. Parotid glands
-    B. Submandibular glands
-    C. Sublingual glands
-    D. Von Ebner's glands
+    <strong>A.</strong>  Parotid glands
+    <strong>B.</strong>   Submandibular glands
+    <strong>C.</strong>   Sublingual glands
+    <strong>D.</strong>   Von Ebner's glands
 
 submandibular glands - What salivary glands, located beneath the jaw, produce the majority of saliva in the mouth?
-    A. Parotid glands
-    B. Submandibular glands
-    C. Sublingual glands
-    D. Von Ebner's glands
+    <strong>A.</strong>  Parotid glands
+    <strong>B.</strong>   Submandibular glands
+    <strong>C.</strong>   Sublingual glands
+    <strong>D.</strong>   Von Ebner's glands
 
 von ebner's glands - What minor salivary glands, located at the back of the tongue, produce a watery secretion that aids in taste perception?
-    A. Parotid glands
-    B. Submandibular glands
-    C. Sublingual glands
-    D. Von Ebner's glands
+    <strong>A.</strong>  Parotid glands
+    <strong>B.</strong>   Submandibular glands
+    <strong>C.</strong>   Sublingual glands
+    <strong>D.</strong>   Von Ebner's glands
 
 mastication - What is the process of chewing food to mechanically break it down into smaller pieces for digestion?
-    A. Mastication
-    B. Deglutition
-    C. Peristalsis
-    D. Absorption
+    <strong>A.</strong>  Mastication
+    <strong>B.</strong>   Deglutition
+    <strong>C.</strong>   Peristalsis
+    <strong>D.</strong>   Absorption
 
 chief cells - What cells in the stomach secrete pepsinogen, which is activated to pepsin for protein digestion?
-    A. Chief cells
-    B. Parietal cells
-    C. G cells
-    D. Mucous cells
+    <strong>A.</strong>  Chief cells
+    <strong>B.</strong>   Parietal cells
+    <strong>C.</strong>   G cells
+    <strong>D.</strong>   Mucous cells
 
 parietal cells - What cells in the stomach secrete hydrochloric acid, which denatures proteins and activates pepsin?
-    A. Chief cells
-    B. Parietal cells
-    C. G cells
-    D. Mucous cells
+    <strong>A.</strong>  Chief cells
+    <strong>B.</strong>   Parietal cells
+    <strong>C.</strong>   G cells
+    <strong>D.</strong>   Mucous cells
 
 G cells - What cells in the stomach secrete gastrin, a hormone that stimulates gastric acid secretion?
-    A. Chief cells
-    B. Parietal cells
-    C. G cells
-    D. Mucous cells
+    <strong>A.</strong>  Chief cells
+    <strong>B.</strong>   Parietal cells
+    <strong>C.</strong>   G cells
+    <strong>D.</strong>   Mucous cells
 
 peptide hormones - What class of hormones, composed of amino acids, includes insulin and glucagon?
-    A. Peptide hormones
-    B. Steroid hormones
-    C. Amine hormones
-    D. Thyroid hormones
+    <strong>A.</strong>  Peptide hormones
+    <strong>B.</strong>   Steroid hormones
+    <strong>C.</strong>   Amine hormones
+    <strong>D.</strong>   Thyroid hormones
 
 insulin - What peptide hormone, produced by the pancreas, lowers blood glucose levels by promoting glucose uptake into cells?
-    A. Insulin
-    B. Glucagon
-    C. Growth hormone
-    D. Cortisol
+    <strong>A.</strong>  Insulin
+    <strong>B.</strong>   Glucagon
+    <strong>C.</strong>   Growth hormone
+    <strong>D.</strong>   Cortisol
 
 glucagon - What peptide hormone, produced by the pancreas, raises blood glucose levels by stimulating the liver to release glucose?
-    A. Insulin
-    B. Glucagon
-    C. Growth hormone
-    D. Cortisol
+    <strong>A.</strong>  Insulin
+    <strong>B.</strong>   Glucagon
+    <strong>C.</strong>   Growth hormone
+    <strong>D.</strong>   Cortisol
 
 growth hormone - What peptide hormone, produced by the pituitary gland, stimulates growth and cell reproduction?
-    A. Insulin
-    B. Glucagon
-    C. Growth hormone
-    D. Cortisol
+    <strong>A.</strong>  Insulin
+    <strong>B.</strong>   Glucagon
+    <strong>C.</strong>   Growth hormone
+    <strong>D.</strong>   Cortisol
 
 prolactin - What peptide hormone, produced by the pituitary gland, stimulates milk production in the mammary glands?
-    A. Insulin
-    B. Prolactin
-    C. Growth hormone
-    D. Cortisol
+    <strong>A.</strong>  Insulin
+    <strong>B.</strong>   Prolactin
+    <strong>C.</strong>   Growth hormone
+    <strong>D.</strong>   Cortisol
 
 cortisol - What steroid hormone, produced by the adrenal cortex, is involved in the stress response and metabolism regulation?
-    A. Insulin
-    B. Prolactin
-    C. Growth hormone
-    D. Cortisol
+    <strong>A.</strong>  Insulin
+    <strong>B.</strong>   Prolactin
+    <strong>C.</strong>   Growth hormone
+    <strong>D.</strong>   Cortisol
 
 testosterone - What steroid hormone, produced by the testes, is responsible for the development of male secondary sexual characteristics?
-    A. Testosterone
-    B. Estrogen
-    C. Progesterone
-    D. Cortisol
+    <strong>A.</strong>  Testosterone
+    <strong>B.</strong>   Estrogen
+    <strong>C.</strong>   Progesterone
+    <strong>D.</strong>   Cortisol
 
 thyroid hormones - What hormones, produced by the thyroid gland, regulate metabolism, growth, and development?
-    A. Thyroid hormones
-    B. Insulin
-    C. Cortisol
-    D. Testosterone
+    <strong>A.</strong>  Thyroid hormones
+    <strong>B.</strong>   Insulin
+    <strong>C.</strong>   Cortisol
+    <strong>D.</strong>   Testosterone
 
 adrenaline - What hormone (also called epinephrinE., produced by the adrenal medulla, is involved in the fight-or-flight response?
-    A. Adrenaline
-    B. Noradrenaline
-    C. Dopamine
-    D. Serotonin
+    <strong>A.</strong>  Adrenaline
+    <strong>B.</strong>   Noradrenaline
+    <strong>C.</strong>   Dopamine
+    <strong>D.</strong>   Serotonin
 
 Primary messengers - What are hormones or signaling molecules that bind to receptors on the surface of target cells to initiate a cellular response?
-    A. Primary messengers
-    B. Secondary messengers
-    C. Neurotransmitters
-    D. Enzymes
+    <strong>A.</strong>  Primary messengers
+    <strong>B.</strong>   Secondary messengers
+    <strong>C.</strong>   Neurotransmitters
+    <strong>D.</strong>   Enzymes
 
 Secondary messengers - What are intracellular molecules that relay signals from primary messengers to target molecules within the cell?
-    A. Primary messengers
-    B. Secondary messengers
-    C. Neurotransmitters
-    D. Enzymes
+    <strong>A.</strong>  Primary messengers
+    <strong>B.</strong>   Secondary messengers
+    <strong>C.</strong>   Neurotransmitters
+    <strong>D.</strong>   Enzymes
 
 cleavage - What is the series of rapid mitotic cell divisions that occur after fertilization, resulting in the formation of a blastocyst?
-    A. Cleavage
-    B. Implantation
-    C. Neurulation
-    D. Gastrulation
+    <strong>A.</strong>  Cleavage
+    <strong>B.</strong>   Implantation
+    <strong>C.</strong>   Neurulation
+    <strong>D.</strong>   Gastrulation
 
 implantation - What is the process by which the blastocyst attaches to and embeds in the uterine wall?
-    A. Cleavage
-    B. Implantation
-    C. Neurulation
-    D. Gastrulation
+    <strong>A.</strong>  Cleavage
+    <strong>B.</strong>   Implantation
+    <strong>C.</strong>   Neurulation
+    <strong>D.</strong>   Gastrulation
 
 neurulation - What is the embryonic process by which the neural tube forms, giving rise to the central nervous system?
-    A. Cleavage
-    B. Implantation
-    C. Neurulation
-    D. Gastrulation
+    <strong>A.</strong>  Cleavage
+    <strong>B.</strong>   Implantation
+    <strong>C.</strong>   Neurulation
+    <strong>D.</strong>   Gastrulation
 
 Fenestrated capillaries - What specialized capillaries in the glomerulus have pores that allow the passage of small molecules while retaining larger ones?
-    A. Fenestrated capillaries
-    B. Continuous capillaries
-    C. Sinusoidal capillaries
-    D. Lymphatic capillaries
+    <strong>A.</strong>  Fenestrated capillaries
+    <strong>B.</strong>   Continuous capillaries
+    <strong>C.</strong>   Sinusoidal capillaries
+    <strong>D.</strong>   Lymphatic capillaries
 
 Podocytes - What specialized cells in the Bowman’s capsule wrap around glomerular capillaries and help filter blood during urine formation?
-    A. Podocytes
-    B. Mesangial cells
-    C. Endothelial cells
-    D. Epithelial cells
+    <strong>A.</strong>  Podocytes
+    <strong>B.</strong>   Mesangial cells
+    <strong>C.</strong>   Endothelial cells
+    <strong>D.</strong>   Epithelial cells
 
 excretion - What is the final step of waste removal, where urine is formed by the kidneys and transported out of the body?
-    A. Filtration
-    B. Reabsorption
-    C. Secretion
-    D. Excretion
+    <strong>A.</strong>  Filtration
+    <strong>B.</strong>   Reabsorption
+    <strong>C.</strong>   Secretion
+    <strong>D.</strong>   Excretion

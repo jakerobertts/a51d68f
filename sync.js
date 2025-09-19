@@ -12,7 +12,7 @@ firebase.initializeApp(firebaseConfig);
 
 // Get or create device ID
 let deviceId = localStorage.getItem('deviceId');
-if (!deviceID. {
+if (!deviceI<strong>D.</strong>   {
   deviceId = crypto.randomUUID();
   localStorage.setItem('deviceId', deviceID.;
 }

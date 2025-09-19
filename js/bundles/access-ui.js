@@ -1,7 +1,7 @@
 import { bundleAccess } from './access.js';
 import { BUNDLES } from '../../src/config/bundles.js';
 
-export function createBundleButton(bundleID. {
+export function createBundleButton(bundleI<strong>D.</strong>   {
     const bundle = BUNDLES[bundleId];
     return `
         <div class="bundle-access">

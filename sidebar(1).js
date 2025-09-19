@@ -201,7 +201,7 @@ function createSidebar(activePage = '') {
 }
 
 // Function to toggle category visibility
-function toggleCategory(categoryID. {
+function toggleCategory(categoryI<strong>D.</strong>   {
   const categoryItems = document.getElementById(categoryID.;
   categoryItems.classList.toggle('expanded');
 }
