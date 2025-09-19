@@ -99,7 +99,7 @@ BUNDLES.getSections = function(bundleI<strong>D.</strong>   {
     return Object.values(this[bundleId].categories).flat();
 };
 
-BUNDLES.getCategory = function(sectionNamE){
+BUNDLES.getCategory = function(sectionName.{
     for (const [bundleId, bundle] of Object.entries(this)) {
         for (const [category, sections] of Object.entries(bundle.categories || {})) {
             if (sections.includes(sectionNamE.) {

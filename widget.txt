@@ -238,7 +238,7 @@ elaboration likelihood - What dual-process model of persuasion proposes central 
     <strong>C.</strong>   Attribution theory
     <strong>D.</strong>   Social identity
 
-social cognitive (behavior changE)- Which theory explains behavior change as a result of observational learning, imitation, and modeling within a social context?
+social cognitive (behavior change.- Which theory explains behavior change as a result of observational learning, imitation, and modeling within a social context?
     <strong>A.</strong>  Social cognitive
     <strong>B.</strong>   Trait
     <strong>C.</strong>   Psychoanalytic
@@ -850,19 +850,19 @@ Maslow's hierarchy of needs - What motivational theory proposes that human needs
     <strong>C.</strong>   Maslow's hierarchy of needs
     <strong>D.</strong>   Cognitive dissonance
 
-Cognitive (attitudE)- What component of attitude refers to the beliefs, thoughts, and knowledge one has about an object or situation?
+Cognitive (attitude.- What component of attitude refers to the beliefs, thoughts, and knowledge one has about an object or situation?
     <strong>A.</strong>  Cognitive
     <strong>B.</strong>   Affective
     <strong>C.</strong>   Behavioral
     <strong>D.</strong>   Motivational
 
-Affective (attitudE)- What component of attitude involves the emotional responses or feelings toward an object or situation?
+Affective (attitude.- What component of attitude involves the emotional responses or feelings toward an object or situation?
     <strong>A.</strong>  Cognitive
     <strong>B.</strong>   Affective
     <strong>C.</strong>   Behavioral
     <strong>D.</strong>   Motivational
 
-Behavioral (attitudE)- What component of attitude refers to the actions or observable behaviors associated with an attitude?
+Behavioral (attitude.- What component of attitude refers to the actions or observable behaviors associated with an attitude?
     <strong>A.</strong>  Cognitive
     <strong>B.</strong>   Affective
     <strong>C.</strong>   Behavioral

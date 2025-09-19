@@ -20,7 +20,7 @@ if (!deviceI<strong>D.</strong>   {
 // Collect all quiz progress keys
 function getAllQuizProgress() {
   const allProgress = {};
-  for (let key in localStoragE){
+  for (let key in localStorage.{
     if (key.startsWith('quizProgress_')) {
       allProgress[key] = localStorage.getItem(key);
     }

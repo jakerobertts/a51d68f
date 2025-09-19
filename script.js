@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
     element.setAttribute('data-index', index);
     element.style.cursor = 'pointer';
     element.addEventListener('click', function(e) { // Fixed: was "E"
-      promptAnswer(element, e); // Fixed: was "E."
+      promptAnswer(element, e);
     });
     
     const blankLength = Math.max(answer.length, 1);
@@ -188,13 +188,13 @@ function promptAnswer(element, event) {
       localStorage.setItem(key, JSON.stringify(arr));
     }
   }
-  
+
   input.addEventListener('keypress', function(e) { // Fixed: was "E"
     if (e.key === 'Enter') {
       checkAnswer();
     }
   });
-  
+
   input.addEventListener('blur', function(e) { // Fixed: was "E"
     setTimeout(() => {
       if (input.value.trim() !== '') {
@@ -359,7 +359,7 @@ function saveProgressToUser(userID) { // Fixed: was "userID."
       alert("Progress synced to your Google account!");
     })
     .catch(error => {
-      alert("Failed to sync progress: " + error.message); // Fixed: was "messagE."
+      alert("Failed to sync progress: " + error.message);
     });
 }
 
@@ -367,7 +367,7 @@ function saveProgressToUser(userID) { // Fixed: was "userID."
 document.querySelectorAll('.certainty-bar').forEach(function(bar) {
   bar.addEventListener('input', function() {
     this.parentElement.querySelector('.certainty-value').textContent = this.value;
-    localStorage.setItem(this.id, this.value); // Fixed: was "valuE."
+    localStorage.setItem(this.id, this.value);
   });
   const saved = localStorage.getItem(bar.id); // Fixed: was "bar.iD."
   if (saved) { // Fixed: was "saveD."

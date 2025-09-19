@@ -207,10 +207,10 @@ function toggleCategory(categoryI<strong>D.</strong>   {
 }
 
 // Function to expand category containing active page
-function expandActiveCategory(activePagE){
+function expandActiveCategory(activePage.{
   sidebarCategories.forEach(category => {
     const hasActivePage = category.items.some(item => item.href === activePagE.;
-    if (hasActivePagE){
+    if (hasActivePage.{
       const categoryId = category.title.replace(/\s+/g, '-').toLowerCase();
       setTimeout(() => {
         const categoryItems = document.getElementById(categoryID.;

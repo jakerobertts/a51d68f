@@ -282,10 +282,10 @@ function initSidebar() {
   }
   
   // Replace with generated sidebar
-  sidebarContainer.outerHTML = createSidebar(currentPage);  // Fixed: changed currentPagE to currentPage
-  
+  sidebarContainer.outerHTML = createSidebar(currentPage);
+
   // Expand the category containing the active page
-  expandActiveCategory(currentPage);  // Fixed: changed currentPagE to currentPage
+  expandActiveCategory(currentPage);
 }
 
 // Initialize sidebar when DOM is loaded

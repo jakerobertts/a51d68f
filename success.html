@@ -78,7 +78,7 @@
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ sessionId }),
         })
-          .then((responsE)=> response.json())
+          .then((response.=> response.json())
           .then((dat<strong>A.</strong>  => {
             if (data.success) {
               const bundle = BUNDLES[data.bundle];
@@ -116,7 +116,7 @@
           .catch((error) => {
             console.error("Verification error:", error);
             document.getElementById("purchase-details").innerHTML =
-              '<p style="color: #dc3545">There was an error verifying your purchasE)Please contact support.</p>';
+              '<p style="color: #dc3545">There was an error verifying your purchase.Please contact support.</p>';
           });
       } else {
         window.location = "/";

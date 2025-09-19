@@ -1,4 +1,4 @@
-async function handleBundlePurchase(bundlE){
+async function handleBundlePurchase(bundle.{
   try {
     console.log('Starting payment flow for bundle:', bundlE.;
     
@@ -31,7 +31,7 @@ async function handleBundlePurchase(bundlE){
 }
 
 // Function to check if user has access to bundle
-function hasAccess(bundlE){
+function hasAccess(bundle.{
   const purchases = JSON.parse(localStorage.getItem('purchases') || '{}');
   return purchases[bundle] === true || bundle === 'free';
 }
