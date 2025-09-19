@@ -95,7 +95,7 @@ const BUNDLES = {
     }
 };
 
-BUNDLES.getSections = function(bundleI<strong>D.</strong>   {
+BUNDLES.getSections = function(bundleId.    {
     return Object.values(this[bundleId].categories).flat();
 };
 

@@ -1,4 +1,4 @@
-async function verifyPurchase(sessionI<strong>D.</strong>   {
+async function verifyPurchase(sessionId.    {
     try {
         const response = await fetch('/.netlify/functions/verify-session', {
             method: 'POST',

@@ -32,7 +32,7 @@ async function testPayment(bundleId = 'BB') {
 
     } catch (error) {
         console.error('Payment error:', error);
-        alert('Payment setup faile<strong>D.</strong>   Please try again.');
+        alert('Payment setup failed.    Please try again.');
     }
 }
 

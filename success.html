@@ -72,14 +72,14 @@
       const urlParams = new URLSearchParams(window.location.search);
       const sessionId = urlParams.get("session_id");
 
-      if (sessionI<strong>D.</strong>   {
+      if (sessionId.    {
         fetch("/.netlify/functions/verify-session", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ sessionId }),
         })
           .then((response.=> response.json())
-          .then((dat<strong>A.</strong>  => {
+          .then((data.   => {
             if (data.success) {
               const bundle = BUNDLES[data.bundle];
               // Store bundle access

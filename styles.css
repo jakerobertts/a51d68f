@@ -182,7 +182,7 @@ div ul {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 p {
-  background-color: #a3f6ff;
+  background-color: #f6eaff;
   color: #13004e;
   padding: 10px 10px;
   border: 1px solid #000000;
@@ -609,14 +609,12 @@ li.collapsing {
     padding: 2px 4px;
   }
 .explanation-button {
-      background: #6a11cb;
-        color: rgb(230, 255, 255);
-        border: 2px solid #0a00cd;
-        border-radius: 10px;
-        padding: 10px 10px;
-        font-family: 'Courier New', Courier, monospace, Geneva, Tahoma,
+      background: #efefef;
+        color: rgb(26, 26, 26);
+        padding: 5px 5px;
+        font-family: 'Verdana', Courier, monospace, Geneva, Tahoma,
           sans-serif;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
 }
 .explanation-content {
   font-family: 'verdana', Geneva, Tahoma,
