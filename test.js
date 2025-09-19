@@ -280,7 +280,7 @@ function updateDataQuizSpan(groupName, userAnswer, correctAnswer, isCorrect) {
   }
 
   answerSpan.style.padding = "4px 8px";
-  answerSpan.style.borderRadius = "4px";
+  answerSpan.style.borderRadius = "0px";
   answerSpan.style.fontWeight = "bold";
   answerSpan.style.display = "inline-block";
   answerSpan.style.margin = "2px";
@@ -321,7 +321,6 @@ function showQuestionResult(groupName, userAnswer, correctAnswer, isCorrect) {
         label.style.fontWeight = "bold";
         label.style.padding = "4px";
         label.style.borderRadius = "4px";
-        label.style.border = "2px solid #28a745";
       } else if (radio.value === userAnswer && !isCorrect) {
         // User's wrong answer - red
         label.style.backgroundColor = "#f8d7da";
@@ -329,7 +328,6 @@ function showQuestionResult(groupName, userAnswer, correctAnswer, isCorrect) {
         label.style.fontWeight = "bold";
         label.style.padding = "4px";
         label.style.borderRadius = "4px";
-        label.style.border = "2px solid #dc3545";
       }
     });
 }
@@ -552,7 +550,6 @@ function loadMCProgress() {
               label.style.color = "#155724";
               label.style.fontWeight = "bold";
               label.style.padding = "4px";
-              label.style.borderRadius = "4px";
               label.style.border = "2px solid #28a745";
             }
           });
