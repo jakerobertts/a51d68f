@@ -86,8 +86,8 @@ function addResetProgressButton() {
   // Create reset button
   const resetButton = document.createElement("button");
   resetButton.textContent = "Reset All Progress";
-  resetButton.style.cssText = `
-    background: #007bff;
+resetButton.style.cssText = `
+    background:rgb(223, 223, 223);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -95,14 +95,11 @@ function addResetProgressButton() {
     font-family: system-ui;
     border-radius: 6px;
     cursor: pointer;
-    margin: 20px 0;
-    position: fixed;
-    top: 20px;
-    right: 16px;
-    z-index: 1000;
+    margin: 40px auto 0 auto;
+    display: block;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     transition: background 0.3s ease;
-  `;
+`;
 
   // Add hover effect
   resetButton.addEventListener("mouseenter", function() {
@@ -320,14 +317,16 @@ function showQuestionResult(groupName, userAnswer, correctAnswer, isCorrect) {
         label.style.color = "#155724";
         label.style.fontWeight = "bold";
         label.style.padding = "4px";
-        label.style.borderRadius = "4px";
+        label.style.borderRadius = "0px";
+        label.style.border = ""; // Remove border
       } else if (radio.value === userAnswer && !isCorrect) {
         // User's wrong answer - red
         label.style.backgroundColor = "#f8d7da";
         label.style.color = "#721c24";
         label.style.fontWeight = "bold";
         label.style.padding = "4px";
-        label.style.borderRadius = "4px";
+        label.style.borderRadius = "0px";
+        label.style.border = ""; // Remove border
       }
     });
 }
@@ -347,8 +346,9 @@ function disableQuestion(groupName) {
   if (submitButton) {
     submitButton.textContent = "Submitted ✓";
     submitButton.disabled = true;
-    submitButton.style.background = "#28a745";
+    submitButton.style.background = "gray";
     submitButton.style.cursor = "default";
+    submitButton.style.fontFamily = "Verdana, sans-serif";
   }
 }
 
@@ -512,7 +512,7 @@ function loadMCProgress() {
             }
             
             answerSpan.style.padding = "4px 8px";
-            answerSpan.style.borderRadius = "4px";
+            answerSpan.style.borderRadius = "0px";
             answerSpan.style.fontWeight = "bold";
             answerSpan.style.display = "inline-block";
             answerSpan.style.margin = "2px";
@@ -550,7 +550,7 @@ function loadMCProgress() {
               label.style.color = "#155724";
               label.style.fontWeight = "bold";
               label.style.padding = "4px";
-              label.style.border = "2px solid #28a745";
+              label.style.border = ""; // Remove border
             }
           });
         }
