@@ -30,6 +30,7 @@ const sidebarCategories = [
     { href: "carbmetabolism.html", text: "Carbohydrate Metabolism Checklist - BC", highlight: "#fff3e0" },
     { href: "atom.html" , text: "Atomic Structure Checklist - CHEM", highlight: "#fff9c4" },
     { href: "fluidcirc.html", text: "Fluids / Circulation Checklist - PHY", highlight: "#f3e8ff" },
+    { href: "demographics.html", text: "Demographics Checklist - PSY", highlight: "#e3f2fd" },
   ]},
 
   {
