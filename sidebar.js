@@ -32,6 +32,7 @@ const sidebarCategories = [
     { href: "fluidcirc.html", text: "Fluids / Circulation Checklist - PHY", highlight: "#f3e8ff" },
     { href: "demographics.html", text: "Demographics Checklist - PSY", highlight: "#e3f2fd" },
     { href: "ex.html", text: "Excretory System Checklist - BIO", highlight: "#e6ffed" },
+    { href: "oxphos.html", text: "Oxidative Phosphorylation Checklist - BC", highlight: "#fff3e0" },
   ]},
 
   {
