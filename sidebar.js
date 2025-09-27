@@ -11,28 +11,33 @@ const sidebarCategories = [
     ]
   },
   { title: "Comprehensive Checklists", items: [
-    { href: "acidderivatives.html", text: "Acid Derivatives Checklist - CHEM", highlight: "#fff9c4" },
-    { href: "associativelearning.html", text: "Associative Learning Checklist - PSY", highlight: "#e3f2fd" },
-    { href: "celltheory.html", text: "Cell Theory Checklist - BIO", highlight: "#e6ffed" },
-    { href: "aachem.html", text: "Amino Acids & Proteins Checklist - BC", highlight: "#fff3e0" },
-    { href: "acidbaseeq.html", text: "Acid-Base Equilibria Checklist - CHEM", highlight: "#fff9c4" },
-    { href: "attitudetheory.html", text: "Attitude Theory Checklist - PSY", highlight: "#e3f2fd" },
-    { href: "circulatory.html", text: "Circulatory System Checklist - BIO", highlight: "#e6ffed" },
-    { href: "bioenergeticsq.html", text: "Bioenergetics Checklist - BC", highlight: "#fff3e0" },
-    { href: "alcohols.html", text: "Alcohols Checklist - CHEM", highlight: "#fff9c4" },
-    { href: "culture.html", text: "Culture Checklist - PSY", highlight: "#e3f2fd" },
-    { href: "digestive.html", text: "Digestive System Checklist - BIO", highlight: "#e6ffed" },
-    { href: "carb.html", text: "Carbohydrates Checklist - BC", highlight: "#fff3e0" },
-    { href: "aldehydes.html", text: "Aldehydes & Ketones Checklist - CHEM", highlight: "#fff9c4" },
-    { href: "circuits.html", text: "Circuits Checklist - PHY", highlight: "#f3e8ff" },
-    { href: "consciousness.html", text: "Consciousness Checklist - PSY", highlight: "#e3f2fd" },
-    { href: "endocrine.html", text: "Endocrine System Checklist - BIO", highlight: "#e6ffed" },
-    { href: "carbmetabolism.html", text: "Carbohydrate Metabolism Checklist - BC", highlight: "#fff3e0" },
-    { href: "atom.html" , text: "Atomic Structure Checklist - CHEM", highlight: "#fff9c4" },
-    { href: "fluidcirc.html", text: "Fluids / Circulation Checklist - PHY", highlight: "#f3e8ff" },
-    { href: "demographics.html", text: "Demographics Checklist - PSY", highlight: "#e3f2fd" },
-    { href: "ex.html", text: "Excretory System Checklist - BIO", highlight: "#e6ffed" },
-    { href: "oxphos.html", text: "Oxidative Phosphorylation Checklist - BC", highlight: "#fff3e0" },
+    { isHeader: true, text: "CHEM/PHYS" },
+    { href: "acidderivatives.html", text: "Acid Derivatives Checklist - CHEM", highlight: "blueviolet", textColor: "white" },
+    { href: "acidbaseeq.html", text: "Acid-Base Equilibria Checklist - CHEM", highlight: "blueviolet", textColor: "white" },
+    { href: "alcohols.html", text: "Alcohols Checklist - CHEM", highlight: "blueviolet", textColor: "white" },
+    { href: "aldehydes.html", text: "Aldehydes & Ketones Checklist - CHEM", highlight: "blueviolet", textColor: "white" },
+    { href: "atom.html", text: "Atomic Structure Checklist - CHEM", highlight: "blueviolet", textColor: "white" },
+    { href: "circuits.html", text: "Circuits Checklist - PHY", highlight: "blueviolet", textColor: "white" },
+    { href: "fluidcirc.html", text: "Fluids / Circulation Checklist - PHY", highlight: "blueviolet", textColor: "white" },
+    
+    { isHeader: true, text: "BIO/BC" },
+    { href: "aachem.html", text: "Amino Acids & Proteins Checklist - BC", highlight: "blueviolet", textColor: "white" },
+    { href: "bioenergeticsq.html", text: "Bioenergetics Checklist - BC", highlight: "blueviolet", textColor: "white" },
+    { href: "carb.html", text: "Carbohydrates Checklist - BC", highlight: "blueviolet", textColor: "white" },
+    { href: "carbmetabolism.html", text: "Carbohydrate Metabolism Checklist - BC", highlight: "blueviolet", textColor: "white" },
+    { href: "celltheory.html", text: "Cell Theory Checklist - BIO", highlight: "blueviolet", textColor: "white" },
+    { href: "circulatory.html", text: "Circulatory System Checklist - BIO", highlight: "blueviolet", textColor: "white" },
+    { href: "digestive.html", text: "Digestive System Checklist - BIO", highlight: "blueviolet", textColor: "white" },
+    { href: "endocrine.html", text: "Endocrine System Checklist - BIO", highlight: "blueviolet", textColor: "white" },
+    { href: "ex.html", text: "Excretory System Checklist - BIO", highlight: "blueviolet", textColor: "white" },
+    { href: "oxphos.html", text: "Oxidative Phosphorylation Checklist - BC", highlight: "blueviolet", textColor: "white" },
+    
+    { isHeader: true, text: "PSY/SOC" },
+    { href: "associativelearning.html", text: "Associative Learning Checklist - PSY", highlight: "blueviolet", textColor: "white" },
+    { href: "attitudetheory.html", text: "Attitude Theory Checklist - PSY", highlight: "blueviolet", textColor: "white" },
+    { href: "consciousness.html", text: "Consciousness Checklist - PSY", highlight: "blueviolet", textColor: "white" },
+    { href: "culture.html", text: "Culture Checklist - PSY", highlight: "blueviolet", textColor: "white" },
+    { href: "demographics.html", text: "Demographics Checklist - PSY", highlight: "blueviolet", textColor: "white" },
   ]},
 
   {
@@ -163,9 +168,19 @@ function createSidebar(activePage = '') {
               const scoreKey = `score-${item.href}`;
               const score = localStorage.getItem(scoreKey);
               
-              // Apply highlight style if item has highlight property
-              const highlightStyle = item.highlight ? `style="background-color: ${item.highlight}; border-left: 4px solid ${darkenColor(item.highlight)}; font-weight: 600;"` : '';
+              // Apply highlight style if item has highlight property and textColor if provided
+              let highlightStyle = '';
+              if (item.highlight) {
+                highlightStyle += `background-color: ${item.highlight}; border-left: 4px solid ${darkenColor(item.highlight)}; font-weight: 600;`;
+              }
+              if (item.textColor) {
+                highlightStyle += `color: ${item.textColor};`;
+              }
+              highlightStyle = highlightStyle ? `style="${highlightStyle}"` : '';
               
+              if (item.isHeader) {
+                return `<div class="nav-header" style="font-weight:bold; margin:8px 0 4px 0; color:#444;">${item.text}</div>`;
+              }
               return `<a href="${item.href}" 
                         class="nav-item${item.href === activePage ? ' active' : ''}${item.highlight ? ' highlighted' : ''}" 
                         ${highlightStyle}>
@@ -243,9 +258,13 @@ function createSidebar(activePage = '') {
       
       .nav-item.active {
         background: #e8f4fd;
-        border-left: 3px solid rgb(154, 154, 154);
-        font-weight: bold;
-      }
+    .nav-header {
+      font-size: 13px;
+      padding: 4px 0 4px 8px;
+      background: #f3f3f3;
+      border-radius: 2px;
+      letter-spacing: 1px;
+    }
     </style>
   `;
   return sidebarHTML;
@@ -294,4 +313,3 @@ function initSidebar() {
 
 // Initialize sidebar when DOM is loaded
 document.addEventListener('DOMContentLoaded', initSidebar);
-
