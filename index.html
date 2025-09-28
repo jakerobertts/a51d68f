@@ -13,6 +13,11 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Fontisto Icon Library for dashboard icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/fontisto@3.0.4/css/fontisto/fontisto.min.css"
+    />
     <style>
       body {
         margin: 0;
@@ -36,7 +41,7 @@
         }
       }
       header {
-        background: rgba(226, 225, 255, 0.85);
+        background: rgba(225, 242, 255, 0.85);
         box-shadow: 0 2px 12px rgba(30, 41, 59, 0.08);
         padding: 1.5rem 0 1.2rem 0;
         text-align: center;
@@ -49,7 +54,7 @@
         font-weight: 900;
         color: #2f086e;
         letter-spacing: -2px;
-        font-family: "Verdana", "Roboto", Arial, sans-serif;
+        font-family: "system-ui", "Roboto", Arial, sans-serif;
         font-style: normal;
         background: linear-gradient(90deg, #027696 30%, #82038e 100%);
         -webkit-background-clip: text;
@@ -160,7 +165,7 @@
           gap: 0.7rem;
         }
         .logo-title {
-          font-size: 1.5rem;
+          font-size: 3rem;
         }
       }
     </style>
@@ -179,7 +184,7 @@
   </head>
   <body>
     <header>
-      <span class="logo-title">MCAT-able</span>
+      <span class="logo-title">MCAT-able <img src="Screenshot 2025-09-18 at 9.18.30 PM.png" style="width: 50px; height: 50px; border-radius: 5%;" alt="Logo" /></span><br /><br />
       <nav style="margin-top: 1rem; text-align: center">
         <a
           href="main.html"
@@ -188,9 +193,11 @@
             color: #001868;
             font-weight: 600;
             text-decoration: none;
+            background-color: #06b6d4;
+            padding: 0.3rem 0.6rem;
           "
           >Dashboard</a
-        >
+        ></a>
         <a
           href="Acidderivatives.html"
           style="
@@ -198,40 +205,47 @@
             color: #001558;
             font-weight: 600;
             text-decoration: none;
+            background-color: #06b6d4;
+            padding: 0.3rem 0.6rem;
           "
           >Practice Tests</a
         >
         <a
-          href="practice.html"
+          href="aa.html"
           style="
             margin-right: 1.5rem;
             color: #00155b;
             font-weight: 600;
             text-decoration: none;
+            background-color: #06b6d4;
+            padding: 0.3rem 0.6rem;
           "
           >Content Review</a
         >
       </nav>
     </header>
     <main>
+      <div
+        style="font-size: 80px; color: rgb(179, 233, 255)"
+      >
+        <span style="display: inline-block; animation: pulse 1.2s infinite;">
+          ⚕
+        </span>
+        <style>
+        @keyframes pulse {
+          0% { transform: scale(1); filter: drop-shadow(0 0 0px #ace9ff); }
+          50% { transform: scale(1.05); filter: drop-shadow(0 0 16px #a771ff); }
+          100% { transform: scale(1); filter: drop-shadow(0 0 0px #a771ff); }
+        }
+        </style>
+      </div><br />
       <div class="card">
         <h1>Start Your MCAT Journey</h1>
         <p>
           Comprehensive review, practice questions, and study resources to help
           you succeed on the MCAT<sup>®</sup>.
         </p>
-        <div class="img-row">
-          <img
-            class="pretty-img"
-            src="https://www.iconpacks.net/icons/1/free-computer-icon-956-thumb.png"
-            alt="Computer Icon"
-          />
-          <img
-            class="pretty-img"
-            src="https://static.thenounproject.com/png/4786471-200.png"
-            alt="Books Icon"
-          />
-        </div>
+        <div class="img-row"></div>
         <a class="button" href="main.html">Go to Dashboard</a>
       </div>
     </main>
