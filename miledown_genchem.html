@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      img {
+        max-width: 200px;
+        max-height: 150px;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        display: block;
+        margin: 10px auto;
+        border: 1px solid #019cb1;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 8px 25px rgba(1, 156, 177, 0.3);
+        border-color: #ff6b35;
+      }
+
+      img:active {
+        transform: scale(0.95);
+      }
+
+      .image-zoom {
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6422130934976134"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="google-adsense-account" content="ca-pub-6422130934976134" />
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-L97LGZSXS5"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-L97LGZSXS5");
+    </script>
+    <link
+      rel="icon"
+      type="image/png"
+      href="Screenshot 2025-09-18 at 9.21.54 PM.png"
+    />
+    <title>Organic Chemistry Review - Miledown</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div
+      id="score-container"
+      style="
+        margin: 80px 0;
+        font-size: 0.8rem;
+        color: whitesmoke;
+        position: fixed;
+        top: 150px;
+        right: 16px;
+        background: #0a00cd;
+        z-index: 1000;
+        padding: 8px 8px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      "
+    >
+      Score: <span id="score">0</span> / <span id="total">0</span>
+    </div>
+    <h1>Organic Chemistry Review - Miledown</h1>
+    <h2>Functional Groups of Molecules</h2>
+    ____________________________________________________________________________<br />
+    1. The functional group -CHO is called a:<br />
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Aldehyde_general_structure.svg/640px-Aldehyde_general_structure.svg.png"
+      alt="Aldehyde functional group"
+    />
+    <span data-quiz="A" style="display: none">Formyl group</span><br /><br />
+    <label><input type="radio" name="q1" value="A" /> A. Formyl group</label
+    ><br />
+    <label><input type="radio" name="q1" value="B" /> B. Carboxyl group</label
+    ><br />
+    <label><input type="radio" name="q1" value="C" /> C. Hydroxyl group</label
+    ><br />
+    <label><input type="radio" name="q1" value="D" /> D. Acetyl group</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    2. The compound with the formula HCHO is:<br />
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Formaldehyde-2D.svg/640px-Formaldehyde-2D.svg.png"
+      alt="Formaldehyde molecule"
+    />
+    <span data-quiz="B" style="display: none">Formaldehyde</span><br /><br />
+    <label><input type="radio" name="q2" value="A" /> A. Formic acid</label
+    ><br />
+    <label><input type="radio" name="q2" value="B" /> B. Formaldehyde</label
+    ><br />
+    <label><input type="radio" name="q2" value="C" /> C. Acetaldehyde</label
+    ><br />
+    <label><input type="radio" name="q2" value="D" /> D. Acetone</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    3. The compound HCOOH is:<br />
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Formic-acid-2D-skeletal.png/640px-Formic-acid-2D-skeletal.png"
+      alt="Formic acid"
+    />
+    <span data-quiz="A" style="display: none">Formic acid</span><br /><br />
+    <label><input type="radio" name="q3" value="A" /> A. Formic acid</label
+    ><br />
+    <label><input type="radio" name="q3" value="B" /> B. Acetic acid</label
+    ><br />
+    <label><input type="radio" name="q3" value="C" /> C. Formaldehyde</label
+    ><br />
+    <label><input type="radio" name="q3" value="D" /> D. Acetaldehyde</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    4. The functional group -COCH₃ is called a:<br />
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Acetyl_functional_group.svg/640px-Acetyl_functional_group.svg.png"
+      alt="Acetyl group"
+    />
+    <span data-quiz="C" style="display: none">Acetyl group</span><br /><br />
+    <label><input type="radio" name="q4" value="A" /> A. Formyl group</label
+    ><br />
+    <label><input type="radio" name="q4" value="B" /> B. Carboxyl group</label
+    ><br />
+    <label><input type="radio" name="q4" value="C" /> C. Acetyl group</label
+    ><br />
+    <label><input type="radio" name="q4" value="D" /> D. Benzyl group</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    5. The compound CH₃CHO is:<br />
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Skeletal_structure_of_ethanal_%28acetaldehyde%29.svg/640px-Skeletal_structure_of_ethanal_%28acetaldehyde%29.svg.png"
+      alt="Acetaldehyde molecule"
+    />
+    <span data-quiz="D" style="display: none">Acetaldehyde</span><br /><br />
+    <label><input type="radio" name="q5" value="A" /> A. Formaldehyde</label
+    ><br />
+    <label><input type="radio" name="q5" value="B" /> B. Acetic acid</label
+    ><br />
+    <label><input type="radio" name="q5" value="C" /> C. Acetone</label><br />
+    <label><input type="radio" name="q5" value="D" /> D. Acetaldehyde</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    6. The compound CH₃COOH is:<br />
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Acetic-acid-2D-skeletal.svg/640px-Acetic-acid-2D-skeletal.svg.png"
+      alt="Acetic acid molecule"
+    />
+    <span data-quiz="B" style="display: none">Acetic acid</span><br /><br />
+    <label><input type="radio" name="q6" value="A" /> A. Formic acid</label
+    ><br />
+    <label><input type="radio" name="q6" value="B" /> B. Acetic acid</label
+    ><br />
+    <label><input type="radio" name="q6" value="C" /> C. Acetaldehyde</label
+    ><br />
+    <label><input type="radio" name="q6" value="D" /> D. Acetone</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    7. The compound CH₃COCH₃ is:<br />
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Skeletal_structure_of_propanone_%28acetone%29.svg/640px-Skeletal_structure_of_propanone_%28acetone%29.svg.png"
+      alt="Acetone molecule"
+    />
+    <span data-quiz="C" style="display: none">Acetone</span><br /><br />
+    <label><input type="radio" name="q7" value="A" /> A. Acetaldehyde</label
+    ><br />
+    <label><input type="radio" name="q7" value="B" /> B. Acetic acid</label
+    ><br />
+    <label><input type="radio" name="q7" value="C" /> C. Acetone</label><br />
+    <label><input type="radio" name="q7" value="D" /> D. Acetylacetone</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    8. The compound CH₃COCH₂COCH₃ is:<br />
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Acetylacetone.png/640px-Acetylacetone.png"
+      alt="Acetylacetone molecule"
+    />
+    <span data-quiz="D" style="display: none">Acetylacetone</span><br /><br />
+    <label><input type="radio" name="q8" value="A" /> A. Acetone</label><br />
+    <label><input type="radio" name="q8" value="B" /> B. Acetophenone</label
+    ><br />
+    <label><input type="radio" name="q8" value="C" /> C. Acetaldehyde</label
+    ><br />
+    <label><input type="radio" name="q8" value="D" /> D. Acetylacetone</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    9. The compound C₆H₅COCH₃ is:<br />
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Acetophenone-2D-skeletal.svg/640px-Acetophenone-2D-skeletal.svg.png"
+      alt="Acetophenone molecule"
+    />
+    <span data-quiz="A" style="display: none">Acetophenone</span><br /><br />
+    <label><input type="radio" name="q9" value="A" /> A. Acetophenone</label
+    ><br />
+    <label><input type="radio" name="q9" value="B" /> B. Benzaldehyde</label
+    ><br />
+    <label><input type="radio" name="q9" value="C" /> C. Benzoin</label><br />
+    <label><input type="radio" name="q9" value="D" /> D. Benzoic acid</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    10. The functional group -CH₂C₆H₅ is called a:<br />
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Benzyl_functional_group.svg/640px-Benzyl_functional_group.svg.png"
+      alt="Benzyl group"
+    />
+    <span data-quiz="B" style="display: none">Benzyl group</span><br /><br />
+
+    <label><input type="radio" name="q10" value="A" /> A. Acetyl group</label
+    ><br />
+    <label><input type="radio" name="q10" value="B" /> B. Benzyl group</label
+    ><br />
+    <label><input type="radio" name="q10" value="C" /> C. Phenyl group</label
+    ><br />
+    <label><input type="radio" name="q10" value="D" /> D. Acryl group</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    11. The compound C₆H₅CHO is:<br />
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Benzaldehyde_structure.png/640px-Benzaldehyde_structure.png"
+      alt="Benzaldehyde molecule"
+    />
+    <span data-quiz="C" style="display: none">Benzaldehyde</span><br /><br />
+    <label><input type="radio" name="q11" value="A" /> A. Acetophenone</label
+    ><br />
+    <label><input type="radio" name="q11" value="B" /> B. Benzoic acid</label
+    ><br />
+    <label><input type="radio" name="q11" value="C" /> C. Benzaldehyde</label
+    ><br />
+    <label><input type="radio" name="q11" value="D" /> D. Benzoin</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    12. The compound C₆H₅COOH is:<br />
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Benzoic_acid_200.svg/640px-Benzoic_acid_200.svg.png"
+      alt="Benzoic acid molecule"
+    />
+    <span data-quiz="B" style="display: none">Benzoic acid</span><br /><br />
+    <label><input type="radio" name="q12" value="A" /> A. Benzaldehyde</label
+    ><br />
+    <label><input type="radio" name="q12" value="B" /> B. Benzoic acid</label
+    ><br />
+    <label><input type="radio" name="q12" value="C" /> C. Acetophenone</label
+    ><br />
+    <label><input type="radio" name="q12" value="D" /> D. Benzoin</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    13. The compound C₆H₅CHOHCOC₆H₅ is:<br />
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Benzoin.svg/640px-Benzoin.svg.png"
+      alt="Benzoin molecule"
+    />
+    <span data-quiz="D" style="display: none">Benzoin</span><br /><br />
+    <label><input type="radio" name="q13" value="A" /> A. Benzaldehyde</label
+    ><br />
+    <label><input type="radio" name="q13" value="B" /> B. Benzoic acid</label
+    ><br />
+    <label><input type="radio" name="q13" value="C" /> C. Acetophenone</label
+    ><br />
+    <label><input type="radio" name="q13" value="D" /> D. Benzoin</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    14. The compound C₆H₅CH=CH₂ is:<br />
+    <img
+      src="
+    https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Styrene-2D.svg/640px-Styrene-2D.svg.png
+      "
+      alt="Styrene molecule"
+    />
+    <span data-quiz="A" style="display: none">Styrene</span><br /><br />
+    <label><input type="radio" name="q14" value="A" /> A. Styrene</label><br />
+    <label><input type="radio" name="q14" value="B" /> B. Formene</label><br />
+    <label><input type="radio" name="q14" value="C" /> C. Toluene</label><br />
+    <label><input type="radio" name="q14" value="D" /> D. Phenol</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    15. The functional group CH₂=CHCO- is called a:<br />
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Acryloyl_group.svg/640px-Acryloyl_group.svg.png"
+      alt="Acryl group"
+    />
+    <span data-quiz="C" style="display: none">Acryl group</span><br /><br />
+    <label><input type="radio" name="q15" value="A" /> A. Acetyl group</label
+    ><br />
+    <label><input type="radio" name="q15" value="B" /> B. Acyl group</label
+    ><br />
+    <label><input type="radio" name="q15" value="C" /> C. Acryl group</label
+    ><br />
+    <label><input type="radio" name="q15" value="D" /> D. Formyl group</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    16. The compound CH₂=CHCHO is:<br />
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Acrolein-skeletal.png/640px-Acrolein-skeletal.png"
+      alt="Acrolein molecule"
+    />
+    <span data-quiz="D" style="display: none">Acrolein</span><br /><br />
+    <label><input type="radio" name="q16" value="A" /> A. Acetaldehyde</label
+    ><br />
+    <label><input type="radio" name="q16" value="B" /> B. Acetin</label><br />
+    <label><input type="radio" name="q16" value="C" /> C. Acrylic acid</label
+    ><br />
+    <label><input type="radio" name="q16" value="D" /> D. Acrolein</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    17. The compound CH₂=CHCOOH is:<br />
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Acrylic_acid.svg/640px-Acrylic_acid.svg.png"
+      alt="Acrylic acid molecule"
+    />
+    <span data-quiz="C" style="display: none">Acrylic acid</span><br /><br />
+    <label><input type="radio" name="q17" value="A" /> A. Acrolein</label><br />
+    <label><input type="radio" name="q17" value="B" /> B. Formic acid</label
+    ><br />
+    <label><input type="radio" name="q17" value="C" /> C. Acrylic acid</label
+    ><br />
+    <label><input type="radio" name="q17" value="D" /> D. Acetic acid</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    18. The ion -COO⁻ is called a:<br />
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Carboxylate_group.svg/640px-Carboxylate_group.svg.png"
+      alt="Carboxylate ion"
+    />
+    <span data-quiz="B" style="display: none">Carboxylate ion</span><br /><br />
+    <label><input type="radio" name="q19" value="A" /> A. Carbonate ion</label
+    ><br />
+    <label><input type="radio" name="q19" value="B" /> B. Carboxylate ion</label
+    ><br />
+    <label><input type="radio" name="q19" value="C" /> C. Hydroxide ion</label
+    ><br />
+    <label><input type="radio" name="q19" value="D" /> D. Bicarbonate ion</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    19. The ion CO₃²⁻ is called a:<br />
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Carbonate.svg/640px-Carbonate.svg.png"
+      alt="Carbonate ion"
+    />
+    <span data-quiz="A" style="display: none">Carbonate ion</span><br /><br />
+    <label><input type="radio" name="q20" value="A" /> A. Carbonate ion</label
+    ><br />
+    <label><input type="radio" name="q20" value="B" /> B. Carboxylate ion</label
+    ><br />
+    <label><input type="radio" name="q20" value="C" /> C. Bicarbonate ion</label
+    ><br />
+    <label><input type="radio" name="q20" value="D" /> D. Sulfate ion</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    20. The compound H₂CO₃ is:<br />
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Kohlens%C3%A4ure.svg/640px-Kohlens%C3%A4ure.svg.png"
+      alt="Carbonic acid molecule"
+    />
+    <span data-quiz="C" style="display: none">Carbonic acid</span><br /><br />
+    <label><input type="radio" name="q21" value="A" /> A. Formic acid</label
+    ><br />
+    <label><input type="radio" name="q21" value="B" /> B. Acetic acid</label
+    ><br />
+    <label><input type="radio" name="q21" value="C" /> C. Carbonic acid</label
+    ><br />
+    <label><input type="radio" name="q21" value="D" /> D. Benzoic acid</label
+    ><br /><br />
+
+    <ins
+      class="adsbygoogle"
+      style="display: block"
+      data-ad-format="autorelaxed"
+      data-ad-client="ca-pub-6422130934976134"
+      data-ad-slot="1021310659"
+    ></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <footer>
+      <p>All questions courtesy of Miledown</p>
+    </footer>
+  </body>
+
+  <script src="test.js"></script>
+  <script src="sidebar.js"></script>
+</html>
