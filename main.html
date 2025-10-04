@@ -306,6 +306,7 @@
           name: "Oxidative Phosphorylation & Related Metabolic Pathways",
           page: "oxphos",
         },
+        { name: "Organic Chemistry", page: "miledown_genchem" },
         // Add more mappings as you create additional pages...
       ];
 
@@ -516,8 +517,9 @@
             <th style="text-align:left;padding:12px;color:white;font-weight:600;">Topic</th>
             <th style="text-align:center;padding:12px;color:white;font-weight:600;">Answered</th>
             <th style="text-align:center;padding:12px;color:white;font-weight:600;">Correct</th>
-            <th style="text-align:center;padding:12px;color:white;font-weight:600;">Incorrect</th>
             <th style="text-align:center;padding:12px;color:white;font-weight:600;">Accuracy</th>
+            <th style="text-align:center;padding:12px;color:white;font-weight:600;">Completions</th>
+            <th style="text-align:center;padding:12px;color:white;font-weight:600;">Last Completed</th>
           </tr>
         </thead>
         <tbody>`;
@@ -529,9 +531,28 @@
           ? progress.answeredQuestions.length
           : 0;
         const correct = typeof progress.score === "number" ? progress.score : 0;
-        const incorrect = answered - correct;
         const percent =
           answered > 0 ? Math.round((correct / answered) * 100) : 0;
+        const completionCount = progress.completionCount || 0;
+        const lastCompleted = progress.lastCompleted;
+
+        // Format the last completed date
+        let lastCompletedDisplay = "-";
+        if (lastCompleted) {
+          const date = new Date(lastCompleted);
+          const now = new Date();
+          const diffDays = Math.floor((now - date) / (1000 * 60 * 60 * 24));
+
+          if (diffDays === 0) {
+            lastCompletedDisplay = "Today";
+          } else if (diffDays === 1) {
+            lastCompletedDisplay = "Yesterday";
+          } else if (diffDays < 7) {
+            lastCompletedDisplay = `${diffDays} days ago`;
+          } else {
+            lastCompletedDisplay = date.toLocaleDateString();
+          }
+        }
 
         let rowStyle =
           index % 2 === 0 ? "background:#f8f9fa;" : "background:white;";
@@ -562,9 +583,14 @@
           </td>
           <td style="padding:12px;border-bottom:1px solid #dee2e6;text-align:center;">${answered}</td>
           <td style="padding:12px;border-bottom:1px solid #dee2e6;text-align:center;color:#27ae60;font-weight:600;">${correct}</td>
-          <td style="padding:12px;border-bottom:1px solid #dee2e6;text-align:center;color:#e74c3c;font-weight:600;">${incorrect}</td>
           <td style="padding:12px;border-bottom:1px solid #dee2e6;text-align:center;color:${accuracyColor};font-weight:${fontWeight};">
             ${answered > 0 ? percent + "%" : "-"}
+          </td>
+          <td style="padding:12px;border-bottom:1px solid #dee2e6;text-align:center;color:#6366f1;font-weight:600;">
+            ${completionCount > 0 ? completionCount : "-"}
+          </td>
+          <td style="padding:12px;border-bottom:1px solid #dee2e6;text-align:center;color:#6c757d;font-size:0.9rem;">
+            ${lastCompletedDisplay}
           </td>
         </tr>`;
       });
@@ -598,5 +624,53 @@
       <a href="terms.html" style="color: #6366f1">Terms of Service</a> and
       <a href="privacy.html" style="color: #6366f1">Privacy Policy</a>.
     </div>
+
+    <script>
+      // Add this function to show completion history
+      function showCompletionHistory(cat) {
+        const key = `quizProgress_${cat.page}`;
+        const progress = JSON.parse(localStorage.getItem(key) || "{}");
+        const history = progress.completionHistory || [];
+
+        if (history.length === 0) {
+          alert("No completion history available for this quiz.");
+          return;
+        }
+
+        let historyHtml = `
+    <div style="position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.8);z-index:10000;display:flex;align-items:center;justify-content:center;" onclick="this.remove()">
+      <div style="background:white;border-radius:12px;padding:2rem;max-width:500px;max-height:80vh;overflow-y:auto;" onclick="event.stopPropagation()">
+        <h3 style="margin:0 0 1rem 0;color:#2c3e50;">${cat.name} - Completion History</h3>
+        <div style="max-height:300px;overflow-y:auto;">
+  `;
+
+        history.reverse().forEach((completion, index) => {
+          const date = new Date(completion.date).toLocaleString();
+          historyHtml += `
+      <div style="padding:0.8rem;border-bottom:1px solid #eee;${
+        index === 0 ? "background:#f8f9fa;" : ""
+      }">
+        <div style="font-weight:600;color:#2c3e50;">${date}</div>
+        <div style="color:#6c757d;font-size:0.9rem;">
+          Score: ${completion.score}/${completion.totalQuestions} (${
+            completion.percentage
+          }%)
+        </div>
+      </div>
+    `;
+        });
+
+        historyHtml += `
+        </div>
+        <button onclick="this.parentElement.parentElement.remove()" style="margin-top:1rem;padding:0.5rem 1rem;background:#6366f1;color:white;border:none;border-radius:6px;cursor:pointer;">
+          Close
+        </button>
+      </div>
+    </div>
+  `;
+
+        document.body.insertAdjacentHTML("beforeend", historyHtml);
+      }
+    </script>
   </body>
 </html>

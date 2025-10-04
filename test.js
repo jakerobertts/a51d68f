@@ -576,6 +576,34 @@ function loadMCProgress() {
   });
 }
 
+// In your quiz JavaScript (test.js or inline), when a quiz is completed:
+function saveQuizCompletion(pageId, score, totalQuestions) {
+  const key = `quizProgress_${pageId}`;
+  const existing = JSON.parse(localStorage.getItem(key) || '{}');
+  
+  const now = new Date();
+  
+  const updatedProgress = {
+    ...existing,
+    score: score,
+    totalQuestions: totalQuestions,
+    answeredQuestions: existing.answeredQuestions || [],
+    lastCompleted: now.toISOString(),
+    completionCount: (existing.completionCount || 0) + 1,
+    completionHistory: [
+      ...(existing.completionHistory || []),
+      {
+        date: now.toISOString(),
+        score: score,
+        totalQuestions: totalQuestions,
+        percentage: Math.round((score / totalQuestions) * 100)
+      }
+    ].slice(-10) // Keep last 10 completions
+  };
+  
+  localStorage.setItem(key, JSON.stringify(updatedProgress));
+}
+
 // Debug function to check localStorage
 function debugStorage() {
   console.log("=== DEBUG STORAGE ===");
