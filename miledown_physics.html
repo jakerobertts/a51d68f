@@ -1,0 +1,1877 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      img {
+        max-width: 300px;
+        max-height: 250px;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        display: block;
+        margin: 10px auto;
+        border: 1px solid #019cb1;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 8px 25px rgba(1, 156, 177, 0.3);
+        border-color: #ff6b35;
+      }
+
+      img:active {
+        transform: scale(0.95);
+      }
+
+      .image-zoom {
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6422130934976134"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="google-adsense-account" content="ca-pub-6422130934976134" />
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-L97LGZSXS5"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-L97LGZSXS5");
+    </script>
+    <link
+      rel="icon"
+      type="image/png"
+      href="Screenshot 2025-09-18 at 9.21.54 PM.png"
+    />
+    <title>Physics Review - Miledown</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div
+      id="score-container"
+      style="
+        margin: 80px 0;
+        font-size: 0.8rem;
+        color: whitesmoke;
+        position: fixed;
+        top: 150px;
+        right: 16px;
+        background: #0a00cd;
+        z-index: 1000;
+        padding: 8px 8px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      "
+    >
+      Score: <span id="score">0</span> / <span id="total">0</span>
+    </div>
+
+    <h1>Physics Review - Miledown</h1>
+    <h2>Kinematics and Vectors</h2>
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Velocidade_M%C3%A9dia.gif/640px-Velocidade_M%C3%A9dia.gif"
+      alt="Kinematics Image"
+    />
+    ____________________________________________________________________________<br />
+    Which of the following is NOT a vector?<br />
+    <span data-quiz="B" style="display: none">Speed</span><br /><br />
+    <label><input type="radio" name="q1" value="A" /> A. Velocity</label><br />
+    <label><input type="radio" name="q1" value="B" /> B. Speed</label><br />
+    <label><input type="radio" name="q1" value="C" /> C. Displacement</label
+    ><br />
+    <label><input type="radio" name="q1" value="D" /> D. Force</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Which of the following is a scalar?<br />
+    <span data-quiz="C" style="display: none">Temperature</span><br /><br />
+    <label><input type="radio" name="q2" value="A" /> A. Velocity</label><br />
+    <label><input type="radio" name="q2" value="B" /> B. Acceleration</label
+    ><br />
+    <label><input type="radio" name="q2" value="C" /> C. Temperature</label
+    ><br />
+    <label><input type="radio" name="q2" value="D" /> D. Displacement</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Which method involves placing the tail of one vector at the tip of another
+    to find the resultant?<br />
+    <span data-quiz="A" style="display: none">Tip‑to‑tail method</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q3" value="A" /> A. Tip‑to‑tail method</label
+    ><br />
+    <label
+      ><input type="radio" name="q3" value="B" /> B. Parallelogram method</label
+    ><br />
+    <label><input type="radio" name="q3" value="C" /> C. Component method</label
+    ><br />
+    <label
+      ><input type="radio" name="q3" value="D" /> D. Cross product method</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    To subtract vector B from A (i.e. to find A – B), you should:<br />
+    <span data-quiz="B" style="display: none"
+      >Reverse B and add tip‑to‑tail to A</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q4" value="A" /> A. Add A and B directly</label
+    ><br />
+    <label
+      ><input type="radio" name="q4" value="B" /> B. Reverse B and add
+      tip‑to‑tail to A</label
+    ><br />
+    <label
+      ><input type="radio" name="q4" value="C" /> C. Reverse A and add
+      tip‑to‑tail to B</label
+    ><br />
+    <label
+      ><input type="radio" name="q4" value="D" /> D. Take the cross product of A
+      and B</label
+    ><br /><br />
+    <h2>Dynamics</h2>
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Free_body.svg/640px-Free_body.svg.png"
+      alt="Free Body Diagram"
+    />
+    ____________________________________________________________________________<br />
+    A free body diagram shows:<br />
+    <span data-quiz="A" style="display: none"
+      >Forces acting **only** on the chosen object</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q5" value="A" /> A. Forces acting only on the
+      chosen object</label
+    ><br />
+    <label
+      ><input type="radio" name="q5" value="B" /> B. All forces in the
+      system</label
+    ><br />
+    <label
+      ><input type="radio" name="q5" value="C" /> C. Forces the object exerts on
+      other objects</label
+    ><br />
+    <label
+      ><input type="radio" name="q5" value="D" /> D. The motion of the
+      object</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    If an object is in translational equilibrium, then:<br />
+    <span data-quiz="C" style="display: none">The sum of forces = 0</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q6" value="A" /> A. The object is not
+      moving</label
+    ><br />
+    <label
+      ><input type="radio" name="q6" value="B" /> B. The object has no
+      acceleration</label
+    ><br />
+    <label
+      ><input type="radio" name="q6" value="C" /> C. The sum of forces =
+      0</label
+    ><br />
+    <label
+      ><input type="radio" name="q6" value="D" /> D. The object has constant
+      velocity</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    If an object is in rotational equilibrium, then:<br />
+    <span data-quiz="B" style="display: none">The sum of torques = 0</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q7" value="A" /> A. The object is not
+      rotating</label
+    ><br />
+    <label
+      ><input type="radio" name="q7" value="B" /> B. The sum of torques =
+      0</label
+    ><br />
+    <label
+      ><input type="radio" name="q7" value="C" /> C. The object has no angular
+      acceleration</label
+    ><br />
+    <label
+      ><input type="radio" name="q7" value="D" /> D. The object has constant
+      angular velocity</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Which statement is true about displacement?<br />
+    <span data-quiz="A" style="display: none"
+      >Displacement does not depend on the path between start and end</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q8" value="A" /> A. Displacement does not
+      depend on the path between start and end</label
+    ><br />
+    <label
+      ><input type="radio" name="q8" value="B" /> B. Displacement depends on the
+      path taken</label
+    ><br />
+    <label
+      ><input type="radio" name="q8" value="C" /> C. Displacement is always
+      positive</label
+    ><br />
+    <label
+      ><input type="radio" name="q8" value="D" /> D. Displacement is a scalar
+      quantity</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Which of these is true about distance?<br />
+    <span data-quiz="B" style="display: none">It depends on the path taken</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q9" value="A" /> A. It does not depend on the
+      path taken</label
+    ><br />
+    <label
+      ><input type="radio" name="q9" value="B" /> B. It depends on the path
+      taken</label
+    ><br />
+    <label
+      ><input type="radio" name="q9" value="C" /> C. It is a vector
+      quantity</label
+    ><br />
+    <label
+      ><input type="radio" name="q9" value="D" /> D. It can be negative</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Which is a correct description of velocity?<br />
+    <span data-quiz="A" style="display: none"
+      >Vector; magnitude and direction</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q10" value="A" /> A. Vector; magnitude and
+      direction</label
+    ><br />
+    <label
+      ><input type="radio" name="q10" value="B" /> B. Scalar; magnitude
+      only</label
+    ><br />
+    <label
+      ><input type="radio" name="q10" value="C" /> C. Vector; magnitude
+      only</label
+    ><br />
+    <label
+      ><input type="radio" name="q10" value="D" /> D. Scalar; direction
+      only</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Which best describes speed?<br />
+    <span data-quiz="B" style="display: none">Scalar; magnitude only</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q11" value="A" /> A. Vector; magnitude and
+      direction</label
+    ><br />
+    <label
+      ><input type="radio" name="q11" value="B" /> B. Scalar; magnitude
+      only</label
+    ><br />
+    <label
+      ><input type="radio" name="q11" value="C" /> C. Vector; magnitude
+      only</label
+    ><br />
+    <label
+      ><input type="radio" name="q11" value="D" /> D. Scalar; direction
+      only</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Which is the best definition of force?<br />
+    <span data-quiz="C" style="display: none"
+      >A push or pull that can change motion</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q12" value="A" /> A. The rate of change of
+      position</label
+    ><br />
+    <label
+      ><input type="radio" name="q12" value="B" /> B. The rate of change of
+      velocity</label
+    ><br />
+    <label
+      ><input type="radio" name="q12" value="C" /> C. A push or pull that can
+      change motion</label
+    ><br />
+    <label
+      ><input type="radio" name="q12" value="D" /> D. The amount of matter in an
+      object</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Which law describes the force of gravity between two masses?<br />
+    <span data-quiz="A" style="display: none"
+      >Newton's law of universal gravitation</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q13" value="A" /> A. Newton's law of universal
+      gravitation</label
+    ><br />
+    <label
+      ><input type="radio" name="q13" value="B" /> B. Newton's first law of
+      motion</label
+    ><br />
+    <label
+      ><input type="radio" name="q13" value="C" /> C. Newton's second law of
+      motion</label
+    ><br />
+    <label
+      ><input type="radio" name="q13" value="D" /> D. Newton's third law of
+      motion</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Which type of friction acts on a stationary object to prevent motion?<br />
+    <span data-quiz="A" style="display: none">Static friction</span><br /><br />
+    <label><input type="radio" name="q14" value="A" /> A. Static friction</label
+    ><br />
+    <label
+      ><input type="radio" name="q14" value="B" /> B. Kinetic friction</label
+    ><br />
+    <label
+      ><input type="radio" name="q14" value="C" /> C. Rolling friction</label
+    ><br />
+    <label><input type="radio" name="q14" value="D" /> D. Fluid friction</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Which is true about mass?<br />
+    <span data-quiz="B" style="display: none"
+      >It is a measure of how much matter an object has</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q15" value="A" /> A. It changes with
+      gravitational field strength</label
+    ><br />
+    <label
+      ><input type="radio" name="q15" value="B" /> B. It is a measure of how
+      much matter an object has</label
+    ><br />
+    <label><input type="radio" name="q15" value="C" /> C. It is a force</label
+    ><br />
+    <label
+      ><input type="radio" name="q15" value="D" /> D. It depends on
+      location</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Which is true regarding weight?<br />
+    <span data-quiz="C" style="display: none"
+      >It is a force and changes with gravitational field strength</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q16" value="A" /> A. It is a measure of how
+      much matter an object has</label
+    ><br />
+    <label
+      ><input type="radio" name="q16" value="B" /> B. It is constant
+      everywhere</label
+    ><br />
+    <label
+      ><input type="radio" name="q16" value="C" /> C. It is a force and changes
+      with gravitational field strength</label
+    ><br />
+    <label
+      ><input type="radio" name="q16" value="D" /> D. It is the same as
+      mass</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Which statement is correct about acceleration?<br />
+    <span data-quiz="A" style="display: none"
+      >Acceleration describes change in velocity over time</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q17" value="A" /> A. Acceleration describes
+      change in velocity over time</label
+    ><br />
+    <label
+      ><input type="radio" name="q17" value="B" /> B. Acceleration describes
+      change in position over time</label
+    ><br />
+    <label
+      ><input type="radio" name="q17" value="C" /> C. Acceleration is always in
+      the direction of motion</label
+    ><br />
+    <label
+      ><input type="radio" name="q17" value="D" /> D. Acceleration is a scalar
+      quantity</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Torque is:<br />
+    <span data-quiz="B" style="display: none"
+      >A twisting influence that can cause rotation</span
+    ><br /><br />
+    <label><input type="radio" name="q18" value="A" /> A. A linear force</label
+    ><br />
+    <label
+      ><input type="radio" name="q18" value="B" /> B. A twisting influence that
+      can cause rotation</label
+    ><br />
+    <label
+      ><input type="radio" name="q18" value="C" /> C. The rate of change of
+      angular velocity</label
+    ><br />
+    <label
+      ><input type="radio" name="q18" value="D" /> D. The same as force</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+    Newton's First Law states:<br />
+    <span data-quiz="D" style="display: none"
+      >An object at rest stays at rest and an object in motion stays in motion
+      unless acted upon by an external force</span
+    ><br /><br />
+    <label><input type="radio" name="q19" value="A" /> A. F=ma</label><br />
+    <label
+      ><input type="radio" name="q19" value="B" /> B. For every action, there is
+      an equal and opposite reaction</label
+    ><br />
+    <label
+      ><input type="radio" name="q19" value="C" /> C. Energy cannot be created
+      or destroyed</label
+    ><br />
+    <label
+      ><input type="radio" name="q19" value="D" /> D. An object at rest stays at
+      rest and an object in motion stays in motion unless acted upon by an
+      external force</label
+    ><br /><br />
+    ____________________________________________________________________________<br />
+    Newton's Second Law states:<br />
+    <span data-quiz="A" style="display: none">F = ma</span><br /><br />
+    <label><input type="radio" name="q20" value="A" /> A. F = ma</label><br />
+    <label
+      ><input type="radio" name="q20" value="B" /> B. For every action, there is
+      an equal and opposite reaction</label
+    ><br />
+    <label
+      ><input type="radio" name="q20" value="C" /> C. An object at rest stays at
+      rest unless acted upon by an external force</label
+    ><br />
+    <label
+      ><input type="radio" name="q20" value="D" /> D. Energy cannot be created
+      or destroyed</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Newton's Third Law states:<br />
+    <span data-quiz="B" style="display: none"
+      >For every action, there is an equal and opposite reaction</span
+    ><br /><br />
+    <label><input type="radio" name="q21" value="A" /> A. F = ma</label><br />
+    <label
+      ><input type="radio" name="q21" value="B" /> B. For every action, there is
+      an equal and opposite reaction</label
+    ><br />
+    <label
+      ><input type="radio" name="q21" value="C" /> C. An object in motion stays
+      in motion unless acted upon by an external force</label
+    ><br />
+    <label
+      ><input type="radio" name="q21" value="D" /> D. Work equals force times
+      distance</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    What are the units for a joule?<br />
+    <span data-quiz="C" style="display: none">Newton meter (Nm)</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q22" value="A" /> A. Kilogram meter per second
+      (kg⋅m/s)</label
+    ><br />
+    <label
+      ><input type="radio" name="q22" value="B" /> B. Newton per meter
+      (N/m)</label
+    ><br />
+    <label
+      ><input type="radio" name="q22" value="C" /> C. Newton meter (Nm)</label
+    ><br />
+    <label
+      ><input type="radio" name="q22" value="D" /> D. Kilogram per second
+      squared (kg/s²)</label
+    ><br /><br />
+    <h2>Energy and Work</h2>
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Lifting-work.svg/640px-Lifting-work.svg.png"
+      alt="Lifting Work Image"
+    />
+    ____________________________________________________________________________<br />
+    Kinetic energy is:<br />
+    <span data-quiz="A" style="display: none"
+      >The energy of motion, observable as the movement of an object</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q23" value="A" /> A. The energy of motion,
+      observable as the movement of an object</label
+    ><br />
+    <label
+      ><input type="radio" name="q23" value="B" /> B. A type of energy an object
+      has because of its position</label
+    ><br />
+    <label
+      ><input type="radio" name="q23" value="C" /> C. The energy stored in the
+      bonds of compounds</label
+    ><br />
+    <label
+      ><input type="radio" name="q23" value="D" /> D. The energy between two
+      charged particles</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Potential energy is:<br />
+    <span data-quiz="B" style="display: none"
+      >A type of energy an object has because of its position</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q24" value="A" /> A. The energy of motion,
+      observable as the movement of an object</label
+    ><br />
+    <label
+      ><input type="radio" name="q24" value="B" /> B. A type of energy an object
+      has because of its position</label
+    ><br />
+    <label
+      ><input type="radio" name="q24" value="C" /> C. The energy stored in the
+      bonds of compounds</label
+    ><br />
+    <label
+      ><input type="radio" name="q24" value="D" /> D. The rate at which work is
+      done</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Gravitational potential energy is:<br />
+    <span data-quiz="C" style="display: none"
+      >The potential an object has to do work as a result of being located at a
+      particular position in a gravitational field</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q25" value="A" /> A. The energy of motion in a
+      gravitational field</label
+    ><br />
+    <label
+      ><input type="radio" name="q25" value="B" /> B. The energy created when
+      stretching or compressing an elastic object</label
+    ><br />
+    <label
+      ><input type="radio" name="q25" value="C" /> C. The potential an object
+      has to do work as a result of being located at a particular position in a
+      gravitational field</label
+    ><br />
+    <label
+      ><input type="radio" name="q25" value="D" /> D. The energy between two
+      charged particles</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Elastic potential energy is:<br />
+    <span data-quiz="A" style="display: none"
+      >Created when stretching or compressing an elastic object</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q26" value="A" /> A. Created when stretching or
+      compressing an elastic object</label
+    ><br />
+    <label
+      ><input type="radio" name="q26" value="B" /> B. The energy of motion in an
+      elastic material</label
+    ><br />
+    <label
+      ><input type="radio" name="q26" value="C" /> C. The energy between two
+      charged particles</label
+    ><br />
+    <label
+      ><input type="radio" name="q26" value="D" /> D. The energy stored in the
+      bonds of compounds</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Electrical potential energy is:<br />
+    <span data-quiz="B" style="display: none"
+      >The energy between two charged particles</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q27" value="A" /> A. The energy of motion of
+      charged particles</label
+    ><br />
+    <label
+      ><input type="radio" name="q27" value="B" /> B. The energy between two
+      charged particles</label
+    ><br />
+    <label
+      ><input type="radio" name="q27" value="C" /> C. The energy stored in
+      electrical bonds</label
+    ><br />
+    <label
+      ><input type="radio" name="q27" value="D" /> D. The energy created when
+      stretching electrical components</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Chemical potential energy is:<br />
+    <span data-quiz="C" style="display: none"
+      >The energy stored in the bonds of compounds</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q28" value="A" /> A. The energy of motion of
+      molecules</label
+    ><br />
+    <label
+      ><input type="radio" name="q28" value="B" /> B. The energy between two
+      charged particles</label
+    ><br />
+    <label
+      ><input type="radio" name="q28" value="C" /> C. The energy stored in the
+      bonds of compounds</label
+    ><br />
+    <label
+      ><input type="radio" name="q28" value="D" /> D. The potential energy due
+      to chemical position</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Conservative forces are path:<br />
+    <span data-quiz="B" style="display: none">Independent</span><br /><br />
+    <label><input type="radio" name="q29" value="A" /> A. Dependent</label
+    ><br />
+    <label><input type="radio" name="q29" value="B" /> B. Independent</label
+    ><br />
+    <label><input type="radio" name="q29" value="C" /> C. Variable</label><br />
+    <label><input type="radio" name="q29" value="D" /> D. Circular</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Non-conservative forces are path:<br />
+    <span data-quiz="A" style="display: none">Dependent</span><br /><br />
+    <label><input type="radio" name="q30" value="A" /> A. Dependent</label
+    ><br />
+    <label><input type="radio" name="q30" value="B" /> B. Independent</label
+    ><br />
+    <label><input type="radio" name="q30" value="C" /> C. Variable</label><br />
+    <label><input type="radio" name="q30" value="D" /> D. Linear</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Work is:<br />
+    <span data-quiz="C" style="display: none"
+      >The process by which energy is transferred from one system to
+      another</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q31" value="A" /> A. The rate at which energy
+      is transferred</label
+    ><br />
+    <label
+      ><input type="radio" name="q31" value="B" /> B. The energy stored in an
+      object's position</label
+    ><br />
+    <label
+      ><input type="radio" name="q31" value="C" /> C. The process by which
+      energy is transferred from one system to another</label
+    ><br />
+    <label
+      ><input type="radio" name="q31" value="D" /> D. The energy of motion of an
+      object</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Power is:<br />
+    <span data-quiz="A" style="display: none"
+      >The rate at which work is done or energy is transferred</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q32" value="A" /> A. The rate at which work is
+      done or energy is transferred</label
+    ><br />
+    <label
+      ><input type="radio" name="q32" value="B" /> B. The process by which
+      energy is transferred from one system to another</label
+    ><br />
+    <label
+      ><input type="radio" name="q32" value="C" /> C. The energy stored in an
+      object's position</label
+    ><br />
+    <label
+      ><input type="radio" name="q32" value="D" /> D. The total amount of work
+      done on an object</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The SI unit for power is:<br />
+    <span data-quiz="B" style="display: none">Watt (W)</span><br /><br />
+    <label><input type="radio" name="q33" value="A" /> A. Joule (J)</label
+    ><br />
+    <label><input type="radio" name="q33" value="B" /> B. Watt (W)</label><br />
+    <label><input type="radio" name="q33" value="C" /> C. Newton (N)</label
+    ><br />
+    <label><input type="radio" name="q33" value="D" /> D. Pascal (Pa)</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Efficiency is:<br />
+    <span data-quiz="A" style="display: none"
+      >The ratio of the machine's work output to work input when
+      non-conservative forces are taken into account</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q34" value="A" /> A. The ratio of the machine's
+      work output to work input when non-conservative forces are taken into
+      account</label
+    ><br />
+    <label
+      ><input type="radio" name="q34" value="B" /> B. The total amount of work
+      done by a machine</label
+    ><br />
+    <label
+      ><input type="radio" name="q34" value="C" /> C. The rate at which a
+      machine does work</label
+    ><br />
+    <label
+      ><input type="radio" name="q34" value="D" /> D. The energy lost due to
+      friction in a machine</label
+    ><br /><br />
+    <h2>Thermodynamics</h2>
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Press_o_de_vapor.gif/640px-Press_o_de_vapor.gif"
+      alt="Thermodynamics Image"
+    />
+    ____________________________________________________________________________<br />
+    Thermal equilibrium is when systems have:<br />
+    <span data-quiz="B" style="display: none"
+      >The same average kinetic energy and thus the same temperature</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q35" value="A" /> A. The same mass and
+      volume</label
+    ><br />
+    <label
+      ><input type="radio" name="q35" value="B" /> B. The same average kinetic
+      energy and thus the same temperature</label
+    ><br />
+    <label
+      ><input type="radio" name="q35" value="C" /> C. The same pressure and
+      density</label
+    ><br />
+    <label
+      ><input type="radio" name="q35" value="D" /> D. No energy transfer between
+      them</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Temperature is:<br />
+    <span data-quiz="C" style="display: none"
+      >The average kinetic energy of the particles that make up a
+      substance</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q36" value="A" /> A. The total kinetic energy
+      of all particles in a substance</label
+    ><br />
+    <label
+      ><input type="radio" name="q36" value="B" /> B. The potential energy of
+      particles in a substance</label
+    ><br />
+    <label
+      ><input type="radio" name="q36" value="C" /> C. The average kinetic energy
+      of the particles that make up a substance</label
+    ><br />
+    <label
+      ><input type="radio" name="q36" value="D" /> D. The rate of energy
+      transfer in a substance</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Isolated systems:<br />
+    <span data-quiz="A" style="display: none"
+      >Do not exchange matter or energy with surroundings</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q37" value="A" /> A. Do not exchange matter or
+      energy with surroundings</label
+    ><br />
+    <label
+      ><input type="radio" name="q37" value="B" /> B. Exchange energy but not
+      matter with surroundings</label
+    ><br />
+    <label
+      ><input type="radio" name="q37" value="C" /> C. Exchange matter but not
+      energy with surroundings</label
+    ><br />
+    <label
+      ><input type="radio" name="q37" value="D" /> D. Exchange both matter and
+      energy with surroundings</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Closed systems:<br />
+    <span data-quiz="B" style="display: none"
+      >Will exchange energy but not matter with their surroundings</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q38" value="A" /> A. Do not exchange matter or
+      energy with surroundings</label
+    ><br />
+    <label
+      ><input type="radio" name="q38" value="B" /> B. Will exchange energy but
+      not matter with their surroundings</label
+    ><br />
+    <label
+      ><input type="radio" name="q38" value="C" /> C. Exchange matter but not
+      energy with surroundings</label
+    ><br />
+    <label
+      ><input type="radio" name="q38" value="D" /> D. Exchange both matter and
+      energy with surroundings</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Open systems:<br />
+    <span data-quiz="D" style="display: none"
+      >Will exchange both energy and matter with their surroundings</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q39" value="A" /> A. Do not exchange matter or
+      energy with surroundings</label
+    ><br />
+    <label
+      ><input type="radio" name="q39" value="B" /> B. Exchange energy but not
+      matter with surroundings</label
+    ><br />
+    <label
+      ><input type="radio" name="q39" value="C" /> C. Exchange matter but not
+      energy with surroundings</label
+    ><br />
+    <label
+      ><input type="radio" name="q39" value="D" /> D. Will exchange both energy
+      and matter with their surroundings</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    A state function is:<br />
+    <span data-quiz="A" style="display: none"
+      >A property that has a unique value that depends only on the present state
+      of a system and not how the state was reached</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q40" value="A" /> A. A property that has a
+      unique value that depends only on the present state of a system and not
+      how the state was reached</label
+    ><br />
+    <label
+      ><input type="radio" name="q40" value="B" /> B. A property that describes
+      the pathway from one equilibrium state to another</label
+    ><br />
+    <label
+      ><input type="radio" name="q40" value="C" /> C. A property that depends on
+      the history of the system</label
+    ><br />
+    <label
+      ><input type="radio" name="q40" value="D" /> D. A property that changes
+      with the method of measurement</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    A process function:<br />
+    <span data-quiz="B" style="display: none"
+      >Describes the pathway from one equilibrium state to another</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q41" value="A" /> A. Has a unique value that
+      depends only on the present state of a system</label
+    ><br />
+    <label
+      ><input type="radio" name="q41" value="B" /> B. Describes the pathway from
+      one equilibrium state to another</label
+    ><br />
+    <label
+      ><input type="radio" name="q41" value="C" /> C. Is independent of the
+      system's history</label
+    ><br />
+    <label
+      ><input type="radio" name="q41" value="D" /> D. Never changes during a
+      process</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Heat is:<br />
+    <span data-quiz="C" style="display: none"
+      >Energy transfer between two objects at different temperatures</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q42" value="A" /> A. The total energy contained
+      in an object</label
+    ><br />
+    <label
+      ><input type="radio" name="q42" value="B" /> B. The average kinetic energy
+      of particles</label
+    ><br />
+    <label
+      ><input type="radio" name="q42" value="C" /> C. Energy transfer between
+      two objects at different temperatures</label
+    ><br />
+    <label
+      ><input type="radio" name="q42" value="D" /> D. The work done by a
+      system</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Specific heat is:<br />
+    <span data-quiz="A" style="display: none"
+      >The amount of energy necessary to raise the temperature of one gram of
+      substance by 1°C or 1 K</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q43" value="A" /> A. The amount of energy
+      necessary to raise the temperature of one gram of substance by 1°C or 1
+      K</label
+    ><br />
+    <label
+      ><input type="radio" name="q43" value="B" /> B. The total heat capacity of
+      a substance</label
+    ><br />
+    <label
+      ><input type="radio" name="q43" value="C" /> C. The amount of energy
+      required for a phase change</label
+    ><br />
+    <label
+      ><input type="radio" name="q43" value="D" /> D. The rate of heat transfer
+      in a substance</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Heat of transformation is:<br />
+    <span data-quiz="B" style="display: none"
+      >The amount of energy required for a phase change of a substance</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q44" value="A" /> A. The amount of energy
+      necessary to raise the temperature of a substance</label
+    ><br />
+    <label
+      ><input type="radio" name="q44" value="B" /> B. The amount of energy
+      required for a phase change of a substance</label
+    ><br />
+    <label
+      ><input type="radio" name="q44" value="C" /> C. The energy transferred
+      between two objects at different temperatures</label
+    ><br />
+    <label
+      ><input type="radio" name="q44" value="D" /> D. The work done during a
+      thermodynamic process</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Isobaric processes have constant:<br />
+    <span data-quiz="A" style="display: none">Pressure</span><br /><br />
+    <label><input type="radio" name="q45" value="A" /> A. Pressure</label><br />
+    <label><input type="radio" name="q45" value="B" /> B. Temperature</label
+    ><br />
+    <label><input type="radio" name="q45" value="C" /> C. Volume</label><br />
+    <label><input type="radio" name="q45" value="D" /> D. Heat</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Isothermal processes have constant:<br />
+    <span data-quiz="B" style="display: none">Temperature</span><br /><br />
+    <label><input type="radio" name="q46" value="A" /> A. Pressure</label><br />
+    <label><input type="radio" name="q46" value="B" /> B. Temperature</label
+    ><br />
+    <label><input type="radio" name="q46" value="C" /> C. Volume</label><br />
+    <label><input type="radio" name="q46" value="D" /> D. Heat</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    In an adiabatic process, no _____ is exchanged:<br />
+    <span data-quiz="D" style="display: none">Heat</span><br /><br />
+    <label><input type="radio" name="q47" value="A" /> A. Work</label><br />
+    <label><input type="radio" name="q47" value="B" /> B. Energy</label><br />
+    <label><input type="radio" name="q47" value="C" /> C. Matter</label><br />
+    <label><input type="radio" name="q47" value="D" /> D. Heat</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Isovolumetric processes have constant:<br />
+    <span data-quiz="C" style="display: none">Volume</span><br /><br />
+    <label><input type="radio" name="q48" value="A" /> A. Pressure</label><br />
+    <label><input type="radio" name="q48" value="B" /> B. Temperature</label
+    ><br />
+    <label><input type="radio" name="q48" value="C" /> C. Volume</label><br />
+    <label><input type="radio" name="q48" value="D" /> D. Heat</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Work in regards to expansion or compression of a gas is calculated using:<br />
+    <span data-quiz="A" style="display: none"
+      >Work = -(pressure) × (change in volume)</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q49" value="A" /> A. Work = -(pressure) ×
+      (change in volume)</label
+    ><br />
+    <label
+      ><input type="radio" name="q49" value="B" /> B. Work = (force) ×
+      (distance)</label
+    ><br />
+    <label
+      ><input type="radio" name="q49" value="C" /> C. Work = (mass) ×
+      (acceleration)</label
+    ><br />
+    <label
+      ><input type="radio" name="q49" value="D" /> D. Work = (energy) /
+      (time)</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Entropy is:<br />
+    <span data-quiz="B" style="display: none"
+      >A measure of how much energy has spread out or how spread out energy has
+      become</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q50" value="A" /> A. The total energy in a
+      system</label
+    ><br />
+    <label
+      ><input type="radio" name="q50" value="B" /> B. A measure of how much
+      energy has spread out or how spread out energy has become</label
+    ><br />
+    <label
+      ><input type="radio" name="q50" value="C" /> C. The rate of energy
+      transfer in a system</label
+    ><br />
+    <label
+      ><input type="radio" name="q50" value="D" /> D. The work done by a
+      system</label
+    ><br /><br />
+    <h2>Fluids</h2>
+    <img src="https://www.solitaryroad.com/c1021/ole1.gif" alt="Fluids Image" />
+
+    ____________________________________________________________________________<br />
+    Fluids are substances that:<br />
+    <span data-quiz="A" style="display: none"
+      >Flow and conform to the shape of their containers</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q51" value="A" /> A. Flow and conform to the
+      shape of their containers</label
+    ><br />
+    <label
+      ><input type="radio" name="q51" value="B" /> B. Maintain their shape
+      regardless of their container</label
+    ><br />
+    <label
+      ><input type="radio" name="q51" value="C" /> C. Only exist as gases</label
+    ><br />
+    <label
+      ><input type="radio" name="q51" value="D" /> D. Cannot be
+      compressed</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Which of the following maintain their shape regardless of their
+    container?<br />
+    <span data-quiz="B" style="display: none">Solids</span><br /><br />
+    <label><input type="radio" name="q52" value="A" /> A. Liquids</label><br />
+    <label><input type="radio" name="q52" value="B" /> B. Solids</label><br />
+    <label><input type="radio" name="q52" value="C" /> C. Gases</label><br />
+    <label><input type="radio" name="q52" value="D" /> D. Fluids</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The equation for pressure is:<br />
+    <span data-quiz="C" style="display: none">Pressure = force / area</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q53" value="A" /> A. Pressure = mass ×
+      density</label
+    ><br />
+    <label
+      ><input type="radio" name="q53" value="B" /> B. Pressure = volume /
+      time</label
+    ><br />
+    <label
+      ><input type="radio" name="q53" value="C" /> C. Pressure = force /
+      area</label
+    ><br />
+    <label
+      ><input type="radio" name="q53" value="D" /> D. Pressure = density ×
+      volume</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Pressure in a fluid at a given depth is:<br />
+    <span data-quiz="A" style="display: none">Equal in every direction</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q54" value="A" /> A. Equal in every
+      direction</label
+    ><br />
+    <label
+      ><input type="radio" name="q54" value="B" /> B. Greater vertically than
+      horizontally</label
+    ><br />
+    <label
+      ><input type="radio" name="q54" value="C" /> C. Greater horizontally than
+      vertically</label
+    ><br />
+    <label
+      ><input type="radio" name="q54" value="D" /> D. Variable in different
+      directions</label
+    ><br /><br />
+    <label
+      ><input type="radio" name="q60" value="D" /> D. The density of the
+      fluid</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Specific gravity is the ratio of:<br />
+    <span data-quiz="B" style="display: none"
+      >An object's density to water's density</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q61" value="A" /> A. An object's mass to its
+      volume</label
+    ><br />
+    <label
+      ><input type="radio" name="q61" value="B" /> B. An object's density to
+      water's density</label
+    ><br />
+    <label
+      ><input type="radio" name="q61" value="C" /> C. An object's weight to its
+      mass</label
+    ><br />
+    <label
+      ><input type="radio" name="q61" value="D" /> D. Water's density to the
+      object's density</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Cohesion refers to the clinging of _____ molecules, while adhesion refers to
+    the clinging of _____ molecules:<br />
+    <span data-quiz="A" style="display: none">Like; unlike</span><br /><br />
+    <label><input type="radio" name="q62" value="A" /> A. Like; unlike</label
+    ><br />
+    <label><input type="radio" name="q62" value="B" /> B. Unlike; like</label
+    ><br />
+    <label><input type="radio" name="q62" value="C" /> C. Large; small</label
+    ><br />
+    <label><input type="radio" name="q62" value="D" /> D. Polar; nonpolar</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Capillary action occurs when:<br />
+    <span data-quiz="C" style="display: none"
+      >Adhesive forces to the wall are stronger than cohesive forces between
+      liquid molecules</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q63" value="A" /> A. Cohesive forces are
+      stronger than adhesive forces</label
+    ><br />
+    <label
+      ><input type="radio" name="q63" value="B" /> B. Surface tension is
+      maximized</label
+    ><br />
+    <label
+      ><input type="radio" name="q63" value="C" /> C. Adhesive forces to the
+      wall are stronger than cohesive forces between liquid molecules</label
+    ><br />
+    <label
+      ><input type="radio" name="q63" value="D" /> D. The liquid is at its
+      boiling point</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Surface tension is created by:<br />
+    <span data-quiz="A" style="display: none">Cohesive forces</span><br /><br />
+    <label><input type="radio" name="q64" value="A" /> A. Cohesive forces</label
+    ><br />
+    <label><input type="radio" name="q64" value="B" /> B. Adhesive forces</label
+    ><br />
+    <label
+      ><input type="radio" name="q64" value="C" /> C. Gravitational
+      forces</label
+    ><br />
+    <label
+      ><input type="radio" name="q64" value="D" /> D. Electromagnetic
+      forces</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Viscosity is a measure of a fluid's:<br />
+    <span data-quiz="B" style="display: none">Internal friction</span
+    ><br /><br />
+    <label><input type="radio" name="q65" value="A" /> A. Density</label><br />
+    <label
+      ><input type="radio" name="q65" value="B" /> B. Internal friction</label
+    ><br />
+    <label><input type="radio" name="q65" value="C" /> C. Compressibility</label
+    ><br />
+    <label><input type="radio" name="q65" value="D" /> D. Temperature</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Laminar flow is:<br />
+    <span data-quiz="A" style="display: none">Smooth and orderly</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q66" value="A" /> A. Smooth and orderly</label
+    ><br />
+    <label
+      ><input type="radio" name="q66" value="B" /> B. Rough and
+      disorderly</label
+    ><br />
+    <label
+      ><input type="radio" name="q66" value="C" /> C. Circular and
+      rotating</label
+    ><br />
+    <label
+      ><input type="radio" name="q66" value="D" /> D. Pulsating and
+      intermittent</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Turbulent flow is:<br />
+    <span data-quiz="B" style="display: none">Rough and disorderly</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q67" value="A" /> A. Smooth and orderly</label
+    ><br />
+    <label
+      ><input type="radio" name="q67" value="B" /> B. Rough and
+      disorderly</label
+    ><br />
+    <label
+      ><input type="radio" name="q67" value="C" /> C. Linear and
+      predictable</label
+    ><br />
+    <label
+      ><input type="radio" name="q67" value="D" /> D. Circular and
+      rotating</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Poiseuille's law determines the _____ of laminar flow:<br />
+    <span data-quiz="C" style="display: none">Rate</span><br /><br />
+    <label><input type="radio" name="q68" value="A" /> A. Direction</label
+    ><br />
+    <label><input type="radio" name="q68" value="B" /> B. Temperature</label
+    ><br />
+    <label><input type="radio" name="q68" value="C" /> C. Rate</label><br />
+    <label><input type="radio" name="q68" value="D" /> D. Pressure</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Volumetric flow rate is the volume of fluid which passes per:<br />
+    <span data-quiz="A" style="display: none">Unit time</span><br /><br />
+    <label><input type="radio" name="q69" value="A" /> A. Unit time</label
+    ><br />
+    <label><input type="radio" name="q69" value="B" /> B. Unit area</label
+    ><br />
+    <label><input type="radio" name="q69" value="C" /> C. Unit pressure</label
+    ><br />
+    <label><input type="radio" name="q69" value="D" /> D. Unit mass</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    How does the size of a pipe affect fluid flow rate? Narrow passages have
+    _____ flow, wider ones have _____ flow:<br />
+    <span data-quiz="A" style="display: none">Fast; slow</span><br /><br />
+    <label><input type="radio" name="q70" value="A" /> A. Fast; slow</label
+    ><br />
+    <label><input type="radio" name="q70" value="B" /> B. Slow; fast</label
+    ><br />
+    <label><input type="radio" name="q70" value="C" /> C. Fast; fast</label
+    ><br />
+    <label><input type="radio" name="q70" value="D" /> D. Slow; slow</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Bernoulli's equation states that:<br />
+    <span data-quiz="A" style="display: none"
+      >The sum of all forms of energy in a fluid flowing along an enclosed path
+      is the same at any two points in the path</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q71" value="A" /> A. The sum of all forms of
+      energy in a fluid flowing along an enclosed path is the same at any two
+      points in the path</label
+    ><br />
+    <label
+      ><input type="radio" name="q71" value="B" /> B. Pressure increases as
+      velocity increases in a fluid</label
+    ><br />
+    <label
+      ><input type="radio" name="q71" value="C" /> C. Energy is lost as fluid
+      moves through a pipe</label
+    ><br />
+    <label
+      ><input type="radio" name="q71" value="D" /> D. Fluid velocity is
+      independent of pressure</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    According to the venturi effect, when a fluid passes through a constricted
+    area, velocity will _____ and static pressure will _____:<br />
+    <span data-quiz="B" style="display: none">Increase; decrease</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q72" value="A" /> A. Decrease; increase</label
+    ><br />
+    <label
+      ><input type="radio" name="q72" value="B" /> B. Increase; decrease</label
+    ><br />
+    <label
+      ><input type="radio" name="q72" value="C" /> C. Increase; increase</label
+    ><br />
+    <label
+      ><input type="radio" name="q72" value="D" /> D. Decrease; decrease</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    In a Venturi tube, as cross-sectional area decreases from point 1 to point
+    2, the linear speed must:<br />
+    <span data-quiz="A" style="display: none">Increase</span><br /><br />
+    <label><input type="radio" name="q73" value="A" /> A. Increase</label><br />
+    <label><input type="radio" name="q73" value="B" /> B. Decrease</label><br />
+    <label><input type="radio" name="q73" value="C" /> C. Remain constant</label
+    ><br />
+    <label><input type="radio" name="q73" value="D" /> D. Become zero</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    In our circulatory system, as total cross-sectional area increases,
+    velocity:<br />
+    <span data-quiz="B" style="display: none">Decreases</span><br /><br />
+    <label><input type="radio" name="q74" value="A" /> A. Increases</label
+    ><br />
+    <label><input type="radio" name="q74" value="B" /> B. Decreases</label
+    ><br />
+    <label
+      ><input type="radio" name="q74" value="C" /> C. Remains constant</label
+    ><br />
+    <label><input type="radio" name="q74" value="D" /> D. Becomes zero</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <h2>Electrostatics and Magnetism</h2>
+    <img
+      src="https://www.shutterstock.com/image-vector/magnetic-field-lines-around-bar-600nw-2332868891.jpg"
+      alt="Magnetism Image"
+    />
+    The unit of electric charge is:<br />
+    <span data-quiz="C" style="display: none">Coulomb</span><br /><br />
+    <label><input type="radio" name="q75" value="A" /> A. Ampere</label><br />
+    <label><input type="radio" name="q75" value="B" /> B. Volt</label><br />
+    <label><input type="radio" name="q75" value="C" /> C. Coulomb</label><br />
+    <label><input type="radio" name="q75" value="D" /> D. Joule</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Protons have a _____ charge and electrons have a _____ charge:<br />
+    <span data-quiz="A" style="display: none">Positive; negative</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q76" value="A" /> A. Positive; negative</label
+    ><br />
+    <label
+      ><input type="radio" name="q76" value="B" /> B. Negative; positive</label
+    ><br />
+    <label
+      ><input type="radio" name="q76" value="C" /> C. Positive; positive</label
+    ><br />
+    <label
+      ><input type="radio" name="q76" value="D" /> D. Negative; negative</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Opposite charges exert _____ forces, while like charges exert _____
+    forces:<br />
+    <span data-quiz="A" style="display: none">Attractive; repulsive</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q77" value="A" /> A. Attractive;
+      repulsive</label
+    ><br />
+    <label
+      ><input type="radio" name="q77" value="B" /> B. Repulsive;
+      attractive</label
+    ><br />
+    <label
+      ><input type="radio" name="q77" value="C" /> C. Attractive;
+      attractive</label
+    ><br />
+    <label
+      ><input type="radio" name="q77" value="D" /> D. Repulsive;
+      repulsive</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Materials that allow the flow of charge are called:<br />
+    <span data-quiz="B" style="display: none">Conductors</span><br /><br />
+    <label><input type="radio" name="q78" value="A" /> A. Insulators</label
+    ><br />
+    <label><input type="radio" name="q78" value="B" /> B. Conductors</label
+    ><br />
+    <label><input type="radio" name="q78" value="C" /> C. Semiconductors</label
+    ><br />
+    <label><input type="radio" name="q78" value="D" /> D. Resistors</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Materials that resist the movement of charge are called:<br />
+    <span data-quiz="A" style="display: none">Insulators</span><br /><br />
+    <label><input type="radio" name="q79" value="A" /> A. Insulators</label
+    ><br />
+    <label><input type="radio" name="q79" value="B" /> B. Conductors</label
+    ><br />
+    <label><input type="radio" name="q79" value="C" /> C. Semiconductors</label
+    ><br />
+    <label><input type="radio" name="q79" value="D" /> D. Capacitors</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Coulomb's law gives the magnitude of the _____ between two charges:<br />
+    <span data-quiz="C" style="display: none">Electrostatic force</span
+    ><br /><br />
+    <label><input type="radio" name="q80" value="A" /> A. Electric field</label
+    ><br />
+    <label
+      ><input type="radio" name="q80" value="B" /> B. Electric potential</label
+    ><br />
+    <label
+      ><input type="radio" name="q80" value="C" /> C. Electrostatic force</label
+    ><br />
+    <label
+      ><input type="radio" name="q80" value="D" /> D. Electric current</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The Coulomb's law proportionality constant (in air) is:<br />
+    <span data-quiz="A" style="display: none">k = 9.0 × 10⁹ N·m²/C²</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q81" value="A" /> A. k = 9.0 × 10⁹
+      N·m²/C²</label
+    ><br />
+    <label
+      ><input type="radio" name="q81" value="B" /> B. k = 6.0 × 10²³
+      N·m²/C²</label
+    ><br />
+    <label
+      ><input type="radio" name="q81" value="C" /> C. k = 1.6 × 10⁻¹⁹
+      N·m²/C²</label
+    ><br />
+    <label
+      ><input type="radio" name="q81" value="D" /> D. k = 3.0 × 10⁸
+      N·m²/C²</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Every charge generates a/an _____, which can exert forces on other
+    charges:<br />
+    <span data-quiz="B" style="display: none">Electric field</span><br /><br />
+    <label><input type="radio" name="q82" value="A" /> A. Magnetic field</label
+    ><br />
+    <label><input type="radio" name="q82" value="B" /> B. Electric field</label
+    ><br />
+    <label
+      ><input type="radio" name="q82" value="C" /> C. Gravitational field</label
+    ><br />
+    <label><input type="radio" name="q82" value="D" /> D. Nuclear field</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Electric field lines show the activity of a _____ test charge:<br />
+    <span data-quiz="A" style="display: none">Positive</span><br /><br />
+    <label><input type="radio" name="q83" value="A" /> A. Positive</label><br />
+    <label><input type="radio" name="q83" value="B" /> B. Negative</label><br />
+    <label><input type="radio" name="q83" value="C" /> C. Neutral</label><br />
+    <label><input type="radio" name="q83" value="D" /> D. Variable</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    A/an _____ line is a line on which the potential at every point is the
+    same:<br />
+    <span data-quiz="C" style="display: none">Equipotential</span><br /><br />
+    <label><input type="radio" name="q84" value="A" /> A. Electric field</label
+    ><br />
+    <label><input type="radio" name="q84" value="B" /> B. Magnetic field</label
+    ><br />
+    <label><input type="radio" name="q84" value="C" /> C. Equipotential</label
+    ><br />
+    <label><input type="radio" name="q84" value="D" /> D. Conductivity</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    A/an _____ is a separation of positive and negative charges:<br />
+    <span data-quiz="A" style="display: none">Electric dipole</span><br /><br />
+    <label><input type="radio" name="q85" value="A" /> A. Electric dipole</label
+    ><br />
+    <label><input type="radio" name="q85" value="B" /> B. Electric field</label
+    ><br />
+    <label
+      ><input type="radio" name="q85" value="C" /> C. Electric potential</label
+    ><br />
+    <label
+      ><input type="radio" name="q85" value="D" /> D. Electric current</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    A/an _____ is a measure of the separation of positive and negative
+    electrical charges within a system:<br />
+    <span data-quiz="B" style="display: none">Dipole moment</span><br /><br />
+    <label><input type="radio" name="q86" value="A" /> A. Electric field</label
+    ><br />
+    <label><input type="radio" name="q86" value="B" /> B. Dipole moment</label
+    ><br />
+    <label
+      ><input type="radio" name="q86" value="C" /> C. Electric potential</label
+    ><br />
+    <label><input type="radio" name="q86" value="D" /> D. Electric force</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Electrical potential energy is:<br />
+    <span data-quiz="C" style="display: none"
+      >The amount of work required to bring a test charge from infinitely far
+      away to a given position in the vicinity of a source charge</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q87" value="A" /> A. The force between two
+      charges</label
+    ><br />
+    <label
+      ><input type="radio" name="q87" value="B" /> B. The field created by a
+      charge</label
+    ><br />
+    <label
+      ><input type="radio" name="q87" value="C" /> C. The amount of work
+      required to bring a test charge from infinitely far away to a given
+      position in the vicinity of a source charge</label
+    ><br />
+    <label
+      ><input type="radio" name="q87" value="D" /> D. The rate of charge
+      flow</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Electric potential energy increases when:<br />
+    <span data-quiz="A" style="display: none"
+      >Like charges move closer together or when opposite charges move
+      apart</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q88" value="A" /> A. Like charges move closer
+      together or when opposite charges move apart</label
+    ><br />
+    <label
+      ><input type="radio" name="q88" value="B" /> B. Like charges move apart or
+      when opposite charges move closer together</label
+    ><br />
+    <label
+      ><input type="radio" name="q88" value="C" /> C. Any charges move closer
+      together</label
+    ><br />
+    <label
+      ><input type="radio" name="q88" value="D" /> D. Any charges move
+      apart</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Electric potential energy decreases when:<br />
+    <span data-quiz="B" style="display: none"
+      >Like charges move apart or when opposite charges move closer
+      together</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q89" value="A" /> A. Like charges move closer
+      together or when opposite charges move apart</label
+    ><br />
+    <label
+      ><input type="radio" name="q89" value="B" /> B. Like charges move apart or
+      when opposite charges move closer together</label
+    ><br />
+    <label
+      ><input type="radio" name="q89" value="C" /> C. Any charges move closer
+      together</label
+    ><br />
+    <label
+      ><input type="radio" name="q89" value="D" /> D. Any charges move
+      apart</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Electrical potential is:<br />
+    <span data-quiz="A" style="display: none"
+      >The potential energy of a unit charge in any electric field</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q90" value="A" /> A. The potential energy of a
+      unit charge in any electric field</label
+    ><br />
+    <label
+      ><input type="radio" name="q90" value="B" /> B. The force per unit
+      charge</label
+    ><br />
+    <label
+      ><input type="radio" name="q90" value="C" /> C. The work done by an
+      electric field</label
+    ><br />
+    <label
+      ><input type="radio" name="q90" value="D" /> D. The rate of energy
+      transfer</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Voltage is:<br />
+    <span data-quiz="B" style="display: none"
+      >The potential difference in charge between two points in an electrical
+      field</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q91" value="A" /> A. The total electric
+      potential in a system</label
+    ><br />
+    <label
+      ><input type="radio" name="q91" value="B" /> B. The potential difference
+      in charge between two points in an electrical field</label
+    ><br />
+    <label
+      ><input type="radio" name="q91" value="C" /> C. The rate of charge
+      flow</label
+    ><br />
+    <label
+      ><input type="radio" name="q91" value="D" /> D. The resistance to current
+      flow</label
+    ><br /><br />
+    ____________________________________________________________________________<br />
+    Test charges will move spontaneously in whichever direction results in a
+    _____ in their electrical potential energy:<br />
+    <span data-quiz="B" style="display: none">Decrease</span><br /><br />
+    <label><input type="radio" name="q92" value="A" /> A. Increase</label><br />
+    <label><input type="radio" name="q92" value="B" /> B. Decrease</label><br />
+    <label><input type="radio" name="q92" value="C" /> C. No change</label
+    ><br />
+    <label
+      ><input type="radio" name="q92" value="D" /> D. Random fluctuation</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    A/an _____ is a region around a magnetic material or a moving electric
+    charge within which the force of magnetism acts:<br />
+    <span data-quiz="A" style="display: none">Magnetic field</span><br /><br />
+    <label><input type="radio" name="q93" value="A" /> A. Magnetic field</label
+    ><br />
+    <label><input type="radio" name="q93" value="B" /> B. Electric field</label
+    ><br />
+    <label
+      ><input type="radio" name="q93" value="C" /> C. Gravitational field</label
+    ><br />
+    <label><input type="radio" name="q93" value="D" /> D. Nuclear field</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    _____ materials possess no unpaired electrons and are slightly repelled by a
+    magnet:<br />
+    <span data-quiz="C" style="display: none">Diamagnetic</span><br /><br />
+    <label><input type="radio" name="q94" value="A" /> A. Paramagnetic</label
+    ><br />
+    <label><input type="radio" name="q94" value="B" /> B. Ferromagnetic</label
+    ><br />
+    <label><input type="radio" name="q94" value="C" /> C. Diamagnetic</label
+    ><br />
+    <label
+      ><input type="radio" name="q94" value="D" /> D. Antiferromagnetic</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    _____ materials possess some unpaired electrons and become weakly magnetic
+    in an external magnetic field:<br />
+    <span data-quiz="A" style="display: none">Paramagnetic</span><br /><br />
+    <label><input type="radio" name="q95" value="A" /> A. Paramagnetic</label
+    ><br />
+    <label><input type="radio" name="q95" value="B" /> B. Ferromagnetic</label
+    ><br />
+    <label><input type="radio" name="q95" value="C" /> C. Diamagnetic</label
+    ><br />
+    <label
+      ><input type="radio" name="q95" value="D" /> D. Antiferromagnetic</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    _____ materials possess some unpaired electrons and become strongly magnetic
+    in an external magnetic field:<br />
+    <span data-quiz="B" style="display: none">Ferromagnetic</span><br /><br />
+    <label><input type="radio" name="q96" value="A" /> A. Paramagnetic</label
+    ><br />
+    <label><input type="radio" name="q96" value="B" /> B. Ferromagnetic</label
+    ><br />
+    <label><input type="radio" name="q96" value="C" /> C. Diamagnetic</label
+    ><br />
+    <label
+      ><input type="radio" name="q96" value="D" /> D. Antiferromagnetic</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Current-carrying wires create magnetic fields that are _____ surrounding the
+    wire:<br />
+    <span data-quiz="A" style="display: none">Concentric circles</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q97" value="A" /> A. Concentric circles</label
+    ><br />
+    <label><input type="radio" name="q97" value="B" /> B. Parallel lines</label
+    ><br />
+    <label><input type="radio" name="q97" value="C" /> C. Radial lines</label
+    ><br />
+    <label><input type="radio" name="q97" value="D" /> D. Random patterns</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The equation for magnetic force of a moving point charge is:<br />
+    <span data-quiz="C" style="display: none">F = qvB sin θ</span><br /><br />
+    <label><input type="radio" name="q98" value="A" /> A. F = qE</label><br />
+    <label><input type="radio" name="q98" value="B" /> B. F = ma</label><br />
+    <label><input type="radio" name="q98" value="C" /> C. F = qvB sin θ</label
+    ><br />
+    <label><input type="radio" name="q98" value="D" /> D. F = kq₁q₂/r²</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The equation for magnetic force of a current carrying wire is:<br />
+    <span data-quiz="A" style="display: none">F = ILB sin θ</span><br /><br />
+    <label><input type="radio" name="q99" value="A" /> A. F = ILB sin θ</label
+    ><br />
+    <label><input type="radio" name="q99" value="B" /> B. F = qvB sin θ</label
+    ><br />
+    <label><input type="radio" name="q99" value="C" /> C. F = VIR</label><br />
+    <label><input type="radio" name="q99" value="D" /> D. F = μBH</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    _____ force is the sum of the electrostatic and magnetic forces acting on a
+    body:<br />
+    <span data-quiz="B" style="display: none">Lorentz</span><br /><br />
+    <label><input type="radio" name="q100" value="A" /> A. Coulomb</label><br />
+    <label><input type="radio" name="q100" value="B" /> B. Lorentz</label><br />
+    <label><input type="radio" name="q100" value="C" /> C. Gravitational</label
+    ><br />
+    <label><input type="radio" name="q100" value="D" /> D. Nuclear</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+    A voltmeter is connected in _____ to measure the potential difference across
+    a component:<br />
+    <span data-quiz="A" style="display: none">Parallel</span><br /><br />
+    <label><input type="radio" name="q101" value="A" /> A. Parallel</label
+    ><br />
+    <label><input type="radio" name="q101" value="B" /> B. Series</label><br />
+    <label><input type="radio" name="q101" value="C" /> C. Perpendicular</label
+    ><br />
+    <label><input type="radio" name="q101" value="D" /> D. Diagonal</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+    An ammeter is connected in _____ to measure the current through a
+    component:<br />
+    <span data-quiz="B" style="display: none">Series</span><br /><br />
+    <label><input type="radio" name="q102" value="A" /> A . Parallel</label
+    ><br />
+    <label><input type="radio" name="q102" value="B" /> B. Series</label><br />
+    <label><input type="radio" name="q102" value="C" /> C. Perpendicular</label
+    ><br />
+    <label><input type="radio" name="q102" value="D" /> D. Diagonal</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+    The resistance of a wire is directly proportional to its _____ and inversely
+    proportional to its _____:<br />
+    <span data-quiz="C" style="display: none">Length; cross-sectional area</span
+    ><br /><br />
+    <label><input type="radio" name="q103" value="A" /> A. Length; volume</label
+    ><br />
+    <label><input type="radio" name="q103" value="B" /> B. Volume; length</label
+    ><br />
+    <label
+      ><input type="radio" name="q103" value="C" /> C. Length; cross-sectional
+      area</label
+    ><br />
+    <label
+      ><input type="radio" name="q103" value="D" /> D. Cross-sectional area;
+      length</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+    The resistivity of a material is a measure of how much it resists the flow
+    of electric current. It is dependent on the material and its _____:<br />
+    <span data-quiz="D" style="display: none">Temperature</span> <br /><br />
+    <label><input type="radio" name="q104" value="A" /> A. Length</label><br />
+    <label
+      ><input type="radio" name="q104" value="B" /> B. Cross-sectional
+      area</label
+    ><br />
+    <label><input type="radio" name="q104" value="C" /> C. Volume</label><br />
+    <label><input type="radio" name="q104" value="D" /> D. Temperature</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+    A superconductor is a material that has _____ resistance when cooled below a
+    certain critical temperature:<br />
+    <span data-quiz="A" style="display: none">Zero</span><br /><br />
+    <label><input type="radio" name="q105" value="A" /> A. Zero</label><br />
+    <label><input type="radio" name="q105" value="B" /> B. Very high</label
+    ><br />
+    <label><input type="radio" name="q105" value="C" /> C. Very low</label
+    ><br />
+    <label><input type="radio" name="q105" value="D" /> D. Infinite</label
+    ><br /><br />
+    <ins
+      class="adsbygoogle"
+      style="display: block"
+      data-ad-format="autorelaxed"
+      data-ad-client="ca-pub-6422130934976134"
+      data-ad-slot="1021310659"
+    ></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <footer>
+      <p>All questions courtesy of Miledown</p>
+    </footer>
+  </body>
+
+  <script src="test.js"></script>
+  <script src="sidebar.js"></script>
+</html>
