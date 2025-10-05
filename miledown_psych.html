@@ -1,0 +1,1647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      img {
+        max-width: 300px;
+        max-height: 250px;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        display: block;
+        margin: 10px auto;
+        border: 1px solid #019cb1;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 8px 25px rgba(1, 156, 177, 0.3);
+        border-color: #ff6b35;
+      }
+
+      img:active {
+        transform: scale(0.95);
+      }
+
+      .image-zoom {
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6422130934976134"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="google-adsense-account" content="ca-pub-6422130934976134" />
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-L97LGZSXS5"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-L97LGZSXS5");
+    </script>
+    <link
+      rel="icon"
+      type="image/png"
+      href="Screenshot 2025-09-18 at 9.21.54 PM.png"
+    />
+    <title>Behavior - Fundamental Test of Knowledge - Miledown</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div
+      id="score-container"
+      style="
+        margin: 80px 0;
+        font-size: 0.8rem;
+        color: whitesmoke;
+        position: fixed;
+        top: 150px;
+        right: 16px;
+        background: #0a00cd;
+        z-index: 1000;
+        padding: 8px 8px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      "
+    >
+      Score: <span id="score">0</span> / <span id="total">0</span>
+    </div>
+
+    <h1>Behavior - Fundamental Test of Knowledge - Miledown</h1>
+
+    <h2>Biological Processes of Behavior</h2>
+
+    ____________________________________________________________________________<br />
+    What is the basic working unit of the brain?<br />
+    <span data-quiz="B" style="display: none">Neuron</span><br /><br />
+    <label><input type="radio" name="q1" value="A" /> A. Glial cell</label
+    ><br />
+    <label><input type="radio" name="q1" value="B" /> B. Neuron</label><br />
+    <label><input type="radio" name="q1" value="C" /> C. Axon</label><br />
+    <label><input type="radio" name="q1" value="D" /> D. Synapse</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The neuron communicates information using:<br />
+    <span data-quiz="B" style="display: none">Neurotransmitters</span
+    ><br /><br />
+    <label><input type="radio" name="q2" value="A" /> A. Hormones</label><br />
+    <label
+      ><input type="radio" name="q2" value="B" /> B. Neurotransmitters</label
+    ><br />
+    <label><input type="radio" name="q2" value="C" /> C. Enzymes</label><br />
+    <label
+      ><input type="radio" name="q2" value="D" /> D. Action potentials
+      only</label
+    ><br /><br />
+    <h2>Nervous System Structure and Function</h2>
+    ____________________________________________________________________________<br />
+    The Central Nervous System (CNS) includes:<br />
+    <span data-quiz="A" style="display: none">Brain and spinal cord</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q3" value="A" /> A. Brain and spinal
+      cord</label
+    ><br />
+    <label
+      ><input type="radio" name="q3" value="B" /> B. Brain and peripheral
+      nerves</label
+    ><br />
+    <label
+      ><input type="radio" name="q3" value="C" /> C. Spinal cord and sensory
+      organs</label
+    ><br />
+    <label
+      ><input type="radio" name="q3" value="D" /> D. Brain and ganglia</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The Peripheral Nervous System (PNS) consists of:<br />
+    <span data-quiz="C" style="display: none"
+      >Nervous tissue outside the CNS</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q4" value="A" /> A. Brain and spinal
+      cord</label
+    ><br />
+    <label
+      ><input type="radio" name="q4" value="B" /> B. Only sensory neurons</label
+    ><br />
+    <label
+      ><input type="radio" name="q4" value="C" /> C. Nervous tissue outside the
+      CNS</label
+    ><br />
+    <label
+      ><input type="radio" name="q4" value="D" /> D. Only motor neurons</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Reflex arcs allow for:<br />
+    <span data-quiz="C" style="display: none"
+      >Rapid responses via the spinal cord</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q5" value="A" /> A. Slow, voluntary
+      responses</label
+    ><br />
+    <label
+      ><input type="radio" name="q5" value="B" /> B. Hormone-based
+      signaling</label
+    ><br />
+    <label
+      ><input type="radio" name="q5" value="C" /> C. Rapid responses via the
+      spinal cord</label
+    ><br />
+    <label
+      ><input type="radio" name="q5" value="D" /> D. Conscious control of
+      motion</label
+    ><br /><br />
+    <h2>Autonomic Nervous System</h2>
+    ____________________________________________________________________________<br />
+    The autonomic nervous system controls:<br />
+    <span data-quiz="C" style="display: none">Involuntary actions</span
+    ><br /><br />
+    <label><input type="radio" name="q6" value="A" /> A. Skeletal muscles</label
+    ><br />
+    <label
+      ><input type="radio" name="q6" value="B" /> B. Voluntary actions</label
+    ><br />
+    <label
+      ><input type="radio" name="q6" value="C" /> C. Involuntary actions</label
+    ><br />
+    <label><input type="radio" name="q6" value="D" /> D. Reflex arcs</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The sympathetic nervous system is responsible for:<br />
+    <span data-quiz="B" style="display: none">Fight or flight</span><br /><br />
+    <label><input type="radio" name="q7" value="A" /> A. Rest and digest</label
+    ><br />
+    <label><input type="radio" name="q7" value="B" /> B. Fight or flight</label
+    ><br />
+    <label
+      ><input type="radio" name="q7" value="C" /> C. Voluntary movements</label
+    ><br />
+    <label
+      ><input type="radio" name="q7" value="D" /> D. Cognitive processing</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Which neurotransmitter is most associated with sympathetic activation?<br />
+    <span data-quiz="C" style="display: none">Norepinephrine</span><br /><br />
+    <label><input type="radio" name="q8" value="A" /> A. Serotonin</label><br />
+    <label><input type="radio" name="q8" value="B" /> B. Dopamine</label><br />
+    <label><input type="radio" name="q8" value="C" /> C. Norepinephrine</label
+    ><br />
+    <label><input type="radio" name="q8" value="D" /> D. Acetylcholine</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The parasympathetic system is best described as:<br />
+    <span data-quiz="B" style="display: none">Rest and digest</span><br /><br />
+    <label><input type="radio" name="q9" value="A" /> A. Fight or flight</label
+    ><br />
+    <label><input type="radio" name="q9" value="B" /> B. Rest and digest</label
+    ><br />
+    <label><input type="radio" name="q9" value="C" /> C. Reflex control</label
+    ><br />
+    <label><input type="radio" name="q9" value="D" /> D. Memory formation</label
+    ><br /><br />
+    <h2>Neurotransmitters</h2>
+    ____________________________________________________________________________<br />
+    Acetylcholine primarily functions in:<br />
+    <span data-quiz="C" style="display: none">Muscle movement</span><br /><br />
+    <label><input type="radio" name="q10" value="A" /> A. Mood regulation</label
+    ><br />
+    <label><input type="radio" name="q10" value="B" /> B. Pain control</label
+    ><br />
+    <label><input type="radio" name="q10" value="C" /> C. Muscle movement</label
+    ><br />
+    <label><input type="radio" name="q10" value="D" /> D. Sleep cycles</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Dopamine is involved in all EXCEPT:<br />
+    <span data-quiz="D" style="display: none">Digestion</span><br /><br />
+    <label><input type="radio" name="q11" value="A" /> A. Motivation</label
+    ><br />
+    <label><input type="radio" name="q11" value="B" /> B. Smooth movement</label
+    ><br />
+    <label><input type="radio" name="q11" value="C" /> C. Posture</label><br />
+    <label><input type="radio" name="q11" value="D" /> D. Digestion</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Serotonin regulates:<br />
+    <span data-quiz="B" style="display: none">Mood and sleep</span><br /><br />
+    <label><input type="radio" name="q12" value="A" /> A. Vision</label><br />
+    <label><input type="radio" name="q12" value="B" /> B. Mood and sleep</label
+    ><br />
+    <label><input type="radio" name="q12" value="C" /> C. Movement</label><br />
+    <label><input type="radio" name="q12" value="D" /> D. Reflexes</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    GABA acts as a(n):<br />
+    <span data-quiz="B" style="display: none">Inhibitory neurotransmitter</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q13" value="A" /> A. Excitatory
+      neurotransmitter</label
+    ><br />
+    <label
+      ><input type="radio" name="q13" value="B" /> B. Inhibitory
+      neurotransmitter</label
+    ><br />
+    <label><input type="radio" name="q13" value="C" /> C. Hormone</label><br />
+    <label><input type="radio" name="q13" value="D" /> D. Enzyme</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Glutamate is:<br />
+    <span data-quiz="B" style="display: none">Excitatory</span><br /><br />
+    <label><input type="radio" name="q14" value="A" /> A. Inhibitory</label
+    ><br />
+    <label><input type="radio" name="q14" value="B" /> B. Excitatory</label
+    ><br />
+    <label><input type="radio" name="q14" value="C" /> C. Neutral</label><br />
+    <label><input type="radio" name="q14" value="D" /> D. Hormonal</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Endorphins serve as:<br />
+    <span data-quiz="B" style="display: none">Natural painkillers</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q15" value="A" /> A. Sleep regulators</label
+    ><br />
+    <label
+      ><input type="radio" name="q15" value="B" /> B. Natural painkillers</label
+    ><br />
+    <label><input type="radio" name="q15" value="C" /> C. Neurotoxins</label
+    ><br />
+    <label><input type="radio" name="q15" value="D" /> D. Growth factors</label
+    ><br /><br />
+    <h2>Hormones</h2>
+    ____________________________________________________________________________<br />
+    Cortisol is released by the:<br />
+    <span data-quiz="B" style="display: none">Adrenal cortex</span><br /><br />
+    <label><input type="radio" name="q16" value="A" /> A. Pituitary gland</label
+    ><br />
+    <label><input type="radio" name="q16" value="B" /> B. Adrenal cortex</label
+    ><br />
+    <label><input type="radio" name="q16" value="C" /> C. Thyroid gland</label
+    ><br />
+    <label><input type="radio" name="q16" value="D" /> D. Hypothalamus</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Testosterone and estrogen both influence:<br />
+    <span data-quiz="B" style="display: none">Libido</span><br /><br />
+    <label
+      ><input type="radio" name="q17" value="A" /> A. Growth and
+      metabolism</label
+    ><br />
+    <label><input type="radio" name="q17" value="B" /> B. Libido</label><br />
+    <label><input type="radio" name="q17" value="C" /> C. Sleep cycles</label
+    ><br />
+    <label
+      ><input type="radio" name="q17" value="D" /> D. Pain suppression</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Testosterone is also linked with:<br />
+    <span data-quiz="B" style="display: none">Aggressive behavior</span
+    ><br /><br />
+    <label><input type="radio" name="q18" value="A" /> A. Memory</label><br />
+    <label
+      ><input type="radio" name="q18" value="B" /> B. Aggressive behavior</label
+    ><br />
+    <label><input type="radio" name="q18" value="C" /> C. Coordination</label
+    ><br />
+    <label><input type="radio" name="q18" value="D" /> D. Relaxation</label
+    ><br /><br />
+    <h2>Brain Structures and Functions</h2>
+    ____________________________________________________________________________<br />
+    The forebrain is responsible for:<br />
+    <span data-quiz="C" style="display: none">Higher-level functions</span
+    ><br /><br />
+    <label><input type="radio" name="q19" value="A" /> A. Reflexes</label><br />
+    <label><input type="radio" name="q19" value="B" /> B. Basic survival</label
+    ><br />
+    <label
+      ><input type="radio" name="q19" value="C" /> C. Higher-level
+      functions</label
+    ><br />
+    <label
+      ><input type="radio" name="q19" value="D" /> D. Breathing control</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The thalamus acts as the:<br />
+    <span data-quiz="B" style="display: none"
+      >Relay station for sensory info</span
+    ><br /><br />
+    <label><input type="radio" name="q20" value="A" /> A. Motor center</label
+    ><br />
+    <label
+      ><input type="radio" name="q20" value="B" /> B. Relay station for sensory
+      info</label
+    ><br />
+    <label><input type="radio" name="q20" value="C" /> C. Emotion center</label
+    ><br />
+    <label><input type="radio" name="q20" value="D" /> D. Sleep regulator</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The hypothalamus regulates:<br />
+    <span data-quiz="B" style="display: none">Homeostasis</span><br /><br />
+    <label
+      ><input type="radio" name="q21" value="A" /> A. Voluntary movement</label
+    ><br />
+    <label><input type="radio" name="q21" value="B" /> B. Homeostasis</label
+    ><br />
+    <label><input type="radio" name="q21" value="C" /> C. Reflex arcs</label
+    ><br />
+    <label><input type="radio" name="q21" value="D" /> D. Vision</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The basal ganglia helps with:<br />
+    <span data-quiz="B" style="display: none">Smooth movement and posture</span
+    ><br /><br />
+    <label><input type="radio" name="q22" value="A" /> A. Hormone release</label
+    ><br />
+    <label
+      ><input type="radio" name="q22" value="B" /> B. Smooth movement and
+      posture</label
+    ><br />
+    <label
+      ><input type="radio" name="q22" value="C" /> C. Emotional memory</label
+    ><br />
+    <label
+      ><input type="radio" name="q22" value="D" /> D. Pain suppression</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The limbic system is mainly associated with:<br />
+    <span data-quiz="B" style="display: none">Emotions and memory</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q23" value="A" /> A. Breathing and heart
+      rate</label
+    ><br />
+    <label
+      ><input type="radio" name="q23" value="B" /> B. Emotions and memory</label
+    ><br />
+    <label><input type="radio" name="q23" value="C" /> C. Vision</label><br />
+    <label
+      ><input type="radio" name="q23" value="D" /> D. Hormone production</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The amygdala governs:<br />
+    <span data-quiz="B" style="display: none">Fear and aggression</span
+    ><br /><br />
+    <label><input type="radio" name="q24" value="A" /> A. Speech</label><br />
+    <label
+      ><input type="radio" name="q24" value="B" /> B. Fear and aggression</label
+    ><br />
+    <label><input type="radio" name="q24" value="C" /> C. Vision</label><br />
+    <label><input type="radio" name="q24" value="D" /> D. Hunger</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The hippocampus is key for:<br />
+    <span data-quiz="A" style="display: none">Emotional regulation</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q25" value="A" /> A. Emotional
+      regulation</label
+    ><br />
+    <label><input type="radio" name="q25" value="B" /> B. Reflex control</label
+    ><br />
+    <label><input type="radio" name="q25" value="C" /> C. Movement</label><br />
+    <label><input type="radio" name="q25" value="D" /> D. Breathing</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The cerebral cortex is divided into:<br />
+    <span data-quiz="B" style="display: none">Four lobes</span><br /><br />
+    <label><input type="radio" name="q26" value="A" /> A. Two lobes</label
+    ><br />
+    <label><input type="radio" name="q26" value="B" /> B. Four lobes</label
+    ><br />
+    <label><input type="radio" name="q26" value="C" /> C. Six layers</label
+    ><br />
+    <label
+      ><input type="radio" name="q26" value="D" /> D. Eight hemispheres</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The frontal lobe controls:<br />
+    <span data-quiz="C" style="display: none"
+      >Executive function and motor control</span
+    ><br /><br />
+    <label><input type="radio" name="q27" value="A" /> A. Vision</label><br />
+    <label><input type="radio" name="q27" value="B" /> B. Touch</label><br />
+    <label
+      ><input type="radio" name="q27" value="C" /> C. Executive function and
+      motor control</label
+    ><br />
+    <label><input type="radio" name="q27" value="D" /> D. Hearing</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The parietal lobe processes:<br />
+    <span data-quiz="C" style="display: none">Touch and spatial awareness</span
+    ><br /><br />
+    <label><input type="radio" name="q28" value="A" /> A. Emotions</label><br />
+    <label><input type="radio" name="q28" value="B" /> B. Sound</label><br />
+    <label
+      ><input type="radio" name="q28" value="C" /> C. Touch and spatial
+      awareness</label
+    ><br />
+    <label><input type="radio" name="q28" value="D" /> D. Balance</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The temporal lobe is associated with:<br />
+    <span data-quiz="B" style="display: none">Hearing, memory, and emotion</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q29" value="A" /> A. Smell and balance</label
+    ><br />
+    <label
+      ><input type="radio" name="q29" value="B" /> B. Hearing, memory, and
+      emotion</label
+    ><br />
+    <label
+      ><input type="radio" name="q29" value="C" /> C. Movement control</label
+    ><br />
+    <label><input type="radio" name="q29" value="D" /> D. Pain regulation</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The occipital lobe primarily handles:<br />
+    <span data-quiz="B" style="display: none">Vision</span><br /><br />
+    <label><input type="radio" name="q30" value="A" /> A. Taste</label><br />
+    <label><input type="radio" name="q30" value="B" /> B. Vision</label><br />
+    <label><input type="radio" name="q30" value="C" /> C. Speech</label><br />
+    <label><input type="radio" name="q30" value="D" /> D. Emotion</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The left hemisphere is more involved in:<br />
+    <span data-quiz="C" style="display: none">Logic and language</span
+    ><br /><br />
+    <label><input type="radio" name="q31" value="A" /> A. Creativity</label
+    ><br />
+    <label
+      ><input type="radio" name="q31" value="B" /> B. Spatial reasoning</label
+    ><br />
+    <label
+      ><input type="radio" name="q31" value="C" /> C. Logic and language</label
+    ><br />
+    <label><input type="radio" name="q31" value="D" /> D. Emotion</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The right hemisphere is associated with:<br />
+    <span data-quiz="B" style="display: none"
+      >Creativity and spatial processing</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q32" value="A" /> A. Math and analysis</label
+    ><br />
+    <label
+      ><input type="radio" name="q32" value="B" /> B. Creativity and spatial
+      processing</label
+    ><br />
+    <label><input type="radio" name="q32" value="C" /> C. Reflexes</label><br />
+    <label
+      ><input type="radio" name="q32" value="D" /> D. Language production</label
+    ><br /><br />
+    <h2>Infant Reflexes</h2>
+    ____________________________________________________________________________<br />
+    The rooting reflex involves:<br />
+    <span data-quiz="B" style="display: none"
+      >Turning head toward a stimulus</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q33" value="A" /> A. Grabbing objects</label
+    ><br />
+    <label
+      ><input type="radio" name="q33" value="B" /> B. Turning head toward a
+      stimulus</label
+    ><br />
+    <label
+      ><input type="radio" name="q33" value="C" /> C. Kicking and
+      flailing</label
+    ><br />
+    <label
+      ><input type="radio" name="q33" value="D" /> D. Crying when a loud noise
+      is heard</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The Moro reflex occurs in response to:<br />
+    <span data-quiz="B" style="display: none">A falling sensation</span
+    ><br /><br />
+    <label><input type="radio" name="q34" value="A" /> A. Loud noises</label
+    ><br />
+    <label
+      ><input type="radio" name="q34" value="B" /> B. A falling sensation</label
+    ><br />
+    <label><input type="radio" name="q34" value="C" /> C. Hunger</label><br />
+    <label><input type="radio" name="q34" value="D" /> D. Bright light</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The Babinski reflex is seen when:<br />
+    <span data-quiz="B" style="display: none"
+      >The sole of the foot is brushed</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q35" value="A" /> A. The palm of the hand is
+      touched</label
+    ><br />
+    <label
+      ><input type="radio" name="q35" value="B" /> B. The sole of the foot is
+      brushed</label
+    ><br />
+    <label
+      ><input type="radio" name="q35" value="C" /> C. The head is turned</label
+    ><br />
+    <label
+      ><input type="radio" name="q35" value="D" /> D. The arm is lifted</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The Babinski reflex results in:<br />
+    <span data-quiz="B" style="display: none">Fanning of the toes</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q36" value="A" /> A. Curling of the toes</label
+    ><br />
+    <label
+      ><input type="radio" name="q36" value="B" /> B. Fanning of the toes</label
+    ><br />
+    <label><input type="radio" name="q36" value="C" /> C. Grabbing</label><br />
+    <label
+      ><input type="radio" name="q36" value="D" /> D. Spreading fingers</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The grasping reflex causes infants to:<br />
+    <span data-quiz="B" style="display: none"
+      >Grab objects placed in their hands</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q37" value="A" /> A. Clench their fists when
+      they are touched</label
+    ><br />
+    <label
+      ><input type="radio" name="q37" value="B" /> B. Grab objects placed in
+      their hands</label
+    ><br />
+    <label
+      ><input type="radio" name="q37" value="C" /> C. Kick reflexively</label
+    ><br />
+    <label><input type="radio" name="q37" value="D" /> D. Turn their head</label
+    ><br /><br />
+    <h2>Sensory Fundamentals & Thresholds</h2>
+
+    ____________________________________________________________________________<br />
+    Sensory receptors send information to the CNS via:<br />
+    <span data-quiz="B" style="display: none">Sensory ganglia</span><br /><br />
+    <label><input type="radio" name="q38" value="A" /> A. Dendrites</label
+    ><br />
+    <label><input type="radio" name="q38" value="B" /> B. Sensory ganglia</label
+    ><br />
+    <label><input type="radio" name="q38" value="C" /> C. Motor neurons</label
+    ><br />
+    <label><input type="radio" name="q38" value="D" /> D. Interneurons</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Projection areas are located in the:<br />
+    <span data-quiz="C" style="display: none">Cerebral cortex</span><br /><br />
+    <label><input type="radio" name="q39" value="A" /> A. Brainstem</label
+    ><br />
+    <label><input type="radio" name="q39" value="B" /> B. Spinal cord</label
+    ><br />
+    <label><input type="radio" name="q39" value="C" /> C. Cerebral cortex</label
+    ><br />
+    <label><input type="radio" name="q39" value="D" /> D. Thalamus</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The absolute threshold refers to:<br />
+    <span data-quiz="B" style="display: none"
+      >The weakest stimulus detected</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q40" value="A" /> A. The smallest detectable
+      change</label
+    ><br />
+    <label
+      ><input type="radio" name="q40" value="B" /> B. The weakest stimulus
+      detected</label
+    ><br />
+    <label
+      ><input type="radio" name="q40" value="C" /> C. The strongest stimulus
+      possible</label
+    ><br />
+    <label
+      ><input type="radio" name="q40" value="D" /> D. The threshold of
+      awareness</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The threshold of conscious perception is:<br />
+    <span data-quiz="B" style="display: none"
+      >When a stimulus is strong enough to reach awareness</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q41" value="A" /> A. Always below the absolute
+      threshold</label
+    ><br />
+    <label
+      ><input type="radio" name="q41" value="B" /> B. When a stimulus is strong
+      enough to reach awareness</label
+    ><br />
+    <label
+      ><input type="radio" name="q41" value="C" /> C. The limit for reflexive
+      responses</label
+    ><br />
+    <label
+      ><input type="radio" name="q41" value="D" /> D. The loudest sound
+      perceived</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The difference threshold (JND) is the:<br />
+    <span data-quiz="B" style="display: none"
+      >Minimum noticeable difference</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q42" value="A" /> A. Maximum noticeable
+      difference</label
+    ><br />
+    <label
+      ><input type="radio" name="q42" value="B" /> B. Minimum noticeable
+      difference</label
+    ><br />
+    <label
+      ><input type="radio" name="q42" value="C" /> C. Average perceived
+      intensity</label
+    ><br />
+    <label
+      ><input type="radio" name="q42" value="D" /> D. Threshold of
+      awareness</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Weber's Law relates the JND to:<br />
+    <span data-quiz="B" style="display: none">Original stimulus magnitude</span
+    ><br /><br />
+    <label><input type="radio" name="q43" value="A" /> A. Reaction time</label
+    ><br />
+    <label
+      ><input type="radio" name="q43" value="B" /> B. Original stimulus
+      magnitude</label
+    ><br />
+    <label
+      ><input type="radio" name="q43" value="C" /> C. Brain processing
+      speed</label
+    ><br />
+    <label
+      ><input type="radio" name="q43" value="D" /> D. Type of receptor</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Signal detection theory explains perception based on:<br />
+    <span data-quiz="B" style="display: none">Non-sensory factors</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q44" value="A" /> A. Sensory input only</label
+    ><br />
+    <label
+      ><input type="radio" name="q44" value="B" /> B. Non-sensory factors</label
+    ><br />
+    <label><input type="radio" name="q44" value="C" /> C. Reflex arcs</label
+    ><br />
+    <label
+      ><input type="radio" name="q44" value="D" /> D. Receptor fatigue</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Sensory adaptation occurs when:<br />
+    <span data-quiz="B" style="display: none"
+      >Sensitivity decreases with constant stimulus</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q45" value="A" /> A. Receptors increase
+      firing</label
+    ><br />
+    <label
+      ><input type="radio" name="q45" value="B" /> B. Sensitivity decreases with
+      constant stimulus</label
+    ><br />
+    <label
+      ><input type="radio" name="q45" value="C" /> C. The signal stops reaching
+      the brain</label
+    ><br />
+    <label
+      ><input type="radio" name="q45" value="D" /> D. The receptor resets
+      quickly</label
+    ><br /><br />
+
+    <h2>Visual Sensation</h2>
+
+    ____________________________________________________________________________<br />
+    The cornea primarily:<br />
+    <span data-quiz="B" style="display: none">Filters and gathers light</span
+    ><br /><br />
+    <label><input type="radio" name="q46" value="A" /> A. Focuses light</label
+    ><br />
+    <label
+      ><input type="radio" name="q46" value="B" /> B. Filters and gathers
+      light</label
+    ><br />
+    <label
+      ><input type="radio" name="q46" value="C" /> C. Converts light to
+      signals</label
+    ><br />
+    <label
+      ><input type="radio" name="q46" value="D" /> D. Adjusts pupil size</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The aqueous humor helps:<br />
+    <span data-quiz="B" style="display: none">Maintain eye pressure</span
+    ><br /><br />
+    <label><input type="radio" name="q47" value="A" /> A. Focus the image</label
+    ><br />
+    <label
+      ><input type="radio" name="q47" value="B" /> B. Maintain eye
+      pressure</label
+    ><br />
+    <label
+      ><input type="radio" name="q47" value="C" /> C. Protect the retina</label
+    ><br />
+    <label
+      ><input type="radio" name="q47" value="D" /> D. Absorb stray light</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The iris controls:<br />
+    <span data-quiz="C" style="display: none">Pupil size</span><br /><br />
+    <label><input type="radio" name="q48" value="A" /> A. Focus</label><br />
+    <label><input type="radio" name="q48" value="B" /> B. Lens shape</label
+    ><br />
+    <label><input type="radio" name="q48" value="C" /> C. Pupil size</label
+    ><br />
+    <label
+      ><input type="radio" name="q48" value="D" /> D. Retinal movement</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The lens functions to:<br />
+    <span data-quiz="B" style="display: none">Refract light</span><br /><br />
+    <label><input type="radio" name="q49" value="A" /> A. Gather light</label
+    ><br />
+    <label><input type="radio" name="q49" value="B" /> B. Refract light</label
+    ><br />
+    <label><input type="radio" name="q49" value="C" /> C. Absorb color</label
+    ><br />
+    <label><input type="radio" name="q49" value="D" /> D. Detect motion</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The retina contains:<br />
+    <span data-quiz="B" style="display: none">Photoreceptors</span><br /><br />
+    <label
+      ><input type="radio" name="q50" value="A" /> A. Blood vessels only</label
+    ><br />
+    <label><input type="radio" name="q50" value="B" /> B. Photoreceptors</label
+    ><br />
+    <label><input type="radio" name="q50" value="C" /> C. Muscle fibers</label
+    ><br />
+    <label
+      ><input type="radio" name="q50" value="D" /> D. Pigmented tissue
+      only</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Rods detect:<br />
+    <span data-quiz="B" style="display: none">Light and dark</span><br /><br />
+    <label><input type="radio" name="q51" value="A" /> A. Color</label><br />
+    <label><input type="radio" name="q51" value="B" /> B. Light and dark</label
+    ><br />
+    <label><input type="radio" name="q51" value="C" /> C. Fine details</label
+    ><br />
+    <label><input type="radio" name="q51" value="D" /> D. Depth</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Cones detect:<br />
+    <span data-quiz="B" style="display: none">Color</span><br /><br />
+    <label><input type="radio" name="q52" value="A" /> A. Brightness</label
+    ><br />
+    <label><input type="radio" name="q52" value="B" /> B. Color</label><br />
+    <label><input type="radio" name="q52" value="C" /> C. Motion</label><br />
+    <label><input type="radio" name="q52" value="D" /> D. Temperature</label
+    ><br /><br />
+
+    <h2>Visual Processing</h2>
+
+    ____________________________________________________________________________<br />
+    Parallel processing means the brain processes:<br />
+    <span data-quiz="B" style="display: none"
+      >Color, form, and motion simultaneously</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q53" value="A" /> A. One feature at a
+      time</label
+    ><br />
+    <label
+      ><input type="radio" name="q53" value="B" /> B. Color, form, and motion
+      simultaneously</label
+    ><br />
+    <label><input type="radio" name="q53" value="C" /> C. Only motion</label
+    ><br />
+    <label><input type="radio" name="q53" value="D" /> D. Only color</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Magnocellular cells process:<br />
+    <span data-quiz="B" style="display: none">Motion</span><br /><br />
+    <label><input type="radio" name="q54" value="A" /> A. Shape</label><br />
+    <label><input type="radio" name="q54" value="B" /> B. Motion</label><br />
+    <label><input type="radio" name="q54" value="C" /> C. Color</label><br />
+    <label><input type="radio" name="q54" value="D" /> D. Texture</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Parvocellular cells process:<br />
+    <span data-quiz="B" style="display: none">Shape</span><br /><br />
+    <label><input type="radio" name="q55" value="A" /> A. Depth</label><br />
+    <label><input type="radio" name="q55" value="B" /> B. Shape</label><br />
+    <label><input type="radio" name="q55" value="C" /> C. Motion</label><br />
+    <label><input type="radio" name="q55" value="D" /> D. Brightness</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Retinal disparity helps with:<br />
+    <span data-quiz="B" style="display: none">Depth perception</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q56" value="A" /> A. Motion detection</label
+    ><br />
+    <label
+      ><input type="radio" name="q56" value="B" /> B. Depth perception</label
+    ><br />
+    <label
+      ><input type="radio" name="q56" value="C" /> C. Color
+      identification</label
+    ><br />
+    <label><input type="radio" name="q56" value="D" /> D. Memory</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The visual pathway ends in the:<br />
+    <span data-quiz="B" style="display: none">Visual cortex</span><br /><br />
+    <label><input type="radio" name="q57" value="A" /> A. Optic nerve</label
+    ><br />
+    <label><input type="radio" name="q57" value="B" /> B. Visual cortex</label
+    ><br />
+    <label><input type="radio" name="q57" value="C" /> C. LGN</label><br />
+    <label><input type="radio" name="q57" value="D" /> D. Retina</label
+    ><br /><br />
+
+    <h2>Auditory Sensation</h2>
+
+    ____________________________________________________________________________<br />
+    The outer ear includes all EXCEPT:<br />
+    <span data-quiz="C" style="display: none">Cochlea</span><br /><br />
+    <label><input type="radio" name="q58" value="A" /> A. Pinna</label><br />
+    <label
+      ><input type="radio" name="q58" value="B" /> B. Tympanic membrane</label
+    ><br />
+    <label><input type="radio" name="q58" value="C" /> C. Cochlea</label><br />
+    <label><input type="radio" name="q58" value="D" /> D. Auditory canal</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The tympanic membrane:<br />
+    <span data-quiz="B" style="display: none">Vibrates with sound</span
+    ><br /><br />
+    <label><input type="radio" name="q59" value="A" /> A. Absorbs sound</label
+    ><br />
+    <label
+      ><input type="radio" name="q59" value="B" /> B. Vibrates with sound</label
+    ><br />
+    <label
+      ><input type="radio" name="q59" value="C" /> C. Balances pressure</label
+    ><br />
+    <label><input type="radio" name="q59" value="D" /> D. Channels fluid</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The ossicles are located in the:<br />
+    <span data-quiz="B" style="display: none">Middle ear</span><br /><br />
+    <label><input type="radio" name="q60" value="A" /> A. Inner ear</label
+    ><br />
+    <label><input type="radio" name="q60" value="B" /> B. Middle ear</label
+    ><br />
+    <label><input type="radio" name="q60" value="C" /> C. Outer ear</label
+    ><br />
+    <label><input type="radio" name="q60" value="D" /> D. Auditory cortex</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The three ossicles are:<br />
+    <span data-quiz="A" style="display: none">Hammer, anvil, stirrup</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q61" value="A" /> A. Hammer, anvil,
+      stirrup</label
+    ><br />
+    <label
+      ><input type="radio" name="q61" value="B" /> B. Drum, canal,
+      cochlea</label
+    ><br />
+    <label
+      ><input type="radio" name="q61" value="C" /> C. Bone, tube, nerve</label
+    ><br />
+    <label
+      ><input type="radio" name="q61" value="D" /> D. Staple, pin,
+      membrane</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The inner ear contains the:<br />
+    <span data-quiz="B" style="display: none">Cochlea</span><br /><br />
+    <label><input type="radio" name="q62" value="A" /> A. Auditory canal</label
+    ><br />
+    <label><input type="radio" name="q62" value="B" /> B. Cochlea</label><br />
+    <label
+      ><input type="radio" name="q62" value="C" /> C. Tympanic membrane</label
+    ><br />
+    <label><input type="radio" name="q62" value="D" /> D. Ossicles</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The cochlea converts:<br />
+    <span data-quiz="B" style="display: none">Sound into nerve impulses</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q63" value="A" /> A. Motion into sound</label
+    ><br />
+    <label
+      ><input type="radio" name="q63" value="B" /> B. Sound into nerve
+      impulses</label
+    ><br />
+    <label
+      ><input type="radio" name="q63" value="C" /> C. Light into sound</label
+    ><br />
+    <label
+      ><input type="radio" name="q63" value="D" /> D. Pressure into
+      movement</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The semicircular canals are involved in:<br />
+    <span data-quiz="B" style="display: none">Balance</span><br /><br />
+    <label><input type="radio" name="q64" value="A" /> A. Hearing</label><br />
+    <label><input type="radio" name="q64" value="B" /> B. Balance</label><br />
+    <label><input type="radio" name="q64" value="C" /> C. Smell</label><br />
+    <label><input type="radio" name="q64" value="D" /> D. Vision</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The vestibular system provides:<br />
+    <span data-quiz="B" style="display: none">Spatial orientation</span
+    ><br /><br />
+    <label><input type="radio" name="q65" value="A" /> A. Sound intensity</label
+    ><br />
+    <label
+      ><input type="radio" name="q65" value="B" /> B. Spatial orientation</label
+    ><br />
+    <label
+      ><input type="radio" name="q65" value="C" /> C. Temperature sensing</label
+    ><br />
+    <label><input type="radio" name="q65" value="D" /> D. Pain perception</label
+    ><br /><br />
+
+    <h2>Auditory Processing</h2>
+
+    ____________________________________________________________________________<br />
+    The superior olive helps:<br />
+    <span data-quiz="B" style="display: none">Localize sound</span><br /><br />
+    <label><input type="radio" name="q66" value="A" /> A. Detect pitch</label
+    ><br />
+    <label><input type="radio" name="q66" value="B" /> B. Localize sound</label
+    ><br />
+    <label><input type="radio" name="q66" value="C" /> C. Amplify signal</label
+    ><br />
+    <label
+      ><input type="radio" name="q66" value="D" /> D. Convert vibration</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The inferior colliculus triggers:<br />
+    <span data-quiz="B" style="display: none">Startle reflex</span><br /><br />
+    <label><input type="radio" name="q67" value="A" /> A. Smell detection</label
+    ><br />
+    <label><input type="radio" name="q67" value="B" /> B. Startle reflex</label
+    ><br />
+    <label><input type="radio" name="q67" value="C" /> C. Vision</label><br />
+    <label
+      ><input type="radio" name="q67" value="D" /> D. Balance correction</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The auditory pathway ends at the:<br />
+    <span data-quiz="B" style="display: none">Auditory cortex</span><br /><br />
+    <label><input type="radio" name="q68" value="A" /> A. Cochlea</label><br />
+    <label><input type="radio" name="q68" value="B" /> B. Auditory cortex</label
+    ><br />
+    <label
+      ><input type="radio" name="q68" value="C" /> C. Tympanic membrane</label
+    ><br />
+    <label><input type="radio" name="q68" value="D" /> D. Brainstem</label
+    ><br /><br />
+
+    <h2>Other Senses – Smell, Taste, Touch</h2>
+
+    ____________________________________________________________________________<br />
+    Smell is detected by:<br />
+    <span data-quiz="B" style="display: none">Olfactory chemoreceptors</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q69" value="A" /> A. Mechanoreceptors</label
+    ><br />
+    <label
+      ><input type="radio" name="q69" value="B" /> B. Olfactory
+      chemoreceptors</label
+    ><br />
+    <label><input type="radio" name="q69" value="C" /> C. Thermoreceptors</label
+    ><br />
+    <label><input type="radio" name="q69" value="D" /> D. Nociceptors</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Pheromones affect:<br />
+    <span data-quiz="B" style="display: none">Social and sexual behavior</span
+    ><br /><br />
+    <label><input type="radio" name="q70" value="A" /> A. Digestion</label
+    ><br />
+    <label
+      ><input type="radio" name="q70" value="B" /> B. Social and sexual
+      behavior</label
+    ><br />
+    <label><input type="radio" name="q70" value="C" /> C. Reflexes</label><br />
+    <label><input type="radio" name="q70" value="D" /> D. Breathing</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Taste is detected by:<br />
+    <span data-quiz="A" style="display: none">Papillae on the tongue</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q71" value="A" /> A. Papillae on the
+      tongue</label
+    ><br />
+    <label><input type="radio" name="q71" value="B" /> B. Olfactory bulbs</label
+    ><br />
+    <label
+      ><input type="radio" name="q71" value="C" /> C. Mechanoreceptors</label
+    ><br />
+    <label
+      ><input type="radio" name="q71" value="D" /> D. Semicircular canals</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The five taste categories include:<br />
+    <span data-quiz="B" style="display: none"
+      >Sweet, sour, salty, bitter, umami</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q72" value="A" /> A. Sour, sweet, salt, sharp,
+      warm</label
+    ><br />
+    <label
+      ><input type="radio" name="q72" value="B" /> B. Sweet, sour, salty,
+      bitter, umami</label
+    ><br />
+    <label
+      ><input type="radio" name="q72" value="C" /> C. Spicy, bitter, sweet,
+      cool, sour</label
+    ><br />
+    <label
+      ><input type="radio" name="q72" value="D" /> D. Bitter, bland, salty,
+      sour, sweet</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Somatosensation refers to:<br />
+    <span data-quiz="B" style="display: none">Touch</span><br /><br />
+    <label><input type="radio" name="q73" value="A" /> A. Smell</label><br />
+    <label><input type="radio" name="q73" value="B" /> B. Touch</label><br />
+    <label><input type="radio" name="q73" value="C" /> C. Balance</label><br />
+    <label><input type="radio" name="q73" value="D" /> D. Vision</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The four modalities of touch include:<br />
+    <span data-quiz="B" style="display: none"
+      >Pressure, vibration, pain, temperature</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q74" value="A" /> A. Pressure, pain, taste,
+      light</label
+    ><br />
+    <label
+      ><input type="radio" name="q74" value="B" /> B. Pressure, vibration, pain,
+      temperature</label
+    ><br />
+    <label
+      ><input type="radio" name="q74" value="C" /> C. Pain, light, sound,
+      motion</label
+    ><br />
+    <label
+      ><input type="radio" name="q74" value="D" /> D. Texture, motion, color,
+      smell</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Nociceptors sense:<br />
+    <span data-quiz="B" style="display: none">Pain</span><br /><br />
+    <label><input type="radio" name="q75" value="A" /> A. Pressure</label><br />
+    <label><input type="radio" name="q75" value="B" /> B. Pain</label><br />
+    <label><input type="radio" name="q75" value="C" /> C. Heat</label><br />
+    <label><input type="radio" name="q75" value="D" /> D. Motion</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The Gate Control Theory explains how:<br />
+    <span data-quiz="B" style="display: none"
+      >Non-painful input reduces pain</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q76" value="A" /> A. Smell overrides
+      taste</label
+    ><br />
+    <label
+      ><input type="radio" name="q76" value="B" /> B. Non-painful input reduces
+      pain</label
+    ><br />
+    <label
+      ><input type="radio" name="q76" value="C" /> C. Pain increases
+      sensitivity</label
+    ><br />
+    <label
+      ><input type="radio" name="q76" value="D" /> D. Signals bypass the
+      brain</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Proprioception refers to sensing:<br />
+    <span data-quiz="B" style="display: none">Body position</span><br /><br />
+    <label><input type="radio" name="q77" value="A" /> A. Balance</label><br />
+    <label><input type="radio" name="q77" value="B" /> B. Body position</label
+    ><br />
+    <label><input type="radio" name="q77" value="C" /> C. Heat</label><br />
+    <label><input type="radio" name="q77" value="D" /> D. Sound</label
+    ><br /><br />
+
+    <h2>Perception & Processing</h2>
+
+    ____________________________________________________________________________<br />
+    Perception involves:<br />
+    <span data-quiz="B" style="display: none"
+      >Interpretation of sensory data</span
+    ><br /><br />
+    <label><input type="radio" name="q78" value="A" /> A. Reflexes only</label
+    ><br />
+    <label
+      ><input type="radio" name="q78" value="B" /> B. Interpretation of sensory
+      data</label
+    ><br />
+    <label
+      ><input type="radio" name="q78" value="C" /> C. Nerve conduction</label
+    ><br />
+    <label
+      ><input type="radio" name="q78" value="D" /> D. Receptor activation</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Top-down processing uses:<br />
+    <span data-quiz="A" style="display: none">Memory and expectation</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q79" value="A" /> A. Memory and
+      expectation</label
+    ><br />
+    <label
+      ><input type="radio" name="q79" value="B" /> B. New sensory input</label
+    ><br />
+    <label><input type="radio" name="q79" value="C" /> C. Reflex pathways</label
+    ><br />
+    <label><input type="radio" name="q79" value="D" /> D. Simple details</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Bottom-up processing focuses on:<br />
+    <span data-quiz="C" style="display: none">Detailed analysis first</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q80" value="A" /> A. Big picture first</label
+    ><br />
+    <label
+      ><input type="radio" name="q80" value="B" /> B. Stored knowledge</label
+    ><br />
+    <label
+      ><input type="radio" name="q80" value="C" /> C. Detailed analysis
+      first</label
+    ><br />
+    <label
+      ><input type="radio" name="q80" value="D" /> D. Emotion-based
+      guessing</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Top-down processing is least effective when:<br />
+    <span data-quiz="A" style="display: none">The stimulus is unfamiliar</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q81" value="A" /> A. The stimulus is
+      unfamiliar</label
+    ><br />
+    <label
+      ><input type="radio" name="q81" value="B" /> B. The task is routine</label
+    ><br />
+    <label
+      ><input type="radio" name="q81" value="C" /> C. There is prior
+      experience</label
+    ><br />
+    <label
+      ><input type="radio" name="q81" value="D" /> D. Context is strong</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Bottom-up processing dominates when:<br />
+    <span data-quiz="B" style="display: none">You lack prior experience</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q82" value="A" /> A. You're familiar with the
+      object</label
+    ><br />
+    <label
+      ><input type="radio" name="q82" value="B" /> B. You lack prior
+      experience</label
+    ><br />
+    <label
+      ><input type="radio" name="q82" value="C" /> C. The brain uses
+      memory</label
+    ><br />
+    <label
+      ><input type="radio" name="q82" value="D" /> D. Expectations are
+      clear</label
+    ><br /><br />
+
+    <h2>Gestalt Principles</h2>
+
+    ____________________________________________________________________________<br />
+    Gestalt psychology focuses on:<br />
+    <span data-quiz="B" style="display: none"
+      >Grouping patterns into wholes</span
+    ><br /><br />
+    <label><input type="radio" name="q83" value="A" /> A. Vision only</label
+    ><br />
+    <label
+      ><input type="radio" name="q83" value="B" /> B. Grouping patterns into
+      wholes</label
+    ><br />
+    <label><input type="radio" name="q83" value="C" /> C. Chemical senses</label
+    ><br />
+    <label
+      ><input type="radio" name="q83" value="D" /> D. Individual neurons</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The Law of Prägnanz states we:<br />
+    <span data-quiz="B" style="display: none">Perceive the simplest form</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q84" value="A" /> A. Remember familiar
+      items</label
+    ><br />
+    <label
+      ><input type="radio" name="q84" value="B" /> B. Perceive the simplest
+      form</label
+    ><br />
+    <label
+      ><input type="radio" name="q84" value="C" /> C. Focus on contrast</label
+    ><br />
+    <label><input type="radio" name="q84" value="D" /> D. Prefer symmetry</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Proximity groups objects that are:<br />
+    <span data-quiz="B" style="display: none">Close together</span><br /><br />
+    <label
+      ><input type="radio" name="q85" value="A" /> A. Similar in color</label
+    ><br />
+    <label><input type="radio" name="q85" value="B" /> B. Close together</label
+    ><br />
+    <label><input type="radio" name="q85" value="C" /> C. Different sizes</label
+    ><br />
+    <label><input type="radio" name="q85" value="D" /> D. In motion</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Similarity means we group objects that:<br />
+    <span data-quiz="B" style="display: none">Look alike</span><br /><br />
+    <label
+      ><input type="radio" name="q86" value="A" /> A. Are near each other</label
+    ><br />
+    <label><input type="radio" name="q86" value="B" /> B. Look alike</label
+    ><br />
+    <label
+      ><input type="radio" name="q86" value="C" /> C. Move differently</label
+    ><br />
+    <label><input type="radio" name="q86" value="D" /> D. Are symmetrical</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Continuity makes us perceive:<br />
+    <span data-quiz="B" style="display: none">Smooth lines</span><br /><br />
+    <label><input type="radio" name="q87" value="A" /> A. Random shapes</label
+    ><br />
+    <label><input type="radio" name="q87" value="B" /> B. Smooth lines</label
+    ><br />
+    <label><input type="radio" name="q87" value="C" /> C. Static images</label
+    ><br />
+    <label><input type="radio" name="q87" value="D" /> D. Sharp corners</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Closure involves:<br />
+    <span data-quiz="B" style="display: none">Seeing complete figures</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q88" value="A" /> A. Ignoring details</label
+    ><br />
+    <label
+      ><input type="radio" name="q88" value="B" /> B. Seeing complete
+      figures</label
+    ><br />
+    <label
+      ><input type="radio" name="q88" value="C" /> C. Combining colors</label
+    ><br />
+    <label><input type="radio" name="q88" value="D" /> D. Detecting edges</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Gestalt principles apply mainly to:<br />
+    <span data-quiz="B" style="display: none">Vision</span><br /><br />
+    <label><input type="radio" name="q89" value="A" /> A. Touch</label><br />
+    <label><input type="radio" name="q89" value="B" /> B. Vision</label><br />
+    <label><input type="radio" name="q89" value="C" /> C. Hearing</label><br />
+    <label><input type="radio" name="q89" value="D" /> D. Smell</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The principle of proximity helps with:<br />
+    <span data-quiz="B" style="display: none">Grouping related objects</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q90" value="A" /> A. Motion detection</label
+    ><br />
+    <label
+      ><input type="radio" name="q90" value="B" /> B. Grouping related
+      objects</label
+    ><br />
+    <label
+      ><input type="radio" name="q90" value="C" /> C. Depth perception</label
+    ><br />
+    <label><input type="radio" name="q90" value="D" /> D. Color balance</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The similarity principle helps us:<br />
+    <span data-quiz="A" style="display: none">Identify matching shapes</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q91" value="A" /> A. Identify matching
+      shapes</label
+    ><br />
+    <label
+      ><input type="radio" name="q91" value="B" /> B. Distinguish
+      movement</label
+    ><br />
+    <label
+      ><input type="radio" name="q91" value="C" /> C. Focus on one color</label
+    ><br />
+    <label
+      ><input type="radio" name="q91" value="D" /> D. Measure brightness</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Continuity explains why we:<br />
+    <span data-quiz="A" style="display: none"
+      >Follow broken lines as complete</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q92" value="A" /> A. Follow broken lines as
+      complete</label
+    ><br />
+    <label
+      ><input type="radio" name="q92" value="B" /> B. Ignore overlapping
+      shapes</label
+    ><br />
+    <label
+      ><input type="radio" name="q92" value="C" /> C. Group by distance</label
+    ><br />
+    <label><input type="radio" name="q92" value="D" /> D. Focus on color</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Closure leads us to:<br />
+    <span data-quiz="B" style="display: none">Complete missing parts</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q93" value="A" /> A. Miss incomplete
+      patterns</label
+    ><br />
+    <label
+      ><input type="radio" name="q93" value="B" /> B. Complete missing
+      parts</label
+    ><br />
+    <label
+      ><input type="radio" name="q93" value="C" /> C. Ignore visual gaps</label
+    ><br />
+    <label
+      ><input type="radio" name="q93" value="D" /> D. Focus only on edges</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    The Law of Prägnanz emphasizes:<br />
+    <span data-quiz="B" style="display: none">Simplified perception</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q94" value="A" /> A. Memory of details</label
+    ><br />
+    <label
+      ><input type="radio" name="q94" value="B" /> B. Simplified
+      perception</label
+    ><br />
+    <label
+      ><input type="radio" name="q94" value="C" /> C. Complex analysis</label
+    ><br />
+    <label
+      ><input type="radio" name="q94" value="D" /> D. Selective attention</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    Gestalt grouping reflects:<br />
+    <span data-quiz="B" style="display: none"
+      >Brain organization of perception</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q95" value="A" /> A. Sensory adaptation</label
+    ><br />
+    <label
+      ><input type="radio" name="q95" value="B" /> B. Brain organization of
+      perception</label
+    ><br />
+    <label><input type="radio" name="q95" value="C" /> C. Reflex behavior</label
+    ><br />
+    <label><input type="radio" name="q95" value="D" /> D. Emotional bias</label
+    ><br /><br />
+    <h2>Introduction to learning</h2>
+    ____________________________________________________________________________<br />
+    Which process occurs when an individual becomes used to a stimulus?<br />
+    <span data-quiz="B" style="display: none">Habituation</span><br /><br />
+    <label><input type="radio" name="q96" value="A" /> A. Sensitization</label
+    ><br />
+    <label><input type="radio" name="q96" value="B" /> B. Habituation</label
+    ><br />
+    <label><input type="radio" name="q96" value="C" /> C. Conditioning</label
+    ><br />
+    <label><input type="radio" name="q96" value="D" /> D. Imprinting</label
+    ><br /><br />
+    ____________________________________________________________________________<br />
+    Which process occurs when an individual shows an increased response to a
+    stimulus that is exaggerated or different than the one before?<br />
+    <span data-quiz="A" style="display: none">dishabituation</span><br /><br />
+    <label><input type="radio" name="q97" value="A" /> A. Dishabituation</label
+    ><br />
+    <label><input type="radio" name="q97" value="B" /> B. Habituation</label
+    ><br />
+    <label
+      ><input type="radio" name="q97" value="C" /> C. Sensory adaptation</label
+    ><br />
+    <label><input type="radio" name="q97" value="D" /> D. Imprinting</label
+    ><br /><br />
+    ____________________________________________________________________________<br />
+    Habituation and dishabituation are: <br />
+    <span data-quiz="D" style="display: none">Non-associative</span><br /><br />
+    <label><input type="radio" name="q98" value="A" /> A. Classical</label
+    ><br />
+    <label><input type="radio" name="q98" value="B" /> B. Operant</label><br />
+    <label><input type="radio" name="q98" value="C" /> C. Associative</label
+    ><br />
+    <label><input type="radio" name="q98" value="D" /> D. Non-associative</label
+    ><br /><br />
+    ____________________________________________________________________________
+    <br />
+    Classical conditioning: <br />
+    <span data-quiz="A" style="display: none">Associates two stimuli</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q99" value="A" /> A. Associates two
+      stimuli</label
+    ><br />
+    <label
+      ><input type="radio" name="q99" value="B" /> B. Associates behavior and
+      consequence</label
+    ><br />
+    <label
+      ><input type="radio" name="q99" value="C" /> C. Associates both stimuli,
+      behavior, and consequence</label
+    ><br />
+    <label
+      ><input type="radio" name="q99" value="D" /> D. Associates neither
+      stimuli, behavior, nor consequence</label
+    ><br /><br />
+    ____________________________________________________________________________<br />
+    Operant conditioning: <br />
+    <span data-quiz="B" style="display: none"
+      >Associates behavior and consequence</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q100" value="A" /> A. Associates two
+      stimuli</label
+    ><br />
+    <label
+      ><input type="radio" name="q100" value="B" /> B. Associates behavior and
+      consequence</label
+    ><br />
+    <label
+      ><input type="radio" name="q100" value="C" /> C. Associates both stimuli,
+      behavior, and consequence</label
+    ><br />
+    <label
+      ><input type="radio" name="q100" value="D" /> D. Associates neither
+      stimuli, behavior, nor consequence</label
+    ><br /><br />
+    ____________________________________________________________________________<br />
+    <ins
+      class="adsbygoogle"
+      style="display: block"
+      data-ad-format="autorelaxed"
+      data-ad-client="ca-pub-6422130934976134"
+      data-ad-slot="1021310659"
+    ></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <footer>
+      <p>All questions courtesy of Miledown</p>
+    </footer>
+  </body>
+
+  <script src="test.js"></script>
+  <script src="sidebar.js"></script>
+</html>
