@@ -1,0 +1,50 @@
+type User @table {
+  email: String!
+  passwordHash: String!
+  createdAt: Timestamp!
+  displayName: String
+  lastLogin: Timestamp
+}
+
+type StudyResource @table {
+  title: String!
+  resourceType: String!
+  content: String!
+  createdAt: Timestamp!
+  topic: String
+  subtopic: String
+  difficultyLevel: String
+}
+
+type UserProgress @table(key: ["user", "studyResource"]) {
+  user: User!
+  studyResource: StudyResource!
+  status: String!
+  lastAccessedAt: Timestamp!
+  completionDate: Timestamp
+}
+
+type UserNote @table {
+  user: User!
+  studyResource: StudyResource!
+  content: String!
+  createdAt: Timestamp!
+  updatedAt: Timestamp!
+}
+
+type StudyPlan @table {
+  user: User!
+  name: String!
+  createdAt: Timestamp!
+  startDate: Date!
+  endDate: Date!
+  description: String
+}
+
+type StudyPlanItem @table(key: ["studyPlan", "studyResource"]) {
+  studyPlan: StudyPlan!
+  studyResource: StudyResource!
+  scheduledDate: Date!
+  orderInPlan: Int!
+  status: String
+}

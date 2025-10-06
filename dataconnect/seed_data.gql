@@ -1,0 +1,22 @@
+mutation SeedData @auth(level: USER) {
+  studyResource_insertMany(data: [
+    {
+      title: "Introduction to React",
+      content: "This resource provides a basic introduction to React.",
+      resourceType: "tutorial",
+      createdAt: "2024-01-01T00:00:00Z"
+    },
+    {
+      title: "Advanced React Concepts",
+      content: "This resource covers advanced concepts in React.",
+      resourceType: "tutorial",
+      createdAt: "2024-01-05T00:00:00Z"
+    },
+    {
+      title: "React Best Practices",
+      content: "This resource outlines best practices for React development.",
+      resourceType: "guide",
+      createdAt: "2024-01-10T00:00:00Z"
+    }
+  ])
+}

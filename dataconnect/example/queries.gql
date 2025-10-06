@@ -1,0 +1,37 @@
+mutation CreateUser @auth(level: USER) {
+  user_insert(data: {
+    email: "example@example.com",
+    passwordHash: "some_hash"
+  })
+}
+
+query ListStudyResources @auth(level: PUBLIC) {
+  studyResources {
+    id
+    title
+    resourceType
+  }
+}
+
+mutation UpdateUserNote($id: UUID!, $content: String!) @auth(level: USER) {
+  userNote_update(
+    key: { id: $id }
+    data: { content: $content, updatedAt_expr: "request.time" }
+  )
+}
+
+query GetStudyPlan @auth(level: USER) {
+  studyPlans {
+    id
+    name
+    description
+    startDate
+    endDate
+    studyPlanItems_on_studyPlan {
+      studyResourceId
+      orderInPlan
+      scheduledDate
+      status
+    }
+  }
+}

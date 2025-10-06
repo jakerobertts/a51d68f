@@ -67,6 +67,7 @@
         align-items: center;
         justify-content: center;
         min-height: 80vh;
+        padding: 20px; /* Added padding for smaller screens */
       }
       .card {
         background: rgba(238, 254, 255, 0.97);
@@ -79,6 +80,8 @@
         transform: translateY(40px) scale(0.98);
         opacity: 0;
         transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative; /* Added for z-index control */
+        z-index: 10;
       }
       .card.loaded {
         transform: translateY(0) scale(1);
@@ -120,7 +123,8 @@
         display: inline-block;
         vertical-align: middle;
       }
-      a.button {
+      a.button,
+      button.auth-button {
         display: inline-block;
         padding: 0.85em 2.5em;
         background: linear-gradient(90deg, #2563eb 0%, #06b6d4 100%);
@@ -135,8 +139,12 @@
         letter-spacing: 0.5px;
         position: relative;
         overflow: hidden;
+        border: none; /* Ensure buttons don't have default border */
+        cursor: pointer;
+        width: auto; /* Allow buttons to size based on content */
       }
-      a.button::after {
+      a.button::after,
+      button.auth-button::after {
         content: "";
         position: absolute;
         left: -50%;
@@ -149,23 +157,124 @@
         pointer-events: none;
         transition: opacity 0.3s;
       }
-      a.button:hover {
+      a.button:hover,
+      button.auth-button:hover {
         background: linear-gradient(90deg, #06b6d4 0%, #2563eb 100%);
         transform: translateY(-2px) scale(1.04);
         box-shadow: 0 4px 32px #06b6d4a0, 0 2px 8px rgba(37, 99, 235, 0.13);
       }
-      a.button:hover::after {
+      a.button:hover::after,
+      button.auth-button:hover::after {
         opacity: 0.35;
+      }
+
+      /* Custom styles for auth forms */
+      .auth-form-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 1.5em;
+      }
+      .auth-form-container input {
+        width: calc(100% - 20px); /* Adjust for padding */
+        padding: 10px;
+        border: 1px solid #c0d9e7;
+        border-radius: 0.4rem;
+        font-size: 1rem;
+        background-color: rgba(255, 255, 255, 0.7);
+        color: #1e293b;
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+      .auth-form-container input::placeholder {
+        color: #64748b;
+      }
+      .auth-form-container button {
+        width: 100%; /* Make auth buttons full width */
+        margin-top: 5px; /* Adjust margin */
+        padding: 0.85em 1em; /* Adjust padding for auth buttons */
+      }
+      .auth-form-container a {
+        color: #2563eb;
+        text-decoration: none;
+        font-weight: 600;
+        margin-top: 10px;
+        display: block;
+      }
+      .auth-form-container a:hover {
+        text-decoration: underline;
+      }
+      .auth-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1em;
+      }
+
+      .message {
+        padding: 10px;
+        border-radius: 0.5rem;
+        margin-bottom: 20px;
+        font-weight: 600;
+        display: none; /* Hidden by default */
+        text-align: left;
+      }
+      .error-message {
+        background-color: #ffcccc;
+        color: #cc0000;
+        border: 1px solid #cc0000;
+      }
+      .success-message {
+        background-color: #ccffcc;
+        color: #008000;
+        border: 1px solid #008000;
+      }
+
+      #auth-forms-section,
+      #dashboard-section,
+      #register-section,
+      #reset-password-section,
+      #localStorage-data-section {
+        display: none; /* Hide these by default, JS will show them */
+      }
+      #login-form {
+        display: block; /* Login form visible by default within auth-forms-section */
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+          filter: drop-shadow(0 0 0px #ace9ff);
+        }
+        50% {
+          transform: scale(1.05);
+          filter: drop-shadow(0 0 16px #a771ff);
+        }
+        100% {
+          transform: scale(1);
+          filter: drop-shadow(0 0 0px #a771ff);
+        }
       }
       @media (max-width: 600px) {
         .card {
-          padding: 1.2rem 0.5rem;
+          padding: 1.2rem 1rem;
         }
         .img-row {
           gap: 0.7rem;
         }
         .logo-title {
-          font-size: 3rem;
+          font-size: 2.2rem; /* Adjusted for smaller screens */
+        }
+        h1 {
+          font-size: 1.8rem;
+        }
+        p {
+          font-size: 1rem;
+        }
+        a.button,
+        button.auth-button {
+          font-size: 1rem;
+          padding: 0.7em 1.5em;
+        }
+        .auth-form-container input {
+          font-size: 0.9rem;
         }
       }
     </style>
@@ -184,8 +293,15 @@
   </head>
   <body>
     <header>
-      <span class="logo-title">MCAT-able <img src="Screenshot 2025-09-18 at 9.18.30 PM.png" style="width: 50px; height: 50px; border-radius: 5%;" alt="Logo" /></span><br /><br />
+      <span class="logo-title"
+        >MCAT-able
+        <img
+          src="Screenshot 2025-09-18 at 9.18.30 PM.png"
+          style="width: 50px; height: 50px; border-radius: 5%"
+          alt="Logo" /></span
+      ><br /><br />
       <nav style="margin-top: 1rem; text-align: center">
+        <!-- These navigation links will become dynamic based on login state -->
         <a
           href="main.html"
           style="
@@ -197,7 +313,7 @@
             padding: 0.3rem 0.6rem;
           "
           >Dashboard</a
-        ></a>
+        >
         <a
           href="Acidderivatives.html"
           style="
@@ -225,31 +341,517 @@
       </nav>
     </header>
     <main>
-      <div
-        style="font-size: 80px; color: rgb(179, 233, 255)"
-      >
-        <span style="display: inline-block; animation: pulse 1.2s infinite;">
+      <div style="font-size: 80px; color: rgb(179, 233, 255); z-index: 1">
+        <span style="display: inline-block; animation: pulse 1.2s infinite">
           ⚕
         </span>
-        <style>
-        @keyframes pulse {
-          0% { transform: scale(1); filter: drop-shadow(0 0 0px #ace9ff); }
-          50% { transform: scale(1.05); filter: drop-shadow(0 0 16px #a771ff); }
-          100% { transform: scale(1); filter: drop-shadow(0 0 0px #a771ff); }
-        }
-        </style>
-      </div><br />
-      <div class="card">
-        <h1>Start Your MCAT Journey</h1>
-        <p>
-          Comprehensive review, practice questions, and study resources to help
-          you succeed on the MCAT<sup>®</sup>.
-        </p>
-                <a href="miledown_genchem.html">Start here!</a>
+      </div>
+      <br />
 
-        <div class="img-row"></div>
-        <a class="button" href="main.html">Or go to Dashboard</a>
+      <div class="card">
+        <!-- Message display area for Firebase Auth -->
+        <div id="auth-message" class="message"></div>
+
+        <!-- 1. Marketing/Landing Content (Visible by default) -->
+        <div id="marketing-content">
+          <h1>Start Your MCAT Journey</h1>
+          <p>
+            Comprehensive review, practice questions, and study resources to
+            help you succeed on the MCAT<sup>®</sup>.
+          </p>
+          <a class="button" href="#" id="show-auth-forms">Login / Register</a>
+        </div>
+
+        <!-- 2. Authentication Forms Section (Hidden by default) -->
+        <div id="auth-forms-section" style="display: none">
+          <!-- Login Form -->
+          <div id="login-form" class="auth-form-container">
+            <h2>Login to MCATable</h2>
+            <input type="email" id="login-email" placeholder="Email" />
+            <input type="password" id="login-password" placeholder="Password" />
+            <button id="login-button" class="auth-button">Log In</button>
+            <a href="#" id="show-register-link"
+              >Don't have an account? Register here.</a
+            >
+            <a href="#" id="show-reset-password-link">Forgot password?</a>
+            <a href="#" id="back-to-marketing-from-auth">Back to Home</a>
+          </div>
+
+          <!-- Register Section (Hidden by default) -->
+          <div
+            id="register-section"
+            class="auth-form-container"
+            style="display: none"
+          >
+            <h2>Register for MCATable</h2>
+            <input type="email" id="register-email" placeholder="Email" />
+            <input
+              type="password"
+              id="register-password"
+              placeholder="Password"
+            />
+            <button id="register-button" class="auth-button">
+              Register Account
+            </button>
+            <a href="#" id="show-login-link-from-register"
+              >Already have an account? Log In.</a
+            >
+            <a href="#" id="back-to-marketing-from-register">Back to Home</a>
+          </div>
+
+          <!-- Password Reset Section (Hidden by default) -->
+          <div
+            id="reset-password-section"
+            class="auth-form-container"
+            style="display: none"
+          >
+            <h2>Reset Your Password</h2>
+            <p style="font-size: 0.9em; margin-bottom: 0.5em">
+              Enter your email to receive a password reset link.
+            </p>
+            <input type="email" id="reset-email" placeholder="Email" />
+            <button id="send-reset-email-button" class="auth-button">
+              Send Reset Email
+            </button>
+            <a href="#" id="show-login-link-from-reset">Back to Login</a>
+            <a href="#" id="back-to-marketing-from-reset">Back to Home</a>
+          </div>
+        </div>
+
+        <!-- 3. Dashboard Section (Hidden by default) -->
+        <div id="dashboard-section" style="display: none">
+          <h2>Welcome, <span id="user-display-name">MCATable User</span>!</h2>
+          <p>You are logged in as: <span id="user-email"></span></p>
+          <button
+            id="sign-out-button"
+            class="auth-button"
+            style="background-color: #ef4444"
+          >
+            Sign Out
+          </button>
+          <hr style="margin: 20px 0; border-color: #e2e8f0" />
+
+          <!-- Link to actual dashboard/app content -->
+          <a class="button" href="main.html" style="margin-top: 0.5em"
+            >Go to your Dashboard</a
+          >
+
+          <!-- Your App Data (from Firebase) -->
+        </div>
+      </div>
+
+      <!-- 4. LocalStorage Data Section (Hidden by default) -->
+      <div
+        class="card"
+        style="margin-top: 20px; display: none"
+        id="localStorage-data-section"
+      >
+        <h2 style="font-size: 1.8em">Local (Browser-Only) Study Notes</h2>
+        <p style="font-size: 0.9em; margin-bottom: 1em">
+          This data is stored *only* on this browser. For cross-device sync, it
+          needs to be moved to the cloud.
+        </p>
+        <textarea
+          id="current-localStorage-data"
+          rows="5"
+          cols="50"
+          placeholder="Any notes you've saved to localStorage on THIS browser will show here."
+        ></textarea>
+        <button id="save-localstorage-data-button" class="auth-button">
+          Save Local Note
+        </button>
+        <button
+          id="clear-localstorage-button"
+          class="auth-button"
+          style="background-color: #f59e0b"
+        >
+          Clear Local Note
+        </button>
+        <button
+          id="migrate-localstorage-to-firebase-button"
+          class="auth-button"
+          style="background-color: #10b981"
+        >
+          Migrate Local Note to Cloud (One-Time)
+        </button>
+        <div class="message" id="localStorage-migration-message"></div>
       </div>
     </main>
+
+    <!-- Firebase SDK - IMPORTANT: This script MUST come first -->
+    <!-- Firebase SDK - IMPORTANT: This script MUST come first -->
+    <script type="module">
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyAxvvxY1q9CmPB5YoS-cFzfSwkjVqYQ5s0",
+        authDomain: "percentyle.firebaseapp.com",
+        databaseURL: "https://percentyle-default-rtdb.firebaseio.com",
+        projectId: "percentyle",
+        storageBucket: "percentyle.firebasestorage.app",
+        messagingSenderId: "601930251108",
+        appId: "1:601930251108:web:987d2d7b5ba9ca30f75871",
+        measurementId: "G-L97LGZSXS5",
+      };
+
+      // Initialize Firebase
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-analytics.js"; // Also import getAnalytics
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app); // Initialize Analytics
+    </script>
+
+    <!-- Your application-specific JavaScript/TypeScript code -->
+    <script type="module" src="app.js"></script>
+
+    <script>
+      // Simple navigation between auth states
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get elements
+        const marketingContent = document.getElementById("marketing-content");
+        const authFormsSection = document.getElementById("auth-forms-section");
+        const loginForm = document.getElementById("login-form");
+        const registerSection = document.getElementById("register-section");
+        const resetPasswordSection = document.getElementById(
+          "reset-password-section"
+        );
+
+        // Show auth forms
+        document.getElementById("show-auth-forms").onclick = function (e) {
+          e.preventDefault();
+          marketingContent.style.display = "none";
+          authFormsSection.style.display = "block";
+          loginForm.style.display = "block";
+          registerSection.style.display = "none";
+          resetPasswordSection.style.display = "none";
+        };
+
+        // Show register form
+        document.getElementById("show-register-link").onclick = function (e) {
+          e.preventDefault();
+          loginForm.style.display = "none";
+          registerSection.style.display = "block";
+          resetPasswordSection.style.display = "none";
+        };
+
+        // Show login from register
+        document.getElementById("show-login-link-from-register").onclick =
+          function (e) {
+            e.preventDefault();
+            registerSection.style.display = "none";
+            loginForm.style.display = "block";
+            resetPasswordSection.style.display = "none";
+          };
+
+        // Show reset password
+        document.getElementById("show-reset-password-link").onclick = function (
+          e
+        ) {
+          e.preventDefault();
+          loginForm.style.display = "none";
+          resetPasswordSection.style.display = "block";
+        };
+
+        // Show login from reset
+        document.getElementById("show-login-link-from-reset").onclick =
+          function (e) {
+            e.preventDefault();
+            resetPasswordSection.style.display = "none";
+            loginForm.style.display = "block";
+          };
+
+        // Back to marketing from any auth form
+        document
+          .querySelectorAll('[id^="back-to-marketing"]')
+          .forEach((link) => {
+            link.onclick = function (e) {
+              e.preventDefault();
+              authFormsSection.style.display = "none";
+              marketingContent.style.display = "block";
+            };
+          });
+      });
+    </script>
+
+    <script type="module">
+      // Import Firebase functions
+      import {
+        getAuth,
+        signInWithEmailAndPassword,
+        createUserWithEmailAndPassword,
+        sendPasswordResetEmail,
+      } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
+      import { getFirestore } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js";
+      import { getApps } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+
+      // Get Firebase instances (already initialized above)
+      const app = getApps()[0];
+      const auth = getAuth(app);
+      const db = getFirestore(app);
+
+      // Helper function to show messages
+      function showMessage(message, isError = false) {
+        const authMessage = document.getElementById("auth-message");
+        if (authMessage) {
+          authMessage.textContent = message;
+          authMessage.className = isError
+            ? "message error-message"
+            : "message success-message";
+          authMessage.style.display = "block";
+          setTimeout(() => {
+            authMessage.style.display = "none";
+          }, 5000);
+        }
+      }
+
+      // Helper function to show dashboard
+      function showDashboard(user) {
+        document.getElementById("auth-forms-section").style.display = "none";
+        document.getElementById("marketing-content").style.display = "none";
+        document.getElementById("dashboard-section").style.display = "block";
+        document.getElementById("localStorage-data-section").style.display =
+          "block";
+
+        // Update user info
+        document.getElementById("user-display-name").textContent =
+          user.displayName || "User";
+        document.getElementById("user-email").textContent = user.email;
+
+        showMessage("Successfully logged in!", false);
+      }
+
+      // Helper function to show marketing/login
+      function showLogin() {
+        document.getElementById("dashboard-section").style.display = "none";
+        document.getElementById("localStorage-data-section").style.display =
+          "none";
+        document.getElementById("auth-forms-section").style.display = "none";
+        document.getElementById("marketing-content").style.display = "block";
+      }
+
+      // LOGIN BUTTON HANDLER
+      document
+        .getElementById("login-button")
+        .addEventListener("click", async function (e) {
+          e.preventDefault();
+
+          const email = document.getElementById("login-email").value.trim();
+          const password = document.getElementById("login-password").value;
+
+          if (!email || !password) {
+            showMessage("Please enter both email and password.", true);
+            return;
+          }
+
+          try {
+            this.textContent = "Logging in...";
+            this.disabled = true;
+
+            const userCredential = await signInWithEmailAndPassword(
+              auth,
+              email,
+              password
+            );
+            const user = userCredential.user;
+
+            showDashboard(user);
+          } catch (error) {
+            console.error("Login error:", error);
+            let errorMessage = "Login failed. ";
+
+            switch (error.code) {
+              case "auth/user-not-found":
+                errorMessage += "No account found with this email.";
+                break;
+              case "auth/wrong-password":
+                errorMessage += "Incorrect password.";
+                break;
+              case "auth/invalid-email":
+                errorMessage += "Invalid email address.";
+                break;
+              case "auth/too-many-requests":
+                errorMessage += "Too many failed attempts. Try again later.";
+                break;
+              default:
+                errorMessage += error.message;
+            }
+
+            showMessage(errorMessage, true);
+          } finally {
+            this.textContent = "Log In";
+            this.disabled = false;
+          }
+        });
+
+      // REGISTER BUTTON HANDLER
+      document
+        .getElementById("register-button")
+        .addEventListener("click", async function (e) {
+          e.preventDefault();
+
+          const email = document.getElementById("register-email").value.trim();
+          const password = document.getElementById("register-password").value;
+
+          if (!email || !password) {
+            showMessage("Please enter both email and password.", true);
+            return;
+          }
+
+          if (password.length < 6) {
+            showMessage("Password must be at least 6 characters long.", true);
+            return;
+          }
+
+          try {
+            this.textContent = "Creating account...";
+            this.disabled = true;
+
+            const userCredential = await createUserWithEmailAndPassword(
+              auth,
+              email,
+              password
+            );
+            const user = userCredential.user;
+
+            showDashboard(user);
+            showMessage("Account created successfully!", false);
+          } catch (error) {
+            console.error("Registration error:", error);
+            let errorMessage = "Registration failed. ";
+
+            switch (error.code) {
+              case "auth/email-already-in-use":
+                errorMessage += "An account with this email already exists.";
+                break;
+              case "auth/invalid-email":
+                errorMessage += "Invalid email address.";
+                break;
+              case "auth/weak-password":
+                errorMessage += "Password is too weak.";
+                break;
+              default:
+                errorMessage += error.message;
+            }
+
+            showMessage(errorMessage, true);
+          } finally {
+            this.textContent = "Register Account";
+            this.disabled = false;
+          }
+        });
+
+      // PASSWORD RESET BUTTON HANDLER
+      document
+        .getElementById("send-reset-email-button")
+        .addEventListener("click", async function (e) {
+          e.preventDefault();
+
+          const email = document.getElementById("reset-email").value.trim();
+
+          if (!email) {
+            showMessage("Please enter your email address.", true);
+            return;
+          }
+
+          try {
+            this.textContent = "Sending email...";
+            this.disabled = true;
+
+            await sendPasswordResetEmail(auth, email);
+            showMessage("Password reset email sent! Check your inbox.", false);
+
+            // Switch back to login form
+            document.getElementById("reset-password-section").style.display =
+              "none";
+            document.getElementById("login-form").style.display = "block";
+          } catch (error) {
+            console.error("Password reset error:", error);
+            let errorMessage = "Failed to send reset email. ";
+
+            switch (error.code) {
+              case "auth/user-not-found":
+                errorMessage += "No account found with this email.";
+                break;
+              case "auth/invalid-email":
+                errorMessage += "Invalid email address.";
+                break;
+              default:
+                errorMessage += error.message;
+            }
+
+            showMessage(errorMessage, true);
+          } finally {
+            this.textContent = "Send Reset Email";
+            this.disabled = false;
+          }
+        });
+
+      // SIGN OUT BUTTON HANDLER
+      document
+        .getElementById("sign-out-button")
+        .addEventListener("click", async function (e) {
+          e.preventDefault();
+
+          try {
+            await auth.signOut();
+            showLogin();
+            showMessage("Successfully signed out.", false);
+          } catch (error) {
+            console.error("Sign out error:", error);
+            showMessage("Error signing out.", true);
+          }
+        });
+
+      // LISTEN FOR AUTH STATE CHANGES
+      auth.onAuthStateChanged((user) => {
+        if (user) {
+          // User is signed in
+          showDashboard(user);
+        } else {
+          // User is signed out
+          showLogin();
+        }
+      });
+
+      // ENTER KEY SUPPORT
+      document
+        .getElementById("login-email")
+        .addEventListener("keypress", function (e) {
+          if (e.key === "Enter") {
+            document.getElementById("login-button").click();
+          }
+        });
+
+      document
+        .getElementById("login-password")
+        .addEventListener("keypress", function (e) {
+          if (e.key === "Enter") {
+            document.getElementById("login-button").click();
+          }
+        });
+
+      document
+        .getElementById("register-email")
+        .addEventListener("keypress", function (e) {
+          if (e.key === "Enter") {
+            document.getElementById("register-button").click();
+          }
+        });
+
+      document
+        .getElementById("register-password")
+        .addEventListener("keypress", function (e) {
+          if (e.key === "Enter") {
+            document.getElementById("register-button").click();
+          }
+        });
+
+      document
+        .getElementById("reset-email")
+        .addEventListener("keypress", function (e) {
+          if (e.key === "Enter") {
+            document.getElementById("send-reset-email-button").click();
+          }
+        });
+    </script>
   </body>
 </html>

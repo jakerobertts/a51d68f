@@ -693,6 +693,7 @@
     connectivity (structure) of their atoms?<br />
     <img
       src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Structural_isomers.svg/640px-Structural_isomers.svg.png"
+      alt="Structural isomers"
     />
     <span data-quiz="C" style="display: none"
       >Constitutional (structural) isomers</span
@@ -901,6 +902,7 @@
     What is chemoselectivity?<br />
     <img
       src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Functional_group_reactivity_ranking.png/500px-Functional_group_reactivity_ranking.png"
+      alt="Functional group reactivity ranking"
     />
     <span data-quiz="A" style="display: none"
       >The ability of a reagent or intermediate to react with one group or atom
@@ -1591,6 +1593,7 @@
     What are hydroxyquinones?<br />
     <img
       src="https://www.tcichemicals.com/medias/H0186.jpg?context=bWFzdGVyfHJvb3R8NDQxNTN8aW1hZ2UvanBlZ3xhR05oTDJoaE5pODRPVEl4T1RBME5URXpNRFUwTDBnd01UZzJMbXB3Wnd8ODExZmI0MmRiMmZlMzE1NjlkZmM4ZGUwYzVjYjc4MzQ4NDJlMmZkNDc1ZjNjNDM0YmQ4ZGU0YmQyMDM0OTE2Mw"
+      alt="Hydroxyquinones"
     />
     <span data-quiz="B" style="display: none"
       >Compounds produced by reduction of quinones</span
@@ -1782,8 +1785,66 @@
     <footer>
       <p>All questions courtesy of Miledown</p>
     </footer>
+    <!-- Add to your quiz pages -->
+<script type="module">
+  import { getApps, getApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+  import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
+  import { getFirestore, doc, setDoc, onSnapshot } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js";
+  
+  const app = getApps()[0];
+  const auth = getAuth(app);
+  const db = getFirestore(app);
+  
+  let currentUser = null;
+  
+  // Auto-save function
+  const autoSave = async () => {
+    const answers = {};
+    document.querySelectorAll('input[type="radio"]:checked').forEach(input => {
+      answers[input.name] = input.value;
+    });
+    
+    // Always save to localStorage
+    localStorage.setItem('genchem_progress', JSON.stringify(answers));
+    
+    // Save to Firebase if authenticated
+    if (currentUser) {
+      try {
+        await setDoc(doc(db, 'users', currentUser.uid), {
+          quizzes: { genchem: answers }
+        }, { merge: true });
+      } catch (error) {
+        console.error('Firebase save failed:', error);
+      }
+    }
+  };
+  
+  // Listen for auth changes
+  onAuthStateChanged(auth, (user) => {
+    currentUser = user;
+    // Load progress when user signs in
+    if (user) {
+      loadProgress(user.uid);
+    } else {
+      // Load from localStorage
+      loadLocalProgress();
+    }
+  });
+  
+  // Auto-save on change
+  document.addEventListener('change', (e) => {
+    if (e.target.type === 'radio') {
+      setTimeout(autoSave, 1000);
+    }
+  });
+</script>
   </body>
 
+
+<script src="sidebar.js"></script>
+<script src="test.js"></script>
+</body>
+</html>
   <script src="sidebar.js"></script>
   <script src="test.js"></script>
 </html>
