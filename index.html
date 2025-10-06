@@ -15,17 +15,34 @@
     />
 
     <style>
+      /* Add this to your existing CSS in index.html */
+
+      /* Fixed banner at top */
+      .auth-banner {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+        background: #2d82a4;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 10px 20px;
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 55px;
+      }
+
+      /* Adjust body to account for fixed banner */
       body {
+        padding-top: 75px; /* Keep this */
         margin: 0;
-        padding: 0;
         font-family: "Inter", "Roboto", Arial, sans-serif;
         min-height: 100vh;
-        background: linear-gradient(
-          120deg,
-          #731e7a 0%,
-          #8b25eb 60%,
-          #06b6d4 100%
-        );
+        background: linear-gradient(120deg, #731e7a 0%, #8b25eb 60%, #06b6d4 100%);
         animation: bgmove 12s ease-in-out infinite alternate;
       }
 
@@ -232,26 +249,138 @@
         background: #f8d7da;
         color: #721c24;
       }
+
+      /* Banner left section */
+      .banner-left {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: white;
+      }
+
+      .banner-logo {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+      }
+
+      .banner-text h3 {
+        font-weight: bold;
+        font-size: 16px;
+        margin: 0;
+        color: white;
+      }
+
+      .banner-text p {
+        font-size: 11px;
+        opacity: 0.9;
+        margin: 0;
+        color: rgba(255, 255, 255, 0.9);
+      }
+
+      /* Banner right section - auth controls */
+      .banner-auth {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .banner-status {
+        color: white;
+        font-size: 12px;
+        opacity: 0.9;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .banner-button {
+        padding: 8px 16px;
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 12px;
+        font-weight: 600;
+        transition: all 0.2s ease;
+        backdrop-filter: blur(5px);
+      }
+
+      .banner-button:hover {
+        background: rgba(255, 255, 255, 0.3);
+        transform: translateY(-1px);
+      }
+
+      .banner-button.logout {
+        background: rgba(239, 68, 68, 0.8);
+        border-color: rgba(239, 68, 68, 0.3);
+      }
+
+      .banner-button.logout:hover {
+        background: rgba(239, 68, 68, 1);
+      }
+
+      .user-avatar-banner {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+      }
+
+      /* Hide old login box when banner is active */
+      .login-box {
+        display: none;
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        .auth-banner {
+          flex-direction: column;
+          padding: 8px 15px;
+          min-height: auto;
+        }
+
+        .banner-left {
+          margin-bottom: 8px;
+        }
+
+        body {
+          padding-top: 95px;
+        }
+      }
     </style>
   </head>
 
   <body>
-    <header>
-      <span class="logo-title">
-        MCAT-able
-        <img
-          src="Screenshot 2025-09-18 at 9.18.30 PM.png"
-          style="width: 50px; height: 50px; border-radius: 5%"
-          alt="Logo"
-        />
-      </span>
-      <br /><br />
-      <nav style="margin-top: 1rem; text-align: center">
-        <a href="main.html" class="nav-link">Dashboard</a>
-        <a href="Acidderivatives.html" class="nav-link">Practice Tests</a>
-        <a href="aa.html" class="nav-link">Review</a>
-      </nav>
-    </header>
+    <!-- Auth Banner -->
+    <div class="auth-banner">
+      <div class="banner-left">
+        <div class="banner-logo">M</div>
+        <div class="banner-text">
+          <h3>MCATable</h3>
+          <p>Your guide to MCAT success</p>
+        </div>
+      </div>
+      <div class="banner-auth">
+        <div class="banner-status" id="auth-status"></div>
+        <button id="login-btn-banner" class="banner-button">Sign In</button>
+        <button id="register-btn-banner" class="banner-button">Sign Up</button>
+      </div>
+    </div>
 
     <main>
       <div style="font-size: 80px; color: rgb(179, 233, 255)">
@@ -273,11 +402,86 @@
       </div>
     </main>
 
-    <!-- Login Box -->
-    <div id="login-box" class="login-box">
+    <!-- Auth Banner -->
+    <div id="auth-banner" class="auth-banner">
+      <div class="banner-left">
+        <div class="banner-logo">⚕</div>
+        <div class="banner-text">
+          <h3>MCATable</h3>
+          <p id="banner-status">Authentication System</p>
+        </div>
+      </div>
+
+      <div class="banner-auth">
+        <!-- Not signed in state -->
+        <div id="banner-signed-out" class="banner-status">
+          <span> Not signed in</span>
+          <button id="banner-login-btn" class="banner-button">Sign In</button>
+        </div>
+
+        <!-- Signed in state -->
+        <div id="banner-signed-in" class="banner-status" style="display: none">
+          <div class="user-avatar-banner" id="banner-user-avatar">U</div>
+          <div style="margin-right: 10px">
+            <div
+              id="banner-user-name"
+              style="font-weight: bold; font-size: 12px"
+            >
+              User
+            </div>
+            <div style="font-size: 10px; opacity: 0.8">
+              Syncing across devices
+            </div>
+          </div>
+          <button id="banner-logout-btn" class="banner-button logout">
+            Sign Out
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Login Modal (hidden by default) -->
+    <div
+      id="login-modal"
+      class="login-box"
+      style="
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10000;
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        min-width: 300px;
+      "
+    >
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 20px;
+        "
+      >
+        <h3 style="margin: 0">Authentication</h3>
+        <button
+          id="close-modal"
+          style="
+            background: none;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+          "
+        >
+          &times;
+        </button>
+      </div>
+
       <!-- Login Form -->
       <div id="login-form">
-        <h3 style="margin: 0 0 15px 0; text-align: center">Sign In</h3>
         <div class="form-group">
           <label for="login-email">Email</label>
           <input type="email" id="login-email" placeholder="Enter your email" />
@@ -303,7 +507,6 @@
 
       <!-- Register Form -->
       <div id="register-form" class="hidden">
-        <h3 style="margin: 0 0 15px 0; text-align: center">Create Account</h3>
         <div class="form-group">
           <label for="register-email">Email</label>
           <input
@@ -328,28 +531,25 @@
         </div>
       </div>
 
-      <!-- User Info (when logged in) -->
-      <div id="user-info" class="user-info hidden">
-        <h3 style="margin: 0 0 10px 0">✅ Signed In</h3>
-        <div class="user-email" id="user-email-display"></div>
-        <button id="logout-btn" class="auth-button" style="background: #dc3545">
-          Sign Out
-        </button>
-        <div
-          style="
-            font-size: 11px;
-            color: #666;
-            margin-top: 10px;
-            text-align: center;
-          "
-        >
-          Your progress syncs across all devices
-        </div>
-      </div>
-
       <!-- Messages -->
       <div id="message"></div>
     </div>
+
+    <!-- Modal backdrop -->
+    <div
+      id="modal-backdrop"
+      style="
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 9999;
+      "
+      onclick="closeModal()"
+    ></div>
 
     <!-- Firebase -->
     <script type="module">
@@ -363,13 +563,17 @@
         GoogleAuthProvider,
         signOut,
         onAuthStateChanged,
+        setPersistence,
+        browserSessionPersistence
       } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
       import {
         getFirestore,
         doc,
         setDoc,
         getDoc,
+        collection,
         onSnapshot,
+        serverTimestamp
       } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
       // Firebase config
@@ -390,10 +594,12 @@
       const db = getFirestore(app);
       const googleProvider = new GoogleAuthProvider();
 
+      // Set Firebase persistence (replaces localStorage)
+      setPersistence(auth, browserSessionPersistence);
+
       // DOM elements
       const loginForm = document.getElementById("login-form");
       const registerForm = document.getElementById("register-form");
-      const userInfo = document.getElementById("user-info");
       const messageDiv = document.getElementById("message");
 
       // Show message
@@ -405,6 +611,126 @@
           messageDiv.className = "";
         }, 5000);
       }
+
+      // Modal control functions
+      function openModal() {
+        document.getElementById("login-modal").style.display = "block";
+        document.getElementById("modal-backdrop").style.display = "block";
+        document.body.style.overflow = "hidden";
+        console.log("Modal opened");
+      }
+
+      function closeModal() {
+        document.getElementById("login-modal").style.display = "none";
+        document.getElementById("modal-backdrop").style.display = "none";
+        document.body.style.overflow = "auto";
+        console.log("Modal closed");
+      }
+
+      // Update banner status
+      function updateBannerStatus(message) {
+        const bannerStatus = document.getElementById("banner-status");
+        if (bannerStatus) {
+          bannerStatus.textContent = message;
+        }
+      }
+
+      // Firebase-only user session management
+      const saveUserSession = async (user) => {
+        if (!user) return;
+        
+        try {
+          await setDoc(doc(db, 'userSessions', user.uid), {
+            email: user.email,
+            displayName: user.displayName,
+            photoURL: user.photoURL,
+            lastActive: serverTimestamp(),
+            deviceInfo: navigator.userAgent,
+            sessionId: crypto.randomUUID()
+          });
+          
+          console.log("User session saved to Firebase");
+        } catch (error) {
+          console.error("Failed to save user session:", error);
+        }
+      };
+
+      const removeUserSession = async (uid) => {
+        if (!uid) return;
+        
+        try {
+          await setDoc(doc(db, 'userSessions', uid), {
+            lastActive: serverTimestamp(),
+            sessionEnded: true
+          }, { merge: true });
+          
+          console.log("User session ended in Firebase");
+        } catch (error) {
+          console.error("Failed to end user session:", error);
+        }
+      };
+
+      // Global functions for quiz pages (Firebase-only)
+      window.saveQuizData = async (quizName, answers) => {
+        if (!window.currentUser) {
+          console.log("No user - cannot save to Firebase");
+          return false;
+        }
+
+        try {
+          await setDoc(doc(db, 'users', window.currentUser.uid, 'quizzes', quizName), {
+            answers: answers,
+            lastUpdated: serverTimestamp(),
+            quizName: quizName,
+            totalQuestions: Object.keys(answers).length,
+            userAgent: navigator.userAgent,
+            url: window.location.href
+          });
+          
+          console.log(`Quiz ${quizName} saved to Firebase`);
+          return true;
+        } catch (error) {
+          console.error("Failed to save quiz data:", error);
+          return false;
+        }
+      };
+
+      window.loadQuizData = async (quizName) => {
+        if (!window.currentUser) {
+          console.log("No user - cannot load from Firebase");
+          return {};
+        }
+
+        try {
+          const docSnap = await getDoc(doc(db, 'users', window.currentUser.uid, 'quizzes', quizName));
+          if (docSnap.exists()) {
+            const data = docSnap.data();
+            console.log(`Quiz ${quizName} loaded from Firebase`);
+            return data.answers || {};
+          }
+          return {};
+        } catch (error) {
+          console.error("Failed to load quiz data:", error);
+          return {};
+        }
+      };
+
+      window.setupQuizSync = (quizName, callback) => {
+        if (!window.currentUser) return null;
+
+        const docRef = doc(db, 'users', window.currentUser.uid, 'quizzes', quizName);
+        return onSnapshot(docRef, (docSnap) => {
+          if (docSnap.exists()) {
+            const data = docSnap.data();
+            callback(data.answers || {});
+          }
+        });
+      };
+
+      // Event handlers
+      document.getElementById("banner-login-btn").onclick = openModal;
+      document.getElementById("close-modal").onclick = closeModal;
+      document.getElementById("modal-backdrop").onclick = closeModal;
 
       // Form switching
       document.getElementById("show-register").onclick = () => {
@@ -434,13 +760,24 @@
 
         try {
           document.getElementById("register-btn").textContent = "Creating...";
-          await createUserWithEmailAndPassword(auth, email, password);
+          const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+          
+          // Save user profile to Firebase (replaces localStorage)
+          await setDoc(doc(db, 'users', userCredential.user.uid), {
+            email: email,
+            createdAt: serverTimestamp(),
+            quizProgress: {},
+            preferences: {
+              theme: 'default',
+              notifications: true
+            }
+          });
+          
           showMessage("Account created successfully!");
         } catch (error) {
           showMessage(error.message, "error");
         } finally {
-          document.getElementById("register-btn").textContent =
-            "Create Account";
+          document.getElementById("register-btn").textContent = "Create Account";
         }
       };
 
@@ -468,372 +805,85 @@
       // Google Sign In
       document.getElementById("google-login-btn").onclick = async () => {
         try {
-          document.getElementById("google-login-btn").textContent =
-            "Signing in...";
-          await signInWithPopup(auth, googleProvider);
+          document.getElementById("google-login-btn").textContent = "Signing in...";
+          const result = await signInWithPopup(auth, googleProvider);
+          
+          // Save Google user profile to Firebase
+          await setDoc(doc(db, 'users', result.user.uid), {
+            email: result.user.email,
+            displayName: result.user.displayName,
+            photoURL: result.user.photoURL,
+            provider: 'google',
+            lastSignIn: serverTimestamp(),
+            quizProgress: {},
+            preferences: {
+              theme: 'default',
+              notifications: true
+            }
+          }, { merge: true });
+          
           showMessage("Signed in with Google!");
         } catch (error) {
           showMessage(error.message, "error");
         } finally {
-          document.getElementById("google-login-btn").textContent =
-            "Sign In with Google";
+          document.getElementById("google-login-btn").textContent = "Sign In with Google";
         }
       };
 
-      // Sign Out
-      document.getElementById("logout-btn").onclick = async () => {
+      // Banner logout button
+      document.getElementById("banner-logout-btn").onclick = async () => {
         try {
+          if (window.currentUser) {
+            await removeUserSession(window.currentUser.uid);
+          }
           await signOut(auth);
-          showMessage("Signed out successfully!");
+          updateBannerStatus("Signed out successfully");
         } catch (error) {
-          showMessage(error.message, "error");
+          updateBannerStatus("Sign out failed");
+          console.error("Sign out error:", error);
         }
       };
 
-      // Auth state listener
-      onAuthStateChanged(auth, (user) => {
+      // Auth state listener (Firebase handles persistence)
+      onAuthStateChanged(auth, async (user) => {
         if (user) {
-          // User signed in
-          loginForm.classList.add("hidden");
-          registerForm.classList.add("hidden");
-          userInfo.classList.remove("hidden");
-          document.getElementById("user-email-display").textContent =
-            user.email;
+          // User signed in - update banner
+          document.getElementById("banner-signed-out").style.display = "none";
+          document.getElementById("banner-signed-in").style.display = "flex";
+          document.getElementById("banner-user-name").textContent = 
+            user.displayName || user.email.split("@")[0];
+          document.getElementById("banner-user-avatar").textContent = 
+            (user.displayName || user.email)[0].toUpperCase();
 
-          // Store auth state in localStorage for other pages
-          localStorage.setItem(
-            "mcatable_auth_state",
-            JSON.stringify({
-              uid: user.uid,
-              email: user.email,
-              displayName: user.displayName,
-            })
-          );
+          updateBannerStatus("Account & sync management");
+          closeModal();
+
+          // Save session to Firebase (replaces localStorage)
+          await saveUserSession(user);
 
           // Make user and Firebase available globally for quiz pages
           window.currentUser = user;
           window.auth = auth;
           window.db = db;
 
-          console.log("✅ User signed in:", user.email);
+          console.log("User signed in:", user.email);
         } else {
-          // User signed out
-          localStorage.removeItem("mcatable_auth_state");
+          // User signed out - update banner
+          document.getElementById("banner-signed-out").style.display = "flex";
+          document.getElementById("banner-signed-in").style.display = "none";
 
-          userInfo.classList.add("hidden");
-          loginForm.classList.remove("hidden");
-
+          updateBannerStatus("Authentication System");
           window.currentUser = null;
 
-          console.log("❌ User signed out");
+          console.log("User signed out");
         }
       });
 
-      // Global functions for quiz pages to use
-      window.saveQuizData = async (quizName, answers) => {
-        if (!window.currentUser) {
-          console.log("❌ Not signed in - cannot save");
-          return false;
-        }
+      // Make functions globally available
+      window.openModal = openModal;
+      window.closeModal = closeModal;
 
-        try {
-          await setDoc(
-            doc(db, "users", window.currentUser.uid, "quizzes", quizName),
-            {
-              answers: answers,
-              lastUpdated: new Date(),
-              totalQuestions: Object.keys(answers).length,
-            }
-          );
-          console.log(`✅ Saved ${quizName} to cloud`);
-          return true;
-        } catch (error) {
-          console.error("❌ Save failed:", error);
-          return false;
-        }
-      };
-
-      window.loadQuizData = async (quizName) => {
-        if (!window.currentUser) {
-          console.log("❌ Not signed in - cannot load");
-          return {};
-        }
-
-        try {
-          const docSnap = await getDoc(
-            doc(db, "users", window.currentUser.uid, "quizzes", quizName)
-          );
-          if (docSnap.exists()) {
-            const data = docSnap.data();
-            console.log(`✅ Loaded ${quizName} from cloud`);
-            return data.answers || {};
-          } else {
-            console.log(`📄 No cloud data for ${quizName}`);
-            return {};
-          }
-        } catch (error) {
-          console.error("❌ Load failed:", error);
-          return {};
-        }
-      };
-
-      // Real-time sync for quiz pages
-      window.setupQuizSync = (quizName, callback) => {
-        if (!window.currentUser) return null;
-
-        const docRef = doc(
-          db,
-          "users",
-          window.currentUser.uid,
-          "quizzes",
-          quizName
-        );
-        return onSnapshot(docRef, (docSnap) => {
-          if (docSnap.exists()) {
-            const data = docSnap.data();
-            callback(data.answers || {});
-          }
-        });
-      };
-
-      // Enter key support
-      ["login-email", "login-password"].forEach((id) => {
-        document.getElementById(id).addEventListener("keypress", (e) => {
-          if (e.key === "Enter") document.getElementById("login-btn").click();
-        });
-      });
-
-      ["register-email", "register-password"].forEach((id) => {
-        document.getElementById(id).addEventListener("keypress", (e) => {
-          if (e.key === "Enter")
-            document.getElementById("register-btn").click();
-        });
-      });
-    </script>
-
-    <!-- Add this script RIGHT AFTER the <body> tag in miledown_genchem.html -->
-    <script type="module">
-      // Check for existing Firebase app from index.html
-      import {
-        getApps,
-        getApp,
-      } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-      import {
-        getAuth,
-        onAuthStateChanged,
-      } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
-      import {
-        getFirestore,
-        doc,
-        getDoc,
-        setDoc,
-      } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
-
-      // Use existing Firebase app or create new one
-      let app, auth, db;
-
-      if (getApps().length > 0) {
-        // Use existing app from index.html
-        app = getApp();
-        auth = getAuth(app);
-        db = getFirestore(app);
-        console.log("✅ Using existing Firebase app");
-      } else {
-        // Initialize new app if none exists
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-
-        const firebaseConfig = {
-          apiKey: "AIzaSyAxvvxY1q9CmPB5YoS-cFzfSwkjVqYQ5s0",
-          authDomain: "percentyle.firebaseapp.com",
-          databaseURL: "https://percentyle-default-rtdb.firebaseio.com",
-          projectId: "percentyle",
-          storageBucket: "percentyle.firebasestorage.app",
-          messagingSenderId: "601930251108",
-          appId: "1:601930251108:web:987d2d7b5ba9ca30f75871",
-          measurementId: "G-L97LGZSXS5",
-        };
-
-        app = initializeApp(firebaseConfig);
-        auth = getAuth(app);
-        db = getFirestore(app);
-        console.log("🔧 Created new Firebase app");
-      }
-
-      // Simple sync indicator for this quiz
-      const createQuizSyncIndicator = () => {
-        const indicator = document.createElement("div");
-        indicator.id = "quiz-auth-status";
-        indicator.style.cssText = `
-          position: fixed;
-          top: 10px;
-          right: 10px;
-          background: white;
-          padding: 10px 15px;
-          border-radius: 20px;
-          box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-          font-size: 12px;
-          z-index: 1000;
-          border: 2px solid #e0e0e0;
-          font-family: Arial, sans-serif;
-        `;
-
-        indicator.innerHTML = `
-          <div id="auth-status">🔍 Checking auth...</div>
-        `;
-
-        document.body.appendChild(indicator);
-        return indicator;
-      };
-
-      const syncIndicator = createQuizSyncIndicator();
-      const authStatus = document.getElementById("auth-status");
-
-      let currentUser = null;
-      let isQuizInitialized = false;
-
-      // Quiz data functions
-      const saveQuizProgress = async (answers) => {
-        if (!currentUser) {
-          authStatus.textContent = "🔒 Not synced - sign in on homepage";
-          return false;
-        }
-
-        try {
-          authStatus.textContent = "☁️ Syncing...";
-
-          await setDoc(
-            doc(db, "users", currentUser.uid, "quizzes", "genchem"),
-            {
-              answers: answers,
-              lastUpdated: new Date(),
-              quizName: "General Chemistry",
-              totalQuestions: Object.keys(answers).length,
-            }
-          );
-
-          authStatus.textContent = `✅ Synced as ${
-            currentUser.email.split("@")[0]
-          }`;
-          return true;
-        } catch (error) {
-          console.error("Save failed:", error);
-          authStatus.textContent = "❌ Sync failed";
-          return false;
-        }
-      };
-
-      const loadQuizProgress = async () => {
-        if (!currentUser) {
-          authStatus.textContent = "🔒 Not synced - sign in on homepage";
-          return {};
-        }
-
-        try {
-          authStatus.textContent = "📡 Loading...";
-
-          const docSnap = await getDoc(
-            doc(db, "users", currentUser.uid, "quizzes", "genchem")
-          );
-
-          if (docSnap.exists()) {
-            const data = docSnap.data();
-            authStatus.textContent = `✅ Loaded for ${
-              currentUser.email.split("@")[0]
-            }`;
-            return data.answers || {};
-          } else {
-            authStatus.textContent = `📄 No data for ${
-              currentUser.email.split("@")[0]
-            }`;
-            return {};
-          }
-        } catch (error) {
-          console.error("Load failed:", error);
-          authStatus.textContent = "❌ Load failed";
-          return {};
-        }
-      };
-
-      const applyAnswersToQuiz = (answers) => {
-        Object.entries(answers).forEach(([questionName, value]) => {
-          const input = document.querySelector(
-            `input[name="${questionName}"][value="${value}"]`
-          );
-          if (input && !input.checked) {
-            input.checked = true;
-          }
-        });
-      };
-
-      const getCurrentAnswers = () => {
-        const answers = {};
-        document
-          .querySelectorAll('input[type="radio"]:checked')
-          .forEach((input) => {
-            answers[input.name] = input.value;
-          });
-        return answers;
-      };
-
-      // Auto-save function
-      const autoSave = async () => {
-        const answers = getCurrentAnswers();
-        if (Object.keys(answers).length > 0) {
-          await saveQuizProgress(answers);
-        }
-      };
-
-      // Listen for auth state changes
-      onAuthStateChanged(auth, async (user) => {
-        currentUser = user;
-
-        if (user) {
-          // User is signed in - load their progress
-          console.log("✅ User authenticated:", user.email);
-
-          const savedAnswers = await loadQuizProgress();
-          if (Object.keys(savedAnswers).length > 0) {
-            applyAnswersToQuiz(savedAnswers);
-          }
-
-          // Setup auto-save when answers change
-          document.addEventListener("change", (e) => {
-            if (e.target.type === "radio" && isQuizInitialized) {
-              clearTimeout(window.quizAutoSaveTimeout);
-              window.quizAutoSaveTimeout = setTimeout(autoSave, 1000);
-            }
-          });
-        } else {
-          // User not signed in
-          console.log("❌ No user authenticated");
-          authStatus.innerHTML = `
-            🔒 Not synced<br>
-            <a href="index.html" style="color: #4285f4; font-size: 10px;">Sign in</a>
-          `;
-        }
-
-        isQuizInitialized = true;
-      });
-
-      // Periodic sync every 30 seconds
-      setInterval(() => {
-        if (currentUser && isQuizInitialized) {
-          autoSave();
-        }
-      }, 30000);
-
-      // Save before leaving page
-      window.addEventListener("beforeunload", () => {
-        if (currentUser && isQuizInitialized) {
-          const answers = getCurrentAnswers();
-          if (Object.keys(answers).length > 0) {
-            navigator.sendBeacon &&
-              navigator.sendBeacon("/quiz-save", JSON.stringify(answers));
-          }
-        }
-      });
-
-      console.log("🚀 Quiz auth integration loaded");
+      console.log("Firebase-only authentication system loaded");
     </script>
   </body>
 </html>
