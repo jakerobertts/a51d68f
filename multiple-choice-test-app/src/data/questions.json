@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="question-container">
+        <h2>Which of the following is NOT a vector?</h2>
+        <form id="questionForm">
+            <label><input type="radio" name="answer" value="A"> A. Velocity</label><br>
+            <label><input type="radio" name="answer" value="B"> B. Speed</label><br>
+            <label><input type="radio" name="answer" value="C"> C. Displacement</label><br>
+            <label><input type="radio" name="answer" value="D"> D. Force</label><br><br>
+            <button type="button" onclick="submitAnswer('B', 'question2.html')">Next</button>
+        </form>
+    </div>
+</body>
+<script>
+    function submitAnswer(correctAnswer, nextPage) {
+        const selectedAnswer = document.querySelector('input[name="answer"]:checked');
+        if (selectedAnswer) {
+            const score = selectedAnswer.value === correctAnswer ? 1 : 0;
+            localStorage.setItem('score', (parseInt(localStorage.getItem('score') || '0') + score).toString());
+            window.location.href = nextPage;
+        } else {
+            alert('Please select an answer before proceeding.');
+        }
+    }
+</script>
+</html>

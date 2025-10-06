@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Question 1</h1>
+        <p>Which of the following is NOT a vector?</p>
+        <form id="question1">
+            <label><input type="radio" name="answer" value="A"> A. Velocity</label><br>
+            <label><input type="radio" name="answer" value="B"> B. Speed</label><br>
+            <label><input type="radio" name="answer" value="C"> C. Displacement</label><br>
+            <label><input type="radio" name="answer" value="D"> D. Force</label><br><br>
+            <button type="button" onclick="nextQuestion(1)">Next</button>
+        </form>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>

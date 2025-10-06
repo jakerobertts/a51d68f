@@ -7,17 +7,13 @@
     <link
       rel="icon"
       type="image/png"
-      href="Screenshot 2025-09-18 at 9.21.54 PM.png"
+      href="Screenshot 2025-09-18 at 9.21.54 PM.png"
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <!-- Fontisto Icon Library for dashboard icon -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/fontisto@3.0.4/css/fontisto/fontisto.min.css"
-    />
+
     <style>
       body {
         margin: 0;
@@ -32,6 +28,7 @@
         );
         animation: bgmove 12s ease-in-out infinite alternate;
       }
+
       @keyframes bgmove {
         0% {
           background-position: 0% 50%;
@@ -39,203 +36,6 @@
         100% {
           background-position: 100% 50%;
         }
-      }
-      header {
-        background: rgba(225, 242, 255, 0.85);
-        box-shadow: 0 2px 12px rgba(30, 41, 59, 0.08);
-        padding: 1.5rem 0 1.2rem 0;
-        text-align: center;
-        border-bottom: 1px solid #032770;
-        -webkit-backdrop-filter: blur(2px);
-        backdrop-filter: blur(2px);
-      }
-      .logo-title {
-        font-size: 2.6rem;
-        font-weight: 900;
-        color: #2f086e;
-        letter-spacing: -2px;
-        font-family: "system-ui", "Roboto", Arial, sans-serif;
-        font-style: normal;
-        background: linear-gradient(90deg, #027696 30%, #82038e 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-      }
-      main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        min-height: 80vh;
-        padding: 20px; /* Added padding for smaller screens */
-      }
-      .card {
-        background: rgba(238, 254, 255, 0.97);
-        border-radius: 1.2rem;
-        box-shadow: 0 8px 32px rgba(30, 41, 59, 0.18), 0 1.5px 8px #06b6d4;
-        padding: 2.7rem 2.2rem 2.2rem 2.2rem;
-        max-width: 440px;
-        width: 100%;
-        text-align: center;
-        transform: translateY(40px) scale(0.98);
-        opacity: 0;
-        transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-        position: relative; /* Added for z-index control */
-        z-index: 10;
-      }
-      .card.loaded {
-        transform: translateY(0) scale(1);
-        opacity: 1;
-      }
-      h1 {
-        font-size: 2.1rem;
-        font-weight: 800;
-        color: #1e293b;
-        margin-bottom: 0.6em;
-        letter-spacing: -0.5px;
-      }
-      p {
-        font-size: 1.13rem;
-        color: #334155;
-        margin-bottom: 2em;
-        max-width: 360px;
-        margin-left: auto;
-        margin-right: auto;
-        line-height: 1.6;
-      }
-      .img-row {
-        display: flex;
-        gap: 1.5rem;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 2em;
-      }
-      .pretty-img {
-        opacity: 0;
-        border-radius: 0.85rem;
-        box-shadow: 0 2px 12px rgba(99, 102, 241, 0.13);
-        transition: opacity 1.2s cubic-bezier(0.4, 0, 0.2, 1);
-        width: 84px;
-        height: 84px;
-        object-fit: cover;
-        background: #f1f5f9;
-        border: 1.5px solid #e0e7ff;
-        display: inline-block;
-        vertical-align: middle;
-      }
-      a.button,
-      button.auth-button {
-        display: inline-block;
-        padding: 0.85em 2.5em;
-        background: linear-gradient(90deg, #2563eb 0%, #06b6d4 100%);
-        color: #fff;
-        font-weight: 700;
-        border-radius: 0.6rem;
-        text-decoration: none;
-        font-size: 1.13rem;
-        box-shadow: 0 2px 16px #06b6d4a0, 0 2px 8px rgba(37, 99, 235, 0.1);
-        transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
-        margin-top: 1.2em;
-        letter-spacing: 0.5px;
-        position: relative;
-        overflow: hidden;
-        border: none; /* Ensure buttons don't have default border */
-        cursor: pointer;
-        width: auto; /* Allow buttons to size based on content */
-      }
-      a.button::after,
-      button.auth-button::after {
-        content: "";
-        position: absolute;
-        left: -50%;
-        top: 0;
-        width: 200%;
-        height: 100%;
-        background: linear-gradient(120deg, transparent 60%, #fff8 100%);
-        opacity: 0.2;
-        transform: skewX(-20deg);
-        pointer-events: none;
-        transition: opacity 0.3s;
-      }
-      a.button:hover,
-      button.auth-button:hover {
-        background: linear-gradient(90deg, #06b6d4 0%, #2563eb 100%);
-        transform: translateY(-2px) scale(1.04);
-        box-shadow: 0 4px 32px #06b6d4a0, 0 2px 8px rgba(37, 99, 235, 0.13);
-      }
-      a.button:hover::after,
-      button.auth-button:hover::after {
-        opacity: 0.35;
-      }
-
-      /* Custom styles for auth forms */
-      .auth-form-container {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        margin-top: 1.5em;
-      }
-      .auth-form-container input {
-        width: calc(100% - 20px); /* Adjust for padding */
-        padding: 10px;
-        border: 1px solid #c0d9e7;
-        border-radius: 0.4rem;
-        font-size: 1rem;
-        background-color: rgba(255, 255, 255, 0.7);
-        color: #1e293b;
-        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
-      }
-      .auth-form-container input::placeholder {
-        color: #64748b;
-      }
-      .auth-form-container button {
-        width: 100%; /* Make auth buttons full width */
-        margin-top: 5px; /* Adjust margin */
-        padding: 0.85em 1em; /* Adjust padding for auth buttons */
-      }
-      .auth-form-container a {
-        color: #2563eb;
-        text-decoration: none;
-        font-weight: 600;
-        margin-top: 10px;
-        display: block;
-      }
-      .auth-form-container a:hover {
-        text-decoration: underline;
-      }
-      .auth-section h2 {
-        font-size: 1.8rem;
-        margin-bottom: 1em;
-      }
-
-      .message {
-        padding: 10px;
-        border-radius: 0.5rem;
-        margin-bottom: 20px;
-        font-weight: 600;
-        display: none; /* Hidden by default */
-        text-align: left;
-      }
-      .error-message {
-        background-color: #ffcccc;
-        color: #cc0000;
-        border: 1px solid #cc0000;
-      }
-      .success-message {
-        background-color: #ccffcc;
-        color: #008000;
-        border: 1px solid #008000;
-      }
-
-      #auth-forms-section,
-      #dashboard-section,
-      #register-section,
-      #reset-password-section,
-      #localStorage-data-section {
-        display: none; /* Hide these by default, JS will show them */
-      }
-      #login-form {
-        display: block; /* Login form visible by default within auth-forms-section */
       }
 
       @keyframes pulse {
@@ -252,236 +52,327 @@
           filter: drop-shadow(0 0 0px #a771ff);
         }
       }
-      @media (max-width: 600px) {
-        .card {
-          padding: 1.2rem 1rem;
-        }
-        .img-row {
-          gap: 0.7rem;
-        }
-        .logo-title {
-          font-size: 2.2rem; /* Adjusted for smaller screens */
-        }
-        h1 {
-          font-size: 1.8rem;
-        }
-        p {
-          font-size: 1rem;
-        }
-        a.button,
-        button.auth-button {
-          font-size: 1rem;
-          padding: 0.7em 1.5em;
-        }
-        .auth-form-container input {
-          font-size: 0.9rem;
-        }
+
+      header {
+        background: rgba(225, 242, 255, 0.85);
+        box-shadow: 0 2px 12px rgba(30, 41, 59, 0.08);
+        padding: 1.5rem 0 1.2rem 0;
+        text-align: center;
+        border-bottom: 1px solid #032770;
+      }
+
+      .logo-title {
+        font-size: 2.6rem;
+        font-weight: 900;
+        color: #2f086e;
+        letter-spacing: -2px;
+        background: linear-gradient(90deg, #027696 30%, #82038e 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 80vh;
+      }
+
+      .card {
+        background: rgba(238, 254, 255, 0.97);
+        border-radius: 1.2rem;
+        box-shadow: 0 8px 32px rgba(30, 41, 59, 0.18), 0 1.5px 8px #06b6d4;
+        padding: 2.7rem 2.2rem;
+        max-width: 440px;
+        width: 100%;
+        text-align: center;
+        margin: 20px;
+      }
+
+      h1 {
+        font-size: 2.1rem;
+        font-weight: 800;
+        color: #1e293b;
+        margin-bottom: 0.6em;
+        letter-spacing: -0.5px;
+      }
+
+      p {
+        font-size: 1.13rem;
+        color: #334155;
+        margin-bottom: 2em;
+        line-height: 1.6;
+      }
+
+      .button {
+        display: inline-block;
+        padding: 0.85em 2.5em;
+        background: linear-gradient(90deg, #2563eb 0%, #06b6d4 100%);
+        color: #fff;
+        font-weight: 700;
+        border-radius: 0.6rem;
+        text-decoration: none;
+        font-size: 1.13rem;
+        box-shadow: 0 2px 16px #06b6d4a0;
+        transition: all 0.2s;
+        margin: 10px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .button:hover {
+        background: linear-gradient(90deg, #06b6d4 0%, #2563eb 100%);
+        transform: translateY(-2px) scale(1.04);
+      }
+
+      .nav-link {
+        margin-right: 1.5rem;
+        color: #001868;
+        font-weight: 600;
+        text-decoration: none;
+        background-color: #06b6d4;
+        padding: 0.3rem 0.6rem;
+        border-radius: 4px;
+      }
+
+      /* Simple Login Box */
+      .login-box {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        z-index: 1000;
+        font-size: 14px;
+        min-width: 250px;
+      }
+
+      .form-group {
+        margin-bottom: 15px;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: 600;
+      }
+
+      .form-group input {
+        width: 100%;
+        padding: 8px 12px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 14px;
+        box-sizing: border-box;
+      }
+
+      .auth-button {
+        width: 100%;
+        padding: 10px;
+        background: #4285f4;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+
+      .auth-button:hover {
+        background: #3367d6;
+      }
+
+      .auth-button.google {
+        background: #db4437;
+      }
+
+      .auth-button.google:hover {
+        background: #c23321;
+      }
+
+      .switch-link {
+        color: #4285f4;
+        cursor: pointer;
+        text-decoration: underline;
+        font-size: 12px;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      .user-info {
+        text-align: center;
+      }
+
+      .user-email {
+        font-size: 12px;
+        color: #666;
+        margin: 10px 0;
+      }
+
+      .message {
+        padding: 8px;
+        border-radius: 4px;
+        margin: 10px 0;
+        font-size: 12px;
+        text-align: center;
+      }
+
+      .success {
+        background: #d4edda;
+        color: #155724;
+      }
+
+      .error {
+        background: #f8d7da;
+        color: #721c24;
       }
     </style>
-    <script>
-      window.addEventListener("DOMContentLoaded", function () {
-        document.querySelectorAll(".pretty-img").forEach(function (img, i) {
-          setTimeout(() => {
-            img.style.opacity = 1;
-          }, 200 + i * 200);
-        });
-        setTimeout(() => {
-          document.querySelector(".card").classList.add("loaded");
-        }, 200);
-      });
-    </script>
   </head>
+
   <body>
     <header>
-      <span class="logo-title"
-        >MCAT-able
+      <span class="logo-title">
+        MCAT-able
         <img
-          src="Screenshot 2025-09-18 at 9.18.30 PM.png"
+          src="Screenshot 2025-09-18 at 9.18.30 PM.png"
           style="width: 50px; height: 50px; border-radius: 5%"
-          alt="Logo" /></span
-      ><br /><br />
+          alt="Logo"
+        />
+      </span>
+      <br /><br />
       <nav style="margin-top: 1rem; text-align: center">
-        <!-- These navigation links will become dynamic based on login state -->
-        <a
-          href="main.html"
-          style="
-            margin-right: 1.5rem;
-            color: #001868;
-            font-weight: 600;
-            text-decoration: none;
-            background-color: #06b6d4;
-            padding: 0.3rem 0.6rem;
-          "
-          >Dashboard</a
-        >
-        <a
-          href="Acidderivatives.html"
-          style="
-            margin-right: 1.5rem;
-            color: #001558;
-            font-weight: 600;
-            text-decoration: none;
-            background-color: #06b6d4;
-            padding: 0.3rem 0.6rem;
-          "
-          >Practice Tests</a
-        >
-        <a
-          href="aa.html"
-          style="
-            margin-right: 1.5rem;
-            color: #00155b;
-            font-weight: 600;
-            text-decoration: none;
-            background-color: #06b6d4;
-            padding: 0.3rem 0.6rem;
-          "
-          >Review</a
-        >
+        <a href="main.html" class="nav-link">Dashboard</a>
+        <a href="Acidderivatives.html" class="nav-link">Practice Tests</a>
+        <a href="aa.html" class="nav-link">Review</a>
       </nav>
     </header>
+
     <main>
-      <div style="font-size: 80px; color: rgb(179, 233, 255); z-index: 1">
-        <span style="display: inline-block; animation: pulse 1.2s infinite">
-          ⚕
-        </span>
+      <div style="font-size: 80px; color: rgb(179, 233, 255)">
+        <span style="display: inline-block; animation: pulse 1.2s infinite"
+          >⚕</span
+        >
       </div>
       <br />
 
       <div class="card">
-        <!-- Message display area for Firebase Auth -->
-        <div id="auth-message" class="message"></div>
-
-        <!-- 1. Marketing/Landing Content (Visible by default) -->
-        <div id="marketing-content">
-          <h1>Start Your MCAT Journey</h1>
-          <p>
-            Comprehensive review, practice questions, and study resources to
-            help you succeed on the MCAT<sup>®</sup>.
-          </p>
-          <a class="button" href="#" id="show-auth-forms">Login / Register</a>
-        </div>
-
-        <!-- 2. Authentication Forms Section (Hidden by default) -->
-        <div id="auth-forms-section" style="display: none">
-          <!-- Login Form -->
-          <div id="login-form" class="auth-form-container">
-            <h2>Login to MCATable</h2>
-            <input type="email" id="login-email" placeholder="Email" />
-            <input type="password" id="login-password" placeholder="Password" />
-            <button id="login-button" class="auth-button">Log In</button>
-            <a href="#" id="show-register-link"
-              >Don't have an account? Register here.</a
-            >
-            <a href="#" id="show-reset-password-link">Forgot password?</a>
-            <a href="#" id="back-to-marketing-from-auth">Back to Home</a>
-          </div>
-
-          <!-- Register Section (Hidden by default) -->
-          <div
-            id="register-section"
-            class="auth-form-container"
-            style="display: none"
-          >
-            <h2>Register for MCATable</h2>
-            <input type="email" id="register-email" placeholder="Email" />
-            <input
-              type="password"
-              id="register-password"
-              placeholder="Password"
-            />
-            <button id="register-button" class="auth-button">
-              Register Account
-            </button>
-            <a href="#" id="show-login-link-from-register"
-              >Already have an account? Log In.</a
-            >
-            <a href="#" id="back-to-marketing-from-register">Back to Home</a>
-          </div>
-
-          <!-- Password Reset Section (Hidden by default) -->
-          <div
-            id="reset-password-section"
-            class="auth-form-container"
-            style="display: none"
-          >
-            <h2>Reset Your Password</h2>
-            <p style="font-size: 0.9em; margin-bottom: 0.5em">
-              Enter your email to receive a password reset link.
-            </p>
-            <input type="email" id="reset-email" placeholder="Email" />
-            <button id="send-reset-email-button" class="auth-button">
-              Send Reset Email
-            </button>
-            <a href="#" id="show-login-link-from-reset">Back to Login</a>
-            <a href="#" id="back-to-marketing-from-reset">Back to Home</a>
-          </div>
-        </div>
-
-        <!-- 3. Dashboard Section (Hidden by default) -->
-        <div id="dashboard-section" style="display: none">
-          <h2>Welcome, <span id="user-display-name">MCATable User</span>!</h2>
-          <p>You are logged in as: <span id="user-email"></span></p>
-          <button
-            id="sign-out-button"
-            class="auth-button"
-            style="background-color: #ef4444"
-          >
-            Sign Out
-          </button>
-          <hr style="margin: 20px 0; border-color: #e2e8f0" />
-
-          <!-- Link to actual dashboard/app content -->
-          <a class="button" href="main.html" style="margin-top: 0.5em"
-            >Go to your Dashboard</a
-          >
-
-          <!-- Your App Data (from Firebase) -->
-        </div>
-      </div>
-
-      <!-- 4. LocalStorage Data Section (Hidden by default) -->
-      <div
-        class="card"
-        style="margin-top: 20px; display: none"
-        id="localStorage-data-section"
-      >
-        <h2 style="font-size: 1.8em">Local (Browser-Only) Study Notes</h2>
-        <p style="font-size: 0.9em; margin-bottom: 1em">
-          This data is stored *only* on this browser. For cross-device sync, it
-          needs to be moved to the cloud.
+        <h1>Start Your MCAT Journey</h1>
+        <p>
+          Comprehensive review, practice questions, and study resources to help
+          you succeed on the MCAT<sup>®</sup>.
         </p>
-        <textarea
-          id="current-localStorage-data"
-          rows="5"
-          cols="50"
-          placeholder="Any notes you've saved to localStorage on THIS browser will show here."
-        ></textarea>
-        <button id="save-localstorage-data-button" class="auth-button">
-          Save Local Note
-        </button>
-        <button
-          id="clear-localstorage-button"
-          class="auth-button"
-          style="background-color: #f59e0b"
-        >
-          Clear Local Note
-        </button>
-        <button
-          id="migrate-localstorage-to-firebase-button"
-          class="auth-button"
-          style="background-color: #10b981"
-        >
-          Migrate Local Note to Cloud (One-Time)
-        </button>
-        <div class="message" id="localStorage-migration-message"></div>
+
+        <a href="miledown_genchem.html" class="button">Practice</a>
+        <a href="main.html" class="button">Dashboard</a>
       </div>
     </main>
 
-    <!-- Firebase SDK - IMPORTANT: This script MUST come first -->
-    <!-- Firebase SDK - IMPORTANT: This script MUST come first -->
+    <!-- Login Box -->
+    <div id="login-box" class="login-box">
+      <!-- Login Form -->
+      <div id="login-form">
+        <h3 style="margin: 0 0 15px 0; text-align: center">Sign In</h3>
+        <div class="form-group">
+          <label for="login-email">Email</label>
+          <input type="email" id="login-email" placeholder="Enter your email" />
+        </div>
+        <div class="form-group">
+          <label for="login-password">Password</label>
+          <input
+            type="password"
+            id="login-password"
+            placeholder="Enter your password"
+          />
+        </div>
+        <button id="login-btn" class="auth-button">Sign In</button>
+        <button id="google-login-btn" class="auth-button google">
+          Sign In with Google
+        </button>
+        <div style="text-align: center">
+          <span class="switch-link" id="show-register"
+            >Don't have an account? Sign up</span
+          >
+        </div>
+      </div>
+
+      <!-- Register Form -->
+      <div id="register-form" class="hidden">
+        <h3 style="margin: 0 0 15px 0; text-align: center">Create Account</h3>
+        <div class="form-group">
+          <label for="register-email">Email</label>
+          <input
+            type="email"
+            id="register-email"
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="register-password">Password</label>
+          <input
+            type="password"
+            id="register-password"
+            placeholder="Create a password"
+          />
+        </div>
+        <button id="register-btn" class="auth-button">Create Account</button>
+        <div style="text-align: center">
+          <span class="switch-link" id="show-login"
+            >Already have an account? Sign in</span
+          >
+        </div>
+      </div>
+
+      <!-- User Info (when logged in) -->
+      <div id="user-info" class="user-info hidden">
+        <h3 style="margin: 0 0 10px 0">✅ Signed In</h3>
+        <div class="user-email" id="user-email-display"></div>
+        <button id="logout-btn" class="auth-button" style="background: #dc3545">
+          Sign Out
+        </button>
+        <div
+          style="
+            font-size: 11px;
+            color: #666;
+            margin-top: 10px;
+            text-align: center;
+          "
+        >
+          Your progress syncs across all devices
+        </div>
+      </div>
+
+      <!-- Messages -->
+      <div id="message"></div>
+    </div>
+
+    <!-- Firebase -->
     <script type="module">
-      // Your web app's Firebase configuration
+      // Import Firebase
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+      import {
+        getAuth,
+        createUserWithEmailAndPassword,
+        signInWithEmailAndPassword,
+        signInWithPopup,
+        GoogleAuthProvider,
+        signOut,
+        onAuthStateChanged,
+      } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+      import {
+        getFirestore,
+        doc,
+        setDoc,
+        getDoc,
+        onSnapshot,
+      } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+
+      // Firebase config
       const firebaseConfig = {
         apiKey: "AIzaSyAxvvxY1q9CmPB5YoS-cFzfSwkjVqYQ5s0",
         authDomain: "percentyle.firebaseapp.com",
@@ -494,364 +385,218 @@
       };
 
       // Initialize Firebase
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
-      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-analytics.js"; // Also import getAnalytics
       const app = initializeApp(firebaseConfig);
-      const analytics = getAnalytics(app); // Initialize Analytics
-    </script>
-
-    <!-- Your application-specific JavaScript/TypeScript code -->
-    <script type="module" src="app.js"></script>
-
-    <script>
-      // Simple navigation between auth states
-      document.addEventListener("DOMContentLoaded", function () {
-        // Get elements
-        const marketingContent = document.getElementById("marketing-content");
-        const authFormsSection = document.getElementById("auth-forms-section");
-        const loginForm = document.getElementById("login-form");
-        const registerSection = document.getElementById("register-section");
-        const resetPasswordSection = document.getElementById(
-          "reset-password-section"
-        );
-
-        // Show auth forms
-        document.getElementById("show-auth-forms").onclick = function (e) {
-          e.preventDefault();
-          marketingContent.style.display = "none";
-          authFormsSection.style.display = "block";
-          loginForm.style.display = "block";
-          registerSection.style.display = "none";
-          resetPasswordSection.style.display = "none";
-        };
-
-        // Show register form
-        document.getElementById("show-register-link").onclick = function (e) {
-          e.preventDefault();
-          loginForm.style.display = "none";
-          registerSection.style.display = "block";
-          resetPasswordSection.style.display = "none";
-        };
-
-        // Show login from register
-        document.getElementById("show-login-link-from-register").onclick =
-          function (e) {
-            e.preventDefault();
-            registerSection.style.display = "none";
-            loginForm.style.display = "block";
-            resetPasswordSection.style.display = "none";
-          };
-
-        // Show reset password
-        document.getElementById("show-reset-password-link").onclick = function (
-          e
-        ) {
-          e.preventDefault();
-          loginForm.style.display = "none";
-          resetPasswordSection.style.display = "block";
-        };
-
-        // Show login from reset
-        document.getElementById("show-login-link-from-reset").onclick =
-          function (e) {
-            e.preventDefault();
-            resetPasswordSection.style.display = "none";
-            loginForm.style.display = "block";
-          };
-
-        // Back to marketing from any auth form
-        document
-          .querySelectorAll('[id^="back-to-marketing"]')
-          .forEach((link) => {
-            link.onclick = function (e) {
-              e.preventDefault();
-              authFormsSection.style.display = "none";
-              marketingContent.style.display = "block";
-            };
-          });
-      });
-    </script>
-
-    <script type="module">
-      // Import Firebase functions
-      import {
-        getAuth,
-        signInWithEmailAndPassword,
-        createUserWithEmailAndPassword,
-        sendPasswordResetEmail,
-      } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
-      import { getFirestore } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js";
-      import { getApps } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
-
-      // Get Firebase instances (already initialized above)
-      const app = getApps()[0];
       const auth = getAuth(app);
       const db = getFirestore(app);
+      const googleProvider = new GoogleAuthProvider();
 
-      // Helper function to show messages
-      function showMessage(message, isError = false) {
-        const authMessage = document.getElementById("auth-message");
-        if (authMessage) {
-          authMessage.textContent = message;
-          authMessage.className = isError
-            ? "message error-message"
-            : "message success-message";
-          authMessage.style.display = "block";
-          setTimeout(() => {
-            authMessage.style.display = "none";
-          }, 5000);
+      // DOM elements
+      const loginForm = document.getElementById("login-form");
+      const registerForm = document.getElementById("register-form");
+      const userInfo = document.getElementById("user-info");
+      const messageDiv = document.getElementById("message");
+
+      // Show message
+      function showMessage(text, type = "success") {
+        messageDiv.className = `message ${type}`;
+        messageDiv.textContent = text;
+        setTimeout(() => {
+          messageDiv.textContent = "";
+          messageDiv.className = "";
+        }, 5000);
+      }
+
+      // Form switching
+      document.getElementById("show-register").onclick = () => {
+        loginForm.classList.add("hidden");
+        registerForm.classList.remove("hidden");
+      };
+
+      document.getElementById("show-login").onclick = () => {
+        registerForm.classList.add("hidden");
+        loginForm.classList.remove("hidden");
+      };
+
+      // Email/Password Sign Up
+      document.getElementById("register-btn").onclick = async () => {
+        const email = document.getElementById("register-email").value.trim();
+        const password = document.getElementById("register-password").value;
+
+        if (!email || !password) {
+          showMessage("Please fill in all fields", "error");
+          return;
         }
-      }
 
-      // Helper function to show dashboard
-      function showDashboard(user) {
-        document.getElementById("auth-forms-section").style.display = "none";
-        document.getElementById("marketing-content").style.display = "none";
-        document.getElementById("dashboard-section").style.display = "block";
-        document.getElementById("localStorage-data-section").style.display =
-          "block";
+        if (password.length < 6) {
+          showMessage("Password must be at least 6 characters", "error");
+          return;
+        }
 
-        // Update user info
-        document.getElementById("user-display-name").textContent =
-          user.displayName || "User";
-        document.getElementById("user-email").textContent = user.email;
+        try {
+          document.getElementById("register-btn").textContent = "Creating...";
+          await createUserWithEmailAndPassword(auth, email, password);
+          showMessage("Account created successfully!");
+        } catch (error) {
+          showMessage(error.message, "error");
+        } finally {
+          document.getElementById("register-btn").textContent =
+            "Create Account";
+        }
+      };
 
-        showMessage("Successfully logged in!", false);
-      }
+      // Email/Password Sign In
+      document.getElementById("login-btn").onclick = async () => {
+        const email = document.getElementById("login-email").value.trim();
+        const password = document.getElementById("login-password").value;
 
-      // Helper function to show marketing/login
-      function showLogin() {
-        document.getElementById("dashboard-section").style.display = "none";
-        document.getElementById("localStorage-data-section").style.display =
-          "none";
-        document.getElementById("auth-forms-section").style.display = "none";
-        document.getElementById("marketing-content").style.display = "block";
-      }
+        if (!email || !password) {
+          showMessage("Please fill in all fields", "error");
+          return;
+        }
 
-      // LOGIN BUTTON HANDLER
-      document
-        .getElementById("login-button")
-        .addEventListener("click", async function (e) {
-          e.preventDefault();
+        try {
+          document.getElementById("login-btn").textContent = "Signing in...";
+          await signInWithEmailAndPassword(auth, email, password);
+          showMessage("Signed in successfully!");
+        } catch (error) {
+          showMessage(error.message, "error");
+        } finally {
+          document.getElementById("login-btn").textContent = "Sign In";
+        }
+      };
 
-          const email = document.getElementById("login-email").value.trim();
-          const password = document.getElementById("login-password").value;
+      // Google Sign In
+      document.getElementById("google-login-btn").onclick = async () => {
+        try {
+          document.getElementById("google-login-btn").textContent =
+            "Signing in...";
+          await signInWithPopup(auth, googleProvider);
+          showMessage("Signed in with Google!");
+        } catch (error) {
+          showMessage(error.message, "error");
+        } finally {
+          document.getElementById("google-login-btn").textContent =
+            "Sign In with Google";
+        }
+      };
 
-          if (!email || !password) {
-            showMessage("Please enter both email and password.", true);
-            return;
-          }
+      // Sign Out
+      document.getElementById("logout-btn").onclick = async () => {
+        try {
+          await signOut(auth);
+          showMessage("Signed out successfully!");
+        } catch (error) {
+          showMessage(error.message, "error");
+        }
+      };
 
-          try {
-            this.textContent = "Logging in...";
-            this.disabled = true;
-
-            const userCredential = await signInWithEmailAndPassword(
-              auth,
-              email,
-              password
-            );
-            const user = userCredential.user;
-
-            showDashboard(user);
-          } catch (error) {
-            console.error("Login error:", error);
-            let errorMessage = "Login failed. ";
-
-            switch (error.code) {
-              case "auth/user-not-found":
-                errorMessage += "No account found with this email.";
-                break;
-              case "auth/wrong-password":
-                errorMessage += "Incorrect password.";
-                break;
-              case "auth/invalid-email":
-                errorMessage += "Invalid email address.";
-                break;
-              case "auth/too-many-requests":
-                errorMessage += "Too many failed attempts. Try again later.";
-                break;
-              default:
-                errorMessage += error.message;
-            }
-
-            showMessage(errorMessage, true);
-          } finally {
-            this.textContent = "Log In";
-            this.disabled = false;
-          }
-        });
-
-      // REGISTER BUTTON HANDLER
-      document
-        .getElementById("register-button")
-        .addEventListener("click", async function (e) {
-          e.preventDefault();
-
-          const email = document.getElementById("register-email").value.trim();
-          const password = document.getElementById("register-password").value;
-
-          if (!email || !password) {
-            showMessage("Please enter both email and password.", true);
-            return;
-          }
-
-          if (password.length < 6) {
-            showMessage("Password must be at least 6 characters long.", true);
-            return;
-          }
-
-          try {
-            this.textContent = "Creating account...";
-            this.disabled = true;
-
-            const userCredential = await createUserWithEmailAndPassword(
-              auth,
-              email,
-              password
-            );
-            const user = userCredential.user;
-
-            showDashboard(user);
-            showMessage("Account created successfully!", false);
-          } catch (error) {
-            console.error("Registration error:", error);
-            let errorMessage = "Registration failed. ";
-
-            switch (error.code) {
-              case "auth/email-already-in-use":
-                errorMessage += "An account with this email already exists.";
-                break;
-              case "auth/invalid-email":
-                errorMessage += "Invalid email address.";
-                break;
-              case "auth/weak-password":
-                errorMessage += "Password is too weak.";
-                break;
-              default:
-                errorMessage += error.message;
-            }
-
-            showMessage(errorMessage, true);
-          } finally {
-            this.textContent = "Register Account";
-            this.disabled = false;
-          }
-        });
-
-      // PASSWORD RESET BUTTON HANDLER
-      document
-        .getElementById("send-reset-email-button")
-        .addEventListener("click", async function (e) {
-          e.preventDefault();
-
-          const email = document.getElementById("reset-email").value.trim();
-
-          if (!email) {
-            showMessage("Please enter your email address.", true);
-            return;
-          }
-
-          try {
-            this.textContent = "Sending email...";
-            this.disabled = true;
-
-            await sendPasswordResetEmail(auth, email);
-            showMessage("Password reset email sent! Check your inbox.", false);
-
-            // Switch back to login form
-            document.getElementById("reset-password-section").style.display =
-              "none";
-            document.getElementById("login-form").style.display = "block";
-          } catch (error) {
-            console.error("Password reset error:", error);
-            let errorMessage = "Failed to send reset email. ";
-
-            switch (error.code) {
-              case "auth/user-not-found":
-                errorMessage += "No account found with this email.";
-                break;
-              case "auth/invalid-email":
-                errorMessage += "Invalid email address.";
-                break;
-              default:
-                errorMessage += error.message;
-            }
-
-            showMessage(errorMessage, true);
-          } finally {
-            this.textContent = "Send Reset Email";
-            this.disabled = false;
-          }
-        });
-
-      // SIGN OUT BUTTON HANDLER
-      document
-        .getElementById("sign-out-button")
-        .addEventListener("click", async function (e) {
-          e.preventDefault();
-
-          try {
-            await auth.signOut();
-            showLogin();
-            showMessage("Successfully signed out.", false);
-          } catch (error) {
-            console.error("Sign out error:", error);
-            showMessage("Error signing out.", true);
-          }
-        });
-
-      // LISTEN FOR AUTH STATE CHANGES
-      auth.onAuthStateChanged((user) => {
+      // Auth state listener
+      onAuthStateChanged(auth, (user) => {
         if (user) {
-          // User is signed in
-          showDashboard(user);
+          // User signed in
+          loginForm.classList.add("hidden");
+          registerForm.classList.add("hidden");
+          userInfo.classList.remove("hidden");
+          document.getElementById("user-email-display").textContent =
+            user.email;
+
+          // Make user and Firebase available globally for quiz pages
+          window.currentUser = user;
+          window.auth = auth;
+          window.db = db;
+
+          console.log("✅ User signed in:", user.email);
         } else {
-          // User is signed out
-          showLogin();
+          // User signed out
+          userInfo.classList.add("hidden");
+          loginForm.classList.remove("hidden");
+
+          window.currentUser = null;
+
+          console.log("❌ User signed out");
         }
       });
 
-      // ENTER KEY SUPPORT
-      document
-        .getElementById("login-email")
-        .addEventListener("keypress", function (e) {
-          if (e.key === "Enter") {
-            document.getElementById("login-button").click();
-          }
-        });
+      // Global functions for quiz pages to use
+      window.saveQuizData = async (quizName, answers) => {
+        if (!window.currentUser) {
+          console.log("❌ Not signed in - cannot save");
+          return false;
+        }
 
-      document
-        .getElementById("login-password")
-        .addEventListener("keypress", function (e) {
-          if (e.key === "Enter") {
-            document.getElementById("login-button").click();
-          }
-        });
+        try {
+          await setDoc(
+            doc(db, "users", window.currentUser.uid, "quizzes", quizName),
+            {
+              answers: answers,
+              lastUpdated: new Date(),
+              totalQuestions: Object.keys(answers).length,
+            }
+          );
+          console.log(`✅ Saved ${quizName} to cloud`);
+          return true;
+        } catch (error) {
+          console.error("❌ Save failed:", error);
+          return false;
+        }
+      };
 
-      document
-        .getElementById("register-email")
-        .addEventListener("keypress", function (e) {
-          if (e.key === "Enter") {
-            document.getElementById("register-button").click();
-          }
-        });
+      window.loadQuizData = async (quizName) => {
+        if (!window.currentUser) {
+          console.log("❌ Not signed in - cannot load");
+          return {};
+        }
 
-      document
-        .getElementById("register-password")
-        .addEventListener("keypress", function (e) {
-          if (e.key === "Enter") {
-            document.getElementById("register-button").click();
+        try {
+          const docSnap = await getDoc(
+            doc(db, "users", window.currentUser.uid, "quizzes", quizName)
+          );
+          if (docSnap.exists()) {
+            const data = docSnap.data();
+            console.log(`✅ Loaded ${quizName} from cloud`);
+            return data.answers || {};
+          } else {
+            console.log(`📄 No cloud data for ${quizName}`);
+            return {};
           }
-        });
+        } catch (error) {
+          console.error("❌ Load failed:", error);
+          return {};
+        }
+      };
 
-      document
-        .getElementById("reset-email")
-        .addEventListener("keypress", function (e) {
-          if (e.key === "Enter") {
-            document.getElementById("send-reset-email-button").click();
+      // Real-time sync for quiz pages
+      window.setupQuizSync = (quizName, callback) => {
+        if (!window.currentUser) return null;
+
+        const docRef = doc(
+          db,
+          "users",
+          window.currentUser.uid,
+          "quizzes",
+          quizName
+        );
+        return onSnapshot(docRef, (docSnap) => {
+          if (docSnap.exists()) {
+            const data = docSnap.data();
+            callback(data.answers || {});
           }
         });
+      };
+
+      // Enter key support
+      ["login-email", "login-password"].forEach((id) => {
+        document.getElementById(id).addEventListener("keypress", (e) => {
+          if (e.key === "Enter") document.getElementById("login-btn").click();
+        });
+      });
+
+      ["register-email", "register-password"].forEach((id) => {
+        document.getElementById(id).addEventListener("keypress", (e) => {
+          if (e.key === "Enter")
+            document.getElementById("register-btn").click();
+        });
+      });
     </script>
   </body>
 </html>
