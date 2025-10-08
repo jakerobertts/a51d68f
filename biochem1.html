@@ -1,0 +1,1981 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      img {
+        max-width: 300px;
+        max-height: 250px;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        display: block;
+        margin: 10px auto;
+        border: 1px solid #019cb1;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 8px 25px rgba(1, 156, 177, 0.3);
+        border-color: #ff6b35;
+      }
+
+      img:active {
+        transform: scale(0.95);
+      }
+
+      .image-zoom {
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6422130934976134"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="google-adsense-account" content="ca-pub-6422130934976134" />
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-L97LGZSXS5"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-L97LGZSXS5");
+    </script>
+    <link
+      rel="icon"
+      type="image/png"
+      href="Screenshot 2025-09-18 at 9.21.54 PM.png"
+    />
+    <title>Biochemistry - MCAT Practice Questions</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div
+      id="score-container"
+      style="
+        margin: 80px 0;
+        font-size: 0.8rem;
+        color: whitesmoke;
+        position: fixed;
+        top: 150px;
+        right: 16px;
+        background: #0a00cd;
+        z-index: 1000;
+        padding: 8px 8px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      "
+    >
+      Score: <span id="score">0</span> / <span id="total">0</span>
+    </div>
+
+    <h1>Biochemistry - MCAT</h1>
+
+    <h2>Amino Acids</h2>
+
+    <!-- Question 1 -->
+    Which of the following amino acids is the only one that lacks chirality at
+    its α-carbon?
+    <br />
+    <span data-quiz="B" style="display: none">Glycine</span><br /><br />
+    <label><input type="radio" name="q1" value="A" /> A. Alanine</label><br />
+    <label><input type="radio" name="q1" value="B" /> B. Glycine</label><br />
+    <label><input type="radio" name="q1" value="C" /> C. Cysteine</label><br />
+    <label><input type="radio" name="q1" value="D" /> D. Serine</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 2 -->
+    The stereochemistry of the α-carbon in all naturally occurring eukaryotic
+    amino acids (except glycine) is:
+    <br />
+    <span data-quiz="C" style="display: none">L</span><br /><br />
+    <label><input type="radio" name="q2" value="A" /> A. D</label><br />
+    <label><input type="radio" name="q2" value="B" /> B. R</label><br />
+    <label><input type="radio" name="q2" value="C" /> C. L</label><br />
+    <label><input type="radio" name="q2" value="D" /> D. (S)</label><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 3 -->
+    All chiral amino acids, except cysteine, possess which absolute
+    configuration at the α-carbon?
+    <br />
+    <span data-quiz="B" style="display: none">(S)</span><br /><br />
+    <label><input type="radio" name="q3" value="A" /> A. (R)</label><br />
+    <label><input type="radio" name="q3" value="B" /> B. (S)</label><br />
+    <label><input type="radio" name="q3" value="C" /> C. (D)</label><br />
+    <label><input type="radio" name="q3" value="D" /> D. (L)</label><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 4 -->
+    The designations L and D indicate __________ configuration, whereas S and R
+    indicate __________ configuration.
+    <br />
+    <span data-quiz="B" style="display: none">Relative; Absolute</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q4" value="A" /> A. Absolute; Relative</label
+    ><br />
+    <label
+      ><input type="radio" name="q4" value="B" /> B. Relative; Absolute</label
+    ><br />
+    <label
+      ><input type="radio" name="q4" value="C" /> C. Spatial; Geometric</label
+    ><br />
+    <label
+      ><input type="radio" name="q4" value="D" /> D. Optical; Magnetic</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <h2>Chemical Properties and Groups</h2>
+
+    <!-- Question 5 -->
+    Amino acids are organic molecules that contain both a(n) __________ group
+    and a(n) __________ group.
+    <br />
+    <span data-quiz="B" style="display: none">Carboxyl; amino</span><br /><br />
+    <label><input type="radio" name="q5" value="A" /> A. Hydroxyl; methyl</label
+    ><br />
+    <label><input type="radio" name="q5" value="B" /> B. Carboxyl; amino</label
+    ><br />
+    <label
+      ><input type="radio" name="q5" value="C" /> C. Carbonyl; sulfhydryl</label
+    ><br />
+    <label><input type="radio" name="q5" value="D" /> D. Amide; phosphate</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 6 -->
+    Amphoteric molecules are capable of acting as:
+    <br />
+    <span data-quiz="B" style="display: none">Acids or bases</span><br /><br />
+    <label
+      ><input type="radio" name="q6" value="A" /> A. Reducing or oxidizing
+      agents</label
+    ><br />
+    <label><input type="radio" name="q6" value="B" /> B. Acids or bases</label
+    ><br />
+    <label
+      ><input type="radio" name="q6" value="C" /> C. Polar or nonpolar
+      compounds</label
+    ><br />
+    <label
+      ><input type="radio" name="q6" value="D" /> D. Hydrophilic or hydrophobic
+      molecules</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 7 -->
+    The pH at which half of a molecule's acidic groups are deprotonated is
+    referred to as the:
+    <br />
+    <span data-quiz="B" style="display: none">pKa</span><br /><br />
+    <label><input type="radio" name="q7" value="A" /> A. pH</label><br />
+    <label><input type="radio" name="q7" value="B" /> B. pKa</label><br />
+    <label><input type="radio" name="q7" value="C" /> C. Ka</label><br />
+    <label
+      ><input type="radio" name="q7" value="D" /> D. Isoelectric point</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 8 -->
+    At very low pH, amino acids will exist predominantly in which form?
+    <br />
+    <span data-quiz="B" style="display: none">Fully protonated</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q8" value="A" /> A. Fully deprotonated</label
+    ><br />
+    <label><input type="radio" name="q8" value="B" /> B. Fully protonated</label
+    ><br />
+    <label><input type="radio" name="q8" value="C" /> C. Zwitterionic</label
+    ><br />
+    <label
+      ><input type="radio" name="q8" value="D" /> D. Negatively charged</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 9 -->
+    The pH at which an amino acid carries no net electrical charge is known as
+    the:
+    <br />
+    <span data-quiz="A" style="display: none">Isoelectric point</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q9" value="A" /> A. Isoelectric point</label
+    ><br />
+    <label><input type="radio" name="q9" value="B" /> B. pKa</label><br />
+    <label
+      ><input type="radio" name="q9" value="C" /> C. Neutralization point</label
+    ><br />
+    <label
+      ><input type="radio" name="q9" value="D" /> D. Protonation constant</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 10 -->
+    A molecule that contains both positive and negative charges, yet is overall
+    neutral, is termed a:
+    <br />
+    <span data-quiz="C" style="display: none">Zwitterion</span><br /><br />
+    <label><input type="radio" name="q10" value="A" /> A. Cation</label><br />
+    <label><input type="radio" name="q10" value="B" /> B. Dipole</label><br />
+    <label><input type="radio" name="q10" value="C" /> C. Zwitterion</label
+    ><br />
+    <label><input type="radio" name="q10" value="D" /> D. Anion</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <h2>Isoelectric Point Calculations</h2>
+
+    <!-- Question 11 -->
+    For an amino acid with no ionizable side chain, the isoelectric point (pI)
+    can be calculated as:
+    <br />
+    <span data-quiz="A" style="display: none">(pKa₁ + pKa₂) / 2</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q11" value="A" /> A. (pKa₁ + pKa₂) / 2</label
+    ><br />
+    <label
+      ><input type="radio" name="q11" value="B" /> B. (pKa₂ + pKa₃) / 2</label
+    ><br />
+    <label
+      ><input type="radio" name="q11" value="C" /> C. (pKa₁ + pKa₃) / 2</label
+    ><br />
+    <label
+      ><input type="radio" name="q11" value="D" /> D. (pKa₁ + pKa₂ + pKa₃) /
+      3</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 12 -->
+    For an amino acid with a basic side chain, the isoelectric point is best
+    estimated as:
+    <br />
+    <span data-quiz="B" style="display: none">(pKa₂ + pKa₃) / 2</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q12" value="A" /> A. (pKa₁ + pKa₂) / 2</label
+    ><br />
+    <label
+      ><input type="radio" name="q12" value="B" /> B. (pKa₂ + pKa₃) / 2</label
+    ><br />
+    <label
+      ><input type="radio" name="q12" value="C" /> C. (pKa₁ + pKa₃) / 2</label
+    ><br />
+    <label
+      ><input type="radio" name="q12" value="D" /> D. (pKa₂ − pKa₁) / 2</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 13 -->
+    For an amino acid with an acidic side chain, the isoelectric point is best
+    estimated as:
+    <br />
+    <span data-quiz="A" style="display: none">(pKa₁ + pKa₂) / 2</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q13" value="A" /> A. (pKa₁ + pKa₂) / 2</label
+    ><br />
+    <label
+      ><input type="radio" name="q13" value="B" /> B. (pKa₂ + pKa₃) / 2</label
+    ><br />
+    <label
+      ><input type="radio" name="q13" value="C" /> C. (pKa₁ + pKa₃) / 2</label
+    ><br />
+    <label
+      ><input type="radio" name="q13" value="D" /> D. (pKa₁ − pKa₂) / 2</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <h2>Amino Acid Identification</h2>
+
+    <!-- Question 14 -->
+    Which of the following amino acids is hydrophobic and lacks a side-chain
+    chiral center?
+    <br />
+    <span data-quiz="A" style="display: none">Glycine</span><br /><br />
+    <label><input type="radio" name="q14" value="A" /> A. Glycine</label><br />
+    <label><input type="radio" name="q14" value="B" /> B. Alanine</label><br />
+    <label><input type="radio" name="q14" value="C" /> C. Proline</label><br />
+    <label><input type="radio" name="q14" value="D" /> D. Serine</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 15 -->
+    Which amino acid has the side chain –CH₃ and is nonpolar?
+    <br />
+    <span data-quiz="A" style="display: none">Alanine</span><br /><br />
+    <label><input type="radio" name="q15" value="A" /> A. Alanine</label><br />
+    <label><input type="radio" name="q15" value="B" /> B. Valine</label><br />
+    <label><input type="radio" name="q15" value="C" /> C. Glycine</label><br />
+    <label><input type="radio" name="q15" value="D" /> D. Proline</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 16 -->
+    Which amino acid is branched-chain and hydrophobic?
+    <br />
+    <span data-quiz="B" style="display: none">Valine</span><br /><br />
+    <label><input type="radio" name="q16" value="A" /> A. Serine</label><br />
+    <label><input type="radio" name="q16" value="B" /> B. Valine</label><br />
+    <label><input type="radio" name="q16" value="C" /> C. Asparagine</label
+    ><br />
+    <label><input type="radio" name="q16" value="D" /> D. Threonine</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 17 -->
+    Which amino acid contains a thioether group in its side chain?
+    <br />
+    <span data-quiz="A" style="display: none">Methionine</span><br /><br />
+    <label><input type="radio" name="q17" value="A" /> A. Methionine</label
+    ><br />
+    <label><input type="radio" name="q17" value="B" /> B. Cysteine</label><br />
+    <label><input type="radio" name="q17" value="C" /> C. Serine</label><br />
+    <label><input type="radio" name="q17" value="D" /> D. Threonine</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 18 -->
+    Which amino acid disrupts α-helices and introduces kinks in secondary
+    structure?
+    <br />
+    <span data-quiz="B" style="display: none">Proline</span><br /><br />
+    <label><input type="radio" name="q18" value="A" /> A. Glycine</label><br />
+    <label><input type="radio" name="q18" value="B" /> B. Proline</label><br />
+    <label><input type="radio" name="q18" value="C" /> C. Valine</label><br />
+    <label><input type="radio" name="q18" value="D" /> D. Tyrosine</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 19 -->
+    Which aromatic amino acid absorbs ultraviolet light and has a benzyl side
+    chain?
+    <br />
+    <span data-quiz="B" style="display: none">Phenylalanine</span><br /><br />
+    <label><input type="radio" name="q19" value="A" /> A. Tryptophan</label
+    ><br />
+    <label><input type="radio" name="q19" value="B" /> B. Phenylalanine</label
+    ><br />
+    <label><input type="radio" name="q19" value="C" /> C. Tyrosine</label><br />
+    <label><input type="radio" name="q19" value="D" /> D. Histidine</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 20 -->
+    Which aromatic amino acid contains an indole functional group?
+    <br />
+    <span data-quiz="A" style="display: none">Tryptophan</span><br /><br />
+    <label><input type="radio" name="q20" value="A" /> A. Tryptophan</label
+    ><br />
+    <label><input type="radio" name="q20" value="B" /> B. Tyrosine</label><br />
+    <label><input type="radio" name="q20" value="C" /> C. Phenylalanine</label
+    ><br />
+    <label><input type="radio" name="q20" value="D" /> D. Histidine</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 21 -->
+    Which aromatic amino acid serves as a precursor to catecholamines such as
+    dopamine and epinephrine?
+    <br />
+    <span data-quiz="B" style="display: none">Tyrosine</span><br /><br />
+    <label><input type="radio" name="q21" value="A" /> A. Tryptophan</label
+    ><br />
+    <label><input type="radio" name="q21" value="B" /> B. Tyrosine</label><br />
+    <label><input type="radio" name="q21" value="C" /> C. Phenylalanine</label
+    ><br />
+    <label><input type="radio" name="q21" value="D" /> D. Histidine</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <h2>Polar and Charged Amino Acids</h2>
+
+    <!-- Question 22 -->
+    Which amino acid is polar, uncharged, and contains a hydroxyl group?
+    <br />
+    <span data-quiz="A" style="display: none">Serine</span><br /><br />
+    <label><input type="radio" name="q22" value="A" /> A. Serine</label><br />
+    <label><input type="radio" name="q22" value="B" /> B. Threonine</label
+    ><br />
+    <label><input type="radio" name="q22" value="C" /> C. Cysteine</label><br />
+    <label><input type="radio" name="q22" value="D" /> D. Tyrosine</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 23 -->
+    Which amino acid is polar, uncharged, and contains both a hydroxyl and
+    methyl group?
+    <br />
+    <span data-quiz="B" style="display: none">Threonine</span><br /><br />
+    <label><input type="radio" name="q23" value="A" /> A. Serine</label><br />
+    <label><input type="radio" name="q23" value="B" /> B. Threonine</label
+    ><br />
+    <label><input type="radio" name="q23" value="C" /> C. Tyrosine</label><br />
+    <label><input type="radio" name="q23" value="D" /> D. Glutamine</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 24 -->
+    Which amino acid is polar, uncharged, and forms disulfide bonds in protein
+    structure?
+    <br />
+    <span data-quiz="A" style="display: none">Cysteine</span><br /><br />
+    <label><input type="radio" name="q24" value="A" /> A. Cysteine</label><br />
+    <label><input type="radio" name="q24" value="B" /> B. Methionine</label
+    ><br />
+    <label><input type="radio" name="q24" value="C" /> C. Serine</label><br />
+    <label><input type="radio" name="q24" value="D" /> D. Asparagine</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 25 -->
+    Which amino acid is the amide derivative of aspartic acid?
+    <br />
+    <span data-quiz="A" style="display: none">Asparagine</span><br /><br />
+    <label><input type="radio" name="q25" value="A" /> A. Asparagine</label
+    ><br />
+    <label><input type="radio" name="q25" value="B" /> B. Glutamine</label
+    ><br />
+    <label><input type="radio" name="q25" value="C" /> C. Serine</label><br />
+    <label><input type="radio" name="q25" value="D" /> D. Glutamate</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 26 -->
+    Which amino acid is the amide derivative of glutamic acid?
+    <br />
+    <span data-quiz="A" style="display: none">Glutamine</span><br /><br />
+    <label><input type="radio" name="q26" value="A" /> A. Glutamine</label
+    ><br />
+    <label><input type="radio" name="q26" value="B" /> B. Asparagine</label
+    ><br />
+    <label><input type="radio" name="q26" value="C" /> C. Tyrosine</label><br />
+    <label><input type="radio" name="q26" value="D" /> D. Cysteine</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <h2>Charged Amino Acids</h2>
+
+    <!-- Question 27 -->
+    Which amino acid has a positively charged side chain at physiological pH and
+    a terminal amino group?
+    <br />
+    <span data-quiz="A" style="display: none">Lysine</span><br /><br />
+    <label><input type="radio" name="q27" value="A" /> A. Lysine</label><br />
+    <label><input type="radio" name="q27" value="B" /> B. Arginine</label><br />
+    <label><input type="radio" name="q27" value="C" /> C. Histidine</label
+    ><br />
+    <label><input type="radio" name="q27" value="D" /> D. Glutamate</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 28 -->
+    Which amino acid contains a guanidinium functional group?
+    <br />
+    <span data-quiz="A" style="display: none">Arginine</span><br /><br />
+    <label><input type="radio" name="q28" value="A" /> A. Arginine</label><br />
+    <label><input type="radio" name="q28" value="B" /> B. Lysine</label><br />
+    <label><input type="radio" name="q28" value="C" /> C. Histidine</label
+    ><br />
+    <label><input type="radio" name="q28" value="D" /> D. Serine</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 29 -->
+    Which amino acid contains an imidazole functional group capable of acting as
+    both an acid and base near physiological pH?
+    <br />
+    <span data-quiz="A" style="display: none">Histidine</span><br /><br />
+    <label><input type="radio" name="q29" value="A" /> A. Histidine</label
+    ><br />
+    <label><input type="radio" name="q29" value="B" /> B. Arginine</label><br />
+    <label><input type="radio" name="q29" value="C" /> C. Tyrosine</label><br />
+    <label><input type="radio" name="q29" value="D" /> D. Cysteine</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 30 -->
+    Which amino acid is negatively charged and structurally related to
+    asparagine?
+    <br />
+    <span data-quiz="A" style="display: none">Aspartate</span><br /><br />
+    <label><input type="radio" name="q30" value="A" /> A. Aspartate</label
+    ><br />
+    <label><input type="radio" name="q30" value="B" /> B. Glutamate</label
+    ><br />
+    <label><input type="radio" name="q30" value="C" /> C. Glutamine</label
+    ><br />
+    <label><input type="radio" name="q30" value="D" /> D. Serine</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 31 -->
+    Which amino acid is negatively charged and contains one additional methylene
+    group compared to aspartate?
+    <br />
+    <span data-quiz="A" style="display: none">Glutamate</span><br /><br />
+    <label><input type="radio" name="q31" value="A" /> A. Glutamate</label
+    ><br />
+    <label><input type="radio" name="q31" value="B" /> B. Aspartate</label
+    ><br />
+    <label><input type="radio" name="q31" value="C" /> C. Glutamine</label
+    ><br />
+    <label><input type="radio" name="q31" value="D" /> D. Histidine</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <h2>Protein Structure Levels</h2>
+
+    <!-- Question 32 -->
+    The primary structure of a protein refers to:
+    <br />
+    <span data-quiz="B" style="display: none"
+      >The sequence of amino acids linked by peptide bonds</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q32" value="A" /> A. Hydrogen bonding between
+      backbone atoms</label
+    ><br />
+    <label
+      ><input type="radio" name="q32" value="B" /> B. The sequence of amino
+      acids linked by peptide bonds</label
+    ><br />
+    <label
+      ><input type="radio" name="q32" value="C" /> C. The 3-D folding of a
+      polypeptide chain</label
+    ><br />
+    <label
+      ><input type="radio" name="q32" value="D" /> D. The arrangement of
+      multiple polypeptide subunits</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 33 -->
+    Which type of bond stabilizes the primary structure of a protein?
+    <br />
+    <span data-quiz="C" style="display: none">Peptide (covalent) bonds</span
+    ><br /><br />
+    <label><input type="radio" name="q33" value="A" /> A. Hydrogen bonds</label
+    ><br />
+    <label><input type="radio" name="q33" value="B" /> B. Ionic bonds</label
+    ><br />
+    <label
+      ><input type="radio" name="q33" value="C" /> C. Peptide (covalent)
+      bonds</label
+    ><br />
+    <label><input type="radio" name="q33" value="D" /> D. Disulfide bonds</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 34 -->
+    The secondary structure of a protein is primarily stabilized by:
+    <br />
+    <span data-quiz="A" style="display: none"
+      >Hydrogen bonding between backbone atoms</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q34" value="A" /> A. Hydrogen bonding between
+      backbone atoms</label
+    ><br />
+    <label
+      ><input type="radio" name="q34" value="B" /> B. Peptide bonds between
+      amino acids</label
+    ><br />
+    <label
+      ><input type="radio" name="q34" value="C" /> C. Disulfide linkages between
+      cysteines</label
+    ><br />
+    <label
+      ><input type="radio" name="q34" value="D" /> D. Hydrophobic interactions
+      among R groups</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 35 -->
+    α-helices and β-pleated sheets are examples of which protein structure
+    level?
+    <br />
+    <span data-quiz="B" style="display: none">Secondary</span><br /><br />
+    <label><input type="radio" name="q35" value="A" /> A. Primary</label><br />
+    <label><input type="radio" name="q35" value="B" /> B. Secondary</label
+    ><br />
+    <label><input type="radio" name="q35" value="C" /> C. Tertiary</label><br />
+    <label><input type="radio" name="q35" value="D" /> D. Quaternary</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 36 -->
+    The tertiary structure of a protein is stabilized by all of the following
+    EXCEPT:
+    <br />
+    <span data-quiz="B" style="display: none">Peptide bonds</span><br /><br />
+    <label
+      ><input type="radio" name="q36" value="A" /> A. Hydrophobic
+      interactions</label
+    ><br />
+    <label><input type="radio" name="q36" value="B" /> B. Peptide bonds</label
+    ><br />
+    <label><input type="radio" name="q36" value="C" /> C. Hydrogen bonds</label
+    ><br />
+    <label><input type="radio" name="q36" value="D" /> D. Disulfide bonds</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 37 -->
+    Which type of interaction is most responsible for the quaternary structure
+    of a protein?
+    <br />
+    <span data-quiz="B" style="display: none"
+      >Non-covalent interactions such as hydrophobic and ionic forces</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q37" value="A" /> A. Covalent bonding
+      only</label
+    ><br />
+    <label
+      ><input type="radio" name="q37" value="B" /> B. Non-covalent interactions
+      such as hydrophobic and ionic forces</label
+    ><br />
+    <label
+      ><input type="radio" name="q37" value="C" /> C. Hydrogen bonding
+      exclusively</label
+    ><br />
+    <label
+      ><input type="radio" name="q37" value="D" /> D. Peptide bonds between
+      chains</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 38 -->
+    Which of the following proteins exhibits quaternary structure?
+    <br />
+    <span data-quiz="B" style="display: none">Hemoglobin</span><br /><br />
+    <label><input type="radio" name="q38" value="A" /> A. Myoglobin</label
+    ><br />
+    <label><input type="radio" name="q38" value="B" /> B. Hemoglobin</label
+    ><br />
+    <label><input type="radio" name="q38" value="C" /> C. Insulin monomer</label
+    ><br />
+    <label
+      ><input type="radio" name="q38" value="D" /> D. A single polypeptide
+      enzyme</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <h2>Secondary Structure Details</h2>
+
+    <!-- Question 39 -->
+    α-helices are characterized by:
+    <br />
+    <span data-quiz="B" style="display: none"
+      >Clockwise coils around a central axis</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q39" value="A" /> A. Parallel or antiparallel
+      strands</label
+    ><br />
+    <label
+      ><input type="radio" name="q39" value="B" /> B. Clockwise coils around a
+      central axis</label
+    ><br />
+    <label
+      ><input type="radio" name="q39" value="C" /> C. Random coiling without
+      hydrogen bonds</label
+    ><br />
+    <label
+      ><input type="radio" name="q39" value="D" /> D. Rigid, planar peptide
+      bonds preventing coiling</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 40 -->
+    β-pleated sheets differ from α-helices because they:
+    <br />
+    <span data-quiz="B" style="display: none"
+      >Are formed from strands that can run parallel or antiparallel</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q40" value="A" /> A. Are stabilized by
+      disulfide bonds</label
+    ><br />
+    <label
+      ><input type="radio" name="q40" value="B" /> B. Are formed from strands
+      that can run parallel or antiparallel</label
+    ><br />
+    <label
+      ><input type="radio" name="q40" value="C" /> C. Contain only hydrophobic
+      amino acids</label
+    ><br />
+    <label
+      ><input type="radio" name="q40" value="D" /> D. Require proline at regular
+      intervals</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 41 -->
+    Why does proline often disrupt α-helices and β-sheets?
+    <br />
+    <span data-quiz="B" style="display: none"
+      >It introduces a kink due to its cyclic structure</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q41" value="A" /> A. It forms strong hydrogen
+      bonds</label
+    ><br />
+    <label
+      ><input type="radio" name="q41" value="B" /> B. It introduces a kink due
+      to its cyclic structure</label
+    ><br />
+    <label
+      ><input type="radio" name="q41" value="C" /> C. It is too polar to fit in
+      hydrophobic regions</label
+    ><br />
+    <label
+      ><input type="radio" name="q41" value="D" /> D. It carries a positive
+      charge at physiological pH</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <h2>Protein Bonds and Characteristics</h2>
+
+    <!-- Question 42 -->
+    Peptide bonds form between:
+    <br />
+    <span data-quiz="B" style="display: none"
+      >The α-carboxyl group of one amino acid and the α-amino group of
+      another</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q42" value="A" /> A. The R groups of adjacent
+      amino acids</label
+    ><br />
+    <label
+      ><input type="radio" name="q42" value="B" /> B. The α-carboxyl group of
+      one amino acid and the α-amino group of another</label
+    ><br />
+    <label
+      ><input type="radio" name="q42" value="C" /> C. The side chains of
+      hydrophobic amino acids</label
+    ><br />
+    <label
+      ><input type="radio" name="q42" value="D" /> D. Two hydroxyl groups</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 43 -->
+    Disulfide bonds form through:
+    <br />
+    <span data-quiz="B" style="display: none"
+      >Oxidation of two cysteine molecules to form cystine</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q43" value="A" /> A. Reduction of cysteine
+      residues</label
+    ><br />
+    <label
+      ><input type="radio" name="q43" value="B" /> B. Oxidation of two cysteine
+      molecules to form cystine</label
+    ><br />
+    <label
+      ><input type="radio" name="q43" value="C" /> C. Hydrogen bonding between
+      sulfur atoms</label
+    ><br />
+    <label
+      ><input type="radio" name="q43" value="D" /> D. Ionic attraction between
+      cysteines</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 44 -->
+    The hydrophobic effect primarily contributes to which level of protein
+    structure?
+    <br />
+    <span data-quiz="C" style="display: none">Tertiary</span><br /><br />
+    <label><input type="radio" name="q44" value="A" /> A. Primary</label><br />
+    <label><input type="radio" name="q44" value="B" /> B. Secondary</label
+    ><br />
+    <label><input type="radio" name="q44" value="C" /> C. Tertiary</label><br />
+    <label><input type="radio" name="q44" value="D" /> D. Quaternary</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 45 -->
+    What drives the hydrophobic effect in protein folding?
+    <br />
+    <span data-quiz="C" style="display: none"
+      >Increase in entropy of water molecules when hydrophobic residues
+      cluster</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q45" value="A" /> A. Attraction between polar
+      side chains</label
+    ><br />
+    <label
+      ><input type="radio" name="q45" value="B" /> B. Formation of covalent
+      bonds between nonpolar residues</label
+    ><br />
+    <label
+      ><input type="radio" name="q45" value="C" /> C. Increase in entropy of
+      water molecules when hydrophobic residues cluster</label
+    ><br />
+    <label
+      ><input type="radio" name="q45" value="D" /> D. Decrease in protein
+      entropy</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <h2>Denaturation</h2>
+
+    <!-- Question 46 -->
+    Denaturation of a protein results in the loss of which structural levels?
+    <br />
+    <span data-quiz="B" style="display: none">2°, 3°, and 4°</span><br /><br />
+    <label><input type="radio" name="q46" value="A" /> A. Only 4°</label><br />
+    <label><input type="radio" name="q46" value="B" /> B. 2°, 3°, and 4°</label
+    ><br />
+    <label><input type="radio" name="q46" value="C" /> C. 1° and 2°</label
+    ><br />
+    <label><input type="radio" name="q46" value="D" /> D. All levels</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 47 -->
+    Which bonds typically remain intact after denaturation?
+    <br />
+    <span data-quiz="C" style="display: none">Peptide bonds</span><br /><br />
+    <label><input type="radio" name="q47" value="A" /> A. Hydrogen bonds</label
+    ><br />
+    <label><input type="radio" name="q47" value="B" /> B. Ionic bonds</label
+    ><br />
+    <label><input type="radio" name="q47" value="C" /> C. Peptide bonds</label
+    ><br />
+    <label><input type="radio" name="q47" value="D" /> D. Disulfide bonds</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <h2>Complex and Conjugated Proteins</h2>
+
+    <!-- Question 48 -->
+    A conjugated protein is best described as:
+    <br />
+    <span data-quiz="B" style="display: none"
+      >A protein that includes a non-protein component</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q48" value="A" /> A. A protein composed only of
+      amino acids</label
+    ><br />
+    <label
+      ><input type="radio" name="q48" value="B" /> B. A protein that includes a
+      non-protein component</label
+    ><br />
+    <label
+      ><input type="radio" name="q48" value="C" /> C. A denatured polypeptide
+      chain</label
+    ><br />
+    <label
+      ><input type="radio" name="q48" value="D" /> D. A protein with only
+      quaternary structure</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 49 -->
+    The prosthetic group of a conjugated protein is:
+    <br />
+    <span data-quiz="B" style="display: none"
+      >The non-amino acid component, such as a metal ion or vitamin</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q49" value="A" /> A. Always a
+      carbohydrate</label
+    ><br />
+    <label
+      ><input type="radio" name="q49" value="B" /> B. The non-amino acid
+      component, such as a metal ion or vitamin</label
+    ><br />
+    <label
+      ><input type="radio" name="q49" value="C" /> C. The peptide backbone of
+      the protein</label
+    ><br />
+    <label
+      ><input type="radio" name="q49" value="D" /> D. Formed by peptide bond
+      condensation</label
+    ><br /><br />
+
+    <h2>Enzyme Structure & Action Theories</h2>
+
+    <!-- Question 50 -->
+    What is the active site of an enzyme?
+    <br />
+    <span data-quiz="C" style="display: none"
+      >The region where catalysis occurs</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q50" value="A" /> A. The site where cofactors
+      bind</label
+    ><br />
+    <label
+      ><input type="radio" name="q50" value="B" /> B. The location of regulatory
+      molecules</label
+    ><br />
+    <label
+      ><input type="radio" name="q50" value="C" /> C. The region where catalysis
+      occurs</label
+    ><br />
+    <label
+      ><input type="radio" name="q50" value="D" /> D. The part that binds
+      irreversibly to substrates</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 51 -->
+    The lock and key model assumes:
+    <br />
+    <span data-quiz="B" style="display: none"
+      >Enzyme and substrate have a perfect fit from the start</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q51" value="A" /> A. Enzyme undergoes major
+      conformational changes upon substrate binding</label
+    ><br />
+    <label
+      ><input type="radio" name="q51" value="B" /> B. Enzyme and substrate have
+      a perfect fit from the start</label
+    ><br />
+    <label
+      ><input type="radio" name="q51" value="C" /> C. Enzyme is permanently
+      altered by the substrate</label
+    ><br />
+    <label
+      ><input type="radio" name="q51" value="D" /> D. Allosteric sites are used
+      for catalysis</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 52 -->
+    According to the induced fit model:
+    <br />
+    <span data-quiz="C" style="display: none"
+      >Enzyme and substrate change shape to better interact</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q52" value="A" /> A. Enzymes are rigid
+      structures</label
+    ><br />
+    <label
+      ><input type="radio" name="q52" value="B" /> B. Substrate binds
+      irreversibly</label
+    ><br />
+    <label
+      ><input type="radio" name="q52" value="C" /> C. Enzyme and substrate
+      change shape to better interact</label
+    ><br />
+    <label
+      ><input type="radio" name="q52" value="D" /> D. Catalysis only occurs
+      after full saturation</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 53 -->
+    Which model is more accurate in explaining enzyme-substrate interactions?
+    <br />
+    <span data-quiz="B" style="display: none">Induced Fit</span><br /><br />
+    <label><input type="radio" name="q53" value="A" /> A. Lock and Key</label
+    ><br />
+    <label><input type="radio" name="q53" value="B" /> B. Induced Fit</label
+    ><br />
+    <label
+      ><input type="radio" name="q53" value="C" /> C. Allosteric Binding</label
+    ><br />
+    <label
+      ><input type="radio" name="q53" value="D" /> D. Covalent Catalysis</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 54 -->
+    Which of the following best explains why the induced fit model is preferred?
+    <br />
+    <span data-quiz="C" style="display: none"
+      >It accounts for conformational changes</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q54" value="A" /> A. It supports random
+      binding</label
+    ><br />
+    <label
+      ><input type="radio" name="q54" value="B" /> B. It explains enzyme
+      reuse</label
+    ><br />
+    <label
+      ><input type="radio" name="q54" value="C" /> C. It accounts for
+      conformational changes</label
+    ><br />
+    <label
+      ><input type="radio" name="q54" value="D" /> D. It includes cofactor
+      involvement</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <h2>Enzyme Cofactors & Coenzymes</h2>
+
+    <!-- Question 55 -->
+    What is a cofactor?
+    <br />
+    <span data-quiz="C" style="display: none"
+      >A required metal ion for enzyme function</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q55" value="A" /> A. A competitive
+      inhibitor</label
+    ><br />
+    <label
+      ><input type="radio" name="q55" value="B" /> B. An enzyme-substrate
+      complex</label
+    ><br />
+    <label
+      ><input type="radio" name="q55" value="C" /> C. A required metal ion for
+      enzyme function</label
+    ><br />
+    <label
+      ><input type="radio" name="q55" value="D" /> D. A secondary active
+      site</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 56 -->
+    A coenzyme differs from a cofactor because it is:
+    <br />
+    <span data-quiz="C" style="display: none"
+      >An organic molecule required for enzyme activity</span
+    ><br /><br />
+    <label><input type="radio" name="q56" value="A" /> A. A protein</label
+    ><br />
+    <label
+      ><input type="radio" name="q56" value="B" /> B. An inorganic ion</label
+    ><br />
+    <label
+      ><input type="radio" name="q56" value="C" /> C. An organic molecule
+      required for enzyme activity</label
+    ><br />
+    <label
+      ><input type="radio" name="q56" value="D" /> D. A lipid-based
+      molecule</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <h2>Enzyme Kinetics</h2>
+
+    <!-- Question 57 -->
+    What is V<sub>max</sub>?
+    <br />
+    <span data-quiz="B" style="display: none"
+      >The rate when all enzyme active sites are saturated</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q57" value="A" /> A. The rate when no substrate
+      is present</label
+    ><br />
+    <label
+      ><input type="radio" name="q57" value="B" /> B. The rate when all enzyme
+      active sites are saturated</label
+    ><br />
+    <label
+      ><input type="radio" name="q57" value="C" /> C. The minimum rate of
+      reaction</label
+    ><br />
+    <label
+      ><input type="radio" name="q57" value="D" /> D. The concentration of
+      enzyme</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 58 -->
+    The Michaelis-Menten equation is:
+    <br />
+    <span data-quiz="C" style="display: none"
+      >V = (V<sub>max</sub> × [S]) / (K<sub>m</sub> + [S])</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q58" value="A" /> A. V = V<sub>max</sub> ×
+      K<sub>m</sub> / [S]</label
+    ><br />
+    <label
+      ><input type="radio" name="q58" value="B" /> B. V = [S] / (K<sub>m</sub> +
+      V<sub>max</sub>)</label
+    ><br />
+    <label
+      ><input type="radio" name="q58" value="C" /> C. V = (V<sub>max</sub> ×
+      [S]) / (K<sub>m</sub> + [S])</label
+    ><br />
+    <label
+      ><input type="radio" name="q58" value="D" /> D. V = (K<sub>m</sub> × [S])
+      / (V<sub>max</sub> + [S])</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 59 -->
+    What is the effect of cooperative binding on a rate vs. [S] graph?
+    <br />
+    <span data-quiz="C" style="display: none">Sigmoidal curve</span><br /><br />
+    <label><input type="radio" name="q59" value="A" /> A. Linear curve</label
+    ><br />
+    <label
+      ><input type="radio" name="q59" value="B" /> B. Hyperbolic curve</label
+    ><br />
+    <label><input type="radio" name="q59" value="C" /> C. Sigmoidal curve</label
+    ><br />
+    <label><input type="radio" name="q59" value="D" /> D. Inverse curve</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 60 -->
+    Which type of enzyme usually displays cooperativity?
+    <br />
+    <span data-quiz="B" style="display: none">Allosteric</span><br /><br />
+    <label><input type="radio" name="q60" value="A" /> A. Competitive</label
+    ><br />
+    <label><input type="radio" name="q60" value="B" /> B. Allosteric</label
+    ><br />
+    <label><input type="radio" name="q60" value="C" /> C. Ligase</label><br />
+    <label><input type="radio" name="q60" value="D" /> D. Transferase</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 61 -->
+    Cooperative binding means:
+    <br />
+    <span data-quiz="B" style="display: none"
+      >Binding of one substrate increases affinity for others</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q61" value="A" /> A. All active sites bind
+      substrate simultaneously</label
+    ><br />
+    <label
+      ><input type="radio" name="q61" value="B" /> B. Binding of one substrate
+      increases affinity for others</label
+    ><br />
+    <label
+      ><input type="radio" name="q61" value="C" /> C. Binding is purely
+      random</label
+    ><br />
+    <label
+      ><input type="radio" name="q61" value="D" /> D. The enzyme only works with
+      cofactors</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 62 -->
+    When substrate concentration is equal to K<sub>m</sub>, the rate of the
+    reaction is:
+    <br />
+    <span data-quiz="B" style="display: none">Half of V<sub>max</sub></span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q62" value="A" /> A. Equal to V<sub
+        >max</sub
+      ></label
+    ><br />
+    <label
+      ><input type="radio" name="q62" value="B" /> B. Half of V<sub
+        >max</sub
+      ></label
+    ><br />
+    <label><input type="radio" name="q62" value="C" /> C. Zero</label><br />
+    <label
+      ><input type="radio" name="q62" value="D" /> D. Dependent on enzyme
+      concentration</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 63 -->
+    Which plot helps distinguish different types of inhibition?
+    <br />
+    <span data-quiz="B" style="display: none">Lineweaver-Burk plot</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q63" value="A" /> A. Michaelis-Menten
+      plot</label
+    ><br />
+    <label
+      ><input type="radio" name="q63" value="B" /> B. Lineweaver-Burk
+      plot</label
+    ><br />
+    <label><input type="radio" name="q63" value="C" /> C. Sigmoid curve</label
+    ><br />
+    <label><input type="radio" name="q63" value="D" /> D. Bar graph</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <h2>Enzyme Inhibition & Regulation</h2>
+
+    <!-- Question 64 -->
+    Allosteric effectors bind:
+    <br />
+    <span data-quiz="C" style="display: none"
+      >At a different site than the active site</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q64" value="A" /> A. At the active site</label
+    ><br />
+    <label
+      ><input type="radio" name="q64" value="B" /> B. At the coenzyme
+      pocket</label
+    ><br />
+    <label
+      ><input type="radio" name="q64" value="C" /> C. At a different site than
+      the active site</label
+    ><br />
+    <label
+      ><input type="radio" name="q64" value="D" /> D. Covalently to the
+      substrate</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 65 -->
+    A positive allosteric effector:
+    <br />
+    <span data-quiz="C" style="display: none">Increases enzyme activity</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q65" value="A" /> A. Decreases enzyme
+      activity</label
+    ><br />
+    <label
+      ><input type="radio" name="q65" value="B" /> B. Prevents substrate
+      binding</label
+    ><br />
+    <label
+      ><input type="radio" name="q65" value="C" /> C. Increases enzyme
+      activity</label
+    ><br />
+    <label
+      ><input type="radio" name="q65" value="D" /> D. Acts as a competitive
+      inhibitor</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 66 -->
+    A homotropic effector is:
+    <br />
+    <span data-quiz="C" style="display: none"
+      >The substrate itself acting as an allosteric regulator</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q66" value="A" /> A. An enzyme cofactor</label
+    ><br />
+    <label
+      ><input type="radio" name="q66" value="B" /> B. A different molecule from
+      the substrate</label
+    ><br />
+    <label
+      ><input type="radio" name="q66" value="C" /> C. The substrate itself
+      acting as an allosteric regulator</label
+    ><br />
+    <label
+      ><input type="radio" name="q66" value="D" /> D. An irreversible
+      inhibitor</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 67 -->
+    What is feedback inhibition?
+    <br />
+    <span data-quiz="C" style="display: none"
+      >Inhibition of an enzyme by a product of the same pathway</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q67" value="A" /> A. Activation of the first
+      enzyme by a product</label
+    ><br />
+    <label
+      ><input type="radio" name="q67" value="B" /> B. Inhibition of an enzyme by
+      its own substrate</label
+    ><br />
+    <label
+      ><input type="radio" name="q67" value="C" /> C. Inhibition of an enzyme by
+      a product of the same pathway</label
+    ><br />
+    <label
+      ><input type="radio" name="q67" value="D" /> D. Inhibition caused by
+      excess enzymes</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 68 -->
+    In competitive inhibition, the inhibitor binds:
+    <br />
+    <span data-quiz="C" style="display: none">To the active site</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q68" value="A" /> A. To the allosteric
+      site</label
+    ><br />
+    <label
+      ><input type="radio" name="q68" value="B" /> B. To the enzyme-substrate
+      complex</label
+    ><br />
+    <label
+      ><input type="radio" name="q68" value="C" /> C. To the active site</label
+    ><br />
+    <label
+      ><input type="radio" name="q68" value="D" /> D. Covalently to the
+      product</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 69 -->
+    How does competitive inhibition affect V<sub>max</sub> and K<sub>m</sub>?
+    <br />
+    <span data-quiz="B" style="display: none"
+      >No change in V<sub>max</sub>, ↑ K<sub>m</sub></span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q69" value="A" /> A. ↓ V<sub>max</sub>, ↓ K<sub
+        >m</sub
+      ></label
+    ><br />
+    <label
+      ><input type="radio" name="q69" value="B" /> B. No change in
+      V<sub>max</sub>, ↑ K<sub>m</sub></label
+    ><br />
+    <label
+      ><input type="radio" name="q69" value="C" /> C. ↓ V<sub>max</sub>, no
+      change in K<sub>m</sub></label
+    ><br />
+    <label><input type="radio" name="q69" value="D" /> D. Both increase</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 70 -->
+    What is true about uncompetitive inhibition?
+    <br />
+    <span data-quiz="C" style="display: none"
+      >It decreases both V<sub>max</sub> and K<sub>m</sub></span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q70" value="A" /> A. It increases both V<sub
+        >max</sub
+      >
+      and K<sub>m</sub></label
+    ><br />
+    <label
+      ><input type="radio" name="q70" value="B" /> B. It has no effect on
+      kinetics</label
+    ><br />
+    <label
+      ><input type="radio" name="q70" value="C" /> C. It decreases both V<sub
+        >max</sub
+      >
+      and K<sub>m</sub></label
+    ><br />
+    <label
+      ><input type="radio" name="q70" value="D" /> D. It can be reversed by more
+      substrate</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 71 -->
+    In noncompetitive inhibition, what is the effect on enzyme kinetics?
+    <br />
+    <span data-quiz="B" style="display: none"
+      >K<sub>m</sub> stays the same, V<sub>max</sub> decreases</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q71" value="A" /> A. K<sub>m</sub> increases,
+      V<sub>max</sub> stays the same</label
+    ><br />
+    <label
+      ><input type="radio" name="q71" value="B" /> B. K<sub>m</sub> stays the
+      same, V<sub>max</sub> decreases</label
+    ><br />
+    <label><input type="radio" name="q71" value="C" /> C. Both decrease</label
+    ><br />
+    <label
+      ><input type="radio" name="q71" value="D" /> D. No changes occur</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 72 -->
+    Which type of inhibitor cannot be overcome by adding more substrate?
+    <br />
+    <span data-quiz="C" style="display: none">Noncompetitive</span><br /><br />
+    <label><input type="radio" name="q72" value="A" /> A. Competitive</label
+    ><br />
+    <label><input type="radio" name="q72" value="B" /> B. Reversible</label
+    ><br />
+    <label><input type="radio" name="q72" value="C" /> C. Noncompetitive</label
+    ><br />
+    <label><input type="radio" name="q72" value="D" /> D. Weak inhibitor</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 73 -->
+    What defines suicide inhibition?
+    <br />
+    <span data-quiz="B" style="display: none"
+      >Substrate analog forms an irreversible complex</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q73" value="A" /> A. Reversible binding to
+      active site</label
+    ><br />
+    <label
+      ><input type="radio" name="q73" value="B" /> B. Substrate analog forms an
+      irreversible complex</label
+    ><br />
+    <label
+      ><input type="radio" name="q73" value="C" /> C. Inhibitor binds
+      enzyme-substrate complex</label
+    ><br />
+    <label
+      ><input type="radio" name="q73" value="D" /> D. Product binds the active
+      site</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 74 -->
+    A Lineweaver-Burk plot with lines intersecting on the Y-axis indicates:
+    <br />
+    <span data-quiz="A" style="display: none">Competitive inhibition</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q74" value="A" /> A. Competitive
+      inhibition</label
+    ><br />
+    <label
+      ><input type="radio" name="q74" value="B" /> B. Noncompetitive
+      inhibition</label
+    ><br />
+    <label
+      ><input type="radio" name="q74" value="C" /> C. Uncompetitive
+      inhibition</label
+    ><br />
+    <label
+      ><input type="radio" name="q74" value="D" /> D. Irreversible
+      inhibition</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <h2>Carbohydrates & Stereochemistry</h2>
+
+    <!-- Question 75 -->
+    What is the general formula for a carbohydrate?
+    <br />
+    <span data-quiz="B" style="display: none"
+      >C<sub>m</sub>(H<sub>2</sub>O)<sub>n</sub></span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q75" value="A" /> A.
+      C<sub>n</sub>H<sub>n</sub>O<sub>n</sub></label
+    ><br />
+    <label
+      ><input type="radio" name="q75" value="B" /> B.
+      C<sub>m</sub>(H<sub>2</sub>O)<sub>n</sub></label
+    ><br />
+    <label
+      ><input type="radio" name="q75" value="C" /> C.
+      C<sub>n</sub>H<sub>2n+1</sub>O<sub>n</sub></label
+    ><br />
+    <label
+      ><input type="radio" name="q75" value="D" /> D.
+      C<sub>n</sub>H<sub>2n</sub>O<sub>2n</sub></label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 76 -->
+    Natural carbohydrates are usually in which configuration?
+    <br />
+    <span data-quiz="B" style="display: none">D</span><br /><br />
+    <label><input type="radio" name="q76" value="A" /> A. L</label><br />
+    <label><input type="radio" name="q76" value="B" /> B. D</label><br />
+    <label><input type="radio" name="q76" value="C" /> C. R</label><br />
+    <label><input type="radio" name="q76" value="D" /> D. S</label><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 77 -->
+    Enantiomers are:
+    <br />
+    <span data-quiz="C" style="display: none"
+      >Non-superimposable mirror images</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q77" value="A" /> A. Identical isomers with
+      different chemical formulas</label
+    ><br />
+    <label
+      ><input type="radio" name="q77" value="B" /> B. Superimposable mirror
+      images</label
+    ><br />
+    <label
+      ><input type="radio" name="q77" value="C" /> C. Non-superimposable mirror
+      images</label
+    ><br />
+    <label
+      ><input type="radio" name="q77" value="D" /> D. Isomers that differ at two
+      or more carbons</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 78 -->
+    Epimers differ at:
+    <br />
+    <span data-quiz="B" style="display: none">Only one chiral carbon</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q78" value="A" /> A. Every carbon atom</label
+    ><br />
+    <label
+      ><input type="radio" name="q78" value="B" /> B. Only one chiral
+      carbon</label
+    ><br />
+    <label
+      ><input type="radio" name="q78" value="C" /> C. The carbonyl group</label
+    ><br />
+    <label
+      ><input type="radio" name="q78" value="D" /> D. The anomeric carbon
+      only</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 79 -->
+    Anomers are a subtype of epimers that differ at which carbon?
+    <br />
+    <span data-quiz="C" style="display: none">The anomeric carbon (C-1)</span
+    ><br /><br />
+    <label><input type="radio" name="q79" value="A" /> A. C-2</label><br />
+    <label><input type="radio" name="q79" value="B" /> B. C-3</label><br />
+    <label
+      ><input type="radio" name="q79" value="C" /> C. The anomeric carbon
+      (C-1)</label
+    ><br />
+    <label
+      ><input type="radio" name="q79" value="D" /> D. The highest-numbered
+      carbon</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 80 -->
+    Which of the following pairs of monosaccharides are epimers?
+    <br />
+    <span data-quiz="B" style="display: none">D-glucose and D-galactose</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q80" value="A" /> A. D-glucose and
+      D-fructose</label
+    ><br />
+    <label
+      ><input type="radio" name="q80" value="B" /> B. D-glucose and
+      D-galactose</label
+    ><br />
+    <label
+      ><input type="radio" name="q80" value="C" /> C. D-fructose and
+      D-ribose</label
+    ><br />
+    <label
+      ><input type="radio" name="q80" value="D" /> D. D-glucose and
+      L-glucose</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <h2>Biological Molecules & Processes</h2>
+
+    <!-- Question 81 -->
+    What is glycosylation?
+    <br />
+    <span data-quiz="C" style="display: none"
+      >Addition of a carbohydrate to a molecule</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q81" value="A" /> A. Cleavage of peptide
+      bonds</label
+    ><br />
+    <label
+      ><input type="radio" name="q81" value="B" /> B. Addition of a metal
+      cofactor</label
+    ><br />
+    <label
+      ><input type="radio" name="q81" value="C" /> C. Addition of a carbohydrate
+      to a molecule</label
+    ><br />
+    <label
+      ><input type="radio" name="q81" value="D" /> D. Removal of a phosphate
+      group</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 82 -->
+    What is a zymogen?
+    <br />
+    <span data-quiz="A" style="display: none"
+      >An inactive form of an enzyme that requires activation</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q82" value="A" /> A. An inactive form of an
+      enzyme that requires activation</label
+    ><br />
+    <label
+      ><input type="radio" name="q82" value="B" /> B. A cofactor that activates
+      enzymes</label
+    ><br />
+    <label
+      ><input type="radio" name="q82" value="C" /> C. A carbohydrate-bound
+      enzyme</label
+    ><br />
+    <label
+      ><input type="radio" name="q82" value="D" /> D. A mutated form of an
+      enzyme</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 83 -->
+    In the Michaelis-Menten scheme, what does K₂ represent?
+    <br />
+    <span data-quiz="C" style="display: none"
+      >Catalytic rate / rate-limiting step</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q83" value="A" /> A. Enzyme binding
+      constant</label
+    ><br />
+    <label
+      ><input type="radio" name="q83" value="B" /> B. Enzyme inhibition
+      constant</label
+    ><br />
+    <label
+      ><input type="radio" name="q83" value="C" /> C. Catalytic rate /
+      rate-limiting step</label
+    ><br />
+    <label
+      ><input type="radio" name="q83" value="D" /> D. Cofactor dissociation
+      rate</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 84 -->
+    What does the enzyme-substrate complex (ES) represent in the
+    Michaelis-Menten equation?
+    <br />
+    <span data-quiz="C" style="display: none"
+      >A temporary complex that can form product</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q84" value="A" /> A. An irreversible
+      product</label
+    ><br />
+    <label
+      ><input type="radio" name="q84" value="B" /> B. A stable waste
+      molecule</label
+    ><br />
+    <label
+      ><input type="radio" name="q84" value="C" /> C. A temporary complex that
+      can form product</label
+    ><br />
+    <label
+      ><input type="radio" name="q84" value="D" /> D. An enzyme inhibitor</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 85 -->
+    Which step in the Michaelis-Menten equation is rate-limiting?
+    <br />
+    <span data-quiz="B" style="display: none">ES → E + P</span><br /><br />
+    <label><input type="radio" name="q85" value="A" /> A. E + S ⇌ ES</label
+    ><br />
+    <label><input type="radio" name="q85" value="B" /> B. ES → E + P</label
+    ><br />
+    <label><input type="radio" name="q85" value="C" /> C. E + P → ES</label
+    ><br />
+    <label><input type="radio" name="q85" value="D" /> D. ES → E + S</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 86 -->
+    What happens to the enzyme after the product is released?
+    <br />
+    <span data-quiz="C" style="display: none">It is reused in the reaction</span
+    ><br /><br />
+    <label><input type="radio" name="q86" value="A" /> A. It is degraded</label
+    ><br />
+    <label
+      ><input type="radio" name="q86" value="B" /> B. It remains bound to the
+      product</label
+    ><br />
+    <label
+      ><input type="radio" name="q86" value="C" /> C. It is reused in the
+      reaction</label
+    ><br />
+    <label
+      ><input type="radio" name="q86" value="D" /> D. It binds a coenzyme
+      permanently</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <h2>Protein Structure & Function</h2>
+
+    <!-- Question 87 -->
+    Which protein is a major component of the extracellular matrix?
+    <br />
+    <span data-quiz="B" style="display: none">Collagen</span><br /><br />
+    <label><input type="radio" name="q87" value="A" /> A. Myosin</label><br />
+    <label><input type="radio" name="q87" value="B" /> B. Collagen</label><br />
+    <label><input type="radio" name="q87" value="C" /> C. Kinesin</label><br />
+    <label><input type="radio" name="q87" value="D" /> D. Albumin</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 88 -->
+    Which protein is responsible for elasticity in connective tissues?
+    <br />
+    <span data-quiz="C" style="display: none">Elastin</span><br /><br />
+    <label><input type="radio" name="q88" value="A" /> A. Actin</label><br />
+    <label><input type="radio" name="q88" value="B" /> B. Keratin</label><br />
+    <label><input type="radio" name="q88" value="C" /> C. Elastin</label><br />
+    <label><input type="radio" name="q88" value="D" /> D. Tubulin</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 89 -->
+    Motor proteins convert:
+    <br />
+    <span data-quiz="B" style="display: none"
+      >Chemical energy into mechanical work</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q89" value="A" /> A. Mechanical energy into
+      chemical energy</label
+    ><br />
+    <label
+      ><input type="radio" name="q89" value="B" /> B. Chemical energy into
+      mechanical work</label
+    ><br />
+    <label
+      ><input type="radio" name="q89" value="C" /> C. Glucose into ATP</label
+    ><br />
+    <label
+      ><input type="radio" name="q89" value="D" /> D. Heat into chemical
+      energy</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 90 -->
+    Which motor protein is involved in muscle contraction?
+    <br />
+    <span data-quiz="C" style="display: none">Myosin</span><br /><br />
+    <label><input type="radio" name="q90" value="A" /> A. Kinesin</label><br />
+    <label><input type="radio" name="q90" value="B" /> B. Dynein</label><br />
+    <label><input type="radio" name="q90" value="C" /> C. Myosin</label><br />
+    <label><input type="radio" name="q90" value="D" /> D. Tubulin</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 91 -->
+    Kinesin typically moves along:
+    <br />
+    <span data-quiz="B" style="display: none"
+      >Microtubules toward the plus end</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q91" value="A" /> A. Actin filaments toward the
+      minus end</label
+    ><br />
+    <label
+      ><input type="radio" name="q91" value="B" /> B. Microtubules toward the
+      plus end</label
+    ><br />
+    <label><input type="radio" name="q91" value="C" /> C. Keratin fibers</label
+    ><br />
+    <label
+      ><input type="radio" name="q91" value="D" /> D. Collagen fibrils</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 92 -->
+    Binding proteins serve what primary role?
+    <br />
+    <span data-quiz="B" style="display: none">Join two or more molecules</span
+    ><br /><br />
+    <label><input type="radio" name="q92" value="A" /> A. Hydrolyze ATP</label
+    ><br />
+    <label
+      ><input type="radio" name="q92" value="B" /> B. Join two or more
+      molecules</label
+    ><br />
+    <label
+      ><input type="radio" name="q92" value="C" /> C. Activate zymogens</label
+    ><br />
+    <label
+      ><input type="radio" name="q92" value="D" /> D. Break down proteins</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 93 -->
+    What type of cell adhesion molecule requires calcium and connects similar
+    cells?
+    <br />
+    <span data-quiz="C" style="display: none">Cadherin</span><br /><br />
+    <label><input type="radio" name="q93" value="A" /> A. Integrin</label><br />
+    <label><input type="radio" name="q93" value="B" /> B. Selectin</label><br />
+    <label><input type="radio" name="q93" value="C" /> C. Cadherin</label><br />
+    <label><input type="radio" name="q93" value="D" /> D. Albumin</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 94 -->
+    Which CAM allows cells to bind to carbohydrates on other cells, especially
+    in immune function?
+    <br />
+    <span data-quiz="A" style="display: none">Selectin</span><br /><br />
+    <label><input type="radio" name="q94" value="A" /> A. Selectin</label><br />
+    <label><input type="radio" name="q94" value="B" /> B. Integrin</label><br />
+    <label><input type="radio" name="q94" value="C" /> C. Cadherin</label><br />
+    <label><input type="radio" name="q94" value="D" /> D. Keratin</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <h2>Biosignaling & Ion Channels</h2>
+
+    <!-- Question 95 -->
+    Which type of ion channel is always open?
+    <br />
+    <span data-quiz="C" style="display: none">Ungated</span><br /><br />
+    <label><input type="radio" name="q95" value="A" /> A. Voltage-gated</label
+    ><br />
+    <label><input type="radio" name="q95" value="B" /> B. Ligand-gated</label
+    ><br />
+    <label><input type="radio" name="q95" value="C" /> C. Ungated</label><br />
+    <label
+      ><input type="radio" name="q95" value="D" /> D. Second messenger
+      gated</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 96 -->
+    Voltage-gated channels respond to:
+    <br />
+    <span data-quiz="C" style="display: none">Membrane potential changes</span
+    ><br /><br />
+    <label><input type="radio" name="q96" value="A" /> A. Ligand binding</label
+    ><br />
+    <label><input type="radio" name="q96" value="B" /> B. Hormones</label><br />
+    <label
+      ><input type="radio" name="q96" value="C" /> C. Membrane potential
+      changes</label
+    ><br />
+    <label><input type="radio" name="q96" value="D" /> D. Presence of ATP</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 97 -->
+    Ligand-gated ion channels open when:
+    <br />
+    <span data-quiz="B" style="display: none">A specific molecule binds</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q97" value="A" /> A. Membrane potential is
+      high</label
+    ><br />
+    <label
+      ><input type="radio" name="q97" value="B" /> B. A specific molecule
+      binds</label
+    ><br />
+    <label
+      ><input type="radio" name="q97" value="C" /> C. ATP is hydrolyzed</label
+    ><br />
+    <label
+      ><input type="radio" name="q97" value="D" /> D. Temperature
+      increases</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 98 -->
+    Which receptor type initiates second messenger cascades?
+    <br />
+    <span data-quiz="B" style="display: none">Enzyme-linked receptor</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q98" value="A" /> A. Ligand-gated
+      channel</label
+    ><br />
+    <label
+      ><input type="radio" name="q98" value="B" /> B. Enzyme-linked
+      receptor</label
+    ><br />
+    <label
+      ><input type="radio" name="q98" value="C" /> C. Voltage-gated
+      channel</label
+    ><br />
+    <label><input type="radio" name="q98" value="D" /> D. Ion pump</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 99 -->
+    What do GPCRs (G protein-coupled receptors) detect?
+    <br />
+    <span data-quiz="C" style="display: none"
+      >External molecules triggering intracellular pathways</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q99" value="A" /> A. Only light stimuli</label
+    ><br />
+    <label><input type="radio" name="q99" value="B" /> B. Only ions</label
+    ><br />
+    <label
+      ><input type="radio" name="q99" value="C" /> C. External molecules
+      triggering intracellular pathways</label
+    ><br />
+    <label
+      ><input type="radio" name="q99" value="D" /> D. Carbohydrate
+      polymers</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 100 -->
+    In GPCR signaling, the first messenger is:
+    <br />
+    <span data-quiz="C" style="display: none">The extracellular ligand</span
+    ><br /><br />
+    <label><input type="radio" name="q100" value="A" /> A. ATP</label><br />
+    <label
+      ><input type="radio" name="q100" value="B" /> B. The intracellular
+      signaling molecule</label
+    ><br />
+    <label
+      ><input type="radio" name="q100" value="C" /> C. The extracellular
+      ligand</label
+    ><br />
+    <label
+      ><input type="radio" name="q100" value="D" /> D. The enzyme-linked
+      protein</label
+    ><br /><br />
+
+    <script src="test.js"></script>
+    <script src="sidebar.js"></script>
+  </body>
+</html>
