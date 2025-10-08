@@ -1,134 +1,17 @@
 let mcScore = 0;
 let totalMCQuestions = 0;
 let answeredQuestions = new Set();
-const PAGE_ID = window.location.pathname.split("/").pop().replace(".html", "");
+const PAGE_ID = window.location.pathname
+  .split("/")
+  .pop()
+  .replace(".html", "");
 
-// Firebase-only save/load functions
-async function saveMCProgress() {
-  const progress = {
-    score: mcScore,
-    answeredQuestions: Array.from(answeredQuestions),
-    timestamp: Date.now(),
-    totalQuestions: totalMCQuestions,
-    pageId: PAGE_ID
-  };
-  
-  if (window.currentUser && window.saveQuizData) {
-    await window.saveQuizData(`multiplechoice_${PAGE_ID}`, progress);
-    console.log('MC progress saved to Firebase');
-  } else {
-    console.log('No user authenticated - MC progress not saved');
-  }
-}
-
-async function loadMCProgress() {
-  if (!window.currentUser || !window.loadQuizData) {
-    console.log('No user authenticated - cannot load MC progress');
-    return;
-  }
-
-  try {
-    const progress = await window.loadQuizData(`multiplechoice_${PAGE_ID}`);
-    const correctnessData = await window.loadQuizData(`correctness_${PAGE_ID}`) || {};
-    
-    if (progress && Object.keys(progress).length > 0) {
-      mcScore = progress.score || 0;
-      answeredQuestions = new Set(progress.answeredQuestions || []);
-      updateScoreDisplay();
-      
-      // Restore visual state for answered questions
-      answeredQuestions.forEach(questionId => {
-        const groupName = questionId;
-        const wasCorrect = correctnessData[questionId] === true;
-        const correctAnswer = getCorrectAnswerForGroup(groupName);
-        
-        if (correctAnswer) {
-          restoreQuestionState(groupName, correctAnswer, wasCorrect);
-        }
-      });
-      
-      console.log('MC progress loaded from Firebase');
-    }
-  } catch (error) {
-    console.error('Failed to load MC progress:', error);
-  }
-}
-
-async function storeAnswerCorrectness(questionId, isCorrect) {
-  if (!window.currentUser || !window.saveQuizData) {
-    console.log('No user authenticated - correctness not saved');
-    return;
-  }
-
-  try {
-    const existing = await window.loadQuizData(`correctness_${PAGE_ID}`) || {};
-    existing[questionId] = isCorrect;
-    await window.saveQuizData(`correctness_${PAGE_ID}`, existing);
-    console.log('Answer correctness saved to Firebase');
-  } catch (error) {
-    console.error('Failed to save answer correctness:', error);
-  }
-}
-
-async function checkIfPreviouslyCorrect(questionId) {
-  if (!window.currentUser || !window.loadQuizData) {
-    return false;
-  }
-
-  try {
-    const correctnessData = await window.loadQuizData(`correctness_${PAGE_ID}`) || {};
-    return correctnessData[questionId] === true;
-  } catch (error) {
-    console.error('Failed to check previous correctness:', error);
-    return false;
-  }
-}
-
-async function saveIncorrectAnswer(groupName, userAnswer, correctAnswer) {
-  if (!window.currentUser || !window.saveQuizData) {
-    console.log('No user authenticated - incorrect answer not saved');
-    return;
-  }
-
-  try {
-    const existingData = await window.loadQuizData(`incorrect_mc_${PAGE_ID}`) || {};
-    const incorrectAnswers = existingData.answers || [];
-    
-    const questionData = {
-      question: `${groupName}: Multiple Choice Question`,
-      answer: correctAnswer,
-      userAnswer: userAnswer,
-      timestamp: Date.now(),
-      type: "multiple_choice",
-      pageId: PAGE_ID
-    };
-
-    const existingIndex = incorrectAnswers.findIndex(
-      (item) => item.question === questionData.question
-    );
-    
-    if (existingIndex === -1) {
-      incorrectAnswers.push(questionData);
-    } else {
-      incorrectAnswers[existingIndex] = questionData;
-    }
-    
-    await window.saveQuizData(`incorrect_mc_${PAGE_ID}`, { answers: incorrectAnswers });
-    console.log('Incorrect MC answer saved to Firebase');
-  } catch (error) {
-    console.error('Failed to save incorrect answer:', error);
-  }
-}
-
-// Initialize when page loads
+// Initialize individual multiple choice questions
 document.addEventListener("DOMContentLoaded", function () {
   initializeIndividualMC();
+  loadMCProgress();
   
-  // Wait for Firebase auth then load progress
-  setTimeout(() => {
-    loadMCProgress();
-  }, 1000);
-  
+  // Add reset progress button
   addResetProgressButton();
 });
 
@@ -136,11 +19,13 @@ function initializeIndividualMC() {
   const radioGroups = getUniqueRadioGroups();
   totalMCQuestions = radioGroups.length;
 
+  // Update total display
   const totalElement = document.getElementById("total");
   if (totalElement) {
     totalElement.textContent = totalMCQuestions;
   }
 
+  // Add submit button for each question group
   radioGroups.forEach((groupName) => {
     addSubmitButtonToGroup(groupName);
   });
@@ -155,14 +40,19 @@ function getUniqueRadioGroups() {
 }
 
 function addSubmitButtonToGroup(groupName) {
-  const radios = document.querySelectorAll(`input[type="radio"][name="${groupName}"]`);
+  // Find the last radio button of this group
+  const radios = document.querySelectorAll(
+    `input[type="radio"][name="${groupName}"]`
+  );
   const lastRadio = radios[radios.length - 1];
 
   if (!lastRadio) return;
 
+  // Create line breaks for spacing
   const lineBreak1 = document.createElement("br");
   const lineBreak2 = document.createElement("br");
 
+  // Create submit button
   const submitButton = document.createElement("button");
   submitButton.className = "mc-submit-btn";
   submitButton.setAttribute("data-group", groupName);
@@ -185,129 +75,19 @@ function addSubmitButtonToGroup(groupName) {
     submitIndividualQuestion(groupName);
   });
 
+  // Insert after the last radio button's label with proper spacing
   const lastLabel = lastRadio.closest("label") || lastRadio.parentElement;
   lastLabel.parentNode.insertBefore(lineBreak1, lastLabel.nextSibling);
   lastLabel.parentNode.insertBefore(submitButton, lineBreak1.nextSibling);
   lastLabel.parentNode.insertBefore(lineBreak2, submitButton.nextSibling);
 }
 
-async function submitIndividualQuestion(groupName) {
-  const selectedRadio = document.querySelector(`input[type="radio"][name="${groupName}"]:checked`);
-
-  if (!selectedRadio) {
-    alert("Please select an answer before submitting.");
-    return;
-  }
-
-  const userAnswer = selectedRadio.value;
-  const correctAnswer = getCorrectAnswerForGroup(groupName);
-  const isCorrect = userAnswer === correctAnswer;
-  const questionId = groupName;
-
-  // Update score and answered questions
-  if (!answeredQuestions.has(questionId)) {
-    answeredQuestions.add(questionId);
-    if (isCorrect) {
-      mcScore++;
-    }
-  } else {
-    const wasCorrectBefore = await checkIfPreviouslyCorrect(questionId);
-    if (wasCorrectBefore && !isCorrect) {
-      mcScore--;
-    } else if (!wasCorrectBefore && isCorrect) {
-      mcScore++;
-    }
-  }
-
-  // Store the correctness of this answer
-  await storeAnswerCorrectness(questionId, isCorrect);
-
-  updateScoreDisplay();
-  showQuestionResult(groupName, userAnswer, correctAnswer, isCorrect);
-  updateDataQuizSpan(groupName, userAnswer, correctAnswer, isCorrect);
-  disableQuestion(groupName);
-
-  // Save progress to Firebase
-  await saveMCProgress();
-
-  // Save incorrect answer if wrong
-  if (!isCorrect) {
-    await saveIncorrectAnswer(groupName, userAnswer, correctAnswer);
-  }
-
-  console.log(`Question ${questionId}: ${isCorrect ? 'Correct' : 'Incorrect'}, Score: ${mcScore}/${answeredQuestions.size}`);
-}
-
-function restoreQuestionState(groupName, correctAnswer, wasCorrect) {
-  const answerSpan = findCorrectAnswerSpan(groupName);
-  if (answerSpan) {
-    if (!answerSpan.hasAttribute("data-original-content")) {
-      answerSpan.setAttribute("data-original-content", answerSpan.innerHTML);
-    }
-    
-    if (wasCorrect) {
-      answerSpan.innerHTML = `${correctAnswer} ✓`;
-      answerSpan.style.backgroundColor = "#d4edda";
-      answerSpan.style.color = "#155724";
-      answerSpan.style.border = "1px solid #28a745";
-      answerSpan.classList.add("revealed");
-    } else {
-      answerSpan.innerHTML = `${correctAnswer} (Previously answered incorrectly)`;
-      answerSpan.style.backgroundColor = "#f8d7da";
-      answerSpan.style.color = "#721c24";
-      answerSpan.style.border = "1px solid #dc3545";
-      answerSpan.classList.add("incorrect");
-    }
-    
-    answerSpan.style.cssText += `
-      padding: 4px 8px;
-      border-radius: 0px;
-      font-weight: bold;
-      display: inline-block;
-      margin: 2px;
-    `;
-
-    const resetButton = document.createElement("button");
-    resetButton.textContent = "try again";
-    resetButton.className = "try-again";
-    resetButton.style.cssText = `
-      background: transparent;
-      border: none;
-      color: #666;
-      cursor: pointer;
-      margin-left: 5px;
-      font-size: 12px;
-      padding: 2px 4px;
-      text-decoration: underline;
-    `;
-
-    resetButton.addEventListener("click", function () {
-      resetIndividualQuestion(groupName);
-    });
-
-    answerSpan.appendChild(resetButton);
-  }
-  
-  disableQuestion(groupName);
-  
-  document.querySelectorAll(`input[type="radio"][name="${groupName}"]`).forEach((radio) => {
-    const label = radio.closest("label") || radio.parentElement;
-    if (radio.value === correctAnswer) {
-      label.style.cssText += `
-        background-color: #d4edda;
-        color: #155724;
-        font-weight: bold;
-        padding: 4px;
-      `;
-    }
-  });
-}
-
 function addResetProgressButton() {
+  // Create reset button
   const resetButton = document.createElement("button");
   resetButton.textContent = "Reset All Progress";
-  resetButton.style.cssText = `
-    background: #dc3545;
+resetButton.style.cssText = `
+    background:rgb(223, 223, 223);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -319,14 +99,15 @@ function addResetProgressButton() {
     display: block;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     transition: background 0.3s ease;
-  `;
+`;
 
+  // Add hover effect
   resetButton.addEventListener("mouseenter", function() {
-    this.style.background = "#c82333";
+    this.style.background = "#0056b3";
   });
   
   resetButton.addEventListener("mouseleave", function() {
-    this.style.background = "#dc3545";
+    this.style.background = "#007bff";
   });
 
   resetButton.addEventListener("click", function () {
@@ -338,17 +119,21 @@ function addResetProgressButton() {
   document.body.appendChild(resetButton);
 }
 
-async function resetAllProgress() {
-  // Clear Firebase data
-  if (window.currentUser && window.saveQuizData) {
-    await window.saveQuizData(`multiplechoice_${PAGE_ID}`, {});
-    await window.saveQuizData(`correctness_${PAGE_ID}`, {});
-    await window.saveQuizData(`incorrect_mc_${PAGE_ID}`, { answers: [] });
-  }
+function resetAllProgress() {
+  // Clear localStorage for this page
+  const progressKey = `quizProgress_${PAGE_ID}`;
+  const correctnessKey = `questionCorrectness_${PAGE_ID}`;
+  const incorrectKey = `incorrectTerms_${PAGE_ID}`;
+  
+  localStorage.removeItem(progressKey);
+  localStorage.removeItem(correctnessKey);
+  localStorage.removeItem(incorrectKey);
 
+  // Reset variables
   mcScore = 0;
   answeredQuestions.clear();
 
+  // Reset all questions visually
   getUniqueRadioGroups().forEach(groupName => {
     resetIndividualQuestion(groupName);
   });
@@ -357,54 +142,77 @@ async function resetAllProgress() {
   console.log("All progress reset for", PAGE_ID);
 }
 
-async function resetIndividualQuestion(groupName) {
-  const questionId = groupName;
+function submitIndividualQuestion(groupName) {
+  // Get selected answer
+  const selectedRadio = document.querySelector(
+    `input[type="radio"][name="${groupName}"]:checked`
+  );
 
-  if (answeredQuestions.has(questionId)) {
-    if (await checkIfPreviouslyCorrect(questionId)) {
-      mcScore--;
-    }
-    answeredQuestions.delete(questionId);
-    
-    // Remove from correctness tracking
-    if (window.currentUser && window.saveQuizData) {
-      const existing = await window.loadQuizData(`correctness_${PAGE_ID}`) || {};
-      delete existing[questionId];
-      await window.saveQuizData(`correctness_${PAGE_ID}`, existing);
-    }
-    
-    updateScoreDisplay();
+  if (!selectedRadio) {
+    alert("Please select an answer before submitting.");
+    return;
   }
 
-  // Re-enable radio buttons
-  document.querySelectorAll(`input[type="radio"][name="${groupName}"]`).forEach((radio) => {
-    radio.disabled = false;
-    radio.checked = false;
-    const label = radio.closest("label") || radio.parentElement;
-    label.style.cssText = '';
-  });
+  const userAnswer = selectedRadio.value;
+  const correctAnswer = getCorrectAnswerForGroup(groupName);
+  const isCorrect = userAnswer === correctAnswer;
 
-  // Reset submit button
-  const submitButton = document.querySelector(`.mc-submit-btn[data-group="${groupName}"]`);
-  if (submitButton) {
-    submitButton.textContent = "Submit Answer";
-    submitButton.disabled = false;
-    submitButton.style.background = "#6a11cb";
-    submitButton.style.cursor = "pointer";
-  }
+  // Convert group name to question ID
+  const questionId = groupName; // Use just the group name (q1, q2, etc.)
 
-  // Reset data-quiz span
-  const answerSpan = findCorrectAnswerSpan(groupName);
-  if (answerSpan) {
-    const originalContent = answerSpan.getAttribute("data-original-content");
-    if (originalContent) {
-      answerSpan.innerHTML = originalContent;
+  // Update score and answered questions
+  if (!answeredQuestions.has(questionId)) {
+    // First time answering this question
+    answeredQuestions.add(questionId);
+    if (isCorrect) {
+      mcScore++;
     }
-    answerSpan.style.cssText = 'display: none;';
-    answerSpan.classList.remove("revealed", "incorrect");
+  } else {
+    // Already answered, check if we need to update score
+    const wasCorrectBefore = checkIfPreviouslyCorrect(questionId);
+    if (wasCorrectBefore && !isCorrect) {
+      mcScore--; // Was correct, now wrong
+    } else if (!wasCorrectBefore && isCorrect) {
+      mcScore++; // Was wrong, now correct
+    }
   }
 
-  await saveMCProgress();
+  // Store the correctness of this answer
+  storeAnswerCorrectness(questionId, isCorrect);
+
+  updateScoreDisplay();
+
+  // Show visual feedback
+  showQuestionResult(groupName, userAnswer, correctAnswer, isCorrect);
+
+  // Update the data-quiz span to show result
+  updateDataQuizSpan(groupName, userAnswer, correctAnswer, isCorrect);
+
+  // Disable this question's radios and submit button
+  disableQuestion(groupName);
+
+  // Save progress immediately
+  saveMCProgress();
+
+  // Save incorrect answer if wrong
+  if (!isCorrect) {
+    saveIncorrectAnswer(groupName, userAnswer, correctAnswer);
+  }
+
+  console.log(`Question ${questionId}: ${isCorrect ? 'Correct' : 'Incorrect'}, Score: ${mcScore}/${answeredQuestions.size}`);
+}
+
+function checkIfPreviouslyCorrect(questionId) {
+  const key = `questionCorrectness_${PAGE_ID}`;
+  const stored = JSON.parse(localStorage.getItem(key) || "{}");
+  return stored[questionId] === true;
+}
+
+function storeAnswerCorrectness(questionId, isCorrect) {
+  const key = `questionCorrectness_${PAGE_ID}`;
+  const stored = JSON.parse(localStorage.getItem(key) || "{}");
+  stored[questionId] = isCorrect;
+  localStorage.setItem(key, JSON.stringify(stored));
 }
 
 function getCorrectAnswerForGroup(groupName) {
@@ -413,17 +221,26 @@ function getCorrectAnswerForGroup(groupName) {
 }
 
 function findCorrectAnswerSpan(groupName) {
-  const firstRadio = document.querySelector(`input[type="radio"][name="${groupName}"]`);
+  // Find the first radio button of this group
+  const firstRadio = document.querySelector(
+    `input[type="radio"][name="${groupName}"]`
+  );
   if (!firstRadio) return null;
 
+  // Look backwards from the radio group to find the data-quiz span
   let currentElement = firstRadio.parentElement;
   while (currentElement && currentElement !== document.body) {
     let prevElement = currentElement.previousElementSibling;
     while (prevElement) {
-      if (prevElement.hasAttribute && prevElement.hasAttribute("data-quiz")) {
+      if (
+        prevElement.hasAttribute &&
+        prevElement.hasAttribute("data-quiz")
+      ) {
         return prevElement;
       }
-      const spanInside = prevElement.querySelector ? prevElement.querySelector("[data-quiz]") : null;
+      const spanInside = prevElement.querySelector
+        ? prevElement.querySelector("[data-quiz]")
+        : null;
       if (spanInside) {
         return spanInside;
       }
@@ -431,6 +248,7 @@ function findCorrectAnswerSpan(groupName) {
     }
     currentElement = currentElement.parentElement;
   }
+
   return null;
 }
 
@@ -438,10 +256,12 @@ function updateDataQuizSpan(groupName, userAnswer, correctAnswer, isCorrect) {
   const answerSpan = findCorrectAnswerSpan(groupName);
   if (!answerSpan) return;
 
+  // Store original content if not already stored
   if (!answerSpan.hasAttribute("data-original-content")) {
     answerSpan.setAttribute("data-original-content", answerSpan.innerHTML);
   }
 
+  // Update the span to show the result
   if (isCorrect) {
     answerSpan.innerHTML = `${correctAnswer} ✓`;
     answerSpan.style.backgroundColor = "#d4edda";
@@ -456,14 +276,13 @@ function updateDataQuizSpan(groupName, userAnswer, correctAnswer, isCorrect) {
     answerSpan.classList.add("incorrect");
   }
 
-  answerSpan.style.cssText += `
-    padding: 4px 8px;
-    border-radius: 0px;
-    font-weight: bold;
-    display: inline-block;
-    margin: 2px;
-  `;
+  answerSpan.style.padding = "4px 8px";
+  answerSpan.style.borderRadius = "0px";
+  answerSpan.style.fontWeight = "bold";
+  answerSpan.style.display = "inline-block";
+  answerSpan.style.margin = "2px";
 
+  // Add a reset button
   const resetButton = document.createElement("button");
   resetButton.textContent = "try again";
   resetButton.className = "try-again";
@@ -486,41 +305,119 @@ function updateDataQuizSpan(groupName, userAnswer, correctAnswer, isCorrect) {
 }
 
 function showQuestionResult(groupName, userAnswer, correctAnswer, isCorrect) {
-  document.querySelectorAll(`input[type="radio"][name="${groupName}"]`).forEach((radio) => {
-    const label = radio.closest("label") || radio.parentElement;
+  // Style the radio buttons
+  document
+    .querySelectorAll(`input[type="radio"][name="${groupName}"]`)
+    .forEach((radio) => {
+      const label = radio.closest("label") || radio.parentElement;
 
-    if (radio.value === correctAnswer) {
-      label.style.cssText += `
-        background-color: #d4edda;
-        color: #155724;
-        font-weight: bold;
-        padding: 4px;
-        border-radius: 0px;
-      `;
-    } else if (radio.value === userAnswer && !isCorrect) {
-      label.style.cssText += `
-        background-color: #f8d7da;
-        color: #721c24;
-        font-weight: bold;
-        padding: 4px;
-        border-radius: 0px;
-      `;
-    }
-  });
+      if (radio.value === correctAnswer) {
+        // Correct answer - always green
+        label.style.backgroundColor = "#d4edda";
+        label.style.color = "#155724";
+        label.style.fontWeight = "bold";
+        label.style.padding = "4px";
+        label.style.borderRadius = "0px";
+        label.style.border = ""; // Remove border
+      } else if (radio.value === userAnswer && !isCorrect) {
+        // User's wrong answer - red
+        label.style.backgroundColor = "#f8d7da";
+        label.style.color = "#721c24";
+        label.style.fontWeight = "bold";
+        label.style.padding = "4px";
+        label.style.borderRadius = "0px";
+        label.style.border = ""; // Remove border
+      }
+    });
 }
 
 function disableQuestion(groupName) {
-  document.querySelectorAll(`input[type="radio"][name="${groupName}"]`).forEach((radio) => {
-    radio.disabled = true;
-  });
+  // Disable radio buttons
+  document
+    .querySelectorAll(`input[type="radio"][name="${groupName}"]`)
+    .forEach((radio) => {
+      radio.disabled = true;
+    });
 
-  const submitButton = document.querySelector(`.mc-submit-btn[data-group="${groupName}"]`);
+  // Update submit button
+  const submitButton = document.querySelector(
+    `.mc-submit-btn[data-group="${groupName}"]`
+  );
   if (submitButton) {
     submitButton.textContent = "Submitted ✓";
     submitButton.disabled = true;
     submitButton.style.background = "gray";
     submitButton.style.cursor = "default";
+    submitButton.style.fontFamily = "Verdana, sans-serif";
   }
+}
+
+function resetIndividualQuestion(groupName) {
+  const questionId = groupName;
+
+  // Remove from answered questions
+  if (answeredQuestions.has(questionId)) {
+    // Check if this was correct and adjust score
+    if (checkIfPreviouslyCorrect(questionId)) {
+      mcScore--;
+    }
+    answeredQuestions.delete(questionId);
+    
+    // Remove from correctness tracking
+    const key = `questionCorrectness_${PAGE_ID}`;
+    const stored = JSON.parse(localStorage.getItem(key) || "{}");
+    delete stored[questionId];
+    localStorage.setItem(key, JSON.stringify(stored));
+    
+    updateScoreDisplay();
+  }
+
+  // Re-enable radio buttons
+  document
+    .querySelectorAll(`input[type="radio"][name="${groupName}"]`)
+    .forEach((radio) => {
+      radio.disabled = false;
+      radio.checked = false;
+      const label = radio.closest("label") || radio.parentElement;
+      label.style.backgroundColor = "";
+      label.style.color = "";
+      label.style.fontWeight = "";
+      label.style.padding = "";
+      label.style.borderRadius = "";
+      label.style.border = "";
+    });
+
+  // Reset submit button
+  const submitButton = document.querySelector(
+    `.mc-submit-btn[data-group="${groupName}"]`
+  );
+  if (submitButton) {
+    submitButton.textContent = "Submit Answer";
+    submitButton.disabled = false;
+    submitButton.style.background = "#6a11cb";
+    submitButton.style.cursor = "pointer";
+  }
+
+  // Reset data-quiz span
+  const answerSpan = findCorrectAnswerSpan(groupName);
+  if (answerSpan) {
+    const originalContent = answerSpan.getAttribute("data-original-content");
+    if (originalContent) {
+      answerSpan.innerHTML = originalContent;
+    }
+    answerSpan.style.backgroundColor = "";
+    answerSpan.style.color = "";
+    answerSpan.style.border = "";
+    answerSpan.style.padding = "";
+    answerSpan.style.borderRadius = "";
+    answerSpan.style.fontWeight = "";
+    answerSpan.style.display = "none"; // Hide again
+    answerSpan.style.margin = "";
+    answerSpan.classList.remove("revealed", "incorrect");
+  }
+
+  // Save progress
+  saveMCProgress();
 }
 
 function updateScoreDisplay() {
@@ -530,8 +427,141 @@ function updateScoreDisplay() {
   }
 }
 
-// Handle explanation buttons
-document.addEventListener('DOMContentLoaded', function() {
+function saveIncorrectAnswer(groupName, userAnswer, correctAnswer) {
+  const pageId = PAGE_ID || window.location.pathname.split("/").pop().replace(".html", "");
+  const key = `incorrectTerms_${pageId}`;
+  let arr = JSON.parse(localStorage.getItem(key) || "[]");
+
+  const questionData = {
+    question: `${groupName}: Multiple Choice Question`,
+    answer: correctAnswer,
+    userAnswer: userAnswer,
+    timestamp: Date.now(),
+    type: "multiple_choice",
+  };
+
+  const existingIndex = arr.findIndex(
+    (item) => item.question === questionData.question
+  );
+  if (existingIndex === -1) {
+    arr.push(questionData);
+  } else {
+    arr[existingIndex] = questionData;
+  }
+  localStorage.setItem(key, JSON.stringify(arr));
+  console.log(`Saved incorrect answer for ${groupName} to localStorage`);
+}
+
+function saveMCProgress() {
+  const progress = {
+    score: mcScore,
+    answeredQuestions: Array.from(answeredQuestions),
+    timestamp: Date.now(),
+    totalQuestions: totalMCQuestions
+  };
+  
+  const key = `quizProgress_${PAGE_ID}`;
+  localStorage.setItem(key, JSON.stringify(progress));
+  console.log(`Saved progress to ${key}:`, progress);
+}
+
+function loadMCProgress() {
+  const key = `quizProgress_${PAGE_ID}`;
+  const correctnessKey = `questionCorrectness_${PAGE_ID}`;
+  const saved = localStorage.getItem(key);
+  const correctnessData = JSON.parse(localStorage.getItem(correctnessKey) || "{}");
+  
+  if (saved) {
+    try {
+      const progress = JSON.parse(saved);
+      mcScore = progress.score || 0;
+      answeredQuestions = new Set(progress.answeredQuestions || []);
+
+      updateScoreDisplay();
+      console.log(`Loaded progress from ${key}:`, progress);
+
+      // Restore visual state for answered questions
+      answeredQuestions.forEach(questionId => {
+        const groupName = questionId; // Since we use groupName as questionId
+        const wasCorrect = correctnessData[questionId] === true;
+        const correctAnswer = getCorrectAnswerForGroup(groupName);
+        
+        if (correctAnswer) {
+          // Show the question as already answered
+          const answerSpan = findCorrectAnswerSpan(groupName);
+          if (answerSpan) {
+            // Store original content
+            if (!answerSpan.hasAttribute("data-original-content")) {
+              answerSpan.setAttribute("data-original-content", answerSpan.innerHTML);
+            }
+            
+            // Show result
+            if (wasCorrect) {
+              answerSpan.innerHTML = `${correctAnswer} ✓`;
+              answerSpan.style.backgroundColor = "#d4edda";
+              answerSpan.style.color = "#155724";
+              answerSpan.style.border = "1px solid #28a745";
+              answerSpan.classList.add("revealed");
+            } else {
+              // For incorrect answers, we might not have the user's answer stored
+              answerSpan.innerHTML = `${correctAnswer} (Previously answered incorrectly)`;
+              answerSpan.style.backgroundColor = "#f8d7da";
+              answerSpan.style.color = "#721c24";
+              answerSpan.style.border = "1px solid #dc3545";
+              answerSpan.classList.add("incorrect");
+            }
+            
+            answerSpan.style.padding = "4px 8px";
+            answerSpan.style.borderRadius = "0px";
+            answerSpan.style.fontWeight = "bold";
+            answerSpan.style.display = "inline-block";
+            answerSpan.style.margin = "2px";
+
+            // Add reset button
+            const resetButton = document.createElement("button");
+            resetButton.textContent = "try again";
+            resetButton.className = "try-again";
+            resetButton.style.cssText = `
+              background: transparent;
+              border: none;
+              color: #666;
+              cursor: pointer;
+              margin-left: 5px;
+              font-size: 12px;
+              padding: 2px 4px;
+              text-decoration: underline;
+            `;
+
+            resetButton.addEventListener("click", function () {
+              resetIndividualQuestion(groupName);
+            });
+
+            answerSpan.appendChild(resetButton);
+          }
+          
+          // Disable the question
+          disableQuestion(groupName);
+          
+          // Style the correct answer
+          document.querySelectorAll(`input[type="radio"][name="${groupName}"]`).forEach((radio) => {
+            const label = radio.closest("label") || radio.parentElement;
+            if (radio.value === correctAnswer) {
+              label.style.backgroundColor = "#d4edda";
+              label.style.color = "#155724";
+              label.style.fontWeight = "bold";
+              label.style.padding = "4px";
+              label.style.border = ""; // Remove border
+            }
+          });
+        }
+      });
+      
+    } catch (e) {
+      console.error("Error loading progress:", e);
+    }
+  }
+  
+  // Handle explanation buttons
   document.querySelectorAll('.explanation-button').forEach(function(button) {
     button.addEventListener('click', function() {
       const explanation = this.nextElementSibling;
@@ -544,18 +574,53 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
-});
+}
 
-// Wait for Firebase auth to be ready
-window.addEventListener('load', () => {
-  const checkAuth = setInterval(() => {
-    if (window.currentUser) {
-      loadMCProgress();
-      clearInterval(checkAuth);
-    }
-  }, 500);
+// In your quiz JavaScript (test.js or inline), when a quiz is completed:
+function saveQuizCompletion(pageId, score, totalQuestions) {
+  const key = `quizProgress_${pageId}`;
+  const existing = JSON.parse(localStorage.getItem(key) || '{}');
   
-  setTimeout(() => clearInterval(checkAuth), 10000);
-});
+  const now = new Date();
+  
+  const updatedProgress = {
+    ...existing,
+    score: score,
+    totalQuestions: totalQuestions,
+    answeredQuestions: existing.answeredQuestions || [],
+    lastCompleted: now.toISOString(),
+    completionCount: (existing.completionCount || 0) + 1,
+    completionHistory: [
+      ...(existing.completionHistory || []),
+      {
+        date: now.toISOString(),
+        score: score,
+        totalQuestions: totalQuestions,
+        percentage: Math.round((score / totalQuestions) * 100)
+      }
+    ].slice(-10) // Keep last 10 completions
+  };
+  
+  localStorage.setItem(key, JSON.stringify(updatedProgress));
+}
 
-console.log('Multiple choice Firebase script loaded for', PAGE_ID);
+// Debug function to check localStorage
+function debugStorage() {
+  console.log("=== DEBUG STORAGE ===");
+  console.log("PAGE_ID:", PAGE_ID);
+  console.log("Current mcScore:", mcScore);
+  console.log("Current answeredQuestions:", Array.from(answeredQuestions));
+  
+  const progressKey = `quizProgress_${PAGE_ID}`;
+  const progress = localStorage.getItem(progressKey);
+  console.log(`Storage key: ${progressKey}`);
+  console.log("Stored progress:", progress);
+  
+  const correctnessKey = `questionCorrectness_${PAGE_ID}`;
+  const correctness = localStorage.getItem(correctnessKey);
+  console.log(`Correctness key: ${correctnessKey}`);
+  console.log("Stored correctness:", correctness);
+}
+
+// Call this in console to debug: debugStorage()
+window.debugStorage = debugStorage;
