@@ -56,11 +56,11 @@ function addSubmitButtonToGroup(groupName) {
   const submitButton = document.createElement("button");
   submitButton.className = "mc-submit-btn";
   submitButton.setAttribute("data-group", groupName);
-  submitButton.textContent = "Submit Answer";
+  submitButton.textContent = "Confirm";
   submitButton.style.cssText = `
-    background: #6a11cb;
-    color: white;
-    border: none;
+    background:rgb(224, 224, 224);
+    color: night;
+    border: 1px solid #ccc;
     padding: 6px 12px;
     font-size: 12px;
     font-family: Verdana, sans-serif;
@@ -392,9 +392,9 @@ function resetIndividualQuestion(groupName) {
     `.mc-submit-btn[data-group="${groupName}"]`
   );
   if (submitButton) {
-    submitButton.textContent = "Submit Answer";
+    submitButton.textContent = "Confirm";
     submitButton.disabled = false;
-    submitButton.style.background = "#6a11cb";
+    submitButton.style.background = "#6a1bcb";
     submitButton.style.cursor = "pointer";
   }
 
