@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MCAT Practice Quiz - Circulatory System</title>
+    <style>
+      /* Reset & base */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: verdana, sans-serif;
+        background: #ffffff;
+        color: #222;
+        line-height: 1.6;
+      }
+
+      /* Top bar */
+      .top-bar {
+        background-color: #016ecd;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+      }
+
+      .top-bar-left .exam-title {
+        font-size: 1.1rem;
+        font-weight: bold;
+      }
+
+      .top-bar-right {
+        display: flex;
+        gap: 20px;
+        font-size: 0.95rem;
+      }
+
+      /* Toolbar */
+      .toolbar {
+        background-color: #4e9affe1;
+        border-bottom: 1px solid #ccc;
+        padding: 8px 20px;
+        display: flex;
+        gap: 12px;
+      }
+
+      .toolbar .btn {
+        background: transparent;
+        border: 1px solid #aaa;
+        border-radius: 4px;
+        padding: 6px 12px;
+        font-size: 0.9rem;
+        cursor: pointer;
+        color: #f1f1f1;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      .toolbar .btn:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
+
+      /* Main content area */
+      .content {
+        display: flex;
+        width: 100%;
+        padding-bottom: 80px;
+      }
+
+      /* Columns */
+      .column {
+        width: 50%;
+        padding: 20px;
+        overflow-y: auto;
+      }
+
+      .left-col {
+        border-right: 1px solid #ccc;
+        background: #fff;
+      }
+
+      .right-col {
+        background: #fafafa;
+      }
+
+      /* Question pages - hide all by default */
+      .question-page {
+        display: none;
+      }
+
+      .question-page.active {
+        display: block;
+      }
+
+      /* Passage section */
+      .passage h2 {
+        font-size: 1.2rem;
+        margin-bottom: 12px;
+      }
+
+      .passage p {
+        margin-bottom: 12px;
+        line-height: 1.5;
+      }
+
+      /* Question block */
+      .question-block {
+        margin-top: 20px;
+      }
+
+      .question-header {
+        margin-bottom: 8px;
+      }
+
+      .question-label {
+        font-size: 1.15rem;
+        font-weight: bold;
+      }
+
+      .question-text {
+        margin-bottom: 16px;
+        line-height: 1.4;
+      }
+
+      /* Options */
+      .options {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .options label {
+        display: flex;
+        align-items: flex-start;
+        border: 1px solid #ccc;
+        padding: 10px 14px;
+        border-radius: 5px;
+        cursor: pointer;
+        background: #fff;
+        transition: background-color 0.2s, border-color 0.2s;
+      }
+
+      .options label:hover {
+        background-color: #eef2ff;
+        border-color: #8a9ae5;
+      }
+
+      .options input[type="radio"] {
+        margin-right: 10px;
+        margin-top: 3px;
+      }
+
+      /* Bottom navigation */
+      .bottom-nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #016ecd;
+        border-top: 1px solid #0056a3;
+        padding: 12px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .nav-left,
+      .nav-right {
+        flex: 1;
+      }
+
+      .nav-center {
+        flex: 1;
+        text-align: center;
+      }
+
+      .question-info {
+        color: white;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: Verdana, sans-serif;
+      }
+
+      .nav-btn {
+        background: rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        color: white;
+        padding: 8px 16px;
+        border-radius: 6px;
+        font-size: 14px;
+        font-family: Verdana, sans-serif;
+        font-weight: 500;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        transition: all 0.3s ease;
+      }
+
+      .nav-btn:hover:not(:disabled) {
+        background: rgba(255, 255, 255, 0.3);
+        transform: translateY(-1px);
+      }
+
+      .nav-btn:disabled {
+        opacity: 0.4;
+        cursor: not-allowed;
+      }
+
+      .next-btn {
+        margin-left: auto;
+      }
+
+      .arrow {
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      /* Responsive */
+      @media (max-width: 800px) {
+        .content {
+          flex-direction: column;
+        }
+        .column {
+          width: 100%;
+          border: none;
+        }
+        .left-col {
+          border-bottom: 1px solid #ccc;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <span class="exam-title">MCAT © - Circulatory System</span>
+      </div>
+      <div class="top-bar-right">
+        <span class="timer"
+          >Question <span class="question-count">1</span> of 5</span
+        >
+      </div>
+    </div>
+
+    <div class="toolbar">
+      <button class="btn highlight">Highlight</button>
+      <button class="btn strikethrough">Strikethrough</button>
+      <button class="btn flag">Flag for Review</button>
+    </div>
+
+    <!-- Questions will go here -->
+    <!-- Question number -->
+    <div class="question-page" id="question-1">
+      <div class="content">
+        <div class="column left-col">
+          <div class="passage">
+            <h2>Passage 1 (Questions 1‑5)</h2>
+            <!-- passage content -->
+            Sickle cell anemia is a genetic blood disorder that causes red blood
+            cells to become abnormally shaped, like sickles. These sickle cells
+            can get stuck in small blood vessels, leading to pain, organ damage,
+            and other complications. At the biomolecular level, sickle cell
+            anemia is caused by a mutation in the HBB gene, which provides
+            instructions for making a component of hemoglobin. This mutation
+            results in the substitution for glutamic acid in the beta-globin
+            chain of hemoglobin.
+            <br /><br />
+            <img
+              src="Screenshot 2025-10-10 at 2.20.27 PM.png"
+              alt="Sickle Cell Diagram"
+            />
+            <footer
+              style="
+                text-align: right;
+                font-size: 0.6rem;
+                margin-top: 10px;
+                font-style: italic;
+              "
+            >
+              Sickle cell anemia: Symptoms & causes. Mayo Clinic. Published
+              September 12, 2025. Accessed October 10, 2025.
+              https://www.mayoclinic.org/diseases-conditions/sickle-cell-anemia/symptoms-causes/syc-20355876.
+            </footer>
+          </div>
+        </div>
+        <div class="column right-col">
+          <div class="question-block">
+            <div class="question-header">
+              <span class="question-label">Question 1</span>
+            </div>
+            <div class="question-text">
+              What amino acid substitution causes sickle cell anemia?
+              <span data-quiz="A" style="display: none"
+                >Valine for glutamic acid</span
+              >
+            </div>
+            <div class="options">
+              <label
+                ><input type="radio" name="qnumber" value="A" /> A. Valine for
+                glutamic acid</label
+              >
+              <label
+                ><input type="radio" name="qnumber" value="B" /> B. Threonine
+                for glutamic acid</label
+              >
+              <label
+                ><input type="radio" name="qnumber" value="C" /> C. Alanine for
+                glutamic acid</label
+              >
+              <label
+                ><input type="radio" name="qnumber" value="D" /> D. Aspartic
+                acid for glutamic acid</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Question 2 -->
+    <div class="question-page" id="question-2">
+      <div class="content">
+        <div class="column left-col">
+          <div class="passage">
+            <h2>Passage 1 (Questions 1‑5)</h2>
+            Sickle cell anemia is a genetic blood disorder that causes red blood
+            cells to become abnormally shaped, like sickles. These sickle cells
+            can get stuck in small blood vessels, leading to pain, organ damage,
+            and other complications. At the biomolecular level, sickle cell
+            anemia is caused by a mutation in the HBB gene, which provides
+            instructions for making a component of hemoglobin. This mutation
+            results in the substitution for glutamic acid in the beta-globin
+            chain of hemoglobin.
+            <br /><br />
+            <img
+              src="Screenshot 2025-10-10 at 2.20.27 PM.png"
+              alt="Sickle Cell Diagram"
+            />
+            <footer
+              style="
+                text-align: right;
+                font-size: 0.6rem;
+                margin-top: 10px;
+                font-style: italic;
+              "
+            >
+              Sickle cell anemia: Symptoms & causes. Mayo Clinic. Published
+              September 12, 2025. Accessed October 10, 2025.
+              https://www.mayoclinic.org/diseases-conditions/sickle-cell-anemia/symptoms-causes/syc-20355876.
+            </footer>
+          </div>
+        </div>
+        <div class="column right-col">
+          <div class="question-block">
+            <div class="question-header">
+              <span class="question-label">Question 2</span>
+            </div>
+            <div class="question-text">
+              Based on the passage, the HBB change would shift the affinity
+              curve in which direction?
+              <span data-quiz="A" style="display: none">to the right</span>
+            </div>
+            <div class="options">
+              <label
+                ><input type="radio" name="q2" value="A" /> A. to the
+                right</label
+              >
+              <label
+                ><input type="radio" name="q2" value="B" /> B. to the
+                left</label
+              >
+              <label
+                ><input type="radio" name="q2" value="C" /> C. lower than
+                Vmax</label
+              >
+              <label
+                ><input type="radio" name="q2" value="D" /> D. higher than
+                Vmax</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="question-page" id="question-3">
+      <div class="content">
+        <div class="column left-col">
+          <div class="passage">
+            <h2>Passage 1 (Questions 1‑5)</h2>
+            Sickle cell anemia is a genetic blood disorder that causes red blood
+            cells to become abnormally shaped, like sickles. These sickle cells
+            can get stuck in small blood vessels, leading to pain, organ damage,
+            and other complications. At the biomolecular level, sickle cell
+            anemia is caused by a mutation in the HBB gene, which provides
+            instructions for making a component of hemoglobin. This mutation
+            results in the substitution for glutamic acid in the beta-globin
+            chain of hemoglobin.
+            <br /><br />
+            <img
+              src="Screenshot 2025-10-10 at 2.20.27 PM.png"
+              alt="Sickle Cell Diagram"
+            />
+            <footer
+              style="
+                text-align: right;
+                font-size: 0.6rem;
+                margin-top: 10px;
+                font-style: italic;
+              "
+            >
+              Sickle cell anemia: Symptoms & causes. Mayo Clinic. Published
+              September 12, 2025. Accessed October 10, 2025.
+              https://www.mayoclinic.org/diseases-conditions/sickle-cell-anemia/symptoms-causes/syc-20355876.
+            </footer>
+          </div>
+        </div>
+        <div class="column right-col">
+          <div class="question-block">
+            <div class="question-header">
+              <span class="question-label">Question 3</span>
+            </div>
+            <div class="question-text">
+              Which of the following would result in the same curve shift?
+              <span data-quiz="D" style="display: none"
+                >presence of 2,3-BPG</span
+              >
+            </div>
+            <div class="options">
+              <label
+                ><input type="radio" name="q3" value="A" /> A. conversion to
+                fetal hemoglobin</label
+              >
+              <label
+                ><input type="radio" name="q3" value="B" /> B. increase in
+                erythropoietin levels</label
+              >
+              <label
+                ><input type="radio" name="q3" value="C" /> C. absence of
+                2,3-BPG</label
+              >
+              <label
+                ><input type="radio" name="q3" value="D" /> D. presence of
+                2,3-BPG</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Question 4 -->
+    <div class="question-page" id="question-4">
+      <div class="content">
+        <div class="column left-col">
+          <div class="passage">
+            <h2>Passage 1 (Questions 1‑5)</h2>
+            Sickle cell anemia is a genetic blood disorder that causes red blood
+            cells to become abnormally shaped, like sickles. These sickle cells
+            can get stuck in small blood vessels, leading to pain, organ damage,
+            and other complications. At the biomolecular level, sickle cell
+            anemia is caused by a mutation in the HBB gene, which provides
+            instructions for making a component of hemoglobin. This mutation
+            results in the substitution for glutamic acid in the beta-globin
+            chain of hemoglobin.
+            <br /><br />
+            <img
+              src="Screenshot 2025-10-10 at 2.20.27 PM.png"
+              alt="Sickle Cell Diagram"
+            />
+            <footer
+              style="
+                text-align: right;
+                font-size: 0.6rem;
+                margin-top: 10px;
+                font-style: italic;
+              "
+            >
+              Sickle cell anemia: Symptoms & causes. Mayo Clinic. Published
+              September 12, 2025. Accessed October 10, 2025.
+              https://www.mayoclinic.org/diseases-conditions/sickle-cell-anemia/symptoms-causes/syc-20355876.
+            </footer>
+          </div>
+        </div>
+        <div class="column right-col">
+          <div class="question-block">
+            <div class="question-header">
+              <span class="question-label">Question 4</span>
+            </div>
+            <div class="question-text">
+              Sickle cell anemia can increase the risk of high blood pressure.
+              Someone with this abnormality may have:
+              <span data-quiz="A" style="display: none">Low ANP levels</span>
+            </div>
+            <div class="options">
+              <label
+                ><input type="radio" name="q4" value="A" /> A. Low ANP
+                levels</label
+              >
+              <label
+                ><input type="radio" name="q4" value="B" /> B. Low ADH
+                levels</label
+              >
+              <label
+                ><input type="radio" name="q4" value="C" /> C. High ANP
+                levels</label
+              >
+              <label
+                ><input type="radio" name="q4" value="D" /> D. B and C</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Question 5 -->
+    <div class="question-page" id="question-5">
+      <div class="content">
+        <div class="column left-col">
+          <div class="passage">
+            <h2>Passage 1 (Questions 1‑5)</h2>
+            Sickle cell anemia is a genetic blood disorder that causes red blood
+            cells to become abnormally shaped, like sickles. These sickle cells
+            can get stuck in small blood vessels, leading to pain, organ damage,
+            and other complications. At the biomolecular level, sickle cell
+            anemia is caused by a mutation in the HBB gene, which provides
+            instructions for making a component of hemoglobin. This mutation
+            results in the substitution for glutamic acid in the beta-globin
+            chain of hemoglobin.
+            <br /><br />
+            <img
+              src="Screenshot 2025-10-10 at 2.20.27 PM.png"
+              alt="Sickle Cell Diagram"
+            />
+            <footer
+              style="
+                text-align: right;
+                font-size: 0.6rem;
+                margin-top: 10px;
+                font-style: italic;
+              "
+            >
+              Sickle cell anemia: Symptoms & causes. Mayo Clinic. Published
+              September 12, 2025. Accessed October 10, 2025.
+              https://www.mayoclinic.org/diseases-conditions/sickle-cell-anemia/symptoms-causes/syc-20355876.
+            </footer>
+          </div>
+        </div>
+        <div class="column right-col">
+          <div class="question-block">
+            <div class="question-header">
+              <span class="question-label">Question 5</span>
+            </div>
+            <div class="question-text">
+              Both sickle cells and healthy red blood cells lack:
+              <span data-quiz="D" style="display: none"
+                >mitochondria and nuclei</span
+              >
+            </div>
+            <div class="options">
+              <label
+                ><input type="radio" name="q5" value="A" /> A.
+                Mitochondria</label
+              >
+              <label
+                ><input type="radio" name="q5" value="B" /> B. Nuclei</label
+              >
+              <label
+                ><input type="radio" name="q5" value="C" /> C. Hemoglobin</label
+              >
+              <label
+                ><input type="radio" name="q5" value="D" /> D. Both A and
+                B</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+      <div class="nav-left">
+        <button class="nav-btn prev-btn" id="prev-question" disabled>
+          <span class="arrow">←</span>
+          Previous
+        </button>
+      </div>
+      <div class="nav-center">
+        <span class="question-info">Question 1 of 5</span>
+      </div>
+      <div class="nav-right">
+        <button class="nav-btn next-btn" id="next-question">
+          Next
+          <span class="arrow">→</span>
+        </button>
+      </div>
+    </div>
+
+    <script src="test.js"></script>
+    <script>
+      // Multi-page navigation within single HTML
+      document.addEventListener("DOMContentLoaded", function () {
+        const prevBtn = document.getElementById("prev-question");
+        const nextBtn = document.getElementById("next-question");
+        const questionInfo = document.querySelector(".question-info");
+        const topQuestionCount = document.querySelector(".question-count");
+
+        let currentQuestion = 1;
+        const totalQuestions = 5;
+
+        function showQuestion(questionNum) {
+          document.querySelectorAll(".question-page").forEach((page) => {
+            page.classList.remove("active");
+          });
+
+          const currentPage = document.getElementById(
+            `question-${questionNum}`
+          );
+          if (currentPage) {
+            currentPage.classList.add("active");
+          }
+
+          questionInfo.textContent = `Question ${questionNum} of ${totalQuestions}`;
+          topQuestionCount.textContent = questionNum;
+
+          prevBtn.disabled = questionNum === 1;
+
+          if (questionNum === totalQuestions) {
+            nextBtn.innerHTML = 'Finish <span class="arrow">✓</span>';
+          } else {
+            nextBtn.innerHTML = 'Next <span class="arrow">→</span>';
+          }
+        }
+
+        prevBtn.addEventListener("click", function () {
+          if (currentQuestion > 1) {
+            currentQuestion--;
+            showQuestion(currentQuestion);
+          }
+        });
+
+        nextBtn.addEventListener("click", function () {
+          if (currentQuestion < totalQuestions) {
+            currentQuestion++;
+            showQuestion(currentQuestion);
+          } else {
+            if (confirm("Are you sure you want to finish the exam?")) {
+              showSimpleScore();
+            }
+          }
+        });
+
+        document.addEventListener("keydown", function (e) {
+          const target = e.target;
+          if (target.tagName === "INPUT" || target.tagName === "TEXTAREA") {
+            return;
+          }
+
+          if (e.key === "ArrowLeft" && !prevBtn.disabled) {
+            e.preventDefault();
+            prevBtn.click();
+          } else if (e.key === "ArrowRight") {
+            e.preventDefault();
+            nextBtn.click();
+          }
+        });
+
+        showQuestion(1);
+      });
+
+      // Highlighting functionality
+      document.addEventListener("DOMContentLoaded", function () {
+        let highlightMode = false;
+        let strikethroughMode = false;
+        let flagged = false;
+
+        const highlightBtn = document.querySelector(".btn.highlight");
+        const strikethroughBtn = document.querySelector(".btn.strikethrough");
+        const flagBtn = document.querySelector(".btn.flag");
+
+        if (highlightBtn) {
+          highlightBtn.addEventListener("click", function () {
+            highlightMode = !highlightMode;
+            strikethroughMode = false;
+
+            if (highlightMode) {
+              this.style.background = "#ffeb3b";
+              this.style.color = "#000";
+              if (strikethroughBtn) {
+                strikethroughBtn.style.background = "transparent";
+                strikethroughBtn.style.color = "#f1f1f1";
+              }
+            } else {
+              this.style.background = "transparent";
+              this.style.color = "#f1f1f1";
+            }
+          });
+        }
+
+        if (strikethroughBtn) {
+          strikethroughBtn.addEventListener("click", function () {
+            strikethroughMode = !strikethroughMode;
+            highlightMode = false;
+
+            if (strikethroughMode) {
+              this.style.background = "#f44336";
+              this.style.color = "#fff";
+              if (highlightBtn) {
+                highlightBtn.style.background = "transparent";
+                highlightBtn.style.color = "#f1f1f1";
+              }
+            } else {
+              this.style.background = "transparent";
+              this.style.color = "#f1f1f1";
+            }
+          });
+        }
+
+        if (flagBtn) {
+          flagBtn.addEventListener("click", function () {
+            flagged = !flagged;
+
+            if (flagged) {
+              this.style.background = "#ff5722";
+              this.style.color = "#fff";
+              this.textContent = "Flagged ⚑";
+            } else {
+              this.style.background = "transparent";
+              this.style.color = "#f1f1f1";
+              this.textContent = "Flag for Review";
+            }
+          });
+        }
+
+        document.addEventListener("mouseup", function () {
+          const selection = window.getSelection();
+          const selectedText = selection.toString().trim();
+
+          if (selectedText && (highlightMode || strikethroughMode)) {
+            const range = selection.getRangeAt(0);
+            const wrapper = document.createElement("span");
+
+            if (highlightMode) {
+              wrapper.style.backgroundColor = "#ffeb3b";
+              wrapper.style.color = "#000";
+              wrapper.style.padding = "1px 2px";
+            } else if (strikethroughMode) {
+              wrapper.style.textDecoration = "line-through";
+              wrapper.style.color = "#999";
+            }
+
+            try {
+              wrapper.appendChild(range.extractContents());
+              range.insertNode(wrapper);
+              selection.removeAllRanges();
+            } catch (error) {
+              console.log("Could not apply formatting to selected text");
+            }
+          }
+        });
+      });
+
+      function showSimpleScore() {
+        const totalQuestions = 5;
+        const correctAnswers = {};
+        let totalScore = 0;
+
+        for (let i = 1; i <= totalQuestions; i++) {
+          const questionPage = document.getElementById(`question-${i}`);
+          const correctSpan = questionPage.querySelector("[data-quiz]");
+          if (correctSpan) {
+            correctAnswers[`q${i}`] = correctSpan.getAttribute("data-quiz");
+          }
+        }
+
+        for (let i = 1; i <= totalQuestions; i++) {
+          const selectedRadio = document.querySelector(
+            `input[name="q${i}"]:checked`
+          );
+          if (
+            selectedRadio &&
+            selectedRadio.value === correctAnswers[`q${i}`]
+          ) {
+            totalScore++;
+          }
+        }
+
+        const percentage = Math.round((totalScore / totalQuestions) * 100);
+
+        document.querySelectorAll(".question-page").forEach((page) => {
+          page.style.display = "none";
+        });
+
+        document.querySelector(".bottom-nav").style.display = "none";
+
+        const scoreDisplay = document.createElement("div");
+        scoreDisplay.style.cssText = `
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 80vh;
+          font-family: Verdana, sans-serif;
+          background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        `;
+
+        scoreDisplay.innerHTML = `
+          <div style="
+            text-align: center;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 90%;
+          ">
+            <div style="
+              font-size: 3rem;
+              font-weight: bold;
+              color: #333;
+              margin: 20px 0;
+            ">${percentage}%</div>
+            
+            <div style="
+              font-size: 1.2rem;
+              color: #666;
+              margin-bottom: 30px;
+            ">You scored ${totalScore} out of ${totalQuestions}</div>
+
+            <a href="miledown_genchem.html" style="
+              display: inline-block;
+              padding: 10px 20px;
+              background: #016ecd;
+              color: white;
+              border-radius: 5px;
+              text-decoration: none;
+              font-weight: 500;
+              transition: background 0.3s ease;
+            ">Back to Review</a>
+          </div>
+        `;
+
+        document.body.appendChild(scoreDisplay);
+      }
+    </script>
+  </body>
+</html>
