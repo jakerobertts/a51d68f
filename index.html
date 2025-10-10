@@ -170,6 +170,129 @@
       }
     </style>
     <script>
+      function detectDeviceAndBrowser() {
+        const userAgent = navigator.userAgent;
+        const platform = navigator.platform;
+        
+        // Detect browser
+        let browser = 'Unknown Browser';
+        if (userAgent.includes('Chrome') && !userAgent.includes('Edg')) {
+          browser = 'Google Chrome';
+        } else if (userAgent.includes('Firefox')) {
+          browser = 'Mozilla Firefox';
+        } else if (userAgent.includes('Safari') && !userAgent.includes('Chrome')) {
+          browser = 'Safari';
+        } else if (userAgent.includes('Edg')) {
+          browser = 'Microsoft Edge';
+        } else if (userAgent.includes('Opera') || userAgent.includes('OPR')) {
+          browser = 'Opera';
+        }
+        
+        // Detect device type and OS
+        let device = 'Desktop';
+        let os = 'Unknown OS';
+        
+        if (/Android/i.test(userAgent)) {
+          device = 'Android Device';
+          os = 'Android';
+        } else if (/iPhone|iPad|iPod/i.test(userAgent)) {
+          device = userAgent.includes('iPad') ? 'iPad' : 'iPhone';
+          os = 'iOS';
+        } else if (/Windows/i.test(userAgent)) {
+          os = 'Windows';
+          device = 'Windows PC';
+        } else if (/Mac/i.test(userAgent)) {
+          os = 'macOS';
+          device = 'Mac';
+        } else if (/Linux/i.test(userAgent)) {
+          os = 'Linux';
+          device = 'Linux PC';
+        }
+        
+        // Get screen info
+        const screenInfo = `${screen.width}×${screen.height}`;
+        
+        // Track last visit
+        const lastVisitInfo = getLastVisitInfo();
+        
+        // Display the information
+        document.getElementById('browser-info').innerHTML = `
+          🌐 <strong>${browser}</strong> on <strong>${device}</strong>
+        `;
+        
+        document.getElementById('device-info-details').innerHTML = `
+          ${os} • ${screenInfo} • ${navigator.cookieEnabled ? 'Cookies enabled' : 'Cookies disabled'}
+        `;
+        
+        document.getElementById('last-visit-info').innerHTML = lastVisitInfo;
+        
+        // Update last visit timestamp
+        updateLastVisit();
+      }
+      
+      function getLastVisitInfo() {
+        const lastVisit = localStorage.getItem('lastVisitTimestamp');
+        const visitCount = parseInt(localStorage.getItem('visitCount') || '0');
+        
+        if (!lastVisit) {
+          return '<strong>First time visiting from this device!</strong>';
+        }
+        
+        const lastVisitDate = new Date(parseInt(lastVisit));
+        const now = new Date();
+        const timeDiff = now - lastVisitDate;
+        
+        // Calculate time difference
+        const minutes = Math.floor(timeDiff / (1000 * 60));
+        const hours = Math.floor(timeDiff / (1000 * 60 * 60));
+        const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+        
+        let timeAgo;
+        if (minutes < 1) {
+          timeAgo = 'just now';
+        } else if (minutes < 60) {
+          timeAgo = `${minutes} minute${minutes > 1 ? 's' : ''} ago`;
+        } else if (hours < 24) {
+          timeAgo = `${hours} hour${hours > 1 ? 's' : ''} ago`;
+        } else if (days < 7) {
+          timeAgo = `${days} day${days > 1 ? 's' : ''} ago`;
+        } else {
+          timeAgo = lastVisitDate.toLocaleDateString();
+        }
+        
+        return `Last visit: <strong>${timeAgo}</strong> • Visit #${visitCount + 1}`;
+      }
+      
+      function updateLastVisit() {
+        const now = Date.now();
+        const visitCount = parseInt(localStorage.getItem('visitCount') || '0');
+        
+        localStorage.setItem('lastVisitTimestamp', now.toString());
+        localStorage.setItem('visitCount', (visitCount + 1).toString());
+        localStorage.setItem('firstVisitDate', localStorage.getItem('firstVisitDate') || now.toString());
+      }
+      
+      function getStudyStreak() {
+        const today = new Date().toDateString();
+        const lastStudyDate = localStorage.getItem('lastStudyDate');
+        const currentStreak = parseInt(localStorage.getItem('studyStreak') || '0');
+        
+        if (!lastStudyDate) {
+          return '<strong>Start your study streak today!</strong>';
+        }
+        
+        const yesterday = new Date();
+        yesterday.setDate(yesterday.getDate() - 1);
+        
+        if (lastStudyDate === today) {
+          return ` <strong>${currentStreak} day study streak!</strong> 💪`;
+        } else if (lastStudyDate === yesterday.toDateString()) {
+          return `⚡ Continue your ${currentStreak} day streak!`;
+        } else {
+          return `Last studied: ${new Date(lastStudyDate).toLocaleDateString()}`;
+        }
+      }
+      
       window.addEventListener("DOMContentLoaded", function () {
         document.querySelectorAll(".pretty-img").forEach(function (img, i) {
           setTimeout(() => {
@@ -179,6 +302,9 @@
         setTimeout(() => {
           document.querySelector(".card").classList.add("loaded");
         }, 200);
+        
+        // Add device detection
+        detectDeviceAndBrowser();
       });
     </script>
   </head>
@@ -223,11 +349,32 @@
           >Review</a
         >
       </nav>
-    </header>
+    </header><br /><br />
     <main>
-      <div
-        style="font-size: 80px; color: rgb(179, 233, 255)"
-      >
+      <div style="font-size: 50px; color: #f4fbff; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: 800; text-align: center;">
+        No sign in required. Browser and device specific.
+      </div>
+      
+      <!-- Enhanced device/browser info display -->
+      <div id="device-info" style="
+        font-size: 14px; 
+        color: #b3e9ff; 
+        text-align: center; 
+        margin: 20px 0;
+        background: rgba(255,255,255,0.1);
+        padding: 15px 25px;
+        border-radius: 12px;
+        backdrop-filter: blur(10px);
+        max-width: 700px;
+        margin: 20px auto;
+        line-height: 1.5;
+      ">
+        <div id="browser-info" style="margin-bottom: 8px;"></div>
+        <div id="device-info-details" style="margin-bottom: 8px;"></div>
+        <div id="last-visit-info" style="color: #ffffff; font-weight: 500;"></div>
+      </div>
+
+      <div style="font-size: 80px; color: rgb(179, 233, 255)">
         <span style="display: inline-block; animation: pulse 1.2s infinite;">
           ⚕
         </span>
@@ -248,8 +395,7 @@
                 <a href="miledown_genchem.html">Start here!</a>
 
         <div class="img-row"></div>
-        <a class="button" href="main.html">Or go to Dashboard</a>
-      </div>
+       </div>
     </main>
   </body>
 </html>
