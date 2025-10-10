@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      img {
+        max-width: 300px;
+        max-height: 250px;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        display: block;
+        margin: 10px auto;
+        border: 1px solid #019cb1;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 8px 25px rgba(1, 156, 177, 0.3);
+        border-color: #ff6b35;
+      }
+
+      img:active {
+        transform: scale(0.95);
+      }
+
+      .image-zoom {
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6422130934976134"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="google-adsense-account" content="ca-pub-6422130934976134" />
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-L97LGZSXS5"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-L97LGZSXS5");
+    </script>
+    <link
+      rel="icon"
+      type="image/png"
+      href="Screenshot 2025-09-18 at 9.21.54 PM.png"
+    />
+    <title>
+      Chemical Bonding & IMFs - Fundamental Test of Knowledge - Miledown
+    </title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div
+      id="score-container"
+      style="
+        margin: 80px 0;
+        font-size: 0.8rem;
+        color: whitesmoke;
+        position: fixed;
+        top: 150px;
+        right: 16px;
+        background: #0a00cd;
+        z-index: 1000;
+        padding: 8px 8px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      "
+    >
+      Score: <span id="score">0</span> / <span id="total">0</span>
+    </div>
+
+    <h1>Chemical Bonding & Intermolecular Forces - MCAT Practice Questions</h1>
+
+    ____________________________________________________________________________<br />
+    <strong>1.</strong> Which type of bond involves complete transfer of
+    electrons?<br />
+    <span data-quiz="C" style="display: none">Ionic</span><br /><br />
+    <label><input type="radio" name="q1" value="A" /> A. Covalent</label><br />
+    <label
+      ><input type="radio" name="q1" value="B" /> B. Coordinate Covalent</label
+    ><br />
+    <label><input type="radio" name="q1" value="C" /> C. Ionic</label><br />
+    <label><input type="radio" name="q1" value="D" /> D. Metallic</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>2.</strong> What is the defining feature of a coordinate covalent
+    bond?<br />
+    <span data-quiz="B" style="display: none"
+      >Both bonding electrons donated by one atom</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q2" value="A" /> A. Electrons are
+      delocalized</label
+    ><br />
+    <label
+      ><input type="radio" name="q2" value="B" /> B. Both bonding electrons are
+      donated by one atom</label
+    ><br />
+    <label
+      ><input type="radio" name="q2" value="C" /> C. Bond forms between
+      metals</label
+    ><br />
+    <label
+      ><input type="radio" name="q2" value="D" /> D. Electrons are equally
+      shared</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>3.</strong> A covalent bond forms when the electronegativity
+    difference is:<br />
+    <span data-quiz="C" style="display: none">Less than 1.7</span><br /><br />
+    <label><input type="radio" name="q3" value="A" /> A. Greater than 2.0</label
+    ><br />
+    <label><input type="radio" name="q3" value="B" /> B. Less than 0.5</label
+    ><br />
+    <label><input type="radio" name="q3" value="C" /> C. Less than 1.7</label
+    ><br />
+    <label
+      ><input type="radio" name="q3" value="D" /> D. Between 1.7 and 3.3</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>4.</strong> A bond with ΔEN = 0.3 is:<br />
+    <span data-quiz="A" style="display: none">Nonpolar covalent</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q4" value="A" /> A. Nonpolar covalent</label
+    ><br />
+    <label><input type="radio" name="q4" value="B" /> B. Polar covalent</label
+    ><br />
+    <label><input type="radio" name="q4" value="C" /> C. Ionic</label><br />
+    <label><input type="radio" name="q4" value="D" /> D. Metallic</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>5.</strong> What bond has ΔEN = 1.5?<br />
+    <span data-quiz="B" style="display: none">Polar covalent</span><br /><br />
+    <label
+      ><input type="radio" name="q5" value="A" /> A. Nonpolar covalent</label
+    ><br />
+    <label><input type="radio" name="q5" value="B" /> B. Polar covalent</label
+    ><br />
+    <label><input type="radio" name="q5" value="C" /> C. Ionic</label><br />
+    <label><input type="radio" name="q5" value="D" /> D. Hydrogen bond</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>6.</strong> Which of the following bonds is the shortest and
+    strongest?<br />
+    <span data-quiz="C" style="display: none">Triple bond</span><br /><br />
+    <label><input type="radio" name="q6" value="A" /> A. Single bond</label
+    ><br />
+    <label><input type="radio" name="q6" value="B" /> B. Double bond</label
+    ><br />
+    <label><input type="radio" name="q6" value="C" /> C. Triple bond</label
+    ><br />
+    <label><input type="radio" name="q6" value="D" /> D. Pi bond</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>7.</strong> A double bond contains:<br />
+    <span data-quiz="C" style="display: none">One sigma and one pi bond</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q7" value="A" /> A. One sigma bond only</label
+    ><br />
+    <label><input type="radio" name="q7" value="B" /> B. Two sigma bonds</label
+    ><br />
+    <label
+      ><input type="radio" name="q7" value="C" /> C. One sigma and one pi
+      bond</label
+    ><br />
+    <label><input type="radio" name="q7" value="D" /> D. Two pi bonds</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>8.</strong> In a triple bond, how many pi bonds are there?<br />
+    <span data-quiz="C" style="display: none">2</span><br /><br />
+    <label><input type="radio" name="q8" value="A" /> A. 0</label><br />
+    <label><input type="radio" name="q8" value="B" /> B. 1</label><br />
+    <label><input type="radio" name="q8" value="C" /> C. 2</label><br />
+    <label><input type="radio" name="q8" value="D" /> D. 3</label><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>9.</strong> A sigma (σ) bond is formed by:<br />
+    <span data-quiz="B" style="display: none">Head-on overlap of orbitals</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q9" value="A" /> A. Side-to-side overlap</label
+    ><br />
+    <label
+      ><input type="radio" name="q9" value="B" /> B. Head-on overlap of
+      orbitals</label
+    ><br />
+    <label
+      ><input type="radio" name="q9" value="C" /> C. Electron
+      delocalization</label
+    ><br />
+    <label
+      ><input type="radio" name="q9" value="D" /> D. Pi bond resonance</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>10.</strong> What is the charge of a cation?<br />
+    <span data-quiz="A" style="display: none">Positive</span><br /><br />
+    <label><input type="radio" name="q10" value="A" /> A. Positive</label><br />
+    <label><input type="radio" name="q10" value="B" /> B. Negative</label><br />
+    <label><input type="radio" name="q10" value="C" /> C. Neutral</label><br />
+    <label><input type="radio" name="q10" value="D" /> D. Varies by group</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>11.</strong> Which is true about crystalline lattices like NaCl?<br />
+    <span data-quiz="C" style="display: none"
+      >Large, repeating structures of ions</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q11" value="A" /> A. Contain covalent
+      bonds</label
+    ><br />
+    <label
+      ><input type="radio" name="q11" value="B" /> B. Composed of discrete
+      molecules</label
+    ><br />
+    <label
+      ><input type="radio" name="q11" value="C" /> C. Large, repeating
+      structures of ions</label
+    ><br />
+    <label
+      ><input type="radio" name="q11" value="D" /> D. Made of only
+      cations</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>12.</strong> What is the formal charge of N in NH₃?<br />
+    <span data-quiz="B" style="display: none">0</span><br /><br />
+    <label><input type="radio" name="q12" value="A" /> A. +1</label><br />
+    <label><input type="radio" name="q12" value="B" /> B. 0</label><br />
+    <label><input type="radio" name="q12" value="C" /> C. -1</label><br />
+    <label><input type="radio" name="q12" value="D" /> D. +2</label><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>13.</strong> What's the formula for formal charge?<br />
+    <span data-quiz="C" style="display: none"
+      >Valence - dots - (½ × bonding electrons)</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q13" value="A" /> A. Valence - protons -
+      neutrons</label
+    ><br />
+    <label
+      ><input type="radio" name="q13" value="B" /> B. Valence - (dots +
+      sticks)</label
+    ><br />
+    <label
+      ><input type="radio" name="q13" value="C" /> C. Valence - dots - (½ ×
+      bonding electrons)</label
+    ><br />
+    <label
+      ><input type="radio" name="q13" value="D" /> D. Atomic number - number of
+      bonds</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>14.</strong> Which IMF is present in all molecules?<br />
+    <span data-quiz="C" style="display: none">London dispersion</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q14" value="A" /> A. Hydrogen bonding</label
+    ><br />
+    <label><input type="radio" name="q14" value="B" /> B. Dipole-dipole</label
+    ><br />
+    <label
+      ><input type="radio" name="q14" value="C" /> C. London dispersion</label
+    ><br />
+    <label
+      ><input type="radio" name="q14" value="D" /> D. Metallic bonding</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>15.</strong> Hydrogen bonds occur only when hydrogen is bonded
+    to:<br />
+    <span data-quiz="C" style="display: none">O, N, or F</span><br /><br />
+    <label><input type="radio" name="q15" value="A" /> A. Cl, Br, or I</label
+    ><br />
+    <label><input type="radio" name="q15" value="B" /> B. C, H, or N</label
+    ><br />
+    <label><input type="radio" name="q15" value="C" /> C. O, N, or F</label
+    ><br />
+    <label><input type="radio" name="q15" value="D" /> D. Any non-metal</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>16.</strong> Which IMF is the strongest?<br />
+    <span data-quiz="C" style="display: none">Hydrogen bonding</span
+    ><br /><br />
+    <label><input type="radio" name="q16" value="A" /> A. Dipole-dipole</label
+    ><br />
+    <label
+      ><input type="radio" name="q16" value="B" /> B. London dispersion</label
+    ><br />
+    <label
+      ><input type="radio" name="q16" value="C" /> C. Hydrogen bonding</label
+    ><br />
+    <label><input type="radio" name="q16" value="D" /> D. Ionic bonding</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>17.</strong> Dipole-dipole interactions occur between:<br />
+    <span data-quiz="C" style="display: none">Permanent molecular dipoles</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q17" value="A" /> A. Nonpolar molecules</label
+    ><br />
+    <label><input type="radio" name="q17" value="B" /> B. Ions and metals</label
+    ><br />
+    <label
+      ><input type="radio" name="q17" value="C" /> C. Permanent molecular
+      dipoles</label
+    ><br />
+    <label
+      ><input type="radio" name="q17" value="D" /> D. Temporary induced
+      dipoles</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>18.</strong> Which IMF dominates in nonpolar molecules?<br />
+    <span data-quiz="C" style="display: none">London dispersion</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q18" value="A" /> A. Hydrogen bonding</label
+    ><br />
+    <label><input type="radio" name="q18" value="B" /> B. Dipole-dipole</label
+    ><br />
+    <label
+      ><input type="radio" name="q18" value="C" /> C. London dispersion</label
+    ><br />
+    <label><input type="radio" name="q18" value="D" /> D. Ion-dipole</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>19.</strong> In a hydrogen bond, the donor is:<br />
+    <span data-quiz="C" style="display: none"
+      >The atom covalently bonded to H</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q19" value="A" /> A. The atom with a lone
+      pair</label
+    ><br />
+    <label
+      ><input type="radio" name="q19" value="B" /> B. The hydrogen itself</label
+    ><br />
+    <label
+      ><input type="radio" name="q19" value="C" /> C. The atom covalently bonded
+      to H</label
+    ><br />
+    <label
+      ><input type="radio" name="q19" value="D" /> D. Any highly electronegative
+      atom</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>20.</strong> Which atom is typically the hydrogen bond acceptor?<br />
+    <span data-quiz="C" style="display: none">O (with lone pair)</span
+    ><br /><br />
+    <label><input type="radio" name="q20" value="A" /> A. C</label><br />
+    <label><input type="radio" name="q20" value="B" /> B. N</label><br />
+    <label><input type="radio" name="q20" value="C" /> C. O</label><br />
+    <label><input type="radio" name="q20" value="D" /> D. H</label><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>21.</strong> What is the steric number for an atom with 3 bonds and
+    1 lone pair?<br />
+    <span data-quiz="B" style="display: none">4</span><br /><br />
+    <label><input type="radio" name="q21" value="A" /> A. 3</label><br />
+    <label><input type="radio" name="q21" value="B" /> B. 4</label><br />
+    <label><input type="radio" name="q21" value="C" /> C. 2</label><br />
+    <label><input type="radio" name="q21" value="D" /> D. 1</label><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>22.</strong> An atom with sp³ hybridization has what geometry?<br />
+    <span data-quiz="C" style="display: none">Tetrahedral</span><br /><br />
+    <label><input type="radio" name="q22" value="A" /> A. Trigonal planar</label
+    ><br />
+    <label><input type="radio" name="q22" value="B" /> B. Linear</label><br />
+    <label><input type="radio" name="q22" value="C" /> C. Tetrahedral</label
+    ><br />
+    <label
+      ><input type="radio" name="q22" value="D" /> D. Trigonal
+      bipyramidal</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>23.</strong> What is the bond angle in an sp² hybridized atom?<br />
+    <span data-quiz="B" style="display: none">120°</span><br /><br />
+    <label><input type="radio" name="q23" value="A" /> A. 109.5°</label><br />
+    <label><input type="radio" name="q23" value="B" /> B. 120°</label><br />
+    <label><input type="radio" name="q23" value="C" /> C. 180°</label><br />
+    <label><input type="radio" name="q23" value="D" /> D. 90°</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>24.</strong> What hybridization corresponds to an octahedral
+    geometry?<br />
+    <span data-quiz="C" style="display: none">sp³d²</span><br /><br />
+    <label><input type="radio" name="q24" value="A" /> A. sp³</label><br />
+    <label><input type="radio" name="q24" value="B" /> B. sp³d</label><br />
+    <label><input type="radio" name="q24" value="C" /> C. sp³d²</label><br />
+    <label><input type="radio" name="q24" value="D" /> D. sp²</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>25.</strong> What geometry is associated with a steric number of
+    2?<br />
+    <span data-quiz="A" style="display: none">Linear</span><br /><br />
+    <label><input type="radio" name="q25" value="A" /> A. Linear</label><br />
+    <label><input type="radio" name="q25" value="B" /> B. Tetrahedral</label
+    ><br />
+    <label><input type="radio" name="q25" value="C" /> C. Trigonal planar</label
+    ><br />
+    <label><input type="radio" name="q25" value="D" /> D. Bent</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>26.</strong> Which molecule has a bent geometry due to lone
+    pairs?<br />
+    <span data-quiz="D" style="display: none">H₂O</span><br /><br />
+    <label><input type="radio" name="q26" value="A" /> A. CO₂</label><br />
+    <label><input type="radio" name="q26" value="B" /> B. CH₄</label><br />
+    <label><input type="radio" name="q26" value="C" /> C. NH₃</label><br />
+    <label><input type="radio" name="q26" value="D" /> D. H₂O</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>27.</strong> Why is the bond angle in H₂O less than 109.5°?<br />
+    <span data-quiz="B" style="display: none"
+      >Lone pairs repel bonding pairs more strongly</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q27" value="A" /> A. H atoms repel each
+      other</label
+    ><br />
+    <label
+      ><input type="radio" name="q27" value="B" /> B. Lone pairs repel bonding
+      pairs more strongly</label
+    ><br />
+    <label
+      ><input type="radio" name="q27" value="C" /> C. O is less
+      electronegative</label
+    ><br />
+    <label
+      ><input type="radio" name="q27" value="D" /> D. Hydrogen bonds bend the
+      molecule</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>28.</strong> Which has sp hybridization?<br />
+    <span data-quiz="A" style="display: none">BeCl₂</span><br /><br />
+    <label><input type="radio" name="q28" value="A" /> A. BeCl₂</label><br />
+    <label><input type="radio" name="q28" value="B" /> B. BF₃</label><br />
+    <label><input type="radio" name="q28" value="C" /> C. CH₄</label><br />
+    <label><input type="radio" name="q28" value="D" /> D. SF₆</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>29.</strong> Which hybridization results in a trigonal bipyramidal
+    shape?<br />
+    <span data-quiz="D" style="display: none">sp³d</span><br /><br />
+    <label><input type="radio" name="q29" value="A" /> A. sp</label><br />
+    <label><input type="radio" name="q29" value="B" /> B. sp²</label><br />
+    <label><input type="radio" name="q29" value="C" /> C. sp³</label><br />
+    <label><input type="radio" name="q29" value="D" /> D. sp³d</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>30.</strong> A molecule with 5 electron domains (no lone pairs) will
+    have:<br />
+    <span data-quiz="C" style="display: none"
+      >Trigonal bipyramidal geometry</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q30" value="A" /> A. Tetrahedral
+      geometry</label
+    ><br />
+    <label
+      ><input type="radio" name="q30" value="B" /> B. Octahedral geometry</label
+    ><br />
+    <label
+      ><input type="radio" name="q30" value="C" /> C. Trigonal bipyramidal
+      geometry</label
+    ><br />
+    <label
+      ><input type="radio" name="q30" value="D" /> D. Trigonal planar
+      geometry</label
+    ><br /><br />
+
+    <footer>
+      <p>All questions courtesy of Miledown</p>
+    </footer>
+  </body>
+
+  <script src="test.js"></script>
+  <script src="sidebar.js"></script>
+</html>

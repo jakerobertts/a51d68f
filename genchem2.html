@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      img {
+        max-width: 300px;
+        max-height: 250px;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        display: block;
+        margin: 10px auto;
+        border: 1px solid #019cb1;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 8px 25px rgba(1, 156, 177, 0.3);
+        border-color: #ff6b35;
+      }
+
+      img:active {
+        transform: scale(0.95);
+      }
+
+      .image-zoom {
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6422130934976134"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="google-adsense-account" content="ca-pub-6422130934976134" />
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-L97LGZSXS5"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-L97LGZSXS5");
+    </script>
+    <link
+      rel="icon"
+      type="image/png"
+      href="Screenshot 2025-09-18 at 9.21.54 PM.png"
+    />
+    <title>Quantum Numbers - Fundamental Test of Knowledge - Miledown</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div
+      id="score-container"
+      style="
+        margin: 80px 0;
+        font-size: 0.8rem;
+        color: whitesmoke;
+        position: fixed;
+        top: 150px;
+        right: 16px;
+        background: #0a00cd;
+        z-index: 1000;
+        padding: 8px 8px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      "
+    >
+      Score: <span id="score">0</span> / <span id="total">0</span>
+    </div>
+
+    <h1>Atomic and Quantum Values - MCAT Practice Questions</h1>
+
+    ____________________________________________________________________________<br />
+    <strong>1.</strong> What is the value of Avogadro's Number?<br />
+    <span data-quiz="C" style="display: none">6.022 × 10²³</span><br /><br />
+    <label><input type="radio" name="q1" value="A" /> A. 3.0 × 10⁸</label><br />
+    <label><input type="radio" name="q1" value="B" /> B. 6.626 × 10⁻³⁴</label
+    ><br />
+    <label><input type="radio" name="q1" value="C" /> C. 6.022 × 10²³</label
+    ><br />
+    <label><input type="radio" name="q1" value="D" /> D. 4.184 × 10³</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>2.</strong> Planck's constant has units of:<br />
+    <span data-quiz="C" style="display: none">J·s</span><br /><br />
+    <label><input type="radio" name="q2" value="A" /> A. J·mol</label><br />
+    <label><input type="radio" name="q2" value="B" /> B. m/s</label><br />
+    <label><input type="radio" name="q2" value="C" /> C. J·s</label><br />
+    <label><input type="radio" name="q2" value="D" /> D. kg·m²</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>3.</strong> The speed of light in a vacuum is approximately:<br />
+    <span data-quiz="C" style="display: none">3.0 × 10⁸ m/s</span><br /><br />
+    <label><input type="radio" name="q3" value="A" /> A. 3.0 × 10⁶ m/s</label
+    ><br />
+    <label><input type="radio" name="q3" value="B" /> B. 6.022 × 10²³ m/s</label
+    ><br />
+    <label><input type="radio" name="q3" value="C" /> C. 3.0 × 10⁸ m/s</label
+    ><br />
+    <label><input type="radio" name="q3" value="D" /> D. 1.0 × 10⁵ m/s</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>4.</strong> What equation relates energy and wavelength of a
+    photon?<br />
+    <span data-quiz="C" style="display: none">E = hc/λ</span><br /><br />
+    <label><input type="radio" name="q4" value="A" /> A. E = mc²</label><br />
+    <label><input type="radio" name="q4" value="B" /> B. E = hf</label><br />
+    <label><input type="radio" name="q4" value="C" /> C. E = hc/λ</label><br />
+    <label><input type="radio" name="q4" value="D" /> D. f = hc/E</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>5.</strong> As the wavelength (λ) of a photon increases, its
+    energy:<br />
+    <span data-quiz="B" style="display: none">Decreases</span><br /><br />
+    <label><input type="radio" name="q5" value="A" /> A. Increases</label><br />
+    <label><input type="radio" name="q5" value="B" /> B. Decreases</label><br />
+    <label><input type="radio" name="q5" value="C" /> C. Stays the same</label
+    ><br />
+    <label><input type="radio" name="q5" value="D" /> D. Doubles</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>6.</strong> If the frequency of a photon doubles, its energy:<br />
+    <span data-quiz="B" style="display: none">Doubles</span><br /><br />
+    <label><input type="radio" name="q6" value="A" /> A. Halves</label><br />
+    <label><input type="radio" name="q6" value="B" /> B. Doubles</label><br />
+    <label><input type="radio" name="q6" value="C" /> C. Quadruples</label
+    ><br />
+    <label><input type="radio" name="q6" value="D" /> D. Stays the same</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>7.</strong> In the equation E = hf, what does f represent?<br />
+    <span data-quiz="C" style="display: none">Frequency</span><br /><br />
+    <label><input type="radio" name="q7" value="A" /> A. Wavelength</label
+    ><br />
+    <label><input type="radio" name="q7" value="B" /> B. Force</label><br />
+    <label><input type="radio" name="q7" value="C" /> C. Frequency</label><br />
+    <label><input type="radio" name="q7" value="D" /> D. Field strength</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>8.</strong> Which of the following is diamagnetic?<br />
+    <span data-quiz="C" style="display: none">Helium</span><br /><br />
+    <label><input type="radio" name="q8" value="A" /> A. Hydrogen</label><br />
+    <label><input type="radio" name="q8" value="B" /> B. Lithium</label><br />
+    <label><input type="radio" name="q8" value="C" /> C. Helium</label><br />
+    <label><input type="radio" name="q8" value="D" /> D. Oxygen</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>9.</strong> Paramagnetic substances:<br />
+    <span data-quiz="C" style="display: none"
+      >Are pulled into a magnetic field</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q9" value="A" /> A. Are repelled by a magnetic
+      field</label
+    ><br />
+    <label
+      ><input type="radio" name="q9" value="B" /> B. Have all paired
+      electrons</label
+    ><br />
+    <label
+      ><input type="radio" name="q9" value="C" /> C. Are pulled into a magnetic
+      field</label
+    ><br />
+    <label
+      ><input type="radio" name="q9" value="D" /> D. Have no magnetic
+      properties</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>10.</strong> A substance with unpaired electrons is:<br />
+    <span data-quiz="A" style="display: none">Paramagnetic</span><br /><br />
+    <label><input type="radio" name="q10" value="A" /> A. Paramagnetic</label
+    ><br />
+    <label><input type="radio" name="q10" value="B" /> B. Diamagnetic</label
+    ><br />
+    <label><input type="radio" name="q10" value="C" /> C. Nonmagnetic</label
+    ><br />
+    <label><input type="radio" name="q10" value="D" /> D. Superconductive</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>11.</strong> What defines a free radical?<br />
+    <span data-quiz="C" style="display: none"
+      >An atom with one unpaired electron</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q11" value="A" /> A. An atom with all paired
+      electrons</label
+    ><br />
+    <label
+      ><input type="radio" name="q11" value="B" /> B. A molecule with zero net
+      charge</label
+    ><br />
+    <label
+      ><input type="radio" name="q11" value="C" /> C. An atom with one unpaired
+      electron</label
+    ><br />
+    <label
+      ><input type="radio" name="q11" value="D" /> D. An ion in excited
+      state</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>12.</strong> The principal quantum number (n) determines:<br />
+    <span data-quiz="C" style="display: none">Energy level</span><br /><br />
+    <label><input type="radio" name="q12" value="A" /> A. Orbital shape</label
+    ><br />
+    <label
+      ><input type="radio" name="q12" value="B" /> B. Orbital orientation</label
+    ><br />
+    <label><input type="radio" name="q12" value="C" /> C. Energy level</label
+    ><br />
+    <label><input type="radio" name="q12" value="D" /> D. Electron spin</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>13.</strong> Which quantum number defines the shape of the
+    orbital?<br />
+    <span data-quiz="B" style="display: none">l (azimuthal quantum number)</span
+    ><br /><br />
+    <label><input type="radio" name="q13" value="A" /> A. n</label><br />
+    <label><input type="radio" name="q13" value="B" /> B. l</label><br />
+    <label><input type="radio" name="q13" value="C" /> C. m<sub>l</sub></label
+    ><br />
+    <label><input type="radio" name="q13" value="D" /> D. m<sub>s</sub></label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>14.</strong> If l = 2, what type of orbital is it?<br />
+    <span data-quiz="C" style="display: none">d orbital</span><br /><br />
+    <label><input type="radio" name="q14" value="A" /> A. s</label><br />
+    <label><input type="radio" name="q14" value="B" /> B. p</label><br />
+    <label><input type="radio" name="q14" value="C" /> C. d</label><br />
+    <label><input type="radio" name="q14" value="D" /> D. f</label><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>15.</strong> How many possible values of m<sub>l</sub> exist if l =
+    3?<br />
+    <span data-quiz="C" style="display: none">7 values (-3 to +3)</span
+    ><br /><br />
+    <label><input type="radio" name="q15" value="A" /> A. 3</label><br />
+    <label><input type="radio" name="q15" value="B" /> B. 5</label><br />
+    <label><input type="radio" name="q15" value="C" /> C. 7</label><br />
+    <label><input type="radio" name="q15" value="D" /> D. 1</label><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>16.</strong> Which of the following is a valid value for the spin
+    quantum number (m<sub>s</sub>)?<br />
+    <span data-quiz="D" style="display: none">+1/2</span><br /><br />
+    <label><input type="radio" name="q16" value="A" /> A. 0</label><br />
+    <label><input type="radio" name="q16" value="B" /> B. 1</label><br />
+    <label><input type="radio" name="q16" value="C" /> C. −1</label><br />
+    <label><input type="radio" name="q16" value="D" /> D. +1/2</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>17.</strong> If n = 2, what are the possible values of l?<br />
+    <span data-quiz="B" style="display: none">0 and 1</span><br /><br />
+    <label><input type="radio" name="q17" value="A" /> A. 0 only</label><br />
+    <label><input type="radio" name="q17" value="B" /> B. 0 and 1</label><br />
+    <label><input type="radio" name="q17" value="C" /> C. 1 and 2</label><br />
+    <label><input type="radio" name="q17" value="D" /> D. 0, 1, 2</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>18.</strong> The maximum number of electrons in a shell with n = 3
+    is:<br />
+    <span data-quiz="D" style="display: none">18 (using 2n²)</span><br /><br />
+    <label><input type="radio" name="q18" value="A" /> A. 6</label><br />
+    <label><input type="radio" name="q18" value="B" /> B. 10</label><br />
+    <label><input type="radio" name="q18" value="C" /> C. 14</label><br />
+    <label><input type="radio" name="q18" value="D" /> D. 18</label><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>19.</strong> What is the maximum number of electrons in a
+    p-subshell?<br />
+    <span data-quiz="B" style="display: none">6 electrons</span><br /><br />
+    <label><input type="radio" name="q19" value="A" /> A. 2</label><br />
+    <label><input type="radio" name="q19" value="B" /> B. 6</label><br />
+    <label><input type="radio" name="q19" value="C" /> C. 8</label><br />
+    <label><input type="radio" name="q19" value="D" /> D. 10</label><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>20.</strong> Which set of quantum numbers is invalid?<br />
+    <span data-quiz="D" style="display: none">n=2, l=2 (l cannot equal n)</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q20" value="A" /> A. n=2, l=1, m<sub>l</sub>=0,
+      m<sub>s</sub>=+1/2</label
+    ><br />
+    <label
+      ><input type="radio" name="q20" value="B" /> B. n=3, l=2,
+      m<sub>l</sub>=-2, m<sub>s</sub>=-1/2</label
+    ><br />
+    <label
+      ><input type="radio" name="q20" value="C" /> C. n=1, l=0, m<sub>l</sub>=0,
+      m<sub>s</sub>=+1/2</label
+    ><br />
+    <label
+      ><input type="radio" name="q20" value="D" /> D. n=2, l=2, m<sub>l</sub>=1,
+      m<sub>s</sub>=+1/2</label
+    ><br /><br />
+
+    <footer>
+      <p>All questions courtesy of Miledown</p>
+    </footer>
+  </body>
+
+  <script src="test.js"></script>
+  <script src="sidebar.js"></script>
+</html>

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      img {
+        max-width: 300px;
+        max-height: 250px;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        display: block;
+        margin: 10px auto;
+        border: 1px solid #019cb1;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 8px 25px rgba(1, 156, 177, 0.3);
+        border-color: #ff6b35;
+      }
+
+      img:active {
+        transform: scale(0.95);
+      }
+
+      .image-zoom {
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6422130934976134"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="google-adsense-account" content="ca-pub-6422130934976134" />
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-L97LGZSXS5"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-L97LGZSXS5");
+    </script>
+    <link
+      rel="icon"
+      type="image/png"
+      href="Screenshot 2025-09-18 at 9.21.54 PM.png"
+    />
+    <title>Periodic Trends - MCAT Practice Questions</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div
+      id="score-container"
+      style="
+        margin: 80px 0;
+        font-size: 0.8rem;
+        color: whitesmoke;
+        position: fixed;
+        top: 150px;
+        right: 16px;
+        background: #0a00cd;
+        z-index: 1000;
+        padding: 8px 8px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      "
+    >
+      Score: <span id="score">0</span> / <span id="total">0</span>
+    </div>
+
+    <h1>Periodic Trends & Bonding - MCAT Practice Questions</h1>
+
+    ____________________________________________________________________________<br />
+    <strong>1.</strong> What defines a covalent bond?<br />
+    <span data-quiz="C" style="display: none"
+      >Sharing of electrons between atoms</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q1" value="A" /> A. Transfer of electrons
+      between atoms</label
+    ><br />
+    <label
+      ><input type="radio" name="q1" value="B" /> B. Sharing of protons between
+      nuclei</label
+    ><br />
+    <label
+      ><input type="radio" name="q1" value="C" /> C. Sharing of electrons
+      between atoms</label
+    ><br />
+    <label
+      ><input type="radio" name="q1" value="D" /> D. Transfer of neutrons
+      between atoms</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>2.</strong> Covalent bonds typically occur between:<br />
+    <span data-quiz="C" style="display: none">Non-metals and non-metals</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q2" value="A" /> A. Metals and metals</label
+    ><br />
+    <label
+      ><input type="radio" name="q2" value="B" /> B. Metals and
+      non-metals</label
+    ><br />
+    <label
+      ><input type="radio" name="q2" value="C" /> C. Non-metals and
+      non-metals</label
+    ><br />
+    <label><input type="radio" name="q2" value="D" /> D. Noble gases</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>3.</strong> Which group is known for having soft, highly reactive
+    metals?<br />
+    <span data-quiz="C" style="display: none">Group 1 – Alkali Metals</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q3" value="A" /> A. Group 2 – Alkaline Earth
+      Metals</label
+    ><br />
+    <label
+      ><input type="radio" name="q3" value="B" /> B. Group 17 – Halogens</label
+    ><br />
+    <label
+      ><input type="radio" name="q3" value="C" /> C. Group 1 – Alkali
+      Metals</label
+    ><br />
+    <label
+      ><input type="radio" name="q3" value="D" /> D. Group 18 – Noble
+      Gases</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>4.</strong> Which of the following is less reactive than alkali
+    metals but still reactive?<br />
+    <span data-quiz="C" style="display: none">Alkaline Earth Metals</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q4" value="A" /> A. Transition Metals</label
+    ><br />
+    <label><input type="radio" name="q4" value="B" /> B. Halogens</label><br />
+    <label
+      ><input type="radio" name="q4" value="C" /> C. Alkaline Earth
+      Metals</label
+    ><br />
+    <label
+      ><input type="radio" name="q4" value="D" /> D. Rare Earth Metals</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>5.</strong> Elements with multiple oxidation states and that often
+    form colorful compounds belong to:<br />
+    <span data-quiz="C" style="display: none">Transition Metals</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q5" value="A" /> A. Post-Transition
+      Metals</label
+    ><br />
+    <label><input type="radio" name="q5" value="B" /> B. Alkali Metals</label
+    ><br />
+    <label
+      ><input type="radio" name="q5" value="C" /> C. Transition Metals</label
+    ><br />
+    <label><input type="radio" name="q5" value="D" /> D. Halogens</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>6.</strong> Which group contains stable, non-reactive gases?<br />
+    <span data-quiz="D" style="display: none">Group 18</span><br /><br />
+    <label><input type="radio" name="q6" value="A" /> A. Group 1</label><br />
+    <label><input type="radio" name="q6" value="B" /> B. Group 2</label><br />
+    <label><input type="radio" name="q6" value="C" /> C. Group 17</label><br />
+    <label><input type="radio" name="q6" value="D" /> D. Group 18</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>7.</strong> The lanthanides and actinides are classified as:<br />
+    <span data-quiz="B" style="display: none">Rare Earth Metals</span
+    ><br /><br />
+    <label><input type="radio" name="q7" value="A" /> A. Noble Gases</label
+    ><br />
+    <label
+      ><input type="radio" name="q7" value="B" /> B. Rare Earth Metals</label
+    ><br />
+    <label
+      ><input type="radio" name="q7" value="C" /> C. Transition Metals</label
+    ><br />
+    <label><input type="radio" name="q7" value="D" /> D. Halogens</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>8.</strong> Which group contains elements that form salts with
+    metals?<br />
+    <span data-quiz="C" style="display: none">Halogens</span><br /><br />
+    <label><input type="radio" name="q8" value="A" /> A. Noble Gases</label
+    ><br />
+    <label
+      ><input type="radio" name="q8" value="B" /> B. Alkaline Earth
+      Metals</label
+    ><br />
+    <label><input type="radio" name="q8" value="C" /> C. Halogens</label><br />
+    <label><input type="radio" name="q8" value="D" /> D. Metalloids</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>9.</strong> Which elements typically have semiconductive properties
+    and are found along the "staircase"?<br />
+    <span data-quiz="D" style="display: none">Metalloids</span><br /><br />
+    <label><input type="radio" name="q9" value="A" /> A. Non-metals</label
+    ><br />
+    <label
+      ><input type="radio" name="q9" value="B" /> B. Transition Metals</label
+    ><br />
+    <label
+      ><input type="radio" name="q9" value="C" /> C. Post-Transition
+      Metals</label
+    ><br />
+    <label><input type="radio" name="q9" value="D" /> D. Metalloids</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>10.</strong> Which of the following is a post-transition metal?<br />
+    <span data-quiz="B" style="display: none">Pb</span><br /><br />
+    <label><input type="radio" name="q10" value="A" /> A. Si</label><br />
+    <label><input type="radio" name="q10" value="B" /> B. Pb</label><br />
+    <label><input type="radio" name="q10" value="C" /> C. Cl</label><br />
+    <label><input type="radio" name="q10" value="D" /> D. Fe</label><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>11.</strong> What happens to atomic size as you move across a period
+    (left to right)?<br />
+    <span data-quiz="C" style="display: none">Decreases</span><br /><br />
+    <label><input type="radio" name="q11" value="A" /> A. Increases</label
+    ><br />
+    <label><input type="radio" name="q11" value="B" /> B. Stays the same</label
+    ><br />
+    <label><input type="radio" name="q11" value="C" /> C. Decreases</label
+    ><br />
+    <label
+      ><input type="radio" name="q11" value="D" /> D. Fluctuates randomly</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>12.</strong> Which of the following increases down a group?<br />
+    <span data-quiz="C" style="display: none">Atomic size</span><br /><br />
+    <label
+      ><input type="radio" name="q12" value="A" /> A. Electronegativity</label
+    ><br />
+    <label
+      ><input type="radio" name="q12" value="B" /> B. Ionization energy</label
+    ><br />
+    <label><input type="radio" name="q12" value="C" /> C. Atomic size</label
+    ><br />
+    <label
+      ><input type="radio" name="q12" value="D" /> D. Electron affinity</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>13.</strong> What is the trend for ionization energy across a
+    period?<br />
+    <span data-quiz="B" style="display: none">Increases</span><br /><br />
+    <label><input type="radio" name="q13" value="A" /> A. Decreases</label
+    ><br />
+    <label><input type="radio" name="q13" value="B" /> B. Increases</label
+    ><br />
+    <label><input type="radio" name="q13" value="C" /> C. Stays the same</label
+    ><br />
+    <label
+      ><input type="radio" name="q13" value="D" /> D. Increases then
+      decreases</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>14.</strong> Which element is the most electronegative?<br />
+    <span data-quiz="D" style="display: none">Fluorine</span><br /><br />
+    <label><input type="radio" name="q14" value="A" /> A. Oxygen</label><br />
+    <label><input type="radio" name="q14" value="B" /> B. Nitrogen</label><br />
+    <label><input type="radio" name="q14" value="C" /> C. Chlorine</label><br />
+    <label><input type="radio" name="q14" value="D" /> D. Fluorine</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>15.</strong> Which property refers to the energy required to remove
+    an electron from an atom?<br />
+    <span data-quiz="B" style="display: none">Ionization energy</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q15" value="A" /> A. Electronegativity</label
+    ><br />
+    <label
+      ><input type="radio" name="q15" value="B" /> B. Ionization energy</label
+    ><br />
+    <label
+      ><input type="radio" name="q15" value="C" /> C. Electron affinity</label
+    ><br />
+    <label><input type="radio" name="q15" value="D" /> D. Atomic radius</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>16.</strong> Which trend explains why atomic radius increases down a
+    group?<br />
+    <span data-quiz="C" style="display: none"
+      >More electron shells and shielding</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q16" value="A" /> A. Greater nuclear
+      charge</label
+    ><br />
+    <label
+      ><input type="radio" name="q16" value="B" /> B. Increase in proton
+      number</label
+    ><br />
+    <label
+      ><input type="radio" name="q16" value="C" /> C. More electron shells and
+      shielding</label
+    ><br />
+    <label
+      ><input type="radio" name="q16" value="D" /> D. Decrease in electron
+      affinity</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>17.</strong> What causes effective nuclear charge (Z<sub>eff</sub>)
+    to increase across a period?<br />
+    <span data-quiz="C" style="display: none"
+      >Increasing number of protons with constant shielding</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q17" value="A" /> A. Decreasing
+      shielding</label
+    ><br />
+    <label
+      ><input type="radio" name="q17" value="B" /> B. Increasing electron
+      shells</label
+    ><br />
+    <label
+      ><input type="radio" name="q17" value="C" /> C. Increasing number of
+      protons with constant shielding</label
+    ><br />
+    <label
+      ><input type="radio" name="q17" value="D" /> D. Decrease in
+      electronegativity</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>18.</strong> Which element would likely have the lowest ionization
+    energy?<br />
+    <span data-quiz="D" style="display: none">Cesium</span><br /><br />
+    <label><input type="radio" name="q18" value="A" /> A. Fluorine</label><br />
+    <label><input type="radio" name="q18" value="B" /> B. Lithium</label><br />
+    <label><input type="radio" name="q18" value="C" /> C. Sodium</label><br />
+    <label><input type="radio" name="q18" value="D" /> D. Cesium</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>19.</strong> Which element would have the largest atomic radius?<br />
+    <span data-quiz="D" style="display: none">Francium</span><br /><br />
+    <label><input type="radio" name="q19" value="A" /> A. Neon</label><br />
+    <label><input type="radio" name="q19" value="B" /> B. Oxygen</label><br />
+    <label><input type="radio" name="q19" value="C" /> C. Sodium</label><br />
+    <label><input type="radio" name="q19" value="D" /> D. Francium</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>20.</strong> Which element would have the most negative electron
+    affinity (strongest tendency to gain an electron)?<br />
+    <span data-quiz="B" style="display: none">Fluorine</span><br /><br />
+    <label><input type="radio" name="q20" value="A" /> A. Helium</label><br />
+    <label><input type="radio" name="q20" value="B" /> B. Fluorine</label><br />
+    <label><input type="radio" name="q20" value="C" /> C. Beryllium</label
+    ><br />
+    <label><input type="radio" name="q20" value="D" /> D. Neon</label
+    ><br /><br />
+
+    <footer>
+      <p>All questions courtesy of Miledown</p>
+    </footer>
+  </body>
+
+  <script src="test.js"></script>
+  <script src="sidebar.js"></script>
+</html>

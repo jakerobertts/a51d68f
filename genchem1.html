@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      img {
+        max-width: 300px;
+        max-height: 250px;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        display: block;
+        margin: 10px auto;
+        border: 1px solid #019cb1;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 8px 25px rgba(1, 156, 177, 0.3);
+        border-color: #ff6b35;
+      }
+
+      img:active {
+        transform: scale(0.95);
+      }
+
+      .image-zoom {
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6422130934976134"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="google-adsense-account" content="ca-pub-6422130934976134" />
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-L97LGZSXS5"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-L97LGZSXS5");
+    </script>
+    <link
+      rel="icon"
+      type="image/png"
+      href="Screenshot 2025-09-18 at 9.21.54 PM.png"
+    />
+    <title>Atomic Structure - Fundamental Test of Knowledge - Miledown</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div
+      id="score-container"
+      style="
+        margin: 80px 0;
+        font-size: 0.8rem;
+        color: whitesmoke;
+        position: fixed;
+        top: 150px;
+        right: 16px;
+        background: #0a00cd;
+        z-index: 1000;
+        padding: 8px 8px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      "
+    >
+      Score: <span id="score">0</span> / <span id="total">0</span>
+    </div>
+
+    <h1>Atomic Structure - MCAT Practice Questions</h1>
+
+    ____________________________________________________________________________<br />
+    <strong>1.</strong> In element notation, what does
+    <strong>A</strong> represent?<br />
+    <span data-quiz="B" style="display: none">Mass number</span><br /><br />
+    <label
+      ><input type="radio" name="q1" value="A" /> A. Atomic number – the number
+      of protons in the nucleus</label
+    ><br />
+    <label
+      ><input type="radio" name="q1" value="B" /> B. Mass number – the total
+      number of protons and neutrons in the nucleus</label
+    ><br />
+    <label
+      ><input type="radio" name="q1" value="C" /> C. Atomic weight – the average
+      mass of all isotopes</label
+    ><br />
+    <label
+      ><input type="radio" name="q1" value="D" /> D. Electron number – the total
+      electrons in a neutral atom</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>2.</strong> What does <strong>Z</strong> represent in an element's
+    notation?<br />
+    <span data-quiz="C" style="display: none">Atomic number</span><br /><br />
+    <label
+      ><input type="radio" name="q2" value="A" /> A. Atomic mass – the average
+      mass of an element's isotopes</label
+    ><br />
+    <label
+      ><input type="radio" name="q2" value="B" /> B. Neutron count – the number
+      of neutrons in the nucleus</label
+    ><br />
+    <label
+      ><input type="radio" name="q2" value="C" /> C. Atomic number – the number
+      of protons in the nucleus</label
+    ><br />
+    <label
+      ><input type="radio" name="q2" value="D" /> D. Mass number – the total
+      number of protons and neutrons</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>3.</strong> Which best defines <strong>atomic weight</strong>?<br />
+    <span data-quiz="C" style="display: none">Weighted average mass</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q3" value="A" /> A. The number of protons and
+      neutrons added together</label
+    ><br />
+    <label
+      ><input type="radio" name="q3" value="B" /> B. The mass of the most
+      abundant isotope</label
+    ><br />
+    <label
+      ><input type="radio" name="q3" value="C" /> C. The weighted average mass
+      of an element's isotopes based on abundance</label
+    ><br />
+    <label
+      ><input type="radio" name="q3" value="D" /> D. The fixed mass of one atom
+      of the element</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>4.</strong> Which model introduced a dense, positively charged
+    nucleus?<br />
+    <span data-quiz="C" style="display: none">Rutherford Model</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q4" value="A" /> A. Bohr Model – electrons
+      orbit at fixed energy levels</label
+    ><br />
+    <label
+      ><input type="radio" name="q4" value="B" /> B. Dalton Model – atoms are
+      indivisible solid spheres</label
+    ><br />
+    <label
+      ><input type="radio" name="q4" value="C" /> C. Rutherford Model – atoms
+      have a small, dense, positive nucleus with electrons around it</label
+    ><br />
+    <label
+      ><input type="radio" name="q4" value="D" /> D. Quantum Model – electrons
+      are in regions of probability</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>5.</strong> According to the Bohr Model, how do electrons behave?<br />
+    <span data-quiz="B" style="display: none">Fixed orbital paths</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q5" value="A" /> A. They are found inside the
+      nucleus with protons</label
+    ><br />
+    <label
+      ><input type="radio" name="q5" value="B" /> B. They orbit the nucleus in
+      fixed paths with specific energies</label
+    ><br />
+    <label
+      ><input type="radio" name="q5" value="C" /> C. They move randomly in space
+      around the nucleus</label
+    ><br />
+    <label
+      ><input type="radio" name="q5" value="D" /> D. They form a cloud of
+      probability around the atom</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>6.</strong> What does the Heisenberg Uncertainty Principle state?<br />
+    <span data-quiz="C" style="display: none"
+      >Cannot know position and momentum simultaneously</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q6" value="A" /> A. Electrons can move only in
+      fixed circular orbits</label
+    ><br />
+    <label
+      ><input type="radio" name="q6" value="B" /> B. Energy levels can be
+      measured exactly at all times</label
+    ><br />
+    <label
+      ><input type="radio" name="q6" value="C" /> C. The position and momentum
+      of an electron cannot both be known at once</label
+    ><br />
+    <label
+      ><input type="radio" name="q6" value="D" /> D. Electron spin is always
+      opposite to its direction of motion</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>7.</strong> What does <strong>Hund's Rule</strong> say about
+    electron placement?<br />
+    <span data-quiz="B" style="display: none">Spread out before pairing</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q7" value="A" /> A. Electrons will pair
+      immediately in the same orbital</label
+    ><br />
+    <label
+      ><input type="radio" name="q7" value="B" /> B. Electrons spread out into
+      empty orbitals before pairing</label
+    ><br />
+    <label
+      ><input type="radio" name="q7" value="C" /> C. Electrons move randomly
+      between orbitals</label
+    ><br />
+    <label
+      ><input type="radio" name="q7" value="D" /> D. Electrons must fill the
+      highest energy levels first</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>8.</strong> What does the
+    <strong>Pauli Exclusion Principle</strong> state?<br />
+    <span data-quiz="B" style="display: none"
+      >No two electrons can have same quantum numbers</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q8" value="A" /> A. Electrons in the same
+      orbital must spin in the same direction</label
+    ><br />
+    <label
+      ><input type="radio" name="q8" value="B" /> B. No two electrons in an atom
+      can have the same set of four quantum numbers</label
+    ><br />
+    <label
+      ><input type="radio" name="q8" value="C" /> C. Electrons in the same shell
+      must have the same energy</label
+    ><br />
+    <label
+      ><input type="radio" name="q8" value="D" /> D. Electrons in different
+      orbitals always repel each other</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>9.</strong> Which statement is true about paired electrons?<br />
+    <span data-quiz="C" style="display: none"
+      >Opposite spins in same orbital</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q9" value="A" /> A. Both have the same spin and
+      energy</label
+    ><br />
+    <label
+      ><input type="radio" name="q9" value="B" /> B. They occupy different
+      orbitals within a subshell</label
+    ><br />
+    <label
+      ><input type="radio" name="q9" value="C" /> C. They must have opposite
+      spins within the same orbital</label
+    ><br />
+    <label
+      ><input type="radio" name="q9" value="D" /> D. They exist in completely
+      separate energy levels</label
+    ><br /><br />
+
+    ____________________________________________________________________________<br />
+    <strong>10.</strong> What is a key feature of the Rutherford atomic
+    model?<br />
+    <span data-quiz="C" style="display: none"
+      >Mostly empty space with dense nucleus</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q10" value="A" /> A. Electrons move in specific
+      energy levels around the nucleus</label
+    ><br />
+    <label
+      ><input type="radio" name="q10" value="B" /> B. Atoms are indivisible and
+      have no internal structure</label
+    ><br />
+    <label
+      ><input type="radio" name="q10" value="C" /> C. Atoms are mostly empty
+      space with a dense, central nucleus</label
+    ><br />
+    <label
+      ><input type="radio" name="q10" value="D" /> D. Electrons are spread
+      evenly</label
+    >
+  </body>
+  <script src="test.js"></script>
+  <script src="sidebar.js"></script>
+</html>
