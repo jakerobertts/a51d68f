@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      img {
+        max-width: 300px;
+        max-height: 250px;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        display: block;
+        margin: 10px auto;
+        border: 1px solid #019cb1;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 8px 25px rgba(1, 156, 177, 0.3);
+        border-color: #ff6b35;
+      }
+
+      img:active {
+        transform: scale(0.95);
+      }
+
+      .image-zoom {
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6422130934976134"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="google-adsense-account" content="ca-pub-6422130934976134" />
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-L97LGZSXS5"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-L97LGZSXS5");
+    </script>
+    <link
+      rel="icon"
+      type="image/png"
+      href="Screenshot 2025-09-18 at 9.21.54 PM.png"
+    />
+    <title>Circulatory System - MCAT Practice Questions</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div
+      id="score-container"
+      style="
+        margin: 80px 0;
+        font-size: 0.8rem;
+        color: whitesmoke;
+        position: fixed;
+        top: 150px;
+        right: 16px;
+        background: #0a00cd;
+        z-index: 1000;
+        padding: 8px 8px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      "
+    >
+      Score: <span id="score">0</span> / <span id="total">0</span>
+    </div>
+
+    <h1>Circulatory System - MCAT</h1>
+
+    <h2>Oxygen Transport & Hemoglobin</h2>
+
+    <!-- Question 1 -->
+    Which cell type primarily carries oxygen in the bloodstream?
+    <br />
+    <span data-quiz="C" style="display: none">Erythrocytes</span><br /><br />
+    <label><input type="radio" name="q1" value="A" /> A. Leukocytes</label
+    ><br />
+    <label><input type="radio" name="q1" value="B" /> B. Platelets</label><br />
+    <label><input type="radio" name="q1" value="C" /> C. Erythrocytes</label
+    ><br />
+    <label><input type="radio" name="q1" value="D" /> D. Plasma proteins</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 2 -->
+    Hemoglobin is composed of how many polypeptide chains, and where does oxygen
+    bind?
+    <br />
+    <span data-quiz="B" style="display: none"
+      >4 chains; binds to iron in heme</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q2" value="A" /> A. 2 chains; binds to nitrogen
+      in the molecule</label
+    ><br />
+    <label
+      ><input type="radio" name="q2" value="B" /> B. 4 chains; binds to iron in
+      heme</label
+    ><br />
+    <label
+      ><input type="radio" name="q2" value="C" /> C. 4 chains; binds to carbon
+      in the backbone</label
+    ><br />
+    <label
+      ><input type="radio" name="q2" value="D" /> D. 3 chains; binds to
+      magnesium</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 3 -->
+    What describes "cooperative binding" of O₂ to hemoglobin?
+    <br />
+    <span data-quiz="C" style="display: none"
+      >Binding of one O₂ molecule makes it easier for other O₂ molecules to
+      bind</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q3" value="A" /> A. Binding of one O₂ molecule
+      makes it harder for others to bind</label
+    ><br />
+    <label
+      ><input type="radio" name="q3" value="B" /> B. Binding of one O₂ molecule
+      does not affect other binding events</label
+    ><br />
+    <label
+      ><input type="radio" name="q3" value="C" /> C. Binding of one O₂ molecule
+      makes it easier for other O₂ molecules to bind</label
+    ><br />
+    <label
+      ><input type="radio" name="q3" value="D" /> D. Only one O₂ can ever bind
+      to hemoglobin</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 4 -->
+    The hemoglobin dissociation curve is typically:
+    <br />
+    <span data-quiz="C" style="display: none">Sigmoidal</span><br /><br />
+    <label><input type="radio" name="q4" value="A" /> A. Linear</label><br />
+    <label><input type="radio" name="q4" value="B" /> B. Hyperbolic</label
+    ><br />
+    <label><input type="radio" name="q4" value="C" /> C. Sigmoidal</label><br />
+    <label><input type="radio" name="q4" value="D" /> D. Exponential</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 5 -->
+    What is the effect of 2,3-BPG on hemoglobin's affinity for oxygen?
+    <br />
+    <span data-quiz="B" style="display: none"
+      >It decreases affinity (shifts curve right)</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q5" value="A" /> A. It increases affinity
+      (shifts curve left)</label
+    ><br />
+    <label
+      ><input type="radio" name="q5" value="B" /> B. It decreases affinity
+      (shifts curve right)</label
+    ><br />
+    <label><input type="radio" name="q5" value="C" /> C. It has no effect</label
+    ><br />
+    <label
+      ><input type="radio" name="q5" value="D" /> D. It prevents oxygen binding
+      entirely</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 6 -->
+    Which of the following conditions promotes release of O₂ from hemoglobin
+    (Bohr effect)?
+    <br />
+    <span data-quiz="B" style="display: none">Low pH, high CO₂</span
+    ><br /><br />
+    <label><input type="radio" name="q6" value="A" /> A. High pH, low CO₂</label
+    ><br />
+    <label><input type="radio" name="q6" value="B" /> B. Low pH, high CO₂</label
+    ><br />
+    <label
+      ><input type="radio" name="q6" value="C" /> C. Low temperature, high
+      pH</label
+    ><br />
+    <label
+      ><input type="radio" name="q6" value="D" /> D. Absence of 2,3-BPG</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 7 -->
+    Which molecule has a hyperbolic (not sigmoidal) O₂ dissociation curve and
+    serves as an oxygen reservoir in muscle?
+    <br />
+    <span data-quiz="C" style="display: none">Myoglobin</span><br /><br />
+    <label><input type="radio" name="q7" value="A" /> A. Hemoglobin</label
+    ><br />
+    <label><input type="radio" name="q7" value="B" /> B. Fetal hemoglobin</label
+    ><br />
+    <label><input type="radio" name="q7" value="C" /> C. Myoglobin</label><br />
+    <label><input type="radio" name="q7" value="D" /> D. 2,3-BPG</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 8 -->
+    Why does fetal hemoglobin (HbF) have a higher affinity for oxygen compared
+    to adult hemoglobin?
+    <br />
+    <span data-quiz="C" style="display: none"
+      >It binds 2,3-BPG less strongly</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q8" value="A" /> A. It binds 2,3-BPG more
+      strongly</label
+    ><br />
+    <label
+      ><input type="radio" name="q8" value="B" /> B. It uses δ subunits</label
+    ><br />
+    <label
+      ><input type="radio" name="q8" value="C" /> C. It binds 2,3-BPG less
+      strongly</label
+    ><br />
+    <label><input type="radio" name="q8" value="D" /> D. It is monomeric</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 9 -->
+    In sickle cell anemia, which amino acid substitution occurs in hemoglobin?
+    <br />
+    <span data-quiz="B" style="display: none">Glu → Val</span><br /><br />
+    <label><input type="radio" name="q9" value="A" /> A. Lys → Arg</label><br />
+    <label><input type="radio" name="q9" value="B" /> B. Glu → Val</label><br />
+    <label><input type="radio" name="q9" value="C" /> C. Ser → Thr</label><br />
+    <label><input type="radio" name="q9" value="D" /> D. Ala → Gly</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <h2>Blood Cells & Tissue</h2>
+
+    <!-- Question 10 -->
+    What type of tissue is blood considered?
+    <br />
+    <span data-quiz="B" style="display: none">Connective</span><br /><br />
+    <label><input type="radio" name="q10" value="A" /> A. Epithelial</label
+    ><br />
+    <label><input type="radio" name="q10" value="B" /> B. Connective</label
+    ><br />
+    <label><input type="radio" name="q10" value="C" /> C. Nervous</label><br />
+    <label><input type="radio" name="q10" value="D" /> D. Muscle</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 11 -->
+    Which organelles are missing in mature erythrocytes?
+    <br />
+    <span data-quiz="B" style="display: none"
+      >Mitochondria, nucleus, and organelles</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q11" value="A" /> A. Ribosomes and Golgi
+      apparatus</label
+    ><br />
+    <label
+      ><input type="radio" name="q11" value="B" /> B. Mitochondria, nucleus, and
+      organelles</label
+    ><br />
+    <label
+      ><input type="radio" name="q11" value="C" /> C. Endoplasmic reticulum and
+      lysosomes only</label
+    ><br />
+    <label
+      ><input type="radio" name="q11" value="D" /> D. Peroxisomes and centrioles
+      only</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 12 -->
+    Where are RBCs and WBCs produced?
+    <br />
+    <span data-quiz="C" style="display: none">Bone marrow</span><br /><br />
+    <label><input type="radio" name="q12" value="A" /> A. Liver</label><br />
+    <label><input type="radio" name="q12" value="B" /> B. Spleen</label><br />
+    <label><input type="radio" name="q12" value="C" /> C. Bone marrow</label
+    ><br />
+    <label><input type="radio" name="q12" value="D" /> D. Lymph nodes</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 13 -->
+    Which of the following correctly classifies leukocytes?
+    <br />
+    <span data-quiz="C" style="display: none"
+      >Granulocytes = neutrophils, eosinophils, basophils</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q13" value="A" /> A. Granulocytes = lymphocytes
+      and monocytes</label
+    ><br />
+    <label
+      ><input type="radio" name="q13" value="B" /> B. Agranulocytes =
+      neutrophils, eosinophils, basophils</label
+    ><br />
+    <label
+      ><input type="radio" name="q13" value="C" /> C. Granulocytes =
+      neutrophils, eosinophils, basophils</label
+    ><br />
+    <label
+      ><input type="radio" name="q13" value="D" /> D. Platelets =
+      granulocytes</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 14 -->
+    What is the primary function of platelets?
+    <br />
+    <span data-quiz="C" style="display: none">Clot formation</span><br /><br />
+    <label
+      ><input type="radio" name="q14" value="A" /> A. Oxygen transport</label
+    ><br />
+    <label><input type="radio" name="q14" value="B" /> B. Immune defense</label
+    ><br />
+    <label><input type="radio" name="q14" value="C" /> C. Clot formation</label
+    ><br />
+    <label
+      ><input type="radio" name="q14" value="D" /> D. Hormone transport</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <h2>Blood Flow through the Heart</h2>
+
+    <!-- Question 15 -->
+    Deoxygenated blood enters the heart via which structure?
+    <br />
+    <span data-quiz="D" style="display: none">Venae cavae</span><br /><br />
+    <label><input type="radio" name="q15" value="A" /> A. Pulmonary vein</label
+    ><br />
+    <label
+      ><input type="radio" name="q15" value="B" /> B. Pulmonary artery</label
+    ><br />
+    <label><input type="radio" name="q15" value="C" /> C. Aorta</label><br />
+    <label><input type="radio" name="q15" value="D" /> D. Venae cavae</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 16 -->
+    Oxygenated blood returns to the heart via which structure?
+    <br />
+    <span data-quiz="A" style="display: none">Pulmonary veins</span><br /><br />
+    <label><input type="radio" name="q16" value="A" /> A. Pulmonary veins</label
+    ><br />
+    <label
+      ><input type="radio" name="q16" value="B" /> B. Pulmonary arteries</label
+    ><br />
+    <label
+      ><input type="radio" name="q16" value="C" /> C. Superior vena cava</label
+    ><br />
+    <label
+      ><input type="radio" name="q16" value="D" /> D. Inferior vena cava</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 17 -->
+    Which valve lies between the left atrium and left ventricle?
+    <br />
+    <span data-quiz="C" style="display: none">Mitral (bicuspid)</span
+    ><br /><br />
+    <label><input type="radio" name="q17" value="A" /> A. Tricuspid</label
+    ><br />
+    <label><input type="radio" name="q17" value="B" /> B. Pulmonary</label
+    ><br />
+    <label
+      ><input type="radio" name="q17" value="C" /> C. Mitral (bicuspid)</label
+    ><br />
+    <label><input type="radio" name="q17" value="D" /> D. Aortic</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 18 -->
+    Which statement is true regarding arteries and veins?
+    <br />
+    <span data-quiz="C" style="display: none"
+      >Arteries carry blood away from the heart; veins carry blood toward the
+      heart</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q18" value="A" /> A. Arteries carry blood
+      toward the heart</label
+    ><br />
+    <label
+      ><input type="radio" name="q18" value="B" /> B. Veins carry blood away
+      from the heart</label
+    ><br />
+    <label
+      ><input type="radio" name="q18" value="C" /> C. Arteries carry blood away
+      from the heart; veins carry blood toward the heart</label
+    ><br />
+    <label
+      ><input type="radio" name="q18" value="D" /> D. Both carry blood in the
+      same direction</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 19 -->
+    Which sequence correctly lists the blood flow starting from the right
+    atrium?
+    <br />
+    <span data-quiz="B" style="display: none"
+      >Right atrium → right ventricle → pulmonary artery → lungs → pulmonary
+      veins → left atrium</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q19" value="A" /> A. Right atrium → aorta →
+      lungs → left atrium</label
+    ><br />
+    <label
+      ><input type="radio" name="q19" value="B" /> B. Right atrium → right
+      ventricle → pulmonary artery → lungs → pulmonary veins → left
+      atrium</label
+    ><br />
+    <label
+      ><input type="radio" name="q19" value="C" /> C. Right atrium → left atrium
+      → left ventricle → capillaries → right ventricle</label
+    ><br />
+    <label
+      ><input type="radio" name="q19" value="D" /> D. Right atrium → pulmonary
+      veins → lungs → pulmonary arteries → left atrium</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <h2>Cardiac Cycle & Regulation</h2>
+
+    <!-- Question 20 -->
+    How is cardiac output calculated?
+    <br />
+    <span data-quiz="C" style="display: none">Heart Rate × Stroke Volume</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q20" value="A" /> A. Heart Rate ÷ Stroke
+      Volume</label
+    ><br />
+    <label
+      ><input type="radio" name="q20" value="B" /> B. Heart Rate + Stroke
+      Volume</label
+    ><br />
+    <label
+      ><input type="radio" name="q20" value="C" /> C. Heart Rate × Stroke
+      Volume</label
+    ><br />
+    <label
+      ><input type="radio" name="q20" value="D" /> D. Stroke Volume – Heart
+      Rate</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 21 -->
+    What is "systole"?
+    <br />
+    <span data-quiz="B" style="display: none"
+      >Contraction when blood is ejected</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q21" value="A" /> A. Relaxation of the heart
+      chambers</label
+    ><br />
+    <label
+      ><input type="radio" name="q21" value="B" /> B. Contraction when blood is
+      ejected</label
+    ><br />
+    <label
+      ><input type="radio" name="q21" value="C" /> C. The resting state between
+      beats</label
+    ><br />
+    <label
+      ><input type="radio" name="q21" value="D" /> D. Filling of the
+      ventricles</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 22 -->
+    Which component of the conduction system acts as the heart's natural
+    pacemaker?
+    <br />
+    <span data-quiz="D" style="display: none">SA node</span><br /><br />
+    <label><input type="radio" name="q22" value="A" /> A. AV node</label><br />
+    <label><input type="radio" name="q22" value="B" /> B. Bundle of His</label
+    ><br />
+    <label><input type="radio" name="q22" value="C" /> C. Purkinje fibers</label
+    ><br />
+    <label><input type="radio" name="q22" value="D" /> D. SA node</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 23 -->
+    Which hormone increases water reabsorption to raise blood pressure?
+    <br />
+    <span data-quiz="C" style="display: none">ADH</span><br /><br />
+    <label><input type="radio" name="q23" value="A" /> A. Aldosterone</label
+    ><br />
+    <label><input type="radio" name="q23" value="B" /> B. ANP</label><br />
+    <label><input type="radio" name="q23" value="C" /> C. ADH</label><br />
+    <label><input type="radio" name="q23" value="D" /> D. Renin</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 24 -->
+    ANP (atrial natriuretic peptide) primarily acts to:
+    <br />
+    <span data-quiz="C" style="display: none"
+      >Lower blood pressure by increasing sodium/water excretion</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q24" value="A" /> A. Increase blood pressure by
+      sodium reabsorption and water retention</label
+    ><br />
+    <label
+      ><input type="radio" name="q24" value="B" /> B. Promote water
+      retention</label
+    ><br />
+    <label
+      ><input type="radio" name="q24" value="C" /> C. Lower blood pressure by
+      increasing sodium/water excretion</label
+    ><br />
+    <label
+      ><input type="radio" name="q24" value="D" /> D. Stimulate aldosterone
+      release</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 25 -->
+    Which forces determine fluid movement across capillary walls?
+    <br />
+    <span data-quiz="B" style="display: none"
+      >Hydrostatic pressure pushing out, osmotic pressure pulling in</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q25" value="A" /> A. Magnetic pressure and
+      nuclear pressure</label
+    ><br />
+    <label
+      ><input type="radio" name="q25" value="B" /> B. Hydrostatic pressure
+      pushing out, osmotic pressure pulling in</label
+    ><br />
+    <label
+      ><input type="radio" name="q25" value="C" /> C. Osmotic pressure pulling
+      in, hydrostatic pressure pushing out</label
+    ><br />
+    <label
+      ><input type="radio" name="q25" value="D" /> D. Gravitational pressure and
+      tensile pressure</label
+    ><br /><br />
+
+    <script src="test.js"></script>
+    <script src="sidebar.js"></script>
+  </body>
+</html>

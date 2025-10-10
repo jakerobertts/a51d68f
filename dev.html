@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      img {
+        max-width: 300px;
+        max-height: 250px;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        display: block;
+        margin: 10px auto;
+        border: 1px solid #019cb1;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 8px 25px rgba(1, 156, 177, 0.3);
+        border-color: #ff6b35;
+      }
+
+      img:active {
+        transform: scale(0.95);
+      }
+
+      .image-zoom {
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6422130934976134"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="google-adsense-account" content="ca-pub-6422130934976134" />
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-L97LGZSXS5"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-L97LGZSXS5");
+    </script>
+    <link
+      rel="icon"
+      type="image/png"
+      href="Screenshot 2025-09-18 at 9.21.54 PM.png"
+    />
+    <title>Embryonic Development - MCAT Practice Questions</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div
+      id="score-container"
+      style="
+        margin: 80px 0;
+        font-size: 0.8rem;
+        color: whitesmoke;
+        position: fixed;
+        top: 150px;
+        right: 16px;
+        background: #0a00cd;
+        z-index: 1000;
+        padding: 8px 8px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      "
+    >
+      Score: <span id="score">0</span> / <span id="total">0</span>
+    </div>
+
+    <h1>Embryonic Development - MCAT</h1>
+
+    <h2>Early Development</h2>
+
+    <!-- Question 1 -->
+    What is a morula?
+    <br />
+    <span data-quiz="B" style="display: none"
+      >A solid ball of cells from division of a fertilized ovum</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q1" value="A" /> A. A hollow ball of cells from
+      cleavage in the morula stage</label
+    ><br />
+    <label
+      ><input type="radio" name="q1" value="B" /> B. A solid ball of cells from
+      ovum division</label
+    ><br />
+    <label
+      ><input type="radio" name="q1" value="C" /> C. The stage after
+      gastrulation</label
+    ><br />
+    <label
+      ><input type="radio" name="q1" value="D" /> D. A structure used in
+      neurulation</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 2 -->
+    Which developmental stage is a hollow sphere of cells?
+    <br />
+    <span data-quiz="C" style="display: none">Blastula</span><br /><br />
+    <label><input type="radio" name="q2" value="A" /> A. Morula</label><br />
+    <label><input type="radio" name="q2" value="B" /> B. Gastrula</label><br />
+    <label><input type="radio" name="q2" value="C" /> C. Blastula</label><br />
+    <label><input type="radio" name="q2" value="D" /> D. Neurula</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 3 -->
+    During implantation, the blastocyst differentiates into which two parts?
+    <br />
+    <span data-quiz="B" style="display: none"
+      >Trophoblast and inner cell mass</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q3" value="A" /> A. Epiblast and
+      hypoblast</label
+    ><br />
+    <label
+      ><input type="radio" name="q3" value="B" /> B. Trophoblast and inner cell
+      mass</label
+    ><br />
+    <label
+      ><input type="radio" name="q3" value="C" /> C. Ectoderm and
+      endoderm</label
+    ><br />
+    <label
+      ><input type="radio" name="q3" value="D" /> D. Mesoderm and
+      endoderm</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 4 -->
+    Gastrulation results in formation of which structure?
+    <br />
+    <span data-quiz="C" style="display: none"
+      >Gastrula with three germ layers</span
+    ><br /><br />
+    <label><input type="radio" name="q4" value="A" /> A. Blastula</label><br />
+    <label><input type="radio" name="q4" value="B" /> B. Morula</label><br />
+    <label
+      ><input type="radio" name="q4" value="C" /> C. Three germ layers</label
+    ><br />
+    <label
+      ><input type="radio" name="q4" value="D" /> D. Neural tube and
+      notochord</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 5 -->
+    Neurulation gives rise to which embryonic structure?
+    <br />
+    <span data-quiz="B" style="display: none">Neural tube</span><br /><br />
+    <label><input type="radio" name="q5" value="A" /> A. Nervous system</label
+    ><br />
+    <label><input type="radio" name="q5" value="B" /> B. Neural tube</label
+    ><br />
+    <label><input type="radio" name="q5" value="C" /> C. Notochord</label><br />
+    <label><input type="radio" name="q5" value="D" /> D. Placenta</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <h2>Germ Layers</h2>
+
+    <!-- Question 6 -->
+    Which germ layer gives rise to the nervous system and skin?
+    <br />
+    <span data-quiz="C" style="display: none">Ectoderm</span><br /><br />
+    <label><input type="radio" name="q6" value="A" /> A. Endoderm</label><br />
+    <label><input type="radio" name="q6" value="B" /> B. Mesoderm</label><br />
+    <label><input type="radio" name="q6" value="C" /> C. Ectoderm</label><br />
+    <label><input type="radio" name="q6" value="D" /> D. Hypoderm</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 7 -->
+    Which germ layer is responsible for forming the musculoskeletal system and
+    the circulatory system?
+    <br />
+    <span data-quiz="C" style="display: none">Mesoderm</span><br /><br />
+    <label><input type="radio" name="q7" value="A" /> A. Ectoderm</label><br />
+    <label><input type="radio" name="q7" value="B" /> B. Endoderm</label><br />
+    <label><input type="radio" name="q7" value="C" /> C. Mesoderm</label><br />
+    <label><input type="radio" name="q7" value="D" /> D. Neuroderm</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 8 -->
+    Which germ layer develops into the GI tract, respiratory epithelium, and
+    endocrine glands?
+    <br />
+    <span data-quiz="C" style="display: none">Endoderm</span><br /><br />
+    <label><input type="radio" name="q8" value="A" /> A. Ectoderm</label><br />
+    <label><input type="radio" name="q8" value="B" /> B. Mesoderm</label><br />
+    <label><input type="radio" name="q8" value="C" /> C. Endoderm</label><br />
+    <label><input type="radio" name="q8" value="D" /> D. Neural crest</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <h2>Cell Potency</h2>
+
+    <!-- Question 9 -->
+    A cell that can become any cell type including placenta is called:
+    <br />
+    <span data-quiz="C" style="display: none">Totipotent</span><br /><br />
+    <label><input type="radio" name="q9" value="A" /> A. Pluripotent</label
+    ><br />
+    <label><input type="radio" name="q9" value="B" /> B. Multipotent</label
+    ><br />
+    <label><input type="radio" name="q9" value="C" /> C. Totipotent</label
+    ><br />
+    <label><input type="radio" name="q9" value="D" /> D. Unipotent</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 10 -->
+    Which potency category allows differentiation into many cell types (but not
+    placenta)?
+    <br />
+    <span data-quiz="B" style="display: none">Pluripotent</span><br /><br />
+    <label><input type="radio" name="q10" value="A" /> A. Totipotent</label
+    ><br />
+    <label><input type="radio" name="q10" value="B" /> B. Pluripotent</label
+    ><br />
+    <label><input type="radio" name="q10" value="C" /> C. Multipotent</label
+    ><br />
+    <label><input type="radio" name="q10" value="D" /> D. Unipotent</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 11 -->
+    Which potency describes a cell that can differentiate into multiple but
+    limited cell types (e.g. adult stem cells)?
+    <br />
+    <span data-quiz="C" style="display: none">Multipotent</span><br /><br />
+    <label><input type="radio" name="q11" value="A" /> A. Totipotent</label
+    ><br />
+    <label><input type="radio" name="q11" value="B" /> B. Pluripotent</label
+    ><br />
+    <label><input type="radio" name="q11" value="C" /> C. Multipotent</label
+    ><br />
+    <label><input type="radio" name="q11" value="D" /> D. Unipotent</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <h2>Cell Signaling</h2>
+
+    <!-- Question 12 -->
+    Which signaling type involves a cell secreting a signal that acts on itself?
+    <br />
+    <span data-quiz="C" style="display: none">Autocrine</span><br /><br />
+    <label><input type="radio" name="q12" value="A" /> A. Paracrine</label
+    ><br />
+    <label><input type="radio" name="q12" value="B" /> B. Juxtacrine</label
+    ><br />
+    <label><input type="radio" name="q12" value="C" /> C. Autocrine</label
+    ><br />
+    <label><input type="radio" name="q12" value="D" /> D. Endocrine</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 13 -->
+    Which signaling method works over large distances via the bloodstream?
+    <br />
+    <span data-quiz="D" style="display: none">Endocrine</span><br /><br />
+    <label><input type="radio" name="q13" value="A" /> A. Autocrine</label
+    ><br />
+    <label><input type="radio" name="q13" value="B" /> B. Paracrine</label
+    ><br />
+    <label><input type="radio" name="q13" value="C" /> C. Juxtacrine</label
+    ><br />
+    <label><input type="radio" name="q13" value="D" /> D. Endocrine</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <h2>Fetal Development</h2>
+
+    <!-- Question 14 -->
+    Which statement about fetal hemoglobin is correct?
+    <br />
+    <span data-quiz="C" style="display: none"
+      >It has greater O₂ affinity than adult hemoglobin</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q14" value="A" /> A. It has lower O₂ affinity
+      than adult hemoglobin</label
+    ><br />
+    <label
+      ><input type="radio" name="q14" value="B" /> B. It is identical to adult
+      hemoglobin</label
+    ><br />
+    <label
+      ><input type="radio" name="q14" value="C" /> C. It has greater O₂ affinity
+      than adult hemoglobin</label
+    ><br />
+    <label
+      ><input type="radio" name="q14" value="D" /> D. It cannot bind
+      oxygen</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 15 -->
+    Blood in the umbilical vein is:
+    <br />
+    <span data-quiz="B" style="display: none">Oxygenated</span><br /><br />
+    <label><input type="radio" name="q15" value="A" /> A. Deoxygenated</label
+    ><br />
+    <label><input type="radio" name="q15" value="B" /> B. Oxygenated</label
+    ><br />
+    <label><input type="radio" name="q15" value="C" /> C. Mixed</label><br />
+    <label
+      ><input type="radio" name="q15" value="D" /> D. Same as in umbilical
+      artery</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 16 -->
+    Which fetal shunt connects the pulmonary artery to the descending aorta?
+    <br />
+    <span data-quiz="C" style="display: none">Ductus arteriosus</span
+    ><br /><br />
+    <label><input type="radio" name="q16" value="A" /> A. Ductus venosus</label
+    ><br />
+    <label><input type="radio" name="q16" value="B" /> B. Foramen ovale</label
+    ><br />
+    <label
+      ><input type="radio" name="q16" value="C" /> C. Ductus arteriosus</label
+    ><br />
+    <label><input type="radio" name="q16" value="D" /> D. Umbilical vein</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 17 -->
+    Which trimester spans from week 13 to the end of week 26?
+    <br />
+    <span data-quiz="B" style="display: none">Second trimester</span
+    ><br /><br />
+    <label><input type="radio" name="q17" value="A" /> A. First trimester</label
+    ><br />
+    <label
+      ><input type="radio" name="q17" value="B" /> B. Second trimester</label
+    ><br />
+    <label><input type="radio" name="q17" value="C" /> C. Third trimester</label
+    ><br />
+    <label
+      ><input type="radio" name="q17" value="D" /> D. Fourth trimester</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 18 -->
+    What is synaptic pruning?
+    <br />
+    <span data-quiz="B" style="display: none"
+      >Eliminating extra neurons and synapses to improve efficiency</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q18" value="A" /> A. Creating new
+      neurons</label
+    ><br />
+    <label
+      ><input type="radio" name="q18" value="B" /> B. Eliminating extra neurons
+      and synapses to improve efficiency</label
+    ><br />
+    <label
+      ><input type="radio" name="q18" value="C" /> C. Growth of synaptic
+      connections</label
+    ><br />
+    <label
+      ><input type="radio" name="q18" value="D" /> D. Regeneration of
+      axons</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 19 -->
+    Gross motor skills refer to:
+    <br />
+    <span data-quiz="C" style="display: none"
+      >Large movements like crawling or running</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q19" value="A" /> A. Fine movements in the
+      fingers</label
+    ><br />
+    <label
+      ><input type="radio" name="q19" value="B" /> B. Eye coordination</label
+    ><br />
+    <label
+      ><input type="radio" name="q19" value="C" /> C. Large movements like
+      crawling or running</label
+    ><br />
+    <label><input type="radio" name="q19" value="D" /> D. Vocal control</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 20 -->
+    Identical (monozygotic) twins arise from:
+    <br />
+    <span data-quiz="B" style="display: none"
+      >One zygote splitting into two embryos</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q20" value="A" /> A. Two separate ova and two
+      sperm</label
+    ><br />
+    <label
+      ><input type="radio" name="q20" value="B" /> B. One zygote splitting into
+      two embryos</label
+    ><br />
+    <label
+      ><input type="radio" name="q20" value="C" /> C. Two different eggs
+      fertilized</label
+    ><br />
+    <label
+      ><input type="radio" name="q20" value="D" /> D. One embryo and one
+      trophoblast</label
+    ><br /><br />
+
+    <script src="test.js"></script>
+    <script src="sidebar.js"></script>
+  </body>
+</html>

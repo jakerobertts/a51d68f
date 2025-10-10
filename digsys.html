@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      img {
+        max-width: 300px;
+        max-height: 250px;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        display: block;
+        margin: 10px auto;
+        border: 1px solid #019cb1;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 8px 25px rgba(1, 156, 177, 0.3);
+        border-color: #ff6b35;
+      }
+
+      img:active {
+        transform: scale(0.95);
+      }
+
+      .image-zoom {
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6422130934976134"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="google-adsense-account" content="ca-pub-6422130934976134" />
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-L97LGZSXS5"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-L97LGZSXS5");
+    </script>
+    <link
+      rel="icon"
+      type="image/png"
+      href="Screenshot 2025-09-18 at 9.21.54 PM.png"
+    />
+    <title>Digestive System - MCAT Practice Questions</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div
+      id="score-container"
+      style="
+        margin: 80px 0;
+        font-size: 0.8rem;
+        color: whitesmoke;
+        position: fixed;
+        top: 150px;
+        right: 16px;
+        background: #0a00cd;
+        z-index: 1000;
+        padding: 8px 8px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      "
+    >
+      Score: <span id="score">0</span> / <span id="total">0</span>
+    </div>
+
+    <h1>Digestive System - MCAT Practice Questions</h1>
+
+    <h2>Digestive Pathway & Basic Concepts</h2>
+
+    <!-- Question 1 -->
+    What is the correct order of the digestive tract?
+    <br />
+    <span data-quiz="B" style="display: none"
+      >Oral cavity → pharynx → esophagus → stomach → small intestine → large
+      intestine → rectum</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q1" value="A" /> A. Oral cavity → esophagus →
+      pharynx → stomach → small intestine → large intestine → rectum</label
+    ><br />
+    <label
+      ><input type="radio" name="q1" value="B" /> B. Oral cavity → pharynx →
+      esophagus → stomach → small intestine → large intestine → rectum</label
+    ><br />
+    <label
+      ><input type="radio" name="q1" value="C" /> C. Oral cavity → pharynx →
+      stomach → esophagus → small intestine → large intestine → rectum</label
+    ><br />
+    <label
+      ><input type="radio" name="q1" value="D" /> D. Oral cavity → esophagus →
+      pharynx → small intestine → stomach → large intestine → rectum</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 2 -->
+    Which process occurs in the oral cavity?
+    <br />
+    <span data-quiz="B" style="display: none"
+      >Mechanical digestion (mastication)</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q2" value="A" /> A. Absorption of fats</label
+    ><br />
+    <label><input type="radio" name="q2" value="B" /> B. Mastication</label
+    ><br />
+    <label
+      ><input type="radio" name="q2" value="C" /> C. Activation of
+      trypsinogen</label
+    ><br />
+    <label
+      ><input type="radio" name="q2" value="D" /> D. Water reabsorption</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 3 -->
+    Which enzymes begin chemical digestion in the mouth?
+    <br />
+    <span data-quiz="B" style="display: none">Salivary amylase and lipase</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q3" value="A" /> A. Pepsin and trypsin</label
+    ><br />
+    <label
+      ><input type="radio" name="q3" value="B" /> B. Salivary amylase and
+      lipase</label
+    ><br />
+    <label
+      ><input type="radio" name="q3" value="C" /> C. Disaccharidases and
+      proteases</label
+    ><br />
+    <label
+      ><input type="radio" name="q3" value="D" /> D. Bile salts and
+      secretin</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 4 -->
+    Which part(s) of the esophagus is under somatic (voluntary) control?
+    <br />
+    <span data-quiz="C" style="display: none">Top third</span><br /><br />
+    <label><input type="radio" name="q4" value="A" /> A. Bottom third</label
+    ><br />
+    <label><input type="radio" name="q4" value="B" /> B. Middle third</label
+    ><br />
+    <label><input type="radio" name="q4" value="C" /> C. Top third</label><br />
+    <label><input type="radio" name="q4" value="D" /> D. Entire esophagus</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 5 -->
+    Which term best describes the muscle movement that propels food down the
+    esophagus?
+    <br />
+    <span data-quiz="C" style="display: none">Peristalsis</span><br /><br />
+    <label><input type="radio" name="q5" value="A" /> A. Diffusion</label><br />
+    <label><input type="radio" name="q5" value="B" /> B. Oscillation</label
+    ><br />
+    <label><input type="radio" name="q5" value="C" /> C. Peristalsis</label
+    ><br />
+    <label><input type="radio" name="q5" value="D" /> D. Transcytosis</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 6 -->
+    What is the approximate pH inside the stomach?
+    <br />
+    <span data-quiz="C" style="display: none">2</span><br /><br />
+    <label><input type="radio" name="q6" value="A" /> A. 7 (neutral)</label
+    ><br />
+    <label><input type="radio" name="q6" value="B" /> B. 5</label><br />
+    <label><input type="radio" name="q6" value="C" /> C. 2</label><br />
+    <label><input type="radio" name="q6" value="D" /> D. 9</label><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 7 -->
+    After digestion in the stomach, the semi-liquid mixture is called:
+    <br />
+    <span data-quiz="B" style="display: none">Chyme</span><br /><br />
+    <label><input type="radio" name="q7" value="A" /> A. Bolus</label><br />
+    <label><input type="radio" name="q7" value="B" /> B. Chyme</label><br />
+    <label><input type="radio" name="q7" value="C" /> C. Emulsion</label><br />
+    <label><input type="radio" name="q7" value="D" /> D. Chylomicron</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 8 -->
+    Which region is not part of the stomach?
+    <br />
+    <span data-quiz="C" style="display: none">Cecum</span><br /><br />
+    <label><input type="radio" name="q8" value="A" /> A. Fundus</label><br />
+    <label><input type="radio" name="q8" value="B" /> B. Body</label><br />
+    <label><input type="radio" name="q8" value="C" /> C. Cecum</label><br />
+    <label><input type="radio" name="q8" value="D" /> D. Antrum</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 9 -->
+    Which segment is primarily responsible for chemical digestion and receives
+    secretions from accessory organs?
+    <br />
+    <span data-quiz="C" style="display: none">Duodenum</span><br /><br />
+    <label><input type="radio" name="q9" value="A" /> A. Ileum</label><br />
+    <label><input type="radio" name="q9" value="B" /> B. Jejunum</label><br />
+    <label><input type="radio" name="q9" value="C" /> C. Duodenum</label><br />
+    <label><input type="radio" name="q9" value="D" /> D. Sigmoid colon</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 10 -->
+    Which parts of the small intestine are primarily involved in absorption
+    (rather than digestion)?
+    <br />
+    <span data-quiz="B" style="display: none">Jejunum and ileum</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q10" value="A" /> A. Duodenum and
+      jejunum</label
+    ><br />
+    <label
+      ><input type="radio" name="q10" value="B" /> B. Jejunum and ileum</label
+    ><br />
+    <label
+      ><input type="radio" name="q10" value="C" /> C. Duodenum and ileum</label
+    ><br />
+    <label
+      ><input type="radio" name="q10" value="D" /> D. Jejunum and colon</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 11 -->
+    Which segment of the large intestine accepts fluid from the small intestine?
+    <br />
+    <span data-quiz="C" style="display: none">Cecum</span><br /><br />
+    <label
+      ><input type="radio" name="q11" value="A" /> A. Descending colon</label
+    ><br />
+    <label><input type="radio" name="q11" value="B" /> B. Sigmoid colon</label
+    ><br />
+    <label><input type="radio" name="q11" value="C" /> C. Cecum</label><br />
+    <label><input type="radio" name="q11" value="D" /> D. Rectum</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 12 -->
+    Which of the following is not a segment of the large intestine?
+    <br />
+    <span data-quiz="C" style="display: none">Pyloric colon</span><br /><br />
+    <label><input type="radio" name="q12" value="A" /> A. Ascending colon</label
+    ><br />
+    <label
+      ><input type="radio" name="q12" value="B" /> B. Transverse colon</label
+    ><br />
+    <label><input type="radio" name="q12" value="C" /> C. Pyloric colon</label
+    ><br />
+    <label
+      ><input type="radio" name="q12" value="D" /> D. Descending colon</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <h2>Secretions & Enzymes – Stomach & Accessory Organs</h2>
+
+    <!-- Question 13 -->
+    Which cell type in the stomach secretes HCl and intrinsic factor?
+    <br />
+    <span data-quiz="B" style="display: none">Parietal cells</span><br /><br />
+    <label><input type="radio" name="q13" value="A" /> A. Chief cells</label
+    ><br />
+    <label><input type="radio" name="q13" value="B" /> B. Parietal cells</label
+    ><br />
+    <label><input type="radio" name="q13" value="C" /> C. G-cells</label><br />
+    <label><input type="radio" name="q13" value="D" /> D. Mucous cells</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 14 -->
+    What is the function of intrinsic factor?
+    <br />
+    <span data-quiz="C" style="display: none">Aids vitamin B₁₂ absorption</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q14" value="A" /> A. Activates
+      pepsinogen</label
+    ><br />
+    <label
+      ><input type="radio" name="q14" value="B" /> B. Neutralizes stomach
+      acid</label
+    ><br />
+    <label
+      ><input type="radio" name="q14" value="C" /> C. Aids vitamin B₁₂
+      absorption</label
+    ><br />
+    <label
+      ><input type="radio" name="q14" value="D" /> D. Stimulates
+      peristalsis</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 15 -->
+    Which stomach cell secretes pepsinogen and gastric lipase?
+    <br />
+    <span data-quiz="B" style="display: none">Chief cells</span><br /><br />
+    <label><input type="radio" name="q15" value="A" /> A. Parietal cells</label
+    ><br />
+    <label><input type="radio" name="q15" value="B" /> B. Chief cells</label
+    ><br />
+    <label><input type="radio" name="q15" value="C" /> C. G-cells</label><br />
+    <label><input type="radio" name="q15" value="D" /> D. Mucous cells</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 16 -->
+    Which gastric cell produces gastrin?
+    <br />
+    <span data-quiz="C" style="display: none">G-cells</span><br /><br />
+    <label><input type="radio" name="q16" value="A" /> A. Chief cells</label
+    ><br />
+    <label><input type="radio" name="q16" value="B" /> B. Parietal cells</label
+    ><br />
+    <label><input type="radio" name="q16" value="C" /> C. G-cells</label><br />
+    <label><input type="radio" name="q16" value="D" /> D. Mucous cells</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 17 -->
+    Which stomach cell type produces bicarbonate-rich mucus to protect the
+    stomach lining?
+    <br />
+    <span data-quiz="D" style="display: none">Mucous cells</span><br /><br />
+    <label><input type="radio" name="q17" value="A" /> A. G-cells</label><br />
+    <label><input type="radio" name="q17" value="B" /> B. Parietal cells</label
+    ><br />
+    <label><input type="radio" name="q17" value="C" /> C. Chief cells</label
+    ><br />
+    <label><input type="radio" name="q17" value="D" /> D. Mucous cells</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 18 -->
+    Which accessory organ secretes digestive enzymes and bicarbonate via acinar
+    cells?
+    <br />
+    <span data-quiz="C" style="display: none">Pancreas</span><br /><br />
+    <label><input type="radio" name="q18" value="A" /> A. Liver</label><br />
+    <label><input type="radio" name="q18" value="B" /> B. Gallbladder</label
+    ><br />
+    <label><input type="radio" name="q18" value="C" /> C. Pancreas</label><br />
+    <label><input type="radio" name="q18" value="D" /> D. Salivary glands</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 19 -->
+    Which organ synthesizes bile and detoxifies metabolites such as ammonia?
+    <br />
+    <span data-quiz="C" style="display: none">Liver</span><br /><br />
+    <label><input type="radio" name="q19" value="A" /> A. Pancreas</label><br />
+    <label><input type="radio" name="q19" value="B" /> B. Gallbladder</label
+    ><br />
+    <label><input type="radio" name="q19" value="C" /> C. Liver</label><br />
+    <label><input type="radio" name="q19" value="D" /> D. Stomach</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 20 -->
+    What is stored and concentrated in the gallbladder?
+    <br />
+    <span data-quiz="B" style="display: none">Bile</span><br /><br />
+    <label
+      ><input type="radio" name="q20" value="A" /> A. Pancreatic enzymes</label
+    ><br />
+    <label><input type="radio" name="q20" value="B" /> B. Bile</label><br />
+    <label><input type="radio" name="q20" value="C" /> C. Gastrin</label><br />
+    <label><input type="radio" name="q20" value="D" /> D. HCl</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 21 -->
+    Bile primarily aids digestion and absorption of which macromolecules?
+    <br />
+    <span data-quiz="C" style="display: none">Fats</span><br /><br />
+    <label><input type="radio" name="q21" value="A" /> A. Carbohydrates</label
+    ><br />
+    <label><input type="radio" name="q21" value="B" /> B. Proteins</label><br />
+    <label><input type="radio" name="q21" value="C" /> C. Fats</label><br />
+    <label><input type="radio" name="q21" value="D" /> D. Nucleic acids</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 22 -->
+    Which vitamins are fat-soluble and require bile for absorption?
+    <br />
+    <span data-quiz="B" style="display: none">A, D, E, K</span><br /><br />
+    <label><input type="radio" name="q22" value="A" /> A. B and C</label><br />
+    <label><input type="radio" name="q22" value="B" /> B. A, D, E, K</label
+    ><br />
+    <label><input type="radio" name="q22" value="C" /> C. B₁, B₂, B₃, B₆</label
+    ><br />
+    <label><input type="radio" name="q22" value="D" /> D. C, B₁₂, folate</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <h2>Brush Border Enzymes & Intestinal Digestion</h2>
+
+    <!-- Question 23 -->
+    Which enzymes break down complex sugars at the brush border?
+    <br />
+    <span data-quiz="B" style="display: none">Disaccharidases</span><br /><br />
+    <label
+      ><input type="radio" name="q23" value="A" /> A. Pancreatic amylase</label
+    ><br />
+    <label><input type="radio" name="q23" value="B" /> B. Disaccharidases</label
+    ><br />
+    <label><input type="radio" name="q23" value="C" /> C. Trypsin</label><br />
+    <label><input type="radio" name="q23" value="D" /> D. Lipase</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 24 -->
+    Which brush border enzymes break peptides down into amino acids?
+    <br />
+    <span data-quiz="C" style="display: none"
+      >Aminopeptidase and dipeptidase</span
+    ><br /><br />
+    <label><input type="radio" name="q24" value="A" /> A. Disaccharidases</label
+    ><br />
+    <label><input type="radio" name="q24" value="B" /> B. Enteropeptidase</label
+    ><br />
+    <label
+      ><input type="radio" name="q24" value="C" /> C. Aminopeptidase and
+      dipeptidase</label
+    ><br />
+    <label><input type="radio" name="q24" value="D" /> D. Lipase</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 25 -->
+    Which enzyme activates trypsinogen to trypsin at the brush border?
+    <br />
+    <span data-quiz="C" style="display: none">Enteropeptidase</span><br /><br />
+    <label><input type="radio" name="q25" value="A" /> A. Aminopeptidase</label
+    ><br />
+    <label><input type="radio" name="q25" value="B" /> B. Dipeptidase</label
+    ><br />
+    <label><input type="radio" name="q25" value="C" /> C. Enteropeptidase</label
+    ><br />
+    <label><input type="radio" name="q25" value="D" /> D. Chymotrypsin</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <h2>Hormonal Regulation & Other Functions</h2>
+
+    <!-- Question 26 -->
+    Which hormone increases hunger?
+    <br />
+    <span data-quiz="C" style="display: none">Ghrelin</span><br /><br />
+    <label><input type="radio" name="q26" value="A" /> A. Leptin</label><br />
+    <label><input type="radio" name="q26" value="B" /> B. Insulin</label><br />
+    <label><input type="radio" name="q26" value="C" /> C. Ghrelin</label><br />
+    <label><input type="radio" name="q26" value="D" /> D. Secretin</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 27 -->
+    Which hormone decreases hunger (promotes satiety)?
+    <br />
+    <span data-quiz="B" style="display: none">Leptin</span><br /><br />
+    <label><input type="radio" name="q27" value="A" /> A. Ghrelin</label><br />
+    <label><input type="radio" name="q27" value="B" /> B. Leptin</label><br />
+    <label><input type="radio" name="q27" value="C" /> C. CCK</label><br />
+    <label><input type="radio" name="q27" value="D" /> D. ADH</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 28 -->
+    Which hormones increase thirst?
+    <br />
+    <span data-quiz="B" style="display: none">ADH and aldosterone</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q28" value="A" /> A. Secretin and CCK</label
+    ><br />
+    <label
+      ><input type="radio" name="q28" value="B" /> B. ADH and aldosterone</label
+    ><br />
+    <label
+      ><input type="radio" name="q28" value="C" /> C. Ghrelin and leptin</label
+    ><br />
+    <label
+      ><input type="radio" name="q28" value="D" /> D. Gastrin and insulin</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 29 -->
+    Which duodenal hormone stimulates pancreatic juice and bile release and
+    promotes satiety?
+    <br />
+    <span data-quiz="C" style="display: none">CCK (cholecystokinin)</span
+    ><br /><br />
+    <label><input type="radio" name="q29" value="A" /> A. Secretin</label><br />
+    <label><input type="radio" name="q29" value="B" /> B. Gastrin</label><br />
+    <label
+      ><input type="radio" name="q29" value="C" /> C. CCK
+      (cholecystokinin)</label
+    ><br />
+    <label><input type="radio" name="q29" value="D" /> D. Ghrelin</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 30 -->
+    Which hormone stimulates bicarbonate-rich pancreatic juice secretion and
+    slows gut motility?
+    <br />
+    <span data-quiz="C" style="display: none">Secretin</span><br /><br />
+    <label><input type="radio" name="q30" value="A" /> A. Gastrin</label><br />
+    <label><input type="radio" name="q30" value="B" /> B. CCK</label><br />
+    <label><input type="radio" name="q30" value="C" /> C. Secretin</label><br />
+    <label><input type="radio" name="q30" value="D" /> D. Leptin</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 31 -->
+    Which endocrine hormones are secreted by the pancreas?
+    <br />
+    <span data-quiz="B" style="display: none">Insulin and glucagon</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q31" value="A" /> A. Pepsin and gastrin</label
+    ><br />
+    <label
+      ><input type="radio" name="q31" value="B" /> B. Insulin and
+      glucagon</label
+    ><br />
+    <label
+      ><input type="radio" name="q31" value="C" /> C. Secretin and CCK</label
+    ><br />
+    <label
+      ><input type="radio" name="q31" value="D" /> D. Lipase and amylase</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 32 -->
+    Which vitamins are produced by the gut microbiota?
+    <br />
+    <span data-quiz="B" style="display: none">Vitamin K and biotin</span
+    ><br /><br />
+    <label><input type="radio" name="q32" value="A" /> A. Vitamin D and E</label
+    ><br />
+    <label
+      ><input type="radio" name="q32" value="B" /> B. Vitamin K and
+      biotin</label
+    ><br />
+    <label
+      ><input type="radio" name="q32" value="C" /> C. Vitamin C and B₁</label
+    ><br />
+    <label><input type="radio" name="q32" value="D" /> D. Folate and B₁₂</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <h2>Integrative / Application Questions</h2>
+
+    <!-- Question 33 -->
+    If a patient lacked intrinsic factor, which issue would result?
+    <br />
+    <span data-quiz="B" style="display: none"
+      >Impaired vitamin B₁₂ absorption</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q33" value="A" /> A. Impaired fat
+      digestion</label
+    ><br />
+    <label
+      ><input type="radio" name="q33" value="B" /> B. Impaired vitamin B₁₂
+      absorption</label
+    ><br />
+    <label
+      ><input type="radio" name="q33" value="C" /> C. Excess acid
+      neutralization</label
+    ><br />
+    <label
+      ><input type="radio" name="q33" value="D" /> D. Decreased bile
+      production</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 34 -->
+    Where would pancreatic enzymes and bile mix with chyme?
+    <br />
+    <span data-quiz="C" style="display: none">Duodenum</span><br /><br />
+    <label><input type="radio" name="q34" value="A" /> A. Stomach</label><br />
+    <label><input type="radio" name="q34" value="B" /> B. Jejunum</label><br />
+    <label><input type="radio" name="q34" value="C" /> C. Duodenum</label><br />
+    <label><input type="radio" name="q34" value="D" /> D. Colon</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 35 -->
+    Which hormone would you expect to increase after a fatty meal enters the
+    duodenum?
+    <br />
+    <span data-quiz="C" style="display: none">CCK</span><br /><br />
+    <label><input type="radio" name="q35" value="A" /> A. Ghrelin</label><br />
+    <label><input type="radio" name="q35" value="B" /> B. Gastrin</label><br />
+    <label><input type="radio" name="q35" value="C" /> C. CCK</label><br />
+    <label><input type="radio" name="q35" value="D" /> D. ADH</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 36 -->
+    Which of these would decrease gastric motility and slow stomach emptying?
+    <br />
+    <span data-quiz="C" style="display: none">Secretin</span><br /><br />
+    <label><input type="radio" name="q36" value="A" /> A. Gastrin</label><br />
+    <label
+      ><input type="radio" name="q36" value="B" /> B. Intrinsic factor</label
+    ><br />
+    <label><input type="radio" name="q36" value="C" /> C. Secretin</label><br />
+    <label><input type="radio" name="q36" value="D" /> D. Pepsin</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 37 -->
+    Which segment of the digestive tract has a pH that gets neutralized by
+    bicarbonate from the pancreas?
+    <br />
+    <span data-quiz="C" style="display: none">Duodenum</span><br /><br />
+    <label><input type="radio" name="q37" value="A" /> A. Esophagus</label
+    ><br />
+    <label><input type="radio" name="q37" value="B" /> B. Stomach</label><br />
+    <label><input type="radio" name="q37" value="C" /> C. Duodenum</label><br />
+    <label><input type="radio" name="q37" value="D" /> D. Colon</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 38 -->
+    Which organ receives blood first from the digestive tract (via the hepatic
+    portal system) for detoxification and nutrient processing?
+    <br />
+    <span data-quiz="C" style="display: none">Liver</span><br /><br />
+    <label><input type="radio" name="q38" value="A" /> A. Kidney</label><br />
+    <label><input type="radio" name="q38" value="B" /> B. Pancreas</label><br />
+    <label><input type="radio" name="q38" value="C" /> C. Liver</label><br />
+    <label><input type="radio" name="q38" value="D" /> D. Spleen</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 39 -->
+    Which mixing structure in the stomach allows it to expand when food is
+    ingested?
+    <br />
+    <span data-quiz="A" style="display: none">Rugae</span><br /><br />
+    <label><input type="radio" name="q39" value="A" /> A. Rugae</label><br />
+    <label><input type="radio" name="q39" value="B" /> B. Villi</label><br />
+    <label><input type="radio" name="q39" value="C" /> C. Microvilli</label
+    ><br />
+    <label><input type="radio" name="q39" value="D" /> D. Lacteals</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 40 -->
+    Which blood vessel carries nutrient-rich but deoxygenated blood from the
+    small intestine to the liver?
+    <br />
+    <span data-quiz="B" style="display: none">Hepatic portal vein</span
+    ><br /><br />
+    <label><input type="radio" name="q40" value="A" /> A. Hepatic artery</label
+    ><br />
+    <label
+      ><input type="radio" name="q40" value="B" /> B. Hepatic portal vein</label
+    ><br />
+    <label
+      ><input type="radio" name="q40" value="C" /> C. Inferior vena cava</label
+    ><br />
+    <label><input type="radio" name="q40" value="D" /> D. Splenic vein</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 41 -->
+    Which cells in the duodenum help neutralize acidic chyme by producing mucus
+    and bicarbonate?
+    <br />
+    <span data-quiz="B" style="display: none">Brunner's glands</span
+    ><br /><br />
+    <label><input type="radio" name="q41" value="A" /> A. Goblet cells</label
+    ><br />
+    <label
+      ><input type="radio" name="q41" value="B" /> B. Brunner's glands</label
+    ><br />
+    <label><input type="radio" name="q41" value="C" /> C. Paneth cells</label
+    ><br />
+    <label><input type="radio" name="q41" value="D" /> D. Parietal cells</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 42 -->
+    Which of the following would you expect to find in the ileum specifically?
+    <br />
+    <span data-quiz="B" style="display: none">Peyer's patches</span><br /><br />
+    <label
+      ><input type="radio" name="q42" value="A" /> A. Brunner's glands</label
+    ><br />
+    <label><input type="radio" name="q42" value="B" /> B. Peyer's patches</label
+    ><br />
+    <label><input type="radio" name="q42" value="C" /> C. Gastric pits</label
+    ><br />
+    <label><input type="radio" name="q42" value="D" /> D. Choroid plexus</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 43 -->
+    Which of these hormones is secreted by the stomach, not the duodenum?
+    <br />
+    <span data-quiz="B" style="display: none">Gastrin</span><br /><br />
+    <label><input type="radio" name="q43" value="A" /> A. Secretin</label><br />
+    <label><input type="radio" name="q43" value="B" /> B. Gastrin</label><br />
+    <label><input type="radio" name="q43" value="C" /> C. CCK</label><br />
+    <label><input type="radio" name="q43" value="D" /> D. GLP‑1</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 44 -->
+    Which enzyme is not active in the mouth?
+    <br />
+    <span data-quiz="C" style="display: none">Pepsin</span><br /><br />
+    <label
+      ><input type="radio" name="q44" value="A" /> A. Salivary amylase</label
+    ><br />
+    <label><input type="radio" name="q44" value="B" /> B. Lipase</label><br />
+    <label><input type="radio" name="q44" value="C" /> C. Pepsin</label><br />
+    <label><input type="radio" name="q44" value="D" /> D. Lingual lipase</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 45 -->
+    Which of the following statements is correct?
+    <br />
+    <span data-quiz="B" style="display: none"
+      >The small intestine absorbs water and salts as well as nutrients</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q45" value="A" /> A. The large intestine is the
+      main site of macronutrient absorption</label
+    ><br />
+    <label
+      ><input type="radio" name="q45" value="B" /> B. The small intestine
+      absorbs water and salts as well as nutrients</label
+    ><br />
+    <label
+      ><input type="radio" name="q45" value="C" /> C. The stomach absorbs most
+      sugars</label
+    ><br />
+    <label
+      ><input type="radio" name="q45" value="D" /> D. The esophagus secretes
+      bile</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 46 -->
+    Which condition might result from a deficiency of bile salts?
+    <br />
+    <span data-quiz="C" style="display: none">Fat malabsorption</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q46" value="A" /> A. Protein
+      malabsorption</label
+    ><br />
+    <label
+      ><input type="radio" name="q46" value="B" /> B. Carbohydrate
+      malabsorption</label
+    ><br />
+    <label
+      ><input type="radio" name="q46" value="C" /> C. Fat malabsorption</label
+    ><br />
+    <label
+      ><input type="radio" name="q46" value="D" /> D. Vitamin C
+      deficiency</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 47 -->
+    Which hormone would not be stimulated by the presence of protein and fat in
+    the duodenum?
+    <br />
+    <span data-quiz="C" style="display: none">Gastrin</span><br /><br />
+    <label><input type="radio" name="q47" value="A" /> A. CCK</label><br />
+    <label><input type="radio" name="q47" value="B" /> B. Secretin</label><br />
+    <label><input type="radio" name="q47" value="C" /> C. Gastrin</label><br />
+    <label><input type="radio" name="q47" value="D" /> D. GLP‑1</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 48 -->
+    A patient with pancreatic exocrine dysfunction might have trouble digesting:
+    <br />
+    <span data-quiz="B" style="display: none"
+      >Carbohydrates, proteins, and fats</span
+    ><br /><br />
+    <label><input type="radio" name="q48" value="A" /> A. Vitamins</label><br />
+    <label
+      ><input type="radio" name="q48" value="B" /> B. Carbohydrates, proteins,
+      and fats</label
+    ><br />
+    <label><input type="radio" name="q48" value="C" /> C. Water</label><br />
+    <label><input type="radio" name="q48" value="D" /> D. Oxygen</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 49 -->
+    Which process in digestion is not primarily mediated by hormones?
+    <br />
+    <span data-quiz="C" style="display: none">Salivary enzyme release</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q49" value="A" /> A. Secretion of bile</label
+    ><br />
+    <label
+      ><input type="radio" name="q49" value="B" /> B. Pancreatic juice
+      release</label
+    ><br />
+    <label
+      ><input type="radio" name="q49" value="C" /> C. Salivary enzyme
+      release</label
+    ><br />
+    <label
+      ><input type="radio" name="q49" value="D" /> D. Gastric acid stimulation
+      by gastrin</label
+    ><br /><br />
+    _____________________________________________________________________________<br />
+
+    <!-- Question 50 -->
+    Which nutrient transport pathway is unique to fat digestion and absorption?
+    <br />
+    <span data-quiz="C" style="display: none"
+      >Entry into lacteals as chylomicrons</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q50" value="A" /> A. Absorption into
+      capillaries</label
+    ><br />
+    <label
+      ><input type="radio" name="q50" value="B" /> B. Transport via hepatic
+      portal vein</label
+    ><br />
+    <label
+      ><input type="radio" name="q50" value="C" /> C. Entry into lacteals</label
+    ><br />
+    <label
+      ><input type="radio" name="q50" value="D" /> D. Active transport into
+      venules</label
+    ><br /><br />
+
+    <script src="test.js"></script>
+    <script src="sidebar.js"></script>
+  </body>
+</html>
