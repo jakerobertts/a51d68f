@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MCAT Practice Quiz - Topic</title>
+    <style>
+      /* Reset & base */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: verdana, sans-serif;
+        background: #ffffff;
+        color: #222;
+        line-height: 1.6;
+      }
+
+      /* Top bar */
+      .top-bar {
+        background-color: #016ecd;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+      }
+
+      .top-bar-left .exam-title {
+        font-size: 1.1rem;
+        font-weight: bold;
+      }
+
+      .top-bar-right {
+        display: flex;
+        gap: 20px;
+        font-size: 0.95rem;
+      }
+
+      /* Toolbar */
+      .toolbar {
+        background-color: #4e9affe1;
+        border-bottom: 1px solid #ccc;
+        padding: 8px 20px;
+        display: flex;
+        gap: 12px;
+      }
+
+      .toolbar .btn {
+        background: transparent;
+        border: 1px solid #aaa;
+        border-radius: 4px;
+        padding: 6px 12px;
+        font-size: 0.9rem;
+        cursor: pointer;
+        color: #f1f1f1;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      .toolbar .btn:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
+
+      /* Main content area */
+      .content {
+        display: flex;
+        width: 100%;
+        padding-bottom: 80px;
+      }
+
+      /* Columns */
+      .column {
+        width: 50%;
+        padding: 20px;
+        overflow-y: auto;
+      }
+
+      .left-col {
+        border-right: 1px solid #ccc;
+        background: #fff;
+      }
+
+      .right-col {
+        background: #fafafa;
+      }
+
+      /* Question pages - hide all by default */
+      .question-page {
+        display: none;
+      }
+
+      .question-page.active {
+        display: block;
+      }
+
+      /* Passage section */
+      .passage h2 {
+        font-size: 1.2rem;
+        margin-bottom: 12px;
+      }
+
+      .passage p {
+        margin-bottom: 12px;
+        line-height: 1.5;
+      }
+
+      /* Question block */
+      .question-block {
+        margin-top: 20px;
+      }
+
+      .question-header {
+        margin-bottom: 8px;
+      }
+
+      .question-label {
+        font-size: 1.15rem;
+        font-weight: bold;
+      }
+
+      .question-text {
+        margin-bottom: 16px;
+        line-height: 1.4;
+      }
+
+      /* Options */
+      .options {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .options label {
+        display: flex;
+        align-items: flex-start;
+        border: 1px solid #ccc;
+        padding: 10px 14px;
+        border-radius: 5px;
+        cursor: pointer;
+        background: #fff;
+        transition: background-color 0.2s, border-color 0.2s;
+      }
+
+      .options label:hover {
+        background-color: #eef2ff;
+        border-color: #8a9ae5;
+      }
+
+      .options input[type="radio"] {
+        margin-right: 10px;
+        margin-top: 3px;
+      }
+
+      /* Bottom navigation */
+      .bottom-nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #016ecd;
+        border-top: 1px solid #0056a3;
+        padding: 12px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .nav-left,
+      .nav-right {
+        flex: 1;
+      }
+
+      .nav-center {
+        flex: 1;
+        text-align: center;
+      }
+
+      .question-info {
+        color: white;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: Verdana, sans-serif;
+      }
+
+      .nav-btn {
+        background: rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        color: white;
+        padding: 8px 16px;
+        border-radius: 6px;
+        font-size: 14px;
+        font-family: Verdana, sans-serif;
+        font-weight: 500;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        transition: all 0.3s ease;
+      }
+
+      .nav-btn:hover:not(:disabled) {
+        background: rgba(255, 255, 255, 0.3);
+        transform: translateY(-1px);
+      }
+
+      .nav-btn:disabled {
+        opacity: 0.4;
+        cursor: not-allowed;
+      }
+
+      .next-btn {
+        margin-left: auto;
+      }
+
+      .arrow {
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      /* Responsive */
+      @media (max-width: 800px) {
+        .content {
+          flex-direction: column;
+        }
+        .column {
+          width: 100%;
+          border: none;
+        }
+        .left-col {
+          border-bottom: 1px solid #ccc;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <span class="exam-title">MCAT © - Topic Name</span>
+      </div>
+      <div class="top-bar-right">
+        <span class="timer"
+          >Question <span class="question-count">1</span> of 5</span
+        >
+      </div>
+    </div>
+
+    <div class="toolbar">
+      <button class="btn highlight">Highlight</button>
+      <button class="btn strikethrough">Strikethrough</button>
+      <button class="btn flag">Flag for Review</button>
+    </div>
+
+    <!-- Question 1 -->
+    <div class="question-page active" id="question-1">
+      <div class="content">
+        <div class="column left-col">
+          <div class="passage">
+            <h2>Passage 1 (Questions 1‑5)</h2>
+            <p>
+              Amino acids are the fundamental building blocks of proteins and
+              contain both amino (-NH₂) and carboxyl (-COOH) functional groups.
+              These organic compounds exist as zwitterions at physiological pH,
+              with the amino group protonated and the carboxyl group
+              deprotonated. The twenty standard amino acids differ in their side
+              chains (R-groups), which determine their chemical properties and
+              biological functions.
+            </p>
+
+            <p>
+              Peptide bonds form through condensation reactions between the
+              carboxyl group of one amino acid and the amino group of another,
+              creating an amide linkage with partial double-bond character due
+              to resonance. This restricts rotation around the C-N bond and
+              gives proteins their structural stability. All naturally occurring
+              amino acids in proteins (except glycine) have the L-configuration.
+            </p>
+
+            <p>
+              The isoelectric point (pI) of an amino acid is the pH at which it
+              carries no net charge. At pH values below the pI, amino acids
+              carry a net positive charge, while at pH values above the pI, they
+              carry a net negative charge. This property is crucial for protein
+              purification and analysis techniques.
+            </p>
+          </div>
+        </div>
+        <div class="column right-col">
+          <div class="question-block">
+            <div class="question-header">
+              <span class="question-label">Question 1</span>
+            </div>
+            <div class="question-text">
+              Amino acids contain a carboxyl (-COOH) group and an amino (-NH₂)
+              group. What are the names of these two functional groups,
+              respectively?
+              <span data-quiz="C" style="display: none"
+                >Carboxyl and Amino</span
+              >
+            </div>
+            <div class="options">
+              <label
+                ><input type="radio" name="q1" value="A" /> A. Carbonyl and
+                Hydroxyl</label
+              >
+              <label
+                ><input type="radio" name="q1" value="B" /> B. Carboxyl and
+                Hydroxyl</label
+              >
+              <label
+                ><input type="radio" name="q1" value="C" /> C. Carboxyl and
+                Amino</label
+              >
+              <label
+                ><input type="radio" name="q1" value="D" /> D. Carbonyl and
+                Amino</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="question-page" id="question-2">
+      <div class="content">
+        <div class="column left-col">
+          <div class="passage">
+            <h2>Passage 1 (Questions 1‑5)</h2>
+            <p>
+              Amino acids are the fundamental building blocks of proteins and
+              contain both amino (-NH₂) and carboxyl (-COOH) functional groups.
+              These organic compounds exist as zwitterions at physiological pH,
+              with the amino group protonated and the carboxyl group
+              deprotonated. The twenty standard amino acids differ in their side
+              chains (R-groups), which determine their chemical properties and
+              biological functions.
+            </p>
+
+            <p>
+              Peptide bonds form through condensation reactions between the
+              carboxyl group of one amino acid and the amino group of another,
+              creating an amide linkage with partial double-bond character due
+              to resonance. This restricts rotation around the C-N bond and
+              gives proteins their structural stability. All naturally occurring
+              amino acids in proteins (except glycine) have the L-configuration.
+            </p>
+
+            <p>
+              The isoelectric point (pI) of an amino acid is the pH at which it
+              carries no net charge. At pH values below the pI, amino acids
+              carry a net positive charge, while at pH values above the pI, they
+              carry a net negative charge. This property is crucial for protein
+              purification and analysis techniques.
+            </p>
+          </div>
+        </div>
+        <div class="column right-col">
+          <div class="question-block">
+            <div class="question-header">
+              <span class="question-label">Question 2</span>
+            </div>
+            <div class="question-text">
+              Which of the following accurately describes the structure of a
+              peptide bond?
+              <span data-quiz="C" style="display: none"
+                >It is an amide bond with partial double bond character due to
+                resonance</span
+              >
+            </div>
+            <div class="options">
+              <label
+                ><input type="radio" name="q2" value="A" /> A. It is a
+                phosphodiester bond linking the carboxyl groups</label
+              >
+              <label
+                ><input type="radio" name="q2" value="B" /> B. It is an ester
+                linkage formed by the condensation of two amino acids</label
+              >
+              <label
+                ><input type="radio" name="q2" value="C" /> C. It is an amide
+                bond with partial double bond character due to resonance</label
+              >
+              <label
+                ><input type="radio" name="q2" value="D" /> D. It has free
+                rotation around the C—N bond, allowing for flexibility</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="question-page" id="question-3">
+      <div class="content">
+        <div class="column left-col">
+          <div class="passage">
+            <h2>Passage 1 (Questions 1‑5)</h2>
+            <p>
+              Amino acids are the fundamental building blocks of proteins and
+              contain both amino (-NH₂) and carboxyl (-COOH) functional groups.
+              These organic compounds exist as zwitterions at physiological pH,
+              with the amino group protonated and the carboxyl group
+              deprotonated. The twenty standard amino acids differ in their side
+              chains (R-groups), which determine their chemical properties and
+              biological functions.
+            </p>
+
+            <p>
+              Peptide bonds form through condensation reactions between the
+              carboxyl group of one amino acid and the amino group of another,
+              creating an amide linkage with partial double-bond character due
+              to resonance. This restricts rotation around the C-N bond and
+              gives proteins their structural stability. All naturally occurring
+              amino acids in proteins (except glycine) have the L-configuration.
+            </p>
+
+            <p>
+              The isoelectric point (pI) of an amino acid is the pH at which it
+              carries no net charge. At pH values below the pI, amino acids
+              carry a net positive charge, while at pH values above the pI, they
+              carry a net negative charge. This property is crucial for protein
+              purification and analysis techniques.
+            </p>
+          </div>
+        </div>
+        <div class="column right-col">
+          <div class="question-block">
+            <div class="question-header">
+              <span class="question-label">Question 3</span>
+            </div>
+            <div class="question-text">
+              Peptide bonds are formed through a condensation reaction between
+              which two functional groups of adjacent amino acids?
+              <span data-quiz="C" style="display: none"
+                >The N-terminus amino group of one and the C-terminus carboxyl
+                group of the next</span
+              >
+            </div>
+            <div class="options">
+              <label
+                ><input type="radio" name="q3" value="A" /> A. The C-terminus
+                carboxyl group of one and the C-terminus carboxyl group of the
+                next</label
+              >
+              <label
+                ><input type="radio" name="q3" value="B" /> B. The N-terminus
+                amino group of one and the R-group of the next</label
+              >
+              <label
+                ><input type="radio" name="q3" value="C" /> C. The N-terminus
+                amino group of one and the C-terminus carboxyl group of the
+                next</label
+              >
+              <label
+                ><input type="radio" name="q3" value="D" /> D. The N-terminus
+                R-group and the C-terminus R-group</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Question 4 -->
+    <div class="question-page" id="question-4">
+      <div class="content">
+        <div class="column left-col">
+          <div class="passage">
+            <h2>Passage 1 (Questions 1‑5)</h2>
+            <p>
+              Amino acids are the fundamental building blocks of proteins and
+              contain both amino (-NH₂) and carboxyl (-COOH) functional groups.
+              These organic compounds exist as zwitterions at physiological pH,
+              with the amino group protonated and the carboxyl group
+              deprotonated. The twenty standard amino acids differ in their side
+              chains (R-groups), which determine their chemical properties and
+              biological functions.
+            </p>
+
+            <p>
+              Peptide bonds form through condensation reactions between the
+              carboxyl group of one amino acid and the amino group of another,
+              creating an amide linkage with partial double-bond character due
+              to resonance. This restricts rotation around the C-N bond and
+              gives proteins their structural stability. All naturally occurring
+              amino acids in proteins (except glycine) have the L-configuration.
+            </p>
+
+            <p>
+              The isoelectric point (pI) of an amino acid is the pH at which it
+              carries no net charge. At pH values below the pI, amino acids
+              carry a net positive charge, while at pH values above the pI, they
+              carry a net negative charge. This property is crucial for protein
+              purification and analysis techniques.
+            </p>
+          </div>
+        </div>
+        <div class="column right-col">
+          <div class="question-block">
+            <div class="question-header">
+              <span class="question-label">Question 4</span>
+            </div>
+            <div class="question-text">
+              All naturally occurring amino acids found in proteins (except for
+              glycine) are typically of which stereochemical configuration?
+              <span data-quiz="B" style="display: none">L-configuration</span>
+            </div>
+            <div class="options">
+              <label
+                ><input type="radio" name="q4" value="A" /> A.
+                D-configuration</label
+              >
+              <label
+                ><input type="radio" name="q4" value="B" /> B.
+                L-configuration</label
+              >
+              <label
+                ><input type="radio" name="q4" value="C" /> C. Racemic
+                mixture</label
+              >
+              <label
+                ><input type="radio" name="q4" value="D" /> D.
+                R-configuration</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Question 5 -->
+    <div class="question-page" id="question-5">
+      <div class="content">
+        <div class="column left-col">
+          <div class="passage">
+            <h2>Passage 1 (Questions 1‑5)</h2>
+            <p>
+              Amino acids are the fundamental building blocks of proteins and
+              contain both amino (-NH₂) and carboxyl (-COOH) functional groups.
+              These organic compounds exist as zwitterions at physiological pH,
+              with the amino group protonated and the carboxyl group
+              deprotonated. The twenty standard amino acids differ in their side
+              chains (R-groups), which determine their chemical properties and
+              biological functions.
+            </p>
+
+            <p>
+              Peptide bonds form through condensation reactions between the
+              carboxyl group of one amino acid and the amino group of another,
+              creating an amide linkage with partial double-bond character due
+              to resonance. This restricts rotation around the C-N bond and
+              gives proteins their structural stability. All naturally occurring
+              amino acids in proteins (except glycine) have the L-configuration.
+            </p>
+
+            <p>
+              The isoelectric point (pI) of an amino acid is the pH at which it
+              carries no net charge. At pH values below the pI, amino acids
+              carry a net positive charge, while at pH values above the pI, they
+              carry a net negative charge. This property is crucial for protein
+              purification and analysis techniques.
+            </p>
+          </div>
+        </div>
+        <div class="column right-col">
+          <div class="question-block">
+            <div class="question-header">
+              <span class="question-label">Question 5</span>
+            </div>
+            <div class="question-text">
+              At a pH greater than an amino acid's isoelectric point (pI), what
+              is the expected net charge of an amino acid with a non-ionizable
+              R-group?
+              <span data-quiz="C" style="display: none">Negative (-1)</span>
+            </div>
+            <div class="options">
+              <label
+                ><input type="radio" name="q5" value="A" /> A. Positive
+                (+1)</label
+              >
+              <label
+                ><input type="radio" name="q5" value="B" /> B. Neutral
+                (0)</label
+              >
+              <label
+                ><input type="radio" name="q5" value="C" /> C. Negative
+                (-1)</label
+              >
+              <label
+                ><input type="radio" name="q5" value="D" /> D. Cannot be
+                determined</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Question 6 -->
+    <div class="question-page" id="question-6">
+      <div class="content">
+        <div class="column left-col">
+          <div class="passage">
+            <h2>Passage 2 (Questions 6‑10)</h2>
+            <p>
+              Amino acid synthesis is crucial for understanding biochemical
+              pathways and pharmaceutical development. The Strecker synthesis
+              and Gabriel synthesis are two important methods for preparing
+              amino acids in the laboratory. Both reactions typically yield
+              racemic mixtures of D- and L-amino acids, requiring additional
+              steps for enantiomeric resolution if pure stereoisomers are
+              needed.
+            </p>
+
+            <p>
+              The Strecker synthesis begins with an aldehyde, which reacts with
+              ammonia or an amine to form an imine intermediate. This imine then
+              undergoes nucleophilic addition with hydrogen cyanide to form an
+              α-amino nitrile, which is subsequently hydrolyzed to yield the
+              amino acid. The Gabriel synthesis utilizes potassium phthalimide,
+              diethyl bromomalonate, and an alkyl halide in a multi-step
+              process.
+            </p>
+
+            <p>
+              Aliphatic amino acids are characterized by hydrocarbon side chains
+              containing carbon and hydrogen atoms joined in straight chains,
+              branched chains, or non-aromatic rings. These amino acids contrast
+              with aromatic amino acids, which contain benzene rings or other
+              aromatic systems in their side chains.
+            </p>
+          </div>
+        </div>
+        <div class="column right-col">
+          <div class="question-block">
+            <div class="question-header">
+              <span class="question-label">Question 6</span>
+            </div>
+            <div class="question-text">
+              Which statement is TRUE about aliphatic amino acids?
+              <span data-quiz="B" style="display: none"
+                >They are hydrocarbon compounds containing carbon and hydrogen
+                joined together in straight chains, branched chains, or
+                non-aromatic rings</span
+              >
+            </div>
+            <div class="options">
+              <label
+                ><input type="radio" name="q6" value="A" /> A. They are always
+                non-polar and have side chains containing aromatic rings</label
+              >
+              <label
+                ><input type="radio" name="q6" value="B" /> B. They are
+                hydrocarbon compounds containing carbon and hydrogen joined
+                together in straight chains, branched chains, or non-aromatic
+                rings</label
+              >
+              <label
+                ><input type="radio" name="q6" value="C" /> C. They include
+                amino acids like Phenylalanine (Phe) and Tryptophan (Trp)</label
+              >
+              <label
+                ><input type="radio" name="q6" value="D" /> D. They have an
+                ionizable side chain that is positively charged at physiological
+                pH</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Question 7 -->
+    <div class="question-page" id="question-7">
+      <div class="content">
+        <div class="column left-col">
+          <div class="passage">
+            <h2>Passage 2 (Questions 6‑10)</h2>
+            <p>
+              Amino acid synthesis is crucial for understanding biochemical
+              pathways and pharmaceutical development. The Strecker synthesis
+              and Gabriel synthesis are two important methods for preparing
+              amino acids in the laboratory. Both reactions typically yield
+              racemic mixtures of D- and L-amino acids, requiring additional
+              steps for enantiomeric resolution if pure stereoisomers are
+              needed.
+            </p>
+
+            <p>
+              The Strecker synthesis begins with an aldehyde, which reacts with
+              ammonia or an amine to form an imine intermediate. This imine then
+              undergoes nucleophilic addition with hydrogen cyanide to form an
+              α-amino nitrile, which is subsequently hydrolyzed to yield the
+              amino acid. The Gabriel synthesis utilizes potassium phthalimide,
+              diethyl bromomalonate, and an alkyl halide in a multi-step
+              process.
+            </p>
+
+            <p>
+              Aliphatic amino acids are characterized by hydrocarbon side chains
+              containing carbon and hydrogen atoms joined in straight chains,
+              branched chains, or non-aromatic rings. These amino acids contrast
+              with aromatic amino acids, which contain benzene rings or other
+              aromatic systems in their side chains.
+            </p>
+          </div>
+        </div>
+        <div class="column right-col">
+          <div class="question-block">
+            <div class="question-header">
+              <span class="question-label">Question 7</span>
+            </div>
+            <div class="question-text">
+              Which organic starting material is used to synthesize an amino
+              acid in the Strecker synthesis?
+              <span data-quiz="B" style="display: none">Aldehyde</span>
+            </div>
+            <div class="options">
+              <label
+                ><input type="radio" name="q7" value="A" /> A. Alkyl
+                halide</label
+              >
+              <label
+                ><input type="radio" name="q7" value="B" /> B. Aldehyde</label
+              >
+              <label
+                ><input type="radio" name="q7" value="C" /> C. Carboxylic
+                acid</label
+              >
+              <label><input type="radio" name="q7" value="D" /> D. Amine</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Question 8 -->
+    <div class="question-page" id="question-8">
+      <div class="content">
+        <div class="column left-col">
+          <div class="passage">
+            <h2>Passage 2 (Questions 6‑10)</h2>
+            <p>
+              Amino acid synthesis is crucial for understanding biochemical
+              pathways and pharmaceutical development. The Strecker synthesis
+              and Gabriel synthesis are two important methods for preparing
+              amino acids in the laboratory. Both reactions typically yield
+              racemic mixtures of D- and L-amino acids, requiring additional
+              steps for enantiomeric resolution if pure stereoisomers are
+              needed.
+            </p>
+
+            <p>
+              The Strecker synthesis begins with an aldehyde, which reacts with
+              ammonia or an amine to form an imine intermediate. This imine then
+              undergoes nucleophilic addition with hydrogen cyanide to form an
+              α-amino nitrile, which is subsequently hydrolyzed to yield the
+              amino acid. The Gabriel synthesis utilizes potassium phthalimide,
+              diethyl bromomalonate, and an alkyl halide in a multi-step
+              process.
+            </p>
+
+            <p>
+              Aliphatic amino acids are characterized by hydrocarbon side chains
+              containing carbon and hydrogen atoms joined in straight chains,
+              branched chains, or non-aromatic rings. These amino acids contrast
+              with aromatic amino acids, which contain benzene rings or other
+              aromatic systems in their side chains.
+            </p>
+          </div>
+        </div>
+        <div class="column right-col">
+          <div class="question-block">
+            <div class="question-header">
+              <span class="question-label">Question 8</span>
+            </div>
+            <div class="question-text">
+              The Strecker synthesis and the Gabriel synthesis both commonly
+              yield which of the following?
+              <span data-quiz="B" style="display: none"
+                >Racemic mixtures of D- and L-amino acids</span
+              >
+            </div>
+            <div class="options">
+              <label
+                ><input type="radio" name="q8" value="A" /> A. Enantiomerically
+                pure L-amino acids</label
+              >
+              <label
+                ><input type="radio" name="q8" value="B" /> B. Racemic mixtures
+                of D- and L-amino acids</label
+              >
+              <label
+                ><input type="radio" name="q8" value="C" /> C. Exclusively amino
+                acids with non-polar R-groups</label
+              >
+              <label
+                ><input type="radio" name="q8" value="D" /> D. Amino acids with
+                D-configuration only</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Question 9 -->
+    <div class="question-page" id="question-9">
+      <div class="content">
+        <div class="column left-col">
+          <div class="passage">
+            <h2>Passage 2 (Questions 6‑10)</h2>
+            <p>
+              Amino acid synthesis is crucial for understanding biochemical
+              pathways and pharmaceutical development. The Strecker synthesis
+              and Gabriel synthesis are two important methods for preparing
+              amino acids in the laboratory. Both reactions typically yield
+              racemic mixtures of D- and L-amino acids, requiring additional
+              steps for enantiomeric resolution if pure stereoisomers are
+              needed.
+            </p>
+
+            <p>
+              The Strecker synthesis begins with an aldehyde, which reacts with
+              ammonia or an amine to form an imine intermediate. This imine then
+              undergoes nucleophilic addition with hydrogen cyanide to form an
+              α-amino nitrile, which is subsequently hydrolyzed to yield the
+              amino acid. The Gabriel synthesis utilizes potassium phthalimide,
+              diethyl bromomalonate, and an alkyl halide in a multi-step
+              process.
+            </p>
+
+            <p>
+              Aliphatic amino acids are characterized by hydrocarbon side chains
+              containing carbon and hydrogen atoms joined in straight chains,
+              branched chains, or non-aromatic rings. These amino acids contrast
+              with aromatic amino acids, which contain benzene rings or other
+              aromatic systems in their side chains.
+            </p>
+          </div>
+        </div>
+        <div class="column right-col">
+          <div class="question-block">
+            <div class="question-header">
+              <span class="question-label">Question 9</span>
+            </div>
+            <div class="question-text">
+              The Gabriel synthesis utilizes which of the following reagents to
+              create an amino acid?
+              <span data-quiz="C" style="display: none"
+                >Potassium phthalimide, diethyl bromomalonate, and an alkyl
+                halide</span
+              >
+            </div>
+            <div class="options">
+              <label
+                ><input type="radio" name="q9" value="A" /> A. An aldehyde,
+                ammonium chloride, and potassium cyanide</label
+              >
+              <label
+                ><input type="radio" name="q9" value="B" /> B. A carboxylic acid
+                and thionyl chloride</label
+              >
+              <label
+                ><input type="radio" name="q9" value="C" /> C. Potassium
+                phthalimide, diethyl bromomalonate, and an alkyl halide</label
+              >
+              <label
+                ><input type="radio" name="q9" value="D" /> D. An α-haloacid and
+                excess ammonia</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Question 10 -->
+    <div class="question-page" id="question-10">
+      <div class="content">
+        <div class="column left-col">
+          <div class="passage">
+            <h2>Passage 2 (Questions 6‑10)</h2>
+            <p>
+              Amino acid synthesis is crucial for understanding biochemical
+              pathways and pharmaceutical development. The Strecker synthesis
+              and Gabriel synthesis are two important methods for preparing
+              amino acids in the laboratory. Both reactions typically yield
+              racemic mixtures of D- and L-amino acids, requiring additional
+              steps for enantiomeric resolution if pure stereoisomers are
+              needed.
+            </p>
+
+            <p>
+              The Strecker synthesis begins with an aldehyde, which reacts with
+              ammonia or an amine to form an imine intermediate. This imine then
+              undergoes nucleophilic addition with hydrogen cyanide to form an
+              α-amino nitrile, which is subsequently hydrolyzed to yield the
+              amino acid. The Gabriel synthesis utilizes potassium phthalimide,
+              diethyl bromomalonate, and an alkyl halide in a multi-step
+              process.
+            </p>
+
+            <p>
+              Aliphatic amino acids are characterized by hydrocarbon side chains
+              containing carbon and hydrogen atoms joined in straight chains,
+              branched chains, or non-aromatic rings. These amino acids contrast
+              with aromatic amino acids, which contain benzene rings or other
+              aromatic systems in their side chains.
+            </p>
+          </div>
+        </div>
+        <div class="column right-col">
+          <div class="question-block">
+            <div class="question-header">
+              <span class="question-label">Question 10</span>
+            </div>
+            <div class="question-text">
+              In the Strecker synthesis, the initial reaction between the
+              starting carbonyl compound and ammonia or an amine results in the
+              formation of:
+              <span data-quiz="B" style="display: none">Imine</span>
+            </div>
+            <div class="options">
+              <label
+                ><input type="radio" name="q10" value="A" /> A. Carboxylic
+                acid</label
+              >
+              <label
+                ><input type="radio" name="q10" value="B" /> B. Imine</label
+              >
+              <label
+                ><input type="radio" name="q10" value="C" /> C. N-substituted
+                amide</label
+              >
+              <label
+                ><input type="radio" name="q10" value="D" /> D. α-amino
+                nitrile</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Question 11 -->
+    <div class="question-page" id="question-11">
+      <div class="content">
+        <div class="column left-col">
+          <div class="passage">
+            <h2>Passage 3 (Questions 11‑15)</h2>
+            <p>
+              Phosphorus-containing compounds play essential roles in biological
+              systems and organic chemistry. Phosphoric acid (H₃PO₄) is a
+              triprotic acid with three ionizable hydrogens, each having
+              distinct pKa values (pKa₁ = 2.1, pKa₂ = 7.2, pKa₃ = 12.3). This
+              makes phosphoric acid an excellent biological buffer system,
+              particularly around physiological pH.
+            </p>
+
+            <p>
+              At physiological pH (~7.4), phosphoric acid exists primarily as a
+              mixture of H₂PO₄⁻ and HPO₄²⁻ ions, which can act as both proton
+              donors and acceptors. The term "inorganic phosphate" (Pi) refers
+              to these phosphate species. Organic phosphates, such as ATP and
+              GTP, contain phosphate groups covalently bonded to organic
+              molecules and serve as energy storage compounds.
+            </p>
+
+            <p>
+              The backbone of DNA consists of sugar molecules connected by
+              phosphodiester bonds, which link the 3'-hydroxyl group of one
+              sugar to the 5'-phosphate group of the next. These bonds are
+              crucial for the structural integrity of nucleic acids and are
+              formed through condensation reactions that eliminate water
+              molecules.
+            </p>
+          </div>
+        </div>
+        <div class="column right-col">
+          <div class="question-block">
+            <div class="question-header">
+              <span class="question-label">Question 11</span>
+            </div>
+            <div class="question-text">
+              Which term is used to refer to a phosphate group or inorganic
+              phosphate, often denoted as Pi?
+              <span data-quiz="A" style="display: none">Phosphoric acid</span>
+            </div>
+            <div class="options">
+              <label
+                ><input type="radio" name="q11" value="A" /> A. Phosphoric
+                acid</label
+              >
+              <label
+                ><input type="radio" name="q11" value="B" /> B.
+                Pyrophosphate</label
+              >
+              <label
+                ><input type="radio" name="q11" value="C" /> C. Organic
+                phosphate</label
+              >
+              <label
+                ><input type="radio" name="q11" value="D" /> D.
+                Phosphodiester</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Question 12 -->
+    <div class="question-page" id="question-12">
+      <div class="content">
+        <div class="column left-col">
+          <div class="passage">
+            <h2>Passage 3 (Questions 11‑15)</h2>
+            <p>
+              Phosphorus-containing compounds play essential roles in biological
+              systems and organic chemistry. Phosphoric acid (H₃PO₄) is a
+              triprotic acid with three ionizable hydrogens, each having
+              distinct pKa values (pKa₁ = 2.1, pKa₂ = 7.2, pKa₃ = 12.3). This
+              makes phosphoric acid an excellent biological buffer system,
+              particularly around physiological pH.
+            </p>
+
+            <p>
+              At physiological pH (~7.4), phosphoric acid exists primarily as a
+              mixture of H₂PO₄⁻ and HPO₄²⁻ ions, which can act as both proton
+              donors and acceptors. The term "inorganic phosphate" (Pi) refers
+              to these phosphate species. Organic phosphates, such as ATP and
+              GTP, contain phosphate groups covalently bonded to organic
+              molecules and serve as energy storage compounds.
+            </p>
+
+            <p>
+              The backbone of DNA consists of sugar molecules connected by
+              phosphodiester bonds, which link the 3'-hydroxyl group of one
+              sugar to the 5'-phosphate group of the next. These bonds are
+              crucial for the structural integrity of nucleic acids and are
+              formed through condensation reactions that eliminate water
+              molecules.
+            </p>
+          </div>
+        </div>
+        <div class="column right-col">
+          <div class="question-block">
+            <div class="question-header">
+              <span class="question-label">Question 12</span>
+            </div>
+            <div class="question-text">
+              Phosphoric acid (H₃PO₄) is an excellent buffer because it has:
+              <span data-quiz="B" style="display: none"
+                >Three hydrogens, each with a unique pKa value</span
+              >
+            </div>
+            <div class="options">
+              <label
+                ><input type="radio" name="q12" value="A" /> A. A single, very
+                low pKa value</label
+              >
+              <label
+                ><input type="radio" name="q12" value="B" /> B. Three hydrogens,
+                each with a unique pKa value</label
+              >
+              <label
+                ><input type="radio" name="q12" value="C" /> C. No ionizable
+                hydrogens, making its pH stable</label
+              >
+              <label
+                ><input type="radio" name="q12" value="D" /> D. pKa values that
+                are all nearly equal to the physiological pH of 7.4</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Question 13 -->
+    <div class="question-page" id="question-13">
+      <div class="content">
+        <div class="column left-col">
+          <div class="passage">
+            <h2>Passage 3 (Questions 11‑15)</h2>
+            <p>
+              Phosphorus-containing compounds play essential roles in biological
+              systems and organic chemistry. Phosphoric acid (H₃PO₄) is a
+              triprotic acid with three ionizable hydrogens, each having
+              distinct pKa values (pKa₁ = 2.1, pKa₂ = 7.2, pKa₃ = 12.3). This
+              makes phosphoric acid an excellent biological buffer system,
+              particularly around physiological pH.
+            </p>
+
+            <p>
+              At physiological pH (~7.4), phosphoric acid exists primarily as a
+              mixture of H₂PO₄⁻ and HPO₄²⁻ ions, which can act as both proton
+              donors and acceptors. The term "inorganic phosphate" (Pi) refers
+              to these phosphate species. Organic phosphates, such as ATP and
+              GTP, contain phosphate groups covalently bonded to organic
+              molecules and serve as energy storage compounds.
+            </p>
+
+            <p>
+              The backbone of DNA consists of sugar molecules connected by
+              phosphodiester bonds, which link the 3'-hydroxyl group of one
+              sugar to the 5'-phosphate group of the next. These bonds are
+              crucial for the structural integrity of nucleic acids and are
+              formed through condensation reactions that eliminate water
+              molecules.
+            </p>
+          </div>
+        </div>
+        <div class="column right-col">
+          <div class="question-block">
+            <div class="question-header">
+              <span class="question-label">Question 13</span>
+            </div>
+            <div class="question-text">
+              The backbone of DNA is composed of sugar molecules linked together
+              by which type of bond?
+              <span data-quiz="A" style="display: none"
+                >Phosphodiester bonds</span
+              >
+            </div>
+            <div class="options">
+              <label
+                ><input type="radio" name="q13" value="A" /> A. Phosphodiester
+                bonds</label
+              >
+              <label
+                ><input type="radio" name="q13" value="B" /> B. Glycosidic
+                bonds</label
+              >
+              <label
+                ><input type="radio" name="q13" value="C" /> C. Peptide
+                bonds</label
+              >
+              <label
+                ><input type="radio" name="q13" value="D" /> D. Anhydride
+                bonds</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Question 14 -->
+    <div class="question-page" id="question-14">
+      <div class="content">
+        <div class="column left-col">
+          <div class="passage">
+            <h2>Passage 3 (Questions 11‑15)</h2>
+            <p>
+              Phosphorus-containing compounds play essential roles in biological
+              systems and organic chemistry. Phosphoric acid (H₃PO₄) is a
+              triprotic acid with three ionizable hydrogens, each having
+              distinct pKa values (pKa₁ = 2.1, pKa₂ = 7.2, pKa₃ = 12.3). This
+              makes phosphoric acid an excellent biological buffer system,
+              particularly around physiological pH.
+            </p>
+
+            <p>
+              At physiological pH (~7.4), phosphoric acid exists primarily as a
+              mixture of H₂PO₄⁻ and HPO₄²⁻ ions, which can act as both proton
+              donors and acceptors. The term "inorganic phosphate" (Pi) refers
+              to these phosphate species. Organic phosphates, such as ATP and
+              GTP, contain phosphate groups covalently bonded to organic
+              molecules and serve as energy storage compounds.
+            </p>
+
+            <p>
+              The backbone of DNA consists of sugar molecules connected by
+              phosphodiester bonds, which link the 3'-hydroxyl group of one
+              sugar to the 5'-phosphate group of the next. These bonds are
+              crucial for the structural integrity of nucleic acids and are
+              formed through condensation reactions that eliminate water
+              molecules.
+            </p>
+          </div>
+        </div>
+        <div class="column right-col">
+          <div class="question-block">
+            <div class="question-header">
+              <span class="question-label">Question 14</span>
+            </div>
+            <div class="question-text">
+              Compounds like ATP and GTP are notable examples of which type of
+              phosphorus-containing compound?
+              <span data-quiz="D" style="display: none"
+                >Organic phosphates</span
+              >
+            </div>
+            <div class="options">
+              <label
+                ><input type="radio" name="q14" value="A" /> A. Inorganic
+                phosphates (Pi)</label
+              >
+              <label
+                ><input type="radio" name="q14" value="B" /> B. Phosphoric
+                acid</label
+              >
+              <label
+                ><input type="radio" name="q14" value="C" /> C.
+                Pyrophosphates</label
+              >
+              <label
+                ><input type="radio" name="q14" value="D" /> D. Organic
+                phosphates</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Question 15 -->
+    <div class="question-page" id="question-15">
+      <div class="content">
+        <div class="column left-col">
+          <div class="passage">
+            <h2>Passage 3 (Questions 11‑15)</h2>
+            <p>
+              Phosphorus-containing compounds play essential roles in biological
+              systems and organic chemistry. Phosphoric acid (H₃PO₄) is a
+              triprotic acid with three ionizable hydrogens, each having
+              distinct pKa values (pKa₁ = 2.1, pKa₂ = 7.2, pKa₃ = 12.3). This
+              makes phosphoric acid an excellent biological buffer system,
+              particularly around physiological pH.
+            </p>
+
+            <p>
+              At physiological pH (~7.4), phosphoric acid exists primarily as a
+              mixture of H₂PO₄⁻ and HPO₄²⁻ ions, which can act as both proton
+              donors and acceptors. The term "inorganic phosphate" (Pi) refers
+              to these phosphate species. Organic phosphates, such as ATP and
+              GTP, contain phosphate groups covalently bonded to organic
+              molecules and serve as energy storage compounds.
+            </p>
+
+            <p>
+              The backbone of DNA consists of sugar molecules connected by
+              phosphodiester bonds, which link the 3'-hydroxyl group of one
+              sugar to the 5'-phosphate group of the next. These bonds are
+              crucial for the structural integrity of nucleic acids and are
+              formed through condensation reactions that eliminate water
+              molecules.
+            </p>
+          </div>
+        </div>
+        <div class="column right-col">
+          <div class="question-block">
+            <div class="question-header">
+              <span class="question-label">Question 15</span>
+            </div>
+            <div class="question-text">
+              At physiological pH (~7.4), which two forms of phosphoric acid are
+              typically found in the highest concentrations, allowing it to act
+              as a buffer?
+              <span data-quiz="C" style="display: none">H₂PO₄⁻ and HPO₄²⁻</span>
+            </div>
+            <div class="options">
+              <label
+                ><input type="radio" name="q15" value="A" /> A. H₃PO₄ and
+                H₂PO₄⁻</label
+              >
+              <label
+                ><input type="radio" name="q15" value="B" /> B. H₃PO₄ and
+                PO₄³⁻</label
+              >
+              <label
+                ><input type="radio" name="q15" value="C" /> C. H₂PO₄⁻ and
+                HPO₄²⁻</label
+              >
+              <label
+                ><input type="radio" name="q15" value="D" /> D. HPO₄²⁻ and
+                PO₄³⁻</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+      <div class="nav-left">
+        <button class="nav-btn prev-btn" id="prev-question" disabled>
+          <span class="arrow">←</span>
+          Previous
+        </button>
+      </div>
+      <div class="nav-center">
+        <span class="question-info">Question 1 of 15</span>
+      </div>
+      <div class="nav-right">
+        <button class="nav-btn next-btn" id="next-question">
+          Next
+          <span class="arrow">→</span>
+        </button>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const prevBtn = document.getElementById("prev-question");
+        const nextBtn = document.getElementById("next-question");
+        const questionInfo = document.querySelector(".question-info");
+        const topQuestionCount = document.querySelector(".question-count");
+
+        let currentQuestion = 1;
+        const totalQuestions = 15;
+
+        function showQuestion(questionNum) {
+          document.querySelectorAll(".question-page").forEach((page) => {
+            page.classList.remove("active");
+          });
+
+          const currentPage = document.getElementById(
+            `question-${questionNum}`
+          );
+          if (currentPage) {
+            currentPage.classList.add("active");
+          }
+
+          prevBtn.disabled = questionNum === 1;
+
+          if (questionNum === totalQuestions) {
+            nextBtn.innerHTML = 'Finish <span class="arrow">→</span>';
+          } else {
+            nextBtn.innerHTML = 'Next <span class="arrow">→</span>';
+          }
+
+          questionInfo.textContent = `Question ${questionNum} of ${totalQuestions}`;
+          if (topQuestionCount) {
+            topQuestionCount.textContent = questionNum;
+          }
+        }
+
+        prevBtn.addEventListener("click", function () {
+          if (currentQuestion > 1) {
+            currentQuestion--;
+            showQuestion(currentQuestion);
+          }
+        });
+
+        nextBtn.addEventListener("click", function () {
+          if (currentQuestion < totalQuestions) {
+            currentQuestion++;
+            showQuestion(currentQuestion);
+          } else {
+            if (confirm("Are you sure you want to finish the exam?")) {
+              showSimpleScore();
+            }
+          }
+        });
+
+        function showSimpleScore() {
+          const correctAnswers = {
+            q1: "C",
+            q2: "C",
+            q3: "C",
+            q4: "B",
+            q5: "C",
+            q6: "B",
+            q7: "B",
+            q8: "B",
+            q9: "C",
+            q10: "B",
+            q11: "A",
+            q12: "B",
+            q13: "A",
+            q14: "D",
+            q15: "C",
+          };
+
+          let totalScore = 0;
+          let results = "Quiz Results:\n\n";
+
+          for (let i = 1; i <= totalQuestions; i++) {
+            const selectedAnswer = document.querySelector(
+              `input[name="q${i}"]:checked`
+            );
+            const userAnswer = selectedAnswer
+              ? selectedAnswer.value
+              : "No answer";
+            const correctAnswer = correctAnswers[`q${i}`];
+            const isCorrect = userAnswer === correctAnswer;
+
+            if (isCorrect) totalScore++;
+
+            results += `Question ${i}: ${
+              isCorrect ? "✓" : "✗"
+            } (Your answer: ${userAnswer}, Correct: ${correctAnswer})\n`;
+          }
+
+          results += `\nFinal Score: ${totalScore}/${totalQuestions} (${Math.round(
+            (totalScore / totalQuestions) * 100
+          )}%)`;
+          alert(results);
+        }
+
+        document.addEventListener("keydown", function (e) {
+          const target = e.target;
+          if (target.tagName === "INPUT" || target.tagName === "TEXTAREA") {
+            return;
+          }
+
+          if (e.key === "ArrowLeft" && !prevBtn.disabled) {
+            e.preventDefault();
+            prevBtn.click();
+          } else if (e.key === "ArrowRight") {
+            e.preventDefault();
+            nextBtn.click();
+          }
+        });
+
+        showQuestion(1);
+      });
+    </script>
+  </body>
+</html>
