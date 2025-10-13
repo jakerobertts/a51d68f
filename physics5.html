@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      img {
+        max-width: 300px;
+        max-height: 250px;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        display: block;
+        margin: 10px auto;
+        border: 1px solid #019cb1;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 8px 25px rgba(1, 156, 177, 0.3);
+        border-color: #ff6b35;
+      }
+
+      img:active {
+        transform: scale(0.95);
+      }
+
+      .image-zoom {
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6422130934976134"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="google-adsense-account" content="ca-pub-6422130934976134" />
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-L97LGZSXS5"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-L97LGZSXS5");
+    </script>
+    <link
+      rel="icon"
+      type="image/png"
+      href="Screenshot 2025-09-18 at 9.21.54 PM.png"
+    />
+    <title>Atomic Behavior - MCAT Practice - Physics</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div
+      id="score-container"
+      style="
+        margin: 80px 0;
+        font-size: 0.8rem;
+        color: whitesmoke;
+        position: fixed;
+        top: 150px;
+        right: 16px;
+        background: #0a00cd;
+        z-index: 1000;
+        padding: 8px 8px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      "
+    >
+      Score: <span id="score">0</span> / <span id="total">0</span>
+    </div>
+
+    <br /><br />
+    <h1>Atomic Behavior - MCAT Practice - Physics</h1>
+    <br /><br />
+    The ejection of an electron from the surface of a metal in response to light
+    is defined as:<br />
+    <span data-quiz="B" style="display: none">The photoelectric effect</span
+    ><br /><br />
+    <label><input type="radio" name="q1" value="A" /> A. Nuclear fission</label
+    ><br />
+    <label
+      ><input type="radio" name="q1" value="B" /> B. The photoelectric
+      effect</label
+    ><br />
+    <label
+      ><input type="radio" name="q1" value="C" /> C. Beta-negative decay</label
+    ><br />
+    <label><input type="radio" name="q1" value="D" /> D. Nuclear fusion</label
+    ><br /><br />
+
+    The minimum energy necessary to eject an electron from a given metal is
+    called the:<br />
+    <span data-quiz="C" style="display: none">Work function (W)</span
+    ><br /><br />
+    <label><input type="radio" name="q2" value="A" /> A. Threshold energy</label
+    ><br />
+    <label
+      ><input type="radio" name="q2" value="B" /> B. Planck's Constant</label
+    ><br />
+    <label
+      ><input type="radio" name="q2" value="C" /> C. Work function (W)</label
+    ><br />
+    <label><input type="radio" name="q2" value="D" /> D. Kinetic energy</label
+    ><br /><br />
+
+    The minimum light frequency necessary to eject an electron from a given
+    metal is known as the:<br />
+    <span data-quiz="B" style="display: none">Threshold frequency</span
+    ><br /><br />
+    <label><input type="radio" name="q3" value="A" /> A. Cutoff frequency</label
+    ><br />
+    <label
+      ><input type="radio" name="q3" value="B" /> B. Threshold frequency</label
+    ><br />
+    <label><input type="radio" name="q3" value="C" /> C. Photo-frequency</label
+    ><br />
+    <label
+      ><input type="radio" name="q3" value="D" /> D. Resonance frequency</label
+    ><br /><br />
+
+    What is the correct equation for the energy (E) of a single photon, given
+    Planck's Constant (h) and photon frequency (f)?<br />
+    <span data-quiz="C" style="display: none">E = hf</span><br /><br />
+    <label
+      ><input type="radio" name="q4" value="A" /> A. E = W + K<sub
+        >max</sub
+      ></label
+    ><br />
+    <label><input type="radio" name="q4" value="B" /> B. E = mc²</label><br />
+    <label><input type="radio" name="q4" value="C" /> C. E = hf</label><br />
+    <label><input type="radio" name="q4" value="D" /> D. E = h/λ</label
+    ><br /><br />
+
+    Which equation correctly gives the maximum kinetic energy (K<sub>max</sub>)
+    of an ejected electron in the photoelectric effect, where E is the photon
+    energy and W is the work function?<br />
+    <span data-quiz="B" style="display: none">K<sub>max</sub> = E - W</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q5" value="A" /> A. K<sub>max</sub> = E +
+      W</label
+    ><br />
+    <label
+      ><input type="radio" name="q5" value="B" /> B. K<sub>max</sub> = E -
+      W</label
+    ><br />
+    <label
+      ><input type="radio" name="q5" value="C" /> C. K<sub>max</sub> =
+      W/E</label
+    ><br />
+    <label
+      ><input type="radio" name="q5" value="D" /> D. K<sub>max</sub> =
+      ½mv²</label
+    ><br /><br />
+
+    According to the Bohr model, if an electron absorbs a photon, its orbital
+    (n) will generally go:<br />
+    <span data-quiz="C" style="display: none"
+      >Up (to a higher-energy orbit)</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q6" value="A" /> A. Down (to a lower-energy
+      orbit)</label
+    ><br />
+    <label><input type="radio" name="q6" value="B" /> B. Stay the same</label
+    ><br />
+    <label
+      ><input type="radio" name="q6" value="C" /> C. Up (to a higher-energy
+      orbit)</label
+    ><br />
+    <label><input type="radio" name="q6" value="D" /> D. Become unstable</label
+    ><br /><br />
+
+    When an electron falls from a higher-energy orbit to a lower-energy orbit,
+    what process occurs?<br />
+    <span data-quiz="C" style="display: none">It emits a photon of light</span
+    ><br /><br />
+    <label><input type="radio" name="q7" value="A" /> A. Light absorption</label
+    ><br />
+    <label><input type="radio" name="q7" value="B" /> B. Nuclear fission</label
+    ><br />
+    <label
+      ><input type="radio" name="q7" value="C" /> C. It emits a photon of
+      light</label
+    ><br />
+    <label
+      ><input type="radio" name="q7" value="D" /> D. It undergoes electron
+      capture</label
+    ><br /><br />
+
+    The emission and absorption spectra of a substance provide information that
+    allows scientists to determine:<br />
+    <span data-quiz="D" style="display: none"
+      >What elements are found in the substance</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q8" value="A" /> A. The half-life of the
+      substance</label
+    ><br />
+    <label
+      ><input type="radio" name="q8" value="B" /> B. The rate of decay</label
+    ><br />
+    <label
+      ><input type="radio" name="q8" value="C" /> C. The work function of the
+      metal</label
+    ><br />
+    <label
+      ><input type="radio" name="q8" value="D" /> D. What elements are found in
+      the substance</label
+    ><br /><br />
+
+    What is the term for the emission of light by a substance that has absorbed
+    light or other electromagnetic radiation, where the emitted light typically
+    has lower energy?<br />
+    <span data-quiz="B" style="display: none">Fluorescence</span><br /><br />
+    <label><input type="radio" name="q9" value="A" /> A. Light absorption</label
+    ><br />
+    <label><input type="radio" name="q9" value="B" /> B. Fluorescence</label
+    ><br />
+    <label><input type="radio" name="q9" value="C" /> C. Gamma decay</label
+    ><br />
+    <label><input type="radio" name="q9" value="D" /> D. Luminescence</label
+    ><br /><br />
+
+    What nuclear process occurs when small nuclei combine into larger nuclei,
+    converting mass into energy?<br />
+    <span data-quiz="C" style="display: none">Nuclear fusion</span><br /><br />
+    <label><input type="radio" name="q10" value="A" /> A. Nuclear fission</label
+    ><br />
+    <label><input type="radio" name="q10" value="B" /> B. Alpha decay</label
+    ><br />
+    <label><input type="radio" name="q10" value="C" /> C. Nuclear fusion</label
+    ><br />
+    <label
+      ><input type="radio" name="q10" value="D" /> D. Electron capture</label
+    ><br /><br />
+
+    What nuclear process occurs when a large, unstable nucleus splits into
+    smaller nuclei?<br />
+    <span data-quiz="A" style="display: none">Nuclear fission</span><br /><br />
+    <label><input type="radio" name="q11" value="A" /> A. Nuclear fission</label
+    ><br />
+    <label><input type="radio" name="q11" value="B" /> B. Nuclear fusion</label
+    ><br />
+    <label
+      ><input type="radio" name="q11" value="C" /> C. Beta-positive decay</label
+    ><br />
+    <label
+      ><input type="radio" name="q11" value="D" /> D. Radioactive decay</label
+    ><br /><br />
+
+    The general process by which an unstable atomic nucleus loses energy by
+    emitting radiation is called:<br />
+    <span data-quiz="C" style="display: none">Radioactive decay</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q12" value="A" /> A. The photoelectric
+      effect</label
+    ><br />
+    <label><input type="radio" name="q12" value="B" /> B. Nuclear fusion</label
+    ><br />
+    <label
+      ><input type="radio" name="q12" value="C" /> C. Radioactive decay</label
+    ><br />
+    <label
+      ><input type="radio" name="q12" value="D" /> D. Electron capture</label
+    ><br /><br />
+
+    Alpha (α) decay is the emission of an alpha particle, which is a/an:<br />
+    <span data-quiz="B" style="display: none">Helium nucleus (⁴₂He)</span
+    ><br /><br />
+    <label><input type="radio" name="q13" value="A" /> A. Single proton</label
+    ><br />
+    <label
+      ><input type="radio" name="q13" value="B" /> B. Helium nucleus
+      (⁴₂He)</label
+    ><br />
+    <label
+      ><input type="radio" name="q13" value="C" /> C. High-energy
+      electron</label
+    ><br />
+    <label
+      ><input type="radio" name="q13" value="D" /> D. High-energy photon</label
+    ><br /><br />
+
+    In Beta-negative (β⁻) decay, a fundamental change occurs within the nucleus,
+    specifically the decay of a:<br />
+    <span data-quiz="B" style="display: none">Neutron into a proton</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q14" value="A" /> A. Proton into a
+      neutron</label
+    ><br />
+    <label
+      ><input type="radio" name="q14" value="B" /> B. Neutron into a
+      proton</label
+    ><br />
+    <label
+      ><input type="radio" name="q14" value="C" /> C. Proton into a
+      positron</label
+    ><br />
+    <label
+      ><input type="radio" name="q14" value="D" /> D. Electron into a
+      proton</label
+    ><br /><br />
+
+    What particle is emitted along with an antineutrino during Beta-negative
+    (β⁻) decay?<br />
+    <span data-quiz="C" style="display: none">Electron (β⁻ particle)</span
+    ><br /><br />
+    <label><input type="radio" name="q15" value="A" /> A. Positron</label><br />
+    <label><input type="radio" name="q15" value="B" /> B. Alpha particle</label
+    ><br />
+    <label
+      ><input type="radio" name="q15" value="C" /> C. Electron (β⁻
+      particle)</label
+    ><br />
+    <label><input type="radio" name="q15" value="D" /> D. Photon</label
+    ><br /><br />
+
+    The process of Beta-positive (β⁺) decay involves the decay of a:<br />
+    <span data-quiz="A" style="display: none">Proton into a neutron</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q16" value="A" /> A. Proton into a
+      neutron</label
+    ><br />
+    <label
+      ><input type="radio" name="q16" value="B" /> B. Neutron into a
+      proton</label
+    ><br />
+    <label
+      ><input type="radio" name="q16" value="C" /> C. Neutron into an
+      electron</label
+    ><br />
+    <label
+      ><input type="radio" name="q16" value="D" /> D. Proton into an alpha
+      particle</label
+    ><br /><br />
+
+    What two particles are emitted during Beta-positive (β⁺) decay?<br />
+    <span data-quiz="C" style="display: none">A positron and a neutrino</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q17" value="A" /> A. An electron and an
+      antineutrino</label
+    ><br />
+    <label
+      ><input type="radio" name="q17" value="B" /> B. An alpha particle and a
+      gamma ray</label
+    ><br />
+    <label
+      ><input type="radio" name="q17" value="C" /> C. A positron and a
+      neutrino</label
+    ><br />
+    <label
+      ><input type="radio" name="q17" value="D" /> D. A neutron and an
+      electron</label
+    ><br /><br />
+
+    Gamma (γ) decay is the emission of a gamma ray, which is made up of:<br />
+    <span data-quiz="C" style="display: none">Photons</span><br /><br />
+    <label><input type="radio" name="q18" value="A" /> A. Neutrons</label><br />
+    <label><input type="radio" name="q18" value="B" /> B. Electrons</label
+    ><br />
+    <label><input type="radio" name="q18" value="C" /> C. Photons</label><br />
+    <label><input type="radio" name="q18" value="D" /> D. Protons</label
+    ><br /><br />
+
+    The purpose of Gamma (γ) decay is to:<br />
+    <span data-quiz="C" style="display: none"
+      >Convert a high-energy nucleus into a more stable nucleus</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q19" value="A" /> A. Change the atomic number
+      of the nucleus</label
+    ><br />
+    <label
+      ><input type="radio" name="q19" value="B" /> B. Change the mass number of
+      the nucleus</label
+    ><br />
+    <label
+      ><input type="radio" name="q19" value="C" /> C. Convert a high-energy
+      nucleus into a more stable nucleus</label
+    ><br />
+    <label
+      ><input type="radio" name="q19" value="D" /> D. Combine two small nuclei
+      into one large nucleus</label
+    ><br /><br />
+
+    What is the process that unstable atoms can use to become more stable by an
+    electron in an atom's inner shell combining with a proton in the nucleus?<br />
+    <span data-quiz="C" style="display: none">Electron capture</span
+    ><br /><br />
+    <label><input type="radio" name="q20" value="A" /> A. Alpha decay</label
+    ><br />
+    <label><input type="radio" name="q20" value="B" /> B. Nuclear fusion</label
+    ><br />
+    <label
+      ><input type="radio" name="q20" value="C" /> C. Electron capture</label
+    ><br />
+    <label><input type="radio" name="q20" value="D" /> D. Nuclear fission</label
+    ><br /><br />
+
+    In the process of electron capture, the combination of an inner-shell
+    electron and a proton forms a:<br />
+    <span data-quiz="B" style="display: none">Neutron and a neutrino</span
+    ><br /><br />
+    <label><input type="radio" name="q21" value="A" /> A. Positron</label><br />
+    <label
+      ><input type="radio" name="q21" value="B" /> B. Neutron and a
+      neutrino</label
+    ><br />
+    <label
+      ><input type="radio" name="q21" value="C" /> C. Deuterium nucleus</label
+    ><br />
+    <label><input type="radio" name="q21" value="D" /> D. Second proton</label
+    ><br /><br />
+
+    The amount of time required for half of a sample of radioactive nuclei to
+    decay is known as the:<br />
+    <span data-quiz="C" style="display: none">Half-life</span><br /><br />
+    <label><input type="radio" name="q22" value="A" /> A. Decay constant</label
+    ><br />
+    <label><input type="radio" name="q22" value="B" /> B. Critical mass</label
+    ><br />
+    <label><input type="radio" name="q22" value="C" /> C. Half-life</label
+    ><br />
+    <label
+      ><input type="radio" name="q22" value="D" /> D. Radioactive period</label
+    ><br /><br />
+
+    The graph showing the number of undecayed nuclei decreasing over time, where
+    the rate of decay is directly proportional to the amount present, is an
+    example of:<br />
+    <span data-quiz="B" style="display: none">Exponential decay</span
+    ><br /><br />
+    <label><input type="radio" name="q23" value="A" /> A. Linear decay</label
+    ><br />
+    <label
+      ><input type="radio" name="q23" value="B" /> B. Exponential decay</label
+    ><br />
+    <label><input type="radio" name="q23" value="C" /> C. Quadratic decay</label
+    ><br />
+    <label><input type="radio" name="q23" value="D" /> D. Constant decay</label
+    ><br /><br />
+
+    Which of the following is an example of a nucleus (X) emitting a helium
+    nucleus (⁴₂He) to form a new nucleus (Y)?<br />
+    <span data-quiz="B" style="display: none">Alpha decay</span><br /><br />
+    <label
+      ><input type="radio" name="q24" value="A" /> A. Beta-negative decay</label
+    ><br />
+    <label><input type="radio" name="q24" value="B" /> B. Alpha decay</label
+    ><br />
+    <label><input type="radio" name="q24" value="C" /> C. Gamma decay</label
+    ><br />
+    <label
+      ><input type="radio" name="q24" value="D" /> D. Beta-positive decay</label
+    ><br /><br />
+
+    A student measures the energy of a photon to be E. If this photon strikes a
+    metal with a work function W, and E > W, what represents the energy given to
+    the electron as kinetic energy?<br />
+    <span data-quiz="D" style="display: none">E - W</span><br /><br />
+    <label><input type="radio" name="q25" value="A" /> A. W</label><br />
+    <label><input type="radio" name="q25" value="B" /> B. E × W</label><br />
+    <label><input type="radio" name="q25" value="C" /> C. E/W</label><br />
+    <label><input type="radio" name="q25" value="D" /> D. E - W</label
+    ><br /><br />
+
+    <footer>
+      <p>All questions courtesy of Miledown</p>
+    </footer>
+  </body>
+
+  <script src="test.js"></script>
+  <script src="sidebar.js"></script>
+</html>

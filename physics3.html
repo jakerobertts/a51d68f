@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      img {
+        max-width: 300px;
+        max-height: 250px;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        display: block;
+        margin: 10px auto;
+        border: 1px solid #019cb1;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 8px 25px rgba(1, 156, 177, 0.3);
+        border-color: #ff6b35;
+      }
+
+      img:active {
+        transform: scale(0.95);
+      }
+
+      .image-zoom {
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6422130934976134"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="google-adsense-account" content="ca-pub-6422130934976134" />
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-L97LGZSXS5"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-L97LGZSXS5");
+    </script>
+    <link
+      rel="icon"
+      type="image/png"
+      href="Screenshot 2025-09-18 at 9.21.54 PM.png"
+    />
+    <title>Sound - MCAT Practice - Physics</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div
+      id="score-container"
+      style="
+        margin: 80px 0;
+        font-size: 0.8rem;
+        color: whitesmoke;
+        position: fixed;
+        top: 150px;
+        right: 16px;
+        background: #0a00cd;
+        z-index: 1000;
+        padding: 8px 8px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      "
+    >
+      Score: <span id="score">0</span> / <span id="total">0</span>
+    </div>
+
+    <h1>Sound - MCAT Practice - Physics</h1>
+    Sound is fundamentally produced by a:<br />
+    <span data-quiz="B" style="display: none">Vibration of an object</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q1" value="A" /> A. Change in
+      temperature</label
+    ><br />
+    <label
+      ><input type="radio" name="q1" value="B" /> B. Vibration of an
+      object</label
+    ><br />
+    <label
+      ><input type="radio" name="q1" value="C" /> C. Flow of electric
+      current</label
+    ><br />
+    <label
+      ><input type="radio" name="q1" value="D" /> D. Chemical reaction</label
+    ><br /><br />
+
+    Through which medium does sound travel the fastest?<br />
+    <span data-quiz="D" style="display: none">Solid (Steel)</span><br /><br />
+    <label><input type="radio" name="q2" value="A" /> A. Vacuum</label><br />
+    <label><input type="radio" name="q2" value="B" /> B. Gas (Air)</label><br />
+    <label><input type="radio" name="q2" value="C" /> C. Liquid (Water)</label
+    ><br />
+    <label><input type="radio" name="q2" value="D" /> D. Solid (Steel)</label
+    ><br /><br />
+
+    Sound waves cannot propagate through which of the following?<br />
+    <span data-quiz="D" style="display: none">A vacuum</span><br /><br />
+    <label><input type="radio" name="q3" value="A" /> A. Solids</label><br />
+    <label><input type="radio" name="q3" value="B" /> B. Liquids</label><br />
+    <label><input type="radio" name="q3" value="C" /> C. Gases</label><br />
+    <label><input type="radio" name="q3" value="D" /> D. A vacuum</label
+    ><br /><br />
+
+    The property of sound that a human perceives as pitch is directly correlated
+    with which wave characteristic?<br />
+    <span data-quiz="B" style="display: none">Frequency</span><br /><br />
+    <label><input type="radio" name="q4" value="A" /> A. Amplitude</label><br />
+    <label><input type="radio" name="q4" value="B" /> B. Frequency</label><br />
+    <label><input type="radio" name="q4" value="C" /> C. Wavelength</label
+    ><br />
+    <label><input type="radio" name="q4" value="D" /> D. Intensity</label
+    ><br /><br />
+
+    The intensity of a sound, or how loud it is, is primarily based on the
+    wave's:<br />
+    <span data-quiz="C" style="display: none">Amplitude</span><br /><br />
+    <label><input type="radio" name="q5" value="A" /> A. Wavelength</label
+    ><br />
+    <label><input type="radio" name="q5" value="B" /> B. Frequency</label><br />
+    <label><input type="radio" name="q5" value="C" /> C. Amplitude</label><br />
+    <label><input type="radio" name="q5" value="D" /> D. Speed</label
+    ><br /><br />
+
+    According to the Doppler effect, when a sound source and a detector are
+    moving toward each other, the perceived frequency compared to the emitted
+    frequency will be:<br />
+    <span data-quiz="B" style="display: none">Higher</span><br /><br />
+    <label><input type="radio" name="q6" value="A" /> A. The same</label><br />
+    <label><input type="radio" name="q6" value="B" /> B. Higher</label><br />
+    <label><input type="radio" name="q6" value="C" /> C. Lower</label><br />
+    <label
+      ><input type="radio" name="q6" value="D" /> D. Dependent only on the speed
+      of sound</label
+    ><br /><br />
+
+    A pipe is closed at one end and supports a standing wave. The length (L) of
+    the pipe must correspond to what relationship with the wavelength (λ) of the
+    fundamental frequency?<br />
+    <span data-quiz="D" style="display: none"
+      >L = nλ/4 (where n is an odd integer)</span
+    ><br /><br />
+    <label><input type="radio" name="q7" value="A" /> A. L = λ</label><br />
+    <label><input type="radio" name="q7" value="B" /> B. L = λ/2</label><br />
+    <label><input type="radio" name="q7" value="C" /> C. L = nλ/2</label><br />
+    <label
+      ><input type="radio" name="q7" value="D" /> D. L = nλ/4 (where n is an odd
+      integer)</label
+    ><br /><br />
+
+    In an open pipe (open at both ends) supporting a standing wave, the ends of
+    the pipe always correspond to a displacement:<br />
+    <span data-quiz="B" style="display: none">Antinode</span><br /><br />
+    <label><input type="radio" name="q8" value="A" /> A. Node</label><br />
+    <label><input type="radio" name="q8" value="B" /> B. Antinode</label><br />
+    <label
+      ><input type="radio" name="q8" value="C" /> C. Point of maximum
+      pressure</label
+    ><br />
+    <label
+      ><input type="radio" name="q8" value="D" /> D. Point of zero
+      velocity</label
+    ><br /><br />
+
+    If a source and a detector of sound are moving in the same direction, what
+    factor determines whether the apparent frequency is higher, lower, or equal
+    to the emitted frequency?<br />
+    <span data-quiz="D" style="display: none">Their relative speeds</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q9" value="A" /> A. The source's absolute
+      speed</label
+    ><br />
+    <label
+      ><input type="radio" name="q9" value="B" /> B. The detector's absolute
+      speed</label
+    ><br />
+    <label
+      ><input type="radio" name="q9" value="C" /> C. The ambient
+      temperature</label
+    ><br />
+    <label
+      ><input type="radio" name="q9" value="D" /> D. Their relative
+      speeds</label
+    ><br /><br />
+
+    Ultrasound technology is used in medical imaging to compare the body's
+    internal tissues based on their:<br />
+    <span data-quiz="C" style="display: none">Relative densities</span
+    ><br /><br />
+    <label><input type="radio" name="q10" value="A" /> A. Temperature</label
+    ><br />
+    <label
+      ><input type="radio" name="q10" value="B" /> B. Electrical
+      conductivity</label
+    ><br />
+    <label
+      ><input type="radio" name="q10" value="C" /> C. Relative densities</label
+    ><br />
+    <label
+      ><input type="radio" name="q10" value="D" /> D. Rate of chemical
+      reaction</label
+    ><br /><br />
+    <!-- Add your questions here -->
+
+    <footer>
+      <p>All questions courtesy of Miledown</p>
+    </footer>
+  </body>
+
+  <script src="test.js"></script>
+  <script src="sidebar.js"></script>
+</html>

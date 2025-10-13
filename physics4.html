@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      img {
+        max-width: 300px;
+        max-height: 250px;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        display: block;
+        margin: 10px auto;
+        border: 1px solid #019cb1;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 8px 25px rgba(1, 156, 177, 0.3);
+        border-color: #ff6b35;
+      }
+
+      img:active {
+        transform: scale(0.95);
+      }
+
+      .image-zoom {
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6422130934976134"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="google-adsense-account" content="ca-pub-6422130934976134" />
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-L97LGZSXS5"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-L97LGZSXS5");
+    </script>
+    <link
+      rel="icon"
+      type="image/png"
+      href="Screenshot 2025-09-18 at 9.21.54 PM.png"
+    />
+    <title>Light - MCAT Practice - Physics</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div
+      id="score-container"
+      style="
+        margin: 80px 0;
+        font-size: 0.8rem;
+        color: whitesmoke;
+        position: fixed;
+        top: 150px;
+        right: 16px;
+        background: #0a00cd;
+        z-index: 1000;
+        padding: 8px 8px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      "
+    >
+      Score: <span id="score">0</span> / <span id="total">0</span>
+    </div>
+
+    <h1>Light - MCAT Practice - Physics</h1>
+    <iframe
+      src="https://docs.google.com/document/d/e/2PACX-1vR9VELLks56ajc3lnNfNZ7RKTVAwYWA0_dHonogUBS7nVgZIKP243cbARfaBdiNtmqXh_NTUFNSlv8k/pub?embedded=true"
+      style="border: 2px solid #000000; width: 100%; height: 500px"
+    ></iframe
+    ><br /><br />
+
+    Electromagnetic waves are transverse waves that consist of an oscillating
+    electric field and an oscillating what?<br />
+    <span data-quiz="C" style="display: none">Magnetic field</span><br /><br />
+    <label
+      ><input type="radio" name="q1" value="A" /> A. Gravitational field</label
+    ><br />
+    <label><input type="radio" name="q1" value="B" /> B. Frictional field</label
+    ><br />
+    <label><input type="radio" name="q1" value="C" /> C. Magnetic field</label
+    ><br />
+    <label><input type="radio" name="q1" value="D" /> D. Nuclear field</label
+    ><br /><br />
+
+    The oscillating electric and magnetic fields in an electromagnetic wave are
+    perpendicular to each other and to the direction of the wave's:<br />
+    <span data-quiz="C" style="display: none">Propagation</span><br /><br />
+    <label><input type="radio" name="q2" value="A" /> A. Frequency</label><br />
+    <label><input type="radio" name="q2" value="B" /> B. Amplitude</label><br />
+    <label><input type="radio" name="q2" value="C" /> C. Propagation</label
+    ><br />
+    <label><input type="radio" name="q2" value="D" /> D. Polarization</label
+    ><br /><br />
+
+    The electromagnetic spectrum is the range of frequencies and what else found
+    in electromagnetic waves?<br />
+    <span data-quiz="B" style="display: none">Wavelengths</span><br /><br />
+    <label><input type="radio" name="q3" value="A" /> A. Amplitudes</label
+    ><br />
+    <label><input type="radio" name="q3" value="B" /> B. Wavelengths</label
+    ><br />
+    <label><input type="radio" name="q3" value="C" /> C. Speeds</label><br />
+    <label><input type="radio" name="q3" value="D" /> D. Intensities</label
+    ><br /><br />
+
+    In the visible spectrum, which color has the largest wavelength?<br />
+    <span data-quiz="D" style="display: none">Red</span><br /><br />
+    <label><input type="radio" name="q4" value="A" /> A. Violet</label><br />
+    <label><input type="radio" name="q4" value="B" /> B. Green</label><br />
+    <label><input type="radio" name="q4" value="C" /> C. Yellow</label><br />
+    <label><input type="radio" name="q4" value="D" /> D. Red</label><br /><br />
+
+    The Rydberg formula is used to predict the what of light emitted or absorbed
+    after an electron moves between energy levels?<br />
+    <span data-quiz="C" style="display: none">Wavelength</span><br /><br />
+    <label><input type="radio" name="q5" value="A" /> A. Intensity</label><br />
+    <label><input type="radio" name="q5" value="B" /> B. Frequency</label><br />
+    <label><input type="radio" name="q5" value="C" /> C. Wavelength</label
+    ><br />
+    <label><input type="radio" name="q5" value="D" /> D. Amplitude</label
+    ><br /><br />
+
+    What is the bending and spreading out of light waves as they pass through a
+    narrow slit called?<br />
+    <span data-quiz="D" style="display: none">Diffraction</span><br /><br />
+    <label><input type="radio" name="q6" value="A" /> A. Refraction</label
+    ><br />
+    <label><input type="radio" name="q6" value="B" /> B. Reflection</label
+    ><br />
+    <label><input type="radio" name="q6" value="C" /> C. Polarization</label
+    ><br />
+    <label><input type="radio" name="q6" value="D" /> D. Diffraction</label
+    ><br /><br />
+
+    Young's double-slit experiment demonstrates which two types of wave
+    interference?<br />
+    <span data-quiz="B" style="display: none">Constructive and Destructive</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q7" value="A" /> A. Single and Double</label
+    ><br />
+    <label
+      ><input type="radio" name="q7" value="B" /> B. Constructive and
+      Destructive</label
+    ><br />
+    <label
+      ><input type="radio" name="q7" value="C" /> C. Primary and
+      Secondary</label
+    ><br />
+    <label
+      ><input type="radio" name="q7" value="D" /> D. Total and Partial</label
+    ><br /><br />
+
+    What type of light waves are those in which the vibrations occur in a single
+    plane?<br />
+    <span data-quiz="C" style="display: none">Plane polarized</span><br /><br />
+    <label
+      ><input type="radio" name="q8" value="A" /> A. Circularly polarized</label
+    ><br />
+    <label><input type="radio" name="q8" value="B" /> B. Reflected</label><br />
+    <label><input type="radio" name="q8" value="C" /> C. Plane polarized</label
+    ><br />
+    <label><input type="radio" name="q8" value="D" /> D. Diffracted</label
+    ><br /><br />
+
+    When all light rays have electric fields with equal intensity but constantly
+    rotating direction, this light is called:<br />
+    <span data-quiz="C" style="display: none">Circularly polarized light</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q9" value="A" /> A. Unpolarized light</label
+    ><br />
+    <label
+      ><input type="radio" name="q9" value="B" /> B. Plane polarized
+      light</label
+    ><br />
+    <label
+      ><input type="radio" name="q9" value="C" /> C. Circularly polarized
+      light</label
+    ><br />
+    <label><input type="radio" name="q9" value="D" /> D. Transverse light</label
+    ><br /><br />
+
+    What is the rebounding of incident light waves at a medium's boundary
+    called?<br />
+    <span data-quiz="D" style="display: none">Reflection</span><br /><br />
+    <label><input type="radio" name="q10" value="A" /> A. Refraction</label
+    ><br />
+    <label><input type="radio" name="q10" value="B" /> B. Diffraction</label
+    ><br />
+    <label><input type="radio" name="q10" value="C" /> C. Dispersion</label
+    ><br />
+    <label><input type="radio" name="q10" value="D" /> D. Reflection</label
+    ><br /><br />
+
+    The law of reflection states that the angle of reflection is what to the
+    angle of incidence?<br />
+    <span data-quiz="C" style="display: none">Equal to</span><br /><br />
+    <label><input type="radio" name="q11" value="A" /> A. Greater than</label
+    ><br />
+    <label><input type="radio" name="q11" value="B" /> B. Less than</label
+    ><br />
+    <label><input type="radio" name="q11" value="C" /> C. Equal to</label><br />
+    <label><input type="radio" name="q11" value="D" /> D. Unrelated</label
+    ><br /><br />
+
+    A concave mirror is characterized by its ability to cause parallel light
+    rays to:<br />
+    <span data-quiz="C" style="display: none">Converge at a focal point</span
+    ><br /><br />
+    <label><input type="radio" name="q12" value="A" /> A. Diverge</label><br />
+    <label><input type="radio" name="q12" value="B" /> B. Polarize</label><br />
+    <label
+      ><input type="radio" name="q12" value="C" /> C. Converge at a focal
+      point</label
+    ><br />
+    <label><input type="radio" name="q12" value="D" /> D. Disperse</label
+    ><br /><br />
+
+    For a concave mirror, if the object is farther than the focal point, the
+    image will be:<br />
+    <span data-quiz="C" style="display: none">Real and inverted</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q13" value="A" /> A. Virtual and upright</label
+    ><br />
+    <label
+      ><input type="radio" name="q13" value="B" /> B. Virtual and
+      inverted</label
+    ><br />
+    <label
+      ><input type="radio" name="q13" value="C" /> C. Real and inverted</label
+    ><br />
+    <label
+      ><input type="radio" name="q13" value="D" /> D. Real and upright</label
+    ><br /><br />
+
+    For a concave mirror, if the object is very close to the mirror (inside the
+    focal point), the image will be:<br />
+    <span data-quiz="B" style="display: none">Virtual and upright</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q14" value="A" /> A. Real and inverted</label
+    ><br />
+    <label
+      ><input type="radio" name="q14" value="B" /> B. Virtual and upright</label
+    ><br />
+    <label
+      ><input type="radio" name="q14" value="C" /> C. Real and upright</label
+    ><br />
+    <label
+      ><input type="radio" name="q14" value="D" /> D. Virtual and
+      inverted</label
+    ><br /><br />
+
+    For a convex mirror, the image will always be:<br />
+    <span data-quiz="C" style="display: none">Virtual and upright</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q15" value="A" /> A. Real and inverted</label
+    ><br />
+    <label
+      ><input type="radio" name="q15" value="B" /> B. Real and upright</label
+    ><br />
+    <label
+      ><input type="radio" name="q15" value="C" /> C. Virtual and upright</label
+    ><br />
+    <label
+      ><input type="radio" name="q15" value="D" /> D. Virtual and
+      inverted</label
+    ><br /><br />
+
+    What is the bending of light as it passes from one medium to another
+    called?<br />
+    <span data-quiz="C" style="display: none">Refraction</span><br /><br />
+    <label><input type="radio" name="q16" value="A" /> A. Reflection</label
+    ><br />
+    <label><input type="radio" name="q16" value="B" /> B. Diffraction</label
+    ><br />
+    <label><input type="radio" name="q16" value="C" /> C. Refraction</label
+    ><br />
+    <label
+      ><input type="radio" name="q16" value="D" /> D. Total internal
+      reflection</label
+    ><br /><br />
+
+    The formula for the index of refraction (n) relates the speed of light in a
+    vacuum (c) to the speed of light in the medium (v):<br />
+    <span data-quiz="C" style="display: none">n = c / v</span><br /><br />
+    <label><input type="radio" name="q17" value="A" /> A. n = c - v</label
+    ><br />
+    <label><input type="radio" name="q17" value="B" /> B. n = c · v</label
+    ><br />
+    <label><input type="radio" name="q17" value="C" /> C. n = c / v</label
+    ><br />
+    <label><input type="radio" name="q17" value="D" /> D. n = v / c</label
+    ><br /><br />
+
+    Snell's law relates the indices of refraction (n₁, n₂) and the angles of
+    incidence (θ₁) and refraction (θ₂) as:<br />
+    <span data-quiz="C" style="display: none">n₁ sin θ₁ = n₂ sin θ₂</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q18" value="A" /> A. n₁ / n₂ = sin θ₂ / sin
+      θ₁</label
+    ><br />
+    <label
+      ><input type="radio" name="q18" value="B" /> B. n₁ + n₂ = sin θ₁ + sin
+      θ₂</label
+    ><br />
+    <label
+      ><input type="radio" name="q18" value="C" /> C. n₁ sin θ₁ = n₂ sin
+      θ₂</label
+    ><br />
+    <label
+      ><input type="radio" name="q18" value="D" /> D. sin θ₁ / sin θ₂ = c /
+      v</label
+    ><br /><br />
+
+    What is the phenomenon where various wavelengths of light separate from each
+    other, as seen in a prism or a rainbow?<br />
+    <span data-quiz="C" style="display: none">Dispersion</span><br /><br />
+    <label><input type="radio" name="q19" value="A" /> A. Interference</label
+    ><br />
+    <label><input type="radio" name="q19" value="B" /> B. Polarization</label
+    ><br />
+    <label><input type="radio" name="q19" value="C" /> C. Dispersion</label
+    ><br />
+    <label><input type="radio" name="q19" value="D" /> D. Refraction</label
+    ><br /><br />
+
+    Total internal reflection occurs when light attempts to move from a medium
+    with a:<br />
+    <span data-quiz="B" style="display: none"
+      >Higher index to a lower index</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q20" value="A" /> A. Lower index to a higher
+      index</label
+    ><br />
+    <label
+      ><input type="radio" name="q20" value="B" /> B. Higher index to a lower
+      index</label
+    ><br />
+    <label
+      ><input type="radio" name="q20" value="C" /> C. Lower frequency to a
+      higher frequency</label
+    ><br />
+    <label
+      ><input type="radio" name="q20" value="D" /> D. Higher frequency to a
+      lower frequency</label
+    ><br /><br />
+
+    The critical angle is the angle of incidence that results in an angle of
+    refraction of exactly how many degrees?<br />
+    <span data-quiz="C" style="display: none">90 degrees</span><br /><br />
+    <label><input type="radio" name="q21" value="A" /> A. 0 degrees</label
+    ><br />
+    <label><input type="radio" name="q21" value="B" /> B. 45 degrees</label
+    ><br />
+    <label><input type="radio" name="q21" value="C" /> C. 90 degrees</label
+    ><br />
+    <label><input type="radio" name="q21" value="D" /> D. 180 degrees</label
+    ><br /><br />
+
+    A convex lens is also known as a:<br />
+    <span data-quiz="C" style="display: none">Converging lens</span><br /><br />
+    <label><input type="radio" name="q22" value="A" /> A. Diverging lens</label
+    ><br />
+    <label><input type="radio" name="q22" value="B" /> B. Focusing lens</label
+    ><br />
+    <label><input type="radio" name="q22" value="C" /> C. Converging lens</label
+    ><br />
+    <label><input type="radio" name="q22" value="D" /> D. Dispersing lens</label
+    ><br /><br />
+
+    A concave lens is also known as a:<br />
+    <span data-quiz="B" style="display: none">Diverging lens</span><br /><br />
+    <label><input type="radio" name="q23" value="A" /> A. Converging lens</label
+    ><br />
+    <label><input type="radio" name="q23" value="B" /> B. Diverging lens</label
+    ><br />
+    <label><input type="radio" name="q23" value="C" /> C. Reflection lens</label
+    ><br />
+    <label><input type="radio" name="q23" value="D" /> D. Parabolic lens</label
+    ><br /><br />
+
+    For an object outside the focal point of a convex (converging) lens, the
+    image is:<br />
+    <span data-quiz="C" style="display: none">Real and inverted</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q24" value="A" /> A. Virtual and upright</label
+    ><br />
+    <label
+      ><input type="radio" name="q24" value="B" /> B. Virtual and
+      inverted</label
+    ><br />
+    <label
+      ><input type="radio" name="q24" value="C" /> C. Real and inverted</label
+    ><br />
+    <label
+      ><input type="radio" name="q24" value="D" /> D. Real and upright</label
+    ><br /><br />
+
+    The thin lens equation relates focal length (f), image distance (dᵢ), and
+    object distance (dₒ):<br />
+    <span data-quiz="C" style="display: none">1/f = 1/dₒ + 1/dᵢ</span
+    ><br /><br />
+    <label><input type="radio" name="q25" value="A" /> A. f = dₒ + dᵢ</label
+    ><br />
+    <label><input type="radio" name="q25" value="B" /> B. 1/f = dₒ + dᵢ</label
+    ><br />
+    <label
+      ><input type="radio" name="q25" value="C" /> C. 1/f = 1/dₒ + 1/dᵢ</label
+    ><br />
+    <label><input type="radio" name="q25" value="D" /> D. f = dₒ · dᵢ</label
+    ><br /><br />
+    <footer>
+      <p>All questions courtesy of Miledown</p>
+    </footer>
+  </body>
+
+  <script src="test.js"></script>
+  <script src="sidebar.js"></script>
+</html>

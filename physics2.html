@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      img {
+        max-width: 300px;
+        max-height: 250px;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        display: block;
+        margin: 10px auto;
+        border: 1px solid #019cb1;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 8px 25px rgba(1, 156, 177, 0.3);
+        border-color: #ff6b35;
+      }
+
+      img:active {
+        transform: scale(0.95);
+      }
+
+      .image-zoom {
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6422130934976134"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="google-adsense-account" content="ca-pub-6422130934976134" />
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-L97LGZSXS5"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-L97LGZSXS5");
+    </script>
+    <link
+      rel="icon"
+      type="image/png"
+      href="Screenshot 2025-09-18 at 9.21.54 PM.png"
+    />
+    <title>Waves - MCAT Practice - Physics</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div
+      id="score-container"
+      style="
+        margin: 80px 0;
+        font-size: 0.8rem;
+        color: whitesmoke;
+        position: fixed;
+        top: 150px;
+        right: 16px;
+        background: #0a00cd;
+        z-index: 1000;
+        padding: 8px 8px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      "
+    >
+      Score: <span id="score">0</span> / <span id="total">0</span>
+    </div>
+
+    <h1>Waves - MCAT Practice - Physics</h1>
+    Which term is defined as the maximum displacement of a wave from its rest
+    position?<br />
+    <span data-quiz="C" style="display: none">Amplitude</span><br /><br />
+    <label><input type="radio" name="q1" value="A" /> A. Wavelength</label
+    ><br />
+    <label><input type="radio" name="q1" value="B" /> B. Frequency</label><br />
+    <label><input type="radio" name="q1" value="C" /> C. Amplitude</label><br />
+    <label><input type="radio" name="q1" value="D" /> D. Period</label
+    ><br /><br />
+
+    The distance between two consecutive troughs of a wave is known as the:<br />
+    <span data-quiz="C" style="display: none">Wavelength (λ)</span><br /><br />
+    <label><input type="radio" name="q2" value="A" /> A. Amplitude</label><br />
+    <label><input type="radio" name="q2" value="B" /> B. Period</label><br />
+    <label><input type="radio" name="q2" value="C" /> C. Wavelength (λ)</label
+    ><br />
+    <label
+      ><input type="radio" name="q2" value="D" /> D. Angular Frequency
+      (ω)</label
+    ><br /><br />
+
+    If a wave completes 10 cycles in 5 seconds, its frequency is:<br />
+    <span data-quiz="D" style="display: none">2 Hz</span><br /><br />
+    <label><input type="radio" name="q3" value="A" /> A. 50 Hz</label><br />
+    <label><input type="radio" name="q3" value="B" /> B. 10 Hz</label><br />
+    <label><input type="radio" name="q3" value="C" /> C. 5 Hz</label><br />
+    <label><input type="radio" name="q3" value="D" /> D. 2 Hz</label
+    ><br /><br />
+
+    The time required for a single wave cycle to complete is called the:<br />
+    <span data-quiz="C" style="display: none">Period</span><br /><br />
+    <label><input type="radio" name="q4" value="A" /> A. Wavelength</label
+    ><br />
+    <label><input type="radio" name="q4" value="B" /> B. Frequency</label><br />
+    <label><input type="radio" name="q4" value="C" /> C. Period</label><br />
+    <label><input type="radio" name="q4" value="D" /> D. Displacement</label
+    ><br /><br />
+
+    Which type of wave involves particle oscillation parallel to the direction
+    of wave propagation?<br />
+    <span data-quiz="A" style="display: none">Longitudinal waves</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q5" value="A" /> A. Longitudinal waves</label
+    ><br />
+    <label><input type="radio" name="q5" value="B" /> B. Transverse waves</label
+    ><br />
+    <label><input type="radio" name="q5" value="C" /> C. Standing waves</label
+    ><br />
+    <label><input type="radio" name="q5" value="D" /> D. Traveling waves</label
+    ><br /><br />
+
+    Light is a classic example of a wave where the displacement of the medium is
+    perpendicular to the direction of energy transfer. This is a:<br />
+    <span data-quiz="C" style="display: none">Transverse wave</span><br /><br />
+    <label
+      ><input type="radio" name="q6" value="A" /> A. Longitudinal wave</label
+    ><br />
+    <label><input type="radio" name="q6" value="B" /> B. Sound wave</label
+    ><br />
+    <label><input type="radio" name="q6" value="C" /> C. Transverse wave</label
+    ><br />
+    <label><input type="radio" name="q6" value="D" /> D. Standing wave</label
+    ><br /><br />
+
+    What is the SI unit for frequency?<br />
+    <span data-quiz="C" style="display: none">Hertz (Hz)</span><br /><br />
+    <label><input type="radio" name="q7" value="A" /> A. Meter (m)</label><br />
+    <label><input type="radio" name="q7" value="B" /> B. Second (s)</label
+    ><br />
+    <label><input type="radio" name="q7" value="C" /> C. Hertz (Hz)</label
+    ><br />
+    <label
+      ><input type="radio" name="q7" value="D" /> D. Meter per second
+      (m/s)</label
+    ><br /><br />
+
+    The concept of Displacement (x) in wave mechanics is a:<br />
+    <span data-quiz="C" style="display: none">Vector quantity</span><br /><br />
+    <label
+      ><input type="radio" name="q8" value="A" /> A. Scalar quantity only</label
+    ><br />
+    <label><input type="radio" name="q8" value="B" /> B. Measure of time</label
+    ><br />
+    <label><input type="radio" name="q8" value="C" /> C. Vector quantity</label
+    ><br />
+    <label><input type="radio" name="q8" value="D" /> D. Measure of force</label
+    ><br /><br />
+
+    The period (T) of a wave is mathematically related to its frequency (f) by
+    the equation:<br />
+    <span data-quiz="B" style="display: none">T = 1/f</span><br /><br />
+    <label><input type="radio" name="q9" value="A" /> A. T = fλ</label><br />
+    <label><input type="radio" name="q9" value="B" /> B. T = 1/f</label><br />
+    <label><input type="radio" name="q9" value="C" /> C. T = v/f</label><br />
+    <label><input type="radio" name="q9" value="D" /> D. T = 2πf</label
+    ><br /><br />
+
+    Which equation correctly relates wave speed (v), frequency (f), and
+    wavelength (λ)?<br />
+    <span data-quiz="C" style="display: none">v = fλ</span><br /><br />
+    <label><input type="radio" name="q10" value="A" /> A. v = f/λ</label><br />
+    <label><input type="radio" name="q10" value="B" /> B. λ = vf</label><br />
+    <label><input type="radio" name="q10" value="C" /> C. v = fλ</label><br />
+    <label><input type="radio" name="q10" value="D" /> D. f = vλ</label
+    ><br /><br />
+
+    Angular Frequency (ω) is a measure of:<br />
+    <span data-quiz="C" style="display: none"
+      >Angular displacement per unit time</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q11" value="A" /> A. Frequency in cycles per
+      second</label
+    ><br />
+    <label
+      ><input type="radio" name="q11" value="B" /> B. Distance per unit
+      time</label
+    ><br />
+    <label
+      ><input type="radio" name="q11" value="C" /> C. Angular displacement per
+      unit time</label
+    ><br />
+    <label
+      ><input type="radio" name="q11" value="D" /> D. The inverse of the
+      Period</label
+    ><br /><br />
+
+    The superposition of two waves exactly in phase with each other will result
+    in:<br />
+    <span data-quiz="C" style="display: none">Constructive interference</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q12" value="A" /> A. Destructive
+      interference</label
+    ><br />
+    <label><input type="radio" name="q12" value="B" /> B. Damping</label><br />
+    <label
+      ><input type="radio" name="q12" value="C" /> C. Constructive
+      interference</label
+    ><br />
+    <label><input type="radio" name="q12" value="D" /> D. Resonance</label
+    ><br /><br />
+
+    What occurs when two waves are exactly out of phase, leading to a resultant
+    wave amplitude equal to the difference in the interfering amplitudes?<br />
+    <span data-quiz="B" style="display: none">Destructive interference</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q13" value="A" /> A. Constructive
+      interference</label
+    ><br />
+    <label
+      ><input type="radio" name="q13" value="B" /> B. Destructive
+      interference</label
+    ><br />
+    <label
+      ><input type="radio" name="q13" value="C" /> C. Traveling wave
+      formation</label
+    ><br />
+    <label><input type="radio" name="q13" value="D" /> D. Resonance</label
+    ><br /><br />
+
+    The general way in which waves interact in space to form a resultant wave is
+    called:<br />
+    <span data-quiz="C" style="display: none">Interference</span><br /><br />
+    <label><input type="radio" name="q14" value="A" /> A. Superposition</label
+    ><br />
+    <label><input type="radio" name="q14" value="B" /> B. Diffraction</label
+    ><br />
+    <label><input type="radio" name="q14" value="C" /> C. Interference</label
+    ><br />
+    <label><input type="radio" name="q14" value="D" /> D. Damping</label
+    ><br /><br />
+
+    A wave with continuously shifting points of maximum displacement that
+    appears to move forward is best described as a:<br />
+    <span data-quiz="D" style="display: none">Traveling wave</span><br /><br />
+    <label><input type="radio" name="q15" value="A" /> A. Standing wave</label
+    ><br />
+    <label
+      ><input type="radio" name="q15" value="B" /> B. Longitudinal wave</label
+    ><br />
+    <label><input type="radio" name="q15" value="C" /> C. Transverse wave</label
+    ><br />
+    <label><input type="radio" name="q15" value="D" /> D. Traveling wave</label
+    ><br /><br />
+
+    Points in a standing wave where the oscillation is zero are known as:<br />
+    <span data-quiz="D" style="display: none">Nodes</span><br /><br />
+    <label><input type="radio" name="q16" value="A" /> A. Crests</label><br />
+    <label><input type="radio" name="q16" value="B" /> B. Antinodes</label
+    ><br />
+    <label><input type="radio" name="q16" value="C" /> C. Troughs</label><br />
+    <label><input type="radio" name="q16" value="D" /> D. Nodes</label
+    ><br /><br />
+
+    Points of maximum oscillation in a standing wave are called:<br />
+    <span data-quiz="D" style="display: none">Antinodes</span><br /><br />
+    <label><input type="radio" name="q17" value="A" /> A. Nodes</label><br />
+    <label><input type="radio" name="q17" value="B" /> B. Crests</label><br />
+    <label><input type="radio" name="q17" value="C" /> C. Troughs</label><br />
+    <label><input type="radio" name="q17" value="D" /> D. Antinodes</label
+    ><br /><br />
+
+    The phenomenon where an external force causes an object to vibrate at its
+    own natural frequency, significantly increasing its amplitude, is called:<br />
+    <span data-quiz="C" style="display: none">Resonance</span><br /><br />
+    <label><input type="radio" name="q18" value="A" /> A. Interference</label
+    ><br />
+    <label><input type="radio" name="q18" value="B" /> B. Damping</label><br />
+    <label><input type="radio" name="q18" value="C" /> C. Resonance</label
+    ><br />
+    <label><input type="radio" name="q18" value="D" /> D. Diffraction</label
+    ><br /><br />
+
+    What physical characteristic of a wave is decreased by the process of
+    damping?<br />
+    <span data-quiz="D" style="display: none">Amplitude</span><br /><br />
+    <label><input type="radio" name="q19" value="A" /> A. Frequency</label
+    ><br />
+    <label><input type="radio" name="q19" value="B" /> B. Wavelength</label
+    ><br />
+    <label><input type="radio" name="q19" value="C" /> C. Period</label><br />
+    <label><input type="radio" name="q19" value="D" /> D. Amplitude</label
+    ><br /><br />
+
+    Sound waves are classified as longitudinal waves because the particles of
+    the medium vibrate:<br />
+    <span data-quiz="B" style="display: none"
+      >Parallel to the direction the sound travels</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q20" value="A" /> A. Perpendicular to the
+      direction the sound travels</label
+    ><br />
+    <label
+      ><input type="radio" name="q20" value="B" /> B. Parallel to the direction
+      the sound travels</label
+    ><br />
+    <label
+      ><input type="radio" name="q20" value="C" /> C. In an elliptical
+      path</label
+    ><br />
+    <label
+      ><input type="radio" name="q20" value="D" /> D. In a vacuum only</label
+    ><br /><br />
+    <footer>
+      <p>All questions courtesy of Miledown</p>
+    </footer>
+  </body>
+
+  <script src="test.js"></script>
+  <script src="sidebar.js"></script>
+</html>
