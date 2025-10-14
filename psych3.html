@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      img {
+        max-width: 300px;
+        max-height: 250px;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        display: block;
+        margin: 10px auto;
+        border: 1px solid #019cb1;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 8px 25px rgba(1, 156, 177, 0.3);
+        border-color: #ff6b35;
+      }
+
+      img:active {
+        transform: scale(0.95);
+      }
+
+      .image-zoom {
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6422130934976134"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="google-adsense-account" content="ca-pub-6422130934976134" />
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-L97LGZSXS5"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-L97LGZSXS5");
+    </script>
+    <link
+      rel="icon"
+      type="image/png"
+      href="Screenshot 2025-09-18 at 9.21.54 PM.png"
+    />
+    <title>Memory and Cognition - MCAT Practice - Psychology</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Fixed Top Navigation Banner Template -->
+    <div class="top-banner">
+      <a
+        href="psych2.html"
+        style="color: #ffffff; font-weight: bold; text-decoration: none"
+        >Previous</a
+      >
+      &#8592; <strong>Memory & Cognition:</strong> Score:
+      <span id="score">0</span> / <span id="total">0</span> &#8594;
+      <a
+        href="psych4.html"
+        style="color: #ffffff; font-weight: bold; text-decoration: none"
+        >Next</a
+      >
+    </div>
+    <style>
+      .top-banner {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #6e00a9; /* Change color here */
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        z-index: 1000;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        padding-top: 40px;
+      }
+
+      .top-banner a:hover {
+        text-decoration: underline !important;
+      }
+    </style>
+
+    <h1>Memory and Cognition - MCAT Practice - Psychology</h1>
+    <br /><br />
+    A child stops flinching at a sudden, loud clock chime after hearing it
+    repeatedly. This reduction in response is an example of:<br />
+    <span data-quiz="C" style="display: none">Habituation</span><br /><br />
+    <label
+      ><input type="radio" name="q1" value="A" /> A. Observational
+      learning</label
+    ><br />
+    <label><input type="radio" name="q1" value="B" /> B. Dishabituation</label
+    ><br />
+    <label><input type="radio" name="q1" value="C" /> C. Habituation</label
+    ><br />
+    <label
+      ><input type="radio" name="q1" value="D" /> D. Classical
+      conditioning</label
+    ><br /><br />
+
+    A habituated response suddenly reappears when a completely new, loud sound
+    is introduced. This temporary recovery is known as:<br />
+    <span data-quiz="B" style="display: none">Dishabituation</span><br /><br />
+    <label><input type="radio" name="q2" value="A" /> A. Extinction</label
+    ><br />
+    <label><input type="radio" name="q2" value="B" /> B. Dishabituation</label
+    ><br />
+    <label><input type="radio" name="q2" value="C" /> C. Generalization</label
+    ><br />
+    <label><input type="radio" name="q2" value="D" /> D. Shaping</label
+    ><br /><br />
+
+    The theory stating that ideas are linked to one another and reinforce each
+    other is the:<br />
+    <span data-quiz="B" style="display: none">Associative learning theory</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q3" value="A" /> A. Information processing
+      model</label
+    ><br />
+    <label
+      ><input type="radio" name="q3" value="B" /> B. Associative learning
+      theory</label
+    ><br />
+    <label
+      ><input type="radio" name="q3" value="C" /> C. Multiple intelligences
+      theory</label
+    ><br />
+    <label
+      ><input type="radio" name="q3" value="D" /> D. Piaget's theory of
+      development</label
+    ><br /><br />
+
+    Training a dog to sit by giving it a treat every time it successfully
+    performs the command is an example of:<br />
+    <span data-quiz="B" style="display: none">Operant conditioning</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q4" value="A" /> A. Classical
+      conditioning</label
+    ><br />
+    <label
+      ><input type="radio" name="q4" value="B" /> B. Operant conditioning</label
+    ><br />
+    <label><input type="radio" name="q4" value="C" /> C. Habituation</label
+    ><br />
+    <label><input type="radio" name="q4" value="D" /> D. Modeling</label
+    ><br /><br />
+
+    Which consequence is used to increase the likelihood of a behavior?<br />
+    <span data-quiz="C" style="display: none">Reinforcement</span><br /><br />
+    <label><input type="radio" name="q5" value="A" /> A. Punishment</label
+    ><br />
+    <label><input type="radio" name="q5" value="B" /> B. Extinction</label
+    ><br />
+    <label><input type="radio" name="q5" value="C" /> C. Reinforcement</label
+    ><br />
+    <label><input type="radio" name="q5" value="D" /> D. Agnosia</label
+    ><br /><br />
+
+    Giving a speeding ticket to a driver is an attempt to decrease the
+    likelihood of future speeding, which is an example of:<br />
+    <span data-quiz="B" style="display: none">Punishment</span><br /><br />
+    <label><input type="radio" name="q6" value="A" /> A. Reinforcement</label
+    ><br />
+    <label><input type="radio" name="q6" value="B" /> B. Punishment</label
+    ><br />
+    <label><input type="radio" name="q6" value="C" /> C. Extinction</label
+    ><br />
+    <label><input type="radio" name="q6" value="D" /> D. Shaping</label
+    ><br /><br />
+
+    Taking away a child's electronic tablet after a poor grade is an example of
+    a negative response because it:<br />
+    <span data-quiz="B" style="display: none">Removes a stimulus</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q7" value="A" /> A. Adds a negative
+      stimulus</label
+    ><br />
+    <label
+      ><input type="radio" name="q7" value="B" /> B. Removes a stimulus</label
+    ><br />
+    <label
+      ><input type="radio" name="q7" value="C" /> C. Increases the likelihood of
+      the behavior</label
+    ><br />
+    <label
+      ><input type="radio" name="q7" value="D" /> D. Decreases the likelihood of
+      a behavior</label
+    ><br /><br />
+
+    In operant conditioning, reinforcing behaviors that get progressively closer
+    to the desired complex behavior is called:<br />
+    <span data-quiz="C" style="display: none">Shaping</span><br /><br />
+    <label><input type="radio" name="q8" value="A" /> A. Extinction</label
+    ><br />
+    <label><input type="radio" name="q8" value="B" /> B. Modeling</label><br />
+    <label><input type="radio" name="q8" value="C" /> C. Shaping</label><br />
+    <label><input type="radio" name="q8" value="D" /> D. Ratio schedule</label
+    ><br /><br />
+
+    In classical conditioning, a neutral stimulus eventually transforms into
+    the:<br />
+    <span data-quiz="B" style="display: none">Conditioned stimulus</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q9" value="A" /> A. Unconditioned
+      response</label
+    ><br />
+    <label
+      ><input type="radio" name="q9" value="B" /> B. Conditioned stimulus</label
+    ><br />
+    <label
+      ><input type="radio" name="q9" value="C" /> C. Unconditioned
+      stimulus</label
+    ><br />
+    <label><input type="radio" name="q9" value="D" /> D. Explicit memory</label
+    ><br /><br />
+
+    The acquisition of a new skill or behavior by watching and imitating another
+    person is called:<br />
+    <span data-quiz="D" style="display: none">Observational learning</span
+    ><br /><br />
+    <label><input type="radio" name="q10" value="A" /> A. Habituation</label
+    ><br />
+    <label><input type="radio" name="q10" value="B" /> B. Shaping</label><br />
+    <label
+      ><input type="radio" name="q10" value="C" /> C. Operant
+      conditioning</label
+    ><br />
+    <label
+      ><input type="radio" name="q10" value="D" /> D. Observational
+      learning</label
+    ><br /><br />
+
+    The process of putting new information into memory is known as:<br />
+    <span data-quiz="C" style="display: none">Encoding</span><br /><br />
+    <label><input type="radio" name="q11" value="A" /> A. Retrieval</label
+    ><br />
+    <label><input type="radio" name="q11" value="B" /> B. Storage</label><br />
+    <label><input type="radio" name="q11" value="C" /> C. Encoding</label><br />
+    <label><input type="radio" name="q11" value="D" /> D. Priming</label
+    ><br /><br />
+
+    Encoding the meaning of the word "ephemeral" as "lasting for a very short
+    time" rather than just its sound is an example of:<br />
+    <span data-quiz="C" style="display: none">Semantic encoding</span
+    ><br /><br />
+    <label><input type="radio" name="q12" value="A" /> A. Visual encoding</label
+    ><br />
+    <label
+      ><input type="radio" name="q12" value="B" /> B. Acoustic encoding</label
+    ><br />
+    <label
+      ><input type="radio" name="q12" value="C" /> C. Semantic encoding</label
+    ><br />
+    <label
+      ><input type="radio" name="q12" value="D" /> D. Automatic encoding</label
+    ><br /><br />
+
+    Which two types of memory are described as transient and based on
+    neurotransmitter activity?<br />
+    <span data-quiz="C" style="display: none"
+      >Sensory memory and Short-term memory</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q13" value="A" /> A. Explicit and Implicit
+      memory</label
+    ><br />
+    <label
+      ><input type="radio" name="q13" value="B" /> B. Long-term and Working
+      memory</label
+    ><br />
+    <label
+      ><input type="radio" name="q13" value="C" /> C. Sensory memory and
+      Short-term memory</label
+    ><br />
+    <label
+      ><input type="radio" name="q13" value="D" /> D. Procedural and Declarative
+      memory</label
+    ><br /><br />
+
+    The memory system that temporarily holds and manipulates information for
+    processing, requiring attention and executive function, is:<br />
+    <span data-quiz="C" style="display: none">Working memory</span><br /><br />
+    <label
+      ><input type="radio" name="q14" value="A" /> A. Short term memory</label
+    ><br />
+    <label><input type="radio" name="q14" value="B" /> B. Sensory memory</label
+    ><br />
+    <label><input type="radio" name="q14" value="C" /> C. Working memory</label
+    ><br />
+    <label
+      ><input type="radio" name="q14" value="D" /> D. Long term memory</label
+    ><br /><br />
+
+    Memory for facts, data, and events that requires conscious effort to recall
+    is categorized as:<br />
+    <span data-quiz="C" style="display: none"
+      >Explicit (declarative) memory</span
+    ><br /><br />
+    <label><input type="radio" name="q15" value="A" /> A. Implicit memory</label
+    ><br />
+    <label
+      ><input type="radio" name="q15" value="B" /> B. Procedural memory</label
+    ><br />
+    <label
+      ><input type="radio" name="q15" value="C" /> C. Explicit (declarative)
+      memory</label
+    ><br />
+    <label
+      ><input type="radio" name="q15" value="D" /> D. Semantic network</label
+    ><br /><br />
+
+    Remembering how to ride a bicycle without consciously thinking about the
+    steps is an example of:<br />
+    <span data-quiz="C" style="display: none">Implicit memory</span><br /><br />
+    <label><input type="radio" name="q16" value="A" /> A. Explicit memory</label
+    ><br />
+    <label><input type="radio" name="q16" value="B" /> B. Episodic memory</label
+    ><br />
+    <label><input type="radio" name="q16" value="C" /> C. Implicit memory</label
+    ><br />
+    <label
+      ><input type="radio" name="q16" value="D" /> D. Semantic encoding</label
+    ><br /><br />
+
+    The memory phenomenon where new information prevents the retrieval of old
+    information is:<br />
+    <span data-quiz="B" style="display: none">Retroactive interference</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q17" value="A" /> A. Proactive
+      interference</label
+    ><br />
+    <label
+      ><input type="radio" name="q17" value="B" /> B. Retroactive
+      interference</label
+    ><br />
+    <label
+      ><input type="radio" name="q17" value="C" /> C. Confirmation bias</label
+    ><br />
+    <label
+      ><input type="radio" name="q17" value="D" /> D. Functional
+      fixedness</label
+    ><br /><br />
+
+    A degenerative brain disorder linked to the loss of acetylcholine in neurons
+    connected to the hippocampus is:<br />
+    <span data-quiz="B" style="display: none">Alzheimer's disease</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q18" value="A" /> A. Korsakoff's
+      Syndrome</label
+    ><br />
+    <label
+      ><input type="radio" name="q18" value="B" /> B. Alzheimer's disease</label
+    ><br />
+    <label><input type="radio" name="q18" value="C" /> C. Agnosia</label><br />
+    <label
+      ><input type="radio" name="q18" value="D" /> D. Functional
+      fixedness</label
+    ><br /><br />
+
+    The cognitive disorder defined as the loss of ability to recognize objects,
+    people, or sounds is:<br />
+    <span data-quiz="C" style="display: none">Agnosia</span><br /><br />
+    <label><input type="radio" name="q19" value="A" /> A. Aphasia</label><br />
+    <label><input type="radio" name="q19" value="B" /> B. Amnesia</label><br />
+    <label><input type="radio" name="q19" value="C" /> C. Agnosia</label><br />
+    <label><input type="radio" name="q19" value="D" /> D. Apraxia</label
+    ><br /><br />
+
+    The cognitive model that describes the brain's functions of encoding,
+    storing, and retrieving information similar to a computer is:<br />
+    <span data-quiz="C" style="display: none"
+      >The Information Processing Model</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q20" value="A" /> A. The Associative Learning
+      Theory</label
+    ><br />
+    <label
+      ><input type="radio" name="q20" value="B" /> B. Gardner's Multiple
+      Intelligences</label
+    ><br />
+    <label
+      ><input type="radio" name="q20" value="C" /> C. The Information Processing
+      Model</label
+    ><br />
+    <label><input type="radio" name="q20" value="D" /> D. Piaget's Stages</label
+    ><br /><br />
+
+    A child is learning language and developing object permanence (the idea that
+    things exist even when out of sight). According to Piaget, this child is in
+    the:<br />
+    <span data-quiz="B" style="display: none">Sensorimotor stage</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q21" value="A" /> A. Preoperational
+      stage</label
+    ><br />
+    <label
+      ><input type="radio" name="q21" value="B" /> B. Sensorimotor stage</label
+    ><br />
+    <label
+      ><input type="radio" name="q21" value="C" /> C. Concrete operational
+      stage</label
+    ><br />
+    <label
+      ><input type="radio" name="q21" value="D" /> D. Formal operational
+      stage</label
+    ><br /><br />
+
+    A scientist starts with existing physical evidence (e.g., fossil records)
+    and then forms a general conclusion about evolution. This uses:<br />
+    <span data-quiz="A" style="display: none">Inductive reasoning</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q22" value="A" /> A. Inductive reasoning</label
+    ><br />
+    <label
+      ><input type="radio" name="q22" value="B" /> B. Deductive reasoning</label
+    ><br />
+    <label
+      ><input type="radio" name="q22" value="C" /> C. Functional
+      fixedness</label
+    ><br />
+    <label
+      ><input type="radio" name="q22" value="D" /> D. Confirmation bias</label
+    ><br /><br />
+
+    The problem-solving barrier created by the tendency to only use an object in
+    its traditional or intended way is known as:<br />
+    <span data-quiz="B" style="display: none">Functional fixedness</span
+    ><br /><br />
+    <label><input type="radio" name="q23" value="A" /> A. Mental set</label
+    ><br />
+    <label
+      ><input type="radio" name="q23" value="B" /> B. Functional
+      fixedness</label
+    ><br />
+    <label
+      ><input type="radio" name="q23" value="C" /> C. Availability
+      heuristic</label
+    ><br />
+    <label
+      ><input type="radio" name="q23" value="D" /> D. Confirmation bias</label
+    ><br /><br />
+
+    Making a decision by relying on examples that most immediately and readily
+    come to mind is an example of the:<br />
+    <span data-quiz="B" style="display: none">Availability heuristic</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q24" value="A" /> A. Representativeness
+      heuristic</label
+    ><br />
+    <label
+      ><input type="radio" name="q24" value="B" /> B. Availability
+      heuristic</label
+    ><br />
+    <label
+      ><input type="radio" name="q24" value="C" /> C. Deductive reasoning</label
+    ><br />
+    <label
+      ><input type="radio" name="q24" value="D" /> D. Confirmation bias</label
+    ><br /><br />
+
+    The theory that views intelligence as being composed of several distinct
+    modalities (e.g., bodily-kinesthetic, musical) rather than a single general
+    ability is:<br />
+    <span data-quiz="B" style="display: none"
+      >Gardner's Theory of Multiple Intelligences</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q25" value="A" /> A. The Information Processing
+      Model</label
+    ><br />
+    <label
+      ><input type="radio" name="q25" value="B" /> B. Gardner's Theory of
+      Multiple Intelligences</label
+    ><br />
+    <label
+      ><input type="radio" name="q25" value="C" /> C. The Associative Learning
+      Theory</label
+    ><br />
+    <label
+      ><input type="radio" name="q25" value="D" /> D. Piaget's Stages of
+      Development</label
+    ><br /><br />
+    <!-- Add your questions here -->
+
+    <footer>
+      <p>All questions courtesy of Miledown</p>
+    </footer>
+  </body>
+
+  <script src="test.js"></script>
+  <script src="sidebar.js"></script>
+</html>
