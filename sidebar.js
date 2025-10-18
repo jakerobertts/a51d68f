@@ -11,33 +11,33 @@ const sidebarCategories = [
     ]
   },
   { title: "Comprehensive Checklists", items: [
-    { isHeader: true, text: "CHEM/PHYS" },
-    { href: "acidderivatives.html", text: "Acid Derivatives Checklist - CHEM", highlight: "blueviolet", textColor: "white" },
-    { href: "acidbaseeq.html", text: "Acid-Base Equilibria Checklist - CHEM", highlight: "blueviolet", textColor: "white" },
-    { href: "alcohols.html", text: "Alcohols Checklist - CHEM", highlight: "blueviolet", textColor: "white" },
-    { href: "aldehydes.html", text: "Aldehydes & Ketones Checklist - CHEM", highlight: "blueviolet", textColor: "white" },
-    { href: "atom.html", text: "Atomic Structure Checklist - CHEM", highlight: "blueviolet", textColor: "white" },
-    { href: "circuits.html", text: "Circuits Checklist - PHY", highlight: "blueviolet", textColor: "white" },
-    { href: "fluidcirc.html", text: "Fluids / Circulation Checklist - PHY", highlight: "blueviolet", textColor: "white" },
-    
-    { isHeader: true, text: "BIO/BC" },
-    { href: "aachem.html", text: "Amino Acids & Proteins Checklist - BC", highlight: "blueviolet", textColor: "white" },
-    { href: "bioenergeticsq.html", text: "Bioenergetics Checklist - BC", highlight: "blueviolet", textColor: "white" },
-    { href: "carb.html", text: "Carbohydrates Checklist - BC", highlight: "blueviolet", textColor: "white" },
-    { href: "carbmetabolism.html", text: "Carbohydrate Metabolism Checklist - BC", highlight: "blueviolet", textColor: "white" },
-    { href: "celltheory.html", text: "Cell Theory Checklist - BIO", highlight: "blueviolet", textColor: "white" },
-    { href: "circulatory.html", text: "Circulatory System Checklist - BIO", highlight: "blueviolet", textColor: "white" },
-    { href: "digestive.html", text: "Digestive System Checklist - BIO", highlight: "blueviolet", textColor: "white" },
-    { href: "endocrine.html", text: "Endocrine System Checklist - BIO", highlight: "blueviolet", textColor: "white" },
-    { href: "ex.html", text: "Excretory System Checklist - BIO", highlight: "blueviolet", textColor: "white" },
-    { href: "oxphos.html", text: "Oxidative Phosphorylation Checklist - BC", highlight: "blueviolet", textColor: "white" },
-    
-    { isHeader: true, text: "PSY/SOC" },
-    { href: "associativelearning.html", text: "Associative Learning Checklist - PSY", highlight: "blueviolet", textColor: "white" },
-    { href: "attitudetheory.html", text: "Attitude Theory Checklist - PSY", highlight: "blueviolet", textColor: "white" },
-    { href: "consciousness.html", text: "Consciousness Checklist - PSY", highlight: "blueviolet", textColor: "white" },
-    { href: "culture.html", text: "Culture Checklist - PSY", highlight: "blueviolet", textColor: "white" },
-    { href: "demographics.html", text: "Demographics Checklist - PSY", highlight: "blueviolet", textColor: "white" },
+    { isHeader: true, text: "" },
+    { href: "acidderivatives.html", text: "Acid Derivatives Checklist - CHEM", highlight: "", textColor: "white" },
+    { href: "acidbaseeq.html", text: "Acid-Base Equilibria Checklist - CHEM", highlight: "", textColor: "white" },
+    { href: "alcohols.html", text: "Alcohols Checklist - CHEM", highlight: "", textColor: "white" },
+    { href: "aldehydes.html", text: "Aldehydes & Ketones Checklist - CHEM", highlight: "", textColor: "white" },
+    { href: "atom.html", text: "Atomic Structure Checklist - CHEM", highlight: "", textColor: "white" },
+    { href: "circuits.html", text: "Circuits Checklist - PHY", highlight: "", textColor: "white" },
+    { href: "fluidcirc.html", text: "Fluids / Circulation Checklist - PHY", highlight: "", textColor: "white" },
+
+    { isHeader: true, text: "" },
+    { href: "aachem.html", text: "Amino Acids & Proteins Checklist - BC", highlight: "", textColor: "white" },
+    { href: "bioenergeticsq.html", text: "Bioenergetics Checklist - BC", highlight: "", textColor: "white" },
+    { href: "carb.html", text: "Carbohydrates Checklist - BC", highlight: "", textColor: "white" },
+    { href: "carbmetabolism.html", text: "Carbohydrate Metabolism Checklist - BC", highlight: "", textColor: "white" },
+    { href: "celltheory.html", text: "Cell Theory Checklist - BIO", highlight: "", textColor: "white" },
+    { href: "circulatory.html", text: "Circulatory System Checklist - BIO", highlight: "", textColor: "white" },
+    { href: "digestive.html", text: "Digestive System Checklist - BIO", highlight: "", textColor: "white" },
+    { href: "endocrine.html", text: "Endocrine System Checklist - BIO", highlight: "", textColor: "white" },
+    { href: "ex.html", text: "Excretory System Checklist - BIO", highlight: "", textColor: "white" },
+    { href: "oxphos.html", text: "Oxidative Phosphorylation Checklist - BC", highlight: "", textColor: "white" },
+
+    { isHeader: true, text: "", textColor: "white" },
+    { href: "associativelearning.html", text: "Associative Learning Checklist - PSY", highlight: "", textColor: "white" },
+    { href: "attitudetheory.html", text: "Attitude Theory Checklist - PSY", highlight: "", textColor: "white" },
+    { href: "consciousness.html", text: "Consciousness Checklist - PSY", highlight: "", textColor: "white" },
+    { href: "culture.html", text: "Culture Checklist - PSY", highlight: "", textColor: "white" },
+    { href: "demographics.html", text: "Demographics Checklist - PSY", highlight: "", textColor: "white" },
   ]},
 
   {
@@ -197,36 +197,38 @@ function createSidebar(activePage = '') {
         margin-bottom: 5px;
       }
       .category-header {
-        background: rgb(255, 255, 255);
-        color: black;
+        color: rgb(237, 237, 237);
         padding: 10px;
         cursor: pointer;
+        border: 1px solid rgb(202, 202, 202);
         border-radius: 4px;
-        border: 1px solid black;
+        border: 1px solid blueviolet;
         margin: 5px 0;
         font-weight: bold;
         transition: background-color 0.3s;
         font-size: 14px;
       }
       .category-header:hover {
-        background: rgb(138, 138, 138);
+        background: rgb(1, 97, 137);
       }
       .category-items {
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease-out;
         padding: 0;
+        color: #f1f1f1;
       }
       .category-items.expanded {
         max-height: calc(100vh - 200px);
         transition: max-height 0.5s ease-in;
         overflow-y: auto;
+        color: #f1f1f1;
       }
       .nav-item {
         display: block;
         padding: 4px 16px;
         text-decoration: none;
-        color: #333;
+        color: #f1f1f1;
         border-left: 3px solid transparent;
         transition: all 0.3s;
         font-size: 12px;
@@ -248,6 +250,7 @@ function createSidebar(activePage = '') {
         border-left: 3px solid rgb(34, 34, 34);
         font-size: 13px;
         transform: translateX(3px);
+        color: rgb(44, 44, 44);
       }
       
       .nav-item.highlighted:hover {
@@ -257,10 +260,11 @@ function createSidebar(activePage = '') {
       
       .nav-item.active {
         background: #e8f4fd;
+        color:rgb(87, 3, 214);
     .nav-header {
       font-size: 13px;
       padding: 4px 0 4px 8px;
-      background: #f3f3f3;
+      color: #f3f3f3;
       border-radius: 2px;
       letter-spacing: 1px;
     }

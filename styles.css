@@ -29,7 +29,7 @@ img {
   left: 0;
   width: 200px;
   height: 100vh;
-  background: linear-gradient(to right, #eefeff, #eee9ff);
+  background: linear-gradient(180deg, #7301b0, #012b2c);
   padding: 50px 0;
   z-index: 1000;
   overflow-y: auto;
@@ -39,10 +39,12 @@ img {
   flex-direction: column;
   transition: transform 0.3s ease;
   transform: translateX(0);
+  font-family: 'verdana', serif;
+
 }
 
 .left-sidebar h3 {
-  color: #000000;
+  color: #dcdcdc;
   margin: 0 0 20px 0;
   font-size: 18px;
   text-align: center;

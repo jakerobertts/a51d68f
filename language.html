@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MCAT Practice Quiz - Language</title>
+    <style>
+      /* Reset & base */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: verdana, sans-serif;
+        background: #ffffff;
+        color: #222;
+        line-height: 1.6;
+      }
+
+      /* Top bar */
+      .top-bar {
+        background-color: #0189cd;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+      }
+
+      .top-bar-left .exam-title {
+        font-size: 1.1rem;
+        font-weight: bold;
+      }
+
+      .top-bar-right {
+        display: flex;
+        gap: 20px;
+        font-size: 0.95rem;
+      }
+
+      /* Toolbar */
+      .toolbar {
+        background-color: #4eb5ffe1;
+        border-bottom: 1px solid #ccc;
+        padding: 8px 20px;
+        display: flex;
+        gap: 12px;
+      }
+
+      .toolbar .btn {
+        background: transparent;
+        border: 1px solid #aaa;
+        border-radius: 4px;
+        padding: 6px 12px;
+        font-size: 0.9rem;
+        cursor: pointer;
+        color: #f1f1f1;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      .toolbar .btn:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
+
+      /* Main content area */
+      .content {
+        display: flex;
+        width: 100%;
+        padding-bottom: 0px;
+      }
+
+      /* Columns */
+      .column {
+        width: 50%;
+        padding: 20px;
+        overflow-y: auto;
+      }
+
+      .left-col {
+        border-right: 10px solid #0078ce;
+        background: #fff;
+      }
+
+      .right-col {
+        background: #ffffff;
+      }
+
+      /* Question pages - hide all by default */
+      .question-page {
+        display: none;
+      }
+
+      .question-page.active {
+        display: block;
+      }
+
+      /* Passage section */
+      .passage h2 {
+        font-size: 1.2rem;
+        margin-bottom: 12px;
+      }
+
+      .passage p {
+        margin-bottom: 12px;
+        line-height: 1.5;
+      }
+
+      /* Question block */
+      .question-block {
+        margin-top: 20px;
+      }
+
+      .question-header {
+        margin-bottom: 8px;
+      }
+
+      .question-label {
+        font-size: 1.15rem;
+        font-weight: bold;
+      }
+
+      .question-text {
+        margin-bottom: 16px;
+        line-height: 1.4;
+      }
+
+      /* Options */
+      .options {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .options label {
+        display: flex;
+        align-items: flex-start;
+        padding: 10px 14px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.2s, border-color 0.2s;
+      }
+
+      .options label:hover {
+        background-color: #eef2ff;
+        border-color: #8a9ae5;
+      }
+
+      .options input[type="radio"] {
+        margin-right: 10px;
+        margin-top: 3px;
+      }
+
+      /* Bottom navigation */
+      .bottom-nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #017bcd;
+        border-top: 1px solid #0056a3;
+        padding: 12px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .nav-left,
+      .nav-right {
+        flex: 1;
+      }
+
+      .nav-center {
+        flex: 1;
+        text-align: center;
+      }
+
+      .question-info {
+        color: white;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: Verdana, sans-serif;
+      }
+
+      .nav-btn {
+        background: rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        color: white;
+        padding: 8px 16px;
+        border-radius: 6px;
+        font-size: 14px;
+        font-family: Verdana, sans-serif;
+        font-weight: 500;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        transition: all 0.3s ease;
+      }
+
+      .nav-btn:hover:not(:disabled) {
+        background: rgba(255, 255, 255, 0.3);
+        transform: translateY(-1px);
+      }
+
+      .nav-btn:disabled {
+        opacity: 0.4;
+        cursor: not-allowed;
+      }
+
+      .next-btn {
+        margin-left: auto;
+      }
+
+      .arrow {
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      /* Responsive */
+      @media (max-width: 800px) {
+        .content {
+          flex-direction: column;
+        }
+        .column {
+          width: 100%;
+          border: none;
+        }
+        .left-col {
+          border-bottom: 1px solid #ccc;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <span class="exam-title">MCAT © - Language</span>
+      </div>
+      <div class="top-bar-right">
+        <span class="timer"
+          >Question <span class="question-count">1</span> of 5</span
+        >
+      </div>
+    </div>
+
+    <div class="toolbar">
+      <button class="btn highlight">Highlight</button>
+      <button class="btn undo-highlight">Undo Highlight</button>
+      <button class="btn strikethrough">Strikethrough</button>
+      <button class="btn undo-strikethrough">Undo Strikethrough</button>
+      <button class="btn flag">Flag for Review</button>
+    </div>
+
+    <!-- Questions will go here -->
+    <!-- Question number -->
+    <div class="question-page" id="question-1">
+      <div class="content">
+        <div class="column left-col">
+          <div class="passage">
+            <h2>Passage 1 (Questions 1‑5)</h2>
+            <!-- passage content -->
+          </div>
+        </div>
+        <div class="column right-col">
+          <div class="question-block">
+            <div class="question-header">
+              <span class="question-label">Question 1</span>
+            </div>
+            <div class="question-text">
+              What do phonology, syntax, and semantics all support in language
+              relatively?
+              <span data-quiz="D" style="display: none"
+                >The sounds of language, rules of arrangement, and meanings of
+                words</span
+              >
+            </div>
+            <div class="options">
+              <label
+                ><input type="radio" name="q1" value="A" /> A. The sounds of
+                language, meanings of words, and rules of arrangement</label
+              >
+              <label
+                ><input type="radio" name="q1" value="B" /> B. The rules of
+                arrangement, sounds of language, and meanings of words</label
+              >
+              <label
+                ><input type="radio" name="q1" value="C" /> C. The meaning of
+                language, rules of arrangement, and sounds of language</label
+              >
+              <label
+                ><input type="radio" name="q1" value="D" /> D. The sounds of
+                language, rules of arrangement, and meanings of words</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Question number 2 -->
+    <div class="question-page" id="question-2">
+      <div class="content">
+        <div class="column left-col">
+          <div class="passage">
+            <h2>Passage 1 (Questions 1‑5)</h2>
+            <!-- passage content -->
+          </div>
+        </div>
+        <div class="column right-col">
+          <div class="question-block">
+            <div class="question-header">
+              <span class="question-label">Question 2</span>
+            </div>
+            <div class="question-text">
+              A 5th grade math teacher comes home and has a conversation with
+              his wife. What aspect of language does he change from his lessons
+              to his conversation?
+
+              <span data-quiz="D" style="display: none">Pragmatics</span>
+            </div>
+            <div class="options">
+              <label
+                ><input type="radio" name="q2" value="A" /> A. Phonology</label
+              >
+              <label
+                ><input type="radio" name="q2" value="B" /> B. Semantics</label
+              >
+              <label
+                ><input type="radio" name="q2" value="C" /> C. Syntax</label
+              >
+              <label
+                ><input type="radio" name="q2" value="D" /> D. Pragmatics</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Question number 3 -->
+    <div class="question-page" id="question-3">
+      <div class="content">
+        <div class="column left-col">
+          <div class="passage">
+            <h2>Passage 1 (Questions 1‑5)</h2>
+            <!-- passage content -->
+          </div>
+        </div>
+        <div class="column right-col">
+          <div class="question-block">
+            <div class="question-header">
+              <span class="question-label">Question 3</span>
+            </div>
+            <div class="question-text">
+              Which data support the social interactionist theory?
+              <span data-quiz="B" style="display: none"
+                >A positive correlation between performance on language tasks
+                and social interaction</span
+              >
+            </div>
+            <div class="options">
+              <label
+                ><input type="radio" name="q3" value="A" /> A. A negative
+                correlation between language performance tasks and the number of
+                detention referrals a student receives</label
+              >
+              <label
+                ><input type="radio" name="q3" value="B" /> B. A positive
+                correlation between performance on language tasks and the number
+                of friends a student has</label
+              >
+              <label
+                ><input type="radio" name="q3" value="C" /> C. A trend between
+                genetics and the ability to perform well on language
+                tasks</label
+              >
+              <label
+                ><input type="radio" name="q3" value="D" /> D. Countries that
+                rely on "compass" directions rather than "relative" directions
+                tend to have a more developed sense of spatial awareness</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Question number 4 -->
+    <div class="question-page" id="question-4">
+      <div class="content">
+        <div class="column left-col">
+          <div class="passage">
+            <h2>Passage 1 (Questions 1‑5)</h2>
+            <!-- passage content -->
+          </div>
+        </div>
+        <div class="column right-col">
+          <div class="question-block">
+            <div class="question-header">
+              <span class="question-label"></span>
+            </div>
+            <div class="question-text">
+              A scientist conducts an experiment that shows that damage to the
+              arcuate fasciculus leads to conduction aphasia. Which of the
+              following best describes the hypothetical dependent and
+              independent variables in this experiment?
+              <span data-quiz="A" style="display: none"
+                >The dependent variable is the ability to repeat words, and the
+                independent variable is the integrity of the arcuate
+                fasciculus.</span
+              >
+            </div>
+            <div class="options">
+              <label
+                ><input type="radio" name="q4" value="A" /> A. The dependent
+                variable is the ability to repeat words, and the independent
+                variable is the integrity of the arcuate fasciculus.</label
+              >
+              <label
+                ><input type="radio" name="q4" value="B" /> B. The dependent
+                variable is the integrity of the arcuate fasciculus, and the
+                independent variable is the ability to repeat words.</label
+              >
+              <label
+                ><input type="radio" name="q4" value="C" /> C. The dependent
+                variable is the ability to interpret words, and the independent
+                variable is the integrity of the arcuate fasciculus.</label
+              >
+              <label
+                ><input type="radio" name="q4" value="D" /> D. The dependent
+                variable is the integrity of the arcuate fasciculus, and the
+                independent variable is the ability to interpret words.</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Question number 5 -->
+    <div class="question-page" id="question-5">
+      <div class="content">
+        <div class="column left-col">
+          <div class="passage">
+            <h2>Passage 1 (Questions 1‑5)</h2>
+            <!-- passage content -->
+          </div>
+        </div>
+        <div class="column right-col">
+          <div class="question-block">
+            <div class="question-header">
+              <span class="question-label">Question 5</span>
+            </div>
+            <div class="question-text">
+              A woman who had a stroke is asked about her day. She replies with,
+              <br /><br />
+              <i
+                >"My day is happy and your fun is complicated, well that is them
+                and interesting."</i
+              >
+              <br /><br />
+              Which of the following types of aphasia does she most likely have?
+              <span data-quiz="C" style="display: none"
+                >Wernicke's aphasia</span
+              >
+            </div>
+            <div class="options">
+              <label
+                ><input type="radio" name="q5" value="A" /> A. Agnosia</label
+              >
+              <label
+                ><input type="radio" name="q5" value="B" /> B. Broca's
+                aphasia</label
+              >
+              <label
+                ><input type="radio" name="q5" value="C" /> C. Wernicke's
+                aphasia</label
+              >
+              <label
+                ><input type="radio" name="q5" value="D" /> D. Conduction
+                aphasia</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+      <div class="nav-left">
+        <button class="nav-btn prev-btn" id="prev-question" disabled>
+          <span class="arrow">←</span>
+          Previous
+        </button>
+      </div>
+      <div class="nav-center">
+        <span class="question-info"></span>
+      </div>
+      <div class="nav-right">
+        <button class="nav-btn next-btn" id="next-question">
+          Next
+          <span class="arrow">→</span>
+        </button>
+      </div>
+    </div>
+
+    <script src="test.js"></script>
+    <script>
+      // Multi-page navigation within single HTML
+      document.addEventListener("DOMContentLoaded", function () {
+        const prevBtn = document.getElementById("prev-question");
+        const nextBtn = document.getElementById("next-question");
+        const questionInfo = document.querySelector(".question-info");
+        const topQuestionCount = document.querySelector(".question-count");
+
+        let currentQuestion = 1;
+        const totalQuestions = 5;
+
+        function showQuestion(questionNum) {
+          document.querySelectorAll(".question-page").forEach((page) => {
+            page.classList.remove("active");
+          });
+
+          const currentPage = document.getElementById(
+            `question-${questionNum}`
+          );
+          if (currentPage) {
+            currentPage.classList.add("active");
+          }
+
+          questionInfo.textContent = `Question ${questionNum} of ${totalQuestions}`;
+          topQuestionCount.textContent = questionNum;
+
+          prevBtn.disabled = questionNum === 1;
+
+          if (questionNum === totalQuestions) {
+            nextBtn.innerHTML = 'Finish <span class="arrow">✓</span>';
+          } else {
+            nextBtn.innerHTML = 'Next <span class="arrow">→</span>';
+          }
+        }
+
+        prevBtn.addEventListener("click", function () {
+          if (currentQuestion > 1) {
+            currentQuestion--;
+            showQuestion(currentQuestion);
+          }
+        });
+
+        nextBtn.addEventListener("click", function () {
+          if (currentQuestion < totalQuestions) {
+            currentQuestion++;
+            showQuestion(currentQuestion);
+          } else {
+            if (confirm("Are you sure you want to finish the exam?")) {
+              showSimpleScore();
+            }
+          }
+        });
+
+        document.addEventListener("keydown", function (e) {
+          const target = e.target;
+          if (target.tagName === "INPUT" || target.tagName === "TEXTAREA") {
+            return;
+          }
+
+          if (e.key === "ArrowLeft" && !prevBtn.disabled) {
+            e.preventDefault();
+            prevBtn.click();
+          } else if (e.key === "ArrowRight") {
+            e.preventDefault();
+            nextBtn.click();
+          }
+        });
+
+        showQuestion(1);
+      });
+
+      // Highlighting functionality
+      document.addEventListener("DOMContentLoaded", function () {
+        let highlightMode = false;
+        let undoHighlightMode = false;
+        let strikethroughMode = false;
+        let undoStrikethroughMode = false;
+        let flagged = false;
+
+        const highlightBtn = document.querySelector(".btn.highlight");
+        const undoHighlightBtn = document.querySelector(".btn.undo-highlight");
+        const strikethroughBtn = document.querySelector(".btn.strikethrough");
+        const undoStrikethroughBtn = document.querySelector(
+          ".btn.undo-strikethrough"
+        );
+        const flagBtn = document.querySelector(".btn.flag");
+
+        if (highlightBtn) {
+          highlightBtn.addEventListener("click", function () {
+            highlightMode = !highlightMode;
+            undoHighlightMode = false;
+            strikethroughMode = false;
+            undoStrikethroughMode = false;
+
+            if (highlightMode) {
+              this.style.background = "#ffeb3b";
+              this.style.color = "#000";
+              resetOtherButtons([
+                undoHighlightBtn,
+                strikethroughBtn,
+                undoStrikethroughBtn,
+              ]);
+            } else {
+              this.style.background = "transparent";
+              this.style.color = "#f1f1f1";
+            }
+          });
+        }
+
+        if (undoHighlightBtn) {
+          undoHighlightBtn.addEventListener("click", function () {
+            undoHighlightMode = !undoHighlightMode;
+            highlightMode = false;
+            strikethroughMode = false;
+            undoStrikethroughMode = false;
+
+            if (undoHighlightMode) {
+              this.style.background = "#ff9800";
+              this.style.color = "#fff";
+              resetOtherButtons([
+                highlightBtn,
+                strikethroughBtn,
+                undoStrikethroughBtn,
+              ]);
+            } else {
+              this.style.background = "transparent";
+              this.style.color = "#f1f1f1";
+            }
+          });
+        }
+
+        if (strikethroughBtn) {
+          strikethroughBtn.addEventListener("click", function () {
+            strikethroughMode = !strikethroughMode;
+            highlightMode = false;
+            undoHighlightMode = false;
+            undoStrikethroughMode = false;
+
+            if (strikethroughMode) {
+              this.style.background = "#f44336";
+              this.style.color = "#fff";
+              resetOtherButtons([
+                highlightBtn,
+                undoHighlightBtn,
+                undoStrikethroughBtn,
+              ]);
+            } else {
+              this.style.background = "transparent";
+              this.style.color = "#f1f1f1";
+            }
+          });
+        }
+
+        if (undoStrikethroughBtn) {
+          undoStrikethroughBtn.addEventListener("click", function () {
+            undoStrikethroughMode = !undoStrikethroughMode;
+            highlightMode = false;
+            undoHighlightMode = false;
+            strikethroughMode = false;
+
+            if (undoStrikethroughMode) {
+              this.style.background = "#4caf50";
+              this.style.color = "#fff";
+              resetOtherButtons([
+                highlightBtn,
+                undoHighlightBtn,
+                strikethroughBtn,
+              ]);
+            } else {
+              this.style.background = "transparent";
+              this.style.color = "#f1f1f1";
+            }
+          });
+        }
+
+        function resetOtherButtons(buttons) {
+          buttons.forEach((btn) => {
+            if (btn) {
+              btn.style.background = "transparent";
+              btn.style.color = "#f1f1f1";
+            }
+          });
+        }
+
+        if (flagBtn) {
+          flagBtn.addEventListener("click", function () {
+            flagged = !flagged;
+
+            if (flagged) {
+              this.style.background = "#ff5722";
+              this.style.color = "#fff";
+              this.textContent = "Flagged ⚑";
+            } else {
+              this.style.background = "transparent";
+              this.style.color = "#f1f1f1";
+              this.textContent = "Flag for Review";
+            }
+          });
+        }
+
+        document.addEventListener("mouseup", function () {
+          const selection = window.getSelection();
+          const selectedText = selection.toString().trim();
+
+          if (
+            selectedText &&
+            (highlightMode ||
+              undoHighlightMode ||
+              strikethroughMode ||
+              undoStrikethroughMode)
+          ) {
+            const range = selection.getRangeAt(0);
+
+            if (undoHighlightMode) {
+              // Undo highlight: find and unwrap highlighted spans in selection
+              const walker = document.createTreeWalker(
+                range.commonAncestorContainer,
+                NodeFilter.SHOW_ELEMENT,
+                function (node) {
+                  return node.tagName === "SPAN" &&
+                    node.style.backgroundColor &&
+                    range.intersectsNode(node)
+                    ? NodeFilter.FILTER_ACCEPT
+                    : NodeFilter.FILTER_REJECT;
+                }
+              );
+
+              const spansToUnwrap = [];
+              let node;
+              while ((node = walker.nextNode())) {
+                spansToUnwrap.push(node);
+              }
+
+              spansToUnwrap.forEach((span) => {
+                const parent = span.parentNode;
+                while (span.firstChild) {
+                  parent.insertBefore(span.firstChild, span);
+                }
+                parent.removeChild(span);
+              });
+            } else if (undoStrikethroughMode) {
+              // Undo strikethrough: find and unwrap strikethrough spans in selection
+              const walker = document.createTreeWalker(
+                range.commonAncestorContainer,
+                NodeFilter.SHOW_ELEMENT,
+                function (node) {
+                  return node.tagName === "SPAN" &&
+                    node.style.textDecoration.includes("line-through") &&
+                    range.intersectsNode(node)
+                    ? NodeFilter.FILTER_ACCEPT
+                    : NodeFilter.FILTER_REJECT;
+                }
+              );
+
+              const spansToUnwrap = [];
+              let node;
+              while ((node = walker.nextNode())) {
+                spansToUnwrap.push(node);
+              }
+
+              spansToUnwrap.forEach((span) => {
+                const parent = span.parentNode;
+                while (span.firstChild) {
+                  parent.insertBefore(span.firstChild, span);
+                }
+                parent.removeChild(span);
+              });
+            } else {
+              // Apply highlighting or strikethrough
+              const wrapper = document.createElement("span");
+
+              if (highlightMode) {
+                wrapper.style.backgroundColor = "#ffeb3b";
+                wrapper.style.color = "#000";
+                wrapper.style.padding = "1px 2px";
+              } else if (strikethroughMode) {
+                wrapper.style.textDecoration = "line-through";
+                wrapper.style.color = "#999";
+              }
+
+              try {
+                wrapper.appendChild(range.extractContents());
+                range.insertNode(wrapper);
+              } catch (error) {
+                console.log("Could not apply formatting to selected text");
+              }
+            }
+
+            selection.removeAllRanges();
+          }
+        });
+      });
+
+      function showSimpleScore() {
+        const totalQuestions = 5;
+        const correctAnswers = {};
+        let totalScore = 0;
+
+        for (let i = 1; i <= totalQuestions; i++) {
+          const questionPage = document.getElementById(`question-${i}`);
+          const correctSpan = questionPage.querySelector("[data-quiz]");
+          if (correctSpan) {
+            correctAnswers[`q${i}`] = correctSpan.getAttribute("data-quiz");
+          }
+        }
+
+        for (let i = 1; i <= totalQuestions; i++) {
+          const selectedRadio = document.querySelector(
+            `input[name="q${i}"]:checked`
+          );
+          if (
+            selectedRadio &&
+            selectedRadio.value === correctAnswers[`q${i}`]
+          ) {
+            totalScore++;
+          }
+        }
+
+        const percentage = Math.round((totalScore / totalQuestions) * 100);
+
+        document.querySelectorAll(".question-page").forEach((page) => {
+          page.style.display = "none";
+        });
+
+        document.querySelector(".bottom-nav").style.display = "none";
+
+        const scoreDisplay = document.createElement("div");
+        scoreDisplay.style.cssText = `
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 80vh;
+          font-family: Verdana, sans-serif;
+          background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        `;
+
+        scoreDisplay.innerHTML = `
+          <div style="
+            text-align: center;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 90%;
+          ">
+            <div style="
+              font-size: 3rem;
+              font-weight: bold;
+              color: #333;
+              margin: 20px 0;
+            ">${percentage}%</div>
+            
+            <div style="
+              font-size: 1.2rem;
+              color: #666;
+              margin-bottom: 30px;
+            ">You scored ${totalScore} out of ${totalQuestions}</div>
+
+            <a href="main.html" style="
+              display: inline-block;
+              padding: 10px 20px;
+              background: #016ecd;
+              color: white;
+              border-radius: 5px;
+              text-decoration: none;
+              font-weight: 500;
+              transition: background 0.3s ease;
+            ">Back to Review</a>
+          </div>
+        `;
+
+        document.body.appendChild(scoreDisplay);
+      }
+    </script>
+  </body>
+</html>
