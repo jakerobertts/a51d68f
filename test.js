@@ -87,7 +87,7 @@ function addResetProgressButton() {
   const resetButton = document.createElement("button");
   resetButton.textContent = "Reset All Progress";
 resetButton.style.cssText = `
-    background:rgb(223, 223, 223);
+    background:rgb(106, 105, 105);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -97,7 +97,6 @@ resetButton.style.cssText = `
     cursor: pointer;
     margin: 40px auto 0 auto;
     display: block;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     transition: background 0.3s ease;
 `;
 
@@ -346,7 +345,8 @@ function disableQuestion(groupName) {
   if (submitButton) {
     submitButton.textContent = "Submitted ✓";
     submitButton.disabled = true;
-    submitButton.style.background = "gray";
+    submitButton.style.background = "#f1f1f1";
+    submitButton.style.color = "black";
     submitButton.style.cursor = "default";
     submitButton.style.fontFamily = "Verdana, sans-serif";
   }
@@ -394,7 +394,7 @@ function resetIndividualQuestion(groupName) {
   if (submitButton) {
     submitButton.textContent = "Confirm";
     submitButton.disabled = false;
-    submitButton.style.background = "#6a1bcb";
+    submitButton.style.background = "#e0e0e0";
     submitButton.style.cursor = "pointer";
   }
 

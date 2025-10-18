@@ -42,7 +42,7 @@
 
       /* Toolbar */
       .toolbar {
-        background-color: #4eb5ffe1;
+        background-color: #359de7e1;
         border-bottom: 1px solid #ccc;
         padding: 8px 20px;
         display: flex;
@@ -273,7 +273,10 @@
             <div class="question-text">
               What do phonology, syntax, and semantics all support in language
               relatively?
-              <span data-quiz="D" style="display: none"
+              <span
+                data-quiz="D"
+                data-explanation="The sounds of language, rules of arrangement, and meanings of words"
+                style="display: none"
                 >The sounds of language, rules of arrangement, and meanings of
                 words</span
               >
@@ -295,6 +298,7 @@
                 ><input type="radio" name="q1" value="D" /> D. The sounds of
                 language, rules of arrangement, and meanings of words</label
               >
+              </div>
             </div>
           </div>
         </div>
@@ -601,7 +605,7 @@
             undoStrikethroughMode = false;
 
             if (highlightMode) {
-              this.style.background = "#ffeb3b";
+              this.style.background = "yellow";
               this.style.color = "#000";
               resetOtherButtons([
                 undoHighlightBtn,
@@ -778,7 +782,7 @@
               const wrapper = document.createElement("span");
 
               if (highlightMode) {
-                wrapper.style.backgroundColor = "#ffeb3b";
+                wrapper.style.backgroundColor = "yellow";
                 wrapper.style.color = "#000";
                 wrapper.style.padding = "1px 2px";
               } else if (strikethroughMode) {
