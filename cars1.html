@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MCAT Practice Quiz - Topic</title>
+    <style>
+      /* Reset & base */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: verdana, sans-serif;
+        background: #ffffff;
+        color: #222;
+        line-height: 1.6;
+      }
+
+      /* Top bar */
+      .top-bar {
+        background-color: #016ecd;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+      }
+
+      .top-bar-left .exam-title {
+        font-size: 1.1rem;
+        font-weight: bold;
+      }
+
+      .top-bar-right {
+        display: flex;
+        gap: 20px;
+        font-size: 0.95rem;
+      }
+
+      /* Toolbar */
+      .toolbar {
+        background-color: #4e9affe1;
+        border-bottom: 1px solid #ccc;
+        padding: 8px 20px;
+        display: flex;
+        gap: 12px;
+      }
+
+      .toolbar .btn {
+        background: transparent;
+        border: 1px solid #aaa;
+        border-radius: 4px;
+        padding: 6px 12px;
+        font-size: 0.9rem;
+        cursor: pointer;
+        color: #f1f1f1;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      .toolbar .btn:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
+
+      /* Main content area */
+      .content {
+        display: flex;
+        width: 100%;
+        padding-bottom: 80px;
+      }
+
+      /* Columns */
+      .column {
+        width: 50%;
+        padding: 20px;
+        overflow-y: auto;
+      }
+
+      .left-col {
+        border-right: 1px solid #ccc;
+        background: #fff;
+      }
+
+      .right-col {
+        background: #fafafa;
+      }
+
+      /* Question pages - hide all by default */
+      .question-page {
+        display: none;
+      }
+
+      .question-page.active {
+        display: block;
+      }
+
+      /* Passage section */
+      .passage h2 {
+        font-size: 1.2rem;
+        margin-bottom: 12px;
+      }
+
+      .passage p {
+        margin-bottom: 12px;
+        line-height: 1.5;
+      }
+
+      /* Question block */
+      .question-block {
+        margin-top: 20px;
+      }
+
+      .question-header {
+        margin-bottom: 8px;
+      }
+
+      .question-label {
+        font-size: 1.15rem;
+        font-weight: bold;
+      }
+
+      .question-text {
+        margin-bottom: 16px;
+        line-height: 1.4;
+      }
+
+      /* Options */
+      .options {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .options label {
+        display: flex;
+        align-items: flex-start;
+        border: 1px solid #ccc;
+        padding: 10px 14px;
+        border-radius: 5px;
+        cursor: pointer;
+        background: #fff;
+        transition: background-color 0.2s, border-color 0.2s;
+      }
+
+      .options label:hover {
+        background-color: #eef2ff;
+        border-color: #8a9ae5;
+      }
+
+      .options input[type="radio"] {
+        margin-right: 10px;
+        margin-top: 3px;
+      }
+
+      /* Bottom navigation */
+      .bottom-nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #016ecd;
+        border-top: 1px solid #0056a3;
+        padding: 12px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .nav-left,
+      .nav-right {
+        flex: 1;
+      }
+
+      .nav-center {
+        flex: 1;
+        text-align: center;
+      }
+
+      .question-info {
+        color: white;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: Verdana, sans-serif;
+      }
+
+      .nav-btn {
+        background: rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        color: white;
+        padding: 8px 16px;
+        border-radius: 6px;
+        font-size: 14px;
+        font-family: Verdana, sans-serif;
+        font-weight: 500;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        transition: all 0.3s ease;
+      }
+
+      .nav-btn:hover:not(:disabled) {
+        background: rgba(255, 255, 255, 0.3);
+        transform: translateY(-1px);
+      }
+
+      .nav-btn:disabled {
+        opacity: 0.4;
+        cursor: not-allowed;
+      }
+
+      .next-btn {
+        margin-left: auto;
+      }
+
+      .arrow {
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      /* Responsive */
+      @media (max-width: 800px) {
+        .content {
+          flex-direction: column;
+        }
+        .column {
+          width: 100%;
+          border: none;
+        }
+        .left-col {
+          border-bottom: 1px solid #ccc;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <span class="exam-title">MCAT © - Topic Name</span>
+      </div>
+      <div class="top-bar-right">
+        <span class="timer"
+          >Question <span class="question-count">1</span> of 5</span
+        >
+      </div>
+    </div>
+
+    <div class="toolbar">
+      <button class="btn highlight">Highlight</button>
+      <button class="btn strikethrough">Strikethrough</button>
+      <button class="btn flag">Flag for Review</button>
+    </div>
+    <!-- Question number -->
+    <div class="question-page" id="question-number">
+      <div class="content">
+        <div class="column left-col">
+          <div class="passage">
+            <h2>Passage 1 (Questions 1‑5)</h2>
+            To begin with, Plato was opposed to democracy for a few reasons. The
+            only conditions for the Athenian democracy were, one had to be a
+            man, born Greek, and own property. This did not sit well with Plato
+            because to him it made no sense whatsoever. For instance, having
+            many people decide who can rule with no political experience is like
+            having many people choose who is going to fly an airplane. Only
+            individuals that were professionally taught should be chosen from to
+            fly an airplane. Plato believed Athenian democracy is a social
+            disease and the only cure for it would be justice. According to
+            Plato, the problems with democracy were universal incompetence and
+            political selfishness.
+            <br />
+            First, the virtue of appetites equal to moderations is being able to
+            control ones’ love of pleasure. This virtue would be associated with
+            the productive class which is ranked the lowest class in the social
+            positions of the just city. The productive class is ranked the
+            lowest because it is governed by the love of money resulting in no
+            political power. Although they would receive no political power,
+            they will be able to obtain property. Doctors, lawyers, farmers, and
+            architects are some examples of the types of people to be placed in
+            this class.
+            <br />
+            Next, the virtue of passion equal to courage is the ability to
+            control our anger and fear of danger. The virtue of passion is
+            associated with the guardian class. The guardian class is filled
+            with those who love honor for example the army or policemen. This
+            class will not acquire any property, but they shall have relative
+            power to protect and uphold the laws. The guardian class is ranked
+            above the productive class due to their unity and team spirit.
+            <br />
+            Lastly, wisdom is associated with the wise. Wisdom is made up of two
+            components, intellectual perfection and moral goodness. Those who
+            are truly wise would not have any property neither would they care
+            to have any. These are truly humble individuals who are absolutely
+            at peace within themselves which is why they are ranked the highest
+            in the just city. Typically, philosophers would be part of the wise
+            class and be the only class to have absolute political power. He
+            justifies the rule of the wise by arguing that wisdom represents the
+            highest most noble condition of human nature and how a natural
+            leader should be the one to lead. A wise individuals’ primary
+            concern is their duty to society.
+            <br />
+            Eventually, Plato establishes requirements for what he considers
+            necessary for the wise ruler. First, one must have general education
+            until the age eighteen. Second, one must have two years military
+            experience. Third, one must have completed ten years of math and
+            science. Fourth, individuals must have completed four years of
+            philosophy and finally, an individual needs fifteen years of admin
+            experience in politics. Therefore, for a person to become a wise
+            ruler they would have to be about fifty years old or over which was
+            unfortunate because in that period people usually lived to about
+            seventy years of age.
+          </div>
+        </div>
+        <div class="column right-col">
+          <div class="question-block">
+            <div class="question-header">
+              <span class="question-label">Question number</span>
+            </div>
+            <div class="question-text">
+              Question text here
+              <span data-quiz="A" style="display: none"
+                >Correct answer explanation</span
+              >
+            </div>
+            <div class="options">
+              <label
+                ><input type="radio" name="qnumber" value="A" /> A. Option
+                A</label
+              >
+              <label
+                ><input type="radio" name="qnumber" value="B" /> B. Option
+                B</label
+              >
+              <label
+                ><input type="radio" name="qnumber" value="C" /> C. Option
+                C</label
+              >
+              <label
+                ><input type="radio" name="qnumber" value="D" /> D. Option
+                D</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Question 1 -->
+    <div class="question-page active" id="question-1">
+      <div class="content">
+        <div class="column left-col">
+          <div class="passage">
+            <h2>Passage 1 (Questions 1‑5)</h2>
+            To begin with, Plato was opposed to democracy for a few reasons. The
+            only conditions for the Athenian democracy were, one had to be a
+            man, born Greek, and own property. This did not sit well with Plato
+            because to him it made no sense whatsoever. For instance, having
+            many people decide who can rule with no political experience is like
+            having many people choose who is going to fly an airplane. Only
+            individuals that were professionally taught should be chosen from to
+            fly an airplane. Plato believed Athenian democracy is a social
+            disease and the only cure for it would be justice. According to
+            Plato, the problems with democracy were universal incompetence and
+            political selfishness.
+            <br /><br />
+            First, the virtue of appetites equal to moderations is being able to
+            control ones' love of pleasure. This virtue would be associated with
+            the productive class which is ranked the lowest class in the social
+            positions of the just city. The productive class is ranked the
+            lowest because it is governed by the love of money resulting in no
+            political power. Although they would receive no political power,
+            they will be able to obtain property. Doctors, lawyers, farmers, and
+            architects are some examples of the types of people to be placed in
+            this class.
+            <br /><br />
+            Next, the virtue of passion equal to courage is the ability to
+            control our anger and fear of danger. The virtue of passion is
+            associated with the guardian class. The guardian class is filled
+            with those who love honor for example the army or policemen. This
+            class will not acquire any property, but they shall have relative
+            power to protect and uphold the laws. The guardian class is ranked
+            above the productive class due to their unity and team spirit.
+            <br /><br />
+            Lastly, wisdom is associated with the wise. Wisdom is made up of two
+            components, intellectual perfection and moral goodness. Those who
+            are truly wise would not have any property neither would they care
+            to have any. These are truly humble individuals who are absolutely
+            at peace within themselves which is why they are ranked the highest
+            in the just city. Typically, philosophers would be part of the wise
+            class and be the only class to have absolute political power. He
+            justifies the rule of the wise by arguing that wisdom represents the
+            highest most noble condition of human nature and how a natural
+            leader should be the one to lead. A wise individuals' primary
+            concern is their duty to society.
+            <br /><br />
+            Eventually, Plato establishes requirements for what he considers
+            necessary for the wise ruler. First, one must have general education
+            until the age eighteen. Second, one must have two years military
+            experience. Third, one must have completed ten years of math and
+            science. Fourth, individuals must have completed four years of
+            philosophy and finally, an individual needs fifteen years of admin
+            experience in politics. Therefore, for a person to become a wise
+            ruler they would have to be about fifty years old or over which was
+            unfortunate because in that period people usually lived to about
+            seventy years of age.
+          </div>
+        </div>
+        <div class="column right-col">
+          <div class="question-block">
+            <div class="question-header">
+              <span class="question-label">Question 1</span>
+            </div>
+            <div class="question-text">
+              According to the passage, what was Plato's main objection to Athenian democracy?
+              <span data-quiz="C" style="display: none">Universal incompetence and political selfishness</span>
+            </div>
+            <div class="options">
+              <label><input type="radio" name="q1" value="A" /> A. It excluded women and non-Greeks</label>
+              <label><input type="radio" name="q1" value="B" /> B. It required property ownership</label>
+              <label><input type="radio" name="q1" value="C" /> C. It allowed unqualified people to make important decisions</label>
+              <label><input type="radio" name="q1" value="D" /> D. It gave too much power to philosophers</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="question-page" id="question-2">
+      <div class="content">
+        <div class="column left-col">
+          <div class="passage">
+            <h2>Passage 1 (Questions 1‑5)</h2>
+            To begin with, Plato was opposed to democracy for a few reasons. The
+            only conditions for the Athenian democracy were, one had to be a
+            man, born Greek, and own property. This did not sit well with Plato
+            because to him it made no sense whatsoever. For instance, having
+            many people decide who can rule with no political experience is like
+            having many people choose who is going to fly an airplane. Only
+            individuals that were professionally taught should be chosen from to
+            fly an airplane. Plato believed Athenian democracy is a social
+            disease and the only cure for it would be justice. According to
+            Plato, the problems with democracy were universal incompetence and
+            political selfishness.
+            <br /><br />
+            First, the virtue of appetites equal to moderations is being able to
+            control ones' love of pleasure. This virtue would be associated with
+            the productive class which is ranked the lowest class in the social
+            positions of the just city. The productive class is ranked the
+            lowest because it is governed by the love of money resulting in no
+            political power. Although they would receive no political power,
+            they will be able to obtain property. Doctors, lawyers, farmers, and
+            architects are some examples of the types of people to be placed in
+            this class.
+            <br /><br />
+            Next, the virtue of passion equal to courage is the ability to
+            control our anger and fear of danger. The virtue of passion is
+            associated with the guardian class. The guardian class is filled
+            with those who love honor for example the army or policemen. This
+            class will not acquire any property, but they shall have relative
+            power to protect and uphold the laws. The guardian class is ranked
+            above the productive class due to their unity and team spirit.
+            <br /><br />
+            Lastly, wisdom is associated with the wise. Wisdom is made up of two
+            components, intellectual perfection and moral goodness. Those who
+            are truly wise would not have any property neither would they care
+            to have any. These are truly humble individuals who are absolutely
+            at peace within themselves which is why they are ranked the highest
+            in the just city. Typically, philosophers would be part of the wise
+            class and be the only class to have absolute political power. He
+            justifies the rule of the wise by arguing that wisdom represents the
+            highest most noble condition of human nature and how a natural
+            leader should be the one to lead. A wise individuals' primary
+            concern is their duty to society.
+            <br /><br />
+            Eventually, Plato establishes requirements for what he considers
+            necessary for the wise ruler. First, one must have general education
+            until the age eighteen. Second, one must have two years military
+            experience. Third, one must have completed ten years of math and
+            science. Fourth, individuals must have completed four years of
+            philosophy and finally, an individual needs fifteen years of admin
+            experience in politics. Therefore, for a person to become a wise
+            ruler they would have to be about fifty years old or over which was
+            unfortunate because in that period people usually lived to about
+            seventy years of age.
+          </div>
+        </div>
+        <div class="column right-col">
+          <div class="question-block">
+            <div class="question-header">
+              <span class="question-label">Question 2</span>
+            </div>
+            <div class="question-text">
+              According to Plato's classification, which class would have the most political power?
+              <span data-quiz="A" style="display: none">The wise class</span>
+            </div>
+            <div class="options">
+              <label><input type="radio" name="q2" value="A" /> A. The wise class</label>
+              <label><input type="radio" name="q2" value="B" /> B. The guardian class</label>
+              <label><input type="radio" name="q2" value="C" /> C. The productive class</label>
+              <label><input type="radio" name="q2" value="D" /> D. All classes equally</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Questions will go here -->
+
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+      <div class="nav-left">
+        <button class="nav-btn prev-btn" id="prev-question" disabled>
+          <span class="arrow">←</span>
+          Previous
+        </button>
+      </div>
+      <div class="nav-center">
+        <span class="question-info">Question 1 of 5</span>
+      </div>
+      <div class="nav-right">
+        <button class="nav-btn next-btn" id="next-question">
+          Next
+          <span class="arrow">→</span>
+        </button>
+      </div>
+    </div>
+
+    <script src="test.js"></script>
+    <script>
+      // Multi-page navigation within single HTML
+      document.addEventListener("DOMContentLoaded", function () {
+        const prevBtn = document.getElementById("prev-question");
+        const nextBtn = document.getElementById("next-question");
+        const questionInfo = document.querySelector(".question-info");
+        const topQuestionCount = document.querySelector(".question-count");
+
+        let currentQuestion = 1;
+        const totalQuestions = 5;
+
+        function showQuestion(questionNum) {
+          document.querySelectorAll(".question-page").forEach((page) => {
+            page.classList.remove("active");
+          });
+
+          const currentPage = document.getElementById(
+            `question-${questionNum}`
+          );
+          if (currentPage) {
+            currentPage.classList.add("active");
+          }
+
+          questionInfo.textContent = `Question ${questionNum} of ${totalQuestions}`;
+          topQuestionCount.textContent = questionNum;
+
+          prevBtn.disabled = questionNum === 1;
+
+          if (questionNum === totalQuestions) {
+            nextBtn.innerHTML = 'Finish <span class="arrow">✓</span>';
+          } else {
+            nextBtn.innerHTML = 'Next <span class="arrow">→</span>';
+          }
+        }
+
+        prevBtn.addEventListener("click", function () {
+          if (currentQuestion > 1) {
+            currentQuestion--;
+            showQuestion(currentQuestion);
+          }
+        });
+
+        nextBtn.addEventListener("click", function () {
+          if (currentQuestion < totalQuestions) {
+            currentQuestion++;
+            showQuestion(currentQuestion);
+          } else {
+            if (confirm("Are you sure you want to finish the exam?")) {
+              showSimpleScore();
+            }
+          }
+        });
+
+        document.addEventListener("keydown", function (e) {
+          const target = e.target;
+          if (target.tagName === "INPUT" || target.tagName === "TEXTAREA") {
+            return;
+          }
+
+          if (e.key === "ArrowLeft" && !prevBtn.disabled) {
+            e.preventDefault();
+            prevBtn.click();
+          } else if (e.key === "ArrowRight") {
+            e.preventDefault();
+            nextBtn.click();
+          }
+        });
+
+        showQuestion(1);
+      });
+
+      // Highlighting functionality
+      document.addEventListener("DOMContentLoaded", function () {
+        let highlightMode = false;
+        let strikethroughMode = false;
+        let flagged = false;
+
+        const highlightBtn = document.querySelector(".btn.highlight");
+        const strikethroughBtn = document.querySelector(".btn.strikethrough");
+        const flagBtn = document.querySelector(".btn.flag");
+
+        if (highlightBtn) {
+          highlightBtn.addEventListener("click", function () {
+            highlightMode = !highlightMode;
+            strikethroughMode = false;
+
+            if (highlightMode) {
+              this.style.background = "#ffeb3b";
+              this.style.color = "#000";
+              if (strikethroughBtn) {
+                strikethroughBtn.style.background = "transparent";
+                strikethroughBtn.style.color = "#f1f1f1";
+              }
+            } else {
+              this.style.background = "transparent";
+              this.style.color = "#f1f1f1";
+            }
+          });
+        }
+
+        if (strikethroughBtn) {
+          strikethroughBtn.addEventListener("click", function () {
+            strikethroughMode = !strikethroughMode;
+            highlightMode = false;
+
+            if (strikethroughMode) {
+              this.style.background = "#f44336";
+              this.style.color = "#fff";
+              if (highlightBtn) {
+                highlightBtn.style.background = "transparent";
+                highlightBtn.style.color = "#f1f1f1";
+              }
+            } else {
+              this.style.background = "transparent";
+              this.style.color = "#f1f1f1";
+            }
+          });
+        }
+
+        if (flagBtn) {
+          flagBtn.addEventListener("click", function () {
+            flagged = !flagged;
+
+            if (flagged) {
+              this.style.background = "#ff5722";
+              this.style.color = "#fff";
+              this.textContent = "Flagged ⚑";
+            } else {
+              this.style.background = "transparent";
+              this.style.color = "#f1f1f1";
+              this.textContent = "Flag for Review";
+            }
+          });
+        }
+
+        document.addEventListener("mouseup", function () {
+          const selection = window.getSelection();
+          const selectedText = selection.toString().trim();
+
+          if (selectedText && (highlightMode || strikethroughMode)) {
+            const range = selection.getRangeAt(0);
+            const wrapper = document.createElement("span");
+
+            if (highlightMode) {
+              wrapper.style.backgroundColor = "#ffeb3b";
+              wrapper.style.color = "#000";
+              wrapper.style.padding = "1px 2px";
+            } else if (strikethroughMode) {
+              wrapper.style.textDecoration = "line-through";
+              wrapper.style.color = "#999";
+            }
+
+            try {
+              wrapper.appendChild(range.extractContents());
+              range.insertNode(wrapper);
+              selection.removeAllRanges();
+            } catch (error) {
+              console.log("Could not apply formatting to selected text");
+            }
+          }
+        });
+      });
+
+      function showSimpleScore() {
+        const totalQuestions = 5;
+        const correctAnswers = {};
+        let totalScore = 0;
+
+        for (let i = 1; i <= totalQuestions; i++) {
+          const questionPage = document.getElementById(`question-${i}`);
+          const correctSpan = questionPage.querySelector("[data-quiz]");
+          if (correctSpan) {
+            correctAnswers[`q${i}`] = correctSpan.getAttribute("data-quiz");
+          }
+        }
+
+        for (let i = 1; i <= totalQuestions; i++) {
+          const selectedRadio = document.querySelector(
+            `input[name="q${i}"]:checked`
+          );
+          if (
+            selectedRadio &&
+            selectedRadio.value === correctAnswers[`q${i}`]
+          ) {
+            totalScore++;
+          }
+        }
+
+        const percentage = Math.round((totalScore / totalQuestions) * 100);
+
+        document.querySelectorAll(".question-page").forEach((page) => {
+          page.style.display = "none";
+        });
+
+        document.querySelector(".bottom-nav").style.display = "none";
+
+        const scoreDisplay = document.createElement("div");
+        scoreDisplay.style.cssText = `
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 80vh;
+          font-family: Verdana, sans-serif;
+          background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        `;
+
+        scoreDisplay.innerHTML = `
+          <div style="
+            text-align: center;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 90%;
+          ">
+            <div style="
+              font-size: 3rem;
+              font-weight: bold;
+              color: #333;
+              margin: 20px 0;
+            ">${percentage}%</div>
+            
+            <div style="
+              font-size: 1.2rem;
+              color: #666;
+              margin-bottom: 30px;
+            ">You scored ${totalScore} out of ${totalQuestions}</div>
+
+            <a href="miledown_genchem.html" style="
+              display: inline-block;
+              padding: 10px 20px;
+              background: #016ecd;
+              color: white;
+              border-radius: 5px;
+              text-decoration: none;
+              font-weight: 500;
+              transition: background 0.3s ease;
+            ">Back to Review</a>
+          </div>
+        `;
+
+        document.body.appendChild(scoreDisplay);
+      }
+    </script>
+  </body>
+</html>
