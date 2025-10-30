@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      img {
+        max-width: 300px;
+        max-height: 250px;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        display: block;
+        margin: 10px auto;
+        border: 1px solid #019cb1;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 8px 25px rgba(1, 156, 177, 0.3);
+        border-color: #ff6b35;
+      }
+
+      img:active {
+        transform: scale(0.95);
+      }
+
+      .image-zoom {
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6422130934976134"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="google-adsense-account" content="ca-pub-6422130934976134" />
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-L97LGZSXS5"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-L97LGZSXS5");
+    </script>
+    <link
+      rel="icon"
+      type="image/png"
+      href="Screenshot 2025-09-18 at 9.21.54 PM.png"
+    />
+    <title>Biochemistry - RNA Processing and Translation - MCAT Practice</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Fixed Top Navigation Banner Template -->
+    <div class="top-banner">
+      <a
+        href="biochem5.html"
+        style="color: #ffffff; font-weight: bold; text-decoration: none"
+        >Previous</a
+      >
+      &#8592;
+      <strong>Biochemistry - RNA Processing and Translation:</strong> Score:
+      <span id="score">0</span> / <span id="total">0</span> &#8594;
+      <a
+        href="biochem7.html"
+        style="color: #ffffff; font-weight: bold; text-decoration: none"
+        >Next</a
+      >
+    </div>
+    <style>
+      .top-banner {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #6e00a9; /* Change color here */
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        z-index: 1000;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        padding-top: 40px;
+      }
+
+      .top-banner a:hover {
+        text-decoration: underline !important;
+      }
+    </style>
+
+    <h1>
+      Biochemistry - RNA Processing and Translation - MCAT Practice Questions
+    </h1>
+
+    <!-- Add your questions here -->
+    What is the process in eukaryotic cells where primary transcript RNA is
+    converted into mature RNA?<br />
+    <span data-quiz="C" style="display: none"
+      >Post-transcriptional modification</span
+    ><br /><br />
+    <label><input type="radio" name="q1" value="A" /> A. Transcription</label
+    ><br />
+    <label><input type="radio" name="q1" value="B" /> B. Translation</label
+    ><br />
+    <label
+      ><input type="radio" name="q1" value="C" /> C. Post-transcriptional
+      modification</label
+    ><br />
+    <label><input type="radio" name="q1" value="D" /> D. DNA replication</label
+    ><br /><br />
+
+    What are the regions of a gene that code for proteins and ultimately exit
+    the nucleus?<br />
+    <span data-quiz="B" style="display: none">Exons</span><br /><br />
+    <label><input type="radio" name="q2" value="A" /> A. Introns</label><br />
+    <label><input type="radio" name="q2" value="B" /> B. Exons</label><br />
+    <label><input type="radio" name="q2" value="C" /> C. Promoters</label><br />
+    <label><input type="radio" name="q2" value="D" /> D. Terminators</label
+    ><br /><br />
+
+    What are the segments of a DNA or RNA molecule which do not code for
+    proteins and are cut out of the primary transcript?<br />
+    <span data-quiz="B" style="display: none">Introns</span><br /><br />
+    <label><input type="radio" name="q3" value="A" /> A. Exons</label><br />
+    <label><input type="radio" name="q3" value="B" /> B. Introns</label><br />
+    <label><input type="radio" name="q3" value="C" /> C. Telomeres</label><br />
+    <label><input type="radio" name="q3" value="D" /> D. Codons</label
+    ><br /><br />
+
+    What is the regulated process that results in a single gene coding for
+    multiple proteins by selectively including or excluding certain segments of
+    RNA?<br />
+    <span data-quiz="B" style="display: none">Alternative splicing</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q4" value="A" /> A. Gene amplification</label
+    ><br />
+    <label
+      ><input type="radio" name="q4" value="B" /> B. Alternative splicing</label
+    ><br />
+    <label
+      ><input type="radio" name="q4" value="C" /> C. Post-translational
+      modification</label
+    ><br />
+    <label><input type="radio" name="q4" value="D" /> D. RNA interference</label
+    ><br /><br />
+
+    What is the primary function of the 5' cap and poly-A tail on mature
+    mRNA?<br />
+    <span data-quiz="C" style="display: none"
+      >To protect mRNA for translation</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q5" value="A" /> A. To initiate
+      transcription</label
+    ><br />
+    <label
+      ><input type="radio" name="q5" value="B" /> B. To facilitate DNA
+      replication</label
+    ><br />
+    <label
+      ><input type="radio" name="q5" value="C" /> C. To protect mRNA for
+      translation</label
+    ><br />
+    <label
+      ><input type="radio" name="q5" value="D" /> D. To signal
+      termination</label
+    ><br /><br />
+
+    Where does translation (protein synthesis) primarily occur in the cell?<br />
+    <span data-quiz="C" style="display: none">Cytoplasm, at the ribosomes</span
+    ><br /><br />
+    <label><input type="radio" name="q6" value="A" /> A. Nucleus</label><br />
+    <label><input type="radio" name="q6" value="B" /> B. Mitochondria</label
+    ><br />
+    <label
+      ><input type="radio" name="q6" value="C" /> C. Cytoplasm, at the
+      ribosomes</label
+    ><br />
+    <label
+      ><input type="radio" name="q6" value="D" /> D. Endoplasmic
+      reticulum</label
+    ><br /><br />
+
+    What carries amino acids to the polypeptide chain as the mRNA is moved
+    through the ribosome one codon at a time?<br />
+    <span data-quiz="C" style="display: none">tRNAs</span><br /><br />
+    <label><input type="radio" name="q7" value="A" /> A. mRNA</label><br />
+    <label><input type="radio" name="q7" value="B" /> B. rRNA</label><br />
+    <label><input type="radio" name="q7" value="C" /> C. tRNAs</label><br />
+    <label><input type="radio" name="q7" value="D" /> D. Release factors</label
+    ><br /><br />
+
+    In prokaryotic translation, which sequence does the 30S ribosome subunit
+    attach to and scan for a start codon?<br />
+    <span data-quiz="B" style="display: none">Shine-Delgarno sequence</span
+    ><br /><br />
+    <label><input type="radio" name="q8" value="A" /> A. Poly-A tail</label
+    ><br />
+    <label
+      ><input type="radio" name="q8" value="B" /> B. Shine-Delgarno
+      sequence</label
+    ><br />
+    <label><input type="radio" name="q8" value="C" /> C. Promoter region</label
+    ><br />
+    <label><input type="radio" name="q8" value="D" /> D. Operon</label
+    ><br /><br />
+
+    What is a polycistronic gene, which is characteristic of prokaryotic
+    mRNA?<br />
+    <span data-quiz="B" style="display: none"
+      >A segment that encodes several proteins</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q9" value="A" /> A. A segment that codes for
+      only one protein</label
+    ><br />
+    <label
+      ><input type="radio" name="q9" value="B" /> B. A segment that encodes
+      several proteins</label
+    ><br />
+    <label
+      ><input type="radio" name="q9" value="C" /> C. A gene with multiple
+      introns</label
+    ><br />
+    <label
+      ><input type="radio" name="q9" value="D" /> D. A gene that undergoes
+      alternative splicing</label
+    ><br /><br />
+
+    The three steps in translation, in their correct order, are:<br />
+    <span data-quiz="C" style="display: none"
+      >Initiation, Elongation, Termination</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q10" value="A" /> A. Splicing, Capping,
+      Tailing</label
+    ><br />
+    <label
+      ><input type="radio" name="q10" value="B" /> B. Replication,
+      Transcription, Translation</label
+    ><br />
+    <label
+      ><input type="radio" name="q10" value="C" /> C. Initiation, Elongation,
+      Termination</label
+    ><br />
+    <label
+      ><input type="radio" name="q10" value="D" /> D. A-site, P-site,
+      E-site</label
+    ><br /><br />
+
+    In translation elongation, the new tRNA enters the ribosome at which
+    site?<br />
+    <span data-quiz="C" style="display: none">A site</span><br /><br />
+    <label><input type="radio" name="q11" value="A" /> A. P site</label><br />
+    <label><input type="radio" name="q11" value="B" /> B. E site</label><br />
+    <label><input type="radio" name="q11" value="C" /> C. A site</label><br />
+    <label><input type="radio" name="q11" value="D" /> D. 5' cap</label
+    ><br /><br />
+
+    In translation, what will occur when the codon in the A site is a stop
+    codon?<br />
+    <span data-quiz="D" style="display: none">Termination</span><br /><br />
+    <label><input type="radio" name="q12" value="A" /> A. Elongation</label
+    ><br />
+    <label><input type="radio" name="q12" value="B" /> B. Translocation</label
+    ><br />
+    <label><input type="radio" name="q12" value="C" /> C. Initiation</label
+    ><br />
+    <label><input type="radio" name="q12" value="D" /> D. Termination</label
+    ><br /><br />
+
+    What are modifications that occur to a protein after it has been fully
+    formed in translation?<br />
+    <span data-quiz="B" style="display: none"
+      >Post-translational modifications (PTMs)</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q13" value="A" /> A. Alternative
+      splicing</label
+    ><br />
+    <label
+      ><input type="radio" name="q13" value="B" /> B. Post-translational
+      modifications (PTMs)</label
+    ><br />
+    <label
+      ><input type="radio" name="q13" value="C" /> C. Post-transcriptional
+      modifications</label
+    ><br />
+    <label
+      ><input type="radio" name="q13" value="D" /> D. Reverse translation</label
+    ><br /><br />
+
+    How many chromosome(s) do prokaryotes typically have?<br />
+    <span data-quiz="B" style="display: none">One circular chromosome</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q14" value="A" /> A. Multiple linear
+      chromosomes</label
+    ><br />
+    <label
+      ><input type="radio" name="q14" value="B" /> B. One circular
+      chromosome</label
+    ><br />
+    <label
+      ><input type="radio" name="q14" value="C" /> C. No chromosomes, only
+      plasmids</label
+    ><br />
+    <label
+      ><input type="radio" name="q14" value="D" /> D. Two circular
+      chromosomes</label
+    ><br /><br />
+
+    What is one half of a duplicated chromosome, where one is an identical copy
+    of the other?<br />
+    <span data-quiz="B" style="display: none">Chromatid</span><br /><br />
+    <label><input type="radio" name="q15" value="A" /> A. Chromatin</label
+    ><br />
+    <label><input type="radio" name="q15" value="B" /> B. Chromatid</label
+    ><br />
+    <label><input type="radio" name="q15" value="C" /> C. Centromere</label
+    ><br />
+    <label><input type="radio" name="q15" value="D" /> D. Histone</label
+    ><br /><br />
+
+    A Svedberg (S) unit is a measure of:<br />
+    <span data-quiz="B" style="display: none">Sedimentation time</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q16" value="A" /> A. Molecular weight</label
+    ><br />
+    <label
+      ><input type="radio" name="q16" value="B" /> B. Sedimentation time</label
+    ><br />
+    <label
+      ><input type="radio" name="q16" value="C" /> C. Hydrogen bond
+      strength</label
+    ><br />
+    <label
+      ><input type="radio" name="q16" value="D" /> D. Polypeptide chain
+      length</label
+    ><br /><br />
+
+    What is the approximate Svedberg unit (S) for a complete prokaryotic
+    ribosome?<br />
+    <span data-quiz="C" style="display: none">70 S</span><br /><br />
+    <label><input type="radio" name="q17" value="A" /> A. 80 S</label><br />
+    <label><input type="radio" name="q17" value="B" /> B. 40 S</label><br />
+    <label><input type="radio" name="q17" value="C" /> C. 70 S</label><br />
+    <label><input type="radio" name="q17" value="D" /> D. 60 S</label
+    ><br /><br />
+
+    What is the approximate Svedberg unit (S) for a complete eukaryotic
+    ribosome?<br />
+    <span data-quiz="D" style="display: none">80 S</span><br /><br />
+    <label><input type="radio" name="q18" value="A" /> A. 70 S</label><br />
+    <label><input type="radio" name="q18" value="B" /> B. 50 S</label><br />
+    <label><input type="radio" name="q18" value="C" /> C. 30 S</label><br />
+    <label><input type="radio" name="q18" value="D" /> D. 80 S</label
+    ><br /><br />
+
+    What is a deoxyribonucleic acid molecule with part or all of the genetic
+    material of an organism?<br />
+    <span data-quiz="C" style="display: none">Chromosome</span><br /><br />
+    <label><input type="radio" name="q19" value="A" /> A. Plasmid</label><br />
+    <label><input type="radio" name="q19" value="B" /> B. Nucleosome</label
+    ><br />
+    <label><input type="radio" name="q19" value="C" /> C. Chromosome</label
+    ><br />
+    <label><input type="radio" name="q19" value="D" /> D. Ribosome</label
+    ><br /><br />
+
+    In the ribosome, the correct order of sites a tRNA moves through before
+    leaving is:<br />
+    <span data-quiz="B" style="display: none">A-P-E</span><br /><br />
+    <label><input type="radio" name="q20" value="A" /> A. P-A-E</label><br />
+    <label><input type="radio" name="q20" value="B" /> B. A-P-E</label><br />
+    <label><input type="radio" name="q20" value="C" /> C. E-A-P</label><br />
+    <label><input type="radio" name="q20" value="D" /> D. A-E-P</label
+    ><br /><br />
+
+    <footer></footer>
+  </body>
+
+  <script src="test.js"></script>
+  <script src="sidebar.js"></script>
+</html>
