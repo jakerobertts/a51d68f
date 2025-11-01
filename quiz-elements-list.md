@@ -115,7 +115,7 @@ This file contains all data-quiz elements across the MCAT study website, organiz
 
 ## Biological Systems (biological.html) - Note: No Quiz Elements
 
-This page contains comprehensive definitions but no interactive quiz elements, as it was formatted for pure study content rather than quiz functionality.
+This page contains comprehensive s but no interactive quiz elements, as it was formatted for pure study content rather than quiz functionality.
 
 ---
 
@@ -1107,7 +1107,7 @@ This page contains comprehensive definitions but no interactive quiz elements, a
 **Recent Additions:**
 
 - Psychology & Behavior (psych.html) - 101 quiz elements covering sensation, perception, cognition, memory, emotion, personality
-- Biological Systems (biological.html) - Comprehensive definitions without quiz elements for pure study
+- Biological Systems (biological.html) - Comprehensive s without quiz elements for pure study
 - Updated counts reflecting current state of all files
 
 This comprehensive database shows excellent coverage across all MCAT content areas with interactive quiz elements distributed throughout the study materials for active learning and self-assessment.

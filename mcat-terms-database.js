@@ -129,7 +129,7 @@ const mcatTermsDatabase = {
   acidBase: {
     terms: ["Brønsted-Lowry", "pH", "Ka", "Kb", "pKa", "pKb", "buffers", "titration", "equivalence point", "indicators", "neutralization", "strong acid", "weak acid", "conjugate pairs"],
     hints: {
-      "Brønsted-Lowry": "Proton donor/acceptor definition",
+      "Brønsted-Lowry": "Proton donor/acceptor  ",
       "pH": "-log[H⁺]",
       "Ka": "Acid dissociation constant",
       "buffers": "Resist pH changes",
