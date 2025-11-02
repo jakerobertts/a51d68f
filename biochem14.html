@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      img {
+        max-width: 300px;
+        max-height: 250px;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        display: block;
+        margin: 10px auto;
+        border: 1px solid #019cb1;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 8px 25px rgba(1, 156, 177, 0.3);
+        border-color: #ff6b35;
+      }
+
+      img:active {
+        transform: scale(0.95);
+      }
+
+      .image-zoom {
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6422130934976134"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="google-adsense-account" content="ca-pub-6422130934976134" />
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-L97LGZSXS5"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-L97LGZSXS5");
+    </script>
+    <link
+      rel="icon"
+      type="image/png"
+      href="Screenshot 2025-09-18 at 9.21.54 PM.png"
+    />
+    <title>Biochemistry - Electron Transport Chain - MCAT Practice</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Fixed Top Navigation Banner Template -->
+    <div class="top-banner">
+      <a
+        href="biochem13.html"
+        style="color: #ffffff; font-weight: bold; text-decoration: none"
+        >Previous</a
+      >
+      &#8592; <strong>Biochemistry - Electron Transport Chain:</strong> Score:
+      <span id="score">0</span> / <span id="total">0</span> &#8594;
+      <a
+        href="biochem15.html"
+        style="color: #ffffff; font-weight: bold; text-decoration: none"
+        >Next</a
+      >
+    </div>
+    <style>
+      .top-banner {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #6e00a9; /* Change color here */
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        z-index: 1000;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        padding-top: 40px;
+      }
+
+      .top-banner a:hover {
+        text-decoration: underline !important;
+      }
+    </style>
+
+    <h1>Biochemistry - Electron Transport Chain - MCAT Practice Questions</h1>
+
+    <!-- Add your questions here -->
+    Where is the Electron Transport Chain (ETC) located?<br />
+    <span data-quiz="C" style="display: none">Inner mitochondrial membrane</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q1" value="A" /> A. Outer mitochondrial
+      membrane</label
+    ><br />
+    <label
+      ><input type="radio" name="q1" value="B" /> B. Mitochondrial matrix</label
+    ><br />
+    <label
+      ><input type="radio" name="q1" value="C" /> C. Inner mitochondrial
+      membrane</label
+    ><br />
+    <label><input type="radio" name="q1" value="D" /> D. Cytoplasm</label
+    ><br /><br />
+
+    What does the Electron Transport Chain establish to power ATP synthesis?<br />
+    <span data-quiz="B" style="display: none"
+      >A proton concentration gradient</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q2" value="A" /> A. An electron gradient</label
+    ><br />
+    <label
+      ><input type="radio" name="q2" value="B" /> B. A proton concentration
+      gradient</label
+    ><br />
+    <label
+      ><input type="radio" name="q2" value="C" /> C. A sodium gradient</label
+    ><br />
+    <label
+      ><input type="radio" name="q2" value="D" /> D. A potassium gradient</label
+    ><br /><br />
+
+    Where does the ETC pump protons to create the gradient?<br />
+    <span data-quiz="A" style="display: none">Intermembrane space</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q3" value="A" /> A. Intermembrane space</label
+    ><br />
+    <label
+      ><input type="radio" name="q3" value="B" /> B. Mitochondrial matrix</label
+    ><br />
+    <label><input type="radio" name="q3" value="C" /> C. Cytoplasm</label><br />
+    <label><input type="radio" name="q3" value="D" /> D. Nucleus</label
+    ><br /><br />
+
+    Approximately how many ATP molecules are produced when NADH is oxidized by
+    the ETC?<br />
+    <span data-quiz="C" style="display: none">2.5 ATP</span><br /><br />
+    <label><input type="radio" name="q4" value="A" /> A. 1.5 ATP</label><br />
+    <label><input type="radio" name="q4" value="B" /> B. 2.0 ATP</label><br />
+    <label><input type="radio" name="q4" value="C" /> C. 2.5 ATP</label><br />
+    <label><input type="radio" name="q4" value="D" /> D. 3.0 ATP</label
+    ><br /><br />
+
+    Approximately how many ATP molecules are produced when FADH₂ is oxidized by
+    the ETC?<br />
+    <span data-quiz="A" style="display: none">1.5 ATP</span><br /><br />
+    <label><input type="radio" name="q5" value="A" /> A. 1.5 ATP</label><br />
+    <label><input type="radio" name="q5" value="B" /> B. 2.0 ATP</label><br />
+    <label><input type="radio" name="q5" value="C" /> C. 2.5 ATP</label><br />
+    <label><input type="radio" name="q5" value="D" /> D. 3.0 ATP</label
+    ><br /><br />
+
+    How many major complexes make up the Electron Transport Chain?<br />
+    <span data-quiz="D" style="display: none">Four complexes</span><br /><br />
+    <label><input type="radio" name="q6" value="A" /> A. Two complexes</label
+    ><br />
+    <label><input type="radio" name="q6" value="B" /> B. Three complexes</label
+    ><br />
+    <label><input type="radio" name="q6" value="C" /> C. Five complexes</label
+    ><br />
+    <label><input type="radio" name="q6" value="D" /> D. Four complexes</label
+    ><br /><br />
+
+    What is the alternative name for Complex I?<br />
+    <span data-quiz="B" style="display: none"
+      >NADH dehydrogenase (or NADH Oxidoreductase)</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q7" value="A" /> A. Succinate
+      dehydrogenase</label
+    ><br />
+    <label
+      ><input type="radio" name="q7" value="B" /> B. NADH dehydrogenase (or NADH
+      Oxidoreductase)</label
+    ><br />
+    <label
+      ><input type="radio" name="q7" value="C" /> C. Cytochrome reductase</label
+    ><br />
+    <label
+      ><input type="radio" name="q7" value="D" /> D. Cytochrome oxidase</label
+    ><br /><br />
+
+    What is the alternative name for Complex II?<br />
+    <span data-quiz="A" style="display: none">Succinate dehydrogenase</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q8" value="A" /> A. Succinate
+      dehydrogenase</label
+    ><br />
+    <label
+      ><input type="radio" name="q8" value="B" /> B. NADH dehydrogenase</label
+    ><br />
+    <label
+      ><input type="radio" name="q8" value="C" /> C. Cytochrome reductase</label
+    ><br />
+    <label
+      ><input type="radio" name="q8" value="D" /> D. Cytochrome oxidase</label
+    ><br /><br />
+
+    Which complex does NOT pump protons across the inner mitochondrial
+    membrane?<br />
+    <span data-quiz="B" style="display: none"
+      >Complex II (Succinate dehydrogenase)</span
+    ><br /><br />
+    <label><input type="radio" name="q9" value="A" /> A. Complex I</label><br />
+    <label
+      ><input type="radio" name="q9" value="B" /> B. Complex II (Succinate
+      dehydrogenase)</label
+    ><br />
+    <label><input type="radio" name="q9" value="C" /> C. Complex III</label
+    ><br />
+    <label><input type="radio" name="q9" value="D" /> D. Complex IV</label
+    ><br /><br />
+
+    What is the alternative name for Complex III?<br />
+    <span data-quiz="C" style="display: none">Cytochrome reductase</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q10" value="A" /> A. NADH dehydrogenase</label
+    ><br />
+    <label
+      ><input type="radio" name="q10" value="B" /> B. Succinate
+      dehydrogenase</label
+    ><br />
+    <label
+      ><input type="radio" name="q10" value="C" /> C. Cytochrome
+      reductase</label
+    ><br />
+    <label
+      ><input type="radio" name="q10" value="D" /> D. Cytochrome oxidase</label
+    ><br /><br />
+
+    What is the alternative name for Complex IV?<br />
+    <span data-quiz="D" style="display: none">Cytochrome oxidase</span
+    ><br /><br />
+    <label
+      ><input type="radio" name="q11" value="A" /> A. NADH dehydrogenase</label
+    ><br />
+    <label
+      ><input type="radio" name="q11" value="B" /> B. Succinate
+      dehydrogenase</label
+    ><br />
+    <label
+      ><input type="radio" name="q11" value="C" /> C. Cytochrome
+      reductase</label
+    ><br />
+    <label
+      ><input type="radio" name="q11" value="D" /> D. Cytochrome oxidase</label
+    ><br /><br />
+
+    What is the final electron acceptor in the Electron Transport Chain during
+    aerobic respiration?<br />
+    <span data-quiz="C" style="display: none">Oxygen (O₂)</span><br /><br />
+    <label
+      ><input type="radio" name="q12" value="A" /> A. Carbon dioxide
+      (CO₂)</label
+    ><br />
+    <label><input type="radio" name="q12" value="B" /> B. NADH</label><br />
+    <label><input type="radio" name="q12" value="C" /> C. Oxygen (O₂)</label
+    ><br />
+    <label><input type="radio" name="q12" value="D" /> D. ATP</label
+    ><br /><br />
+
+    What is produced when oxygen accepts electrons at the end of the ETC?<br />
+    <span data-quiz="A" style="display: none">Water (H₂O)</span><br /><br />
+    <label><input type="radio" name="q13" value="A" /> A. Water (H₂O)</label
+    ><br />
+    <label
+      ><input type="radio" name="q13" value="B" /> B. Carbon dioxide
+      (CO₂)</label
+    ><br />
+    <label
+      ><input type="radio" name="q13" value="C" /> C. Hydrogen gas (H₂)</label
+    ><br />
+    <label><input type="radio" name="q13" value="D" /> D. Oxygen gas (O₂)</label
+    ><br /><br />
+
+    Complex III is the site of which important process?<br />
+    <span data-quiz="B" style="display: none">The Q Cycle</span><br /><br />
+    <label><input type="radio" name="q14" value="A" /> A. NADH oxidation</label
+    ><br />
+    <label><input type="radio" name="q14" value="B" /> B. The Q Cycle</label
+    ><br />
+    <label
+      ><input type="radio" name="q14" value="C" /> C. Succinate oxidation</label
+    ><br />
+    <label><input type="radio" name="q14" value="D" /> D. Water formation</label
+    ><br /><br />
+
+    Which enzyme uses the proton gradient to convert ADP to ATP?<br />
+    <span data-quiz="A" style="display: none">ATP synthase</span><br /><br />
+    <label><input type="radio" name="q15" value="A" /> A. ATP synthase</label
+    ><br />
+    <label
+      ><input type="radio" name="q15" value="B" /> B. NADH dehydrogenase</label
+    ><br />
+    <label
+      ><input type="radio" name="q15" value="C" /> C. Cytochrome oxidase</label
+    ><br />
+    <label
+      ><input type="radio" name="q15" value="D" /> D. Succinate
+      dehydrogenase</label
+    ><br /><br />
+
+    <footer></footer>
+
+    <script src="test.js"></script>
+    <script src="sidebar.js"></script>
+  </body>
+</html>
