@@ -1,0 +1,310 @@
+extend type Query {
+  """
+  ✨ Look up a single `StudyPlan` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
+  """
+  studyPlan(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: StudyPlan_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: StudyPlan_FirstRow
+  ): StudyPlan @fdc_generated(from: "StudyPlan", purpose: QUERY_SINGLE)
+  """
+  ✨ Look up a single `StudyPlanItem` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
+  """
+  studyPlanItem(
+    """
+    The key used to identify the object.
+    """
+    key: StudyPlanItem_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: StudyPlanItem_FirstRow
+  ): StudyPlanItem @fdc_generated(from: "StudyPlanItem", purpose: QUERY_SINGLE)
+  """
+  ✨ Look up a single `StudyResource` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
+  """
+  studyResource(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: StudyResource_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: StudyResource_FirstRow
+  ): StudyResource @fdc_generated(from: "StudyResource", purpose: QUERY_SINGLE)
+  """
+  ✨ Look up a single `User` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
+  """
+  user(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: User_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: User_FirstRow
+  ): User @fdc_generated(from: "User", purpose: QUERY_SINGLE)
+  """
+  ✨ Look up a single `UserNote` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
+  """
+  userNote(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: UserNote_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: UserNote_FirstRow
+  ): UserNote @fdc_generated(from: "UserNote", purpose: QUERY_SINGLE)
+  """
+  ✨ Look up a single `UserProgress` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
+  """
+  userProgress(
+    """
+    The key used to identify the object.
+    """
+    key: UserProgress_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: UserProgress_FirstRow
+  ): UserProgress @fdc_generated(from: "UserProgress", purpose: QUERY_SINGLE)
+  """
+  ✨ List `StudyPlan` objects in the table and return selected fields, optionally filtered by `where` conditions
+  """
+  studyPlans(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: StudyPlan_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [StudyPlan_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+
+    """
+    Set to true to return distinct results.
+    """
+    distinct: Boolean = false
+
+    """
+    Filter condition to apply to the groups of aggregate queries.
+    """
+    having: StudyPlan_Having
+  ): [StudyPlan!]! @fdc_generated(from: "StudyPlan", purpose: QUERY_MULTIPLE)
+  """
+  ✨ List `StudyPlanItem` objects in the table and return selected fields, optionally filtered by `where` conditions
+  """
+  studyPlanItems(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: StudyPlanItem_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [StudyPlanItem_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+
+    """
+    Set to true to return distinct results.
+    """
+    distinct: Boolean = false
+
+    """
+    Filter condition to apply to the groups of aggregate queries.
+    """
+    having: StudyPlanItem_Having
+  ): [StudyPlanItem!]! @fdc_generated(from: "StudyPlanItem", purpose: QUERY_MULTIPLE)
+  """
+  ✨ List `StudyResource` objects in the table and return selected fields, optionally filtered by `where` conditions
+  """
+  studyResources(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: StudyResource_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [StudyResource_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+
+    """
+    Set to true to return distinct results.
+    """
+    distinct: Boolean = false
+
+    """
+    Filter condition to apply to the groups of aggregate queries.
+    """
+    having: StudyResource_Having
+  ): [StudyResource!]! @fdc_generated(from: "StudyResource", purpose: QUERY_MULTIPLE)
+  """
+  ✨ List `User` objects in the table and return selected fields, optionally filtered by `where` conditions
+  """
+  users(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: User_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [User_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+
+    """
+    Set to true to return distinct results.
+    """
+    distinct: Boolean = false
+
+    """
+    Filter condition to apply to the groups of aggregate queries.
+    """
+    having: User_Having
+  ): [User!]! @fdc_generated(from: "User", purpose: QUERY_MULTIPLE)
+  """
+  ✨ List `UserNote` objects in the table and return selected fields, optionally filtered by `where` conditions
+  """
+  userNotes(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: UserNote_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [UserNote_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+
+    """
+    Set to true to return distinct results.
+    """
+    distinct: Boolean = false
+
+    """
+    Filter condition to apply to the groups of aggregate queries.
+    """
+    having: UserNote_Having
+  ): [UserNote!]! @fdc_generated(from: "UserNote", purpose: QUERY_MULTIPLE)
+  """
+  ✨ List `UserProgress` objects in the table and return selected fields, optionally filtered by `where` conditions
+  """
+  userProgresses(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: UserProgress_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [UserProgress_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+
+    """
+    Set to true to return distinct results.
+    """
+    distinct: Boolean = false
+
+    """
+    Filter condition to apply to the groups of aggregate queries.
+    """
+    having: UserProgress_Having
+  ): [UserProgress!]! @fdc_generated(from: "UserProgress", purpose: QUERY_MULTIPLE)
+}

@@ -1,0 +1,905 @@
+extend type StudyPlan {
+  """
+  ✨ List `StudyPlanItem` objects in a one-to-many relationship (where `StudyPlanItem`.`studyPlan` is this object).
+  """
+  studyPlanItems_on_studyPlan(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: StudyPlanItem_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [StudyPlanItem_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+
+    """
+    Set to true to return distinct results.
+    """
+    distinct: Boolean = false
+
+    """
+    Filter condition to apply to the groups of aggregate queries.
+    """
+    having: StudyPlanItem_Having
+  ): [StudyPlanItem!]! @fdc_generated(from: "StudyPlanItem.studyPlan", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  ✨ List `StudyResource` objects using `StudyPlanItem` as the join table (a `StudyPlanItem` object exists where its `studyPlan` is this and its `studyResource` is that).
+  """
+  studyResources_via_StudyPlanItem(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: StudyPlanItem_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [StudyPlanItem_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+
+    """
+    Set to true to return distinct results.
+    """
+    distinct: Boolean = false
+
+    """
+    Filter condition to apply to the groups of aggregate queries.
+    """
+    having: StudyPlanItem_Having
+  ): [StudyResource!]! @fdc_generated(from: "StudyPlanItem", purpose: QUERY_MULTIPLE_MANY_TO_MANY)
+  """
+  Implicit metadata field that cannot be written. It provides extra information about query results.
+  """
+  _metadata: _Metadata @fdc_generated(from: "StudyPlan", purpose: METADATA_FIELD)
+  """
+  ✨ Count the number of rows in the `StudyPlan` table.
+  """
+  _count: Int! @fdc_generated(from: "StudyPlan.", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `StudyPlan` table where the `createdAt` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  createdAt_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "StudyPlan.createdAt", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `StudyPlan` table where the `description` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  description_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "StudyPlan.description", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `StudyPlan` table where the `endDate` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  endDate_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "StudyPlan.endDate", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `StudyPlan` table where the `id` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  id_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "StudyPlan.id", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `StudyPlan` table where the `name` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  name_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "StudyPlan.name", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `StudyPlan` table where the `startDate` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  startDate_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "StudyPlan.startDate", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `StudyPlan` table where the `userId` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  userId_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "StudyPlan.userId", purpose: QUERY_COUNT)
+  """
+  ✨ Minimum of the `createdAt` field in the `StudyPlan` table.
+  """
+  createdAt_min: Timestamp @fdc_generated(from: "StudyPlan.createdAt", purpose: QUERY_MIN)
+  """
+  ✨ Minimum of the `endDate` field in the `StudyPlan` table.
+  """
+  endDate_min: Date @fdc_generated(from: "StudyPlan.endDate", purpose: QUERY_MIN)
+  """
+  ✨ Minimum of the `startDate` field in the `StudyPlan` table.
+  """
+  startDate_min: Date @fdc_generated(from: "StudyPlan.startDate", purpose: QUERY_MIN)
+  """
+  ✨ Maximum of the `createdAt` field in the `StudyPlan` table.
+  """
+  createdAt_max: Timestamp @fdc_generated(from: "StudyPlan.createdAt", purpose: QUERY_MAX)
+  """
+  ✨ Maximum of the `endDate` field in the `StudyPlan` table.
+  """
+  endDate_max: Date @fdc_generated(from: "StudyPlan.endDate", purpose: QUERY_MAX)
+  """
+  ✨ Maximum of the `startDate` field in the `StudyPlan` table.
+  """
+  startDate_max: Date @fdc_generated(from: "StudyPlan.startDate", purpose: QUERY_MAX)
+  """
+  A generated field that is used for caching results in SDKs.
+  """
+  _id: ID! @fdc_generated(from: "StudyPlan.id", purpose: GLOBAL_ID)
+}
+extend type StudyPlanItem {
+  """
+  Implicit metadata field that cannot be written. It provides extra information about query results.
+  """
+  _metadata: _Metadata @fdc_generated(from: "StudyPlanItem", purpose: METADATA_FIELD)
+  """
+  ✨ Count the number of rows in the `StudyPlanItem` table.
+  """
+  _count: Int! @fdc_generated(from: "StudyPlanItem.", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `StudyPlanItem` table where the `orderInPlan` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  orderInPlan_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "StudyPlanItem.orderInPlan", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `StudyPlanItem` table where the `scheduledDate` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  scheduledDate_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "StudyPlanItem.scheduledDate", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `StudyPlanItem` table where the `status` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  status_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "StudyPlanItem.status", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `StudyPlanItem` table where the `studyPlanId` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  studyPlanId_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "StudyPlanItem.studyPlanId", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `StudyPlanItem` table where the `studyResourceId` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  studyResourceId_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "StudyPlanItem.studyResourceId", purpose: QUERY_COUNT)
+  """
+  ✨ Sum the `orderInPlan` field in the `StudyPlanItem` table.
+  """
+  orderInPlan_sum(
+    """
+    Set to true to sum the distinct values.
+    """
+    distinct: Boolean = false
+  ): Int @fdc_generated(from: "StudyPlanItem.orderInPlan", purpose: QUERY_SUM)
+  """
+  ✨ Average the `orderInPlan` field in the `StudyPlanItem` table.
+  """
+  orderInPlan_avg(
+    """
+    Set to true to average the distinct values.
+    """
+    distinct: Boolean = false
+  ): Float @fdc_generated(from: "StudyPlanItem.orderInPlan", purpose: QUERY_AVG)
+  """
+  ✨ Minimum of the `orderInPlan` field in the `StudyPlanItem` table.
+  """
+  orderInPlan_min: Int @fdc_generated(from: "StudyPlanItem.orderInPlan", purpose: QUERY_MIN)
+  """
+  ✨ Minimum of the `scheduledDate` field in the `StudyPlanItem` table.
+  """
+  scheduledDate_min: Date @fdc_generated(from: "StudyPlanItem.scheduledDate", purpose: QUERY_MIN)
+  """
+  ✨ Maximum of the `orderInPlan` field in the `StudyPlanItem` table.
+  """
+  orderInPlan_max: Int @fdc_generated(from: "StudyPlanItem.orderInPlan", purpose: QUERY_MAX)
+  """
+  ✨ Maximum of the `scheduledDate` field in the `StudyPlanItem` table.
+  """
+  scheduledDate_max: Date @fdc_generated(from: "StudyPlanItem.scheduledDate", purpose: QUERY_MAX)
+  """
+  A generated field that is used for caching results in SDKs.
+  """
+  _id: ID! @fdc_generated(from: "StudyPlanItem.studyPlanId,studyResourceId", purpose: GLOBAL_ID)
+}
+extend type StudyResource {
+  """
+  ✨ List `StudyPlanItem` objects in a one-to-many relationship (where `StudyPlanItem`.`studyResource` is this object).
+  """
+  studyPlanItems_on_studyResource(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: StudyPlanItem_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [StudyPlanItem_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+
+    """
+    Set to true to return distinct results.
+    """
+    distinct: Boolean = false
+
+    """
+    Filter condition to apply to the groups of aggregate queries.
+    """
+    having: StudyPlanItem_Having
+  ): [StudyPlanItem!]! @fdc_generated(from: "StudyPlanItem.studyResource", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  ✨ List `UserNote` objects in a one-to-many relationship (where `UserNote`.`studyResource` is this object).
+  """
+  userNotes_on_studyResource(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: UserNote_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [UserNote_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+
+    """
+    Set to true to return distinct results.
+    """
+    distinct: Boolean = false
+
+    """
+    Filter condition to apply to the groups of aggregate queries.
+    """
+    having: UserNote_Having
+  ): [UserNote!]! @fdc_generated(from: "UserNote.studyResource", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  ✨ List `UserProgress` objects in a one-to-many relationship (where `UserProgress`.`studyResource` is this object).
+  """
+  userProgresses_on_studyResource(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: UserProgress_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [UserProgress_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+
+    """
+    Set to true to return distinct results.
+    """
+    distinct: Boolean = false
+
+    """
+    Filter condition to apply to the groups of aggregate queries.
+    """
+    having: UserProgress_Having
+  ): [UserProgress!]! @fdc_generated(from: "UserProgress.studyResource", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  ✨ List `StudyPlan` objects using `StudyPlanItem` as the join table (a `StudyPlanItem` object exists where its `studyResource` is this and its `studyPlan` is that).
+  """
+  studyPlans_via_StudyPlanItem(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: StudyPlanItem_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [StudyPlanItem_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+
+    """
+    Set to true to return distinct results.
+    """
+    distinct: Boolean = false
+
+    """
+    Filter condition to apply to the groups of aggregate queries.
+    """
+    having: StudyPlanItem_Having
+  ): [StudyPlan!]! @fdc_generated(from: "StudyPlanItem", purpose: QUERY_MULTIPLE_MANY_TO_MANY)
+  """
+  ✨ List `User` objects using `UserProgress` as the join table (a `UserProgress` object exists where its `studyResource` is this and its `user` is that).
+  """
+  users_via_UserProgress(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: UserProgress_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [UserProgress_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+
+    """
+    Set to true to return distinct results.
+    """
+    distinct: Boolean = false
+
+    """
+    Filter condition to apply to the groups of aggregate queries.
+    """
+    having: UserProgress_Having
+  ): [User!]! @fdc_generated(from: "UserProgress", purpose: QUERY_MULTIPLE_MANY_TO_MANY)
+  """
+  Implicit metadata field that cannot be written. It provides extra information about query results.
+  """
+  _metadata: _Metadata @fdc_generated(from: "StudyResource", purpose: METADATA_FIELD)
+  """
+  ✨ Count the number of rows in the `StudyResource` table.
+  """
+  _count: Int! @fdc_generated(from: "StudyResource.", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `StudyResource` table where the `content` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  content_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "StudyResource.content", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `StudyResource` table where the `createdAt` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  createdAt_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "StudyResource.createdAt", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `StudyResource` table where the `difficultyLevel` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  difficultyLevel_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "StudyResource.difficultyLevel", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `StudyResource` table where the `id` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  id_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "StudyResource.id", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `StudyResource` table where the `resourceType` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  resourceType_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "StudyResource.resourceType", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `StudyResource` table where the `subtopic` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  subtopic_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "StudyResource.subtopic", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `StudyResource` table where the `title` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  title_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "StudyResource.title", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `StudyResource` table where the `topic` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  topic_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "StudyResource.topic", purpose: QUERY_COUNT)
+  """
+  ✨ Minimum of the `createdAt` field in the `StudyResource` table.
+  """
+  createdAt_min: Timestamp @fdc_generated(from: "StudyResource.createdAt", purpose: QUERY_MIN)
+  """
+  ✨ Maximum of the `createdAt` field in the `StudyResource` table.
+  """
+  createdAt_max: Timestamp @fdc_generated(from: "StudyResource.createdAt", purpose: QUERY_MAX)
+  """
+  A generated field that is used for caching results in SDKs.
+  """
+  _id: ID! @fdc_generated(from: "StudyResource.id", purpose: GLOBAL_ID)
+}
+extend type User {
+  """
+  ✨ List `StudyPlan` objects in a one-to-many relationship (where `StudyPlan`.`user` is this object).
+  """
+  studyPlans_on_user(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: StudyPlan_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [StudyPlan_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+
+    """
+    Set to true to return distinct results.
+    """
+    distinct: Boolean = false
+
+    """
+    Filter condition to apply to the groups of aggregate queries.
+    """
+    having: StudyPlan_Having
+  ): [StudyPlan!]! @fdc_generated(from: "StudyPlan.user", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  ✨ List `UserNote` objects in a one-to-many relationship (where `UserNote`.`user` is this object).
+  """
+  userNotes_on_user(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: UserNote_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [UserNote_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+
+    """
+    Set to true to return distinct results.
+    """
+    distinct: Boolean = false
+
+    """
+    Filter condition to apply to the groups of aggregate queries.
+    """
+    having: UserNote_Having
+  ): [UserNote!]! @fdc_generated(from: "UserNote.user", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  ✨ List `UserProgress` objects in a one-to-many relationship (where `UserProgress`.`user` is this object).
+  """
+  userProgresses_on_user(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: UserProgress_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [UserProgress_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+
+    """
+    Set to true to return distinct results.
+    """
+    distinct: Boolean = false
+
+    """
+    Filter condition to apply to the groups of aggregate queries.
+    """
+    having: UserProgress_Having
+  ): [UserProgress!]! @fdc_generated(from: "UserProgress.user", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  ✨ List `StudyResource` objects using `UserProgress` as the join table (a `UserProgress` object exists where its `user` is this and its `studyResource` is that).
+  """
+  studyResources_via_UserProgress(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: UserProgress_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [UserProgress_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+
+    """
+    Set to true to return distinct results.
+    """
+    distinct: Boolean = false
+
+    """
+    Filter condition to apply to the groups of aggregate queries.
+    """
+    having: UserProgress_Having
+  ): [StudyResource!]! @fdc_generated(from: "UserProgress", purpose: QUERY_MULTIPLE_MANY_TO_MANY)
+  """
+  Implicit metadata field that cannot be written. It provides extra information about query results.
+  """
+  _metadata: _Metadata @fdc_generated(from: "User", purpose: METADATA_FIELD)
+  """
+  ✨ Count the number of rows in the `User` table.
+  """
+  _count: Int! @fdc_generated(from: "User.", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `User` table where the `createdAt` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  createdAt_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "User.createdAt", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `User` table where the `displayName` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  displayName_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "User.displayName", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `User` table where the `email` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  email_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "User.email", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `User` table where the `id` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  id_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "User.id", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `User` table where the `lastLogin` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  lastLogin_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "User.lastLogin", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `User` table where the `passwordHash` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  passwordHash_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "User.passwordHash", purpose: QUERY_COUNT)
+  """
+  ✨ Minimum of the `createdAt` field in the `User` table.
+  """
+  createdAt_min: Timestamp @fdc_generated(from: "User.createdAt", purpose: QUERY_MIN)
+  """
+  ✨ Minimum of the `lastLogin` field in the `User` table.
+  """
+  lastLogin_min: Timestamp @fdc_generated(from: "User.lastLogin", purpose: QUERY_MIN)
+  """
+  ✨ Maximum of the `createdAt` field in the `User` table.
+  """
+  createdAt_max: Timestamp @fdc_generated(from: "User.createdAt", purpose: QUERY_MAX)
+  """
+  ✨ Maximum of the `lastLogin` field in the `User` table.
+  """
+  lastLogin_max: Timestamp @fdc_generated(from: "User.lastLogin", purpose: QUERY_MAX)
+  """
+  A generated field that is used for caching results in SDKs.
+  """
+  _id: ID! @fdc_generated(from: "User.id", purpose: GLOBAL_ID)
+}
+extend type UserNote {
+  """
+  Implicit metadata field that cannot be written. It provides extra information about query results.
+  """
+  _metadata: _Metadata @fdc_generated(from: "UserNote", purpose: METADATA_FIELD)
+  """
+  ✨ Count the number of rows in the `UserNote` table.
+  """
+  _count: Int! @fdc_generated(from: "UserNote.", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `UserNote` table where the `content` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  content_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "UserNote.content", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `UserNote` table where the `createdAt` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  createdAt_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "UserNote.createdAt", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `UserNote` table where the `id` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  id_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "UserNote.id", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `UserNote` table where the `studyResourceId` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  studyResourceId_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "UserNote.studyResourceId", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `UserNote` table where the `updatedAt` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  updatedAt_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "UserNote.updatedAt", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `UserNote` table where the `userId` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  userId_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "UserNote.userId", purpose: QUERY_COUNT)
+  """
+  ✨ Minimum of the `createdAt` field in the `UserNote` table.
+  """
+  createdAt_min: Timestamp @fdc_generated(from: "UserNote.createdAt", purpose: QUERY_MIN)
+  """
+  ✨ Minimum of the `updatedAt` field in the `UserNote` table.
+  """
+  updatedAt_min: Timestamp @fdc_generated(from: "UserNote.updatedAt", purpose: QUERY_MIN)
+  """
+  ✨ Maximum of the `createdAt` field in the `UserNote` table.
+  """
+  createdAt_max: Timestamp @fdc_generated(from: "UserNote.createdAt", purpose: QUERY_MAX)
+  """
+  ✨ Maximum of the `updatedAt` field in the `UserNote` table.
+  """
+  updatedAt_max: Timestamp @fdc_generated(from: "UserNote.updatedAt", purpose: QUERY_MAX)
+  """
+  A generated field that is used for caching results in SDKs.
+  """
+  _id: ID! @fdc_generated(from: "UserNote.id", purpose: GLOBAL_ID)
+}
+extend type UserProgress {
+  """
+  Implicit metadata field that cannot be written. It provides extra information about query results.
+  """
+  _metadata: _Metadata @fdc_generated(from: "UserProgress", purpose: METADATA_FIELD)
+  """
+  ✨ Count the number of rows in the `UserProgress` table.
+  """
+  _count: Int! @fdc_generated(from: "UserProgress.", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `UserProgress` table where the `completionDate` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  completionDate_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "UserProgress.completionDate", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `UserProgress` table where the `lastAccessedAt` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  lastAccessedAt_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "UserProgress.lastAccessedAt", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `UserProgress` table where the `status` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  status_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "UserProgress.status", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `UserProgress` table where the `studyResourceId` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  studyResourceId_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "UserProgress.studyResourceId", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `UserProgress` table where the `userId` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  userId_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "UserProgress.userId", purpose: QUERY_COUNT)
+  """
+  ✨ Minimum of the `completionDate` field in the `UserProgress` table.
+  """
+  completionDate_min: Timestamp @fdc_generated(from: "UserProgress.completionDate", purpose: QUERY_MIN)
+  """
+  ✨ Minimum of the `lastAccessedAt` field in the `UserProgress` table.
+  """
+  lastAccessedAt_min: Timestamp @fdc_generated(from: "UserProgress.lastAccessedAt", purpose: QUERY_MIN)
+  """
+  ✨ Maximum of the `completionDate` field in the `UserProgress` table.
+  """
+  completionDate_max: Timestamp @fdc_generated(from: "UserProgress.completionDate", purpose: QUERY_MAX)
+  """
+  ✨ Maximum of the `lastAccessedAt` field in the `UserProgress` table.
+  """
+  lastAccessedAt_max: Timestamp @fdc_generated(from: "UserProgress.lastAccessedAt", purpose: QUERY_MAX)
+  """
+  A generated field that is used for caching results in SDKs.
+  """
+  _id: ID! @fdc_generated(from: "UserProgress.userId,studyResourceId", purpose: GLOBAL_ID)
+}

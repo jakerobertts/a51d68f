@@ -1,0 +1,1938 @@
+"""
+✨ `StudyPlan_KeyOutput` returns the primary key fields of table type `StudyPlan`.
+
+It has the same format as `StudyPlan_Key`, but is only used as mutation return value.
+"""
+scalar StudyPlan_KeyOutput
+"""
+✨ `StudyPlanItem_KeyOutput` returns the primary key fields of table type `StudyPlanItem`.
+
+It has the same format as `StudyPlanItem_Key`, but is only used as mutation return value.
+"""
+scalar StudyPlanItem_KeyOutput
+"""
+✨ `StudyResource_KeyOutput` returns the primary key fields of table type `StudyResource`.
+
+It has the same format as `StudyResource_Key`, but is only used as mutation return value.
+"""
+scalar StudyResource_KeyOutput
+"""
+✨ `User_KeyOutput` returns the primary key fields of table type `User`.
+
+It has the same format as `User_Key`, but is only used as mutation return value.
+"""
+scalar User_KeyOutput
+"""
+✨ `UserNote_KeyOutput` returns the primary key fields of table type `UserNote`.
+
+It has the same format as `UserNote_Key`, but is only used as mutation return value.
+"""
+scalar UserNote_KeyOutput
+"""
+✨ `UserProgress_KeyOutput` returns the primary key fields of table type `UserProgress`.
+
+It has the same format as `UserProgress_Key`, but is only used as mutation return value.
+"""
+scalar UserProgress_KeyOutput
+"""
+✨ Generated data input type for table 'StudyPlan'. It includes all necessary fields for creating or upserting rows into table.
+"""
+input StudyPlan_Data {
+  """
+  ✨ Generated from Field `StudyPlan`.`id` of type `UUID!`
+  """
+  id: UUID
+  """
+  ✨ `_expr` server value variant of `id` (✨ Generated from Field `StudyPlan`.`id` of type `UUID!`)
+  """
+  id_expr: UUID_Expr
+  """
+  ✨ Generated from Field `StudyPlan`.`userId` of type `UUID!`
+  """
+  userId: UUID
+  """
+  ✨ `_expr` server value variant of `userId` (✨ Generated from Field `StudyPlan`.`userId` of type `UUID!`)
+  """
+  userId_expr: UUID_Expr
+  """
+  ✨ Generated from Field `StudyPlan`.`user` of type `User!`
+  """
+  user: User_Key
+  """
+  ✨ Generated from Field `StudyPlan`.`createdAt` of type `Timestamp!`
+  """
+  createdAt: Timestamp
+  """
+  ✨ `_expr` server value variant of `createdAt` (✨ Generated from Field `StudyPlan`.`createdAt` of type `Timestamp!`)
+  """
+  createdAt_expr: Timestamp_Expr
+  """
+  ✨ `_time` server value variant of `createdAt` (✨ Generated from Field `StudyPlan`.`createdAt` of type `Timestamp!`)
+  """
+  createdAt_time: Timestamp_Relative
+  """
+  ✨ `_update` server value variant of `createdAt` (✨ Generated from Field `StudyPlan`.`createdAt` of type `Timestamp!`)
+  """
+  createdAt_update: [Timestamp_Update!]
+  """
+  ✨ Generated from Field `StudyPlan`.`description` of type `String`
+  """
+  description: String
+  """
+  ✨ `_expr` server value variant of `description` (✨ Generated from Field `StudyPlan`.`description` of type `String`)
+  """
+  description_expr: String_Expr
+  """
+  ✨ Generated from Field `StudyPlan`.`endDate` of type `Date!`
+  """
+  endDate: Date
+  """
+  ✨ `_date` server value variant of `endDate` (✨ Generated from Field `StudyPlan`.`endDate` of type `Date!`)
+  """
+  endDate_date: Date_Relative
+  """
+  ✨ `_expr` server value variant of `endDate` (✨ Generated from Field `StudyPlan`.`endDate` of type `Date!`)
+  """
+  endDate_expr: Date_Expr
+  """
+  ✨ `_update` server value variant of `endDate` (✨ Generated from Field `StudyPlan`.`endDate` of type `Date!`)
+  """
+  endDate_update: [Date_Update!]
+  """
+  ✨ Generated from Field `StudyPlan`.`name` of type `String!`
+  """
+  name: String
+  """
+  ✨ `_expr` server value variant of `name` (✨ Generated from Field `StudyPlan`.`name` of type `String!`)
+  """
+  name_expr: String_Expr
+  """
+  ✨ Generated from Field `StudyPlan`.`startDate` of type `Date!`
+  """
+  startDate: Date
+  """
+  ✨ `_date` server value variant of `startDate` (✨ Generated from Field `StudyPlan`.`startDate` of type `Date!`)
+  """
+  startDate_date: Date_Relative
+  """
+  ✨ `_expr` server value variant of `startDate` (✨ Generated from Field `StudyPlan`.`startDate` of type `Date!`)
+  """
+  startDate_expr: Date_Expr
+  """
+  ✨ `_update` server value variant of `startDate` (✨ Generated from Field `StudyPlan`.`startDate` of type `Date!`)
+  """
+  startDate_update: [Date_Update!]
+}
+"""
+✨ Generated filter input type for table 'StudyPlan'. This input allows filtering objects using various conditions. Use `_or`, `_and`, and `_not` to compose complex filters.
+"""
+input StudyPlan_Filter {
+  """
+  Apply multiple filter conditions using `AND` logic.
+  """
+  _and: [StudyPlan_Filter!]
+  """
+  Negate the result of the provided filter condition.
+  """
+  _not: StudyPlan_Filter
+  """
+  Apply multiple filter conditions using `OR` logic.
+  """
+  _or: [StudyPlan_Filter!]
+  """
+  ✨ Generated from Field `StudyPlan`.`id` of type `UUID!`
+  """
+  id: UUID_Filter
+  """
+  ✨ Generated from Field `StudyPlan`.`userId` of type `UUID!`
+  """
+  userId: UUID_Filter
+  """
+  ✨ Generated from Field `StudyPlan`.`user` of type `User!`
+  """
+  user: User_Filter
+  """
+  ✨ Generated from Field `StudyPlan`.`createdAt` of type `Timestamp!`
+  """
+  createdAt: Timestamp_Filter
+  """
+  ✨ Generated from Field `StudyPlan`.`description` of type `String`
+  """
+  description: String_Filter
+  """
+  ✨ Generated from Field `StudyPlan`.`endDate` of type `Date!`
+  """
+  endDate: Date_Filter
+  """
+  ✨ Generated from Field `StudyPlan`.`name` of type `String!`
+  """
+  name: String_Filter
+  """
+  ✨ Generated from Field `StudyPlan`.`startDate` of type `Date!`
+  """
+  startDate: Date_Filter
+  """
+  ✨ Generated from Field `StudyPlan`.`studyPlanItems_on_studyPlan` of type `[StudyPlanItem!]!`
+  """
+  studyPlanItems_on_studyPlan: StudyPlanItem_ListFilter
+  """
+  ✨ Generated from Field `StudyPlan`.`studyResources_via_StudyPlanItem` of type `[StudyResource!]!`
+  """
+  studyResources_via_StudyPlanItem: StudyResource_ListFilter
+}
+"""
+✨ Generated first-row input type for table 'StudyPlan'. This input selects the first row matching the filter criteria, ordered according to the specified conditions.
+"""
+input StudyPlan_FirstRow {
+  """
+  Order the result by the specified fields.
+  """
+  orderBy: [StudyPlan_Order!]
+  """
+  Filters rows based on the specified conditions.
+  """
+  where: StudyPlan_Filter
+}
+"""
+✨ Generated having input type for table 'StudyPlan'. This input allows you to filter groups during aggregate queries using various conditions. Use `_or`, `_and`, and `_not` to compose complex filters.
+"""
+input StudyPlan_Having {
+  """
+  Apply multiple Having conditions using `AND` logic.
+  """
+  _and: [StudyPlan_Having!]
+  """
+  Whether to apply DISTINCT to the aggregate function.
+  """
+  _distinct: Boolean
+  """
+  Negate the result of the provided Having condition.
+  """
+  _not: StudyPlan_Having
+  """
+  Apply multiple Having conditions using `OR` logic.
+  """
+  _or: [StudyPlan_Having!]
+  """
+  ✨ Generated from Field `StudyPlan`.`_count` of type `Int!`
+  """
+  _count: Int_Filter
+  """
+  ✨ Generated from Field `StudyPlan`.`createdAt_count` of type `Int!`
+  """
+  createdAt_count: Int_Filter
+  """
+  ✨ Generated from Field `StudyPlan`.`description_count` of type `Int!`
+  """
+  description_count: Int_Filter
+  """
+  ✨ Generated from Field `StudyPlan`.`endDate_count` of type `Int!`
+  """
+  endDate_count: Int_Filter
+  """
+  ✨ Generated from Field `StudyPlan`.`id_count` of type `Int!`
+  """
+  id_count: Int_Filter
+  """
+  ✨ Generated from Field `StudyPlan`.`name_count` of type `Int!`
+  """
+  name_count: Int_Filter
+  """
+  ✨ Generated from Field `StudyPlan`.`startDate_count` of type `Int!`
+  """
+  startDate_count: Int_Filter
+  """
+  ✨ Generated from Field `StudyPlan`.`userId_count` of type `Int!`
+  """
+  userId_count: Int_Filter
+  """
+  ✨ Generated from Field `StudyPlan`.`createdAt_min` of type `Timestamp`
+  """
+  createdAt_min: Timestamp_Filter
+  """
+  ✨ Generated from Field `StudyPlan`.`endDate_min` of type `Date`
+  """
+  endDate_min: Date_Filter
+  """
+  ✨ Generated from Field `StudyPlan`.`startDate_min` of type `Date`
+  """
+  startDate_min: Date_Filter
+  """
+  ✨ Generated from Field `StudyPlan`.`createdAt_max` of type `Timestamp`
+  """
+  createdAt_max: Timestamp_Filter
+  """
+  ✨ Generated from Field `StudyPlan`.`endDate_max` of type `Date`
+  """
+  endDate_max: Date_Filter
+  """
+  ✨ Generated from Field `StudyPlan`.`startDate_max` of type `Date`
+  """
+  startDate_max: Date_Filter
+}
+"""
+✨ Generated key input type for table 'StudyPlan'. It represents the primary key fields used to uniquely identify a row in the table.
+"""
+input StudyPlan_Key {
+  """
+  ✨ Generated from Field `StudyPlan`.`id` of type `UUID!`
+  """
+  id: UUID
+  """
+  ✨ `_expr` server value variant of `id` (✨ Generated from Field `StudyPlan`.`id` of type `UUID!`)
+  """
+  id_expr: UUID_Expr
+}
+"""
+✨ Generated list filter input type for table 'StudyPlan'. This input applies filtering logic based on the count or existence of related objects that matches certain criteria.
+"""
+input StudyPlan_ListFilter {
+  """
+  The desired number of objects that match the condition (defaults to at least one).
+  """
+  count: Int_Filter = {gt:0}
+  """
+  Condition of the related objects to filter for.
+  """
+  exist: StudyPlan_Filter
+}
+"""
+✨ Generated order input type for table 'StudyPlan'. This input defines the sorting order of rows in query results based on one or more fields.
+"""
+input StudyPlan_Order {
+  """
+  ✨ Generated from Field `StudyPlan`.`id` of type `UUID!`
+  """
+  id: OrderDirection
+  """
+  ✨ Generated from Field `StudyPlan`.`userId` of type `UUID!`
+  """
+  userId: OrderDirection
+  """
+  ✨ Generated from Field `StudyPlan`.`user` of type `User!`
+  """
+  user: User_Order
+  """
+  ✨ Generated from Field `StudyPlan`.`createdAt` of type `Timestamp!`
+  """
+  createdAt: OrderDirection
+  """
+  ✨ Generated from Field `StudyPlan`.`description` of type `String`
+  """
+  description: OrderDirection
+  """
+  ✨ Generated from Field `StudyPlan`.`endDate` of type `Date!`
+  """
+  endDate: OrderDirection
+  """
+  ✨ Generated from Field `StudyPlan`.`name` of type `String!`
+  """
+  name: OrderDirection
+  """
+  ✨ Generated from Field `StudyPlan`.`startDate` of type `Date!`
+  """
+  startDate: OrderDirection
+  """
+  ✨ Generated from Field `StudyPlan`.`_count` of type `Int!`
+  """
+  _count: OrderDirection
+  """
+  ✨ Generated from Field `StudyPlan`.`createdAt_count` of type `Int!`
+  """
+  createdAt_count: OrderDirection
+  """
+  ✨ Generated from Field `StudyPlan`.`description_count` of type `Int!`
+  """
+  description_count: OrderDirection
+  """
+  ✨ Generated from Field `StudyPlan`.`endDate_count` of type `Int!`
+  """
+  endDate_count: OrderDirection
+  """
+  ✨ Generated from Field `StudyPlan`.`id_count` of type `Int!`
+  """
+  id_count: OrderDirection
+  """
+  ✨ Generated from Field `StudyPlan`.`name_count` of type `Int!`
+  """
+  name_count: OrderDirection
+  """
+  ✨ Generated from Field `StudyPlan`.`startDate_count` of type `Int!`
+  """
+  startDate_count: OrderDirection
+  """
+  ✨ Generated from Field `StudyPlan`.`userId_count` of type `Int!`
+  """
+  userId_count: OrderDirection
+  """
+  ✨ Generated from Field `StudyPlan`.`createdAt_min` of type `Timestamp`
+  """
+  createdAt_min: OrderDirection
+  """
+  ✨ Generated from Field `StudyPlan`.`endDate_min` of type `Date`
+  """
+  endDate_min: OrderDirection
+  """
+  ✨ Generated from Field `StudyPlan`.`startDate_min` of type `Date`
+  """
+  startDate_min: OrderDirection
+  """
+  ✨ Generated from Field `StudyPlan`.`createdAt_max` of type `Timestamp`
+  """
+  createdAt_max: OrderDirection
+  """
+  ✨ Generated from Field `StudyPlan`.`endDate_max` of type `Date`
+  """
+  endDate_max: OrderDirection
+  """
+  ✨ Generated from Field `StudyPlan`.`startDate_max` of type `Date`
+  """
+  startDate_max: OrderDirection
+}
+"""
+✨ Generated data input type for table 'StudyPlanItem'. It includes all necessary fields for creating or upserting rows into table.
+"""
+input StudyPlanItem_Data {
+  """
+  ✨ Generated from Field `StudyPlanItem`.`studyPlanId` of type `UUID!`
+  """
+  studyPlanId: UUID
+  """
+  ✨ `_expr` server value variant of `studyPlanId` (✨ Generated from Field `StudyPlanItem`.`studyPlanId` of type `UUID!`)
+  """
+  studyPlanId_expr: UUID_Expr
+  """
+  ✨ Generated from Field `StudyPlanItem`.`studyResourceId` of type `UUID!`
+  """
+  studyResourceId: UUID
+  """
+  ✨ `_expr` server value variant of `studyResourceId` (✨ Generated from Field `StudyPlanItem`.`studyResourceId` of type `UUID!`)
+  """
+  studyResourceId_expr: UUID_Expr
+  """
+  ✨ Generated from Field `StudyPlanItem`.`studyPlan` of type `StudyPlan!`
+  """
+  studyPlan: StudyPlan_Key
+  """
+  ✨ Generated from Field `StudyPlanItem`.`studyResource` of type `StudyResource!`
+  """
+  studyResource: StudyResource_Key
+  """
+  ✨ Generated from Field `StudyPlanItem`.`orderInPlan` of type `Int!`
+  """
+  orderInPlan: Int
+  """
+  ✨ `_expr` server value variant of `orderInPlan` (✨ Generated from Field `StudyPlanItem`.`orderInPlan` of type `Int!`)
+  """
+  orderInPlan_expr: Int_Expr
+  """
+  ✨ `_update` server value variant of `orderInPlan` (✨ Generated from Field `StudyPlanItem`.`orderInPlan` of type `Int!`)
+  """
+  orderInPlan_update: [Int_Update!]
+  """
+  ✨ Generated from Field `StudyPlanItem`.`scheduledDate` of type `Date!`
+  """
+  scheduledDate: Date
+  """
+  ✨ `_date` server value variant of `scheduledDate` (✨ Generated from Field `StudyPlanItem`.`scheduledDate` of type `Date!`)
+  """
+  scheduledDate_date: Date_Relative
+  """
+  ✨ `_expr` server value variant of `scheduledDate` (✨ Generated from Field `StudyPlanItem`.`scheduledDate` of type `Date!`)
+  """
+  scheduledDate_expr: Date_Expr
+  """
+  ✨ `_update` server value variant of `scheduledDate` (✨ Generated from Field `StudyPlanItem`.`scheduledDate` of type `Date!`)
+  """
+  scheduledDate_update: [Date_Update!]
+  """
+  ✨ Generated from Field `StudyPlanItem`.`status` of type `String`
+  """
+  status: String
+  """
+  ✨ `_expr` server value variant of `status` (✨ Generated from Field `StudyPlanItem`.`status` of type `String`)
+  """
+  status_expr: String_Expr
+}
+"""
+✨ Generated filter input type for table 'StudyPlanItem'. This input allows filtering objects using various conditions. Use `_or`, `_and`, and `_not` to compose complex filters.
+"""
+input StudyPlanItem_Filter {
+  """
+  Apply multiple filter conditions using `AND` logic.
+  """
+  _and: [StudyPlanItem_Filter!]
+  """
+  Negate the result of the provided filter condition.
+  """
+  _not: StudyPlanItem_Filter
+  """
+  Apply multiple filter conditions using `OR` logic.
+  """
+  _or: [StudyPlanItem_Filter!]
+  """
+  ✨ Generated from Field `StudyPlanItem`.`studyPlanId` of type `UUID!`
+  """
+  studyPlanId: UUID_Filter
+  """
+  ✨ Generated from Field `StudyPlanItem`.`studyResourceId` of type `UUID!`
+  """
+  studyResourceId: UUID_Filter
+  """
+  ✨ Generated from Field `StudyPlanItem`.`studyPlan` of type `StudyPlan!`
+  """
+  studyPlan: StudyPlan_Filter
+  """
+  ✨ Generated from Field `StudyPlanItem`.`studyResource` of type `StudyResource!`
+  """
+  studyResource: StudyResource_Filter
+  """
+  ✨ Generated from Field `StudyPlanItem`.`orderInPlan` of type `Int!`
+  """
+  orderInPlan: Int_Filter
+  """
+  ✨ Generated from Field `StudyPlanItem`.`scheduledDate` of type `Date!`
+  """
+  scheduledDate: Date_Filter
+  """
+  ✨ Generated from Field `StudyPlanItem`.`status` of type `String`
+  """
+  status: String_Filter
+}
+"""
+✨ Generated first-row input type for table 'StudyPlanItem'. This input selects the first row matching the filter criteria, ordered according to the specified conditions.
+"""
+input StudyPlanItem_FirstRow {
+  """
+  Order the result by the specified fields.
+  """
+  orderBy: [StudyPlanItem_Order!]
+  """
+  Filters rows based on the specified conditions.
+  """
+  where: StudyPlanItem_Filter
+}
+"""
+✨ Generated having input type for table 'StudyPlanItem'. This input allows you to filter groups during aggregate queries using various conditions. Use `_or`, `_and`, and `_not` to compose complex filters.
+"""
+input StudyPlanItem_Having {
+  """
+  Apply multiple Having conditions using `AND` logic.
+  """
+  _and: [StudyPlanItem_Having!]
+  """
+  Whether to apply DISTINCT to the aggregate function.
+  """
+  _distinct: Boolean
+  """
+  Negate the result of the provided Having condition.
+  """
+  _not: StudyPlanItem_Having
+  """
+  Apply multiple Having conditions using `OR` logic.
+  """
+  _or: [StudyPlanItem_Having!]
+  """
+  ✨ Generated from Field `StudyPlanItem`.`_count` of type `Int!`
+  """
+  _count: Int_Filter
+  """
+  ✨ Generated from Field `StudyPlanItem`.`orderInPlan_count` of type `Int!`
+  """
+  orderInPlan_count: Int_Filter
+  """
+  ✨ Generated from Field `StudyPlanItem`.`scheduledDate_count` of type `Int!`
+  """
+  scheduledDate_count: Int_Filter
+  """
+  ✨ Generated from Field `StudyPlanItem`.`status_count` of type `Int!`
+  """
+  status_count: Int_Filter
+  """
+  ✨ Generated from Field `StudyPlanItem`.`studyPlanId_count` of type `Int!`
+  """
+  studyPlanId_count: Int_Filter
+  """
+  ✨ Generated from Field `StudyPlanItem`.`studyResourceId_count` of type `Int!`
+  """
+  studyResourceId_count: Int_Filter
+  """
+  ✨ Generated from Field `StudyPlanItem`.`orderInPlan_sum` of type `Int`
+  """
+  orderInPlan_sum: Int_Filter
+  """
+  ✨ Generated from Field `StudyPlanItem`.`orderInPlan_avg` of type `Float`
+  """
+  orderInPlan_avg: Float_Filter
+  """
+  ✨ Generated from Field `StudyPlanItem`.`orderInPlan_min` of type `Int`
+  """
+  orderInPlan_min: Int_Filter
+  """
+  ✨ Generated from Field `StudyPlanItem`.`scheduledDate_min` of type `Date`
+  """
+  scheduledDate_min: Date_Filter
+  """
+  ✨ Generated from Field `StudyPlanItem`.`orderInPlan_max` of type `Int`
+  """
+  orderInPlan_max: Int_Filter
+  """
+  ✨ Generated from Field `StudyPlanItem`.`scheduledDate_max` of type `Date`
+  """
+  scheduledDate_max: Date_Filter
+}
+"""
+✨ Generated key input type for table 'StudyPlanItem'. It represents the primary key fields used to uniquely identify a row in the table.
+"""
+input StudyPlanItem_Key {
+  """
+  ✨ Generated from Field `StudyPlanItem`.`studyPlanId` of type `UUID!`
+  """
+  studyPlanId: UUID
+  """
+  ✨ `_expr` server value variant of `studyPlanId` (✨ Generated from Field `StudyPlanItem`.`studyPlanId` of type `UUID!`)
+  """
+  studyPlanId_expr: UUID_Expr
+  """
+  ✨ Generated from Field `StudyPlanItem`.`studyResourceId` of type `UUID!`
+  """
+  studyResourceId: UUID
+  """
+  ✨ `_expr` server value variant of `studyResourceId` (✨ Generated from Field `StudyPlanItem`.`studyResourceId` of type `UUID!`)
+  """
+  studyResourceId_expr: UUID_Expr
+}
+"""
+✨ Generated list filter input type for table 'StudyPlanItem'. This input applies filtering logic based on the count or existence of related objects that matches certain criteria.
+"""
+input StudyPlanItem_ListFilter {
+  """
+  The desired number of objects that match the condition (defaults to at least one).
+  """
+  count: Int_Filter = {gt:0}
+  """
+  Condition of the related objects to filter for.
+  """
+  exist: StudyPlanItem_Filter
+}
+"""
+✨ Generated order input type for table 'StudyPlanItem'. This input defines the sorting order of rows in query results based on one or more fields.
+"""
+input StudyPlanItem_Order {
+  """
+  ✨ Generated from Field `StudyPlanItem`.`studyPlanId` of type `UUID!`
+  """
+  studyPlanId: OrderDirection
+  """
+  ✨ Generated from Field `StudyPlanItem`.`studyResourceId` of type `UUID!`
+  """
+  studyResourceId: OrderDirection
+  """
+  ✨ Generated from Field `StudyPlanItem`.`studyPlan` of type `StudyPlan!`
+  """
+  studyPlan: StudyPlan_Order
+  """
+  ✨ Generated from Field `StudyPlanItem`.`studyResource` of type `StudyResource!`
+  """
+  studyResource: StudyResource_Order
+  """
+  ✨ Generated from Field `StudyPlanItem`.`orderInPlan` of type `Int!`
+  """
+  orderInPlan: OrderDirection
+  """
+  ✨ Generated from Field `StudyPlanItem`.`scheduledDate` of type `Date!`
+  """
+  scheduledDate: OrderDirection
+  """
+  ✨ Generated from Field `StudyPlanItem`.`status` of type `String`
+  """
+  status: OrderDirection
+  """
+  ✨ Generated from Field `StudyPlanItem`.`_count` of type `Int!`
+  """
+  _count: OrderDirection
+  """
+  ✨ Generated from Field `StudyPlanItem`.`orderInPlan_count` of type `Int!`
+  """
+  orderInPlan_count: OrderDirection
+  """
+  ✨ Generated from Field `StudyPlanItem`.`scheduledDate_count` of type `Int!`
+  """
+  scheduledDate_count: OrderDirection
+  """
+  ✨ Generated from Field `StudyPlanItem`.`status_count` of type `Int!`
+  """
+  status_count: OrderDirection
+  """
+  ✨ Generated from Field `StudyPlanItem`.`studyPlanId_count` of type `Int!`
+  """
+  studyPlanId_count: OrderDirection
+  """
+  ✨ Generated from Field `StudyPlanItem`.`studyResourceId_count` of type `Int!`
+  """
+  studyResourceId_count: OrderDirection
+  """
+  ✨ Generated from Field `StudyPlanItem`.`orderInPlan_sum` of type `Int`
+  """
+  orderInPlan_sum: OrderDirection
+  """
+  ✨ Generated from Field `StudyPlanItem`.`orderInPlan_avg` of type `Float`
+  """
+  orderInPlan_avg: OrderDirection
+  """
+  ✨ Generated from Field `StudyPlanItem`.`orderInPlan_min` of type `Int`
+  """
+  orderInPlan_min: OrderDirection
+  """
+  ✨ Generated from Field `StudyPlanItem`.`scheduledDate_min` of type `Date`
+  """
+  scheduledDate_min: OrderDirection
+  """
+  ✨ Generated from Field `StudyPlanItem`.`orderInPlan_max` of type `Int`
+  """
+  orderInPlan_max: OrderDirection
+  """
+  ✨ Generated from Field `StudyPlanItem`.`scheduledDate_max` of type `Date`
+  """
+  scheduledDate_max: OrderDirection
+}
+"""
+✨ Generated data input type for table 'StudyResource'. It includes all necessary fields for creating or upserting rows into table.
+"""
+input StudyResource_Data {
+  """
+  ✨ Generated from Field `StudyResource`.`id` of type `UUID!`
+  """
+  id: UUID
+  """
+  ✨ `_expr` server value variant of `id` (✨ Generated from Field `StudyResource`.`id` of type `UUID!`)
+  """
+  id_expr: UUID_Expr
+  """
+  ✨ Generated from Field `StudyResource`.`content` of type `String!`
+  """
+  content: String
+  """
+  ✨ `_expr` server value variant of `content` (✨ Generated from Field `StudyResource`.`content` of type `String!`)
+  """
+  content_expr: String_Expr
+  """
+  ✨ Generated from Field `StudyResource`.`createdAt` of type `Timestamp!`
+  """
+  createdAt: Timestamp
+  """
+  ✨ `_expr` server value variant of `createdAt` (✨ Generated from Field `StudyResource`.`createdAt` of type `Timestamp!`)
+  """
+  createdAt_expr: Timestamp_Expr
+  """
+  ✨ `_time` server value variant of `createdAt` (✨ Generated from Field `StudyResource`.`createdAt` of type `Timestamp!`)
+  """
+  createdAt_time: Timestamp_Relative
+  """
+  ✨ `_update` server value variant of `createdAt` (✨ Generated from Field `StudyResource`.`createdAt` of type `Timestamp!`)
+  """
+  createdAt_update: [Timestamp_Update!]
+  """
+  ✨ Generated from Field `StudyResource`.`difficultyLevel` of type `String`
+  """
+  difficultyLevel: String
+  """
+  ✨ `_expr` server value variant of `difficultyLevel` (✨ Generated from Field `StudyResource`.`difficultyLevel` of type `String`)
+  """
+  difficultyLevel_expr: String_Expr
+  """
+  ✨ Generated from Field `StudyResource`.`resourceType` of type `String!`
+  """
+  resourceType: String
+  """
+  ✨ `_expr` server value variant of `resourceType` (✨ Generated from Field `StudyResource`.`resourceType` of type `String!`)
+  """
+  resourceType_expr: String_Expr
+  """
+  ✨ Generated from Field `StudyResource`.`subtopic` of type `String`
+  """
+  subtopic: String
+  """
+  ✨ `_expr` server value variant of `subtopic` (✨ Generated from Field `StudyResource`.`subtopic` of type `String`)
+  """
+  subtopic_expr: String_Expr
+  """
+  ✨ Generated from Field `StudyResource`.`title` of type `String!`
+  """
+  title: String
+  """
+  ✨ `_expr` server value variant of `title` (✨ Generated from Field `StudyResource`.`title` of type `String!`)
+  """
+  title_expr: String_Expr
+  """
+  ✨ Generated from Field `StudyResource`.`topic` of type `String`
+  """
+  topic: String
+  """
+  ✨ `_expr` server value variant of `topic` (✨ Generated from Field `StudyResource`.`topic` of type `String`)
+  """
+  topic_expr: String_Expr
+}
+"""
+✨ Generated filter input type for table 'StudyResource'. This input allows filtering objects using various conditions. Use `_or`, `_and`, and `_not` to compose complex filters.
+"""
+input StudyResource_Filter {
+  """
+  Apply multiple filter conditions using `AND` logic.
+  """
+  _and: [StudyResource_Filter!]
+  """
+  Negate the result of the provided filter condition.
+  """
+  _not: StudyResource_Filter
+  """
+  Apply multiple filter conditions using `OR` logic.
+  """
+  _or: [StudyResource_Filter!]
+  """
+  ✨ Generated from Field `StudyResource`.`id` of type `UUID!`
+  """
+  id: UUID_Filter
+  """
+  ✨ Generated from Field `StudyResource`.`content` of type `String!`
+  """
+  content: String_Filter
+  """
+  ✨ Generated from Field `StudyResource`.`createdAt` of type `Timestamp!`
+  """
+  createdAt: Timestamp_Filter
+  """
+  ✨ Generated from Field `StudyResource`.`difficultyLevel` of type `String`
+  """
+  difficultyLevel: String_Filter
+  """
+  ✨ Generated from Field `StudyResource`.`resourceType` of type `String!`
+  """
+  resourceType: String_Filter
+  """
+  ✨ Generated from Field `StudyResource`.`subtopic` of type `String`
+  """
+  subtopic: String_Filter
+  """
+  ✨ Generated from Field `StudyResource`.`title` of type `String!`
+  """
+  title: String_Filter
+  """
+  ✨ Generated from Field `StudyResource`.`topic` of type `String`
+  """
+  topic: String_Filter
+  """
+  ✨ Generated from Field `StudyResource`.`studyPlanItems_on_studyResource` of type `[StudyPlanItem!]!`
+  """
+  studyPlanItems_on_studyResource: StudyPlanItem_ListFilter
+  """
+  ✨ Generated from Field `StudyResource`.`userNotes_on_studyResource` of type `[UserNote!]!`
+  """
+  userNotes_on_studyResource: UserNote_ListFilter
+  """
+  ✨ Generated from Field `StudyResource`.`userProgresses_on_studyResource` of type `[UserProgress!]!`
+  """
+  userProgresses_on_studyResource: UserProgress_ListFilter
+  """
+  ✨ Generated from Field `StudyResource`.`studyPlans_via_StudyPlanItem` of type `[StudyPlan!]!`
+  """
+  studyPlans_via_StudyPlanItem: StudyPlan_ListFilter
+  """
+  ✨ Generated from Field `StudyResource`.`users_via_UserProgress` of type `[User!]!`
+  """
+  users_via_UserProgress: User_ListFilter
+}
+"""
+✨ Generated first-row input type for table 'StudyResource'. This input selects the first row matching the filter criteria, ordered according to the specified conditions.
+"""
+input StudyResource_FirstRow {
+  """
+  Order the result by the specified fields.
+  """
+  orderBy: [StudyResource_Order!]
+  """
+  Filters rows based on the specified conditions.
+  """
+  where: StudyResource_Filter
+}
+"""
+✨ Generated having input type for table 'StudyResource'. This input allows you to filter groups during aggregate queries using various conditions. Use `_or`, `_and`, and `_not` to compose complex filters.
+"""
+input StudyResource_Having {
+  """
+  Apply multiple Having conditions using `AND` logic.
+  """
+  _and: [StudyResource_Having!]
+  """
+  Whether to apply DISTINCT to the aggregate function.
+  """
+  _distinct: Boolean
+  """
+  Negate the result of the provided Having condition.
+  """
+  _not: StudyResource_Having
+  """
+  Apply multiple Having conditions using `OR` logic.
+  """
+  _or: [StudyResource_Having!]
+  """
+  ✨ Generated from Field `StudyResource`.`_count` of type `Int!`
+  """
+  _count: Int_Filter
+  """
+  ✨ Generated from Field `StudyResource`.`content_count` of type `Int!`
+  """
+  content_count: Int_Filter
+  """
+  ✨ Generated from Field `StudyResource`.`createdAt_count` of type `Int!`
+  """
+  createdAt_count: Int_Filter
+  """
+  ✨ Generated from Field `StudyResource`.`difficultyLevel_count` of type `Int!`
+  """
+  difficultyLevel_count: Int_Filter
+  """
+  ✨ Generated from Field `StudyResource`.`id_count` of type `Int!`
+  """
+  id_count: Int_Filter
+  """
+  ✨ Generated from Field `StudyResource`.`resourceType_count` of type `Int!`
+  """
+  resourceType_count: Int_Filter
+  """
+  ✨ Generated from Field `StudyResource`.`subtopic_count` of type `Int!`
+  """
+  subtopic_count: Int_Filter
+  """
+  ✨ Generated from Field `StudyResource`.`title_count` of type `Int!`
+  """
+  title_count: Int_Filter
+  """
+  ✨ Generated from Field `StudyResource`.`topic_count` of type `Int!`
+  """
+  topic_count: Int_Filter
+  """
+  ✨ Generated from Field `StudyResource`.`createdAt_min` of type `Timestamp`
+  """
+  createdAt_min: Timestamp_Filter
+  """
+  ✨ Generated from Field `StudyResource`.`createdAt_max` of type `Timestamp`
+  """
+  createdAt_max: Timestamp_Filter
+}
+"""
+✨ Generated key input type for table 'StudyResource'. It represents the primary key fields used to uniquely identify a row in the table.
+"""
+input StudyResource_Key {
+  """
+  ✨ Generated from Field `StudyResource`.`id` of type `UUID!`
+  """
+  id: UUID
+  """
+  ✨ `_expr` server value variant of `id` (✨ Generated from Field `StudyResource`.`id` of type `UUID!`)
+  """
+  id_expr: UUID_Expr
+}
+"""
+✨ Generated list filter input type for table 'StudyResource'. This input applies filtering logic based on the count or existence of related objects that matches certain criteria.
+"""
+input StudyResource_ListFilter {
+  """
+  The desired number of objects that match the condition (defaults to at least one).
+  """
+  count: Int_Filter = {gt:0}
+  """
+  Condition of the related objects to filter for.
+  """
+  exist: StudyResource_Filter
+}
+"""
+✨ Generated order input type for table 'StudyResource'. This input defines the sorting order of rows in query results based on one or more fields.
+"""
+input StudyResource_Order {
+  """
+  ✨ Generated from Field `StudyResource`.`id` of type `UUID!`
+  """
+  id: OrderDirection
+  """
+  ✨ Generated from Field `StudyResource`.`content` of type `String!`
+  """
+  content: OrderDirection
+  """
+  ✨ Generated from Field `StudyResource`.`createdAt` of type `Timestamp!`
+  """
+  createdAt: OrderDirection
+  """
+  ✨ Generated from Field `StudyResource`.`difficultyLevel` of type `String`
+  """
+  difficultyLevel: OrderDirection
+  """
+  ✨ Generated from Field `StudyResource`.`resourceType` of type `String!`
+  """
+  resourceType: OrderDirection
+  """
+  ✨ Generated from Field `StudyResource`.`subtopic` of type `String`
+  """
+  subtopic: OrderDirection
+  """
+  ✨ Generated from Field `StudyResource`.`title` of type `String!`
+  """
+  title: OrderDirection
+  """
+  ✨ Generated from Field `StudyResource`.`topic` of type `String`
+  """
+  topic: OrderDirection
+  """
+  ✨ Generated from Field `StudyResource`.`_count` of type `Int!`
+  """
+  _count: OrderDirection
+  """
+  ✨ Generated from Field `StudyResource`.`content_count` of type `Int!`
+  """
+  content_count: OrderDirection
+  """
+  ✨ Generated from Field `StudyResource`.`createdAt_count` of type `Int!`
+  """
+  createdAt_count: OrderDirection
+  """
+  ✨ Generated from Field `StudyResource`.`difficultyLevel_count` of type `Int!`
+  """
+  difficultyLevel_count: OrderDirection
+  """
+  ✨ Generated from Field `StudyResource`.`id_count` of type `Int!`
+  """
+  id_count: OrderDirection
+  """
+  ✨ Generated from Field `StudyResource`.`resourceType_count` of type `Int!`
+  """
+  resourceType_count: OrderDirection
+  """
+  ✨ Generated from Field `StudyResource`.`subtopic_count` of type `Int!`
+  """
+  subtopic_count: OrderDirection
+  """
+  ✨ Generated from Field `StudyResource`.`title_count` of type `Int!`
+  """
+  title_count: OrderDirection
+  """
+  ✨ Generated from Field `StudyResource`.`topic_count` of type `Int!`
+  """
+  topic_count: OrderDirection
+  """
+  ✨ Generated from Field `StudyResource`.`createdAt_min` of type `Timestamp`
+  """
+  createdAt_min: OrderDirection
+  """
+  ✨ Generated from Field `StudyResource`.`createdAt_max` of type `Timestamp`
+  """
+  createdAt_max: OrderDirection
+}
+"""
+✨ Generated data input type for table 'User'. It includes all necessary fields for creating or upserting rows into table.
+"""
+input User_Data {
+  """
+  ✨ Generated from Field `User`.`id` of type `UUID!`
+  """
+  id: UUID
+  """
+  ✨ `_expr` server value variant of `id` (✨ Generated from Field `User`.`id` of type `UUID!`)
+  """
+  id_expr: UUID_Expr
+  """
+  ✨ Generated from Field `User`.`createdAt` of type `Timestamp!`
+  """
+  createdAt: Timestamp
+  """
+  ✨ `_expr` server value variant of `createdAt` (✨ Generated from Field `User`.`createdAt` of type `Timestamp!`)
+  """
+  createdAt_expr: Timestamp_Expr
+  """
+  ✨ `_time` server value variant of `createdAt` (✨ Generated from Field `User`.`createdAt` of type `Timestamp!`)
+  """
+  createdAt_time: Timestamp_Relative
+  """
+  ✨ `_update` server value variant of `createdAt` (✨ Generated from Field `User`.`createdAt` of type `Timestamp!`)
+  """
+  createdAt_update: [Timestamp_Update!]
+  """
+  ✨ Generated from Field `User`.`displayName` of type `String`
+  """
+  displayName: String
+  """
+  ✨ `_expr` server value variant of `displayName` (✨ Generated from Field `User`.`displayName` of type `String`)
+  """
+  displayName_expr: String_Expr
+  """
+  ✨ Generated from Field `User`.`email` of type `String!`
+  """
+  email: String
+  """
+  ✨ `_expr` server value variant of `email` (✨ Generated from Field `User`.`email` of type `String!`)
+  """
+  email_expr: String_Expr
+  """
+  ✨ Generated from Field `User`.`lastLogin` of type `Timestamp`
+  """
+  lastLogin: Timestamp
+  """
+  ✨ `_expr` server value variant of `lastLogin` (✨ Generated from Field `User`.`lastLogin` of type `Timestamp`)
+  """
+  lastLogin_expr: Timestamp_Expr
+  """
+  ✨ `_time` server value variant of `lastLogin` (✨ Generated from Field `User`.`lastLogin` of type `Timestamp`)
+  """
+  lastLogin_time: Timestamp_Relative
+  """
+  ✨ `_update` server value variant of `lastLogin` (✨ Generated from Field `User`.`lastLogin` of type `Timestamp`)
+  """
+  lastLogin_update: [Timestamp_Update!]
+  """
+  ✨ Generated from Field `User`.`passwordHash` of type `String!`
+  """
+  passwordHash: String
+  """
+  ✨ `_expr` server value variant of `passwordHash` (✨ Generated from Field `User`.`passwordHash` of type `String!`)
+  """
+  passwordHash_expr: String_Expr
+}
+"""
+✨ Generated filter input type for table 'User'. This input allows filtering objects using various conditions. Use `_or`, `_and`, and `_not` to compose complex filters.
+"""
+input User_Filter {
+  """
+  Apply multiple filter conditions using `AND` logic.
+  """
+  _and: [User_Filter!]
+  """
+  Negate the result of the provided filter condition.
+  """
+  _not: User_Filter
+  """
+  Apply multiple filter conditions using `OR` logic.
+  """
+  _or: [User_Filter!]
+  """
+  ✨ Generated from Field `User`.`id` of type `UUID!`
+  """
+  id: UUID_Filter
+  """
+  ✨ Generated from Field `User`.`createdAt` of type `Timestamp!`
+  """
+  createdAt: Timestamp_Filter
+  """
+  ✨ Generated from Field `User`.`displayName` of type `String`
+  """
+  displayName: String_Filter
+  """
+  ✨ Generated from Field `User`.`email` of type `String!`
+  """
+  email: String_Filter
+  """
+  ✨ Generated from Field `User`.`lastLogin` of type `Timestamp`
+  """
+  lastLogin: Timestamp_Filter
+  """
+  ✨ Generated from Field `User`.`passwordHash` of type `String!`
+  """
+  passwordHash: String_Filter
+  """
+  ✨ Generated from Field `User`.`studyPlans_on_user` of type `[StudyPlan!]!`
+  """
+  studyPlans_on_user: StudyPlan_ListFilter
+  """
+  ✨ Generated from Field `User`.`userNotes_on_user` of type `[UserNote!]!`
+  """
+  userNotes_on_user: UserNote_ListFilter
+  """
+  ✨ Generated from Field `User`.`userProgresses_on_user` of type `[UserProgress!]!`
+  """
+  userProgresses_on_user: UserProgress_ListFilter
+  """
+  ✨ Generated from Field `User`.`studyResources_via_UserProgress` of type `[StudyResource!]!`
+  """
+  studyResources_via_UserProgress: StudyResource_ListFilter
+}
+"""
+✨ Generated first-row input type for table 'User'. This input selects the first row matching the filter criteria, ordered according to the specified conditions.
+"""
+input User_FirstRow {
+  """
+  Order the result by the specified fields.
+  """
+  orderBy: [User_Order!]
+  """
+  Filters rows based on the specified conditions.
+  """
+  where: User_Filter
+}
+"""
+✨ Generated having input type for table 'User'. This input allows you to filter groups during aggregate queries using various conditions. Use `_or`, `_and`, and `_not` to compose complex filters.
+"""
+input User_Having {
+  """
+  Apply multiple Having conditions using `AND` logic.
+  """
+  _and: [User_Having!]
+  """
+  Whether to apply DISTINCT to the aggregate function.
+  """
+  _distinct: Boolean
+  """
+  Negate the result of the provided Having condition.
+  """
+  _not: User_Having
+  """
+  Apply multiple Having conditions using `OR` logic.
+  """
+  _or: [User_Having!]
+  """
+  ✨ Generated from Field `User`.`_count` of type `Int!`
+  """
+  _count: Int_Filter
+  """
+  ✨ Generated from Field `User`.`createdAt_count` of type `Int!`
+  """
+  createdAt_count: Int_Filter
+  """
+  ✨ Generated from Field `User`.`displayName_count` of type `Int!`
+  """
+  displayName_count: Int_Filter
+  """
+  ✨ Generated from Field `User`.`email_count` of type `Int!`
+  """
+  email_count: Int_Filter
+  """
+  ✨ Generated from Field `User`.`id_count` of type `Int!`
+  """
+  id_count: Int_Filter
+  """
+  ✨ Generated from Field `User`.`lastLogin_count` of type `Int!`
+  """
+  lastLogin_count: Int_Filter
+  """
+  ✨ Generated from Field `User`.`passwordHash_count` of type `Int!`
+  """
+  passwordHash_count: Int_Filter
+  """
+  ✨ Generated from Field `User`.`createdAt_min` of type `Timestamp`
+  """
+  createdAt_min: Timestamp_Filter
+  """
+  ✨ Generated from Field `User`.`lastLogin_min` of type `Timestamp`
+  """
+  lastLogin_min: Timestamp_Filter
+  """
+  ✨ Generated from Field `User`.`createdAt_max` of type `Timestamp`
+  """
+  createdAt_max: Timestamp_Filter
+  """
+  ✨ Generated from Field `User`.`lastLogin_max` of type `Timestamp`
+  """
+  lastLogin_max: Timestamp_Filter
+}
+"""
+✨ Generated key input type for table 'User'. It represents the primary key fields used to uniquely identify a row in the table.
+"""
+input User_Key {
+  """
+  ✨ Generated from Field `User`.`id` of type `UUID!`
+  """
+  id: UUID
+  """
+  ✨ `_expr` server value variant of `id` (✨ Generated from Field `User`.`id` of type `UUID!`)
+  """
+  id_expr: UUID_Expr
+}
+"""
+✨ Generated list filter input type for table 'User'. This input applies filtering logic based on the count or existence of related objects that matches certain criteria.
+"""
+input User_ListFilter {
+  """
+  The desired number of objects that match the condition (defaults to at least one).
+  """
+  count: Int_Filter = {gt:0}
+  """
+  Condition of the related objects to filter for.
+  """
+  exist: User_Filter
+}
+"""
+✨ Generated order input type for table 'User'. This input defines the sorting order of rows in query results based on one or more fields.
+"""
+input User_Order {
+  """
+  ✨ Generated from Field `User`.`id` of type `UUID!`
+  """
+  id: OrderDirection
+  """
+  ✨ Generated from Field `User`.`createdAt` of type `Timestamp!`
+  """
+  createdAt: OrderDirection
+  """
+  ✨ Generated from Field `User`.`displayName` of type `String`
+  """
+  displayName: OrderDirection
+  """
+  ✨ Generated from Field `User`.`email` of type `String!`
+  """
+  email: OrderDirection
+  """
+  ✨ Generated from Field `User`.`lastLogin` of type `Timestamp`
+  """
+  lastLogin: OrderDirection
+  """
+  ✨ Generated from Field `User`.`passwordHash` of type `String!`
+  """
+  passwordHash: OrderDirection
+  """
+  ✨ Generated from Field `User`.`_count` of type `Int!`
+  """
+  _count: OrderDirection
+  """
+  ✨ Generated from Field `User`.`createdAt_count` of type `Int!`
+  """
+  createdAt_count: OrderDirection
+  """
+  ✨ Generated from Field `User`.`displayName_count` of type `Int!`
+  """
+  displayName_count: OrderDirection
+  """
+  ✨ Generated from Field `User`.`email_count` of type `Int!`
+  """
+  email_count: OrderDirection
+  """
+  ✨ Generated from Field `User`.`id_count` of type `Int!`
+  """
+  id_count: OrderDirection
+  """
+  ✨ Generated from Field `User`.`lastLogin_count` of type `Int!`
+  """
+  lastLogin_count: OrderDirection
+  """
+  ✨ Generated from Field `User`.`passwordHash_count` of type `Int!`
+  """
+  passwordHash_count: OrderDirection
+  """
+  ✨ Generated from Field `User`.`createdAt_min` of type `Timestamp`
+  """
+  createdAt_min: OrderDirection
+  """
+  ✨ Generated from Field `User`.`lastLogin_min` of type `Timestamp`
+  """
+  lastLogin_min: OrderDirection
+  """
+  ✨ Generated from Field `User`.`createdAt_max` of type `Timestamp`
+  """
+  createdAt_max: OrderDirection
+  """
+  ✨ Generated from Field `User`.`lastLogin_max` of type `Timestamp`
+  """
+  lastLogin_max: OrderDirection
+}
+"""
+✨ Generated data input type for table 'UserNote'. It includes all necessary fields for creating or upserting rows into table.
+"""
+input UserNote_Data {
+  """
+  ✨ Generated from Field `UserNote`.`id` of type `UUID!`
+  """
+  id: UUID
+  """
+  ✨ `_expr` server value variant of `id` (✨ Generated from Field `UserNote`.`id` of type `UUID!`)
+  """
+  id_expr: UUID_Expr
+  """
+  ✨ Generated from Field `UserNote`.`studyResourceId` of type `UUID!`
+  """
+  studyResourceId: UUID
+  """
+  ✨ `_expr` server value variant of `studyResourceId` (✨ Generated from Field `UserNote`.`studyResourceId` of type `UUID!`)
+  """
+  studyResourceId_expr: UUID_Expr
+  """
+  ✨ Generated from Field `UserNote`.`userId` of type `UUID!`
+  """
+  userId: UUID
+  """
+  ✨ `_expr` server value variant of `userId` (✨ Generated from Field `UserNote`.`userId` of type `UUID!`)
+  """
+  userId_expr: UUID_Expr
+  """
+  ✨ Generated from Field `UserNote`.`studyResource` of type `StudyResource!`
+  """
+  studyResource: StudyResource_Key
+  """
+  ✨ Generated from Field `UserNote`.`user` of type `User!`
+  """
+  user: User_Key
+  """
+  ✨ Generated from Field `UserNote`.`content` of type `String!`
+  """
+  content: String
+  """
+  ✨ `_expr` server value variant of `content` (✨ Generated from Field `UserNote`.`content` of type `String!`)
+  """
+  content_expr: String_Expr
+  """
+  ✨ Generated from Field `UserNote`.`createdAt` of type `Timestamp!`
+  """
+  createdAt: Timestamp
+  """
+  ✨ `_expr` server value variant of `createdAt` (✨ Generated from Field `UserNote`.`createdAt` of type `Timestamp!`)
+  """
+  createdAt_expr: Timestamp_Expr
+  """
+  ✨ `_time` server value variant of `createdAt` (✨ Generated from Field `UserNote`.`createdAt` of type `Timestamp!`)
+  """
+  createdAt_time: Timestamp_Relative
+  """
+  ✨ `_update` server value variant of `createdAt` (✨ Generated from Field `UserNote`.`createdAt` of type `Timestamp!`)
+  """
+  createdAt_update: [Timestamp_Update!]
+  """
+  ✨ Generated from Field `UserNote`.`updatedAt` of type `Timestamp!`
+  """
+  updatedAt: Timestamp
+  """
+  ✨ `_expr` server value variant of `updatedAt` (✨ Generated from Field `UserNote`.`updatedAt` of type `Timestamp!`)
+  """
+  updatedAt_expr: Timestamp_Expr
+  """
+  ✨ `_time` server value variant of `updatedAt` (✨ Generated from Field `UserNote`.`updatedAt` of type `Timestamp!`)
+  """
+  updatedAt_time: Timestamp_Relative
+  """
+  ✨ `_update` server value variant of `updatedAt` (✨ Generated from Field `UserNote`.`updatedAt` of type `Timestamp!`)
+  """
+  updatedAt_update: [Timestamp_Update!]
+}
+"""
+✨ Generated filter input type for table 'UserNote'. This input allows filtering objects using various conditions. Use `_or`, `_and`, and `_not` to compose complex filters.
+"""
+input UserNote_Filter {
+  """
+  Apply multiple filter conditions using `AND` logic.
+  """
+  _and: [UserNote_Filter!]
+  """
+  Negate the result of the provided filter condition.
+  """
+  _not: UserNote_Filter
+  """
+  Apply multiple filter conditions using `OR` logic.
+  """
+  _or: [UserNote_Filter!]
+  """
+  ✨ Generated from Field `UserNote`.`id` of type `UUID!`
+  """
+  id: UUID_Filter
+  """
+  ✨ Generated from Field `UserNote`.`studyResourceId` of type `UUID!`
+  """
+  studyResourceId: UUID_Filter
+  """
+  ✨ Generated from Field `UserNote`.`userId` of type `UUID!`
+  """
+  userId: UUID_Filter
+  """
+  ✨ Generated from Field `UserNote`.`studyResource` of type `StudyResource!`
+  """
+  studyResource: StudyResource_Filter
+  """
+  ✨ Generated from Field `UserNote`.`user` of type `User!`
+  """
+  user: User_Filter
+  """
+  ✨ Generated from Field `UserNote`.`content` of type `String!`
+  """
+  content: String_Filter
+  """
+  ✨ Generated from Field `UserNote`.`createdAt` of type `Timestamp!`
+  """
+  createdAt: Timestamp_Filter
+  """
+  ✨ Generated from Field `UserNote`.`updatedAt` of type `Timestamp!`
+  """
+  updatedAt: Timestamp_Filter
+}
+"""
+✨ Generated first-row input type for table 'UserNote'. This input selects the first row matching the filter criteria, ordered according to the specified conditions.
+"""
+input UserNote_FirstRow {
+  """
+  Order the result by the specified fields.
+  """
+  orderBy: [UserNote_Order!]
+  """
+  Filters rows based on the specified conditions.
+  """
+  where: UserNote_Filter
+}
+"""
+✨ Generated having input type for table 'UserNote'. This input allows you to filter groups during aggregate queries using various conditions. Use `_or`, `_and`, and `_not` to compose complex filters.
+"""
+input UserNote_Having {
+  """
+  Apply multiple Having conditions using `AND` logic.
+  """
+  _and: [UserNote_Having!]
+  """
+  Whether to apply DISTINCT to the aggregate function.
+  """
+  _distinct: Boolean
+  """
+  Negate the result of the provided Having condition.
+  """
+  _not: UserNote_Having
+  """
+  Apply multiple Having conditions using `OR` logic.
+  """
+  _or: [UserNote_Having!]
+  """
+  ✨ Generated from Field `UserNote`.`_count` of type `Int!`
+  """
+  _count: Int_Filter
+  """
+  ✨ Generated from Field `UserNote`.`content_count` of type `Int!`
+  """
+  content_count: Int_Filter
+  """
+  ✨ Generated from Field `UserNote`.`createdAt_count` of type `Int!`
+  """
+  createdAt_count: Int_Filter
+  """
+  ✨ Generated from Field `UserNote`.`id_count` of type `Int!`
+  """
+  id_count: Int_Filter
+  """
+  ✨ Generated from Field `UserNote`.`studyResourceId_count` of type `Int!`
+  """
+  studyResourceId_count: Int_Filter
+  """
+  ✨ Generated from Field `UserNote`.`updatedAt_count` of type `Int!`
+  """
+  updatedAt_count: Int_Filter
+  """
+  ✨ Generated from Field `UserNote`.`userId_count` of type `Int!`
+  """
+  userId_count: Int_Filter
+  """
+  ✨ Generated from Field `UserNote`.`createdAt_min` of type `Timestamp`
+  """
+  createdAt_min: Timestamp_Filter
+  """
+  ✨ Generated from Field `UserNote`.`updatedAt_min` of type `Timestamp`
+  """
+  updatedAt_min: Timestamp_Filter
+  """
+  ✨ Generated from Field `UserNote`.`createdAt_max` of type `Timestamp`
+  """
+  createdAt_max: Timestamp_Filter
+  """
+  ✨ Generated from Field `UserNote`.`updatedAt_max` of type `Timestamp`
+  """
+  updatedAt_max: Timestamp_Filter
+}
+"""
+✨ Generated key input type for table 'UserNote'. It represents the primary key fields used to uniquely identify a row in the table.
+"""
+input UserNote_Key {
+  """
+  ✨ Generated from Field `UserNote`.`id` of type `UUID!`
+  """
+  id: UUID
+  """
+  ✨ `_expr` server value variant of `id` (✨ Generated from Field `UserNote`.`id` of type `UUID!`)
+  """
+  id_expr: UUID_Expr
+}
+"""
+✨ Generated list filter input type for table 'UserNote'. This input applies filtering logic based on the count or existence of related objects that matches certain criteria.
+"""
+input UserNote_ListFilter {
+  """
+  The desired number of objects that match the condition (defaults to at least one).
+  """
+  count: Int_Filter = {gt:0}
+  """
+  Condition of the related objects to filter for.
+  """
+  exist: UserNote_Filter
+}
+"""
+✨ Generated order input type for table 'UserNote'. This input defines the sorting order of rows in query results based on one or more fields.
+"""
+input UserNote_Order {
+  """
+  ✨ Generated from Field `UserNote`.`id` of type `UUID!`
+  """
+  id: OrderDirection
+  """
+  ✨ Generated from Field `UserNote`.`studyResourceId` of type `UUID!`
+  """
+  studyResourceId: OrderDirection
+  """
+  ✨ Generated from Field `UserNote`.`userId` of type `UUID!`
+  """
+  userId: OrderDirection
+  """
+  ✨ Generated from Field `UserNote`.`studyResource` of type `StudyResource!`
+  """
+  studyResource: StudyResource_Order
+  """
+  ✨ Generated from Field `UserNote`.`user` of type `User!`
+  """
+  user: User_Order
+  """
+  ✨ Generated from Field `UserNote`.`content` of type `String!`
+  """
+  content: OrderDirection
+  """
+  ✨ Generated from Field `UserNote`.`createdAt` of type `Timestamp!`
+  """
+  createdAt: OrderDirection
+  """
+  ✨ Generated from Field `UserNote`.`updatedAt` of type `Timestamp!`
+  """
+  updatedAt: OrderDirection
+  """
+  ✨ Generated from Field `UserNote`.`_count` of type `Int!`
+  """
+  _count: OrderDirection
+  """
+  ✨ Generated from Field `UserNote`.`content_count` of type `Int!`
+  """
+  content_count: OrderDirection
+  """
+  ✨ Generated from Field `UserNote`.`createdAt_count` of type `Int!`
+  """
+  createdAt_count: OrderDirection
+  """
+  ✨ Generated from Field `UserNote`.`id_count` of type `Int!`
+  """
+  id_count: OrderDirection
+  """
+  ✨ Generated from Field `UserNote`.`studyResourceId_count` of type `Int!`
+  """
+  studyResourceId_count: OrderDirection
+  """
+  ✨ Generated from Field `UserNote`.`updatedAt_count` of type `Int!`
+  """
+  updatedAt_count: OrderDirection
+  """
+  ✨ Generated from Field `UserNote`.`userId_count` of type `Int!`
+  """
+  userId_count: OrderDirection
+  """
+  ✨ Generated from Field `UserNote`.`createdAt_min` of type `Timestamp`
+  """
+  createdAt_min: OrderDirection
+  """
+  ✨ Generated from Field `UserNote`.`updatedAt_min` of type `Timestamp`
+  """
+  updatedAt_min: OrderDirection
+  """
+  ✨ Generated from Field `UserNote`.`createdAt_max` of type `Timestamp`
+  """
+  createdAt_max: OrderDirection
+  """
+  ✨ Generated from Field `UserNote`.`updatedAt_max` of type `Timestamp`
+  """
+  updatedAt_max: OrderDirection
+}
+"""
+✨ Generated data input type for table 'UserProgress'. It includes all necessary fields for creating or upserting rows into table.
+"""
+input UserProgress_Data {
+  """
+  ✨ Generated from Field `UserProgress`.`userId` of type `UUID!`
+  """
+  userId: UUID
+  """
+  ✨ `_expr` server value variant of `userId` (✨ Generated from Field `UserProgress`.`userId` of type `UUID!`)
+  """
+  userId_expr: UUID_Expr
+  """
+  ✨ Generated from Field `UserProgress`.`studyResourceId` of type `UUID!`
+  """
+  studyResourceId: UUID
+  """
+  ✨ `_expr` server value variant of `studyResourceId` (✨ Generated from Field `UserProgress`.`studyResourceId` of type `UUID!`)
+  """
+  studyResourceId_expr: UUID_Expr
+  """
+  ✨ Generated from Field `UserProgress`.`studyResource` of type `StudyResource!`
+  """
+  studyResource: StudyResource_Key
+  """
+  ✨ Generated from Field `UserProgress`.`user` of type `User!`
+  """
+  user: User_Key
+  """
+  ✨ Generated from Field `UserProgress`.`completionDate` of type `Timestamp`
+  """
+  completionDate: Timestamp
+  """
+  ✨ `_expr` server value variant of `completionDate` (✨ Generated from Field `UserProgress`.`completionDate` of type `Timestamp`)
+  """
+  completionDate_expr: Timestamp_Expr
+  """
+  ✨ `_time` server value variant of `completionDate` (✨ Generated from Field `UserProgress`.`completionDate` of type `Timestamp`)
+  """
+  completionDate_time: Timestamp_Relative
+  """
+  ✨ `_update` server value variant of `completionDate` (✨ Generated from Field `UserProgress`.`completionDate` of type `Timestamp`)
+  """
+  completionDate_update: [Timestamp_Update!]
+  """
+  ✨ Generated from Field `UserProgress`.`lastAccessedAt` of type `Timestamp!`
+  """
+  lastAccessedAt: Timestamp
+  """
+  ✨ `_expr` server value variant of `lastAccessedAt` (✨ Generated from Field `UserProgress`.`lastAccessedAt` of type `Timestamp!`)
+  """
+  lastAccessedAt_expr: Timestamp_Expr
+  """
+  ✨ `_time` server value variant of `lastAccessedAt` (✨ Generated from Field `UserProgress`.`lastAccessedAt` of type `Timestamp!`)
+  """
+  lastAccessedAt_time: Timestamp_Relative
+  """
+  ✨ `_update` server value variant of `lastAccessedAt` (✨ Generated from Field `UserProgress`.`lastAccessedAt` of type `Timestamp!`)
+  """
+  lastAccessedAt_update: [Timestamp_Update!]
+  """
+  ✨ Generated from Field `UserProgress`.`status` of type `String!`
+  """
+  status: String
+  """
+  ✨ `_expr` server value variant of `status` (✨ Generated from Field `UserProgress`.`status` of type `String!`)
+  """
+  status_expr: String_Expr
+}
+"""
+✨ Generated filter input type for table 'UserProgress'. This input allows filtering objects using various conditions. Use `_or`, `_and`, and `_not` to compose complex filters.
+"""
+input UserProgress_Filter {
+  """
+  Apply multiple filter conditions using `AND` logic.
+  """
+  _and: [UserProgress_Filter!]
+  """
+  Negate the result of the provided filter condition.
+  """
+  _not: UserProgress_Filter
+  """
+  Apply multiple filter conditions using `OR` logic.
+  """
+  _or: [UserProgress_Filter!]
+  """
+  ✨ Generated from Field `UserProgress`.`userId` of type `UUID!`
+  """
+  userId: UUID_Filter
+  """
+  ✨ Generated from Field `UserProgress`.`studyResourceId` of type `UUID!`
+  """
+  studyResourceId: UUID_Filter
+  """
+  ✨ Generated from Field `UserProgress`.`studyResource` of type `StudyResource!`
+  """
+  studyResource: StudyResource_Filter
+  """
+  ✨ Generated from Field `UserProgress`.`user` of type `User!`
+  """
+  user: User_Filter
+  """
+  ✨ Generated from Field `UserProgress`.`completionDate` of type `Timestamp`
+  """
+  completionDate: Timestamp_Filter
+  """
+  ✨ Generated from Field `UserProgress`.`lastAccessedAt` of type `Timestamp!`
+  """
+  lastAccessedAt: Timestamp_Filter
+  """
+  ✨ Generated from Field `UserProgress`.`status` of type `String!`
+  """
+  status: String_Filter
+}
+"""
+✨ Generated first-row input type for table 'UserProgress'. This input selects the first row matching the filter criteria, ordered according to the specified conditions.
+"""
+input UserProgress_FirstRow {
+  """
+  Order the result by the specified fields.
+  """
+  orderBy: [UserProgress_Order!]
+  """
+  Filters rows based on the specified conditions.
+  """
+  where: UserProgress_Filter
+}
+"""
+✨ Generated having input type for table 'UserProgress'. This input allows you to filter groups during aggregate queries using various conditions. Use `_or`, `_and`, and `_not` to compose complex filters.
+"""
+input UserProgress_Having {
+  """
+  Apply multiple Having conditions using `AND` logic.
+  """
+  _and: [UserProgress_Having!]
+  """
+  Whether to apply DISTINCT to the aggregate function.
+  """
+  _distinct: Boolean
+  """
+  Negate the result of the provided Having condition.
+  """
+  _not: UserProgress_Having
+  """
+  Apply multiple Having conditions using `OR` logic.
+  """
+  _or: [UserProgress_Having!]
+  """
+  ✨ Generated from Field `UserProgress`.`_count` of type `Int!`
+  """
+  _count: Int_Filter
+  """
+  ✨ Generated from Field `UserProgress`.`completionDate_count` of type `Int!`
+  """
+  completionDate_count: Int_Filter
+  """
+  ✨ Generated from Field `UserProgress`.`lastAccessedAt_count` of type `Int!`
+  """
+  lastAccessedAt_count: Int_Filter
+  """
+  ✨ Generated from Field `UserProgress`.`status_count` of type `Int!`
+  """
+  status_count: Int_Filter
+  """
+  ✨ Generated from Field `UserProgress`.`studyResourceId_count` of type `Int!`
+  """
+  studyResourceId_count: Int_Filter
+  """
+  ✨ Generated from Field `UserProgress`.`userId_count` of type `Int!`
+  """
+  userId_count: Int_Filter
+  """
+  ✨ Generated from Field `UserProgress`.`completionDate_min` of type `Timestamp`
+  """
+  completionDate_min: Timestamp_Filter
+  """
+  ✨ Generated from Field `UserProgress`.`lastAccessedAt_min` of type `Timestamp`
+  """
+  lastAccessedAt_min: Timestamp_Filter
+  """
+  ✨ Generated from Field `UserProgress`.`completionDate_max` of type `Timestamp`
+  """
+  completionDate_max: Timestamp_Filter
+  """
+  ✨ Generated from Field `UserProgress`.`lastAccessedAt_max` of type `Timestamp`
+  """
+  lastAccessedAt_max: Timestamp_Filter
+}
+"""
+✨ Generated key input type for table 'UserProgress'. It represents the primary key fields used to uniquely identify a row in the table.
+"""
+input UserProgress_Key {
+  """
+  ✨ Generated from Field `UserProgress`.`userId` of type `UUID!`
+  """
+  userId: UUID
+  """
+  ✨ `_expr` server value variant of `userId` (✨ Generated from Field `UserProgress`.`userId` of type `UUID!`)
+  """
+  userId_expr: UUID_Expr
+  """
+  ✨ Generated from Field `UserProgress`.`studyResourceId` of type `UUID!`
+  """
+  studyResourceId: UUID
+  """
+  ✨ `_expr` server value variant of `studyResourceId` (✨ Generated from Field `UserProgress`.`studyResourceId` of type `UUID!`)
+  """
+  studyResourceId_expr: UUID_Expr
+}
+"""
+✨ Generated list filter input type for table 'UserProgress'. This input applies filtering logic based on the count or existence of related objects that matches certain criteria.
+"""
+input UserProgress_ListFilter {
+  """
+  The desired number of objects that match the condition (defaults to at least one).
+  """
+  count: Int_Filter = {gt:0}
+  """
+  Condition of the related objects to filter for.
+  """
+  exist: UserProgress_Filter
+}
+"""
+✨ Generated order input type for table 'UserProgress'. This input defines the sorting order of rows in query results based on one or more fields.
+"""
+input UserProgress_Order {
+  """
+  ✨ Generated from Field `UserProgress`.`userId` of type `UUID!`
+  """
+  userId: OrderDirection
+  """
+  ✨ Generated from Field `UserProgress`.`studyResourceId` of type `UUID!`
+  """
+  studyResourceId: OrderDirection
+  """
+  ✨ Generated from Field `UserProgress`.`studyResource` of type `StudyResource!`
+  """
+  studyResource: StudyResource_Order
+  """
+  ✨ Generated from Field `UserProgress`.`user` of type `User!`
+  """
+  user: User_Order
+  """
+  ✨ Generated from Field `UserProgress`.`completionDate` of type `Timestamp`
+  """
+  completionDate: OrderDirection
+  """
+  ✨ Generated from Field `UserProgress`.`lastAccessedAt` of type `Timestamp!`
+  """
+  lastAccessedAt: OrderDirection
+  """
+  ✨ Generated from Field `UserProgress`.`status` of type `String!`
+  """
+  status: OrderDirection
+  """
+  ✨ Generated from Field `UserProgress`.`_count` of type `Int!`
+  """
+  _count: OrderDirection
+  """
+  ✨ Generated from Field `UserProgress`.`completionDate_count` of type `Int!`
+  """
+  completionDate_count: OrderDirection
+  """
+  ✨ Generated from Field `UserProgress`.`lastAccessedAt_count` of type `Int!`
+  """
+  lastAccessedAt_count: OrderDirection
+  """
+  ✨ Generated from Field `UserProgress`.`status_count` of type `Int!`
+  """
+  status_count: OrderDirection
+  """
+  ✨ Generated from Field `UserProgress`.`studyResourceId_count` of type `Int!`
+  """
+  studyResourceId_count: OrderDirection
+  """
+  ✨ Generated from Field `UserProgress`.`userId_count` of type `Int!`
+  """
+  userId_count: OrderDirection
+  """
+  ✨ Generated from Field `UserProgress`.`completionDate_min` of type `Timestamp`
+  """
+  completionDate_min: OrderDirection
+  """
+  ✨ Generated from Field `UserProgress`.`lastAccessedAt_min` of type `Timestamp`
+  """
+  lastAccessedAt_min: OrderDirection
+  """
+  ✨ Generated from Field `UserProgress`.`completionDate_max` of type `Timestamp`
+  """
+  completionDate_max: OrderDirection
+  """
+  ✨ Generated from Field `UserProgress`.`lastAccessedAt_max` of type `Timestamp`
+  """
+  lastAccessedAt_max: OrderDirection
+}

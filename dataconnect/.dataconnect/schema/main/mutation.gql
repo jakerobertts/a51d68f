@@ -1,0 +1,654 @@
+extend type Mutation {
+  """
+  ✨ Insert a single `StudyPlan` into the table and return its key. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  studyPlan_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: StudyPlan_Data!
+  ): StudyPlan_KeyOutput! @fdc_generated(from: "StudyPlan", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `StudyPlanItem` into the table and return its key. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  studyPlanItem_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: StudyPlanItem_Data!
+  ): StudyPlanItem_KeyOutput! @fdc_generated(from: "StudyPlanItem", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `StudyResource` into the table and return its key. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  studyResource_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: StudyResource_Data!
+  ): StudyResource_KeyOutput! @fdc_generated(from: "StudyResource", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `User` into the table and return its key. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  user_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: User_Data!
+  ): User_KeyOutput! @fdc_generated(from: "User", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `UserNote` into the table and return its key. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  userNote_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: UserNote_Data!
+  ): UserNote_KeyOutput! @fdc_generated(from: "UserNote", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `UserProgress` into the table and return its key. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  userProgress_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: UserProgress_Data!
+  ): UserProgress_KeyOutput! @fdc_generated(from: "UserProgress", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert `StudyPlan` objects into the table and return their keys. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  studyPlan_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [StudyPlan_Data!]!
+  ): [StudyPlan_KeyOutput!]! @fdc_generated(from: "StudyPlan", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `StudyPlanItem` objects into the table and return their keys. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  studyPlanItem_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [StudyPlanItem_Data!]!
+  ): [StudyPlanItem_KeyOutput!]! @fdc_generated(from: "StudyPlanItem", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `StudyResource` objects into the table and return their keys. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  studyResource_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [StudyResource_Data!]!
+  ): [StudyResource_KeyOutput!]! @fdc_generated(from: "StudyResource", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `User` objects into the table and return their keys. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  user_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [User_Data!]!
+  ): [User_KeyOutput!]! @fdc_generated(from: "User", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `UserNote` objects into the table and return their keys. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  userNote_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [UserNote_Data!]!
+  ): [UserNote_KeyOutput!]! @fdc_generated(from: "UserNote", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `UserProgress` objects into the table and return their keys. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  userProgress_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [UserProgress_Data!]!
+  ): [UserProgress_KeyOutput!]! @fdc_generated(from: "UserProgress", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert or update a single `StudyPlan` into the table, based on the primary key. Returns the key of the newly inserted or existing updated `StudyPlan`.
+  """
+  studyPlan_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: StudyPlan_Data!
+  ): StudyPlan_KeyOutput! @fdc_generated(from: "StudyPlan", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `StudyPlanItem` into the table, based on the primary key. Returns the key of the newly inserted or existing updated `StudyPlanItem`.
+  """
+  studyPlanItem_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: StudyPlanItem_Data!
+  ): StudyPlanItem_KeyOutput! @fdc_generated(from: "StudyPlanItem", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `StudyResource` into the table, based on the primary key. Returns the key of the newly inserted or existing updated `StudyResource`.
+  """
+  studyResource_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: StudyResource_Data!
+  ): StudyResource_KeyOutput! @fdc_generated(from: "StudyResource", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `User` into the table, based on the primary key. Returns the key of the newly inserted or existing updated `User`.
+  """
+  user_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: User_Data!
+  ): User_KeyOutput! @fdc_generated(from: "User", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `UserNote` into the table, based on the primary key. Returns the key of the newly inserted or existing updated `UserNote`.
+  """
+  userNote_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: UserNote_Data!
+  ): UserNote_KeyOutput! @fdc_generated(from: "UserNote", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `UserProgress` into the table, based on the primary key. Returns the key of the newly inserted or existing updated `UserProgress`.
+  """
+  userProgress_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: UserProgress_Data!
+  ): UserProgress_KeyOutput! @fdc_generated(from: "UserProgress", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update `StudyPlan` objects into the table, based on the primary key. Returns the key of the newly inserted or existing updated `StudyPlan`.
+  """
+  studyPlan_upsertMany(
+    """
+    List of data objects to insert or update if it already exists.
+    """
+    data: [StudyPlan_Data!]!
+  ): [StudyPlan_KeyOutput!]! @fdc_generated(from: "StudyPlan", purpose: UPSERT_MULTIPLE)
+  """
+  ✨ Insert or update `StudyPlanItem` objects into the table, based on the primary key. Returns the key of the newly inserted or existing updated `StudyPlanItem`.
+  """
+  studyPlanItem_upsertMany(
+    """
+    List of data objects to insert or update if it already exists.
+    """
+    data: [StudyPlanItem_Data!]!
+  ): [StudyPlanItem_KeyOutput!]! @fdc_generated(from: "StudyPlanItem", purpose: UPSERT_MULTIPLE)
+  """
+  ✨ Insert or update `StudyResource` objects into the table, based on the primary key. Returns the key of the newly inserted or existing updated `StudyResource`.
+  """
+  studyResource_upsertMany(
+    """
+    List of data objects to insert or update if it already exists.
+    """
+    data: [StudyResource_Data!]!
+  ): [StudyResource_KeyOutput!]! @fdc_generated(from: "StudyResource", purpose: UPSERT_MULTIPLE)
+  """
+  ✨ Insert or update `User` objects into the table, based on the primary key. Returns the key of the newly inserted or existing updated `User`.
+  """
+  user_upsertMany(
+    """
+    List of data objects to insert or update if it already exists.
+    """
+    data: [User_Data!]!
+  ): [User_KeyOutput!]! @fdc_generated(from: "User", purpose: UPSERT_MULTIPLE)
+  """
+  ✨ Insert or update `UserNote` objects into the table, based on the primary key. Returns the key of the newly inserted or existing updated `UserNote`.
+  """
+  userNote_upsertMany(
+    """
+    List of data objects to insert or update if it already exists.
+    """
+    data: [UserNote_Data!]!
+  ): [UserNote_KeyOutput!]! @fdc_generated(from: "UserNote", purpose: UPSERT_MULTIPLE)
+  """
+  ✨ Insert or update `UserProgress` objects into the table, based on the primary key. Returns the key of the newly inserted or existing updated `UserProgress`.
+  """
+  userProgress_upsertMany(
+    """
+    List of data objects to insert or update if it already exists.
+    """
+    data: [UserProgress_Data!]!
+  ): [UserProgress_KeyOutput!]! @fdc_generated(from: "UserProgress", purpose: UPSERT_MULTIPLE)
+  """
+  ✨ Update a single `StudyPlan` based on `id`, `key` or `first`, setting columns specified in `data`. Returns the key of the updated `StudyPlan` or `null` if not found.
+  """
+  studyPlan_update(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: StudyPlan_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: StudyPlan_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: StudyPlan_Data!
+  ): StudyPlan_KeyOutput @fdc_generated(from: "StudyPlan", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `StudyPlanItem` based on `id`, `key` or `first`, setting columns specified in `data`. Returns the key of the updated `StudyPlanItem` or `null` if not found.
+  """
+  studyPlanItem_update(
+    """
+    The key used to identify the object.
+    """
+    key: StudyPlanItem_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: StudyPlanItem_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: StudyPlanItem_Data!
+  ): StudyPlanItem_KeyOutput @fdc_generated(from: "StudyPlanItem", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `StudyResource` based on `id`, `key` or `first`, setting columns specified in `data`. Returns the key of the updated `StudyResource` or `null` if not found.
+  """
+  studyResource_update(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: StudyResource_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: StudyResource_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: StudyResource_Data!
+  ): StudyResource_KeyOutput @fdc_generated(from: "StudyResource", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `User` based on `id`, `key` or `first`, setting columns specified in `data`. Returns the key of the updated `User` or `null` if not found.
+  """
+  user_update(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: User_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: User_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: User_Data!
+  ): User_KeyOutput @fdc_generated(from: "User", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `UserNote` based on `id`, `key` or `first`, setting columns specified in `data`. Returns the key of the updated `UserNote` or `null` if not found.
+  """
+  userNote_update(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: UserNote_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: UserNote_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: UserNote_Data!
+  ): UserNote_KeyOutput @fdc_generated(from: "UserNote", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `UserProgress` based on `id`, `key` or `first`, setting columns specified in `data`. Returns the key of the updated `UserProgress` or `null` if not found.
+  """
+  userProgress_update(
+    """
+    The key used to identify the object.
+    """
+    key: UserProgress_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: UserProgress_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: UserProgress_Data!
+  ): UserProgress_KeyOutput @fdc_generated(from: "UserProgress", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update `StudyPlan` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  studyPlan_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: StudyPlan_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: StudyPlan_Data!
+  ): Int! @fdc_generated(from: "StudyPlan", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `StudyPlanItem` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  studyPlanItem_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: StudyPlanItem_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: StudyPlanItem_Data!
+  ): Int! @fdc_generated(from: "StudyPlanItem", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `StudyResource` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  studyResource_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: StudyResource_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: StudyResource_Data!
+  ): Int! @fdc_generated(from: "StudyResource", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `User` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  user_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: User_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: User_Data!
+  ): Int! @fdc_generated(from: "User", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `UserNote` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  userNote_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: UserNote_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: UserNote_Data!
+  ): Int! @fdc_generated(from: "UserNote", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `UserProgress` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  userProgress_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: UserProgress_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: UserProgress_Data!
+  ): Int! @fdc_generated(from: "UserProgress", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Delete a single `StudyPlan` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  studyPlan_delete(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: StudyPlan_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: StudyPlan_FirstRow
+  ): StudyPlan_KeyOutput @fdc_generated(from: "StudyPlan", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `StudyPlanItem` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  studyPlanItem_delete(
+    """
+    The key used to identify the object.
+    """
+    key: StudyPlanItem_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: StudyPlanItem_FirstRow
+  ): StudyPlanItem_KeyOutput @fdc_generated(from: "StudyPlanItem", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `StudyResource` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  studyResource_delete(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: StudyResource_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: StudyResource_FirstRow
+  ): StudyResource_KeyOutput @fdc_generated(from: "StudyResource", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `User` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  user_delete(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: User_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: User_FirstRow
+  ): User_KeyOutput @fdc_generated(from: "User", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `UserNote` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  userNote_delete(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: UserNote_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: UserNote_FirstRow
+  ): UserNote_KeyOutput @fdc_generated(from: "UserNote", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `UserProgress` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  userProgress_delete(
+    """
+    The key used to identify the object.
+    """
+    key: UserProgress_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: UserProgress_FirstRow
+  ): UserProgress_KeyOutput @fdc_generated(from: "UserProgress", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete `StudyPlan` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  studyPlan_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: StudyPlan_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "StudyPlan", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `StudyPlanItem` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  studyPlanItem_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: StudyPlanItem_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "StudyPlanItem", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `StudyResource` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  studyResource_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: StudyResource_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "StudyResource", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `User` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  user_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: User_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "User", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `UserNote` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  userNote_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: UserNote_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "UserNote", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `UserProgress` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  userProgress_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: UserProgress_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "UserProgress", purpose: DELETE_MULTIPLE)
+}

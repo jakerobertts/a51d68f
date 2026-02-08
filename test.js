@@ -19,15 +19,14 @@ function initializeIndividualMC() {
   const radioGroups = getUniqueRadioGroups();
   totalMCQuestions = radioGroups.length;
 
-  // Update total display
   const totalElement = document.getElementById("total");
   if (totalElement) {
     totalElement.textContent = totalMCQuestions;
   }
 
-  // Add submit button for each question group
   radioGroups.forEach((groupName) => {
     addSubmitButtonToGroup(groupName);
+    addReviewLaterButton(groupName); // Add this line
   });
 }
 
@@ -624,3 +623,80 @@ function debugStorage() {
 
 // Call this in console to debug: debugStorage()
 window.debugStorage = debugStorage;
+
+function addReviewLaterButton(groupName) {
+  const submitButton = document.querySelector(`.mc-submit-btn[data-group="${groupName}"]`);
+  if (!submitButton) return;
+
+  const reviewButton = document.createElement("button");
+  reviewButton.textContent = "Review Later";
+  reviewButton.className = "review-later-btn";
+  reviewButton.setAttribute("data-group", groupName);
+  reviewButton.style.cssText = `
+    background:rgb(7, 214, 255);
+    color: #212529;
+    border: 1px solidrgb(0, 0, 0);
+    padding: 6px 12px;
+    font-size: 12px;
+    font-family: Verdana, sans-serif;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 8px 5px;
+    display: inline-block;
+    transition: background 0.3s ease;
+  `;
+
+  reviewButton.addEventListener("click", function() {
+    markForReview(groupName);
+  });
+
+  submitButton.parentNode.insertBefore(reviewButton, submitButton.nextSibling);
+}
+
+function markForReview(groupName) {
+  const pageId = PAGE_ID;
+  const key = `reviewLater_${pageId}`;
+  let reviewList = JSON.parse(localStorage.getItem(key) || "[]");
+  
+  const questionData = {
+    groupName: groupName,
+    questionText: getQuestionText(groupName),
+    timestamp: Date.now(),
+    pageId: pageId
+  };
+  
+  // Check if already in review list
+  const existingIndex = reviewList.findIndex(item => item.groupName === groupName);
+  if (existingIndex === -1) {
+    reviewList.push(questionData);
+    localStorage.setItem(key, JSON.stringify(reviewList));
+    
+    // Visual feedback
+    const reviewButton = document.querySelector(`.review-later-btn[data-group="${groupName}"]`);
+    if (reviewButton) {
+      reviewButton.textContent = "Added to Review ✓";
+      reviewButton.style.background = "#28a745";
+      reviewButton.style.color = "white";
+      reviewButton.disabled = true;
+    }
+    
+    console.log(`Question ${groupName} marked for review later`);
+  }
+}
+
+function getQuestionText(groupName) {
+  const firstRadio = document.querySelector(`input[type="radio"][name="${groupName}"]`);
+  if (!firstRadio) return "Question not found";
+  
+  // Look for question text before the radio buttons
+  let currentElement = firstRadio.parentElement;
+  while (currentElement && currentElement !== document.body) {
+    const prevElement = currentElement.previousElementSibling;
+    if (prevElement && prevElement.textContent.trim()) {
+      return prevElement.textContent.trim();
+    }
+    currentElement = currentElement.parentElement;
+  }
+  
+  return `Question ${groupName}`;
+}

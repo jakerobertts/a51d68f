@@ -1,0 +1,56 @@
+extend type StudyPlan {
+  """
+  ✨ Implicit primary key field. It's a UUID column default to a generated new value. See `@table` for how to customize it.
+  """
+  id: UUID! @default(expr: "uuidV4()") @fdc_generated(from: "StudyPlan", purpose: IMPLICIT_KEY_FIELD)
+  """
+  ✨ Implicit foreign key field based on `StudyPlan`.`user`. It must match the value of `User`.`id`. See `@ref` for how to customize it.
+  """
+  userId: UUID! @fdc_generated(from: "StudyPlan.user", purpose: IMPLICIT_REF_FIELD)
+}
+extend type StudyPlanItem {
+  """
+  ✨ Implicit foreign key field based on `StudyPlanItem`.`studyPlan`. It must match the value of `StudyPlan`.`id`. See `@ref` for how to customize it.
+  """
+  studyPlanId: UUID! @fdc_generated(from: "StudyPlanItem.studyPlan", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `StudyPlanItem`.`studyResource`. It must match the value of `StudyResource`.`id`. See `@ref` for how to customize it.
+  """
+  studyResourceId: UUID! @fdc_generated(from: "StudyPlanItem.studyResource", purpose: IMPLICIT_REF_FIELD)
+}
+extend type StudyResource {
+  """
+  ✨ Implicit primary key field. It's a UUID column default to a generated new value. See `@table` for how to customize it.
+  """
+  id: UUID! @default(expr: "uuidV4()") @fdc_generated(from: "StudyResource", purpose: IMPLICIT_KEY_FIELD)
+}
+extend type User {
+  """
+  ✨ Implicit primary key field. It's a UUID column default to a generated new value. See `@table` for how to customize it.
+  """
+  id: UUID! @default(expr: "uuidV4()") @fdc_generated(from: "User", purpose: IMPLICIT_KEY_FIELD)
+}
+extend type UserNote {
+  """
+  ✨ Implicit primary key field. It's a UUID column default to a generated new value. See `@table` for how to customize it.
+  """
+  id: UUID! @default(expr: "uuidV4()") @fdc_generated(from: "UserNote", purpose: IMPLICIT_KEY_FIELD)
+  """
+  ✨ Implicit foreign key field based on `UserNote`.`studyResource`. It must match the value of `StudyResource`.`id`. See `@ref` for how to customize it.
+  """
+  studyResourceId: UUID! @fdc_generated(from: "UserNote.studyResource", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `UserNote`.`user`. It must match the value of `User`.`id`. See `@ref` for how to customize it.
+  """
+  userId: UUID! @fdc_generated(from: "UserNote.user", purpose: IMPLICIT_REF_FIELD)
+}
+extend type UserProgress {
+  """
+  ✨ Implicit foreign key field based on `UserProgress`.`user`. It must match the value of `User`.`id`. See `@ref` for how to customize it.
+  """
+  userId: UUID! @fdc_generated(from: "UserProgress.user", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `UserProgress`.`studyResource`. It must match the value of `StudyResource`.`id`. See `@ref` for how to customize it.
+  """
+  studyResourceId: UUID! @fdc_generated(from: "UserProgress.studyResource", purpose: IMPLICIT_REF_FIELD)
+}

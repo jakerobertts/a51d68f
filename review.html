@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Review Later - MCAT Practice</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Questions Marked for Review</h1>
+    <div id="review-container"></div>
+    <button id="clear-all-reviews">Clear All Reviews</button>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        loadAllReviews();
+      });
+
+      function loadAllReviews() {
+        const container = document.getElementById("review-container");
+        const allReviews = [];
+
+        // Collect reviews from all pages
+        for (let i = 0; i < localStorage.length; i++) {
+          const key = localStorage.key(i);
+          if (key.startsWith("reviewLater_")) {
+            const pageId = key.replace("reviewLater_", "");
+            const reviews = JSON.parse(localStorage.getItem(key) || "[]");
+            reviews.forEach((review) => {
+              review.pageId = pageId;
+              allReviews.push(review);
+            });
+          }
+        }
+
+        if (allReviews.length === 0) {
+          container.innerHTML = "<p>No questions marked for review.</p>";
+          return;
+        }
+
+        // Group by page
+        const groupedReviews = {};
+        allReviews.forEach((review) => {
+          if (!groupedReviews[review.pageId]) {
+            groupedReviews[review.pageId] = [];
+          }
+          groupedReviews[review.pageId].push(review);
+        });
+
+        // Display reviews
+        for (const [pageId, reviews] of Object.entries(groupedReviews)) {
+          const pageSection = document.createElement("div");
+          pageSection.innerHTML = `<h2>${pageId}</h2>`;
+
+          reviews.forEach((review) => {
+            const reviewItem = document.createElement("div");
+            reviewItem.style.cssText = `
+                      border: 1px solid #ddd;
+                      padding: 10px;
+                      margin: 10px 0;
+                      border-radius: 5px;
+                  `;
+
+            reviewItem.innerHTML = `
+                      <p><strong>Question:</strong> ${review.questionText}</p>
+                      <p><strong>Added:</strong> ${new Date(
+                        review.timestamp
+                      ).toLocaleString()}</p>
+                      <button onclick="goToQuestion('${pageId}', '${
+              review.groupName
+            }')">Go to Question</button>
+                      <button onclick="removeFromReview('${pageId}', '${
+              review.groupName
+            }')">Remove from Review</button>
+                  `;
+
+            pageSection.appendChild(reviewItem);
+          });
+
+          container.appendChild(pageSection);
+        }
+      }
+
+      function goToQuestion(pageId, groupName) {
+        window.location.href = `${pageId}.html#${groupName}`;
+      }
+
+      function removeFromReview(pageId, groupName) {
+        const key = `reviewLater_${pageId}`;
+        let reviews = JSON.parse(localStorage.getItem(key) || "[]");
+        reviews = reviews.filter((review) => review.groupName !== groupName);
+        localStorage.setItem(key, JSON.stringify(reviews));
+        loadAllReviews(); // Refresh display
+      }
+
+      document
+        .getElementById("clear-all-reviews")
+        .addEventListener("click", function () {
+          if (confirm("Clear all review items?")) {
+            for (let i = localStorage.length - 1; i >= 0; i--) {
+              const key = localStorage.key(i);
+              if (key.startsWith("reviewLater_")) {
+                localStorage.removeItem(key);
+              }
+            }
+            loadAllReviews();
+          }
+        });
+    </script>
+  </body>
+</html>
