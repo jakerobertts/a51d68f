@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <script
@@ -78,7 +78,9 @@
         font-weight: 600;
         font-size: 0.95rem;
         box-shadow: 0 2px 8px rgba(60, 72, 100, 0.1);
-        transition: background 0.2s, box-shadow 0.2s;
+        transition:
+          background 0.2s,
+          box-shadow 0.2s;
         border: none;
         z-index: 1000;
         text-align: center;
@@ -285,11 +287,6 @@
     <script>
       // 1. Map categories to their corresponding HTML filenames (PAGE_IDs)
       const categoryToPage = [
-        { name: "Organic Chemistry 1", page: "miledown_genchem" },
-        { name: "Substitution Mechanisms", page: "test1" },
-        { name: "Physics 1", page: "miledown_physics" },
-        { name: "Psychology 1", page: "miledown_psych" },
-        { name: "Biochemistry 1", page: "biochem1" },
         { name: "Circulatory System", page: "circsys" },
         { name: "Cytoskeleton & Filaments", page: "filaments" },
         { name: "Digestive System", page: "digsys" },
@@ -482,7 +479,7 @@
           }
           // Search categoryToPage for matching term
           let matches = categoryToPage.filter((cat) =>
-            cat.name.toLowerCase().includes(query)
+            cat.name.toLowerCase().includes(query),
           );
           if (matches.length === 0) {
             resultsDiv.innerHTML =
@@ -492,10 +489,10 @@
           resultsDiv.innerHTML = matches
             .map(
               (
-                cat
+                cat,
               ) => `<div style="background:#fff;border-radius:8px;box-shadow:0 2px 8px #eee;padding:1em;margin-bottom:1em;">
             <a href="${cat.page}.html" style="color:black;font-weight:bold;text-decoration:underline;">${cat.name}</a>
-          </div>`
+          </div>`,
             )
             .join("");
         });

@@ -165,7 +165,7 @@ extend type StudyPlan {
   """
   A generated field that is used for caching results in SDKs.
   """
-  _id: ID! @fdc_generated(from: "StudyPlan.id", purpose: GLOBAL_ID)
+  _id: ID! @fdc_generated(from: "StudyPlan.id", purpose: ENTITY_ID)
 }
 extend type StudyPlanItem {
   """
@@ -258,7 +258,7 @@ extend type StudyPlanItem {
   """
   A generated field that is used for caching results in SDKs.
   """
-  _id: ID! @fdc_generated(from: "StudyPlanItem.studyPlanId,studyResourceId", purpose: GLOBAL_ID)
+  _id: ID! @fdc_generated(from: "StudyPlanItem.studyPlanId,studyResourceId", purpose: ENTITY_ID)
 }
 extend type StudyResource {
   """
@@ -522,7 +522,7 @@ extend type StudyResource {
   """
   A generated field that is used for caching results in SDKs.
   """
-  _id: ID! @fdc_generated(from: "StudyResource.id", purpose: GLOBAL_ID)
+  _id: ID! @fdc_generated(from: "StudyResource.id", purpose: ENTITY_ID)
 }
 extend type User {
   """
@@ -742,7 +742,7 @@ extend type User {
   """
   A generated field that is used for caching results in SDKs.
   """
-  _id: ID! @fdc_generated(from: "User.id", purpose: GLOBAL_ID)
+  _id: ID! @fdc_generated(from: "User.id", purpose: ENTITY_ID)
 }
 extend type UserNote {
   """
@@ -826,7 +826,7 @@ extend type UserNote {
   """
   A generated field that is used for caching results in SDKs.
   """
-  _id: ID! @fdc_generated(from: "UserNote.id", purpose: GLOBAL_ID)
+  _id: ID! @fdc_generated(from: "UserNote.id", purpose: ENTITY_ID)
 }
 extend type UserProgress {
   """
@@ -901,5 +901,5 @@ extend type UserProgress {
   """
   A generated field that is used for caching results in SDKs.
   """
-  _id: ID! @fdc_generated(from: "UserProgress.userId,studyResourceId", purpose: GLOBAL_ID)
+  _id: ID! @fdc_generated(from: "UserProgress.userId,studyResourceId", purpose: ENTITY_ID)
 }
